@@ -1,3 +1,5 @@
+const unirest = require("unirest")
+
 module.exports.run = (client, message, args, username, channel) => {
 
 var req = unirest("GET", "https://uncovered-treasure-v1.p.rapidapi.com/random");
