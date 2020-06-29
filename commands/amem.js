@@ -29,3 +29,11 @@ req.end(function (res) {
 })
 
 }
+
+
+module.exports.config = {
+	name: "amem",
+	aliases: ["biblia","verso"],
+	description: "Manda um verso aleatório da blíbia",
+	usage: "amem"
+}
