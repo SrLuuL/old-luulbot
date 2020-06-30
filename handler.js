@@ -31,7 +31,7 @@ globalCD.add(username);
 
 let cmdfile = luulbot.commands.get(cmd) || luulbot.commands.get(luulbot.aliases.get(cmd))
 
-if (cmdfile) cmdfile.run(client, message, args, username, channel);
+if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, self);
 	
 
 setTimeout(() => {
