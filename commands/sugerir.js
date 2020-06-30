@@ -24,5 +24,5 @@ module.exports.config = {
 name: "sugerir",
 aliases: ["suggest"],
 description: "Sugere uma nova função para o bot",
-usage: "sugerir [sugestão]
+usage: "sugerir [sugestão]"
 }
