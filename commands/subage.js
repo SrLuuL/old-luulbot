@@ -1,11 +1,11 @@
-module.exports.run = (client, message, args, user, channel) => {
+module.exports.run = (client, message, args, username, channel) => {
   
   const unirest = require("unirest")
   
-  let sender = user.username
+
   let req = unirest("GET",`https://api.ivr.fi/twitch/subage/${args[0]}/${args[1]}`)
     
-  let req2 = unirest("GET",`https://api.ivr.fi/twitch/subage/${sender}/${args[0]}`)
+  let req2 = unirest("GET",`https://api.ivr.fi/twitch/subage/${username}/${args[0]}`)
   
   
   
