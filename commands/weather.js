@@ -8,7 +8,7 @@ module.exports.run = (client, message, args, username, channel) => {
     "q": args.join(" "),
     "lang": "pt",
     "units": "metric",
-    "appid": process.env.WEATHER_KEY
+    "appid": "0792471e43eab7bc91245dfcb71d43ec"
   })
   
   
