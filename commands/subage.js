@@ -24,7 +24,7 @@ module.exports.run = (client, message, args, username, channel) => {
   
       
       if (args.join(" ").length === 0 || args[1] === 0) {
-     return client.say(channel,`${sender}, especifique o usuário e o canal :/`)
+     return client.say(channel,`${username}, especifique o usuário e o canal :/`)
       }
       
       
@@ -36,11 +36,11 @@ module.exports.run = (client, message, args, username, channel) => {
       
       
       if (res.body.subscribed === false) {
-        return client.say(channel,`${sender}, ${user} não é inscrito em ${channelsub} || Meses totais: ${months}`)
+        return client.say(channel,`${username}, ${user} não é inscrito em ${channelsub} || Meses totais: ${months}`)
       }
       else {
       
-      return client.say(channel,`${sender}, ${user} é inscrito  em ${channelsub} há ${months} meses || Próximo aniversário em: ${niver} dias  || Sub acaba em: ${subend} dias || Sub: ${type} || Tier: ${tier} `)
+      return client.say(channel,`${username}, ${user} é inscrito  em ${channelsub} há ${months} meses || Próximo aniversário em: ${niver} dias  || Sub acaba em: ${subend} dias || Sub: ${type} || Tier: ${tier} `)
       
       }
     })
