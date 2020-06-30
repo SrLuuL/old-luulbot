@@ -9,7 +9,8 @@ if (!command) return client.say(channel, `${username}, não possuo esse comando 
 command = command.config
 client.say(channel, `${username}, * {command.usage}(${command.aliases.join(", ")} : ${command.description}.`)
 }
-
+}
+  
 module.exports.config = {
 name: "help",
 aliases: ["ajuda"],
