@@ -15,7 +15,7 @@ let date = ("0" + today.getDate()).slice(-2);
 let month = ("0" + (today.getMonth() + 1)).slice(-2);
 let year = today.getFullYear();
 let formatDate = date + "/" + month + "/" + year
-client.say(channel, `${username}, sua sugestão foi anotada :D 📝)
+client.say(channel, `${username}, sua sugestão foi anotada :D 📝`)
 logger.write(`\n${formatDate} | ${username}: ${args.join(" ")}`)
 
 }
