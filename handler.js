@@ -16,7 +16,7 @@ client.on("message", async (channel, user, message, self) => {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
-	let cmd = args.shift().toLowerCase();
+	let command = args.shift().toLowerCase();
 	
 
 	
@@ -29,7 +29,7 @@ client.on("message", async (channel, user, message, self) => {
 
 globalCD.add(username);
 
-let cmdfile = luulbot.commands.get(cmd) || luulbot.commands.get(luulbot.aliases.get(cmd))
+let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 	
