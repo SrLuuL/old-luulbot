@@ -36,12 +36,13 @@ if (res.body.datetime === undefined) {
 } else {
   let date = datetime.slice(11, 19)
   
-  let input = []
-  for(let x = 0; x < args.join(" ").length; x++) {
-    input.push(args[x].charAt(0).toUpperCase + args[0].slice(1))
-  }
+ function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
   
-client.say(channel, `${username}, Local: ${input} | Horário atual: ${date} | Fuso horário: ${input}`)
+client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date} | Fuso horário: ${input}`)
   
 }
  
