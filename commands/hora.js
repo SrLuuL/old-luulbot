@@ -14,16 +14,15 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
-  try {
+ if (res.error) return client.say(channel, `${username}, local inválido :/`)
   
 let datetime = res.body.datetime
 let date = datetime.slice(11, 19)
 
 client.say(channel, `${username}, são ${date} em ${args[0]} agora.`)
 
-  } catch (err) {
-    return client.say(channel, `${username}, insira um local inválido :/``)
-}
+
+
     
 });
 
