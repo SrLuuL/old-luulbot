@@ -8,7 +8,7 @@ const ct = require("country-timezone")
 const unirest = require("unirest")
 const { flag } = require("country-emoji")
 
-let country = ct.getTimezones(args.join(" "))
+let country = ct.getTimezones(args.join(" "))[0]
 
 
 
