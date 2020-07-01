@@ -6,7 +6,7 @@ return client.say(channel, `${username}, insira um país :/`)
 
 const ct = require("country-timezone")
 const unirest = require("unirest")
-const flag = require("country-emoji")
+const { flag } = require("country-emoji")
 
 let country = ct.getTimezones(args[0])
 
