@@ -20,6 +20,8 @@ let list = [];
 for(let x = 0; x < num; x++) {
 list.push(channels[x].name)
 }
+  
+const haste = hastebin(list, {extension: "txt"})  
 
 let data2 = await req2.json()
 let user = data2.user
@@ -32,10 +34,10 @@ let partners = data2.partners
 
 if (!args[0]) {
 
-return client.say(channel, `${username}, você é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${list} `)
+return client.say(channel, `${username}, você é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${haste} `)
 
 } else {
-return client.say(channel, `${username}, ${user} é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${list} `)
+return client.say(channel, `${username}, ${user} é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${haste} `)
 }
 
 }
