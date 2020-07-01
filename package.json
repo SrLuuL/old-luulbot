@@ -15,6 +15,8 @@
     "unirest": "^0.6.0",
     "@vitalets/google-translate-api": "^3.0.0",
     "fs": "^0.0.1-security",
-    "quick.db": "^7.1.1"
+    "quick.db": "^7.1.1",
+    "country-timezone": "^1.0.8",
+    "country-emoji": "^1.5.3"
   }
 }
