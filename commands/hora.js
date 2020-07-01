@@ -29,19 +29,22 @@ req.end(function (res){
 
   
 let datetime = res.body.datetime
+let timezoe = res.body.timezone
 
 if (res.body.datetime === undefined) {
   return client.say(channel, `${username}, local inválido :/ `)
 } else {
   let date = datetime.slice(11, 19)
   
-client.say(channel, `${username}, são ${date} em ${args.join(" ")} agora.`)
+  let input = []
+  for(let x = 0; x < args.join(" ").length; x++) {
+    input.push(args[x].charAt(0).toUpperCase + args[0].slice(1))
+  }
+  
+client.say(channel, `${username}, Local: ${input} | Horário atual: ${date} | Fuso horário: ${input}`)
+  
 }
-
-
-
-
-
+ 
 
     
 });
