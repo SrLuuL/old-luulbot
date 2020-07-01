@@ -10,7 +10,7 @@ const flag = require("country-emoji")
 
 let country = ct.getTimezones(args[0])
 
-let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`
+let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
