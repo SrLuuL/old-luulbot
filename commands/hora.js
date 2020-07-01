@@ -27,7 +27,7 @@ if (res.body.datetime === undefined) {
 } else {
   let date = datetime.slice(11, 19)
   
-client.say(channel, `${username}, são ${date} em ${args[0]} agora.`)
+client.say(channel, `${username}, são ${date} em ${args[0].toUpperCase()} agora.`)
 }
 
 
