@@ -29,7 +29,7 @@ req.end(function (res){
 
   
 let datetime = res.body.datetime
-let timezoe = res.body.timezone
+let timezone = res.body.timezone
 
 if (res.body.datetime === undefined) {
   return client.say(channel, `${username}, local inválido :/ `)
@@ -42,7 +42,7 @@ if (res.body.datetime === undefined) {
     });
 }
   
-client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date} | Fuso horário: ${input}`)
+client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date} | Fuso horário: ${timezone}`)
   
 }
  
