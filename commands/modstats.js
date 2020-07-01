@@ -2,16 +2,16 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require("node-fetch");
 const hastebin = require("hastebin-gen");
-let user;
+let userid;
 
 if (!args[0]) {
-user = username
+userid = username
 } else {
-user = args[0]
+userid = args[0]
 }
 
-let req = await fetch(`https://modlookup.3v.fi/api/user-v3/${user}`)
-let req2 = await fetch(`https://modlookup.3v.fi/api/user-totals/${user}`)
+let req = await fetch(`https://modlookup.3v.fi/api/user-v3/${userid}`)
+let req2 = await fetch(`https://modlookup.3v.fi/api/user-totals/${userid}`)
 
 let data = await req.json()
 let channels = data.channels
