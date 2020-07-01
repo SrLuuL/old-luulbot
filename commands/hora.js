@@ -15,10 +15,11 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 req.end(function (res){
 
 let datetime = res.body.datetime
+let dateFormat = new Date(datetime);
 let emoji = flag(args[0])
-let hours = datetime.getHours()
-let minutes = datetime.getMinutes()
-let seconds = datetime.getSeconds()
+let hours = dateFormat.getHours()
+let minutes = dateFormat.getMinutes()
+let seconds = dateFormat.getSeconds()
 let formatDate = hours + ":" + minutes + ":" + seconds
 
 client.say(channel, `${username}, são ${formatDate} em ${args[0]} agora.`)
