@@ -17,7 +17,8 @@ req.end(function (res){
 let datetime = res.body.datetime
 let dateFormat = new Date(datetime);
 let emoji = flag(args[0])
-let hours = dateFormat.getHours()
+let thours = dateFormat.getHours()
+let hours = ("0" + thours).slice(-2);
 let minutes = dateFormat.getMinutes()
 let seconds = dateFormat.getSeconds()
 let formatDate = hours + ":" + minutes + ":" + seconds
