@@ -18,7 +18,7 @@ module.exports.run = (client, message, args, username, channel) => {
 module.exports.config = {
 	name: "ping",
 	aliases: ["pong"],
-	description: "Mostra o ping e outras informações do bot",
+	description: "Verificar se o bot está acordado",
 	usage: "ping"
 }
 	
