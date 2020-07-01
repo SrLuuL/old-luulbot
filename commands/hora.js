@@ -14,7 +14,7 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
- if (res.body.error) == "unknown location" {
+ if (res.body.error == "unknown location") {
   return client.say(channel, `${username}, local inválido :/`)
  }
   
