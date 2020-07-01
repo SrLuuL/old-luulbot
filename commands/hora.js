@@ -8,7 +8,7 @@ const ct = require("country-timezone")
 const unirest = require("unirest")
 const { flag } = require("country-emoji")
 
-let country = ct.getTimezones(args[0])
+let country = ct.getTimezones(args.join(" "))
 
 
 
@@ -27,7 +27,7 @@ if (res.body.datetime === undefined) {
 } else {
   let date = datetime.slice(11, 19)
   
-client.say(channel, `${username}, são ${date} em ${args[0].charAt(0).toUpperCase() + args[0].slice(1)} agora.`)
+client.say(channel, `${username}, são ${date} em ${args.join(" ")} agora.`)
 }
 
 
