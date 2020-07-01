@@ -10,7 +10,11 @@ const { flag } = require("country-emoji")
 
 let country = ct.getTimezones(args[0])
 
+try {
+
 let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
+
+
 
 req.end(function (res){
 
@@ -28,6 +32,10 @@ client.say(channel, `${username}, são ${date} em ${args[0]} agora.`)
     
 });
 
+} catch (err) {
+ return client.say(channel, `${username}, local inválido :/`)
+}
+ 
 }
 
 module.exports.config = {
