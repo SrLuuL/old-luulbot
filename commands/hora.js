@@ -55,6 +55,6 @@ client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horár
 module.exports.config = {
 name: "hora",
 aliases: ["time"],
-description: "Mostra o horário atual de um país",
+description: "Mostra o horário atual de um local",
 usage: "hora [país]"
 }
