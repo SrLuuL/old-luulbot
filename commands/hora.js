@@ -14,7 +14,9 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
- if (res.error) return client.say(channel, `${username}, local inválido :/`)
+ if (res.body.error) == "unknown location" {
+  return client.say(channel, `${username}, local inválido :/`)
+ }
   
 let datetime = res.body.datetime
 let date = datetime.slice(11, 19)
