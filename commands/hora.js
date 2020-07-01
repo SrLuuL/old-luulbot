@@ -14,19 +14,10 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
-let datetime = res.body.utc_datetime
-let dateFormat = new Date(datetime);
-let emoji = flag(args[0])
-let thours = dateFormat.getHours()
-let hours = ('0'+ dateFormat.getHours()).substr(-2);
-let minutes = dateFormat.getMinutes()
-let seconds = dateFormat.getSeconds()
-let formatDate = hours + ":" + minutes + ":" + seconds
+let datetime = res.body.datetime
+let date = datetime.slice(11, 19)
 
-if (minutes < 10) {minutes = "0"+minutes;}
-if (seconds < 10) {seconds = "0"+seconds;}
-
-client.say(channel, `${username}, são ${formatDate} em ${args[0]} agora.`)
+client.say(channel, `${username}, são ${date} em ${args[0]} agora.`)
 
 });
 
