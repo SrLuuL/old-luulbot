@@ -14,7 +14,7 @@ let req = unirest("GET", `http://worldtimeapi.org/api/timezone/${country}`)
 
 req.end(function (res){
 
-let datetime = res.body.datetime
+let datetime = res.body.utc_datetime
 let dateFormat = new Date(datetime);
 let emoji = flag(args[0])
 let thours = dateFormat.getHours()
