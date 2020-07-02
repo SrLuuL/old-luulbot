@@ -24,3 +24,10 @@ return client.say(channel, `${username}, ${banned}`)
 client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
 
 }
+
+module.exports.config = {
+  name: "canalinfo",
+  aliases: ["cli"],
+  description: "Mostra informações sobre um canal de um usuário",
+  usage: "canalinfo"
+}
