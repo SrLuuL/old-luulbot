@@ -26,7 +26,7 @@ let staff = data.roles.isStaff
 staff = (staff === true) ? "staff" : 0
 let roles = [partner, aff, staff]
 roles = (roles === 0 + 0 + 0) ? `${user} não possui cargos` : roles.join("/");
-roles = (roles === 0/0/0) ?  `${user} não possui cargos` : roles.replace(/0//g, "");
+roles = (roles === 0/0/0) ?  `${user} não possui cargos` : roles.replace(/\0//g, "");
 
   
   switch (args[1]) {
