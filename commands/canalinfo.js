@@ -17,7 +17,7 @@ banned = (banned === true) ? `${user} está banido` : `${user} não está banido
 let partner = data.partner
 partner = (partner === true) ? "sim" : "não"
 
-if (args[1] == --b) {
+if (args[1] == "--b") {
 return client.say(channel, `${username}, ${banned}`)
 }
 
