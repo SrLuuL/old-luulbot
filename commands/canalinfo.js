@@ -19,13 +19,13 @@ let color = data.chatColor
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
-partner = (partner === true) ? "parceiro" : null
+partner = (partner === true) ? "parceiro" : 0
 let aff = data.affiliate
-aff = (aff === true) ? "afiliado" : null
+aff = (aff === true) ? "afiliado" : 0
 let staff = data.roles.isStaff
-staff = (staff === true) ? "staff" : null
+staff = (staff === true) ? "staff" : 0
 let roles = [partner, aff, staff]
-roles = (roles === null + null + null) ? `${user} não possui cargos` : roles
+roles = (roles === 0 + 0 + 0) ? `${user} não possui cargos` : roles.join("/")
   
 
   
@@ -33,7 +33,7 @@ roles = (roles === null + null + null) ? `${user} não possui cargos` : roles
     case "--b":
      return client.say(channel, `${username}, ${banned}`);
     case "--c":
-     return client.say(channel, `${username}, ${user} é um ${roles.join("/")}.`);
+     return client.say(channel, `${username}, ${user} é um ${roles}.`);
   }
 
 client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
