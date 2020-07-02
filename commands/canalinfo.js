@@ -28,7 +28,9 @@ let roles = aff + partner + staff
 roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 let bot = data.bot
 bot = (bot === true) ? `${user} é um bot` : `${user} não é um bot`
-  
+let lang = data.settings.preferredLanguageTag 
+    
+    
   switch(roles) {
     case "afiliado/":
       roles = "afiliado"
@@ -40,13 +42,17 @@ bot = (bot === true) ? `${user} é um bot` : `${user} não é um bot`
 
   
   switch (args[1]) {
+    case "--lang":
+      return client.say(channel, `${username}, A linguagem deste canal é: ${lang}`);
     case "--ban":
      return client.say(channel, `${username}, ${banned}`);
     case "--cargos":
      return client.say(channel, `${username}, ${user} possui ${roles}.`);
     case "--bot":
-     return client.say(channel, `${username}, ${bot});
-  }
+      return client.say(channel, `${username}, ${bot});
+
+}
+
 
 client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
 
