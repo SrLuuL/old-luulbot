@@ -21,7 +21,7 @@ aff = (aff === true) ? `${user} é um afiliado. ` : ""
 let staff = data.roles.isStaff
 staff = (staff === true) ? `${user} é um staff. ` : ""
 let roles = aff + partner + staff
-if (data.affiliate && data.partner && data.roles.isStaff === false) {
+if (data.affiliate === false) && (data.partner === false) && (data.roles.isStaff === false) {
   roles = `${user} não  possui cargos`
 }
   
@@ -29,11 +29,9 @@ if (data.affiliate && data.partner && data.roles.isStaff === false) {
   
   switch (args[1]) {
     case "--b":
-      client.say(channel, `${username}, ${banned}`)
-      break;
+     return client.say(channel, `${username}, ${banned}`);
     case "--c":
-      client.say(channel, `${username}, ${roles}`)
-      break;
+     return client.say(channel, `${username}, ${roles}`);
   }
 
 client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
