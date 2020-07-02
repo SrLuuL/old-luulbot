@@ -19,13 +19,13 @@ let color = data.chatColor
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
-partner = (partner === true) ? "parceiro" : false
+partner = (partner === true) ? "parceiro/" : ""
 let aff = data.affiliate
-aff = (aff === true) ? "afiliado" : false
+aff = (aff === true) ? "afiliado/" : ""
 let staff = data.roles.isStaff
-staff = (staff === true) ? "staff" : false
-let roles = [aff, partner, staff]
-roles = (roles === false, false, false) ? `${user} não possui cargos` : roles.join("/").replace(/\/false\//g, "")
+staff = (staff === true) ? "staff" : ""
+let roles = aff + partner + staff
+roles = (roles === "" + "" + "") ? `${user} não possui cargos` : roles
 
 
   
