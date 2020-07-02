@@ -27,7 +27,7 @@ staff = (staff === true) ? "staff" : ""
 let roles = aff + partner + staff
 roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 let bot = data.bot
-bot = (bot === true) ? `${user} é um bot` : `${user} não é um bot`
+bot = (bot === true) ? `${user} é um bot MrDestructoid` : `${user} não é um bot`
 let lang = data.settings.preferredLanguageTag 
     
     
@@ -49,7 +49,7 @@ let lang = data.settings.preferredLanguageTag
     case "--cargos":
      return client.say(channel, `${username}, ${user} possui ${roles}.`);
     case "--bot":
-      return client.say(channel, `${username}, ${bot});
+      return client.say(channel, `${username}, ${bot}`);
 
 }
 
