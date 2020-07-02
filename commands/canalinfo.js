@@ -36,7 +36,7 @@ let lang = data.settings.preferredLanguageTag
       roles = "afiliado"
       break;
     case "parceria/":
-      roles = "parceiro"
+      roles = "parceria"
       break;
   }
 
