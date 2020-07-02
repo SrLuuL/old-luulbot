@@ -19,7 +19,7 @@ let color = data.chatColor
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
-partner = (partner === true) ? "parceiro/" : ""
+partner = (partner === true) ? "parceria/" : ""
 let aff = data.affiliate
 aff = (aff === true) ? "afiliado/" : ""
 let staff = data.roles.isStaff
@@ -32,7 +32,7 @@ roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
     case "afiliado/":
       roles = "afiliado"
       break;
-    case "parceiro/":
+    case "parceria/":
       roles = "parceiro"
       break;
   }
