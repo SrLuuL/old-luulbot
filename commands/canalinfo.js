@@ -21,9 +21,7 @@ aff = (aff === true) ? `${user} é um afiliado. ` : ""
 let staff = data.roles.isStaff
 staff = (staff === true) ? `${user} é um staff. ` : ""
 let roles = aff + partner + staff
-if (data.affiliate === false && data.partner === false && data.roles.isStaff === false) {
-  roles = `${user} não  possui cargos`
-}
+roles = (roles === null) ? `${user} não possui cargos` : roles
   
 
   
