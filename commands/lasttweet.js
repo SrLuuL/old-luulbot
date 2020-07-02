@@ -3,7 +3,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 const fetch = require("node-fetch")
 
 let res = await fetch(`https://decapi.me/twitter/latest/${args[0]}?howlong&no_rts&lang=pt&precision=2`)
-
+let tweet = await res.body
 
 if (!args[0]){
 return client.say(channel, `${username}, insira um usuário :/`)
