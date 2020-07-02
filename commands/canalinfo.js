@@ -26,9 +26,16 @@ let staff = data.roles.isStaff
 staff = (staff === true) ? "staff" : ""
 let roles = aff + partner + staff
 roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
-if (roles === "afiliado/") {
-  roles = "afiliado"
-}
+
+  
+  switch(roles) {
+    case "afiliado/":
+      roles = "afiliado"
+      break;
+    case "parceiro/":
+      roles = "parceiro"
+      break;
+  }
 
   
   switch (args[1]) {
