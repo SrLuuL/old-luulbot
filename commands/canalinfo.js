@@ -26,7 +26,8 @@ let staff = data.roles.isStaff
 staff = (staff === true) ? "staff" : ""
 let roles = aff + partner + staff
 roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
-
+let bot = data.bot
+bot = (bot === true) ? `${user} é um bot` : `${user} não é um bot`
   
   switch(roles) {
     case "afiliado/":
@@ -39,10 +40,12 @@ roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 
   
   switch (args[1]) {
-    case "--b":
+    case "--ban":
      return client.say(channel, `${username}, ${banned}`);
-    case "--c":
+    case "--cargos":
      return client.say(channel, `${username}, ${user} possui ${roles}.`);
+    case "--bot":
+     return client.say(channel, `${username}, ${bot});
   }
 
 client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
