@@ -25,7 +25,7 @@ aff = (aff === true) ? "afiliado" : false
 let staff = data.roles.isStaff
 staff = (staff === true) ? "staff" : false
 let roles = [partner, aff, staff]
-roles = (roles === false + false + false) ? `${user} não possui cargos` : roles.join("/").replace(/false\//g, "")
+roles = (roles === false) ? `${user} não possui cargos` : roles.join("/").replace(/\/false\//g, "")
 
 
   
