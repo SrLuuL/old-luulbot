@@ -7,6 +7,10 @@ let sender = (!args[0]) ? username : args[0]
 let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);
 let data = await res.json();
 
+  if (data.status === 404) {
+    return client.say(channel, `${username}, não encontrei esse usuário :/`)
+  }
+  
 let user = data.displayName
 let userid = data.id
 let bio = data.bio
@@ -15,13 +19,13 @@ let color = data.chatColor
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
-partner = (partner === true) ? `${user} é um parceiro. ` : ""
+partner = (partner === true) ? `${user} é um parceiro. ` : false
 let aff = data.affiliate
-aff = (aff === true) ? `${user} é um afiliado. ` : ""
+aff = (aff === true) ? `${user} é um afiliado. ` : false
 let staff = data.roles.isStaff
-staff = (staff === true) ? `${user} é um staff. ` : ""
+staff = (staff === true) ? `${user} é um staff. ` : false
 let roles = aff + partner + staff
-roles = (roles === "" + "" + "") ? `${user} não possui cargos` : roles
+roles = (roles === false + false + false) ? `${user} não possui cargos` : roles
   
 
   
