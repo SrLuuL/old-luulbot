@@ -3,7 +3,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 const fetch = require("node-fetch")
 
 let res = await fetch(`https://api.ivr.fi/twitch/emotes/${args[0]}`);
-let data = res.json();
+let data = await res.json();
 
 let user = data.channel
 let id = data.channelid
