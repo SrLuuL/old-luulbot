@@ -21,6 +21,8 @@ for(let x = 0; x < num; x++) {
 list.push(channels[x].name)
 }
   
+  try{
+  
 const haste = await hastebin(list)  
 
 let data2 = await req2.json()
@@ -30,6 +32,9 @@ let follows = data2.follows
 let total = data2.total
 let partners = data2.partners
 
+} catch (err) {
+  return client.say(channel, `${username}, serviço inativo por enquanto :/`)
+}
 
 
 if (!args[0]) {
