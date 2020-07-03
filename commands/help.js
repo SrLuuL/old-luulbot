@@ -7,7 +7,7 @@ else {
 let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
 if (!command) return client.say(channel, `${username}, não possuo esse comando :/ `)
 command = command.config
-client.say(channel, `${username}, * ${command.usage}(*${command.aliases.join("/*")})( : ${command.description}.`)
+client.say(channel, `${username}, *${command.name}(*${command.aliases.join("/*")}): ${command.description}.`)
 }
 }
   
