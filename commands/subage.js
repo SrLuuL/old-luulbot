@@ -52,6 +52,6 @@ module.exports.run = (client, message, args, username, channel) => {
 module.exports.config = {
   name: "subage",
   aliases: ["sub"],
-  description: "Mostra as informações de inscrito de um pessoa em um certo canal",
+  description: "Mostra as informações de inscrito de uma pessoa em um certo canal",
   usage: "subage"
 }
