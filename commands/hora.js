@@ -49,7 +49,7 @@ if (res.body.datetime === undefined) {
     });
 }
   
-client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date}(${reverseString(today}) | Fuso horário: ${timezone} `)
+client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date}(${reverseString(today)}) | Fuso horário: ${timezone} `)
   
 }
  
