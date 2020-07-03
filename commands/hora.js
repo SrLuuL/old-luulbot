@@ -39,8 +39,8 @@ if (res.body.datetime === undefined) {
  
   function reverseString(str) {
      let splitS = str.split("")
-    splitS.reverse();
-    splitS.join("")
+    let reversedS = splitS.reverse();
+   let inputS = reversedS.join("")
   }
   
  function toTitleCase(str) {
