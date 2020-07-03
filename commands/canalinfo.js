@@ -27,7 +27,7 @@ staff = (staff === true) ? "staff" : ""
 let roles = aff + partner + staff
 roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 let bot = data.bot
-bot = (bot === true) ? `${user} é um bot MrDestructoid` : `${user} não é um bot`
+bot = (bot === true) ? `${user} é um bot verificado MrDestructoid` : `${user} não é um bot verificado`
 let lang = data.settings.preferredLanguageTag 
     
     
