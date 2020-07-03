@@ -11,6 +11,10 @@ let emote = data.emotecode
 let tier = data.tier
 let url = data.emoteurl_3x
 
+if (data.status === 404) {
+  return client.say(channel, `${username}, não encontrei esse emote`)
+}
+
 if (!args[0]) {
 return client.say(channel, `${username}, insira um emote :/`)
 } else {
