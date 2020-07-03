@@ -21,7 +21,7 @@ for(let x = 0; x < num; x++) {
 list.push(channels[x].name)
 }
   
-const haste = await hastebin(list, {extension: "txt"})  
+const haste = await hastebin(list)  
 
 let data2 = await req2.json()
 let user = data2.user
