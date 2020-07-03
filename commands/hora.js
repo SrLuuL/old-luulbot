@@ -36,9 +36,12 @@ if (res.body.datetime === undefined) {
 } else {
   let date = datetime.slice(11, 19)
   let today = datetime.slice(0, 9)
-  today.split("")
-  today.reverse()
-  today.join("")
+ 
+  function reverseString(str) {
+     let splitS = str.split("")
+    splitS.reverse();
+    splitS.join("")
+  }
   
  function toTitleCase(str) {
     return str.replace(/\w\S*/g, function(txt){
@@ -46,7 +49,7 @@ if (res.body.datetime === undefined) {
     });
 }
   
-client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date}(${today}) | Fuso horário: ${timezone} `)
+client.say(channel, `${username}, Local: ${toTitleCase(args.join(" "))} | Horário atual: ${date}(${reverseString(today}) | Fuso horário: ${timezone} `)
   
 }
  
