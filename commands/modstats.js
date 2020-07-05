@@ -26,14 +26,10 @@ list.push(channels[x].name)
 const haste = await hastebin(list)  
 
 
+
 let data2 = await req2.json()
-let user = data2.user
-let views = data2.views
-let follows = data2.follows
-let total = data2.total
-let partners = data2.partners
 
-
+const {user, views, follows, total, partners} = data2;
 
 
 if (!args[0]) {
