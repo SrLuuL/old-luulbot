@@ -1,7 +1,7 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require("node-fetch");
-const hastebin = require("hastebin-gen");
+const hastebin = require("hastebin-gen-2");
 let userid;
 
 if (!args[0]) {
