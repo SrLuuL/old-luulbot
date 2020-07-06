@@ -7,12 +7,13 @@ return client.say(channel, `${username}, insira uma equação :/ `)
 }
 
 
+try{ 
 let math = await mathjs.evaluate(args.join(" "))
 
-try { math } catch (err) { return client.say(channel, `${username}, não consegui calcular isso :/ `)  }
-
 client.say(channel, `${username}, ${math}`)
-
+} catch(err) {
+  return client.say(channel, `${username}, não consegui calcular isso :/ `)
+}
 
 }
 
