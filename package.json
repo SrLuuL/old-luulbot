@@ -19,6 +19,7 @@
     "country-timezone": "^1.0.8",
     "country-emoji": "^1.5.3",
     "node-fetch": "^2.6.0",
-    "hastebin-gen": "^2.0.3"
+    "hastebin-gen": "^2.0.3",
+    "mathjs": "^7.0.2"
   }
 }
