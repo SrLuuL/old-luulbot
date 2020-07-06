@@ -6,13 +6,14 @@ if (!args[0]) {
 return client.say(channel, `${username}, insira uma equação :/ `)
 }
 
-let math = await mathjs.evaluate(args.join(" "));
-
-try {
-client.say(channel, `${username}, ${math}`)
+  try{
+let math = await mathjs.evaluate(args.join(" "))
 } catch (err) {
-return client.say(channel, `${username}, não foi possível calcular isso :/`)
+  return client.say(channel, `${username}, não consegui calcular isso :/`)
 }
+  
+client.say(channel, `${username}, ${math}`)
+
 
 }
 
