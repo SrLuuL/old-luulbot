@@ -28,10 +28,9 @@ user2 = sender;
   let subCumulative = data.cumulative.months
   let endCumulative = data.cumulative.remaining
   let user = data.username
-  const {subscribed} = data;
+  const subscribed = data;
   const {type, tier} = data.meta;
-  const {remaining} = data.streak.remaining;
-  type = type.replace("paid", "pago");
+  const remaining = data.streak.remaining;
   
   if (subscribed === false) {
     client.say(channel, `${username}, ${user} não é inscrito em ${canal}`)
