@@ -15,7 +15,7 @@ client.say(channel, `${username}, *${command.name}(*${command.aliases.join("/*")
   
 module.exports.config = {
 name: "help",
-aliases: ["ajuda"],
+aliases: ["ajuda", "comandos"],
 description: "Mostra as informações sobre os comandos",
 usage: "help [comando]"
 }
