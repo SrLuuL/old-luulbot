@@ -33,7 +33,7 @@ user2 = sender;
   const {remaining} = data.streak.remaining;
   
   if (subscribed === false) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${`)
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 } else {
    client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${remaining} dias | Próximo aniversário em: ${endCumulative} dias | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
 }
