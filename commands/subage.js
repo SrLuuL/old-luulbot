@@ -28,14 +28,14 @@ user2 = sender;
   let subCumulative = data.cumulative.months
   let endCumulative = data.cumulative.remaining
   let user = data.username
-  const subscribed = data;
+  const {subscribed} = data;
   const {type, tier} = data.meta;
-  const remaining = data.streak.remaining;
+  const {remaining} = data.streak.remaining;
   
   if (subscribed === false) {
-    client.say(channel, `${username}, ${user} não é inscrito em ${canal}`)
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${`)
 } else {
-  client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} | Sub acaba em: ${remaining} | Próximo aniversário em: ${endCumulative} | Sub: ${type.toLowerCase()} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${remaining} dias | Próximo aniversário em: ${endCumulative} dias | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
 }
   
   
