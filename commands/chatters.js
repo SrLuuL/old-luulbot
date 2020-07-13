@@ -10,7 +10,7 @@ let data = await res.json();
 
 if (data === "") return client.say(channel, `${username}, usuário não foi encontrado :/`)
 
-const chatter_count = data;
+const {chatter_count} = data;
 let vips = Object.keys(data.chatters.vips).length;
 let mods = Object.keys(data.chatters.moderators).length;
 let staffs = Object.keys(data.chatters.staff).length;
