@@ -9,7 +9,7 @@ const evaluated = eval(content)
 if (username !== "srluul") return client.say(channel, `${username}, você não tem permissão para isso :/`);
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
-else return client.say(channel, `${username}, resultado: ${evaluated}`)
+else return await client.say(channel, `${username}, resultado: ${evaluated}`)
 
   } catch (err) {
     return client.say(channel, `${username}, ocorreu algum erro :/`)
