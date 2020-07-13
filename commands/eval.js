@@ -4,12 +4,12 @@ module.exports.run = async (client, message, args, username, channel) => {
   
 let content = args.join(" ")
 
-const evaluated = eval(content)
+const evaluated = await eval(content)
 
 if (username !== "srluul") return client.say(channel, `${username}, você não tem permissão para isso :/`);
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
-else return await client.say(channel, `${username}, resultado: ${evaluated}`)
+else return client.say(channel, `${username}, código executado! (${evaluated})`)
 
   } catch (err) {
     return client.say(channel, `${username}, ocorreu algum erro :/`)
