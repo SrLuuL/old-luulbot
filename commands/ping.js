@@ -10,7 +10,7 @@ module.exports.run = (client, message, args, username, channel) => {
     client.ping().then(data => {
       let ping = Math.floor(Math.round(data * 1000));
 
-      client.say(channel, `Ping: ${ping} ms || luul.glitch.me/ || Utilizando ${realtotal}MB`);
+      client.say(channel, `Ping: ${ping} ms | Utilizando ${realtotal}MB`);
     });
 	
 }
