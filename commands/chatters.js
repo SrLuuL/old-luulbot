@@ -15,7 +15,7 @@ let vips = Object.keys(data.chatters.vips).length;
 let mods = Object.keys(data.chatters.moderators).length;
 let staffs = Object.keys(data.chatters.staff).length;
 
-client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${vips} Vips/${mods} Mods/${staffs} staffs) presentes neste momento`)
+client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${vips} Vips/${mods} Mods/${staffs} Staffs) presentes neste momento`)
 
 }
 
