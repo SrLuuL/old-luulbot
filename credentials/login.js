@@ -1,6 +1,6 @@
 const db = require("quick.db")
 db.set('channels', [''])
-const dbchannels = db.get('channels')  
+
   
 const options = {
   options: {
@@ -14,7 +14,7 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: ["srluul", dbchannels]
+  channels: ["srluul", `${db.get('channels')`]
 };
   
 module.exports = { options }
