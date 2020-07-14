@@ -1,4 +1,4 @@
-const dbchannels = require("./config.js").channels
+const dbchannels = require("./config.js")
   
   
 const options = {
@@ -13,7 +13,7 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: dbchannels
+  channels: dbchannels.channels
 };
   
 module.exports = { options }
