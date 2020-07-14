@@ -10,7 +10,7 @@ let dataMorse = await resMorse.json();
 let textMorse = dataMorse.plaintext
 if (textMorse === "" && args[0] == "morse") return client.say(channel, `${username}, morse inválido :/`)
 
-const base64 = require("js-base64")
+const base64 = require("js-base64").Base64
 let textBase64 = await base64.decode(args.join(" ").slice(args[0].length + 1))
 if (textBase64 === "" && args[0] == "base65") return client.say(channel, `${username}, base64 inválido :/`)
   
