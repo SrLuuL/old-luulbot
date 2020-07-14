@@ -5,7 +5,7 @@ const db = require("quick.db")
 client.connect();
 
 
-let prefix = "*";
+let prefix = "=";
 let globalCD = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
