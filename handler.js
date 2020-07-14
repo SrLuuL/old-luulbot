@@ -3,7 +3,7 @@ const luulbot = require ("./clients/discord.js").luulbot
 const db = require("quick.db")
 
 client.connect();
-client.joinAll(db.get('channels'));
+client.join(db.get('channels'));
 
 let prefix = "*";
 let globalCD = new Set();
