@@ -1,5 +1,5 @@
 const db = require("quick.db")
-db.set('channels', {module: 'channels'})
+db.fetch("channels")
 const dbchannels = db.get('channels')  
   
 const options = {
