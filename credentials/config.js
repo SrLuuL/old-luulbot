@@ -1,7 +1,7 @@
 const db = require("quick.db")
 
 
-db.fetch("channels")
+db.set("channels")
 
 const channels = db.get("channels")
 
