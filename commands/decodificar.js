@@ -14,7 +14,9 @@ case "morse":
 return client.say(channel, `${username}, ${textMorse.toLowerCase()}`)
 }
 
-} catch (err) return client.say(channel, `${username}, criptografia ou texto inválidos :/`)
+} catch (err) {
+  client.say(channel, `${username}, criptografia ou texto inválidos :/`)
+}
   
 }
 
