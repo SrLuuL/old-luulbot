@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 
 if (!args[0] || !args[1]) return client.say(channel, `${username}, insira uma criptografia e texto :/`)
 
-let resMorse = await fetch(`http://www.morsecode-api.de/decode?string=${args.join(" ").slice(args[0].length}`)
+let resMorse = await fetch(`http://www.morsecode-api.de/decode?string=${args.join(" ").slice(args[0].length)}`)
 let dataMorse = await resMorse.json();
 let textMorse = dataMorse.plaintext
 
