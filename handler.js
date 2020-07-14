@@ -1,7 +1,9 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
+const db = require("quick.db")
 
 client.connect();
+client.joinAll(db.get('channels'));
 
 let prefix = "*";
 let globalCD = new Set();
