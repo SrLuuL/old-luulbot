@@ -3,7 +3,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 const fetch = require('node-fetch')
 
 if (!args[0] || !args[1]) return client.say(channel, `${username}, insira uma criptografia e texto :/`)
-if (args[0] !== ("morse" || "base64")) return client.say(channel, `${username}, criptografia inválida :/`)
+if (args[0] !== "morse" || args[0] !== "base64") return client.say(channel, `${username}, criptografia inválida :/`)
   
 let resMorse = await fetch(`http://www.morsecode-api.de/decode?string=${args.join(" ").slice(args[0].length + 1).replace(/\//g, "")}`)
 let dataMorse = await resMorse.json();
