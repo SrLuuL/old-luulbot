@@ -9,7 +9,7 @@ let dataMorse = await resMorse.json();
 let textMorse = dataMorse.plaintext
 
 switch(args[0]) {
-case morse:
+case "morse":
 return client.say(channel, `${username}, ${textMorse}`)
 }
 
