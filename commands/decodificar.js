@@ -8,7 +8,7 @@ try {
 let resMorse = await fetch(`http://www.morsecode-api.de/decode?string=${args.join(" ").slice(args[0].length + 1)}`)
 let dataMorse = await resMorse.json();
 let textMorse = dataMorse.plaintext
-if (textMorse === "") && (args[0] == "morse") return client.say(channel, `${username}, morse inválido :/`)
+if (textMorse === "" && args[0] == "morse") return client.say(channel, `${username}, morse inválido :/`)
 
 switch(args[0]) {
 case "morse":
