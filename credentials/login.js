@@ -14,7 +14,7 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: ["srluul", `${dbchannels}`]
+  channels: ["srluul", dbchannels]
 };
   
 module.exports = { options }
