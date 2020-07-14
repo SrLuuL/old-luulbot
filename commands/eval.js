@@ -1,5 +1,7 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
+  const db = require("quick.db")
+  
   try {
   
 let content = args.join(" ")
@@ -12,7 +14,7 @@ if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
 else return client.say(channel, `${username}, código executado! (${evaluated})`)
 
   } catch (err) {
-    return client.say(channel, `${username}, ocorreu algum erro (err) :/`)
+    return client.say(channel, `${username}, ocorreu algum erro (${err}) :/`)
   }
     
 }
