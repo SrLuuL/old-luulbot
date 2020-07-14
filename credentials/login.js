@@ -13,7 +13,7 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: dbchannels.channels
+  channels: ["srluul", dbchannels.channels]
 };
   
 module.exports = { options }
