@@ -21,6 +21,7 @@
     "node-fetch": "^2.6.0",
     "hastebin-gen": "^2.0.3",
     "mathjs": "^7.0.2",
-    "js-base64": "^2.6.3"
+    "js-base64": "^2.6.3",
+    "binary-code": "^1.0.2"
   }
 }
