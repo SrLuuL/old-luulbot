@@ -13,12 +13,19 @@ if (textMorse === "" && args[0] == "morse") return client.say(channel, `${userna
 const base64 = require("js-base64").Base64
 let textBase64 = await base64.decode(args.join(" ").slice(args[0].length + 1))
 if (textBase64 === "" && args[0] == "base65") return client.say(channel, `${username}, base64 inválido :/`)
-  
+
+const bin = require("binary-code")
+let textBinary = await bin.text(args.join(" ").slice(args[0].length + 1))
+if (textBinary === "" && args[0] == "binary") return client.say(channel, `${username}, binário inválido :/`)
+
+
 switch(args[0]) {
 case "morse":
 return client.say(channel, `${username}, ${textMorse.toLowerCase()}`)
 case "base64":
-return client.say(channel, `${username}, ${textBase64}`)
+return client.say(channel, `${username}, ${textBase64}`) 
+case "binary":
+retun  client.say(channel, `${username}, ${textBinary}`)   
 }
 
   
