@@ -25,7 +25,7 @@ return client.say(channel, `${username}, ${textMorse.toLowerCase()}`)
 case "base64":
 return client.say(channel, `${username}, ${textBase64}`) 
 case "binary":
-retun  client.say(channel, `${username}, ${textBinary}`)   
+return client.say(channel, `${username}, ${textBinary}`)   
 }
 
   
