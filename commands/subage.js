@@ -37,13 +37,13 @@ user2 = sender;
   let dateCumulative = new Date(endCumulative);
   dateStreak = dateStreak - Date.now();
   dateCumulative = dateCumulative - Date.now();
-  dateStreak = ms(dateStreak);
-  dateCumulative = ms(dateCumulative);
+  dateStreak = ms(dateStreak, {compact: true});
+  dateCumulative = ms(dateCumulative, {compact: true});
   
   if (subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 } else {
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} dias | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
 }
   
   
