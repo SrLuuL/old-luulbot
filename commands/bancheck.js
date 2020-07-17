@@ -13,7 +13,10 @@ user = username
 user2 = args[0]
 }
 
-const {status, banned, isPermanent, createdAt, expiresAt} = fetch(`https://api.ivr.fi/twitch/banlookup/teste/srluul`).json();
+let res = await fetch(`https://api.ivr.fi/twitch/banlookup/teste/srluul`);
+let data = await res.json();  
+  
+const {status, banned, isPermanent, createdAt, expiresAt} = data
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
 
