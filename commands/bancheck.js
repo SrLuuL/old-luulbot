@@ -19,7 +19,8 @@ let data = await res.json();
 const {status, banned, isPermanent, createdAt, expiresAt} = data
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
-
+if (banned === false) return client.say(channel, `${username}, ${user} não está banido em ${user2}`)
+  
 let DateBan = new Date(createdAt)
 let DateExpire = new Date(expiresAt)
 DateBan = Date.now() - DateBan
@@ -27,16 +28,14 @@ DateBan = ms(DateBan, {secondsDecimalDigits: 0});
 DateExpire = Date.now() - DateExpire
 DateExpire = ms(DateExpire, {secondsDecimalDigits: 0});
 
-if (banned === false) {
-return client.say(channel, `${username}, ${user} não está banido em ${user2}`)
-} else {
+
 if (isPermanent === true) {
 return client.say(channel, `${username}, ${user} está banido permanentemente em ${user2} há ${DateBan}`)
 } else {
 return client.say(channel, `${username}, {user} está com timeout em ${user2} há ${DateBan} e vai acabar em ${DateExpire}`)
 }
 
-}
+
 
 }
 
