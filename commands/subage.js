@@ -1,4 +1,6 @@
 module.exports.run = async (client, message, args, username, channel) => {
+
+  const ms = require("pretty-ms")
   
  const fetch = require("node-fetch")
  let sender = channel.slice(1)
@@ -26,16 +28,22 @@ user2 = sender;
   
   let canal = data.channel
   let subCumulative = data.cumulative.months
-  let endCumulative = data.cumulative.remaining
+  let endCumulative = data.cumulative.end
   let user = data.username
   const {subscribed} = data;
   const {type, tier} = data.meta;
-  const {remaining} = data.streak;
+  const {end} = data.streak;
+  let dateStreak = new Date(end);
+  let dateCumulative = new Date(endCumulative);
+  dateStreak = dateStreak - Date.now();
+  dateCumulative = dateCumulative - Date.now();
+  dateStreak = ms(dateStreak);
+  dateCumulative = ms(dateCumulative);
   
   if (subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 } else {
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${remaining} dias | Próximo aniversário em: ${endCumulative} dias | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} dias | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
 }
   
   
