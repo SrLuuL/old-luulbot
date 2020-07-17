@@ -22,9 +22,9 @@ if (status === 500) return client.say(channel, `${username}, usuários inválido
 
 let DateBan = new Date(createdAt)
 let DateExpire = new Date(expiresAt)
-DateBan = DateBan - Date.now();
+DateBan = Date.now() - DateBan
 DateBan = ms(DateBan, {secondsDecimalDigits: 0});
-DateExpire = DateExpire - Date.now();
+DateExpire = Date.now() - DateExpire
 DateExpire = ms(DateExpire, {secondsDecimalDigits: 0});
 
 if (banned === false) {
