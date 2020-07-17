@@ -13,7 +13,7 @@ user = username
 user2 = args[0]
 }
 
-let res = await fetch(`https://api.ivr.fi/twitch/banlookup/teste/srluul`);
+let res = await fetch(`https://api.ivr.fi/twitch/banlookup/${user}/${user2}`);
 let data = await res.json();  
   
 const {status, banned, isPermanent, createdAt, expiresAt} = data
