@@ -25,14 +25,14 @@ let DateBan = new Date(createdAt)
 let DateExpire = new Date(expiresAt)
 DateBan = Date.now() - DateBan
 DateBan = ms(DateBan, {secondsDecimalDigits: 0});
-DateExpire = Date.now() - DateExpire
+DateExpire = DateExpire - Date.now()
 DateExpire = ms(DateExpire, {secondsDecimalDigits: 0});
 
 
 if (isPermanent === true) {
 return client.say(channel, `${username}, ${user} está banido permanentemente em ${user2} há ${DateBan}`)
 } else {
-return client.say(channel, `${username}, {user} está com timeout em ${user2} há ${DateBan} e vai acabar em ${DateExpire}`)
+return client.say(channel, `${username}, ${user} está com timeout em ${user2} há ${DateBan} e vai acabar em ${DateExpire}`)
 }
 
 
