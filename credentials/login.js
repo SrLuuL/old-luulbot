@@ -14,7 +14,7 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: ["srluul", "bhaskarai", "namaca", "widepeeposaddankcomfysip", "ellpspsps", "kkalfoy", "nekolk", "keert"]
+  channels: ["srluul", "bhaskarai", "namaca", "widepeeposaddankcomfysip", "ellpspsps", "kkalfoy", "nekolk", "keert", "ghiletofar", "luulbot"]
 };
   
 module.exports = { options }
