@@ -6,19 +6,18 @@ let res = await fetch(`https://api.ivr.fi/twitch/emotes/${args[0]}`);
 let data = await res.json();
 
 let user = data.channel
-let id = data.channelid
-let emote = data.emotecode
-let tier = data.tier
-let url = data.emoteurl_3x
+const {emoteid, emotecode, tier} = data;
 
+let url = `https://twitchemotes.com/emotes/${emoteid}`  
+  
 if (data.status === 404) {
-  return client.say(channel, `${username}, não encontrei esse emote`)
+  return client.say(channel, `${username}, não encontrei esse emote :/`)
 }
 
 if (!args[0]) {
 return client.say(channel, `${username}, insira um emote :/`)
 } else {
-client.say(channel, `${username}, Emote: ${emote} | ID: ${id} | Canal: ${user} | Tier: ${tier} | ${url}`)
+client.say(channel, `${username}, Emote: ${emotecode} | ID: ${emoteid} | Canal: ${user} | Tier: ${tier} | ${url}`)
 }
 
 }
