@@ -15,12 +15,12 @@ module.exports.run = (client, message, args, username, channel) => {
    if (db.get(`${username}_weather`) === null) {
      return client.say(channel, `${username}, informe um local :/`)
    } else {
-     query = db.get(`${username}_weather`)
+     query = db.fetch(`${username}_weather`)
    }
  }
 
   if (args[0].startsWith("-")) {
-if (db.get(`${args[0].slice(1)}_weather`) === null) { return client.say(channel, `${username}, usuário não setou seu local :/`) } else { query = db.get(`${args[0].slice(1)}_weather`) }
+if (db.get(`${args[0].slice(1)}_weather`) === null) { return client.say(channel, `${username}, usuário não setou seu local :/`) } else { query = db.fetch(`${args[0].slice(1)}_weather`) }
     }                                                                                                                                                                                                                                                                                             
                                                                                                                                                  
                                                                                                                                                                                                               
