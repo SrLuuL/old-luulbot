@@ -20,7 +20,7 @@ module.exports.run = (client, message, args, username, channel) => {
  }
 
   if (args[0].startsWith("-")) {
-if (db.get(`${args[0].slice(1)}_weather`) === null) ? return client.say(channel, `${username}, usuário não setou seu local :/`) : query = db.get(`${args[0].slice(1)}_weather`)
+if (db.get(`${args[0].slice(1)}_weather`) === null) { return client.say(channel, `${username}, usuário não setou seu local :/`) } else { query = db.get(`${args[0].slice(1)}_weather`) }
     }                                                                                                                                                                                                                                                                                             
                                                                                                                                                  
                                                                                                                                                                                                               
