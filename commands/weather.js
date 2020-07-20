@@ -3,6 +3,12 @@ module.exports.run = (client, message, args, username, channel) => {
   const unirest = require("unirest")
   let query;
   
+  if(args[0] == "--set" && args[1]) {
+    db.set(`${username}_weather`, args.join(" ").slice(args[0].length + 1))
+    return client.say(channel, `${username}, local setado!`)
+  } 
+  
+  
  if (!args[0]) {
    if (db.get(`${username}_weather`) === null) {
      return client.say(channel, `${username}, informe um local :/`)
@@ -12,10 +18,7 @@ module.exports.run = (client, message, args, username, channel) => {
  }
 
   
-  if(args[0] == "--set" && args[1]) {
-    db.set(`${username}_weather`, args.join(" ").slice(args[0].length + 1))
-    return client.say(channel, `${username}, local setado!`)
-  }                                                             
+                                                              
   
   if (args[0] == `--${args[0].slice(2)}`) {
 query = db.get(`${args[0].slice(2)}`)
