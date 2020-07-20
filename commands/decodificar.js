@@ -20,7 +20,7 @@ if (textBinary === "" && args[0] == "binary") return client.say(channel, `${user
 
 switch(args[0]) {
 case "morse":
-return client.say(channel, `${username}, ${textMorse.toLowerCase()}`)
+return client.say(channel, `${username}, ${dataMorse.toLowerCase()}`)
 case "base64":
 return client.say(channel, `${username}, ${textBase64}`) 
 case "binary":
