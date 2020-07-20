@@ -21,7 +21,7 @@ module.exports.run = (client, message, args, username, channel) => {
    }
  } else { query = args.join(" ") }
 
-if (args[0}) {  
+if (args[0]) {  
 if (args[0].startsWith("-")) {
 if(!db.query(`SELECT ${args[0].slice(1)}Weather FROM userWeather`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
