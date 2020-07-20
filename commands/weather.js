@@ -22,7 +22,6 @@ module.exports.run = (client, message, args, username, channel) => {
   
   if (args[0] == `--${args[0].slice(2)}`) {
 query = db.get(`${args[0].slice(2)}`)
-if (db.get(`${args[0].slice(2)}`) === null) return client.say(channel,`${username}, está pessoa não setou seu local :/`)
 }
   
   var req = unirest("GET", `http://api.openweathermap.org/data/2.5/weather`)
