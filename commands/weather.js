@@ -3,7 +3,7 @@ module.exports.run = (client, message, args, username, channel) => {
   const unirest = require("unirest")
   let query;
   
-  db.fetch(`${username}_weather`)
+
   
   if(args[0] == "--set" && args[1]) {
     db.set(`${username}_weather`, `${args.join(" ").slice(args[0].length + 1)}`)
