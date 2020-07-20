@@ -6,7 +6,7 @@ module.exports.run = (client, message, args, username, channel) => {
 
   
   if(args[0] == "--set" && args[1]) {
-    db.query(`ALTER TABLE userWeather ADD ${username}Weather varchar(255)`)
+    db.query(`ALTER TABLE userWeather ADD ${username}Weather varchar(100)`)
     db.query(`INSERT INTO userWeather(${username}Weather) VALUES(${args.join(" ").slice(args[0].length)})`)
     return client.say(channel, `${username}, local setado!`)
   } 
