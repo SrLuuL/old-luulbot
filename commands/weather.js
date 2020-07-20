@@ -1,11 +1,20 @@
 module.exports.run = (client, message, args, username, channel) => {
-  
+  const db = require("quick.db")
   const unirest = require("unirest")
+  let query;
+  
+ if (!args[0] && db.get(`${username}_weather) !== null ) {
+   query = db.get(`${username}_weather)
+     } else {
+     query = args.join(" ")
+}
+  
+                                                              
   
   var req = unirest("GET", `http://api.openweathermap.org/data/2.5/weather`)
 
   req.query({
-    "q": args.join(" "),
+    "q": query,
     "lang": "pt",
     "units": "metric",
     "appid": "0792471e43eab7bc91245dfcb71d43ec"
@@ -57,7 +66,9 @@ module.exports.run = (client, message, args, username, channel) => {
       
   }
   
-  
+  if(args[0] == "--set" && args[1]) {
+    db.set(`${username}_weather, `args.join(" ").slice(args[0].length)
+  }
   
   client.say(channel,`${username}, ${name}(${country}) ${clima} ${main}, ${temp}° com sensação de ${feel}°, ${humidity}% de humidade e ventos a ${wind} m/s \u{1F343}`)
    
