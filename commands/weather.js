@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args, username, channel) => {
-  const db = require("quick.db")
+  const db = require("../clients/database.js").db
   const unirest = require("unirest")
   let query;
   
