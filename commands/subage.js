@@ -45,7 +45,7 @@ user2 = sender;
   if (subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 } else {
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type.toUpperCase()} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeFixed} | Tier: ${tier} `) 
 }
   
   
