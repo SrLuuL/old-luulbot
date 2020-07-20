@@ -40,7 +40,9 @@ user2 = sender;
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0});
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0});
   let typeF = type.charAt(0).toUpperCase() + type.slice(1)
-  
+  typeF = (typeF == "Paid") ? "Pago" : typeF
+    
+    
   if (subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 } else {
