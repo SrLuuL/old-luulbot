@@ -6,24 +6,24 @@ module.exports.run = (client, message, args, username, channel) => {
 
   
   if(args[0] == "--set" && args[1]) {
-    db.query(`ALTER TABLE userWeather ADD ${username}-weather varchar`)
-    db.query(`UPDATE userWeather SET ${username}-weather = ${args.join(" ").slice(args[0].length)}`)
+    db.query(`ALTER TABLE userWeather ADD ${username}Weather varchar`)
+    db.query(`UPDATE userWeather SET ${username}Weather = ${args.join(" ").slice(args[0].length)}`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
   
  if (!args[0]) {
-   if (db.query(`SELECT ${username}-weather FROM userWeather`) === `error: column "${username}" does not exist`) {
+   if (db.query(`SELECT ${username}Weather FROM userWeather`) === `error: column "${username}" does not exist`) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
-     query = db.query(`SELECT ${username}-weather FROM userWeather`)
+     query = db.query(`SELECT ${username}Weather FROM userWeather`)
                   
    }
  } else { query = args.join(" ") }
 
   
 if (args[0].startsWith("-")) {
-if(!db.query(`SELECT ${args[0].slice(1)}-weather FROM userWeather`)) {
+if(!db.query(`SELECT ${args[0].slice(1)}Weather FROM userWeather`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
  query =  db.query(`SELECT ${args[0].slice(1)} FROM userWeather`)
