@@ -12,17 +12,21 @@ module.exports.run = (client, message, args, username, channel) => {
   } 
   
   
- if (!args[0]) {
+  if (args[0] && !args[0].startsWith("-")) {
+    query = args.join(" ")
+  }
+  
+ if (!args[0])) {
    if (db.query(`SELECT ${username}Weather FROM userWeather`) === `error: column "${username}" does not exist`) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
      query = db.query(`SELECT ${username}Weather FROM userWeather`)
                   
    }
- } else { query = args.join(" ") }
+ } 
 
 if (args[0]) {  
-if (args[0].startsWith("-")) {
+if (args[0].startsWith("$")) {
 if(!db.query(`SELECT ${args[0].slice(1)}Weather FROM userWeather`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
