@@ -13,7 +13,7 @@ module.exports.run = (client, message, args, username, channel) => {
   
  if (!args[0]) {
    if (db.fetch(`${username}_weather`) === null) {
-     return client.say(channel, `${username}, informe um local :/`)
+     return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
      query = db.fetch(`${username}_weather`)
                   
