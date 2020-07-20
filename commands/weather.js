@@ -9,10 +9,10 @@ module.exports.run = (client, message, args, username, channel) => {
      query = args.join(" ")
 }
   
-  let userWeather = args.join(" ").slice(args[0].length)
+
   
   if(args[0] == "--set" && args[1]) {
-    db.set(`${username}_weather`, `${userWeather}`)
+    db.set(`${username}_weather`, args.join(" ").slice(args[0].length))
     return client.say(channel, `${username}, local setado!`)
   }                                                             
   
