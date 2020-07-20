@@ -19,12 +19,7 @@ module.exports.run = (client, message, args, username, channel) => {
 
   
                                                               
-  
-  if (args[0] == `--${args[0].slice(2)}`) {
-if (!args[0] ==  "--set") {   
-query = db.get(`${args[0].slice(2)}_weather`)
-}
-}
+
   
   var req = unirest("GET", `http://api.openweathermap.org/data/2.5/weather`)
 
