@@ -16,7 +16,7 @@ module.exports.run = (client, message, args, username, channel) => {
     query = args.join(" ")
   }
   
- if (!args[0])) {
+ if (!args[0]) {
    if (db.query(`SELECT ${username}Weather FROM userWeather`) === `error: column "${username}" does not exist`) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
