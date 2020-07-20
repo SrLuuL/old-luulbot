@@ -14,9 +14,9 @@ let data = await res.json();
 let user = data.displayName
 let userid = data.id
 let bio = data.bio
-bio = (!bio) ? "(sem bio)" : bio
+bio = (!bio) ? "(Sem Bio)" : bio
 let color = data.chatColor
-color = (color === null) ? "Sem cor" : color
+color = (color === null) ? "(Sem Cor)" : color
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
