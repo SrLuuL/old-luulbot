@@ -16,6 +16,7 @@ let userid = data.id
 let bio = data.bio
 bio = (!bio) ? "(sem bio)" : bio
 let color = data.chatColor
+color = (color === null) ? "Sem cor" : color
 let banned = data.banned
 banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
 let partner = data.partner
