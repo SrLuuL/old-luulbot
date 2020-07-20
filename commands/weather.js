@@ -19,7 +19,7 @@ module.exports.run = (client, message, args, username, channel) => {
      query = db.query(`SELECT ${username}-weather FROM userWeather`)
                   
    }
- }
+ } else { query = args.join(" ") }
 
   
 if (args[0].startsWith("-")) {
