@@ -4,7 +4,7 @@ module.exports.run = (client, message, args, username, channel) => {
   let query;
   
   if(args[0] == "--set" && args[1]) {
-    db.set(`${username}_weather`, args.join(" ").slice(args[0].length + 1))
+    db.set(`${username}_weather`, `${args.join(" ").slice(args[0].length)}`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
