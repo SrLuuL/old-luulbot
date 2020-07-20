@@ -67,7 +67,7 @@ module.exports.run = (client, message, args, username, channel) => {
   }
   
   if(args[0] == "--set" && args[1]) {
-    db.set(`${username}_weather, `args.join(" ").slice(args[0].length)
+    db.set(`${username}_weather, `args.join(" ").slice(args[0].length)`)
   }
   
   client.say(channel,`${username}, ${name}(${country}) ${clima} ${main}, ${temp}° com sensação de ${feel}°, ${humidity}% de humidade e ventos a ${wind} m/s \u{1F343}`)
