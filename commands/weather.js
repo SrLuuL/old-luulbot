@@ -32,7 +32,7 @@ return client.say(channel, `${username}, usuário não setou seu local :/`)
 
 }
   
-
+}
                                                                                                                                                  
                                                                                                                                                                                                               
 
