@@ -6,25 +6,26 @@ module.exports.run = (client, message, args, username, channel) => {
 
   
   if(args[0] == "--set" && args[1]) {
-    db.set(`${username}_weather`, `${args.join(" ").slice(args[0].length + 1)}`)
+    db.query(`ALTER TABLE userWeather ADD ${username}-weather varchar`)
+    db.query(`UPDATE userWeather SET ${username}-weather = ${args.join(" ").slice(args[0].length)}`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
   
  if (!args[0]) {
-   if (db.fetch(`${username}_weather`) === null) {
+   if (!db.query(`SELECT ${username}-weather FROM userWeather`)) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
-     query = db.fetch(`${username}_weather`)
+     query = db.query(`SELECT ${username}-weather FROM userWeather`)
                   
    }
  }
 
 if (args[0]) {
    if (args[0].startsWith("-")) {
-if (db.fetch(`${args[0].slice(1)}_weather`) === null) 
-{ return client.say(channel, `${username}, usuário não setou seu local :/`) } 
-  else { query = db.fetch(`${args[0].slice(1)}_weather`) }
+if (!db.query(`SELECT ${args[0].slice(1)}-weather FROM userWeather`) 
+{   return client.say(channel, `${username}, usuário não setou seu local :/`) } 
+  else { query = db.query(`SELECT ${args[0].slice(1)}-weather FROM userWeather`) }
     } 
 }
                                                                                                                                                  
