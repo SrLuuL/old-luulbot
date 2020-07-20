@@ -16,7 +16,7 @@ module.exports.run = (client, message, args, username, channel) => {
     return client.say(channel, `${username}, local setado!`)
   }                                                             
   
-  if (args[0] == `--${args[0].slice(2)}) {
+  if (args[0] == `--${args[0].slice(2)}`) {
 query = db.get(`${args[0].slice(2)}`)
 if (db.get(`${args[0].slice(2)}`) === null) return client.say(channel,`${username}, está pessoa não setou seu local :/`)
 }
