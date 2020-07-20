@@ -8,6 +8,6 @@ const db = new Database({connectionString: connectionURI})
 db.connect()
 
 
-db.on("error, (err) => {console.log(err)});
+db.on("error", (err) => {console.log(err)});
 
 module.exports = {db}
