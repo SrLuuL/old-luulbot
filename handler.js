@@ -11,7 +11,7 @@ let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
 client.on("connected", () => {
-	console.log(`LuuLBot se conectou aos canais: ${client.channels.join(" ")}`)
+	console.log(`LuuLBot se conectou aos canais: ${client.getChannels.join(" ")}`)
 });
 
 client.on("message", async (channel, user, message, self) => {
