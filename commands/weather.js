@@ -4,7 +4,7 @@ module.exports.run = (client, message, args, username, channel) => {
   let query;
   
  if (!args[0] && db.get(`${username}_weather`) !== null) {
-   query = db.get(`${username}_weather)
+   query = db.get(`${username}_weather`)
      } else {
      query = args.join(" ")
 }
