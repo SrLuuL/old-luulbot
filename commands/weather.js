@@ -29,7 +29,7 @@ if (args[0].startsWith("$")) {
 if(!db.query(`SELECT * FROM user_weather WHERE userplace='${args[0].slice(1)}'`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
- query = await db.query(`SELECT * FROM user_weather WHERE userplace='${args[0].slice(1)}'`)
+ query = await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`)
 }
 }
 }
