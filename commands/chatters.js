@@ -12,10 +12,15 @@ if (data === "") return client.say(channel, `${username}, usuário não foi enco
 
 const {chatter_count} = data;
 let vips = Object.keys(data.chatters.vips).length;
+vips = (vips > 0) ? vips + " vips" : null
 let mods = Object.keys(data.chatters.moderators).length;
+mods = (mods > 0) ? mods + " mods" : null  
 let staffs = Object.keys(data.chatters.staff).length;
+staffs = (staffs > 0) ? staffs + " staffs" : null  
 
-client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${vips} Vips/${mods} Mods/${staffs} Staffs) presentes neste momento`)
+let roles = [vips, mods, staffs]  
+  
+client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${roles.join("/")) presentes neste momento`)
 
 }
 
