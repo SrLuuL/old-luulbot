@@ -1,4 +1,4 @@
-const channels = require("./luulbotChannels.js").channelOptions
+const channels = require("../credentials/login.js").channelOptions
 
 
   
