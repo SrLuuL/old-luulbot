@@ -4,7 +4,7 @@ const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
 let sender = (!args[0]) ? username : args[0]
-if (args[0] == "--age") return sender = username
+if (args[0] == "--age") {sender = username}
 
 let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);
 let data = await res.json();
