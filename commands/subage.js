@@ -27,12 +27,13 @@ user2 = sender;
    return client.say(channel, `${username}, usuário não foi encontrado :/`)
  }
 
-  
+ if (data.subscribed === false) {
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
+}  
   let canal = data.channel
   let subCumulative = data.cumulative.months
   let endCumulative = data.cumulative.end
   let user = data.username
-  const {subscribed} = data;
   const {type, tier} = data.meta;
   const {end} = data.streak;
   let dateStreak = new Date(end);
@@ -45,11 +46,9 @@ user2 = sender;
   typeF = (typeF == "Paid") ? "Pago" : typeF
     
     
-  if (subscribed === false) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
-} else {
+  
    client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
-}
+
   
   } catch (err) {
     client.say(channel, `${username}, não foi possível verificar o sub :/`)
