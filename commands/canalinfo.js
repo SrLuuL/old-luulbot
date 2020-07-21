@@ -31,7 +31,7 @@ roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 let bot = data.bot
 bot = (bot === true) ? `${user} é um bot verificado MrDestructoid` : `${user} não é um bot verificado`
 let lang = data.settings.preferredLanguageTag 
-let date = new Data(data.createdAt)
+let date = new Date(data.createdAt)
 let dateDay = date.getDate()
 let dateMonth = date.getMonth() + 1
 let dateYear = date.getYear()
@@ -48,6 +48,12 @@ let dateAge = ms(Date.now() - date)
   }
 
   
+  switch (args[0]) {
+    case "--age":
+      return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
+}
+  
+  
   switch (args[1]) {
     case "--lang":
       return client.say(channel, `${username}, A linguagem deste canal é: ${lang}`);
@@ -59,7 +65,6 @@ let dateAge = ms(Date.now() - date)
       return client.say(channel, `${username}, ${bot}`);
     case "--age":
       return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
-
 }
 
 
