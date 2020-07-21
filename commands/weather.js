@@ -16,20 +16,20 @@ module.exports.run = async (client, message, args, username, channel) => {
   }
   
  if (!args[0]) {
-   if (!db.query(`SELECT * FROM user_weather WHERE userplace= username`)) {
+   if (!db.query(`SELECT * FROM user_weather WHERE username= userplace`)) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
-     query = await db.query(`SELECT * FROM user_weather WHERE userplace= username`)
+     query = await db.query(`SELECT * FROM user_weather WHERE username= userplace`)
                   
    }
  } 
 
 if (args[0]) {  
 if (args[0].startsWith("$")) {
-if(!db.query(`SELECT * FROM user_weather WHERE userplace=${args[0].slice(1)}`)) {
+if(!db.query(`SELECT * FROM user_weather WHERE ${args[0].slice(1)}=userplace`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
- query = await db.query(`SELECT * FROM user_weather WHERE userplace=${args[0].slice(1)}`)
+ query = await db.query(`SELECT * FROM user_weather WHERE ${args[0].slice(1)}=userplace`)
 }
 }
 }
