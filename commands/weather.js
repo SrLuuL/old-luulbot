@@ -39,7 +39,7 @@ if (args[0] && args[0].startsWith("$")) {
   
   
   req.end(function (res){
- try{
+ 
   
   let clima = res.body.weather[0].description
   let id = res.body.weather[0].id
@@ -86,9 +86,7 @@ if (args[0] && args[0].startsWith("$")) {
   
   client.say(channel,`${username}, ${name}(${country}) ${clima} ${main}, ${temp}° com sensação de ${feel}°, ${humidity}% de humidade e ventos a ${wind} m/s \u{1F343}`)
    
- } catch (err) {
-   client.say(channel,`${username}, local inválido :/`)
- }
+
    
   })
   
