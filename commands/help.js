@@ -3,7 +3,7 @@ module.exports.run = (client, message, args, username, channel, cmd, alias) => {
  let donoCmds = ["db", "eval"]
  
 if (!args[0]) {
- let commands = cmd.map(c => `${c.config.name}`).filter(i => i.includes(donoCmds)).join(", ");
+ let commands = cmd.map(c => `${c.config.name.filter(i => !i.includes(donoCmds))}`).join(", ");
 
   
 client.say(channel, `${username}, Prefixo: = | Comandos: ${commands} | `)
