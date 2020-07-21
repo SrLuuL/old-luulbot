@@ -2,12 +2,11 @@ module.exports.run = (client, message, args, username, channel) => {
   const db = require("../clients/database.js").db
   const unirest = require("unirest")
   let query;
-  
+  let userWeather = args.join(" ").slice(args[0].length)
 
   
   if(args[0] == "--set" && args[1]) {
-    db.query(`ALTER TABLE userWeather ADD ${username}Weather varchar(100)`)
-    db.query(`INSERT INTO userWeather(${username}Weather) VALUES(${args.join(" ").slice(args[0].length)})`)
+    await db.query(`INSERT INTO user_weather(userplace, place) VALUES(username, userWeather)`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
@@ -17,20 +16,20 @@ module.exports.run = (client, message, args, username, channel) => {
   }
   
  if (!args[0]) {
-   if (db.query(`SELECT ${username}Weather FROM userWeather`) === `error: column "${username}" does not exist`) {
+   if (!db.query(`SELECT * FROM user_weather WHERE userplace= username`)) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
-     query = db.query(`SELECT ${username}Weather FROM userWeather`)
+     query = await db.query(`SELECT * FROM user_weather WHERE userplace= username`)
                   
    }
  } 
 
 if (args[0]) {  
 if (args[0].startsWith("$")) {
-if(!db.query(`SELECT ${args[0].slice(1)}Weather FROM userWeather`)) {
+if(!db.query(`SELECT * FROM user_weather WHERE userplace=${args[0].slice(1)}`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
- query =  db.query(`SELECT ${args[0].slice(1)}Weather FROM userWeather`)
+ query = await db.query(`SELECT * FROM user_weather WHERE userplace=${args[0].slice(1)}`)
 }
 }
 }
