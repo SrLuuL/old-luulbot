@@ -22,7 +22,7 @@ client.connect()
 
 client.on("connected", async () => {
   console.log(`Conectado nos canais: ${channels.join(" ")}`)
-}
+});
 
 
 module.exports = { options }
