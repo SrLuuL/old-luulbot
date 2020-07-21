@@ -27,13 +27,16 @@ user2 = sender;
    return client.say(channel, `${username}, usuário não foi encontrado :/`)
  }
 
- if (data.subscribed === false) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
-}  
+
   let canal = data.channel
   let subCumulative = data.cumulative.months
   let endCumulative = data.cumulative.end
   let user = data.username
+  
+   if (data.subscribed === false) {
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
+}  
+  
   const {type, tier} = data.meta;
   const {end} = data.streak;
   let dateStreak = new Date(end);
