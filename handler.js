@@ -2,7 +2,7 @@ const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 
 
-client.connect();
+
 
 
 let prefix = "=";
@@ -10,9 +10,6 @@ let globalCD = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
-client.on("connected", () => {
-	console.log(`LuuLBot se conectou aos canais: ${client.getChannels()}`)
-});
 
 client.on("message", async (channel, user, message, self) => {
 	
