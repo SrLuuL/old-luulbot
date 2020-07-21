@@ -1,4 +1,4 @@
-
+const channels = require("./credentials/luulbotChannels.js").channelOptions
 
 
   
@@ -14,7 +14,15 @@ const options = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: ["srluul", "bhaskarai", "namaca", "widepeeposaddankcomfysip", "ellpspsps", "kkalfoy", "nekolk", "keert", "ghiletofar", "luulbot"]
+  channels: channels
 };
   
+
+client.connect()
+
+client.on("connected", async () => {
+  console.log(`Conectado nos canais: ${channels.join(" ")}`)
+}
+
+
 module.exports = { options }
