@@ -11,7 +11,7 @@ let channelOptions = [];
 
 async function res() {
 channelList.push(await getChannels());
-await channelList[0].forEach(i => channelOptions.push(i.channel))
+await channelList[0].forEach(i => channelOptions.push(i.userchannel))
 }
 
 res()
