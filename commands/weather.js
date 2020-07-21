@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
   
   if(args[0] == "--set" && args[1]) {
-    await db.query(`INSERT INTO user_weather(userplace, place) VALUES(username, userWeather)`)
+    await db.query(`INSERT INTO user_weather(userplace, place) VALUES(`'${username}', '${userWeather}'`)`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
@@ -16,20 +16,20 @@ module.exports.run = async (client, message, args, username, channel) => {
   }
   
  if (!args[0]) {
-   if (!db.query(`SELECT * FROM user_weather WHERE username= userplace`)) {
+   if (!db.query(`SELECT * FROM user_weather WHERE userplace= '${username}'`)) {
      return client.say(channel, `${username}, informe ou define um local :/`)
    } else {
-     query = await db.query(`SELECT * FROM user_weather WHERE username= userplace`)
+     query = await db.query(`SELECT * FROM user_weather WHERE userplace= '${username}'`)
                   
    }
  } 
 
 if (args[0]) {  
 if (args[0].startsWith("$")) {
-if(!db.query(`SELECT * FROM user_weather WHERE ${args[0].slice(1)}=userplace`)) {
+if(!db.query(`SELECT * FROM user_weather WHERE userplace='${args[0].slice(1)}'`)) {
 return client.say(channel, `${username}, este usuário não setou seu local :/`)
 } else {
- query = await db.query(`SELECT * FROM user_weather WHERE ${args[0].slice(1)}=userplace`)
+ query = await db.query(`SELECT * FROM user_weather WHERE userplace='${args[0].slice(1)}'`)
 }
 }
 }
