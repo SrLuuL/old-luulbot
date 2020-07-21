@@ -18,9 +18,9 @@ mods = (mods > 0) ? mods + " mods" : null
 let staffs = Object.keys(data.chatters.staff).length;
 staffs = (staffs > 0) ? staffs + " staffs" : null  
 
-let roles = [vips, mods, staffs].filter(Boolean).join("/")  
+let roles = "(" + [vips, mods, staffs].filter(Boolean).join("/") + ")"; roles = (roles === "()") ? null : roles
   
-client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${roles}) presentes neste momento`)
+client.say(channel, `${username}, ${user} possui ${chatter_count} chatters ${roles} presentes neste momento`)
 
 }
 
