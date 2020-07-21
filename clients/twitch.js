@@ -12,7 +12,7 @@ const login = {
     username: "LuuLBot",
     password: "oauth:4lcd5inaptc5tncqsumrugzxro2p6l",
   },
-  channels: channels.push("srluul")
+  channels: channels
 }
 
 const tmi = require("tmi.js")
