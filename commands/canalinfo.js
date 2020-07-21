@@ -37,7 +37,7 @@ let dateDay = (date.getDate() > 10) ? date.getDate() : "0" + date.getDate()
 let dateMonth = (date.getMonth() > 10) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
-let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0}).replace(/y/g, "a")
+let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 3}).replace(/y/g, "a")
 
 
 
@@ -54,7 +54,7 @@ let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0}).replace(/y/g, "a"
   
   switch (args[0]) {
     case "--age":
-      return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
+      return client.say(channel, `${username}, Sua conta foi criada em ${fullDate}(${dateAge} atrás)`)
 }
   
   
