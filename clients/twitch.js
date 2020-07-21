@@ -1,4 +1,4 @@
-const channels = require("../credentials/login.js).channelOptions
+const channels = require("../credentials/login.js").channelOptions
 
 const login = require("../credentials/login.js").options
 const tmi = require("tmi.js")
