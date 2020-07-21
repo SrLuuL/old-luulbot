@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
   
   if(args[0] == "--set" && args[1]) {
-    await db.query(`INSERT INTO user_weather(userplace, place) VALUES(`'${username}', '${userWeather}'`)`)
+    await db.query(`INSERT INTO user_weather(userplace, place) VALUES('${username}', '${userWeather}')`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
