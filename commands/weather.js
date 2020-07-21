@@ -2,11 +2,11 @@ module.exports.run = async (client, message, args, username, channel) => {
   const db = require("../clients/database.js").db
   const unirest = require("unirest")
   let query;
-  let userWeather = args.join(" ").slice(args[0].length + 1)
+  
 
   
   if(args[0] == "--set" && args[1]) {
-    await db.query(`INSERT INTO user_weather(userplace, place) VALUES('${username}', '${userWeather}')`)
+    await db.query(`INSERT INTO user_weather(userplace, place) VALUES('${username}', '${args.join(" ").slice(args[0].length + 1)}')`)
     return client.say(channel, `${username}, local setado!`)
   } 
   
