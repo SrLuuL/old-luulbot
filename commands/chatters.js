@@ -20,7 +20,7 @@ staffs = (staffs > 0) ? staffs + " staffs" : null
 
 let roles = [vips, mods, staffs]  
   
-client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${roles.join("/")) presentes neste momento`)
+client.say(channel, `${username}, ${user} possui ${chatter_count} chatters(${roles.join("/")}) presentes neste momento`)
 
 }
 
