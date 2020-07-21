@@ -1,6 +1,7 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require("node-fetch")
+const ms = require("pretty-ms")
 
 let sender = (!args[0]) ? username : args[0]
 
@@ -30,8 +31,13 @@ roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
 let bot = data.bot
 bot = (bot === true) ? `${user} é um bot verificado MrDestructoid` : `${user} não é um bot verificado`
 let lang = data.settings.preferredLanguageTag 
-    
-    
+let date = new Data(data.createdAt)
+let dateDay = date.getDate()
+let dateMonth = date.getMonth() + 1
+let dateYear = date.getYear()
+let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
+let dateAge = ms(Date.now() - date)
+
   switch(roles) {
     case "afiliado/":
       roles = "afiliado"
@@ -51,6 +57,8 @@ let lang = data.settings.preferredLanguageTag
      return client.say(channel, `${username}, ${user} possui ${roles}.`);
     case "--bot":
       return client.say(channel, `${username}, ${bot}`);
+    case "--age":
+      return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
 
 }
 
