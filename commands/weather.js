@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 if (!args[0]) {
   await db.query(`SELECT place FROM user_weather WHERE userplace='${username}'`, async (err, result) => {
     if (err) throw err;
-    if (result.rows[0].place === null) return client.say(channel, `${username}, insira ou defina uma local :/`) else {query= result.rows[0].place})  
+    if (result.rows[0].place === null){return client.say(channel, `${username}, insira ou defina uma local :/`)} else {query= result.rows[0].place})  
                  }              
 
 if (args[0] && args[0].startsWith("$")) {
