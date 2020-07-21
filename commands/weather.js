@@ -2,7 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   const db = require("../clients/database.js").db
   const unirest = require("unirest")
   let query;
-  let userWeather = args.join(" ").slice(args[0].length)
+  let userWeather = args.join(" ").slice(args[0].length + 1)
 
   
   if(args[0] == "--set" && args[1]) {
@@ -15,25 +15,13 @@ module.exports.run = async (client, message, args, username, channel) => {
     query = args.join(" ")
   }
   
- if (!args[0]) {
-   if (!db.query(`SELECT * FROM user_weather WHERE userplace= '${username}'`)) {
-     return client.say(channel, `${username}, informe ou define um local :/`)
-   } else {
-     query = await db.query(`SELECT * FROM user_weather WHERE userplace= '${username}'`)
-                  
-   }
- } 
+if (!args[0]) {
+  await db.query(`SELECT place FROM user_weather WHERE userplace='${username}'`, async (err) => {if (err) return client.say(channel, `${username}, insira ou defina um local :/`)}
+                 }
 
-if (args[0]) {  
-if (args[0].startsWith("$")) {
-if(!db.query(`SELECT * FROM user_weather WHERE userplace='${args[0].slice(1)}'`)) {
-return client.say(channel, `${username}, este usuário não setou seu local :/`)
-} else {
- query = await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`)
-}
-}
-}
-                                                                                                                                                 
+if (args[0] && args[0].startsWith("$")) {
+    await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)}
+                   }                                                                                                                                                
                                                                                                                                                                                                               
 
   
