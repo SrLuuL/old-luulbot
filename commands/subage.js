@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-  try{
+  
   
   const ms = require("pretty-ms")
   
@@ -50,9 +50,7 @@ user2 = sender;
    client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
 
   
-  } catch (err) {
-    client.say(channel, `${username}, não foi possível verificar o sub :/`)
-  }
+
   
 }
 
