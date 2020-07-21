@@ -33,8 +33,8 @@ let bot = data.bot
 bot = (bot === true) ? `${user} é um bot verificado MrDestructoid` : `${user} não é um bot verificado`
 let lang = data.settings.preferredLanguageTag 
 let date = new Date(data.createdAt)
-let dateDay = (date.getDate() >= 10) ? date.getDate() : "0" + date.getDate()
-let dateMonth = (date.getMonth() >= 10) ? date.getMonth() : "0" + (date.getMonth() + 1)
+let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate()
+let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
 let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 3}).replace(/y/g, "a")
