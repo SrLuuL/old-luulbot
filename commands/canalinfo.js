@@ -37,7 +37,7 @@ let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate()
 let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
-let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 3}).replace(/y/g, "a")
+let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a")
 
 
 
