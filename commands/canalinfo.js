@@ -8,9 +8,7 @@ let sender = (!args[0]) ? username : args[0]
 let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);
 let data = await res.json();
 
-  if (data.status === 404) {
-    return client.say(channel, `${username}, não encontrei esse usuário :/`)
-  }
+  
   
 let user = data.displayName
 let userid = data.id
@@ -36,7 +34,12 @@ let dateDay = (date.getDate() > 10) ? date.getDate() : "0" + date.getDate()
 let dateMonth = (date.getMonth() > 10) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
-let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0})
+let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0}).replace(/y/g, "a")
+
+if (data.status === 404) {
+    return client.say(channel, `${username}, não encontrei esse usuário :/`)
+  }
+
 
   switch(roles) {
     case "afiliado/":
