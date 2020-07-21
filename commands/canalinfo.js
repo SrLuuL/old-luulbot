@@ -4,11 +4,14 @@ const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
 let sender = (!args[0]) ? username : args[0]
+if (args[0] == "--age") return sender = username
 
 let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);
 let data = await res.json();
 
-  
+  if (data.status === 404) {
+    return client.say(channel, `${username}, não encontrei esse usuário :/`)
+  }
   
 let user = data.displayName
 let userid = data.id
@@ -36,9 +39,7 @@ let dateYear = date.getFullYear()
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
 let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0}).replace(/y/g, "a")
 
-if (data.status === 404) {
-    return client.say(channel, `${username}, não encontrei esse usuário :/`)
-  }
+
 
 
   switch(roles) {
