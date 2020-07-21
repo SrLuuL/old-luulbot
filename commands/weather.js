@@ -23,7 +23,7 @@ if (!args[0]) {
 
 if (args[0] && args[0].startsWith("$")) {
     await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)})
-                   )}                                                                                                                                            
+                   }                                                                                                                                            
                                                                                                                                                                                                               
 
   
