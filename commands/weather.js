@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   
   
    let userWeather = await db.query(`SELECT * FROM user_weather WHERE userchannel='${username}'`);
-let inputWeather = args.join(" ").slice(args[0].length);
+
 
   if(args[0] == "--set" && args[1]) {
   if (args[2] == "--hide") {
@@ -35,9 +35,9 @@ let inputWeather = args.join(" ").slice(args[0].length);
     }
   }
     if (userWeather.rows[0].userplace !== null) {
-      await db.query(`UPDATE user_weather SET userplace='${inputWeather}' WHERE userchannel='${username}'`)
+      await db.query(`UPDATE user_weather SET userplace='${args.join(" ").slice(args[0].length)}' WHERE userchannel='${username}'`)
     } else {
-      await db.query(`INSERT INTO user_weather(userplace) VALUES('${inputWeather}') WHERE userchannel='${username}'`)
+      await db.query(`INSERT INTO user_weather(userplace) VALUES('${args.join(" ").slice(args[0].length)}') WHERE userchannel='${username}'`)
     }
   } 
   
