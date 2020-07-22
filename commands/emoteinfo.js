@@ -10,7 +10,7 @@ const {emoteid, emotecode, tier} = data;
 
 let url = `https://twitchemotes.com/emotes/${emoteid}`  
   
-if (data.status === 404) {
+if (data.status === 404 || data.status === 500) {
   return client.say(channel, `${username}, não encontrei esse emote :/`)
 }
 
