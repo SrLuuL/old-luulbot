@@ -9,7 +9,7 @@ db.query(`${args.join(' ')}`, (err,result) => {
       return client.say(channel, `@${username}, (${err.message}) ocorreu algum erro :/`)
     }
     
-   console.log(result)
+   console.log(result.rows || result)
     client.say(channel, `${username}, olhe os logs para os resultados :) `)
   })
   
