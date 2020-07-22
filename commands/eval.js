@@ -22,6 +22,6 @@ else return client.say(channel, `${username}, código executado! (${evaluated})`
 module.exports.config = {
 name: "eval",
 aliases: ["dankeval"],
-description: "Executa um código do bot",
+description: "Executa um código do bot(uso privado)",
 usage: "eval [conteúdo]"
 }
