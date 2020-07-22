@@ -9,7 +9,7 @@ if (!args[0]) {
 client.say(channel, `${username}, Prefixo: = | Comandos: ${commands} | `)
 } else {
 let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
-if (!command) return client.say(channel, `${username}, não possuo esse comando :/ `)
+if (!command) return client.say(channel, `${username}, comando inexistente ou privado :/ `)
 command = command.config
 client.say(channel, `${username}, =${command.name}(=${command.aliases.join("/=")}): ${command.description}.`)
 }
