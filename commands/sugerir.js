@@ -1,4 +1,4 @@
-module.exports.run = (client, message, args, username, channel) => {
+module.exports.run = async (client, message, args, username, channel) => {
 
   const db = require("../clients/database.js").db
   
