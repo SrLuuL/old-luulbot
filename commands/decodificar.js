@@ -6,7 +6,7 @@ if (!args[0] || !args[1]) return client.say(channel, `${username}, insira uma cr
 
   
 const Morse = require("morse")
-let dataMorse = await Morse.decode(`${args.join(" ").slice(args[0].length + 1).replace(/\//g, "")}`)
+let dataMorse = await Morse.decode(`${args.join(" ").slice(args[0].length + 1)}`)
 if (dataMorse === "" && args[0] == "morse") return client.say(channel, `${username}, morse inválido :/`)
 
 const base64 = require("js-base64").Base64
