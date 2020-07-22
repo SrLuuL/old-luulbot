@@ -15,6 +15,7 @@ client.say(channel, `${username}, saí de ${args[0]} com sucesso!`);
 }
 
 module.exports.config = {
+name: "part",
 aliases: ["part"],
 description: "Conecta o bot em um canal",
 usage: "join [user]"
