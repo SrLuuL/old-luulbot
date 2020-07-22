@@ -67,19 +67,19 @@ let inputWeather = args.join(" ").slice(args[0].length);
 
   if(args[0] == "--set" && args[1]) {
   if (args[2] == "--hide") {
-    if (userWeather.rows[0].hidden !=== null) {
+    if (userWeather.rows[0].hidden !== null) {
      await db.query(`UPDATE user_weather SET hidden='1' WHERE userchannel='${username}'`)
     } else {
      await db.query(`INSERT INTO user_weather(hidden) VALUES('1') WHERE userchannel='${username}'`)
     }
   } else {
-    if (userWeather.rows[0].hidden !=== null) {
+    if (userWeather.rows[0].hidden !== null) {
      await db.query(`UPDATE user_weather SET hidden='0' WHERE userchannel='${username}'`)
     } else {
      await db.query(`INSERT INTO user_weather(hidden) VALUES('0') WHERE userchannel='${username}'`)
     }
   }
-    if (userWeather.rows[0].userplace !=== null) {
+    if (userWeather.rows[0].userplace !== null) {
       await db.query(`UPDATE user_weather SET userplace='${inputWeather}' WHERE userchannel='${username}'`)
       query = userWeather.rows[0].userplace
     } else {
