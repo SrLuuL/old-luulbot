@@ -1,22 +1,13 @@
-const fs = require("fs")
-const db = require("quick.db")
-let today = new Date()
-
 module.exports.run = (client, message, args, username, channel) => {
 
-if (!args[0]) {
-return client.say(channel, `${username}, insira uma sugestão :/`)
-}
-
-const content = args.join(" ")
-let logger = fs.createWriteStream("suggest.txt", {flags: "a"})
-
-let date = ("0" + today.getDate()).slice(-2);
-let month = ("0" + (today.getMonth() + 1)).slice(-2);
-let year = today.getFullYear();
-let formatDate = date + "/" + month + "/" + year
-client.say(channel, `${username}, sua sugestão foi anotada :D 📝`)
-logger.write(`\n${formatDate} | ${username}: ${args.join(" ")}`)
+  const db = require("../clients/database.js").db
+  
+  let total = await db.query(`SELECT userchannel FROM luulbot_suggests`)
+  
+   if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
+  
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest) VALUES('${username}','${args.join(" ")}')`)
+  client.say(channel, `${username}, sugestão anotada :D 📝 (ID:${total.rows.length})`)
 
 }
 
