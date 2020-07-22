@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   
   
   
-  req.end(function (res){
+  req.end(async function (res){
  
   
   let clima = res.body.weather[0].description
