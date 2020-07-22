@@ -47,11 +47,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   }
   
 if (!args[0]) {
-  if (!userWeather.rows[0].userplace) {
-    query = userWeather.rows[0].userplace
-  } else {
-    return client.say(channel, `${username}, insira ou defina um local :/`)
-  }
+  console.log(userWeather.rows[0])
 }
   
   console.log(userWeather.rows[0])
