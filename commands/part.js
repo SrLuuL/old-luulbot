@@ -12,7 +12,7 @@ let index = channelsOptions.indexOf(args[0])
 channelsOptions.splice(index, 1)  
 client.part(args[0]);
 channelsOptions.delete(`${args[0]}`)
-client.say(channel, `${username}, saí de ${args[0]} com sucesso!`);
+client.say(channel, `${username}, saí do canal ${args[0]} com sucesso!`);
 
 
 }
