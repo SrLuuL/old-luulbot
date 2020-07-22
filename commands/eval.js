@@ -8,7 +8,7 @@ let content = args.join(" ")
 
 const evaluated = await eval(content)
 
-if (username !== "srluul") return client.say(channel, `${username}, você não tem permissão para isso :/`);
+if (username !== "srluul") return;
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
 else return client.say(channel, `${username}, código executado! (${evaluated})`)
@@ -20,6 +20,7 @@ else return client.say(channel, `${username}, código executado! (${evaluated})`
 }
 
 module.exports.config = {
+name: "eval",
 aliases: ["dankeval"],
 description: "Executa um código do bot",
 usage: "eval [conteúdo]"
