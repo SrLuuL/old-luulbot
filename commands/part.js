@@ -4,7 +4,7 @@ const db = require("../clients/database.js").db
 
 if (username !== "srluul") return;
 if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`)
-if (!channelsOptions.includes(args[0]) return client.say(channel, `${username}, não estou nesse canal :/`)
+if (!channelsOptions.includes(args[0])) return client.say(channel, `${username}, não estou nesse canal :/`)
 
 
 db.query(`DELETE FROM luulbot_channels WHERE userchannel='${args[0]}' `, (err) => {if (err) throw err});
