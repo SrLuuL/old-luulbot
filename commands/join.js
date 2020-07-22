@@ -9,7 +9,7 @@ if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`
 db.query(`INSERT INTO luulbot_channels(userchannel) VALUES('${args[0]}')`);
 client.join(args[0]);
 channelsOptions.push(`${args[0]}`)
-client.say(channel, `${username}, entrei em ${args[0]} com sucesso!`)
+client.say(channel, `${username}, entrei no canal ${args[0]} com sucesso!`)
 }
 
 module.exports.config = {
