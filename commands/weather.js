@@ -47,10 +47,14 @@ module.exports.run = async (client, message, args, username, channel) => {
   }
   
 if (!args[0]) {
-  console.log(userWeather.rows[0])
+  if (!userWeather.rows[0].userplace) {
+    query = userWeather.rows[0].userplace
+  } else {
+    return client.say(channel, `${username}, insira ou defina um local :/`)
+  }
 }
   
-  console.log(userWeather.rows[0])
+
 
 if (args[0] && args[0].startsWith("$")) {
     await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)})
