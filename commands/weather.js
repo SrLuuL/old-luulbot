@@ -17,6 +17,47 @@ module.exports.run = async (client, message, args, username, channel) => {
   })
   
   
+   let userWeather = await db.query(`SELECT * FROM user_weather WHERE userchannel='${username}'`);
+let inputWeather = args.join(" ").slice(args[0].length);
+
+  if(args[0] == "--set" && args[1]) {
+  if (args[2] == "--hide") {
+    if (userWeather.rows[0].hidden !== null) {
+     await db.query(`UPDATE user_weather SET hidden='1' WHERE userchannel='${username}'`)
+    } else {
+     await db.query(`INSERT INTO user_weather(hidden) VALUES('1') WHERE userchannel='${username}'`)
+    }
+  } else {
+    if (userWeather.rows[0].hidden !== null) {
+     await db.query(`UPDATE user_weather SET hidden='0' WHERE userchannel='${username}'`)
+    } else {
+     await db.query(`INSERT INTO user_weather(hidden) VALUES('0') WHERE userchannel='${username}'`)
+    }
+  }
+    if (userWeather.rows[0].userplace !== null) {
+      await db.query(`UPDATE user_weather SET userplace='${inputWeather}' WHERE userchannel='${username}'`)
+    } else {
+      await db.query(`INSERT INTO user_weather(userplace) VALUES('${inputWeather}') WHERE userchannel='${username}'`)
+    }
+  } 
+  
+  
+  if (args[0] && !args[0].startsWith("-")) {
+    query = args.join(" ")
+  }
+  
+if (!args[0]) {
+  if (userWeather.rows[0].userplace !== null) {
+    query = userWeather.rows[0].userplace
+  } else {
+    return client.say(channel, `${username}, insira ou defina um local :/`)
+  }
+}
+
+if (args[0] && args[0].startsWith("$")) {
+    await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)})
+                   }   
+  
   
   req.end(async function (res){
  
@@ -62,46 +103,7 @@ module.exports.run = async (client, message, args, username, channel) => {
       
   }
   
- let userWeather = await db.query(`SELECT * FROM user_weather WHERE userchannel='${username}'`);
-let inputWeather = args.join(" ").slice(args[0].length);
 
-  if(args[0] == "--set" && args[1]) {
-  if (args[2] == "--hide") {
-    if (userWeather.rows[0].hidden !== null) {
-     await db.query(`UPDATE user_weather SET hidden='1' WHERE userchannel='${username}'`)
-    } else {
-     await db.query(`INSERT INTO user_weather(hidden) VALUES('1') WHERE userchannel='${username}'`)
-    }
-  } else {
-    if (userWeather.rows[0].hidden !== null) {
-     await db.query(`UPDATE user_weather SET hidden='0' WHERE userchannel='${username}'`)
-    } else {
-     await db.query(`INSERT INTO user_weather(hidden) VALUES('0') WHERE userchannel='${username}'`)
-    }
-  }
-    if (userWeather.rows[0].userplace !== null) {
-      await db.query(`UPDATE user_weather SET userplace='${inputWeather}' WHERE userchannel='${username}'`)
-    } else {
-      await db.query(`INSERT INTO user_weather(userplace) VALUES('${inputWeather}') WHERE userchannel='${username}'`)
-    }
-  } 
-  
-  
-  if (args[0] && !args[0].startsWith("-")) {
-    query = args.join(" ")
-  }
-  
-if (!args[0]) {
-  if (userWeather.rows[0].userplace !== null) {
-    query = userWeather.rows[0].userplace
-  } else {
-    return client.say(channel, `${username}, insira ou defina um local :/`)
-  }
-}
-
-if (args[0] && args[0].startsWith("$")) {
-    await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)})
-                   }   
   
   client.say(channel,`${username}, ${name}(${country}) ${clima} ${main}, ${temp}° com sensação de ${feel}°, ${humidity}% de humidade e ventos a ${wind} m/s \u{1F343}`)
    
