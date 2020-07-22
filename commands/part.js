@@ -2,6 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const db = require("../clients/database.js").db
 
+if (username !== "srluul") return;
 if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`)
 
 
