@@ -22,19 +22,19 @@ module.exports.run = async (client, message, args, username, channel) => {
 
   if(args[0] == "--set" && args[1]) {
   if (args[2] == "--hide") {
-    if (userWeather.rows[0].hidden !== null) {
+    if (!userWeather.rows[0].hidden) {
      await db.query(`UPDATE user_weather SET hidden='1' WHERE userchannel='${username}'`)
     } else {
      await db.query(`INSERT INTO user_weather(hidden) VALUES('1') WHERE userchannel='${username}'`)
     }
   } else {
-    if (userWeather.rows[0].hidden !== null) {
+    if (!userWeather.rows[0].hidden) {
      await db.query(`UPDATE user_weather SET hidden='0' WHERE userchannel='${username}'`)
     } else {
      await db.query(`INSERT INTO user_weather(hidden) VALUES('0') WHERE userchannel='${username}'`)
     }
   }
-    if (userWeather.rows[0].userplace !== null) {
+    if (!userWeather.rows[0].userplace) {
       await db.query(`UPDATE user_weather SET userplace='${args.join(" ").slice(args[0].length)}' WHERE userchannel='${username}'`)
     } else {
       await db.query(`INSERT INTO user_weather(userplace) VALUES('${args.join(" ").slice(args[0].length)}') WHERE userchannel='${username}'`)
@@ -47,12 +47,14 @@ module.exports.run = async (client, message, args, username, channel) => {
   }
   
 if (!args[0]) {
-  if (userWeather.rows[0].userplace !== null) {
+  if (!userWeather.rows[0].userplace) {
     query = userWeather.rows[0].userplace
   } else {
     return client.say(channel, `${username}, insira ou defina um local :/`)
   }
 }
+  
+  console.log(userWeather.rows[0])
 
 if (args[0] && args[0].startsWith("$")) {
     await db.query(`SELECT place FROM user_weather WHERE userplace='${args[0].slice(1)}'`, async (err) => {if (err) return client.say(channel, `${username}, este usuário não setou um local :/`)})
