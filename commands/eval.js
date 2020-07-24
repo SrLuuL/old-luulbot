@@ -2,13 +2,15 @@ module.exports.run = async (client, message, args, username, channel) => {
 
   const db = require("quick.db")
   
+  if (username !== "srluul") return;
+
   try {
   
 let content = args.join(" ")
 
 const evaluated = eval(content)
 
-if (username !== "srluul") return;
+
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
 else return client.say(channel, `${username}, código executado! (${evaluated})`)
