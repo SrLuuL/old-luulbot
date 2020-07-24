@@ -22,7 +22,7 @@ list.push(channels[x].name)
 }
   
 
-  
+ try { 
 const haste = await hastebin(list)  
 
 
@@ -40,6 +40,10 @@ return client.say(channel, `${username}, você é mod em ${total} canais, ${part
 return client.say(channel, `${username}, ${user} é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${haste} `)
 }
 
+ } catch (err) {
+   client.say(channel, `${username}, serviço indisponível :/`)
+ }
+   
 }
 
 module.exports.config = {
