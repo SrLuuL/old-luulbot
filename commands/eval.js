@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   
 let content = args.join(" ")
 
-const evaluated = await eval(content)
+const evaluated = eval(content)
 
 if (username !== "srluul") return;
 
