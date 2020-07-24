@@ -81,7 +81,7 @@ let totalVips = Object.keys(vips).length
     case "--age":
       return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
     case "--mv":
-      return client.say(channel, `${username}, ${user} possui ${totalMods} mods e ${totalVips} em seu canal`)
+      return client.say(channel, `${username}, ${user} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
 }
 
 
