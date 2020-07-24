@@ -23,7 +23,7 @@ user2 = sender;
  let res = await fetch(`https://api.ivr.fi/twitch/subage/${user1}/${user2}`)
  let data = await res.json();
  
- if (data.status === 404) {
+ if (data.status === 404 || data.status === 500) {
    return client.say(channel, `${username}, usuário não foi encontrado :/`)
  }
 
