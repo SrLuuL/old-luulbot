@@ -49,8 +49,8 @@ let dateYear = date.getFullYear()
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
 let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a")
 const {mods, vips} = data2;
-let totalMods = Object.key(mods).length
-let totalVips = Object.key(vips).length
+let totalMods = Object.keys(mods).length
+let totalVips = Object.keys(vips).length
 
 
   switch(roles) {
