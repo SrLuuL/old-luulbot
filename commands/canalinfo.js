@@ -4,12 +4,21 @@ const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
 let sender = (!args[0]) ? username : args[0]
-if (args[0] == "--age") {sender = username}
+switch(args[0]) {
+  case "--age":
+    sender = username
+    break;
+  case "--mv":
+    sender = username
+    break;
+}
 
-let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);
+let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);  
 let data = await res.json();
+let res2 = await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`);
+let data2 = await res2.json();
 
-  if (data.status === 404) {
+  if (data.status === 404 || data.status === 500) {
     return client.say(channel, `${username}, não encontrei esse usuário :/`)
   }
   
@@ -17,6 +26,7 @@ let user = data.displayName
 let userid = data.id
 let bio = data.bio
 bio = (!bio) ? "(Sem Bio)" : bio
+bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio
 let color = data.chatColor
 color = (color === null) ? "(Sem Cor)" : color
 let banned = data.banned
@@ -38,8 +48,9 @@ let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth()
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
 let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a")
-
-
+const {mods, vips} = data2;
+let totalMods = Object.key(mods).length
+let totalVips = Object.key(vips).length
 
 
   switch(roles) {
@@ -69,6 +80,8 @@ let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).rep
       return client.say(channel, `${username}, ${bot}`);
     case "--age":
       return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
+    case "--mv":
+      return client.say(channel, `${username}, ${user} possui ${totalMods} mods e ${totalVips} em seu canal`)
 }
 
 
