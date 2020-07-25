@@ -7,7 +7,7 @@ if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`
 if (!channelsOptions.includes(args[0])) return client.say(channel, `${username}, não estou nesse canal :/`)
 
 
-db.query(`DELETE FROM luulbot_channels WHERE userchannel='${args[0]}' `, (err) => {if (err) throw err});
+await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${args[0]}'`)
 let index = channelsOptions.indexOf(args[0])
 channelsOptions.splice(index, 1)  
 client.part(args[0]);
