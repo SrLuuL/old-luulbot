@@ -8,11 +8,11 @@ module.exports.run = async (client, message, args, username, channel) => {
   
 let content = args.join(" ")
 
-const evaluated = await eval('(async () => {args.join(" ")})())
+const evaluated = await eval('(async () => {args.join(" ")})()')
 
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
-else return client.say(channel, `${username}, código executado! (${String(evaluated)})`)
+else return client.say(channel, `${username}, código executado! (${evaluated})`)
 
   } catch (err) {
     return client.say(channel, `${username}, ocorreu algum erro (${err}) :/`)
