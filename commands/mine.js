@@ -6,7 +6,7 @@ const res = await (await fetch("https://mcapi.xdefcon.com/server/0.tcp.sa.ngrok.
 const {serverStatus, serverip, version, players, maxplayers, ping} = res;
 let format = `Servidor online! Players: ${players}/${maxplayers} | Ip: ${serverip} | Versão: ${version} | Ping: ${ping} ms`;
 
-if (serverStatus === offline) return client.say(channel, `${username}, servidor offline FeelsBadMan`)
+if (serverStatus === "offline") return client.say(channel, `${username}, servidor offline FeelsBadMan`)
 else { client.say(channel, `${username}, ${format}`)}
 
 }
