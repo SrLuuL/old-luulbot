@@ -2,13 +2,11 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require("node-fetch");
 
-const res = await (await fetch("https://api.mcsrvstat.us/2/0.tcp.sa.ngrok.io:13104")).json();
-const {port, online, version, hostname} = res;
-let playersOnline = res.players.online; let playersMax = res.players.max;
-let format = `Servidor online! Players: ${playersOnline}/${playersMax} | Versão: ${version} | Ip: ${hostname}:${port}`;
+const res = await (await fetch("https://mcapi.xdefcon.com/server/0.tcp.sa.ngrok.io:13104/full/json")).json();
+const {serverStatus, serverip, version, players, maxplayers, ping} = res;
+let format = `Servidor online! Players: ${players}/${maxplayers} | Ip: ${serverip} | Versão: ${version} | Ping: ${ping} ms`;
 
-
-if (online === false) return client.say(channel, `${username}, servidor offline FeelsBadMan`)
+if (serverStatus === offline) return client.say(channel, `${username}, servidor offline FeelsBadMan`)
 else { client.say(channel, `${username}, ${format}`)}
 
 }
