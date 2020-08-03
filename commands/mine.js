@@ -4,8 +4,8 @@ const fetch = require("node-fetch");
 
 const res = await (await fetch("https://api.mcsrvstat.us/2/0.tcp.sa.ngrok.io:13104")).json();
 const {port, online, version, hostname} = res;
-const {online, max} = res.players;
-let format = `Servidor online! Players: ${online}/${max} | Versão: ${version} | Ip: ${hostname}:${port}`;
+let playersOnline = res.players.online; let playersMax = res.players.max;
+let format = `Servidor online! Players: ${playersOnline}/${playersMax} | Versão: ${version} | Ip: ${hostname}:${port}`;
 
 
 if (online === false) return client.say(channel, `${username}, servidor offline FeelsBadMan`)
