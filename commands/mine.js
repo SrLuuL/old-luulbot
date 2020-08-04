@@ -6,7 +6,7 @@ const haste = require("hastebin-gen");
 const resSVInf = await (await fetch("https://mcapi.xdefcon.com/server/0.tcp.sa.ngrok.io:13104/full/json")).json();
 const resSVP = await (await fetch("https://api.mcsrvstat.us/2/0.tcp.sa.ngrok.io:13104")).json();
 const {serverStatus, serverip, version, players, maxplayers, ping} = resSVInf;
-const {list} = resSVP.players.list;
+const {list} = resSVP.players;
 const playersList = await haste(list);
 let format = `Servidor online! Players: ${players}/${maxplayers} | Ip: ${serverip} | Versão: ${version} | Ping: ${ping} ms`;
 
