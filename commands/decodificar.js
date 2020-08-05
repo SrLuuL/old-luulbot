@@ -32,7 +32,7 @@ return client.say(channel, `${username}, ${textBinary}`)
 
 module.exports.config = {
 name: "decodificar",
-aliases: ["dc"],
+aliases: ["dc", "decode"],
 description: "decodifica um texto de uma criptografia. Criptografias: morse, base64 e binário",
 usage: "decodificar [cript] [text]"
 }
