@@ -17,7 +17,7 @@ else {
 
 module.exports.config = {
 name: "mine",
-aliases: ["mn"],
+aliases: ["mn", "server"],
 description: "Informações sobre o servidor de mine de ghiletofar",
 usage: "mine"
 }
