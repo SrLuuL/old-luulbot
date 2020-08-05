@@ -5,7 +5,7 @@ const translate = require("@vitalets/google-translate-api");
 
 const res = await (await fetch("http://www.boredapi.com/api/activity/")).json();
 const {activity} = res;
-const res2 = await translate(activity, {to:pt});
+const res2 = await translate(activity, {to:"pt"});
 
 client.say(channel, `${username}, 🤔 ${res2.text}`)
 
