@@ -2,7 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require("node-fetch");
   
-const resSVInf = await (await fetch("https://mcapi.xdefcon.com/server/0.tcp.sa.ngrok.io:19920/full/json")).json();
+const resSVInf = await (await fetch("https://mcapi.xdefcon.com/server/0.tcp.sa.ngrok.io:14208/full/json")).json();
 const {serverStatus, serverip, version, players, maxplayers, ping} = resSVInf;
 let format = `Servidor online! Players: ${players}/${maxplayers} | Ip: ${serverip} | Versão: ${version} | Ping: ${ping} ms`;
 
