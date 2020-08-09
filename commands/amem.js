@@ -2,7 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 	
 const unirest = require("unirest")	
-const res = await unirest("GET", "https://uncovered-treasure-v1.p.rapidapi.com/random");
+const res = unirest("GET", "https://uncovered-treasure-v1.p.rapidapi.com/random");
 const translate = require("@vitalets/google-translate-api");
 
 		
@@ -12,7 +12,7 @@ res.headers({
 	"useQueryString": true
 });
 
-const {context, text} = res.body.results[0];
+const {context, text} = await res.body.results[0];
 const translated = await translate(text, {to:"pt"});
 	
 client.say(channel, `${username}, (${context}) ${translated}`)
