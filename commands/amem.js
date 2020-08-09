@@ -8,7 +8,7 @@ const res = await (await fetch("https://labs.bible.org/api/?passage=random&type=
 const {bookname, chapter, verse, text} = res[0];
 const translated = await translate(text, {to:"pt"});
 
-client.say(channel, `${username}, (${bookname} ${chapter}:${verse}) ${translated}`);
+client.say(channel, `${username}, (${bookname} ${chapter}:${verse}) ${JSONstringify(translated)}`);
 	
 }
 
