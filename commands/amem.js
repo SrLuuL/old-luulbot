@@ -2,19 +2,14 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 	
 const fetch = require("node-fetch");
-const res = await (await fetch("https://uncovered-treasure-v1.p.rapidapi.com/random", {headers:{
-"x-rapidapi-host": "uncovered-treasure-v1.p.rapidapi.com",
-	"x-rapidapi-key": "0c01d9eb32msh1fed7589a51207dp1e2df4jsne0a034176750",
-	"useQueryString": true
-}})).json
-const translate = require("@vitalets/google-translate-api");
+const translate = require("vitalets/google-translate-api");
 
-		
-const {context, text} = res.results[0];
+const res = await (await fetch("https://labs.bible.org/api/?passage=random&type=json")).json();
+const {bookname, chapter, verse, text} = res[0];
 const translated = await translate(text, {to:"pt"});
-	
-client.say(channel, `${username}, (${context}) ${translated}`)
 
+client.say(channel, `${username}, (${bookname} ${chapter}:${verse}) ${translated}`);
+	
 }
 
 
