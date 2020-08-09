@@ -8,7 +8,8 @@ const {online, max} = res.players;
 const serverOnline = res.online;
 const format = `Servidor Online! Ip:${ip} | Players: ${online}/${max} | Mods: https://bit.ly/3fMCWzv`
 
-if (serverOnline === true) ? client.say(channel, `${username}, ${format}`) : client.say(channel, `${username}, servidor offline FeelsBadMan`);
+if (serverOnline === true) { client.say(channel, `${username}, ${format}`) } 
+else { client.say(channel, `${username}, servidor offline FeelsBadMan`); }
 
 }
 
