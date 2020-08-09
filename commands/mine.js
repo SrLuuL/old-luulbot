@@ -6,7 +6,7 @@ const ip = "kekwdance.pvp.host";
 const res = await (await fetch(`https://api.mcsrvstat.us/2/${ip}`)).json();
 const {online, max} = res.players;
 const serverOnline = res.online;
-const format = `Servidor Online! Ip:${ip} | Players: ${online}/${max} | Mods: https://bit.ly/3fMCWzv`
+const format = `Servidor Online! Ip: ${ip} | Players: ${online}/${max} | Mods: https://bit.ly/3fMCWzv`
 
 if (serverOnline === true) { client.say(channel, `${username}, ${format}`) } 
 else { client.say(channel, `${username}, servidor offline FeelsBadMan`); }
