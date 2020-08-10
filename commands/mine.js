@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-  if (username !== "srluul") return;
+
   
 const fetch = require("node-fetch");
 
