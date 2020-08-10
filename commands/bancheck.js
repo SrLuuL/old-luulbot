@@ -24,9 +24,9 @@ if (banned === false) return client.say(channel, `${username}, ${user} n√£o est√
 let DateBan = new Date(createdAt)
 let DateExpire = new Date(expiresAt)
 DateBan = Date.now() - DateBan
-DateBan = ms(DateBan, {secondsDecimalDigits: 0});
+DateBan = ms(DateBan, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 DateExpire = DateExpire - Date.now()
-DateExpire = ms(DateExpire, {secondsDecimalDigits: 0});
+DateExpire = ms(DateExpire, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 
 
 if (isPermanent === true) {
