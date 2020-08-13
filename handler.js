@@ -39,11 +39,7 @@ if(message.startsWith(prefix + "trivia")) {
    if (username !== "srluul") return;
 
   
-	
-	
-triviaTime();  
-  
-function triviaTime() {
+
 	
 const trivia = require("./data/trivia.json");
 const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
@@ -54,7 +50,7 @@ const category = randomTrivia.category
 client.say(channel, `Categoria: ${category}, ${question}`);
 triviaInfo.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
 triviaCheck()
-}
+
 
 function triviaCheck() {
 setTimeout(async () => {
