@@ -62,7 +62,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 	
 	
 if (triviaInfo.find(i => i.channel === canal)) {
-	let triviaAnswer = triviaInfo.answer
+	let triviaAnswer = triviaInfo.find(i => i.channel === canal).answer
 	if (triviaAnswer.includes(message.toLowerCase())) {
 		let triviaIndex = triviaInfo.find(i => channel === canal);
 		triviaInfo.splice(triviaIndex, 1);
