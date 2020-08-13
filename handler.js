@@ -62,7 +62,7 @@ client.say(channel, `:/ A resposta era: "${answer}"`);
 	
 	
 if (triviaInfo.find(i => i.channel)) {
-	if (message.toLowerCase().includes(triviaAnswer)) {
+	if (message.toLowerCase().includes(answer)) {
 		let triviaIndex = triviaInfo.find(i => channel == canal);
 		triviaInfo.splice(triviaIndex, 1);
 		client.say(channel, `${username} acertou a pergunta :O`);
