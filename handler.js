@@ -43,24 +43,23 @@ triviaTime()
 	
 function triviaTime() {
 
-const trivia = require("./data/trivia.json");
-const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
-const question = randomTrivia.question;
-const answer = randomTrivia.answer;
-const category = randomTrivia.category		
+const quiz = require('./data/trivia.json');
+const item = quiz[Math.floor(Math.random() * quiz.length)];
+let question = item.question
+let correct_answer = item.answer
+let category = item.category	
 	
 client.say(channel, `Categoria: ${category}, ${question}`);
-triviaInfo.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
-triviaCheck(canal)
+triviaInfo.push({"userchannel": channel, "question": question, "correct_answer": correct_answer})
+triviaCheck(channel)
 }
 	
-}
 	
 function triviaCheck(canal) {
 setTimeout(() => {
 let answer = triviaInfo.find(i => i.channel).answer
-if (triviaInfo.find(i => i.userchannel === canal)) {
-let triviaIndex = triviaInfo.find(i => i.userchannel === canal);
+if (triviaInfo.find(i => i.userchannel === channel)) {
+let triviaIndex = triviaInfo.find(i => i.userchannel === channel);
 triviaInfo.splice(triviaIndex, 1);
 client.say(channel, `:/ A resposta era: ${answer}`);
 }
@@ -68,10 +67,10 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 	
 	
-if(triviaInfo.find(i => i.userchannel === channel.replace('#', ''))){
-	 let answer = triviaInfo.find(i => i.channel).answer
-	 if(answer.includes(message.toLowerCase())){
-		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel.replace('#', ''));
+if(triviaInfo.find(i => i.userchannel === channel)){
+	 let correct_answer = triviaInfo.find(i => i.channel).correct_answer
+	 if(correct_answer.includes(message.toLowerCase())){
+		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
 		 client.Trivia.splice(triviaIndex, 1)
 		 client.say(channel, `${username} acertou a pergunta :O`)
 	 }
