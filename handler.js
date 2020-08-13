@@ -33,7 +33,7 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 const res = await (await fetch("http://jservice.io/api/random")).json();
 const {answer, question} = res[0];
-let trivaInfo = [];	
+let triviaInfo = [];	
 	
 if(message.startsWith(prefix + "trivia")) {
    
