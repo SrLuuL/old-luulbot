@@ -49,7 +49,7 @@ triviaTime();
   
 function triviaTime() {
 triviaInfo.push({"channel": canal, "status": "ativo", "answer": answer});
-client.say(channel, `${question}`);
+client.say(channel, `Categoria: ${category}, ${question}`);
 triviaCheck()
 }
 
