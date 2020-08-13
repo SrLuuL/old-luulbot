@@ -57,7 +57,7 @@ triviaCheck(canal)
 }
 	
 function triviaCheck(canal) {
-setTimeout(async () => {
+setTimeout(() => {
 let answer = triviaInfo.find(i => i.channel).answer
 if (triviaInfo.find(i => i.userchannel === canal)) {
 let triviaIndex = triviaInfo.find(i => i.userchannel === canal);
