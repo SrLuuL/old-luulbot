@@ -32,7 +32,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
-const trivia = require("./data/trivia.js");
+const trivia = require("../data/trivia.js");
 const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
 const question = randomTrivia.question;
 const answer = randomTrivia.answer;
