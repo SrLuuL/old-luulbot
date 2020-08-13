@@ -52,15 +52,15 @@ const answer = randomTrivia.answer;
 const category = randomTrivia.category		
 
 client.say(channel, `Categoria: ${category}, ${question}`);
-client.Trivia.push({"channel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
+client.Trivia.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
 triviaCheck()
 }
 
 function triviaCheck() {
 setTimeout(async () => {
-let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer	
-if (client.Trivia.find(i => i.channel === canal)) {
-let triviaIndex = client.Trivia.find(i => i.channel === canal);
+let correct_answer = client.Trivia.find(i => i.userchannel === channel.replace('#', '')).answer	
+if (client.Trivia.find(i => i.userchannel === canal)) {
+let triviaIndex = client.Trivia.find(i => i.userchannel === canal);
 client.Trivia.splice(triviaIndex, 1);
 client.say(channel, `:/ A resposta era: ${correct_answer}`);
 }
@@ -70,10 +70,10 @@ client.say(channel, `:/ A resposta era: ${correct_answer}`);
 }
 	
 
-if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
-	 let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer
+if(client.Trivia.find(i => i.userchannel === channel.replace('#', ''))){
+	 let correct_answer = client.Trivia.find(i => i.userchannel === channel.replace('#', '')).answer
 	 if(correct_answer.includes(message.toLowerCase())){
-		 let triviaIndex = client.Trivia.findIndex(x => x.channel === channel.replace('#', ''));
+		 let triviaIndex = client.Trivia.findIndex(x => x.userchannel === channel.replace('#', ''));
 		 client.Trivia.splice(triviaIndex, 1)
 		 client.say(channel, `${username} acertou a pergunta :O`)
 	 }
