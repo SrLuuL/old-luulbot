@@ -32,21 +32,33 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
-const trivia = require("./data/trivia.json");
-const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
-const question = randomTrivia.question;
-const answer = randomTrivia.answer;
-const category = randomTrivia.category	
+
 	
 	
 if(message.startsWith(prefix + "trivia")) {
    
    if (username !== "srluul") return;
 
-
+  if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
+	 let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer
+	 if(correct_answer.includes(message.toLowerCase())){
+		 let triviaIndex = client.Trivia.findIndex(x => x.channel === channel.replace('#', ''));
+		 client.Trivia.splice(triviaIndex, 1)
+		 client.say(channel, `${username} acertou a pergunta :O`)
+	 }
+   }
+	
+	
 triviaTime();  
   
 function triviaTime() {
+	
+const trivia = require("./data/trivia.json");
+const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
+const question = randomTrivia.question;
+const answer = randomTrivia.answer;
+const category = randomTrivia.category		
+	
 client.Trivia.push({"channel": canal, "status": "ativo", "answer": answer});
 client.say(channel, `Categoria: ${category}, ${question}`);
 triviaCheck()
@@ -57,7 +69,7 @@ setTimeout(async () => {
 if (client.Trivia.find(i => i.channel === canal)) {
 let triviaIndex = client.Trivia.find(i => i.channel === canal);
 client.Trivia.splice(triviaIndex, 1);
-client.say(channel, `:/ A resposta era: ${answer}`);
+client.say(channel, `:/ A resposta era: ${client.Trivia.find(i => i.channel).answer}`);
 }
 }, 35000)
 }
@@ -65,14 +77,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 	
 	
-if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
-	 let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer
-	 if(correct_answer.includes(message.toLowerCase())){
-		 let triviaIndex = client.Trivia.findIndex(x => x.channel === channel.replace('#', ''));
-		 client.Trivia.splice(triviaIndex, 1)
-		 client.say(channel, `${username} acertou a pergunta :O`)
-	 }
-   }
+
 	
 setTimeout(() => {
 	globalCD.delete(username)
