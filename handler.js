@@ -32,14 +32,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
-
-	
-	
-if(message.startsWith(prefix + "trivia")) {
-   
-   if (username !== "srluul") return;
-
-  if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
+if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
 	 let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer
 	 if(correct_answer.includes(message.toLowerCase())){
 		 let triviaIndex = client.Trivia.findIndex(x => x.channel === channel.replace('#', ''));
@@ -47,6 +40,13 @@ if(message.startsWith(prefix + "trivia")) {
 		 client.say(channel, `${username} acertou a pergunta :O`)
 	 }
    }
+	
+	
+if(message.startsWith(prefix + "trivia")) {
+   
+   if (username !== "srluul") return;
+
+  
 	
 	
 triviaTime();  
@@ -58,9 +58,9 @@ const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];
 const question = randomTrivia.question;
 const answer = randomTrivia.answer;
 const category = randomTrivia.category		
-	
-client.Trivia.push({"channel": canal, "status": "ativo", "answer": answer});
+
 client.say(channel, `Categoria: ${category}, ${question}`);
+client.Trivia.push({"channel": canal, "answer": answer});
 triviaCheck()
 }
 
