@@ -54,6 +54,8 @@ client.say(channel, `Categoria: ${category}, ${question}`);
 triviaInfo.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
 triviaCheck(channel)
 }
+	
+triviaTime()	
 
 function triviaCheck(canal) {
 setTimeout(async () => {
