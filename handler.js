@@ -65,12 +65,12 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 	
 	
-  if(client.Trivia.find(i => i.channel === canal)){ 
-	 let correct_answer = client.Trivia.find(i => i.channel === canal).answer 
-	 if(answer.includes(message.toLowerCase())){
-		 let triviaIndex = client.Trivia.findIndex(x => x.channel === canal);
+if(client.Trivia.find(i => i.channel === channel.replace('#', ''))){
+	 let correct_answer = client.Trivia.find(i => i.channel === channel.replace('#', '')).answer
+	 if(correct_answer.includes(message.toLowerCase())){
+		 let triviaIndex = client.Trivia.findIndex(x => x.channel === channel.replace('#', ''));
 		 client.Trivia.splice(triviaIndex, 1)
-		 client.say(channel, `${username} acertou a pergunta :O `)
+		 client.say(channel, `${username} acertou a pergunta :O`)
 	 }
    }
 	
