@@ -61,14 +61,14 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 	
 	
-if (triviaInfo.find(i => i.channel === canal)) {
-	let triviaAnswer = triviaInfo.find(i => i.channel === canal).answer
-	if (triviaAnswer.includes(message.toLowerCase())) {
-		let triviaIndex = triviaInfo.find(i => channel === canal);
-		triviaInfo.splice(triviaIndex, 1);
-		client.say(channel, `${username} acertou a pergunta :O`);
-	}
-}
+  if(triviaInfo.find(i => i.channel === channel.replace('#', ''))){
+	 let correct_answer = triviaInfo.find(i => i.channel === channel.replace('#', '')).answer
+	 if(answer.includes(message.toLowerCase())){
+		 let triviaIndex = triviaInfo.findIndex(x => x.channel === channel.replace('#', ''));
+		 triviaInfo.splice(triviaIndex, 1)
+		 client.say(channel, `${username} acertou a pergunta :O `)
+	 }
+   }
 	
 setTimeout(() => {
 	globalCD.delete(username)
