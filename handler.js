@@ -1,7 +1,6 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
-const triviaInfo = [];
 
 
 let prefix = "=";
@@ -33,14 +32,14 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
 	
-	
+const triviaInfo = [];		
 	
 if(message.startsWith(prefix + "trivia")) {
    
    if (username !== "srluul") return;
 
-  
 
+triviaTime()
 	
 function triviaTime() {
 
@@ -52,11 +51,11 @@ const category = randomTrivia.category
 	
 client.say(channel, `Categoria: ${category}, ${question}`);
 triviaInfo.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
-triviaCheck(channel)
+triviaCheck(canal)
 }
 	
-triviaTime()	
-
+}
+	
 function triviaCheck(canal) {
 setTimeout(async () => {
 let answer = triviaInfo.find(i => i.channel).answer
@@ -68,9 +67,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }, 35000)
 }
 	
-}
 	
-
 if(triviaInfo.find(i => i.userchannel === channel.replace('#', ''))){
 	 let answer = triviaInfo.find(i => i.channel).answer
 	 if(answer.includes(message.toLowerCase())){
