@@ -35,7 +35,7 @@ const res = await (await fetch("http://jservice.io/api/random")).json();
 const {answer, question} = res[0];
 let trivaInfo = [];	
 	
-if(message.startsWith(prefix + "trivia") {
+if(message.startsWith(prefix + "trivia")) {
    
    if (username !== "srluul") return;
 
