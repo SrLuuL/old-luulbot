@@ -43,7 +43,7 @@ if(message.startsWith(prefix + "trivia")) {
 triviaTime();  
   
 function triviaTime() {
-triviaInfo.push({"channel": canal, "status": "ativo", "answer": answer});
+triviaInfo.push({"channel": canal, "status": "ativo", "answer": JSON.stringify(answer)});
 client.say(channel, `${question}`);
 triviaCheck()
 }
