@@ -58,7 +58,7 @@ let correct_answer = triviaInfo.find(i => i.userchannel === channel.replace('#',
 if (triviaInfo.find(i => i.userchannel === canal)) {
 let triviaIndex = triviaInfo.find(i => i.userchannel === canal);
 triviaInfo.splice(triviaIndex, 1);
-client.say(channel, `:/ A resposta era: ${correct_answer}`);
+client.say(channel, `:/ A resposta era: ${answer}`);
 }
 }, 35000)
 }
