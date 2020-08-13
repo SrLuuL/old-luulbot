@@ -5,11 +5,11 @@ module.exports.run = async (client, message, args, username, channel) => {
 const fetch = require("node-fetch");
 
 const ip = "kekwdance.pvp.host";
-const res = await (await fetch(`https://api.mcsrvstat.us/2/${ip}`)).json();
-const serverOnline = res.online;
-if (serverOnline === false) return client.say(channel, `${username}, servidor offline FeelsBadMan`);
-const {online, max, version} = res.players;
-const format = `Servidor Online! Ip: ${ip} | Players: ${online}/${max} | Mods: https://bit.ly/3fMCWzv | Versão: ${version}`
+const res = await (await fetch(`https://api.minetools.eu/ping/${ip}/25576`)).json();
+if (res.error) return client.say(channel, `${username}, servidor offline FeelsBadMan`);
+const {online, max} = res.players;
+const {name} = res.version;
+const format = `Servidor Online! Ip: ${ip} | Players: ${online}/${max} | Mods: https://bit.ly/3fMCWzv | Versão: ${name}`
 
 client.say(channel, `${username}, ${format}`);
 
