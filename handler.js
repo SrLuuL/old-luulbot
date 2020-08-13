@@ -31,8 +31,13 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
-const res = await (await fetch("http://jservice.io/api/random")).json();
-const {answer, question} = res[0];
+
+const trivia = require("./data/trivia.js");
+const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
+const question = randomTrivia.question;
+const answer = randomTrivia.answer;
+const category = randomTrivia.category	
+	
 let triviaInfo = [];	
 	
 if(message.startsWith(prefix + "trivia")) {
@@ -43,7 +48,7 @@ if(message.startsWith(prefix + "trivia")) {
 triviaTime();  
   
 function triviaTime() {
-triviaInfo.push({"channel": canal, "status": "ativo", "answer": JSON.stringify(answer)});
+triviaInfo.push({"channel": canal, "status": "ativo", "answer": answer});
 client.say(channel, `${question}`);
 triviaCheck()
 }
@@ -62,7 +67,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 	
 	
   if(triviaInfo.find(i => i.channel === channel.replace('#', ''))){
-	 let correct_answer = JSON.parse(JSON.stringify(answer));
+	 let correct_answer = triviaInfo.find(i => i.channel).answer;
 	 if(correct_answer.includes(message.toLowerCase())){
 		 let triviaIndex = triviaInfo.findIndex(x => x.channel === channel.replace('#', ''));
 		 triviaInfo.splice(triviaIndex, 1)
