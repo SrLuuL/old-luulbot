@@ -10,8 +10,9 @@ const {answer, question} = res[0];
 let trivaInfo = [];
 let canal = channel.replace("#", "");
 
+triviaTime();  
+  
 function triviaTime() {
-
 triviaInfo.push({"channel": channel, "status": "ativo"});
 client.say(channel, `${question}`);
 triviaCheck()
@@ -27,6 +28,8 @@ client.say(channel, `:/ A resposta era: "${answer}"`);
 }, 45000)
 }
 
+
+  
 }
 
 module.exports.config = {
