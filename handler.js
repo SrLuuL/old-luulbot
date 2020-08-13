@@ -32,6 +32,11 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
+const trivia = require("./data/trivia.json");
+const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
+const question = randomTrivia.question;
+const answer = randomTrivia.answer;
+const category = randomTrivia.category			
 	
 	
 if(message.startsWith(prefix + "trivia")) {
@@ -41,11 +46,7 @@ if(message.startsWith(prefix + "trivia")) {
   
 
 	
-const trivia = require("./data/trivia.json");
-const randomTrivia = trivia[Math.floor(Math.random() * trivia.length)];	
-const question = randomTrivia.question;
-const answer = randomTrivia.answer;
-const category = randomTrivia.category		
+
 
 client.say(channel, `Categoria: ${category}, ${question}`);
 triviaInfo.push({"userchannel": canal, "status": 'ativo', "question": question, "correct_answer": answer})
