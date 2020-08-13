@@ -1,7 +1,6 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
-const triviaInfo = require("./commands/trivia.js").triviaInfo
-const triviaAnswer = require("./commands/trivia.js").answer
+const fetch = require("node-fetch");
 
 
 
@@ -31,6 +30,35 @@ globalCD.add(username);
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
+
+const res = await (await fetch("http://jservice.io/api/random")).json();
+const {answer, question} = res[0];
+let trivaInfo = [];	
+	
+if(message.startsWith(prefix + "trivia") {
+   
+   if (username !== "srluul") return;
+
+
+triviaTime();  
+  
+function triviaTime() {
+triviaInfo.push({"channel": channel, "status": "ativo"});
+client.say(channel, `${question}`);
+triviaCheck()
+}
+
+function triviaCheck() {
+setTimeout(async () => {
+if (triviaInfo.find(i => i.channel == canal)) {
+let triviaIndex = triviaInfo.find(i => i.channel == canal);
+triviaInfo.splice(triviaIndex, 1);
+client.say(channel, `:/ A resposta era: "${answer}"`);
+}
+}, 45000)
+}
+	
+}
 	
 	
 if (triviaInfo.find(i => i.channel)) {
