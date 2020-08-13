@@ -43,15 +43,15 @@ if(message.startsWith(prefix + "trivia")) {
 triviaTime();  
   
 function triviaTime() {
-triviaInfo.push({"channel": channel, "status": "ativo"});
+triviaInfo.push({"channel": canal, "status": "ativo"});
 client.say(channel, `${question}`);
 triviaCheck()
 }
 
 function triviaCheck() {
 setTimeout(async () => {
-if (triviaInfo.find(i => i.channel == canal)) {
-let triviaIndex = triviaInfo.find(i => i.channel == canal);
+if (triviaInfo.find(i => i.channel === canal)) {
+let triviaIndex = triviaInfo.find(i => i.channel === canal);
 triviaInfo.splice(triviaIndex, 1);
 client.say(channel, `:/ A resposta era: "${answer}"`);
 }
@@ -61,9 +61,9 @@ client.say(channel, `:/ A resposta era: "${answer}"`);
 }
 	
 	
-if (triviaInfo.find(i => i.channel)) {
+if (triviaInfo.find(i => i.channel === canal)) {
 	if (message.toLowerCase().includes(answer)) {
-		let triviaIndex = triviaInfo.find(i => channel == canal);
+		let triviaIndex = triviaInfo.find(i => channel === canal);
 		triviaInfo.splice(triviaIndex, 1);
 		client.say(channel, `${username} acertou a pergunta :O`);
 	}
