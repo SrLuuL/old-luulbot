@@ -61,7 +61,7 @@ let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 if (triviaInfo.find(i => i.userchannel === channel)) {
 let triviaIndex = triviaInfo.find(i => i.userchannel === channel);
 triviaInfo.splice(triviaIndex, 1);
-client.say(channel, `:/ A resposta era: ${answer.charAt(0).toUpperCase() + answer.slice(1)}`);
+client.say(channel, `:/ A resposta era: ${answer}`);
 }
 }, 35000)
 }
