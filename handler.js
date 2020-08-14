@@ -19,7 +19,7 @@ client.on("message", async (channel, user, message, self) => {
 	let username = user.username
 	
 	if (trivia.running === true) {
-	let answer = questions.find(i => i.channel).answer
+	let answer = questions.find(i => i.channel === channel).answer
 	if (answer.includes(message.toLowerCase())) {
     client.say(channel, `${username}, acertou a pergunta :O`)
     trivia.running = false
@@ -90,8 +90,9 @@ function startTrivia() {
 function checkTrivia() {
 	setTimeout(async () => {
 if (trivia.running) {
-	let answer = questions.find(i => i.channel).answer
-	client.say(channel, `:/ A resposta era: ${answer}`)
+	let answer = questions.find(i => i.channel === channel).answer[0]
+	let capAnswer = answer.charAt(0).toUpperCase() + answer.slice(1);
+	client.say(channel, `:/ A resposta era: ${capAnswer}`)
 	trivia.running = false
 	questions = [];
 }
