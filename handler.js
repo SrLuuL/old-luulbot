@@ -9,58 +9,6 @@ let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
 
-client.on("chat", async (channel, user, message, self) => {
-	
-	const triviaInfo = [];	
-	
-	if(message.startsWith(prefix + "trivia")) {
-   
-if (user.username !== "srluul") return;
-if (self) return;	
-
-
-
-triviaTime()
-	
-function triviaTime() {
-
-const quiz = require('./data/trivia.json');
-const item = quiz[Math.floor(Math.random() * quiz.length)];
-let question = item.question
-let correct_answer = item.answer
-let category = item.category	
-	
-client.say(channel, `Categoria: ${category}, ${question}`);
-triviaInfo.push({"userchannel": channel, "question": question, "correct_answer": correct_answer})
-triviaCheck()
-}
-	
-	
-function triviaCheck() {
-setTimeout(() => {
-let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
-if (triviaInfo.find(i => i.userchannel === channel)) {
-let triviaIndex = triviaInfo.find(i => i.userchannel === channel);
-triviaInfo.splice(triviaIndex, 1);
-client.say(channel, `:/ A resposta era: ${answer}`);
-}
-}, 35000)
-}
-
-	}		
-		
-		if (triviaInfo.find(i => i.userchannel === channel)){
-	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
-	 if(answer.includes(message.toLowerCase())){
-		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
-		 client.Trivia.splice(triviaIndex, 1)
-		 client.say(channel, `${user.username} acertou a pergunta :O`)
-	 }
-   }	
-		
-	});
-
-
 
 
 
