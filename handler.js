@@ -48,8 +48,8 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
 
-function delay(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms))
+function delay(ms) {
+  return new Promise(res => setTimeout(res, ms))
 }
 	
 	
