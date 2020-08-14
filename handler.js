@@ -48,7 +48,9 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
 
-
+function delay(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
 	
 	
 	
@@ -61,8 +63,15 @@ if (trivia.running === true) return
 trivia.running = true
 	
 	
+	if (args[0]) {
+		for(let x = 0; x < args[0]; x++) {
+			startTrivia()
+			await delay(5000)
+		}
+	else {
 startTrivia()
-	
+	}
+		
 function startTrivia() {
 	
 	const quiz = require("./data/trivia.json")
