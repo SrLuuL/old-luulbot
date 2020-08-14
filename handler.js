@@ -16,16 +16,8 @@ client.on("message", async (channel, user, message, self) => {
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
 
-	const triviaInfo = [];	
 	
-	if(triviaInfo.find(i => i.channel === channel)){
-	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
-	 if(answer.includes(message.toLowerCase())){
-		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
-		 client.Trivia.splice(triviaIndex, 1)
-		 client.say(channel, `${username} acertou a pergunta :O`)
-	 }
-   }	
+	
 	
 	
 	
@@ -42,15 +34,22 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
-		
+
 	
-if(message.startsWith(prefix + "trivia")) {
+setTimeout(() => {
+	globalCD.delete(username)
+}, 5000);
+
+});
+
+
+
+client.on("chat", async (channel, user, message, self) => {
+	if(message.startsWith(prefix + "trivia")) {
    
    if (username !== "srluul") return;
 
-	
-	
-	
+const triviaInfo = [];	
 
 triviaTime()
 	
@@ -78,15 +77,14 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 }, 35000)
 }
-	
-
-}	
-	
-
-
-	
-setTimeout(() => {
-	globalCD.delete(username)
-}, 5000);
-
-});
+			
+		if(triviaInfo.find(i => i.channel === channel)){
+	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
+	 if(answer.includes(message.toLowerCase())){
+		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
+		 client.Trivia.splice(triviaIndex, 1)
+		 client.say(channel, `${username} acertou a pergunta :O`)
+	 }
+   }	
+		
+	});
