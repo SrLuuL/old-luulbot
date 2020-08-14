@@ -20,7 +20,7 @@ client.on("message", async (channel, user, message, self) => {
 	
 	if (trivia.running === true) {
 	let answer = questions.find(i => i.channel).answer
-	if (answer.toLowerCase().includes(message.toLowerCase())) {
+	if (answer.includes(message.toLowerCase())) {
     client.say(channel, `${username}, acertou a pergunta :O`)
     trivia.running = false
     let triviaIndex = questions.find(i => i.channel === channel)
