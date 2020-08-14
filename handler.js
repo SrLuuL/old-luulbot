@@ -8,13 +8,21 @@ let globalCD = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
-
+const trivia = {
+	running: false
+}
 
 
 
 client.on("message", async (channel, user, message, self) => {
 	
 	let username = user.username
+	
+	if (trivia.running === true) {
+	setTimeout(() => console.log("a"), 1000)
+}
+	
+	
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
@@ -32,16 +40,10 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
-const trivia = {
-	running: false
-}
+
 
 let questions = [];
 	
-	
-	if (trivia.running === true) {
-	setTimeout(() => console.log("a"), 1000)
-}
 	
 	
 if (message.startsWith(prefix + "trivia")) {
