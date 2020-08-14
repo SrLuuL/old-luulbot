@@ -16,11 +16,6 @@ client.on("message", async (channel, user, message, self) => {
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
 
-	
-	
-	
-	
-	
 	if (self) return;
 	
 	if (globalCD.has(username)) return;
@@ -45,11 +40,15 @@ setTimeout(() => {
 
 
 client.on("chat", async (channel, user, message, self) => {
+	
+	const triviaInfo = [];	
+	
 	if(message.startsWith(prefix + "trivia")) {
    
-   if (username !== "srluul") return;
+if (username !== "srluul") return;
+if (self) return;	
 
-const triviaInfo = [];	
+
 
 triviaTime()
 	
@@ -77,7 +76,9 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }
 }, 35000)
 }
-			
+
+	}		
+		
 		if(triviaInfo.find(i => i.channel === channel)){
 	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 	 if(answer.includes(message.toLowerCase())){
