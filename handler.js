@@ -32,7 +32,59 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
+const trivia = {
+	running: false
+}
 
+const questions = [];
+	
+if (message.startsWith(prefix + "trivia") {
+    
+    if (username !== "srluul") return;
+
+    if (trivia.running) return;
+	
+trivia.running = true
+	
+function startTrivia() {
+	
+	const quiz = require("./data/trivia.js")
+	const items = quiz[Math.floor(Math.random() * quiz.length)];
+	
+	const question = items.question
+	const answer = items.answer
+	const category = items.category
+	
+	questions.push({
+		category: category,
+		answer: answer,
+		question: question
+})	
+
+	return questions
+	
+	client.say(channel, `Categoria: ${category} | ${question}`)
+	checkTrivia()
+}
+	
+function checkTrivia() {
+	setTimeout(async () => {
+if (trivia.running) {
+	client.say(channel, `:/ A resposta era: ${questions.answer}`)
+	trivia.running = false
+	questions = [];
+}
+	}, 35000)
+}
+	
+	if (trivia.running) {
+if (questions.answer.include(message.toLowerCase())) {
+    client.say(channel, `${username} acertou a pergunta :O`)
+	trivia.running = false
+	questions = [];
+}
+}
+	
 	
 setTimeout(() => {
 	globalCD.delete(username)
