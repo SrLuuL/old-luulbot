@@ -25,6 +25,7 @@ client.on("message", async (channel, user, message, self) => {
     trivia.running = false
     questions = [];
 }
+	}
 	
 	
 	let args = message.slice(prefix.length).trim().split(/ +/g);
