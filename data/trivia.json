@@ -13,5 +13,15 @@
    "category": "Geografia",
    "question": "Qual é a maior península?",
   "answer": ["arabica", "peninsula arabica"]
+  },
+   {
+   "category": "Eventos",
+   "question": "Qual cidade irá hospedar as Olímpiadas de Verão em 2028?",
+  "answer": ["los angeles"]
+  },
+  {
+   "category": "Natureza",
+   "question": "Qual animal terrestre é o mais rápido?",
+  "answer": ["guepardo", "cheetah"]
   }
 ]
