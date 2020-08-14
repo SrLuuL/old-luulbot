@@ -39,7 +39,7 @@ const trivia = {
 let questions = [];
 	
 	
-	if (trivia.running) {
+	if (trivia.running === true) {
 	setTimeout(() => console.log("a"), 1000)
 }
 	
