@@ -23,7 +23,8 @@ client.on("message", async (channel, user, message, self) => {
 	if (answer.includes(message.toLowerCase())) {
     client.say(channel, `${username}, acertou a pergunta :O`)
     trivia.running = false
-    questions = [];
+    let triviaIndex = questions.find(i => i.channel === channel)
+    questions.splice(triviaIndex, 1)
 }
 	}
 	
@@ -90,12 +91,12 @@ function startTrivia() {
 function checkTrivia() {
 	setTimeout(async () => {
 if (trivia.running) {
-	let canal = questions.find(i => i.channel).channel
 	let answer = questions.find(i => i.channel).answer[0]
 	let capAnswer = answer.charAt(0).toUpperCase() + answer.slice(1);
-	client.say(canal, `:/ A resposta era: ${capAnswer}`)
+	client.say(channel, `:/ A resposta era: ${capAnswer}`)
 	trivia.running = false
-	questions = [];
+	let triviaIndex = questions.find(i => i.channel === channel)
+	questions.splice(triviaIndex, 1)
 }
 	}, 35000)
 }
