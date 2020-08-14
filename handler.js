@@ -45,7 +45,7 @@ client.on("chat", async (channel, user, message, self) => {
 	
 	if(message.startsWith(prefix + "trivia")) {
    
-if (username !== "srluul") return;
+if (user.username !== "srluul") return;
 if (self) return;	
 
 
@@ -84,7 +84,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 	 if(answer.includes(message.toLowerCase())){
 		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
 		 client.Trivia.splice(triviaIndex, 1)
-		 client.say(channel, `${username} acertou a pergunta :O`)
+		 client.say(channel, `${user.username} acertou a pergunta :O`)
 	 }
    }	
 		
