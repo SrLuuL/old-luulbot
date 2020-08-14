@@ -57,7 +57,7 @@ triviaCheck(channel)
 	
 function triviaCheck(canal) {
 setTimeout(() => {
-let answer = triviaInfo.find(i => i.userchannel === channel).answer
+let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 if (triviaInfo.find(i => i.userchannel === channel)) {
 let triviaIndex = triviaInfo.find(i => i.userchannel === channel);
 triviaInfo.splice(triviaIndex, 1);
@@ -70,7 +70,7 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }	
 	
 if(triviaInfo.find(i => i.userchannel === channel)){
-	 let correct_answer = triviaInfo.find(i => i.userchannel).correct_answer
+	 let correct_answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 	 if(correct_answer.includes(message.toLowerCase())){
 		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
 		 client.Trivia.splice(triviaIndex, 1)
