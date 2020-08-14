@@ -40,7 +40,7 @@ let questions = [];
 	
 	
 	if (trivia.running) {
-	console.log("a")
+	setTimeout(() => console.log("a"), 1000)
 }
 	
 	
