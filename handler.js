@@ -52,9 +52,11 @@ if (message.startsWith(prefix + "trivia")) {
     
     if (username !== "srluul") return;
 
-    if (!trivia.running) return;
 	
 trivia.running = true
+	
+	
+startTrivia()
 	
 function startTrivia() {
 	
@@ -77,7 +79,7 @@ function startTrivia() {
 	checkTrivia()
 }
 	
-startTrivia()	
+
 	
 function checkTrivia() {
 	setTimeout(async () => {
