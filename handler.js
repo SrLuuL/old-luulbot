@@ -57,7 +57,7 @@ triviaCheck(channel)
 	
 function triviaCheck(canal) {
 setTimeout(() => {
-let answer = triviaInfo.find(i => i.channel).answer
+let answer = triviaInfo.find(i => i.userchannel === channel).answer
 if (triviaInfo.find(i => i.userchannel === channel)) {
 let triviaIndex = triviaInfo.find(i => i.userchannel === channel);
 triviaInfo.splice(triviaIndex, 1);
