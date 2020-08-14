@@ -66,7 +66,7 @@ trivia.running = true
 	if (args[0]) {
 		for(let x = 0; x < args[0]; x++) {
 			startTrivia()
-			await delay(5000)
+			await delay(40000)
 		}
 	}
 	else {
