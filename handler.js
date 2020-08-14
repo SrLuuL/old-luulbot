@@ -68,6 +68,7 @@ trivia.running = true
 			startTrivia()
 			await delay(5000)
 		}
+	}
 	else {
 startTrivia()
 	}
