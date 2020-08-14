@@ -53,7 +53,8 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 	
 if (message.startsWith(prefix + "trivia")) {
     
-    if (username !== "srluul") return;
+if (username !== "srluul") return;
+if (trivia.running === true) return
 
 	
 trivia.running = true
