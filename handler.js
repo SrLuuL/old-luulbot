@@ -66,6 +66,8 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }, 35000)
 }
 	
+
+}	
 	
 if(triviaInfo.find(i => i.userchannel === channel)){
 	 let correct_answer = triviaInfo.find(i => i.userchannel).correct_answer
