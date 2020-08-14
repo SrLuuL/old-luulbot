@@ -73,10 +73,12 @@ function startTrivia() {
 		question: question
 })	
 
-	return questions
+	
 	
 	client.say(channel, `Categoria: ${category} | ${question}`)
 	checkTrivia()
+	
+	return questions
 }
 	
 
