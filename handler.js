@@ -69,7 +69,7 @@ client.say(channel, `:/ A resposta era: ${answer.charAt(0).toUpperCase() + answe
 
 }	
 	
-if(triviaInfo.find(i => i.userchannel === channel)){
+if(triviaInfo[0]){
 	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 	 if(answer.includes(message.toLowerCase())){
 		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
