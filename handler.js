@@ -40,7 +40,8 @@ const questions = [];
 	
 	
 	if (trivia.running) {
-if (questions.answer.include(message.toLowerCase())) {
+	let answer = questions.find(i => i.channel).answer	
+if (answer.include(message.toLowerCase())) {
     client.say(channel, `${username} acertou a pergunta :O`)
 	trivia.running = false
 	questions = [];
@@ -70,7 +71,8 @@ function startTrivia() {
 	questions.push({
 		category: category,
 		answer: answer,
-		question: question
+		question: question,
+		channel: channel
 })	
 
 	
@@ -78,7 +80,6 @@ function startTrivia() {
 	client.say(channel, `Categoria: ${category} | ${question}`)
 	checkTrivia()
 	
-	return questions
 }
 	
 
@@ -86,12 +87,14 @@ function startTrivia() {
 function checkTrivia() {
 	setTimeout(async () => {
 if (trivia.running) {
-	client.say(channel, `:/ A resposta era: ${questions.answer}`)
+	let answer = questions.find(i => i.channel).answer
+	client.say(channel, `:/ A resposta era: ${answer}`)
 	trivia.running = false
 	questions = [];
 }
 	}, 35000)
 }
+	
 	
 }	
 	
