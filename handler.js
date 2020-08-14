@@ -12,14 +12,18 @@ const trivia = {
 	running: false
 }
 
-
+let questions = [];
 
 client.on("message", async (channel, user, message, self) => {
 	
 	let username = user.username
 	
 	if (trivia.running === true) {
-	setTimeout(() => console.log("a"), 1000)
+	let answer = questions.find(i => i.channel).answer
+	if (answer.includes(message.toLowerCase()) {
+    client.say(channel, `${username}, acertou a pergunta :O`)
+    trivia.running = false
+    questions = [];
 }
 	
 	
@@ -42,7 +46,7 @@ if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
 
 
-let questions = [];
+
 	
 	
 	
