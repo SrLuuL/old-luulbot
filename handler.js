@@ -36,16 +36,11 @@ const trivia = {
 	running: false
 }
 
-const questions = [];
+let questions = [];
 	
 	
 	if (trivia.running) {
-	let answer = questions.find(i => i.channel).answer	
-if (answer.include(message.toLowerCase())) {
-    client.say(channel, `${username} acertou a pergunta :O`)
-	trivia.running = false
-	questions = [];
-}
+	console.log("a")
 }
 	
 	
