@@ -38,7 +38,17 @@ const trivia = {
 
 const questions = [];
 	
-if (message.startsWith(prefix + "trivia") {
+	
+	if (trivia.running) {
+if (questions.answer.include(message.toLowerCase())) {
+    client.say(channel, `${username} acertou a pergunta :O`)
+	trivia.running = false
+	questions = [];
+}
+}
+	
+	
+if (message.startsWith(prefix + "trivia")) {
     
     if (username !== "srluul") return;
 
@@ -67,6 +77,8 @@ function startTrivia() {
 	checkTrivia()
 }
 	
+startTrivia()	
+	
 function checkTrivia() {
 	setTimeout(async () => {
 if (trivia.running) {
@@ -77,13 +89,7 @@ if (trivia.running) {
 	}, 35000)
 }
 	
-	if (trivia.running) {
-if (questions.answer.include(message.toLowerCase())) {
-    client.say(channel, `${username} acertou a pergunta :O`)
-	trivia.running = false
-	questions = [];
-}
-}
+}	
 	
 	
 setTimeout(() => {
