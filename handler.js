@@ -90,9 +90,10 @@ function startTrivia() {
 function checkTrivia() {
 	setTimeout(async () => {
 if (trivia.running) {
+	let canal = questions.find(i => i.channel).channel
 	let answer = questions.find(i => i.channel).answer[0]
 	let capAnswer = answer.charAt(0).toUpperCase() + answer.slice(1);
-	client.say(channel, `:/ A resposta era: ${capAnswer}`)
+	client.say(canal, `:/ A resposta era: ${capAnswer}`)
 	trivia.running = false
 	questions = [];
 }
