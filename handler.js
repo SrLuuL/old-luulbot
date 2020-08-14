@@ -51,11 +51,11 @@ let category = item.category
 	
 client.say(channel, `Categoria: ${category}, ${question}`);
 triviaInfo.push({"userchannel": channel, "question": question, "correct_answer": correct_answer})
-triviaCheck(channel)
+triviaCheck()
 }
 	
 	
-function triviaCheck(canal) {
+function triviaCheck() {
 setTimeout(() => {
 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
 if (triviaInfo.find(i => i.userchannel === channel)) {
@@ -70,8 +70,8 @@ client.say(channel, `:/ A resposta era: ${answer}`);
 }	
 	
 if(triviaInfo.find(i => i.userchannel === channel)){
-	 let correct_answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
-	 if(correct_answer.includes(message.toLowerCase())){
+	 let answer = triviaInfo.find(i => i.userchannel === channel).correct_answer
+	 if(answer.includes(message.toLowerCase())){
 		 let triviaIndex = triviaInfo.findIndex(x => x.userchannel === channel);
 		 client.Trivia.splice(triviaIndex, 1)
 		 client.say(channel, `${username} acertou a pergunta :O`)
