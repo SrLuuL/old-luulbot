@@ -1,7 +1,11 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
-const trivia = require("./commands/trivia.js").questions
+
+const questions = [];
+const trivia = {
+running: false
+}
 
 let prefix = "=";
 let globalCD = new Set();
@@ -22,11 +26,11 @@ client.on("message", async (channel, user, message, self) => {
 	if (globalCD.has(username)) return;
 	
 	
-	if (trivia.find(i => i.channel === channel)) {
-		let answer = trivia.find(i => i.channel === channel).answer;
+	if (questions.find(i => i.channel === channel)) {
+		let answer = questions.find(i => i.channel === channel).answer;
 		if (answer.includes(message.toLowerCase())) {
 		    client.say(channel, `${username} acertou a pergunta!`)
-		    let triviaIndex = trivia.findIndex(i => i.channel === channel);
+		    let triviaIndex = questions.findIndex(i => i.channel === channel);
 		    questions.splice(triviaIndex, 1)
 		}
 	}
@@ -45,6 +49,41 @@ setTimeout(() => {
 	globalCD.delete(username)
 }, 5000);
 
+	
+	
+if (message.startsWith(prefix + "trivia")) {	
+	
+
+
+startTrivia()
+
+function startTrivia() {
+
+const quiz = require("./data/trivia.js");
+const item = quiz[Math.floor(Math.random() * quiz.length)];
+
+const question = item.question;
+const answer = item.answer;
+const category = item.category;
+
+client.say(channel, `Categoria: ${category} | ${question}`);
+questions.push({channel: channel, question: question, answer: answer, category: category});
+checkTrivia()
+}
+
+function checkTrivia() {
+if (questions.find(i => i.channel === channel)) {
+setTimeout(async () => {
+const answer = questions.find(i => i.channel === channel).answer
+client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
+let triviaIndex = questions.findIndex(i => i.channel === channel);
+questions.splice(triviaIndex, 1)
+}, 35000)
+}  
+}  
+
+}	
+	
 });
 
 
