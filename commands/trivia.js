@@ -13,7 +13,7 @@ const quiz = require("../data/trivia.js");
 const item = quiz[Math.floor(Math.random() * quiz.length)];
 
 const question = item.question;
-const asnwer = item.answer;
+const answer = item.answer;
 const category = item.category;
 
 client.say(channel, `Categoria: ${category} | ${question}`);
@@ -22,7 +22,7 @@ checkTrivia()
 }
 
 function checkTrivia() {
-if (questions.find(i = > i.channel === channel)) {
+if (questions.find(i => i.channel === channel)) {
 setTimeout(async () => {
 const answer = questions.find(i => i.channel === channel).answer
 client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
