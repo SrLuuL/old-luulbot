@@ -75,7 +75,7 @@ checkTrivia()
 function checkTrivia() {
 if (questions.find(i => i.channel === channel)) {
 setTimeout(async () => {
-const answer = questions.find(i => i.channel === channel).answer
+let answer = questions.find(i => i.channel === channel).answer[0];
 client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
 let triviaIndex = questions.findIndex(i => i.channel === channel);
 questions.splice(triviaIndex, 1)
