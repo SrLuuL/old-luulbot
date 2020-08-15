@@ -5,6 +5,8 @@ const trivia = {
 running: false
 }
 
+startTrivia()
+
 function startTrivia() {
 
 const quiz = require("../data/trivia.js");
