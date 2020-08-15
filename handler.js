@@ -60,7 +60,7 @@ startTrivia()
 
 function startTrivia() {
 
-const quiz = require("./data/trivia.js");
+const quiz = require("./data/trivia.json");
 const item = quiz[Math.floor(Math.random() * quiz.length)];
 
 const question = item.question;
