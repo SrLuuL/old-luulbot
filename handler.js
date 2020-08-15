@@ -1,7 +1,7 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
-
+const trivia = require("./commands/trivia.js").questions
 
 let prefix = "=";
 let globalCD = new Set();
@@ -20,6 +20,17 @@ client.on("message", async (channel, user, message, self) => {
 	if (self) return;
 	
 	if (globalCD.has(username)) return;
+	
+	
+	if (trivia.find(i => i.channel === channel)) {
+		let answer = trivia.find(i => i.channel === channel).answer;
+		if (answer.includes(message.toLowerCase())) {
+		    client.say(channel, `${username} acertou a pergunta!`)
+		    let triviaIndex = trivia.findIndex(i => i.channel === channel);
+		    questions.splice(triviaIndex, 1)
+		}
+	}
+	
 	
 	if (!message.startsWith(prefix)) return;
 
