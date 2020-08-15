@@ -28,9 +28,9 @@ const answer = questions.find(i => i.channel === channel).answer
 client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
 let triviaIndex = questions.findIndex(i => i.channel === channel);
 questions.splice(triviaIndex, 1)
-}
 }, 35000)
-}
+}  
+}  
 
 }
 
