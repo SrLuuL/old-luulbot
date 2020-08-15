@@ -26,12 +26,13 @@ client.on("message", async (channel, user, message, self) => {
 	if (globalCD.has(username)) return;
 	
 	
-	if (questions.find(i => i.channel === channel)) {
+	if (trivia.running) {
 		let answer = questions.find(i => i.channel === channel).answer;
 		if (answer.includes(message.toLowerCase())) {
 		    client.say(channel, `${username} acertou a pergunta!`)
 		    let triviaIndex = questions.findIndex(i => i.channel === channel);
 		    questions.splice(triviaIndex, 1)
+		    trivia.running === false;
 		}
 	}
 	
@@ -69,16 +70,18 @@ const category = item.category;
 
 client.say(channel, `Categoria: ${category} | ${question}`);
 questions.push({channel: channel, question: question, answer: answer, category: category});
+trivia.running === true;
 checkTrivia()
 }
 
 function checkTrivia() {
-if (questions.find(i => i.channel === channel)) {
+if (trivia.running) {
 setTimeout(async () => {
 let answer = questions.find(i => i.channel === channel).answer[0];
 client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
 let triviaIndex = questions.findIndex(i => i.channel === channel);
 questions.splice(triviaIndex, 1)
+trivia.running === false;	
 }, 35000)
 }  
 }  
