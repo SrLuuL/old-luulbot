@@ -53,7 +53,8 @@ setTimeout(() => {
 	
 if (message.startsWith(prefix + "trivia")) {	
 	
-
+if (username !== "srluul") return;
+if (trivia.running) return;	
 
 startTrivia()
 
