@@ -26,7 +26,7 @@ client.on("message", async (channel, user, message, self) => {
 	if (globalCD.has(username)) return;
 	
 	
-	if (trivia.running) {
+	if (trivia.running === true) {
 		let answer = questions.find(i => i.channel === channel).answer;
 		if (answer.includes(message.toLowerCase())) {
 		    client.say(channel, `${username} acertou a pergunta!`)
@@ -55,7 +55,7 @@ setTimeout(() => {
 if (message.startsWith(prefix + "trivia")) {	
 	
 if (username !== "srluul") return;
-if (trivia.running) return;	
+if (trivia.running === true) return;	
 
 startTrivia()
 
@@ -75,7 +75,7 @@ checkTrivia()
 }
 
 function checkTrivia() {
-if (trivia.running) {
+if (trivia.running === true) {
 setTimeout(async () => {
 let answer = questions.find(i => i.channel === channel).answer[0];
 client.say(channel, `Ninguém acertou a trivia :/ A resposta era: ${answer}`)
