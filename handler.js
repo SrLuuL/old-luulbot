@@ -59,9 +59,9 @@ if (message.startsWith(prefix + "trivia")) {
 		
 		const question = items.question
 		const category = items.category
-		const answer = items.category
+		const answer = items.answer
 		
-		client.say(channel, `Categoria: ${category} | ${answer}`)
+		client.say(channel, `Categoria: ${category} | ${question}`)
 		trivia.push({ channel: channel, running: true, answer: answer });
 		checkTrivia()
 	}
