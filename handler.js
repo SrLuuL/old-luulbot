@@ -77,6 +77,9 @@ if (message.startsWith(prefix + "trivia")) {
 			}, 35000)
 		}
 	}
+	
+}
+	
 });
 
 
