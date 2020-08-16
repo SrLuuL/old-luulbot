@@ -71,9 +71,7 @@ if (message.startsWith(prefix + "trivia")) {
 	
 	function checkTrivia() {
 		setTimeout(async() => {
-			if (!trivia.find(i => i.running)) {
-				break
-			}
+			if (!trivia.find(i => i.running)) return;
 			if (trivia.find(i => i.channel === channel)) {
 				let answer = trivia.find(i => i.channel === channel).answer[0];
 				client.say(channel, `Ninguém acertou :/, a resposta era: ${answer}`)
