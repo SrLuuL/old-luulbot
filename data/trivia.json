@@ -12,16 +12,52 @@
   {
    "category": "Geografia",
    "question": "Qual é a maior península?",
-  "answer": ["Aabica", "peninsula arabica"]
+  "answer": ["Aabica"]
   },
    {
    "category": "Eventos",
    "question": "Qual cidade irá hospedar as Olímpiadas de Verão em 2028?",
-  "answer": ["los angeles"]
+  "answer": ["Los Angeles"]
   },
   {
    "category": "Natureza",
    "question": "Qual animal terrestre é o mais rápido?",
-  "answer": ["guepardo", "cheetah"]
+  "answer": ["Guepardo"]
+  },
+   {
+   "category": "Animes",
+   "question": "Quem é o protagonista principal de Steins Gate?",
+  "answer": ["Okabe Rintaro"]
+  },
+  {
+   "category": "Geografia",
+   "question": "Qual é a maior cachoeira que existe?",
+  "answer": ["Salto Angel"]
+  },
+  {
+   "category": "Twitch",
+   "question": "Quanto a Amazon pagou na Twitch?",
+  "answer": ["$970 milhoes"]
+  },
+   {
+   "category": "Video Games",
+   "question": "Qual é o código da bomba em Counter-Strike?",
+  "answer": ["7355608"]
+  },
+   {
+   "category": "História",
+   "question": "Quem conceitou o primeiro computador?",
+  "answer": ["Charles Babagge"]
+  },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital da Bulgária?",
+  "answer": ["Sofia"]
+  },
+   {
+   "category": "Ciência",
+   "question": "Plantas absorvem água por meio de qual processo?",
+  "answer": ["Osmose"]
   }
+  
 ]
