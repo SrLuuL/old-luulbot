@@ -2,26 +2,26 @@
 {
 "category": "Animais",
 "question": "O Axolote é um anfíbio que consegue viver sua vida inteira no estado larval",
-"answer": ["Verdade"]
+"answer": ["verdade"]
 },
   {
    "category": "Ciências e Natureza",
    "question": "Rinoplastia é uma cirurgia que é efetuada em que parte do corpo?",
-  "answer": ["Nariz"]
+  "answer": ["nariz"]
   },
   {
    "category": "Geografia",
    "question": "Qual é a maior península?",
-  "answer": ["Arabica", "Peninsula Arabica"]
+  "answer": ["arabica", "peninsula arabica"]
   },
    {
    "category": "Eventos",
    "question": "Qual cidade irá hospedar as Olímpiadas de Verão em 2028?",
-  "answer": ["Los Angeles"]
+  "answer": ["los angeles"]
   },
   {
    "category": "Natureza",
    "question": "Qual animal terrestre é o mais rápido?",
-  "answer": ["Guepardo", "Cheetah"]
+  "answer": ["guepardo", "cheetah"]
   }
 ]
