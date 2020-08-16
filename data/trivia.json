@@ -58,6 +58,61 @@
    "category": "Ciência",
    "question": "Plantas absorvem água por meio de qual processo?",
   "answer": ["Osmose"]
+  },
+  {
+   "category": "História",
+   "question": "Quem é o primeiro emperador da China?",
+  "answer": ["Qin Shi Huang"]
+  },
+  {
+   "category": "Animes",
+   "question": "O que se trata o anime Shokugeki no Souma?",
+  "answer": ["Cozinhar"]
+  },
+  {
+   "category": "História",
+   "question": "Qual foi a primeira cidade a atingir 1 milhão de habitantes?",
+  "answer": ["Roma"]
+  },
+  {
+   "category": "Geografia",
+   "question": "Qual país possui a maior costa do mundo?",
+  "answer": ["Canada"]
+  },
+  {
+   "category": "Twitch",
+   "question": "Quanto tempo durou a menor stream de Forsen?",
+  "answer": ["42 Segundos"]
+  },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual o  nome do famoso grande relógio em London?",
+  "answer": ["Big Ben"]
+  },
+  {
+   "category": "Twitch",
+   "question": "Que streamer afirmou ter perdido 90KG em 3 meses?",
+  "answer": ["Greekgodx"]
+  },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior lago da África?",
+  "answer": ["Vitoria"]
+  },
+   {
+   "category": "Video Games",
+   "question": "Onde você pode achar Glowstone?",
+  "answer": ["Nether"]
+  },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quantos centímetros tem em um quilômetro?",
+  "answer": ["100000"]
+  },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior oceano?",
+  "answer": ["Pacifico"]
   }
   
 ]
