@@ -2,7 +2,7 @@ const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
 const trivia = [];0
-const {compareTwoStrings} = require("string-similarity");
+const compare = require("string-similarity");
 
 let prefix = "=";
 let globalCD = new Set();
@@ -20,7 +20,7 @@ client.on("message", async (channel, user, message, self) => {
 	
 	if (trivia.find(i => i.channel === channel)) {
 		let answer = trivia.find(i => i.channel === channel).answer;
-		const similarity = compareTwoStrings(message, answer)
+		const similarity = compare.compareTwoStrings(message, answer)
 		if (similarity < 0.9) {
 			return
 		} else {
