@@ -66,16 +66,15 @@ if (message.startsWith(prefix + "trivia")) {
 		checkTrivia()
 	}
 	
-	
 	function checkTrivia() {
-		if (trivia.find(i => i.channel === channel)) {
-			setTimeout(async() => {
+		setTimeout(async() => {
+			if (trivia.find(i => i.channel === channel)) {
 				let answer = trivia.find(i => i.channel === channel).answer[0];
-				client.say(channel, `Ninguém acertou :/, a resposta era: ${answer}`);
+				client.say(channel, `Ninguém acertou :/, a resposta era: ${answer}`)
 				let triviaIndex = trivia.findIndex(i => i.channel === channel);
 				trivia.splice(triviaIndex, 1)
-			}, 35000)
-		}
+			}
+		}, 35000)
 	}
 	
 }
