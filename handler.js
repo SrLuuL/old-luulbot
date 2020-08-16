@@ -19,7 +19,7 @@ client.on("message", async (channel, user, message, self) => {
 	let canal = channel.replace("#", "");
 	
 	if (trivia.find(i => i.channel === channel)) {
-		let answer = trivia.find(i => i.channel === channel).answer;
+		let answer = trivia.find(i => i.channel === channel).answer[0];
 		const similarity = compareStrings(message, answer)
 		if (similarity > 0.9) {
 			client.say(channel, `${username} acertou a pergunta! (${answer})`)
