@@ -59,15 +59,15 @@ if (message.startsWith(prefix + "trivia")) {
 		
 		const done = new Promise(resolve => {
 			const timer = setTimeout(() => {
-				client.say(channel, `Ninguém acertou :/, a resposta era ${answer}`)
+				client.say(channel, `Ninguém acertou :/, a resposta era ${answer[0]}`)
 				let triviaIndex = trivia.findIndex(i => i.channel === channel);
 				trivia.splice(triviaIndex, 1)
 				resolve()
 			}, 35000)
 			
-			const similarity = compareStrings(message, answer)
+			const similarity = compareStrings(message, answer[0])
 			if (similarity > 0.9) {
-				client.say(channel, `${username} acertou!, a resposta era ${answer}`)
+				client.say(channel, `${username} acertou!, a resposta era ${answer[0]}`)
 				let triviaIndex = trivia.findIndex(i => i.channel === channel);
 				trivia.splice(triviaIndex, 1)
 				clearTimeout(timer)
