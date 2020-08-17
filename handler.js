@@ -65,6 +65,9 @@ if (message.startsWith(prefix + "trivia")) {
 				resolve()
 			}, 35000)
 			
+			
+			client.on("chat", async (channel, user, message, self) => {
+			
 			const similarity = compareStrings(message, answer[0])
 			
 			if (similarity < 0.9) return;
@@ -75,7 +78,7 @@ if (message.startsWith(prefix + "trivia")) {
 			trivia.splice(triviaIndex, 1)
 			resolve()
 			
-			
+			}
 			
 		
 			
