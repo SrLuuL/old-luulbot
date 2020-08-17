@@ -25,6 +25,7 @@ client.on("message", async (channel, user, message, self) => {
 			client.say(channel, `${username} acertou a pergunta! (${answer})`)
 			let triviaIndex = trivia.findIndex(i => i.channel === channel);
 			trivia.splice(triviaIndex, 1);
+			
 		}
 
 	}
@@ -70,8 +71,7 @@ if (message.startsWith(prefix + "trivia")) {
 	}
 	
 	function checkTrivia() {
-		setTimeout(async() => {
-			if (trivia.find(i => i.running === false)) return;
+	 setTimeout(async() => {
 			if (trivia.find(i => i.channel === channel)) {
 				let answer = trivia.find(i => i.channel === channel).answer[0];
 				client.say(channel, `Ninguém acertou :/, a resposta era: ${answer}`)
