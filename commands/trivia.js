@@ -1,5 +1,8 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
+const trivia = [];
+const compareStrings = require("compare-strings");
+	
 	
 	if (trivia.find(i => i.running)) return;
 	
@@ -33,7 +36,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 			if (similarity < 0.9) return;
 			
 			clearTimeout(timer)
-			client.say(channel, `${username} acertou!, a resposta era ${answer[0]}`)
+			client.say(channel, `${user.username} acertou!, a resposta era ${answer[0]}`)
 			let triviaIndex = trivia.findIndex(i => i.channel === channel);
 			trivia.splice(triviaIndex, 1)
 			resolve()
