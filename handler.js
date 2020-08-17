@@ -18,17 +18,6 @@ client.on("message", async (channel, user, message, self) => {
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
 	
-	if (trivia.find(i => i.channel === channel)) {
-		let answer = trivia.find(i => i.channel === channel).answer[0];
-		const similarity = compareStrings(message, answer)
-		if (similarity > 0.9) {
-			client.say(channel, `${username} acertou a pergunta! (${answer})`)
-			let triviaIndex = trivia.findIndex(i => i.channel === channel);
-			trivia.splice(triviaIndex, 1);
-			
-		}
-
-	}
 	
 
 	if (self) return;
@@ -56,7 +45,7 @@ if (message.startsWith(prefix + "trivia")) {
 	
 	startTrivia()
 	
-	function startTrivia() {
+	async function startTrivia() {
 
 		const quiz = require("./data/trivia.json")
 		const items = quiz[Math.floor(Math.random() * quiz.length)];
@@ -67,19 +56,29 @@ if (message.startsWith(prefix + "trivia")) {
 		
 		client.say(channel, `Categoria: ${category} | ${question}`)
 		trivia.push({ channel: channel, running: true, answer: answer });
-		checkTrivia()
-	}
-	
-	function checkTrivia() {
-	 setTimeout(async() => {
-			if (trivia.find(i => i.channel === channel)) {
-				let answer = trivia.find(i => i.channel === channel).answer[0];
-				client.say(channel, `Ninguém acertou :/, a resposta era: ${answer}`)
+		
+		const done = new Promise(resolve => {
+			const timer = setTimeout(() => {
+				client.say(channel, `Ninguém acertou :/, a resposta era ${answer}`)
 				let triviaIndex = trivia.findIndex(i => i.channel === channel);
 				trivia.splice(triviaIndex, 1)
+				resolve()
+			}, 35000)
+			
+			const similarity = compareStrings(message, answer)
+			if (similarity > 0.9) {
+				client.say(channel, `${username} acertou!, a resposta era ${answer}`)
+				let triviaIndex = trivia.findIndex(i => i.channel === channel);
+				trivia.splice(triviaIndex, 1)
+				clearTimeout(timer)
+				resolve()
 			}
-		}, 35000)
+		}
+					 
 	}
+					 
+				 
+	
 	
 }
 	
