@@ -66,13 +66,19 @@ if (message.startsWith(prefix + "trivia")) {
 			}, 35000)
 			
 			const similarity = compareStrings(message, answer[0])
-			if (similarity > 0.9) {
-				client.say(channel, `${username} acertou!, a resposta era ${answer[0]}`)
-				let triviaIndex = trivia.findIndex(i => i.channel === channel);
-				trivia.splice(triviaIndex, 1)
-				clearTimeout(timer)
-				resolve()
-			}
+			
+			if (similarity < 0.9) return;
+			
+			clearTimeout(timer)
+			client.say(channel, `${username} acertou!, a resposta era ${answer[0]}`)
+			let triviaIndex = trivia.findIndex(i => i.channel === channel);
+			trivia.splice(triviaIndex, 1)
+			resolve()
+			
+			
+			
+		
+			
 		})
 		
 		await done
