@@ -10,7 +10,7 @@ const compareStrings = require("compare-strings");
 	
 	async function startTrivia() {
 
-		const quiz = require("./data/trivia.json")
+		const quiz = require("../data/trivia.json")
 		const items = quiz[Math.floor(Math.random() * quiz.length)];
 		
 		const question = items.question
