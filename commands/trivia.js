@@ -2,6 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const trivia = [];
 const compareStrings = require("compare-strings");
+if (username !== "srluul") return;	
 	
 	
 	if (trivia.find(i => i.running)) return;
