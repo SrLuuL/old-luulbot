@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-if (username !== "srluul") return;
+	
 	if (trivia.find(i => i.running)) return;
 	
 	startTrivia()
