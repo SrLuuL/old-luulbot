@@ -78,7 +78,7 @@ if (message.startsWith(prefix + "trivia")) {
 			trivia.splice(triviaIndex, 1)
 			resolve()
 			
-			}
+			})
 			
 		
 			
