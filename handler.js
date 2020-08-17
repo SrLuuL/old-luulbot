@@ -73,12 +73,12 @@ if (message.startsWith(prefix + "trivia")) {
 				clearTimeout(timer)
 				resolve()
 			}
-		}
-					 
+		})
+		
+		await done
+			 
 	}
-					 
-				 
-	
+
 	
 }
 	
