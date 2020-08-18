@@ -75,6 +75,7 @@ trivia.running = false
 }
 } else if (args[0] === "stop") {
   trivia.stopped = true
+  console.log("teste"
 }
 }
 
