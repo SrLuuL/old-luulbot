@@ -45,7 +45,7 @@ if (!trivia.running || trivia.stopped) {
 break
 }
 
-await client.say(channel, `Categoria: ${category} | ${answer[0]}`)
+await client.say(channel, `Categoria: ${category} | ${question}`)
 
 const done = new Promise(res => {
 
@@ -68,7 +68,7 @@ res()
 })
 
 await done
-await delay(2000)
+await delay(3000)
 }
 
 } finally {
