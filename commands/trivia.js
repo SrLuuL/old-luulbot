@@ -34,7 +34,7 @@ try {
 for(let i = 0; i < num; i++) {
 
    if (!trivia.running) {
-          break;
+          return
         }
 
   
