@@ -13,7 +13,7 @@ stopped: true
 
 let num = 1
 
-if (!args[0].isNaN) {
+if (args[0] && !args[0].isNaN) {
 if (args[0] > 100) return client.say(channel, `${username} número muito grande :/`)
 else { num = args[0] }
 }
