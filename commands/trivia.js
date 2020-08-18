@@ -19,9 +19,7 @@ else { num = args[1] }
 }
 
 
- startTrivia() 
-  
-async function startTrivia() {
+
 
 if (!trivia.running && args[0] === "start") {
 
@@ -33,8 +31,8 @@ try {
 
 for(let i = 0; i < num; i++) {
 
-   if (!trivia.running) {
-          return
+   if (!trivia.running || trivia.stopped) {
+          break
         }
 
   
@@ -74,9 +72,9 @@ client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
 } else if (args[0] === "stop") {
-  trivia.running = false
+  trivia.stopped = true
 }
-}
+
 
   function delay(ms) {
     return new Promise(res => setTimeout(res, ms))
