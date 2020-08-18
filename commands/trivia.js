@@ -11,7 +11,7 @@ running: false,
 stopped: true
 }
 
-const num = 1
+let num = 1
 
 if (!args[0].isNaN) {
 if (args[0] > 100) return client.say(channel, `${username} número muito grande :/`)
