@@ -5,7 +5,7 @@ const compare = require("compare-strings");
 
 if (username !== "srluul") return;
 
-const questions = [];
+let questions = [];
 const trivia = {
 running: false,
 stopped: true
@@ -32,10 +32,6 @@ if (trivia.running) return;
 trivia.running = true
 trivia.stopped = false
 
-const quiz = require("../data/trivia.json");
-const items = quiz[Math.floor(Math.random() * quiz.length)];
-
-const {category, answer, question} = items;
 
 try {
 
@@ -45,6 +41,12 @@ if (!trivia.running || trivia.stopped) {
 break
 }
 
+  
+const quiz = require("../data/trivia.json");
+const items = quiz[Math.floor(Math.random() * quiz.length)];
+const {category, answer, question} = items; 
+  
+  
 await client.say(channel, `Categoria: ${category} | ${question}`)
 
 const done = new Promise(res => {
@@ -62,8 +64,8 @@ const similarity = compare(message, answer[0])
 if (similarity < 0.9) return;
 
 clearTimeout(timer)
-client.say(channel, `${username} acertou! A resposta era: ${answer[0]}`)
 res()
+return client.say(channel, `${username} acertou! A resposta era: ${answer[0]}`)
 })
 })
 
