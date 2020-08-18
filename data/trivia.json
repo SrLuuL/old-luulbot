@@ -12,7 +12,7 @@
   {
    "category": "Geografia",
    "question": "Qual é a maior península?",
-  "answer": ["Arabica"]
+  "answer": ["Arábica"]
   },
    {
    "category": "Eventos",
@@ -32,12 +32,12 @@
   {
    "category": "Geografia",
    "question": "Qual é a maior cachoeira que existe?",
-  "answer": ["Salto Angel"]
+  "answer": ["Salto Ángel"]
   },
   {
    "category": "Twitch",
    "question": "Quanto a Amazon pagou na Twitch?",
-  "answer": ["$970 milhoes"]
+  "answer": ["$970 milhões"]
   },
    {
    "category": "Video Games",
@@ -77,7 +77,7 @@
   {
    "category": "Geografia",
    "question": "Qual país possui a maior costa do mundo?",
-  "answer": ["Canada"]
+  "answer": ["Canadá"]
   },
   {
    "category": "Twitch",
@@ -97,7 +97,7 @@
    {
    "category": "Geografia",
    "question": "Qual é o maior lago da África?",
-  "answer": ["Vitoria"]
+  "answer": ["Vitória"]
   },
    {
    "category": "Video Games",
@@ -112,7 +112,66 @@
    {
    "category": "Geografia",
    "question": "Qual é o maior oceano?",
-  "answer": ["Pacifico"]
-  }
-  
+  "answer": ["Pacífico"]
+  },
+  {
+   "category": "Video Games",
+   "question": "Em que ano foi lançado o episódio 2 de Half Life 2?",
+  "answer": ["2007"]
+  },
+   {
+   "category": "História",
+   "question": "Que pintor foi resposável pela pintura A Última Ceia?",
+  "answer": ["Leonardo da Vinci"]
+  },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Albânia?",
+  "answer": ["Tirana"]
+  },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior deserto de sal do mundo?",
+  "answer": ["Salar de Tunupa"]
+  },
+   {
+   "category": "Futebol",
+   "question": "Qual foi o primeiro país a hospedar duas copas do mundo?",
+  "answer": ["México"]
+   },
+    {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem é responsável por investigar mortes e suas causas?",
+  "answer": ["Legista"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Que país é localizado ambos na Àsia e Europa?",
+  "answer": ["Istambul"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Irlanda?",
+  "answer": ["Dublin"]
+   },
+   {
+   "category": "Animes",
+   "question": "Descubra o anime: Esse cara odeia goblins",
+  "answer": ["Goblin Slayer"]
+   },
+  {
+   "category": "Animes",
+   "question": "A Floresta Negra está localizada em que país da Europa?",
+  "answer": ["Alemanha"]
+   },
+   {
+   "category": "História",
+   "question": "Como foi chamada a invasão da União Soviética na Finlândia?",
+  "answer": ["Guerra de Inverno"]
+   },
+   {
+   "category": "História",
+   "question": "Quantas letras existem no alfabeto Grego?",
+  "answer": ["24"]
+   }
 ]
