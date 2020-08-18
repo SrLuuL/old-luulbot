@@ -31,7 +31,7 @@ trivia.stopped = false
 
 try {
 
-triviaLoop: for(let i = 0; i < num; i++) {
+triviaLoop: for(let i = 0; i < num && !trivia.stopped; i++) {
 
    if (!trivia.running || trivia.stopped) {
           break triviaLoop;
@@ -66,7 +66,7 @@ return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0
 })
 
 await done
-await delay(10000)
+await delay(7000)
 }
 
 } finally {
