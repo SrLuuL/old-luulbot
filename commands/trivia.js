@@ -18,10 +18,7 @@ if (args[1] > 100) return client.say(channel, `${username} número muito grande 
 else { num = args[1] }
 }
 
-if (args[0] == "stop") {
-  trivia.stopped = true
-}
-  
+
  startTrivia() 
   
 async function startTrivia() {
@@ -76,6 +73,8 @@ await delay(3000)
 client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
+} else if (args[0] === "stop") {
+  trivia.stopped = true
 }
 }
 
