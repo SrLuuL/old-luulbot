@@ -18,9 +18,6 @@ if (args[0] > 100) return client.say(channel, `${username} número muito grande 
 else { num = args[0] }
 }
 
-if (args[0] == "stop") {
-trivia.stopped = true
-}
 
   
  startTrivia() 
