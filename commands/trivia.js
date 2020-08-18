@@ -65,7 +65,7 @@ if (similarity < 0.9) return;
 
 clearTimeout(timer)
 res()
-return client.say(channel, `${username} acertou! A resposta era: ${answer[0]}`)
+return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)
 })
 })
 
