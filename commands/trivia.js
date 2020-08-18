@@ -78,7 +78,7 @@ client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
   
-  else if (args[0] === "stop") {
+} else if (args[0] === "stop") {
     trivia.stopped === true
   }
 }
