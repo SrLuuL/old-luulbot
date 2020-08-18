@@ -59,10 +59,14 @@ client.on("chat", (channel, user, message, self) => {
 const similarity = compare(message, answer[0])
 
 if (similarity < 0.9) return;
-
+  
+function verifyTrivia() {
 clearTimeout(timer)
 return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
 res()
+}
+  
+return verifyTrivia();  
 })
 })
 
