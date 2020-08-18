@@ -9,7 +9,6 @@ module.exports.run = async (client, message, args, username, channel) => {
 const compare = require("compare-strings");
 
 
-if (username !== "srluul") return;
 
 let questions = [];
   
