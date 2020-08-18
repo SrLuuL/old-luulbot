@@ -7,8 +7,8 @@ if (username !== "srluul") return;
 
 let questions = [];
 const trivia = {
-running: false,
-stopped: true
+  stopped: true,
+  running: false
 }
 
 let num = 1
@@ -66,7 +66,7 @@ return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0
 })
 
 await done
-await delay(3000)
+await delay(10000)
 }
 
 } finally {
