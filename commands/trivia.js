@@ -74,7 +74,7 @@ await delay(3000)
 client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
-
+}
 }
 
   function delay(ms) {
