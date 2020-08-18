@@ -13,9 +13,9 @@ stopped: true
 
 let num = 1
 
-if (args[0] && !args[0].isNaN) {
-if (args[0] > 100) return client.say(channel, `${username} número muito grande :/`)
-else { num = args[0] }
+if (args[1] && !args[1].isNaN) {
+if (args[1] > 100) return client.say(channel, `${username} número muito grande :/`)
+else { num = args[1] }
 }
 
 
@@ -24,7 +24,7 @@ else { num = args[0] }
   
 async function startTrivia() {
 
-if (!trivia.running) {
+if (!trivia.running && args[0] === "start") {
 
 trivia.running = true
 trivia.stopped = false
@@ -74,7 +74,8 @@ await delay(3000)
 client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
-}
+} else if (args[0] === "stop") {
+  trivia.stopped = true
 }
 
   function delay(ms) {
