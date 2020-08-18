@@ -31,10 +31,10 @@ trivia.stopped = false
 
 try {
 
-for(let i = 0; i < num; i++) {
+triviaLoop: for(let i = 0; i < num; i++) {
 
    if (!trivia.running || trivia.stopped) {
-          break
+          break triviaLoop;
         }
 
   
