@@ -31,10 +31,10 @@ trivia.stopped = false
 
 try {
 
-triviaLoop: for(let i = 0; i < num && !trivia.stopped; i++) {
+for(let i = 0; i < num; i++) {
 
-   if (!trivia.running || trivia.stopped) {
-          break triviaLoop;
+   if (!trivia.running) {
+          break;
         }
 
   
@@ -74,8 +74,7 @@ client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
 } else if (args[0] === "stop") {
-  trivia.stopped = true
-  console.log("teste")
+  trivia.running = false
 }
 }
 
