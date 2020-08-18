@@ -22,7 +22,7 @@ if (args[0] == "stop") {
 trivia.stopped = true
 }
 
-function startTrivia() {
+async function startTrivia() {
 
 if (trivia.running) return;
 
