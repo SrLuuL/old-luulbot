@@ -74,6 +74,11 @@ trivia.running = false
 }
 }
 
+  function delay(ms) {
+    return new Promise(res => setTimeout(res, ms))
+  }
+  
+  
 }
 
 module.exports.config = {
