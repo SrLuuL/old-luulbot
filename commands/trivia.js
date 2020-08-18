@@ -27,7 +27,7 @@ trivia.stopped = true
   
 async function startTrivia() {
 
-if (trivia.running) return;
+if (!trivia.running) {
 
 trivia.running = true
 trivia.stopped = false
@@ -77,6 +77,10 @@ await delay(3000)
 client.say(channel, "Trivia acabou :Z")
 trivia.running = false
 }
+  
+  else if (args[0] === "stop") {
+    trivia.stopped === true
+  }
 }
 
   function delay(ms) {
