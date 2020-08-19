@@ -55,7 +55,7 @@ resolve()
 }, 35000)
 
 
-client.on("chat", async (channel, user, message, self) => {
+client.addListener("chat", async (channel, user, message) => {
 
 const similarity = compare(message, answer[0])
 
