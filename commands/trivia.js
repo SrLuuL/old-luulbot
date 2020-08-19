@@ -59,12 +59,11 @@ client.on("chat", async (channel, user, message, self) => {
 const similarity = compare(message, answer[0])
 
 if (similarity < 0.9) return;
-  
-else {  
+ 
+resolve()  
 clearTimeout(timer)
-return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
-resolve()
-}
+client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
+
 })
 })
 
