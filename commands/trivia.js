@@ -5,6 +5,7 @@ const trivia = {
 
 module.exports.run = async (client, message, args, username, channel) => {
 
+  if (username !=="srluul") return;
   
 const compare = require("compare-strings");
 
@@ -60,10 +61,10 @@ const similarity = compare(message, answer[0])
 
 if (similarity < 0.9) return;
  
-resolve()  
-clearTimeout(timer)
-client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
 
+clearTimeout(timer)
+return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
+resolve()  
 })
 })
 
@@ -91,7 +92,7 @@ trivia.running = false
 module.exports.config = {
 name: "trivia",
 aliases: ["trv"],
-description: "Manda uma trivia aleátoria",
+description: "Manda uma trivia aleátoria(uso privado)",
 usage: "trivia start"
 }
 
