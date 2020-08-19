@@ -46,7 +46,7 @@ const {category, answer, question} = items;
   
 await client.say(channel, `Categoria: ${category} | ${question}`)
 
-const done = new Promise(res => {
+const done = return new Promise(res => {
 
 const timer = setTimeout(() => {
 client.say(channel, `Ninguém acertou :/, a resposta era: ${answer[0]}`)
@@ -64,7 +64,6 @@ if (similarity < 0.9) return;
 clearTimeout(timer)
 return client.say(channel, `${user.username} acertou! A resposta era: ${answer[0]}`)   
 res()
-await delay(1000) 
 })
 })
 
