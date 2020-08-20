@@ -16,6 +16,7 @@ user2 = args[0]
 let res = await fetch(`https://api.ivr.fi/twitch/banlookup/${user}/${user2}`);
 let data = await res.json();  
   
+if (data.error) return client.say(channel, `${username}, conta inexistente ou suspensa`);  
 const {status, banned, isPermanent, createdAt, expiresAt} = data
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
