@@ -30,7 +30,7 @@ bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio
 let color = data.chatColor
 color = (color === null) ? "(Sem Cor)" : color
 let banned = data.banned
-banned = (banned === true) ? `${user} está banido` : `${user} não está banido`
+banned = (banned === true) ? `A conta ${user} está banida` : `A conta ${user} não está banida`
 let partner = data.partner
 partner = (partner === true) ? "parceria/" : ""
 let aff = data.affiliate
@@ -75,13 +75,13 @@ let totalVips = await Object.keys(vips).length
     case "--ban":
      return client.say(channel, `${username}, ${banned}`);
     case "--cargos":
-     return client.say(channel, `${username}, ${user} possui ${roles}.`);
+     return client.say(channel, `${username}, A conta ${user} possui ${roles}.`);
     case "--bot":
       return client.say(channel, `${username}, ${bot}`);
     case "--age":
       return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
     case "--mv":
-      return client.say(channel, `${username}, ${user} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
+      return client.say(channel, `${username}, A conta ${user} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
 }
 
 
