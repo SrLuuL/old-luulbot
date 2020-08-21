@@ -396,7 +396,7 @@
    },
   {
    "category": "Música",
-   "question": "Quantas linhas tem um mandolim tradicionalmente?",
+   "question": "Quantas linhas tem um mandolim tradicional?",
   "answer": ["8"]
    },
   {
@@ -1246,8 +1246,113 @@
    },
    {
    "category": "Matemática",
-   "question": "Rápido! Quanto é 37+46+63"
-  "answer": ["Nutella"]
+   "question": "Rápido! Quanto é 37+46+63?",
+  "answer": ["146"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Brasil?",
+  "answer": ["Brasília"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Heptafobia é o medo de quê?",
+  "answer": ["Número 7"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "O que acontece se você respirar oxigênio 100% puro?",
+  "answer": ["Você morre"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o coletivo de sapos?",
+  "answer": ["Saparia"]
+   },
+   {
+   "category": "História",
+   "question": "Quantos anos durou a Guerra de Cem Anos?",
+  "answer": ["116 anos"]
+   },
+   {
+   "category": "Geografia",
+   "question": "O fluxo do rio Columbia fica em que oceano?",
+  "answer": ["Oceano pacífico"]
+   },
+   {
+   "category": "Twitch",
+   "question": "Gilette",
+  "answer": ["ForsenCD"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Pogonofobia é o medo de quê?",
+  "answer": ["Barbas"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Que cidade é a primeira a ser apresentada em Skyrim?",
+  "answer": ["Halgen"]
+   },
+   {
+   "category": "Carros",
+   "question": "Que fabricante de carros produziu o modelo Grand Cherokee?",
+  "answer": ["Jeep"]
+   },
+   {
+   "category": "Carros",
+   "question": "Qual é o carro mais vendido mundialmente?",
+  "answer": ["Toyota Corolla"]
+   },
+   {
+   "category": "Animes",
+   "question": "No anime Fate/Zero que figúra histórica representa Saber?",
+  "answer": ["Rei Arthur"]
+   },
+   {
+   "category": "Música",
+   "question": "Quantas linhas tem um banjo tradicional?",
+  "answer": ["5"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Uganda?",
+  "answer": ["Kampala"]
+   },
+   {
+   "category": "História",
+   "question": "Quem pintou a Capela Sistina?",
+  "answer": ["Michelangelo"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Long Island faz parte de que estado dos Estados Unidos?",
+  "answer": ["Nova Iorque"]
+   },
+   {
+   "category": "Animes",
+   "question": "Descubra o anime: Ela controla seu sangue para matar demônios",
+  "answer": ["Kyoukai no Kanata"]
+   },
+   {
+   "category": "Música",
+   "question": "Que país ganhou a Eurovision 1994?",
+  "answer": ["Irlanda"]
+   },
+   {
+   "category": "História",
+   "question": "Qual foi o primeiro animal a ser mandado no espaço?",
+  "answer": ["Cachorro"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o único continente sem répteis?",
+  "answer": ["Antártida"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Camboja?",
+  "answer": ["Phnom Penh"]
    },
 
 ]
