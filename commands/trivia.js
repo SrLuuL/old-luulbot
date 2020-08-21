@@ -55,21 +55,23 @@ client.say(channel, `Ninguém acertou :/ a resposta era: ${answer[0]}`)
 res()
 }, 35000)
 
-
-client.once("chat", (channel, user, message, self) => {
- 
- if (self) return;
+function triviaOn(channel, user, message, self) {
+  
+   if (self) return;
 
 const similarity = compare(message, answer[0])
 
-if (similarity > 0.9) {
+if (similarity < 0.9) return 
 
 clearTimeout(timer)
 
 client.say(channel, `${username} acertou a pergunta! A resposta era: ${answer[0]}`)
 res()
-}
-})  
+client.removeListener("chat", triviaOn)
+}  
+
+client.addListener("chat", triviaOn) 
+  
 })
 
 await done
