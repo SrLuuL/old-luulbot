@@ -10,7 +10,10 @@ module.exports.run = async (client, message, args, username, channel) => {
 let num = 1
 
 if(args[1] && !args[1].isNaN) {
-num = (args[1] > 100) ? return client.say(channel, `${username} número muito alto :/`) : num = args[1];
+if (args > 100) return client.say(channel, `${username} número muito grande :/`)
+else {
+  num = args[0]
+}
 }
 
 function delay(ms) {
