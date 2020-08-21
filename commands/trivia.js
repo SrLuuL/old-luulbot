@@ -22,7 +22,7 @@ return new Promise(res => setTimeout(res, ms))
 
 startTrivia()
 
-function startTrivia() {
+async function startTrivia() {
 
 if (!trivia.running && args[0] == "start") {
 
