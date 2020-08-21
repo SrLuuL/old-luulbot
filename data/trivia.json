@@ -146,7 +146,7 @@
    },
   {
    "category": "Geografia",
-   "question": "Que país é localizado ambos na Àsia e Europa?",
+   "question": "Que cidade é localizada ambos na Àsia e Europa?",
   "answer": ["Istambul"]
    },
    {
@@ -160,7 +160,7 @@
   "answer": ["Goblin Slayer"]
    },
   {
-   "category": "Animes",
+   "category": "Geografia",
    "question": "A Floresta Negra está localizada em que país da Europa?",
   "answer": ["Alemanha"]
    },
@@ -207,7 +207,7 @@
   {
    "category": "Conhecimentos Gerais",
    "question": "Que bebida supostamente \"te dá asas\"?",
-  "answer": ["Leonhard Euler"]
+  "answer": ["Red Bull"]
    },
   {
    "category": "Minecraft",
@@ -268,5 +268,236 @@
    "category": "Geografia",
    "question": "Que país fica na borda entre Espanha e França?",
   "answer": ["Andorra"]
+   },
+  {
+   "category": "Programação",
+   "question": "Quantos bits tem em um valor \"float\"?",
+  "answer": ["32"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Qual o nome do mapa de deserto do PUBG?",
+  "answer": ["Miramar"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Que minério pode ser usado como tinta?",
+  "answer": ["Lápis Lazuli"]
+   },
+  {
+   "category": "Econômia",
+   "question": "Que moeda é usada na Hungria?",
+  "answer": ["Florim Húgaro"]
+   },
+  {
+   "category": "História",
+   "question": "Qual foi o navio mais premiado durante a Segunda Guerra Mundial 2?",
+  "answer": ["USS Enterprise"]
+   },
+  {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 11 x 35?",
+  "answer": ["385"]
+   },
+  {
+   "category": "História",
+   "question": "Em que século ocorreu a Guerra Civil Inglesa?",
+  "answer": ["17"]
+   },
+  {
+   "category": "Tecnologia",
+   "question": "Em termos de computador, o que a sigla DOS significa?",
+  "answer": ["Sistema Operacional em Disco"]
+   },
+  {
+   "category": "Animes",
+   "question": "Descubra o anime: Um deus escolhe 12 humanos e garante para eles diários aleatórios",
+  "answer": ["Mirai Nikki"]
+   },
+  {
+   "category": "Esportes",
+   "question": "Qual é o máximo de pontos possíveis em uma partida de boliche?",
+  "answer": ["Boliche"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a cidade com a maior população do mundo?",
+  "answer": ["Xangai"]
+   },
+  {
+   "category": "Econômia",
+   "question": "Que moeda usam no Japão?",
+  "answer": ["Iene"]
+   },
+  {
+   "category": "Ciência",
+   "question": "O que acontece caso uma matéria atravesse o Horizonte de Eventos?",
+  "answer": ["Sei lá"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é o nome do elemento Am?",
+  "answer": ["Amerício"]
+   },
+  {
+   "category": "Carros",
+   "question": "Que fabricante de carros produziu o modelo FJ Cruiser?",
+  "answer": ["Toyota"]
+   },
+  {
+   "category": "Filmes",
+   "question": "Que estúdio de cinema produziu o filme: Who Killed Captain Alex?",
+  "answer": ["Wakaliwood"]
+   },
+  {
+   "category": "NaM",
+   "question": "NaM",
+  "answer": ["NaM"]
+   },
+  {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 111 / 3?",
+  "answer": ["37"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Quanto dinheiro você ganha ao matar com uma faca no CSGO?",
+  "answer": ["$1500"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Guiana?",
+  "answer": ["Georgetown"]
+   },
+  {
+   "category": "Esportes",
+   "question": "A cada quantos anos a Olímpiadas de Verão ocorre?",
+  "answer": ["4"]
+   },
+  {
+   "category": "Animes",
+   "question": "Como se chama o stand do protagonista da parte 5 de JOJO?",
+  "answer": ["Gold Experience"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Vietnam costumava ser uma colônia de qual país?",
+  "answer": ["França"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Triscaidecafobia é o medo de quê?",
+  "answer": ["Número 13"]
+   },
+  {
+   "category": "Filmes",
+   "question": "Qual é o nome do tio de Simba no filme \"O Rei Leão\"?",
+  "answer": ["Scar"]
+   },
+  {
+   "category": "Música",
+   "question": "Quantas linhas tem um mandolim tradicionalmente?",
+  "answer": ["8"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Em que temperatura a água começa a ferver?(Celsius)?",
+  "answer": ["100"]
+   },
+  {
+   "category": "Abelhas",
+   "question": "Que composto químico faz a picada de abelha coçar?",
+  "answer": ["Melitina"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano Cristóvão ganhou o mérito de descobrir o Novo Mundo?",
+  "answer": ["1492"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é o planeta do nosso sistema solar mais geologicamente ativo?",
+  "answer": ["Terra"]
+   },
+  {
+   "category": "Twitch",
+   "question": "Quantos anos tem BlooooDy?",
+  "answer": ["89"]
+   },
+  {
+   "category": "Sexo kkkk",
+   "question": "Se masturbar 5 vezes ao dia pode causar o quê?",
+  "answer": ["Fibromialgia"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o sobrenome da mãe do austronauta Buzz Aldrin?",
+  "answer": ["Moon"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Meteorologia é o estudo sobre o quê?",
+  "answer": ["Clima"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Polônia?",
+  "answer": ["Varsóvia"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é o símbolo químico de sal de cozinha?",
+  "answer": ["NaCl"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "O que você precisa para impulsionar a Elytra?",
+  "answer": ["Foguetes"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Chile?",
+  "answer": ["Santiago"]
+   },
+  {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 52 x 25?",
+  "answer": ["1300"]
+   },
+  {
+   "category": "Video Games",
+   "question": "De que jogo Jack Carver faz parte?",
+  "answer": ["Far Cry"]
+   },
+  {
+   "category": "História",
+   "question": "Alexandre, o Grande tomou controle de Macedónia após o seu pai ter morrido em que ano?",
+  "answer": ["336 AC"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "O material branco nas presas de elefante é chamado de?",
+  "answer": ["Marfim"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Bahamas?",
+  "answer": ["Nassau"]
+   },
+  {
+   "category": "Rápido! Quanto é 11 x 27",
+   "question": "A cada quantos anos a Olímpiadas de Verão ocorre?",
+  "answer": ["297"]
+   },
+  {
+   "category": "Programação",
+   "question": "HTML não é uma linguagem de programação e sim uma...?",
+  "answer": ["Linguagem de Marcação"]
+   },
+  {
+   "category": "Animes",
+   "question": "Descubra o anime: Após a morte pessoas vão lá, lutam contra um anjo e não podem morrer",
+  "answer": ["Angel Beats!"]
    }
+  
 ]
