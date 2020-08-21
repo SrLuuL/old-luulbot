@@ -7,6 +7,8 @@ stopped: true
 
 module.exports.run = async (client, message, args, username, channel) => {
 
+ if (username !== "srluul") return;
+  
 const compare = require("compare-strings"); 
   
 let num = 1
@@ -46,7 +48,7 @@ const {question, category, answer} = items;
 
 await client.say(channel, `Categoria: ${category} | ${question}`)
 
-function triviaOn(channel, message, user, self) {
+function triviaOn(channel, user, message, self) {
   if (self) return;
 
 const similarity = compare(message, answer[0])
