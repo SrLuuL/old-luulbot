@@ -81,9 +81,7 @@ trivia.stopped = true
 }
 
 
-}
 
-}
 
 module.exports.config = {
 name: "trivia",
