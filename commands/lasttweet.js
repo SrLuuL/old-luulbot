@@ -10,7 +10,7 @@ tweet = tweet.replace(/ago/g, "atrás")
 if (!args[0]){
 return client.say(channel, `${username}, insira um usuário :/`)
 } else {
-client.say(channel, `${tweet}`)
+client.say(channel, `(${tweet})`)
 }
 
 }
