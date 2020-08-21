@@ -196,7 +196,7 @@
    },
   {
    "category": "Ciência",
-   "question": "Frequência é medida em que",
+   "question": "Frequência é medida em quê?",
   "answer": ["Hertz"]
    },
   {
@@ -1105,8 +1105,8 @@
   "answer": ["Grand Blue"]
    },
    {
-   "category": "Rápido! Quanto é 62 x 7?",
-   "question": "Quantas câmaras tem um coração humano?",
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 62 x 7?",
   "answer": ["434"]
    },
    {
@@ -1158,5 +1158,96 @@
    "category": "Video Games",
    "question": "Qual o nome do cara do jogo postal?",
   "answer": ["Cara do Postal"]
-   }
+   },
+  {
+   "category": "Animes",
+   "question": "No anime \"Blood Lad\", qual é o nome do protagonista?",
+  "answer": ["Staz Charlie Blood"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Quem inventou o primeiro laser?",
+  "answer": ["Theodore Harold"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é o menor estado dos Estados Unidos?",
+  "answer": ["Ilha de Rodes"]
+   },
+  {
+   "category": "Astronomia",
+   "question": "Qual planeta do nosso sistema solar está mais próximo do sol?",
+  "answer": ["Mercúrio"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Qual o primeiro chefão que você enfrenta no bioma Jungle em Terraria?",
+  "answer": ["Queen Bee"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Quantas Power Moons são coletáveis em Super Mario Odyssey?",
+  "answer": ["999"]
+   },
+  {
+   "category": "Animes",
+   "question": "No anime \"Blood Lad\", qual é o nome do protagonista?",
+  "answer": ["Staz Charlie Blood"]
+   },
+  {
+   "category": "Comidas/Bebidas",
+   "question": "Mais de 1/4 de avelãs do mundo são usadas em que produto?",
+  "answer": ["Nutella"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem começa primeiro no xadrez?",
+  "answer": ["Brancas"]
+   },
+   {
+   "category": "História",
+   "question": "Que doença exterminou 1% da população mundial em 1918?",
+  "answer": ["Gripe Espanhola"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Barbados?",
+  "answer": ["Bridgetown"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Filipinas?",
+  "answer": ["Manila"]
+   },
+   {
+   "category": "Video Games",
+   "question": "De que jogo é Isaac Clarke??",
+  "answer": ["Dead Space"]
+   },
+   {
+   "category": "teste",
+   "question": "teste",
+  "answer": ["testado"]
+   },
+   {
+   "category": "Astronomia",
+   "question": "Que planeta possui a maior quantidade de luas?",
+  "answer": ["Júpiter"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Em que animal é possívei achar pérolas?",
+  "answer": ["Ostra"]
+   },
+   {
+   "category": "Econômia",
+   "question": "Que moeda é utilizada no México?",
+  "answer": ["Peso Mexicano"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 37+46+63"
+  "answer": ["Nutella"]
+   },
+
 ]
