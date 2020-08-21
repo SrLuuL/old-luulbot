@@ -47,19 +47,6 @@ const items = quiz[Math.floor(Math.random() * quiz.length)];
 const {question, category, answer} = items;
 
 await client.say(channel, `Categoria: ${category} | ${question}`)
-
-function triviaOn(channel, user, message, self) {
-  if (self) return;
-
-const similarity = compare(message, answer[0])
-
-if (similarity < 0.9) return;
-
-clearTimeout(timer)
-
-client.say(channel, `${username} acertou a pergunta! A resposta era: ${answer[0]}`)
-res()
-}  
   
 const done = new Promise(res => {
 
@@ -69,12 +56,22 @@ res()
 }, 35000)
 
 
-client.addListener("chat", triviaOn)
-  
+client.once("chat", (channel, user, message, self) => {
+ 
+ if (self) return;
+
+const similarity = compare(message, answer[0])
+
+if (similarity < 0.9) return;
+
+clearTimeout(timer)
+
+client.say(channel, `${username} acertou a pergunta! A resposta era: ${answer[0]}`)
+res()
+})  
 })
 
 await done
-client.removeListener("chat", triviaOn)
 await delay(7000)
 
 }
