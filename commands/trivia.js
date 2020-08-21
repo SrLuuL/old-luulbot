@@ -65,7 +65,7 @@ if (similarity < 0.9) return
 
 clearTimeout(timer)
 
-client.say(channel, `${username} acertou a pergunta! A resposta era: ${answer[0]}`)
+client.say(channel, `${user.username} acertou a pergunta! A resposta era: ${answer[0]}`)
 res()
 client.removeListener("chat", triviaOn)
 }  
