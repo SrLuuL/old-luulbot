@@ -420,7 +420,7 @@
   "answer": ["Terra"]
    },
   {
-   "category": "Twitch",
+   "category": "Memes",
    "question": "Quantos anos tem BlooooDy?",
   "answer": ["89"]
    },
@@ -485,8 +485,8 @@
   "answer": ["Nassau"]
    },
   {
-   "category": "Rápido! Quanto é 11 x 27",
-   "question": "A cada quantos anos a Olímpiadas de Verão ocorre?",
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 11 x 27?",
   "answer": ["297"]
    },
   {
@@ -498,6 +498,201 @@
    "category": "Animes",
    "question": "Descubra o anime: Após a morte pessoas vão lá, lutam contra um anjo e não podem morrer",
   "answer": ["Angel Beats!"]
+   },
+   {
+   "category": "História",
+   "question": "Que país deu a Estátua da Liberdade para os Estados Unidos?",
+  "answer": ["França"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Didaskaleinofobia é o medo de quê?",
+  "answer": ["Ir pra escola"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Qual é o último nome de Genji e Hanzo?",
+  "answer": ["Shimada"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é o símbolo químico de Potássio?",
+  "answer": ["K"]
+   },
+  {
+   "category": "Astronomia",
+   "question": "Qual é o planeta mais quente do sistema solar?",
+  "answer": ["Vênus"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Onde está localizado a maior construção do mundo?",
+  "answer": ["Dubai"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Noruega?",
+  "answer": ["Oslo"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual país possui a maior taxa de homicídio do mundo?",
+  "answer": ["Honduras"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Terremotos possuem a habilidade de transformar água em qual elemento?",
+  "answer": ["Ouro"]
+   },
+   {
+   "category": "Twitch",
+   "question": "Quantas namoradas Forsen já teve?",
+  "answer": ["4"]
+   },
+   {
+   "category": "História",
+   "question": "Sinterklaas é a versão holandesa de qual figura mítica?",
+  "answer": ["Papai Noel"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Quantos pokemons surgiram na primeira geração de pokemons?",
+  "answer": ["151"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Geórgia está localizada em que região?",
+  "answer": ["Cáucaso"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior rio do mundo?",
+  "answer": ["Rio Nilo"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual é o nome do chefão final de Diablo II?",
+  "answer": ["Diablo"]
+   },
+   {
+   "category": "História",
+   "question": "Quantos vietnamitas foram mortos/desaparecidos durante a Guerra do Vietnã?",
+  "answer": ["3 milhões"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem é o deus do sonho na mitologia grega?",
+  "answer": ["Morfeu"]
+   },
+   {
+   "category": "História",
+   "question": "Qual é o verdadeiro nome de Barba-Negra?",
+  "answer": ["Edward Teach"]
+   },
+   {
+   "category": "Animes",
+   "question": "Que personagem de Konosuba gosta de explosões?",
+  "answer": ["Megumin"]
+   },
+   {
+   "category": "Música",
+   "question": "Que empresa produzindo instrumentos músicais também produz motores e motos?",
+  "answer": ["Yamaha"]
+   },
+   {
+   "category": "Música",
+   "question": "Que instrumento musical foi inventado por Adolphe Sax?",
+  "answer": ["Saxofone"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano Neil Armstrong e Buzz Aldrin pisaram na lua?",
+  "answer": ["1969"]
+   },
+   {
+   "category": "Carros",
+   "question": "Qual foi o primeiro carro a ser produzido em massa?",
+  "answer": ["Modelo T"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Qual é o antídoto para overdose ou envenenamento de apioides?",
+  "answer": ["Naxolona"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Islândia?",
+  "answer": ["Reykjavik"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Que país é completamente cercado por outro?",
+  "answer": ["Lesoto"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o oposto de negativo?",
+  "answer": ["Positivo"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Que video game do GameCube apresenta Samus Aran?",
+  "answer": ["Metroid Prime"]
+   },
+   {
+   "category": "Abelhas",
+   "question": "Que tipo de abelhas não são achadas em colmeias durante o inverno?",
+  "answer": ["Zangões"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual é o principal antagonista de Crash Bandicoot?",
+  "answer": ["Doctor Neo Cortex"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Que país é significamente difícil de infectar em Plague Inc. Envolved?",
+  "answer": ["Groenlândia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Até 2012, mapas mostravam uma ilha que não existia chamada?",
+  "answer": ["Ilha Sandy"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Quem descobriu o conceito de gravidade?",
+  "answer": ["Isaac Newton"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o único território do Estados Unidos que dirige na esquerda?",
+  "answer": ["Ilhas Virgens"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano Hillary Clinton nasceu?",
+  "answer": ["1947"]
+   },
+   {
+   "category": "Programação",
+   "question": "Quantos bits tem em um byte?",
+  "answer": ["8"]
+   },
+   {
+   "category": "Comidas/Bebidas",
+   "question": "Que país invetou o chá?",
+  "answer": ["China"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Onde está localizado a árvore mais antiga do mundo?",
+  "answer": ["Suécia"]
+   },
+ {
+   "category": "História
+   "question": "Em que ano ocorreu a Batalha e Grunwald?
+  "answer": ["Dubai"]
    }
   
 ]
