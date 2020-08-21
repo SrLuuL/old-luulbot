@@ -3,10 +3,12 @@ running: false,
 stopped: true
 }
 
-const compare = require("compare-strings");
+
 
 module.exports.run = async (client, message, args, username, channel) => {
 
+const compare = require("compare-strings"); 
+  
 let num = 1
 
 if(args[1] && !args[1].isNaN) {
@@ -44,16 +46,8 @@ const {question, category, answer} = items;
 
 await client.say(channel, `Categoria: ${category} | ${question}`)
 
-const done = new Promise(res => {
-
-const timer = setTimeout(() => {
-client.say(channel, `Ninguém acertou :/ a resposta era: ${answer[0]}`)
-res()
-}, 35000)
-
-client.once("chat", (channel, message, user, self) => {
-
-if (self) return;
+function triviaOn(channel, message, user, self) {
+  if (self) return;
 
 const similarity = compare(message, answer[0])
 
@@ -63,10 +57,22 @@ clearTimeout(timer)
 
 client.say(channel, `${username} acertou a pergunta! A resposta era: ${answer[0]}`)
 res()
-})
+}  
+  
+const done = new Promise(res => {
+
+const timer = setTimeout(() => {
+client.say(channel, `Ninguém acertou :/ a resposta era: ${answer[0]}`)
+res()
+}, 35000)
+
+
+client.addListener("chat", triviaOn)
+  
 })
 
 await done
+client.removeListener("chat", triviaOn)
 await delay(7000)
 
 }
