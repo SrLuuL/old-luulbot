@@ -7,7 +7,7 @@ stopped: true
 
 module.exports.run = async (client, message, args, username, channel) => {
 
- if (username !== "srluul") return;
+
   
 const compare = require("compare-strings"); 
   
@@ -16,7 +16,7 @@ let num = 1
 if(args[1] && !args[1].isNaN) {
 if (args > 100) return client.say(channel, `${username} número muito grande :/`)
 else {
-  num = args[0]
+  num = args[1]
 }
 }
 
