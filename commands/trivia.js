@@ -26,7 +26,9 @@ async function startTrivia() {
 
 if (!trivia.running && args[0] == "start") {
 
-
+trivia.running = true
+trivia.stopped = false
+  
 try {
 
 for(let i = 0; i < num; i++) {
@@ -80,7 +82,7 @@ trivia.stopped = true
 
 }
 
-
+}
 
 
 module.exports.config = {
