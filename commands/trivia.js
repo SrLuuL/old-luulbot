@@ -51,7 +51,7 @@ await client.say(channel, `Categoria: ${category} | ${question}`)
 const done = new Promise(res => {
 
 const timer = setTimeout(() => {
- client.removeListener("chat", triviaOn) 
+client.removeListener("chat", triviaOn) 
 client.say(channel, `Ninguém acertou :/ a resposta era: ${answer[0]}`)
 res()
 }, 35000)
