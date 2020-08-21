@@ -182,7 +182,7 @@
   {
    "category": "Gachi",
    "question": "País origem de Van Darkholme",
-  "answer": ["Vietnam"]
+  "answer": ["Vietnã"]
    },
   {
    "category": "Video Games",
@@ -231,7 +231,7 @@
    },
   {
    "category": "História",
-   "question": "Que país mais sofreu baixas na Segunda Guerra Mundial 2",
+   "question": "Que país mais sofreu baixas na Segunda Guerra Mundial",
   "answer": ["União Soviética"]
    },
   {
@@ -287,11 +287,11 @@
   {
    "category": "Econômia",
    "question": "Que moeda é usada na Hungria?",
-  "answer": ["Florim Húgaro"]
+  "answer": ["Florim Húngaro"]
    },
   {
    "category": "História",
-   "question": "Qual foi o navio mais premiado durante a Segunda Guerra Mundial 2?",
+   "question": "Qual foi o navio mais premiado durante a Segunda Guerra Mundial?",
   "answer": ["USS Enterprise"]
    },
   {
@@ -381,7 +381,7 @@
    },
   {
    "category": "Geografia",
-   "question": "Vietnam costumava ser uma colônia de qual país?",
+   "question": "Vietnã costumava ser uma colônia de qual país?",
   "answer": ["França"]
    },
   {
@@ -681,7 +681,7 @@
    },
    {
    "category": "Comidas/Bebidas",
-   "question": "Que país invetou o chá?",
+   "question": "Que país inventou o chá?",
   "answer": ["China"]
    },
    {
@@ -882,7 +882,7 @@
    {
    "category": "Minecraft",
    "question": "Quantos blocos máximos um pistão pode empurrar?",
-  "answer": ["1683"]
+  "answer": ["12"]
    },
    {
    "category": "Video Games",
@@ -938,5 +938,160 @@
    "category": "Geografia",
    "question": "Qual é o ponto mais alto na Europa?",
   "answer": ["Monte Elbrus"]
+   },
+  {
+   "category": "História",
+   "question": "Quem descobriu a Austrália?",
+  "answer": ["James Cook"]
+   },
+  {
+   "category": "Futebol",
+   "question": "Que time ganhou a Copa do Mundo de 2010?",
+  "answer": ["Espanha"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Em que estado dos Estados Unidos fica o Monte Rushmore?",
+  "answer": ["Dakota do Sul"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Quantos estados existem nos Estados Unidos?",
+  "answer": ["50"]
+   },
+  {
+   "category": "Twitch",
+   "question": "Justin TV lançou em que ano?",
+  "answer": ["2007"]
+   },
+  {
+   "category": "História",
+   "question": "Porsche é uma marca de carros que se originou em que país?",
+  "answer": ["Alemanha"]
+   },
+  {
+   "category": "História",
+   "question": "Em que século Cristóvão descobriu a América?",
+  "answer": ["15"]
+   },
+  {
+   "category": "História",
+   "question": "Qual foi a primeira empresa estrangeira a abrir uma indústria nos Estados Unidos?",
+  "answer": ["Volkswagen"]
+   },
+  {
+   "category": "História",
+   "question": "O que o inventor polônes Jan Szczepanik inventou?",
+  "answer": ["Colete a prova de balas"]
+   },
+  {
+   "category": "Futebol",
+   "question": "Que país hospedou a Copa do Mundo de 1990?",
+  "answer": ["Itália"]
+   },
+  {
+   "category": "Animes",
+   "question": "Na parte 5 de JOJO, qual é o nome do stand do principal antagonista?",
+  "answer": ["King Crimson"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Que planeta do nosso sistema solar possui a gravidade mais forte?",
+  "answer": ["Júpiter"]
+   },
+  {
+   "category": "História",
+   "question": "Qual foi o primeiro presidente do Brasil?",
+  "answer": ["Deodoro da Fonseca"]
+   },
+  {
+   "category": "História",
+   "question": "Quantos estados tem o Brasil?",
+  "answer": ["27"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o peixe mais consumido mundialmente?",
+  "answer": ["Arenque"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Lituânia?",
+  "answer": ["Vilnius"]
+   },
+  {
+   "category": "Twitch",
+   "question": "Criador desse bot :D?",
+  "answer": ["SrLuuL"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Em que cidade fica o bar mais antigo do mundo?",
+  "answer": ["Munique"]
+   },
+  {
+   "category": "Geografia",
+   "question": "A empresa Nintendo foi fundada em que país?",
+  "answer": ["Japão"]
+   },
+  {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 77+77?",
+  "answer": ["154"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Quanto custa uma AWP no CSGO?",
+  "answer": ["$4750"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é a fórmula química do Ozônio?",
+  "answer": ["O3"]
+   },
+  {
+   "category": "Biologia",
+   "question": "Quantos pulmões o ser humano possui?",
+  "answer": ["2"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a fossa oceânica mais funda?",
+  "answer": ["Fossa Das Marianas"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano começou a Primeira Guerra Mundial?",
+  "answer": ["1914"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Metais alcalinos reagem com o quê?",
+  "answer": ["Água"]
+   },
+  {
+   "category": "Econômia",
+   "question": "Um declínio geral de atividades econômicas é chamado de?",
+  "answer": ["Recessão"]
+   },
+  {
+   "category": "Carros",
+   "question": "Que fabricante de carros produziu o modelo Continental GT?",
+  "answer": ["Bentley"]
+   },
+  {
+   "category": "História",
+   "question": "Romanos chegaram primeiro em Reino Unido em que ano?",
+  "answer": ["55 AC"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Qual é o nível máximo de encantamento?",
+  "answer": ["30"]
+   },
+  {
+   "category": "Biologia",
+   "question": "Quantas câmaras tem um coração humano?",
+  "answer": ["4"]
    }
 ]
