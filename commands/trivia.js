@@ -38,7 +38,7 @@ break
 const quiz = require("../data/trivia.json");
 const items = quiz[Math.floor(Math.random() * quiz.length)];
 
-const {questions, category, answer} = items;
+const {question, category, answer} = items;
 
 await client.say(channel, `Categoria: ${category} | ${question}`)
 
@@ -77,6 +77,9 @@ trivia.running = false
 } else if(args[0] == "stop"){
 trivia.stopped = true
 }
+
+}
+
 
 }
 
