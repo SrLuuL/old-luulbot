@@ -787,7 +787,7 @@
    {
    "category": "Matemática",
    "question": "Quais são os 5 primeiros dígitos de Pi?",
-  "answer": ["3,1415"]
+  "answer": ["3.1415"]
    },
    {
    "category": "Abelhas",
@@ -798,6 +798,145 @@
    "category": "História",
    "question": "Em que ano os Hussardos Poloneses chegaram?",
   "answer": ["1683"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o país no sul do Egito?",
+  "answer": ["Sudão"]
+   },
+   {
+   "category": "Twitch",
+   "question": "Quem traiu a sua esposa?",
+  "answer": ["D OMEGALUL C"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Qual é o nome do símbolo químico Y?",
+  "answer": ["Ítrio"]
+   },
+   {
+   "category": "Futebol",
+   "question": "Quanto tempo um goleiro pode segurar a bola em suas mãos?",
+  "answer": ["6 segundos"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "O que o F significa na sigla FBI?",
+  "answer": ["Federal"]
+   },
+   {
+   "category": "Música",
+   "question": "Qual foi a primeira banda Heavy Metal?",
+  "answer": ["Black Sabbath"]
+   },
+   {
+   "category": "História",
+   "question": "Quem foi a primeira pessoa a conduzir uma expedição ao redor do mundo?",
+  "answer": ["Fernão de Magalhães"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a maior montanha em Vietnã?",
+  "answer": ["Fansipan"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Como é chamada a maior baía do mundo?",
+  "answer": ["Bengal"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Rápido! 6+9?",
+  "answer": ["15"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Quem é o vilão principal de Borderlands 2?",
+  "answer": ["Handsome Jack"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Suécia?",
+  "answer": ["Estocolmo"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Um grupo de corujas é chamado de quê?",
+  "answer": ["Parlamento"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o país considerado mais perigoso do mundo?",
+  "answer": ["Afeganistão"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Fluidos que são fortemente magnetizados diante um campo de magnetização são chamados de?",
+  "answer": ["Ferrofluidos"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 347+66?",
+  "answer": ["413"]
+   },
+   {
+   "category": "Minecraft",
+   "question": "Quantos blocos máximos um pistão pode empurrar?",
+  "answer": ["1683"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Em Darksiders 1 você joga como a...?",
+  "answer": ["Guerra"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Em Darksiders 2 você joga como a...?",
+  "answer": ["Morte"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Quantos países existem na União Européia?",
+  "answer": ["28"]
+   },
+   {
+   "category": "História",
+   "question": "Na mitologia grega, quem transforma tudo que toca em ouro?",
+  "answer": ["Midas"]
+   },
+   {
+   "category": "Animes",
+   "question": "Descubra o anime: Estudantes do colegial jogam vôlei",
+  "answer": ["Haikyuu!!"]
+   },
+   {
+   "category": "Video Game",
+   "question": "Quem é o último chefão na rota genocída de Undertale?",
+  "answer": ["Sans"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Quem patenteou o primeiro motor de vapor?",
+  "answer": ["James Watt"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior país que termina com \"tão\"?",
+  "answer": ["Cazaquistão"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Qual é o nome do símbolo químico Hg?",
+  "answer": ["Mercúrio"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Libéria?",
+  "answer": ["Monróvia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o ponto mais alto na Europa?",
+  "answer": ["Monte Elbrus"]
    }
-  
 ]
