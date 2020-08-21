@@ -82,7 +82,7 @@
   {
    "category": "Twitch",
    "question": "Quanto tempo durou a menor stream de Forsen?",
-  "answer": ["42 Segundos"]
+  "answer": ["42 segundos"]
   },
   {
    "category": "Conhecimentos Gerais",
@@ -173,5 +173,100 @@
    "category": "História",
    "question": "Quantas letras existem no alfabeto Grego?",
   "answer": ["24"]
+   },
+   {
+   "category": "Biologia",
+   "question": "Quantos ossos a girafa tem em seu pescoço?",
+  "answer": ["7"]
+   },
+  {
+   "category": "Gachi",
+   "question": "País origem de Van Darkholme",
+  "answer": ["Vietnam"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Protagonista de Dishonored",
+  "answer": ["Corvo"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o mineral mais duro que existe?",
+  "answer": ["Diamante"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Frequência é medida em que",
+  "answer": ["Hertz"]
+   },
+  {
+   "category": "Matemática",
+   "question": "A constante matemática \"e\" foi nomeada a partir deste matemático",
+  "answer": ["Leonhard Euler"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Que bebida supostamente \"te dá asas\"?",
+  "answer": ["Leonhard Euler"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Que outro mob do minecraft além da aranha te dá olho de aranha?",
+  "answer": ["Bruxa"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Ortoépia é o estudo de que?",
+  "answer": ["Pronúncia de palavras"]
+   },
+  {
+   "category": "Twitch",
+   "question": "Que streamer é famosa por ter o Síndrome de Tourette?",
+  "answer": ["Sweet Anita"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é o maior rancho do mundo?",
+  "answer": ["Fazenda Anna Creek"]
+   },
+  {
+   "category": "História",
+   "question": "Que país mais sofreu baixas na Segunda Guerra Mundial 2",
+  "answer": ["União Soviética"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Em que  estado do US o Grand Canyon está localizado?",
+  "answer": ["Arizona"]
+   },
+  {
+   "category": "Futebol",
+   "question": "Que país hospedou A Copa do Mundo em 1962?",
+  "answer": ["Chile"]
+   },
+  {
+   "category": "Twitch",
+   "question": "Quem é Tyler Durden",
+  "answer": ["O Narrador"]
+   },
+  {
+   "category": "Carros",
+   "question": "Que fabricante de carros produziu o modelo Grand Cruiser?",
+  "answer": ["Toyota"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Marrocos?",
+  "answer": ["Rabat"]
+   },
+  {
+   "category": "Xadrez",
+   "question": "Que peça pode mover livremente na horizontal e vertical?",
+  "answer": ["Torre"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Que país fica na borda entre Espanha e França?",
+  "answer": ["Andorra"]
    }
 ]
