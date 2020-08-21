@@ -1093,5 +1093,70 @@
    "category": "Biologia",
    "question": "Quantas câmaras tem um coração humano?",
   "answer": ["4"]
+   },
+   {
+   "category": "História",
+   "question": "Quem foi o primeiro humano a viajar no espaço?",
+  "answer": ["Yuri Gagarin"]
+   },
+   {
+   "category": "Animes",
+   "question": "Descubra o anime: Um estudante decide conviver em uma loja de mergulho",
+  "answer": ["Grand Blue"]
+   },
+   {
+   "category": "Rápido! Quanto é 62 x 7?",
+   "question": "Quantas câmaras tem um coração humano?",
+  "answer": ["434"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior lago que existe?",
+  "answer": ["Mar Cáspio"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital da República Dominicana?",
+  "answer": ["Santo Domingo"]
+   },
+   {
+   "category": "Astronomia",
+   "question": "Em que mês a terra fica mais próxima ao sol?",
+  "answer": ["Janeiro"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Onde fica o ponto mais alto na América do Sul?",
+  "answer": ["Aconcágua"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o tamanho aproximado  do equador da terra?",
+  "answer": ["40000 km"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o único planeta do nosso sistema solar que não é nomeado a partir de um deus grego ou romano?",
+  "answer": ["Terra"]
+   },
+   {
+   "category": "Twitch",
+   "question": "Que emote representa os chineses?",
+  "answer": ["MingLee"]
+   },
+   {
+   "category": "História",
+   "question": "Aníbal derrotou Roma em que batalha?",
+  "answer": ["Batalha de Canas"]
+   },
+   {
+   "category": "Animes",
+   "question": "No anime \"Kobayashi-san maid dragon\" Tohru é um...?",
+  "answer": ["Dragão"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual o nome do cara do jogo postal?",
+  "answer": ["Cara do Postal"]
    }
 ]
