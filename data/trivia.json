@@ -691,8 +691,113 @@
    },
  {
    "category": "História
-   "question": "Em que ano ocorreu a Batalha e Grunwald?
+   "question": "Em que ano ocorreu a Batalha de Grunwald?",
+  "answer": ["1410"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Descartando Antártida, qual é o maior deserto do mundo?",
+  "answer": ["Saara"]
+   },
+   {
+   "category": "Animes",
+   "question": "Qual é o nome do slime em Monster Musume?",
+  "answer": ["Suu"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Em que ano foi lançado Doom?",
+  "answer": ["1993"]
+   },
+   {
+   "category": "História",
+   "question": "Em que país ocorreu o Levante dos Boxers?",
+  "answer": ["China"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Onde está localizado a maior construção do mundo?",
   "answer": ["Dubai"]
+   },
+   {
+   "category": "Carros",
+   "question": "Quantas partes um carro tradicional possui?",
+  "answer": ["30000"]
+   },
+   {
+   "category": "Música",
+   "question": "Quantas teclas pretas um teclado moderno possui?",
+  "answer": ["36"]
+   },
+   {
+   "category": "História",
+   "question": "Em que oceano Titanic afundou?",
+  "answer": ["Oceano Atlântico"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quantas cores tem o arco-íris?",
+  "answer": ["7"]
+   },
+   {
+   "category": "Tecnologia",
+   "question": "Que empresa famosa se chamava \"Confinity\" e focava em criptografia?",
+  "answer": ["PayPal"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Como é chamado alguém responsável por negócios envolvendo funerais?",
+  "answer": ["Agente Funérario"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Brunei?",
+  "answer": ["Bandar Seri Begawan"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Como é chamada a maior lua de Saturno?",
+  "answer": ["Titan"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Como é chamado a fobia de números?",
+  "answer": ["Numerofobia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Escópia é capital de que país?",
+  "answer": ["Macedônia"]
+   },
+   {
+   "category": "Comidas/Bebidas",
+   "question": "Qual iguaria consiste de uma mistura de farinha com manteiga derretida?",
+  "answer": ["Roux"]
+   },
+   {
+   "category": "História",
+   "question": "Quem criou o alcorão?",
+  "answer": ["Mohammed Ali"]
+   },
+   {
+   "category": "Econômia",
+   "question": "Qual é a moeda utilizada na Russia?",
+  "answer": ["Rublo Russo"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Quais são os 5 primeiros dígitos de Pi?",
+  "answer": ["3,1415"]
+   },
+   {
+   "category": "Abelhas",
+   "question": "O quão rápido são as abelhas em km/h?",
+  "answer": ["8"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano os Hussardos Poloneses chegaram?",
+  "answer": ["1683"]
    }
   
 ]
