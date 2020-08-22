@@ -1903,5 +1903,200 @@
    "category": "Ciência",
    "question": "Qual é a fórmula molecular do hidróxido de sódio?",
   "answer": ["NaOH"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é nome do elemento do símbolo químico V?",
+  "answer": ["Vanádio"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano a Nova Zelândia ganhou sua independência?",
+  "answer": ["1947"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "O que espanta creepers?",
+  "answer": ["Ocelotes"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Facebook, Youtube, Instagram e Twitch estão todos banidos em qual país?",
+  "answer": ["China"]
+   },
+  {
+   "category": "Ciência",
+   "question": "O que é convertido em álcool no processo de produção da cerveja?",
+  "answer": ["Açúcar"]
+   },
+  {
+   "category": "História",
+   "question": "Qual é o jogo de tabuleiro mais popular mundialmente?",
+  "answer": ["Xadrez"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Em que temperatura Fahrenheit e Celsius se tornam iguais?",
+  "answer": ["-40"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Qual é o jogo russo mais popular?",
+  "answer": ["Tetris"]
+   },
+  {
+   "category": "Esportes",
+   "question": "Quantos anéis existem na logo dos Jogos Olímpicos ?",
+  "answer": ["5"]
+   },
+  {
+   "category": "Tecnologia",
+   "question": "Qual foi a primeira empresa a desenvolver celulares com capacidade touchscreen?",
+  "answer": ["LG"]
+   },
+  {
+   "category": "História",
+   "question": "Qual foi a primeira mulher a voar de avião através do Atlântico?",
+  "answer": ["Amelia Earhart"]
+   },
+  {
+   "category": "Abelhas",
+   "question": "Quanto mel colônias precisam para sobreviver o inverno?",
+  "answer": ["15,8 KG"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Em \"Prince of Persia\" qual é a habilidade da adaga?",
+  "answer": ["Voltar no tempo"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Djibouti?",
+  "answer": ["Djibouti"]
+   },
+  {
+   "category": "Xadrez",
+   "question": "Que peça de xadrez fica perto do Rei e Rainha?",
+  "answer": ["Bispo"]
+   },
+   {
+   "category": "Animes",
+   "question": "Descubra o anime: Um urso falante demanda que estudantes se matem",
+  "answer": ["Danganronpa"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano Japão atacou Pearl Harbor?",
+  "answer": ["1941"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Quantos países existem na América do Sul?",
+  "answer": ["12"]
+   },
+    {
+   "category": "Abelhas",
+   "question": "Quantas gramas de mel abelhas podem fazer por dia?",
+  "answer": ["907"]
+   },
+    {
+   "category": "Conhecimentos Gerais",
+   "question": "O que um anemômetro mede?",
+  "answer": ["Velocidade do vento"]
+   },
+    {
+   "category": "Minecraft",
+   "question": "Que minério pode ser usado para ativar engenharias?",
+  "answer": ["Redstone"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de China?",
+  "answer": ["Pequim"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Em Darksiders 3 você joga como a...?",
+  "answer": ["Raiva"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Guiné?",
+  "answer": ["Conakri"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Que gosto gatos não conseguem sentir?",
+  "answer": ["Doce"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Que jogo retrata a Primeira Guerra Mundial com fotos e fatos?",
+  "answer": ["Valiant Hearts"]
+   },
+  {
+   "category": "História",
+   "question": "Que titã grego devorou suas crianças quando elas nasceram?",
+  "answer": ["Cronos"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano o Canal do Panamá abriu?",
+  "answer": ["1914"]
+   },
+  {
+   "category": "Geografia",
+   "question": "O rio Yangtzé está localizado em que país?",
+  "answer": ["China"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é o menor estado de Alemanha?",
+  "answer": ["Bremen"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Quem é o protagonista da série Splinter Cell?",
+  "answer": ["Sam Fisher"]
+   },
+  {
+   "category": "Ciências",
+   "question": "Por que bananas são curvadas?",
+  "answer": ["Sol"]
+   },
+  {
+   "category": "Tecnologia",
+   "question": "Qual é o nome do pássaro do Twitter?",
+  "answer": ["Larry"]
+   },
+  {
+   "category": "Astronomia",
+   "question": "Qual é menor planeta do nosso sistema solar?",
+  "answer": ["Mercúrio"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "O que você precisa para controlar porcos com cela?",
+  "answer": ["Cenoura no graveto"]
+   },
+  {
+   "category": "Geografia",
+   "question": "O rio Paraná é importante para que continente?",
+  "answer": ["América do Sul"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é o maior rio da Europa?",
+  "answer": ["Volga"]
+   },
+  {
+   "category": "História",
+   "question": "Iraque invandiu qual nação em 1980?",
+  "answer": ["Irã"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Tchéquia?",
+  "answer": ["Praga"]
    }
 ]
