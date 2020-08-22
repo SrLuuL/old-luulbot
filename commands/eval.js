@@ -12,7 +12,9 @@ const evaluated = await eval('(async () => {' +args.join(" ") + '})()')
 const ev = String(evaluated)
 
 if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
-else console.log(ev)
+else client.say(channel, `${ev}`)
+
+    
 
   } catch (err) {
     return client.say(channel, `${username}, ocorreu algum erro (${err}) :/`)
