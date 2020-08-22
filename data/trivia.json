@@ -1221,7 +1221,7 @@
    },
    {
    "category": "Video Games",
-   "question": "De que jogo é Isaac Clarke??",
+   "question": "De que jogo é Isaac Clarke?",
   "answer": ["Dead Space"]
    },
    {
@@ -1277,7 +1277,7 @@
    {
    "category": "Geografia",
    "question": "O fluxo do rio Columbia fica em que oceano?",
-  "answer": ["Oceano pacífico"]
+  "answer": ["Oceano Pacífico"]
    },
    {
    "category": "Twitch",
@@ -1353,5 +1353,271 @@
    "category": "Geografia",
    "question": "Qual é a capital de Camboja?",
   "answer": ["Phnom Penh"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem é Batman?",
+  "answer": ["Bruce Wayne"]
+   },
+  {
+   "category": "História",
+   "question": "Quem descobriu a Penicilina?",
+  "answer": ["Alexander Flemming"]
+   },
+    {
+   "category": "História",
+   "question": "Que número representa o númeral romano D?",
+  "answer": ["500"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Quem é o parceiro de Sonic?",
+  "answer": ["Tails"]
+   },
+    {
+   "category": "História",
+   "question": "Quem foi o primeiro explorador a viajar para a América do Norte?",
+  "answer": ["Leif Erikson"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Quem foi o criador de Garry's Mod?",
+  "answer": ["Garry Newman"]
+   },
+    {
+   "category": "História",
+   "question": "Quem foi o primeiro-ministro do Reino Unido na Segunda Guerra Mundial?",
+  "answer": ["Winston Churchill"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Que país africano tem o português como linguagem oficial?",
+  "answer": ["Moçambique"]
+   },
+    {
+   "category": "Tecnologia",
+   "question": "Em Web Design, o que CSS significa?",
+  "answer": ["Folha de Estilo em Cascatas"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Qual é a linguagem oficial da Costa Rica?",
+  "answer": ["Espanhol"]
+   },
+    {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual empresa suéca se originou em 1943?",
+  "answer": ["IKEA"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Qual é a maior montanha do mundo?",
+  "answer": ["Monte Everest"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Quem é o protagonista do jogo Dangaronpa 2: Goodbye Despair?",
+  "answer": ["Hajime Hinata"]
+   },
+    {
+   "category": "História",
+   "question": "Em que ano a muralha de Berlin caiu?",
+  "answer": ["1989"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Qual é o nome do protagonista de Xenoblade Chronicles?",
+  "answer": ["Shulk"]
+   },
+    {
+   "category": "Ciência",
+   "question": "Como é o símbolo químico do Estanho?",
+  "answer": ["Sn"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Peru?",
+  "answer": ["Lima"]
+   },
+   {
+   "category": "Video Game",
+   "question": "Junto com Gabe Newell, quem mais fundou a Valve?",
+  "answer": ["Mike Harrington"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Que elemento químico representa Au?",
+  "answer": ["Ouro"]
+   },
+   {
+   "category": "História",
+   "question": "Tesla foi fundada em que ano?",
+  "answer": ["2003"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Como é o título dado pelos demônios para o protagonista de Doom?",
+  "answer": ["Doom Slayer"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Em média, americanos consomem 45KG de o que por segundo?",
+  "answer": ["Chocolate"]
+   },
+   {
+   "category": "História",
+   "question": "Que construção famosa pegou fogo em 1812?",
+  "answer": ["A Casa Branca"]
+   },
+   {
+   "category": "História",
+   "question": "Que jogo de tabuleiro foi lançado em 1935?",
+  "answer": ["Monopoly"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Quantos troféus existem no Super Smash Bros(Nintendo 3DS)?",
+  "answer": ["685"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Quantos países independentes existem na América do Sul?",
+  "answer": ["12"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Em que continente o país Lesoto vive?",
+  "answer": ["África"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano a Guerra do Vietnã acabou?",
+  "answer": ["1975"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Em CSGO, a raridade de skins descontinuadas se chama?",
+  "answer": ["Contrabando"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Onde está localizado a Muralha de Adriano?",
+  "answer": ["Reino Unido"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano Texas se separou de México?",
+  "answer": ["1836"]
+   },
+  {
+   "category": "Matemática",
+   "question": "No sistema hexadecimal, que número vêm depois de 9?",
+  "answer": ["A"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Que tipo de pedra é formada a partir de grandes temperaturas e pressão?",
+  "answer": ["Metamórfica"]
+   },
+  {
+   "category": "Livros",
+   "question": "Em Harry Potter, quem Draco Malfoy acabou casando?",
+  "answer": ["Astoria Greengrass"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano Jamaica recebe sua independência de Reino Unido?",
+  "answer": ["1962"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Nevada(US)?",
+  "answer": ["Carson City"]
+   },
+  {
+   "category": "História",
+   "question": "Na mitologia grega, quem matou Achilles?",
+  "answer": ["Paris"]
+   },
+  {
+   "category": "Música",
+   "question": "Em que país surgiu a música \"Gangnam Style\"?",
+  "answer": ["Coréia do Sul"]
+   },
+  {
+   "category": "Animais",
+   "question": "O prato baiacu, é feito de que familia dos peixes?",
+  "answer": ["Tetraodontidae"]
+   },
+    {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem fundou a Academia Khan?",
+  "answer": ["Sal Khan"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Em que continente surgiu a fruta abacaxi?",
+  "answer": ["América do Sul"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Em que ano foi concluído a construção do Canal de Suez?",
+  "answer": ["1869"]
+   },
+    {
+   "category": "Música",
+   "question": "Quantas linhas tem um violoncelo tradicional?",
+  "answer": ["4"]
+   },
+    {
+   "category": "Comics",
+   "question": "Qual é o nome verdadeiro de Magneto em X-Men?",
+  "answer": ["Max Eisenhardt"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o maior órgão do ser humano?",
+  "answer": ["Pele"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Quem é o protagonista de Stanley Parable?",
+  "answer": ["Stanley"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Em que ano foi lançado Metal Gear Solid?",
+  "answer": ["1998"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano a Batalha do Somme ocorreu?",
+  "answer": ["1916"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Tekken é um jogo desenvolvido por qual desenvolvedora?",
+  "answer": ["Namco"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Deutério é isótopo de qual elemento?",
+  "answer": ["Hidrogênio"]
+   },
+  {
+   "category": "Celebridades",
+   "question": "O pintor Bob Ross faleceu em que ano?",
+  "answer": ["1995"]
+   },
+  {
+   "category": "Comida/Bebidas",
+   "question": "Chá de Earl Gray é um chá preto aromatizado com?",
+  "answer": ["Óleo de bergamota"]
+   },
+  {
+   "category": "Geografia",
+   "question": "O que é a Tasmânia?",
+  "answer": ["Estado Australiano"]
    }
+  
 ]
