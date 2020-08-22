@@ -1738,6 +1738,170 @@
    "category": "História",
    "question": "Quem pintou a Noite Estrelada?",
   "answer": ["Van Gogh"]
+   },
+   {
+   "category": "Esportes",
+   "question": "Quem ganhou a Fórmula 1 2016?",
+  "answer": ["Nico Rosberg"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Argentina?",
+  "answer": ["Buenos Aires"]
+   },
+   {
+   "category": "Tecnologia",
+   "question": "3 milhões de contas foram corrompidas com qual empresa em 2013?",
+  "answer": ["Adobe"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual país possui a maior área territorial?",
+  "answer": ["Rússia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Belize?",
+  "answer": ["Belmopã"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Na mitologia grega, quem era a deusa da beleza?",
+  "answer": ["Afrodite"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quais são as primeiras palavras da bíblia?",
+  "answer": ["No começo"]
+   },
+   {
+   "category": "Abelhas",
+   "question": "Quantas vezes por minuto abelhas batem suas asas?",
+  "answer": ["180"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é capital de Granada?",
+  "answer": ["Saint Georges"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Quantas bandeiras nacionais tem a cor roxo nelas?",
+  "answer": ["2"]
+   },
+   {
+   "category": "Tecnologia",
+   "question": "Que empresa inventou o disco rígido?",
+  "answer": ["IBM"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Yerevan é capital de que país?",
+  "answer": ["Arménia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Quais dois países possuem a mesma bandeira?",
+  "answer": ["Chade e Romênia"]
+   },
+   {
+   "category": "Animes",
+   "question": "Na parte 4 de Jojo, qual é o stand do protagonista?",
+  "answer": ["Crazy Diamond"]
+   },
+   {
+   "category": "História",
+   "question": "Qual foi a primeira praga de Egito?",
+  "answer": ["Água em sangue"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Planalto de Gizé pode ser encontrado em qual país?",
+  "answer": ["Egito"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Em que grupo fazem parte os metais alcalinos da tabela periódica?",
+  "answer": ["Primeiro"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Que gás atmosférico é o mais comum?",
+  "answer": ["Nitrogênio"]
+   },
+   {
+   "category": "Música",
+   "question": "Qual é a música oficial da Copa do Mundo de 2010?",
+  "answer": ["Waka Waka"]
+   },
+   {
+   "category": "Memes",
+   "question": "Seria estranho alguém te filmando nesse lugar",
+  "answer": ["Banheiro"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual franquia de video games vendeu mais cópias?",
+  "answer": ["Mario"]
+   },
+ {
+   "category": "Video Games",
+   "question": "Famosa run de GoldenEye/Streets",
+  "answer": ["1:12"]
+   },
+   {
+   "category": "Animais",
+   "question": "Quanto tempo dura um orgasmo de um porco?",
+  "answer": ["30 minutos"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Canadá?",
+  "answer": ["Ottawa"]
+   },
+   {
+   "category": "Carros",
+   "question": "Que fabricante de carros produziu o modelo Punto?",
+  "answer": ["Fiat"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Burundi?",
+  "answer": ["Gitega"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Que picareta você precisa para minerar Quartzo?",
+  "answer": ["Picareta de madeira"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Que nação africana que mais possui pirâmides?",
+  "answer": ["Sudão"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual país é o maior produtor de café do mundo?",
+  "answer": ["Brasil"]
+   },
+  {
+   "category": "Animes",
+   "question": "AYAYA any cuties?",
+  "answer": ["FCreep"]
+   },
+  {
+   "category": "Abelhas",
+   "question": "Qual é a única função de um zangão?",
+  "answer": ["Procriar"]
+   },
+  {
+   "category": "História",
+   "question": "Quem inventou o avião?",
+  "answer": ["Santos Dumont"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é a fórmula molecular do hidróxido de sódio?",
+  "answer": ["NaOH"]
    }
-  
 ]
