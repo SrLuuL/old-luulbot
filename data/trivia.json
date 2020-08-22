@@ -747,7 +747,7 @@
    {
    "category": "Conhecimentos Gerais",
    "question": "Como é chamado alguém responsável por negócios envolvendo funerais?",
-  "answer": ["Agente Funérario"]
+  "answer": ["Agente Funerário"]
    },
    {
    "category": "Geografia",
@@ -1618,6 +1618,126 @@
    "category": "Geografia",
    "question": "O que é a Tasmânia?",
   "answer": ["Estado Australiano"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano ocorreu a Quinta-feira Negra?",
+  "answer": ["1929"]
+   },
+   {
+   "category": "História",
+   "question": "Quem aparece na nota de 1 dólar?",
+  "answer": ["George Washington"]
+   },
+   {
+   "category": "História",
+   "question": "Qual era o apelido de Manfred von Roichthofen?",
+  "answer": ["Barão Vermelho"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano foi ativado o primeiro dispositivo nuclear?",
+  "answer": ["1945"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Quando Garry's Mod foi lançado?",
+  "answer": ["2004"]
+   },
+   {
+   "category": "Ciência",
+   "question": "A condição osteoporose afeta que parte do corpo?",
+  "answer": ["Ossos"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o nome da maior cidade de Tennessee(US)?",
+  "answer": ["Memphis"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual era o nome original de Crash Bandicoot?",
+  "answer": ["Willie Wombat"]
+   },
+   {
+   "category": "Música",
+   "question": "Qual é o nome da guitarra de Brian May?",
+  "answer": ["Red Special"]
+   },
+   {
+   "category": "Música",
+   "question": "Quem lançou o álbum \"Out of Time\" em 1991?",
+  "answer": ["R.E.M"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Quantos prótons tem em um átomo de oxigênio?",
+  "answer": ["8"]
+   },
+   {
+   "category": "Filmes",
+   "question": "Que nome Tom Hanks deu a sua bola de vôlei no filme \"Náufrago\"?",
+  "answer": ["Wilson"]
+   },
+   {
+   "category": "Política",
+   "question": "Que presidente apagou o débito nacional dos Estados Unidos?",
+  "answer": ["Andrew Jackson"]
+   },
+   {
+   "category": "Filmes",
+   "question": "Quem dirigiu o filme \"O Regresso\"?",
+  "answer": ["Alejandro Gonzáles"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Quantos graus Fahrenheit são 100 graus Celsius?",
+  "answer": ["212"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Na mitologia grega, Hera era deusa do...?",
+  "answer": ["Casamento"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Na mitalogia grega, Priapus era deus da...?",
+  "answer": ["Ereção"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Quantos prótons tem em um átomo de oxigênio?",
+  "answer": ["8"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Em que ano o Youtube foi fundado?",
+  "answer": ["2005"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Na série \"The Legend of Zelda\" qual foi o primeiro jogo em 3D?",
+  "answer": ["Ocarina of Time"]
+   },
+   {
+   "category": "Música",
+   "question": "Qual foi a última Opera do compositor Georges Bizet?",
+  "answer": ["Carmen"]
+   },
+   {
+   "category": "Filmes",
+   "question": "No filme \"Náufrago\" o nome do melhor amigo do protagonista é?",
+  "answer": ["Wilson"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Como é o número decimal 31 em hexadecimal?",
+  "answer": ["1F"]
+   },
+   {
+   "category": "História",
+   "question": "Quem pintou a Noite Estrelada?",
+  "answer": ["Van Gogh"]
    }
   
 ]
