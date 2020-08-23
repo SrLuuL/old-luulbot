@@ -2388,6 +2388,221 @@
    "category": "Video Games",
    "question": "Em 2005, \"God of War\" foi lançado exclusivamente para qual console?",
   "answer": ["Playstation 2"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Qual é o derivado de sen x?",
+  "answer": ["cos x"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Em que dia é ação de graças no Canadá?",
+  "answer": ["2 de Outubro"]
+   },
+  {
+   "category": "História",
+   "question": "Em que ano a Constituição dos Estados Unidos foi escrita?",
+  "answer": ["1787"]
+   },
+  {
+   "category": "Ciência",
+   "question": "O que chove em Saturno e Júpiterr ?",
+  "answer": ["Diamantes"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "De acordo com um estudo em Harvard em 2018, quantos gêneros existem?",
+  "answer": ["112"]
+   },
+  {
+   "category": "Ciência",
+   "question": "A chuva contém que vitamina?",
+  "answer": ["B12"]
+   },
+  {
+   "category": "Animes",
+   "question": "Qual é o nome do principal herói de \"One Punch Man\"?",
+  "answer": ["Saitama"]
+   },
+  {
+   "category": "História",
+   "question": "Quem criou a primeira privada sanitária?",
+  "answer": ["Alexander Cummings"]
+   },
+  {
+   "category": "Música",
+   "question": "Quem cantou a música \"Imagine\"??",
+  "answer": ["John Lennon"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Burkina Faso?",
+  "answer": ["Uagadugu"]
+   },
+  {
+   "category": "Biologia",
+   "question": "Em que parte do corpo humano você acharia ossos chamados falanges?",
+  "answer": ["Mãos"]
+   },
+  {
+   "category": "Animes",
+   "question": "No anime Fate/Zero que figura história representa Rider?",
+  "answer": ["Alexandre o Grande"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Croácia?",
+  "answer": ["Zagrebe"]
+   },
+  {
+   "category": "Xadrez",
+   "question": "Qual peça possui o menor valor teóricamente?",
+  "answer": ["Peão"]
+   },
+  {
+   "category": "Econômia",
+   "question": "Geralmente, qual é a maior fonte de renda do governo?",
+  "answer": ["Impostos"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "O que um numismata estuda ou coleta?",
+  "answer": ["Moedas"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o nome do castelo mais famoso de Alemanha?",
+  "answer": ["Castelo Neuschwanstein"]
+   },
+   {
+   "category": "Música",
+   "question": "Quem foi banido do Oscar 2019 por fazer comentários sexistas para Hillary Clinton?",
+  "answer": ["Justin Bieber"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 16+56?",
+  "answer": ["72"]
+   },
+   {
+   "category": "Programação",
+   "question": "Qual é a linguagem de programação em que LuuLBot está escrito?",
+  "answer": ["Node.js"]
+   },
+   {
+   "category": "Programação",
+   "question": "Qual é a linguagem de programação em que Bobotinho está escrito?",
+  "answer": ["Python"]
+   },
+    {
+   "category": "Animais",
+   "question": "Qual é nome da espécie mais grande de sapos?",
+  "answer": ["Rã-golias"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Qual é o nome da empresa que lançou a série The Elder Scrolls?",
+  "answer": ["Bethesda Softworks"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Gana?",
+  "answer": ["Acra"]
+   },
+  {
+   "category": "História",
+   "question": "Quantas pinturas Vincent Van Gogh vendeu durante sua vida?",
+  "answer": ["1"]
+   },
+  {
+   "category": "Animes",
+   "question": "Qual é o nome do protagonista de Black Clover?",
+  "answer": ["Asta"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Cuba?",
+  "answer": ["Havana"]
+   },
+  {
+   "category": "Biologia",
+   "question": "Qual é maior artéria do corpo humano?",
+  "answer": ["Aorta"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é a capital de Vietnã?",
+  "answer": ["Hanói"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é a cor do M na logo do McDonald's?",
+  "answer": ["Amarelo"]
+   },
+  {
+   "category": "História",
+   "question": "Quem foi o primeiro emperador da Roma?",
+  "answer": ["Augusto César"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Por que o Mar Morto é considerado \"morto\"?",
+  "answer": ["Sem vida animal"]
+   },
+  {
+   "category": "Memes",
+   "question": "Trivia acabou?",
+  "answer": [":Z"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Partículas com spin inteiro são chamadas de..?",
+  "answer": ["Bósons"]
+   },
+  {
+   "category": "Tecnologia",
+   "question": "Em que ano o primeiro SMS foi enviado?",
+  "answer": ["1992"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Que encantamento do minecraft faz você minerar mais rápido?",
+  "answer": ["Eficiência"]
+   },
+  {
+   "category": "Abelhas",
+   "question": "Quantas colheres de sopa de mel uma abelha trabalhadora produz em sua vida?",
+  "answer": ["1/12"]
+   },
+  {
+   "category": "Carros",
+   "question": "Qual é o carro mais rápido produzido em 2017?",
+  "answer": ["Agera RS"]
+   },
+  {
+   "category": "Minecraft",
+   "question": "Quais são as dimensões de um chunk?",
+  "answer": ["16x16x256"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é o país com o maior número de fusos horários(12) do mundo?",
+  "answer": ["França"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Qual é capital de Áustria?",
+  "answer": ["Viena"]
+   },
+  {
+   "category": "Video Games",
+   "question": "Que jogo levou 14 anos para sair e foi uma decepção?",
+  "answer": ["Duke Nukem Forever"]
+   },
+  {
+   "category": "Ciência",
+   "question": "Qual é fórmula usada na segunda Lei de Newton?",
+  "answer": ["F=ma"]
    }
   
 ]
