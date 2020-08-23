@@ -25,12 +25,13 @@ client.on("message", async (channel, user, message, self) => {
 
 	if (!message.startsWith(prefix)) return;
 
-globalCD.add(username);
+
 
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
 if (cmdfile) cmdfile.run(client, message, args, username, channel, cmd, alias);
 
+globalCD.add(username);	
 	
 setTimeout(() => {
 	globalCD.delete(username)
