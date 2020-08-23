@@ -452,7 +452,7 @@
   {
    "category": "Minecraft",
    "question": "O que você precisa para impulsionar a Elytra?",
-  "answer": ["Foguetes"]
+  "answer": ["Foguetes de artifício"]
    },
   {
    "category": "Geografia",
@@ -2098,5 +2098,296 @@
    "category": "Geografia",
    "question": "Qual é a capital de Tchéquia?",
   "answer": ["Praga"]
+   },
+   {
+   "category": "Música",
+   "question": "Que álbum Tyler The Creator lançou em 2017?",
+  "answer": ["Flower Boy"]
+   },
+   {
+   "category": "Minecraft",
+   "question": "Como se cura veneno?",
+  "answer": ["Bebendo leite"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quem país administra a Groenlândia?",
+  "answer": ["Dinamarca"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Canadá possui quantos fusos horários?",
+  "answer": ["6"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Que província do Canadá é marcada pela linguagem francesa?",
+  "answer": ["Quebec"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o maior golfo do mundo?",
+  "answer": ["Golfo do México"]
+   },
+   {
+   "category": "Carros",
+   "question": "Qual animal pode ser visto na logo da Porsche?",
+  "answer": ["Um cavalo"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Copenhagen é a capital de que país da Europa?",
+  "answer": ["Dinamarca"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Rápido! Quanto é 56+35?",
+  "answer": ["91"]
+   },
+   {
+   "category": "Filmes",
+   "question": "Quem foi o primeiro James Bond?",
+  "answer": ["Sean Connery"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Rio Grande do Sul(BR)?",
+  "answer": ["Porto Alegre"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Acre(BR)?",
+  "answer": ["Rio Branco"]
+   },
+   {
+   "category": "História",
+   "question": "Quem foi o segundo presidente do Brasil?",
+  "answer": ["Floriano Peixoto"]
+   },
+   {
+   "category": "Animes",
+   "question": "No anime Saiki Kusou no Psi Nan, quem é Kusuo?",
+  "answer": ["Um psíquico"]
+   },
+   {
+   "category": "Tecnologia",
+   "question": "Em que ano foi lançado o primeiro modelo de iPhone?",
+  "answer": ["2007"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Calatunha é uma região de que país?",
+  "answer": ["Espanha"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Com que país a França divide a maior fronteira terrestre externa?",
+  "answer": ["Brasil"]
+   },
+   {
+   "category": "História",
+   "question": "Quantas linhas tem a bandeira do Estados Unidos?",
+  "answer": ["13"]
+   },
+   {
+   "category": "História",
+   "question": "Qual expressão está descrita na bandeira do Brasil?",
+  "answer": ["Ordem e Progresso"]
+   },
+   {
+   "category": "Futebol",
+   "question": "Que jogador de futebol tem o nome CR7?",
+  "answer": ["Cristiano Ronaldo"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é o pais considerado mais seguro do mundo?",
+  "answer": ["Islândia"]
+   },
+   {
+   "category": "Econômia",
+   "question": "Normalmente quando o preço da mercadoria diminuir a quantidade de demanda vai...?",
+  "answer": ["Aumentar"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Que fruta é grande, laranja e usada para decoração?",
+  "answer": ["Abóbora"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Agrostologia é o estudo de quê?",
+  "answer": ["Grama"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Quando que lançou TES V: Skyrim?",
+  "answer": ["2011"]
+   },
+   {
+   "category": "Minecraft",
+   "question": "O que você precisa para curar cegueira?",
+  "answer": ["Colírio"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Qual é o chefão final de Terraria?",
+  "answer": ["Moon Lord"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Qual é a fórmula química do tetracloreto de carbono?",
+  "answer": ["CCl4"]
+   },
+   {
+   "category": "Econômia",
+   "question": "Que moeda é usada no Equador?",
+  "answer": ["Dólar Americano"]
+   },
+   {
+   "category": "Futebol",
+   "question": "Quem ganhou a Supercopa da UEFA?",
+  "answer": ["Liverpool"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "O que petrologia estuda?",
+  "answer": ["Pedras"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é a droga mais usada atualmente?",
+  "answer": ["Cannabis"]
+   },
+   {
+   "category": "Xadrez",
+   "question": "Qual peça se move em formato de L?",
+  "answer": ["Cavalo"]
+   },
+   {
+   "category": "História",
+   "question": "Em que ano ocorre a Batalha de Midway?",
+  "answer": ["1942"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Em que país da América do Sul um terço da população é Hindu?",
+  "answer": ["Guiana"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Que cor é a bola número 1 de um set de bilhar tradicional?",
+  "answer": ["Amarelo"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Diamantes são feitos principalmente de qual elemento?",
+  "answer": ["Carbono"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Metamórfica, sedimentar e ígnea são tipos do quê?",
+  "answer": ["Pedras"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Que disastre natural é medido com a escala Ritcher?",
+  "answer": ["Terremotos"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a capital de Liechtenstein?",
+  "answer": ["Vaduz"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é a segunda maior montanha do mundo?",
+  "answer": ["K2"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Qual é o nome do antidoto para envenenamento com benzodiazepina?",
+  "answer": ["Flumazenil"]
+   },
+   {
+   "category": "História",
+   "question": "A Dinastia Joseon foi fundada em  1392 em qual país?",
+  "answer": ["Coreia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Quantos países são cortados pela linha do Equador?",
+  "answer": ["13"]
+   },
+   {
+   "category": "História",
+   "question": "Quem executou a rainha Marie Antoinette em 1793?",
+  "answer": ["Charles Henri Sanson"]
+   },
+   {
+   "category": "História",
+   "question": "Como morreu Al Capone?",
+  "answer": ["Sífilis"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Que escala de 0 a 14 mede acidez e alcalinidade?",
+  "answer": ["Escala ph"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Sicília é a maior ilha em qual mar?",
+  "answer": ["Mar Mediterrâneo"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Qual é a  soma dos números de 1 a 20?",
+  "answer": ["210"]
+   },
+   {
+   "category": "Animes",
+   "question": "O que é o protagonista de Noragami?",
+  "answer": ["Um deus"]
+   },
+   {
+   "category": "Minecraft",
+   "question": "Qual arma pode atirar foguetes de artifício?",
+  "answer": ["Besta"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quantos olhos tem uma aranha?",
+  "answer": ["8"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Quantas pernas tem uma aranha?",
+  "answer": ["8"]
+   },
+   {
+   "category": "Matemática",
+   "question": "Qual sólido tem o formato de um donut perfeito?",
+  "answer": ["Toro"]
+   },
+   {
+   "category": "Animes",
+   "question": "O anime \"Kuroko no Basket\" é sobre o quê?",
+  "answer": ["Basquete"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Fe é o nome de qual elemento químico?",
+  "answer": ["Ferro"]
+   },
+   {
+   "category": "História",
+   "question": "Qual é o nome da batalha que mais causou baixas na Primeira Guerra Mundial?",
+  "answer": ["Batalha de Somme"]
+   },
+   {
+   "category": "Video Games",
+   "question": "Em 2005, \"God of War\" foi lançado exclusivamente para qual console?",
+  "answer": ["Playstation 2"]
    }
+  
 ]
