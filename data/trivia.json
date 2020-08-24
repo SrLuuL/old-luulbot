@@ -1526,7 +1526,7 @@
    },
   {
    "category": "História",
-   "question": "Em que ano Jamaica recebe sua independência de Reino Unido?",
+   "question": "Em que ano Jamaica recebeu sua independência de Reino Unido?",
   "answer": ["1962"]
    },
   {
@@ -2266,7 +2266,7 @@
    },
    {
    "category": "História",
-   "question": "Em que ano ocorre a Batalha de Midway?",
+   "question": "Em que ano ocorreu a Batalha de Midway?",
   "answer": ["1942"]
    },
    {
@@ -2618,7 +2618,161 @@
   "category": "Matemática",
    "question": "Rápido! Quanto é 29+73?",
   "answer": ["102"]
+   },
+  {
+   "category": "Animes",
+   "question": "Esse anime já ficou top 3 no rank da MyAnimeList?",
+  "answer": ["Pingu"]
+   },
+  {
+   "category": "Música",
+   "question": "Qual é o nome da banda formada por Jimmy Page?",
+  "answer": ["Led Zeppelin"]
+   },
+    {
+   "category": "Conhecimentos Gerais",
+   "question": "Nictofobia é o medo de quê?",
+  "answer": ["Escuridão"]
+   },
+    {
+   "category": "Animes",
+   "question": "Descubra o anime: Um show sobre vikings",
+  "answer": ["Vinland Saga"]
+   },
+    {
+   "category": "História",
+   "question": "A queda de Constantinople ocorreu em que ano?",
+  "answer": ["1453"]
+   },
+    {
+   "category": "Ciência",
+   "question": "Coisas caem quando você derruba elas por quê?",
+  "answer": ["Gravidade"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Qual foi o GOTY de 2019?",
+  "answer": ["Sekiro"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Qual foi o GOTY de 2018?",
+  "answer": ["God of War"]
+   },
+    {
+   "category": "Minecraft",
+   "question": "Villagers agressivos são chamados de?",
+  "answer": ["Illagers"]
+   },
+    {
+   "category": "Matemática",
+   "question": "Qual é a raiz quadrada de 256?",
+  "answer": ["16"]
+   },
+    {
+   "category": "História",
+   "question": "Quem era o líder dos Partisans iugoslavos?",
+  "answer": ["Josip Broz Tito"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Em que oceano o fluxo do rio Amazonas ocorre?",
+  "answer": ["Oceano Atlântico"]
+   },
+    {
+   "category": "Ciência",
+   "question": "Que dois compostos químicos misturados podem criar um grande vapor venenoso?",
+  "answer": ["Alvejante e amônia"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Qual é a capital de Butão?",
+  "answer": ["Timbu"]
+   },
+    {
+   "category": "Abelha",
+   "question": "O registro mais antigo de apicultura?",
+  "answer": ["6000 AC"]
+   },
+    {
+   "category": "Video Games",
+   "question": "Que personagem de Street Fighter vem da Espanha?",
+  "answer": ["Vega"]
+   },
+    {
+   "category": "Ciência",
+   "question": "Qual é o nome do primeiro elemento da tabela periódica?",
+  "answer": ["Hidrogênio"]
+   },
+    {
+   "category": "Animes",
+   "question": "Em Code Geass, qual é o poder geass de Lelouch?",
+  "answer": ["Obediência absoluta"]
+   },
+    {
+   "category": "História",
+   "question": "Em que país surgiu a religão Xintoísta?",
+  "answer": ["a"]
+   },
+    {
+   "category": "Tecnologia",
+   "question": "Quantos bits um endereço MAC possui?",
+  "answer": ["48"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Qual é a capital de Luxemburgo?",
+  "answer": ["Luxemburgo"]
+   },
+    {
+   "category": "História",
+   "question": "Em que ano aconteceu a Revolução Francesa?",
+  "answer": ["1789"]
+   },
+    {
+   "category": "Ciência",
+   "question": "Células câncer atingem imortalidade ativando que enzima?",
+  "answer": ["Telomerase"]
+   },
+    {
+   "category": "Geografia",
+   "question": "Qual é a capital de Camarões?",
+  "answer": ["Yaoundé"]
+   },
+    {
+   "category": "História",
+   "question": "Qual era o nome romano da deusa Hécate?",
+  "answer": ["Trivia"]
+   },
+  {
+   "category": "Linguagens",
+   "question": "Como se diz tchau em espanhol?",
+  "answer": ["Adiós"]
+   },
+  {
+   "category": "Ciência",
+   "question": "O índio é um elemento que está na mesma família de qual metal popular?",
+  "answer": ["Alumínio"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Um décimo de um real é quanto?",
+  "answer": ["10 centavos"]
+   },
+  {
+   "category": "História",
+   "question": "Esse empério comandou o que atualmente é o México durante 1500",
+  "answer": ["Asteca"]
+   },
+  {
+   "category": "Geografia",
+   "question": "Que continente pertence o país Mauritânia?",
+  "answer": ["África"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Uma pequena fruta cítrica",
+  "answer": ["Limão"]
    }
-  
   
 ]
