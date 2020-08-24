@@ -13,54 +13,40 @@ switch(args[0]) {
     break;
 }
 
-let res = await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`);  
-let data = await res.json();
-let res2 = await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`);
-let data2 = await res2.json();
+const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).json()
+const res2 = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`)).json()
 
-  if (data.status === 404 || data.status === 500) {
+
+  if (res.status === 404 || res.status === 500) {
     return client.say(channel, `${username}, não encontrei esse usuário :/`)
   }
-  
-let user = data.displayName
-let userid = data.id
-let bio = data.bio
+ 
+let {displayName, login, id, bio, chatColor,
+partner, affiliate, bot, bannned, createdAt} = res;
+const userLang = res.settings.preferredLanguageTag;
+const staff = res.roles.isStaff;  
+
 bio = (!bio) ? "(Sem Bio)" : bio
 bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio
-let color = data.chatColor
-color = (color === null) ? "(Sem Cor)" : color
-let banned = data.banned
-banned = (banned === true) ? `A conta ${user} está banida` : `A conta ${user} não está banida`
-let partner = data.partner
-partner = (partner === true) ? "parceria/" : ""
-let aff = data.affiliate
-aff = (aff === true) ? "afiliado/" : ""
-let staff = data.roles.isStaff
-staff = (staff === true) ? "staff" : ""
+chatColor = (chatColor === null) ? "(Sem Cor)" : chatColor
+banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${displayName} não está banida`
+partner = (partner === true) ? "parceria" : partner
+affiliate = (affiliate === true) ? "afiliado" : affiliate
+staff = (staff === true) ? "staff" : staff
 let roles = aff + partner + staff
-roles = (roles === "" + "" + "") ? `nenhum cargo` : roles
-let bot = data.bot
-bot = (bot === true) ? `${user} é um bot verificado MrDestructoid` : `${user} não é um bot verificado`
-let lang = data.settings.preferredLanguageTag 
+roles = (!roles.includes(true)) ? `nenhum cargo` : roles.filter(Boolean).join("/")
+bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
 let date = new Date(data.createdAt)
 let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate()
 let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
 let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a")
-const {mods, vips} = data2;
+const {mods, vips} = res2;
 let totalMods = await Object.keys(mods).length
 let totalVips = await Object.keys(vips).length
 
 
-  switch(roles) {
-    case "afiliado/":
-      roles = "afiliado"
-      break;
-    case "parceria/":
-      roles = "parceria"
-      break;
-  }
 
   
   switch (args[0]) {
@@ -71,21 +57,22 @@ let totalVips = await Object.keys(vips).length
   
   switch (args[1]) {
     case "--lang":
-      return client.say(channel, `${username}, A linguagem deste canal é: ${lang}`);
+      return client.say(channel, `${username}, A linguagem deste canal é: ${userLang}`);
     case "--ban":
      return client.say(channel, `${username}, ${banned}`);
     case "--cargos":
-     return client.say(channel, `${username}, A conta ${user} possui ${roles}.`);
+     return client.say(channel, `${username}, A conta ${displayName} possui ${roles}.`);
     case "--bot":
       return client.say(channel, `${username}, ${bot}`);
     case "--age":
-      return client.say(channel, `${username}, A conta ${user} foi criada em ${fullDate}(${dateAge} atrás)`)
+      return client.say(channel, `${username}, A conta ${displayName} foi criada em ${fullDate}(${dateAge} atrás)`)
     case "--mv":
-      return client.say(channel, `${username}, A conta ${user} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
+      return client.say(channel, `${username}, A conta ${displayName} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
 }
 
 
-client.say(channel, `${username}, Canal: ${user} | ID: ${userid} | Bio: ${bio} | Cor: ${color}`)
+client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}`)
+
 
 }
 
