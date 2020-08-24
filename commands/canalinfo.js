@@ -22,7 +22,7 @@ const res2 = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`))
   }
  
 let {displayName, login, id, bio, chatColor,
-partner, affiliate, bot, bannned, createdAt} = res;
+partner, affiliate, bot, banned, createdAt} = res;
 const userLang = res.settings.preferredLanguageTag;
 const staff = res.roles.isStaff;  
 
@@ -33,10 +33,10 @@ banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${
 partner = (partner === true) ? "parceria" : partner
 affiliate = (affiliate === true) ? "afiliado" : affiliate
 staff = (staff === true) ? "staff" : staff
-let roles = aff + partner + staff
+let roles = affiliate + partner + staff
 roles = (!roles.includes(true)) ? `nenhum cargo` : roles.filter(Boolean).join("/")
 bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
-let date = new Date(data.createdAt)
+let date = new Date(createdAt)
 let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate()
 let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1)
 let dateYear = date.getFullYear() 
