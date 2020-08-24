@@ -23,28 +23,29 @@ const res2 = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`))
  
 let {displayName, login, id, bio, chatColor,
 partner, affiliate, bot, banned, createdAt} = res;
+let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
-const staff = res.roles.isStaff;  
 
-bio = (!bio) ? "(Sem Bio)" : bio
-bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio
-chatColor = (chatColor === null) ? "(Sem Cor)" : chatColor
-banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${displayName} não está banida`
-partner = (partner === true) ? "parceria" : partner
-affiliate = (affiliate === true) ? "afiliado" : affiliate
-staff = (staff === true) ? "staff" : staff
-let roles = affiliate + partner + staff
-roles = (!roles.includes(true)) ? `nenhum cargo` : roles.filter(Boolean).join("/")
-bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
-let date = new Date(createdAt)
-let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate()
-let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1)
-let dateYear = date.getFullYear() 
-let fullDate = `${dateDay}/${dateMonth}/${dateYear}`
-let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a")
+
+bio = (!bio) ? "(Sem Bio)" : bio;
+bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio;
+chatColor = (chatColor === null) ? "(Sem Cor)" : chatColor;
+banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${displayName} não está banida`;
+partner = (partner === true) ? "parceria" : partner;
+affiliate = (affiliate === true) ? "afiliado" : affiliate;
+staff = (staff === true) ? "staff" : staff;
+let roles = affiliate + partner + staff;
+roles = (!roles.includes(true)) ? `nenhum cargo` : roles.filter(Boolean).join("/");
+bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`;
+let date = new Date(createdAt);
+let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate();
+let dateMonth = (date.getMonth() > 9) ? date.getMonth() : "0" + (date.getMonth() + 1);
+let dateYear = date.getFullYear() ;
+let fullDate = `${dateDay}/${dateMonth}/${dateYear}`;
+let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a");
 const {mods, vips} = res2;
-let totalMods = await Object.keys(mods).length
-let totalVips = await Object.keys(vips).length
+let totalMods = await Object.keys(mods).length;
+let totalVips = await Object.keys(vips).length;
 
 
 
