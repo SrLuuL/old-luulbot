@@ -34,7 +34,7 @@ banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${
 partner = (partner === true) ? "parceria" : partner;
 affiliate = (affiliate === true) ? "afiliado" : affiliate;
 staff = (staff === true) ? "staff" : staff;
-let roles = affiliate + partner + staff;
+let roles = [affiliate, partner, staff];
 roles = (!roles.includes(true)) ? `nenhum cargo` : roles.filter(Boolean).join("/");
 bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`;
 let date = new Date(createdAt);
