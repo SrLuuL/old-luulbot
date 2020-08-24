@@ -35,7 +35,7 @@ partner = (partner === true) ? "parceria" : false;
 affiliate = (affiliate === true) ? "afiliado" : false;
 staff = (staff === true) ? "staff" : false;
 let roles = [affiliate, partner, staff];
-roles = (!roles.includes(typeof "string")) ? `nenhum cargo` : roles.filter(Boolean).join("/");
+roles = (roles == [false, false, false]) ? `nenhum cargo` : roles.filter(Boolean).join("/");
 bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`;
 let date = new Date(createdAt);
 let dateDay = (date.getDate() > 9) ? date.getDate() : "0" + date.getDate();
