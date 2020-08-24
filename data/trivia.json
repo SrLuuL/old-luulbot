@@ -2603,6 +2603,21 @@
    "category": "Ciência",
    "question": "Qual é fórmula usada na segunda Lei de Newton?",
   "answer": ["F=ma"]
+   },
+  {
+   "category": "História",
+   "question": "Quando Alexandre o Grande Morreu?",
+  "answer": ["323 AC"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Que palavra em japonês significa \"Orquestra vazia\"?",
+  "answer": ["Karaoke"]
+   },
+   {
+   "category": "Animes",
+   "question": "Quando Alexandre o Grande Morreu?",
+  "answer": ["323 AC"]
    }
   
 ]
