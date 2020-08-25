@@ -33,6 +33,8 @@ user2 = sender;
   let endCumulative = data.cumulative.end
   let user = data.username
   
+  user = (user === username) ? "Você" : user; 
+  
    if (data.subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
 }  
@@ -48,7 +50,7 @@ user2 = sender;
   let typeF = type.charAt(0).toUpperCase() + type.slice(1)
   typeF = (typeF == "Paid") ? "Pago" : typeF
     
-    
+
   
    client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
 
