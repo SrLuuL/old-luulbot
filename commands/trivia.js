@@ -14,7 +14,7 @@ const compare = require("compare-strings");
 let num = 1
 
 if(args[1] && typeof num === "number") {
-if (args[1] > 100) return client.say(channel, `${username} número muito grande :/`)
+if (args[1] > 100 || args[0] < 1) return client.say(channel, `${username} número muito grande/baixo :/`)
 else {
   num = args[1]
 }
