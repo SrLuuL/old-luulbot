@@ -33,7 +33,8 @@ user2 = sender;
   let endCumulative = data.cumulative.end
   let user = data.username
   
-  user = (user === username) ? "Você" : user; 
+  user = (user.toLowerCase() === username) ? "Você" : user; 
+  canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
   
    if (data.subscribed === false) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais`)
