@@ -2773,6 +2773,26 @@
    "category": "Conhecimentos Gerais",
    "question": "Uma pequena fruta cítrica",
   "answer": ["Limão"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Na Grécia antiga, pessoas achavam que está pedra roxa poderia evitar o embriagamente",
+  "answer": ["Ametista"]
+   },
+  {
+   "category": "Conhecimentos Gerais",
+   "question": "Que joia azul é uma variedade do mineral corídon?",
+  "answer": ["Safira"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Que lago nos Estados Unidos que possui uma gravidade 10-22% maior do que os outros lagos?",
+  "answer": ["Grande Lago Salgado"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Maior lago de Flórida(US)?",
+  "answer": ["Lago Okeeechobee"]
    }
   
 ]
