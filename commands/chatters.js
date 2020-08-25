@@ -17,6 +17,8 @@ let mods = Object.keys(data.chatters.moderators).length;
 mods = (mods > 0) ? mods + " mods" : null  
 let staffs = Object.keys(data.chatters.staff).length;
 staffs = (staffs > 0) ? staffs + " staffs" : null  
+  
+user = (user === username) ? "Você" : username;  
 
 let roles = "(" + [vips, mods, staffs].filter(Boolean).join("/") + ")"; roles = (roles === "()") ? "" : roles
   
