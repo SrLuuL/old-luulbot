@@ -2793,6 +2793,52 @@
    "category": "Geografia",
    "question": "Maior lago de Flórida(US)?",
   "answer": ["Lago Okeeechobee"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Descartando o peito, qual é a única parte da galinha feita puramente por carne branca?",
+  "answer": ["Asas"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Os dois países da América do Sul cujos nomes começam com B?",
+  "answer": ["Brasil e Bolívia"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Parque nacional de Califórnia(US) onde situa a maior árvore do mundo?",
+  "answer": ["Parque Nacional de Redwood"]
+   },
+   {
+   "category": "História",
+   "question": "Em março de 1979, Egito foi suspenso desta organização por fazer um tratado de paz com Israel",
+  "answer": ["Liga Árabe"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "Qual é a gema mais abundante em Austrália?",
+  "answer": ["Opala"]
+   },
+   {
+   "category": "Ciência",
+   "question": "Sem óxido de metal, joias perdem que característica?",
+  "answer": ["Cor"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Qual é o estado dos Estados Unidos com mais parques nacionais?",
+  "answer": ["Alaska"]
+   },
+   {
+   "category": "História",
+   "question": "Mesmo João Duns Escoto sendo um bom filósofo, seus seguidores foram chamados de quê?",
+  "answer": ["Tolos"]
+   },
+   {
+   "category": "Geografia",
+   "question": "Holandeses nomearam esse maior rio da África do Sul não pela sua cor mas sim pela sua família Real",
+  "answer": ["Rio Orange"]
    }
+  
   
 ]
