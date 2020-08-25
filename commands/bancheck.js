@@ -19,8 +19,8 @@ let data = await res.json();
 if (data.error) return client.say(channel, `${username}, conta inexistente ou suspensa`);  
 const {status, banned, isPermanent, createdAt, expiresAt} = data
 
-user = (user === username) ? "Você" : user;
-user2 = (user2 === username) ? "seu canal" : user2;
+user = (user.toLowerCase() === username) ? "Você" : user;
+user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
 if (banned === false) return client.say(channel, `${username}, ${user} não está banido em ${user2}`)
