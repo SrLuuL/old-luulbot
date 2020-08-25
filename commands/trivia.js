@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 
   
-const compare = require("compare-strings"); 
+const { compareTwoStrings } = require("string-similarity");
   
 let num = 1
 
@@ -60,7 +60,7 @@ function triviaOn(channel, user, message, self) {
   
    if (self) return;
 
-const similarity = compare(message, answer[0])
+const similarity = compareTwoStrings(message, answer[0])
 
 if (similarity < 0.9) return 
 
