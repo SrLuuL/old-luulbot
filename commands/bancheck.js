@@ -6,7 +6,7 @@ const fetch = require("node-fetch")
 let user = args[0];
 let user2 = args[1];
 
-if (!user) return client.say(channel, `${username}, insira um usuário :/`)
+if (!user) return client.say(channel, `${username}, insira usuários :/`)
 
 if (!user2) {
 user = username
@@ -19,6 +19,9 @@ let data = await res.json();
 if (data.error) return client.say(channel, `${username}, conta inexistente ou suspensa`);  
 const {status, banned, isPermanent, createdAt, expiresAt} = data
 
+user = (user === username) ? "Você" : username;
+user2 = (user2 === username) ? "seu canal" : username;
+
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
 if (banned === false) return client.say(channel, `${username}, ${user} não está banido em ${user2}`)
   
@@ -29,7 +32,7 @@ DateBan = ms(DateBan, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 DateExpire = DateExpire - Date.now()
 DateExpire = ms(DateExpire, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 
-
+  
 if (isPermanent === true) {
 return client.say(channel, `${username}, ${user} está banido permanentemente em ${user2} há ${DateBan} atrás`)
 } else {
