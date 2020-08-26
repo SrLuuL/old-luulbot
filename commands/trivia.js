@@ -4,7 +4,6 @@ stopped: true
 }
 
 
-
 module.exports.run = async (client, message, args, username, channel) => {
 
 const compare = require("compare-strings");
@@ -35,7 +34,8 @@ else {
 trivia.running = true
 trivia.stopped = false
 let triviaId = 0  
-  
+let triviaChannel = channel  
+
 try {
 
 for(let i = 0; i < num; i++) {
@@ -61,7 +61,8 @@ res()
 
 function triviaOn(channel, user, message, self) {
   
-   if (self) return;
+if (self) return;
+if (channel !== triviaChannel) return;
 
 const similarity = compare(message, answer[0])
 
