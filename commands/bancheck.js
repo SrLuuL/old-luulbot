@@ -23,7 +23,7 @@ user = (user.toLowerCase() === username) ? "Você" : user;
 user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
-if (banned === false) return client.say(channel, `${username}, ${user} não está banido em ${user2}`)
+if (banned === false) return client.say(channel, `${username}, a conta ${user} não está banida em ${user2}`)
   
 let DateBan = new Date(createdAt)
 let DateExpire = new Date(expiresAt)
@@ -34,9 +34,9 @@ DateExpire = ms(DateExpire, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 
   
 if (isPermanent === true) {
-return client.say(channel, `${username}, ${user} está banido permanentemente em ${user2} há ${DateBan} atrás`)
+return client.say(channel, `${username}, a conta ${user} está banida permanentemente em ${user2} há ${DateBan} atrás`)
 } else {
-return client.say(channel, `${username}, ${user} está com timeout em ${user2} há ${DateBan} atrás e vai acabar em ${DateExpire}`)
+return client.say(channel, `${username}, a conta ${user} está com timeout em ${user2} há ${DateBan} atrás e vai acabar em ${DateExpire}`)
 }
 
 
