@@ -34,6 +34,7 @@ else {
   
 trivia.running = true
 trivia.stopped = false
+let triviaId = 0  
   
 try {
 
@@ -48,7 +49,7 @@ const items = quiz[Math.floor(Math.random() * quiz.length)];
 
 const {question, category, answer} = items;
 
-await client.say(channel, `Categoria: ${category} | ${question}`)
+await client.say(channel, ` ${triviaId += 1}/${num} | Categoria: ${category} | ${question} `)
   
 const done = new Promise(res => {
 
