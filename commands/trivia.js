@@ -13,12 +13,7 @@ const compare = require("compare-strings");
   
 let num = 1
 
-if(args[1] && typeof num === "number") {
-if (args[1] > 100 || args[0] < 1) return client.say(channel, `${username} número muito grande/baixo :/`)
-else {
-  num = args[1]
-}
-}
+
 
 function delay(ms) {
 return new Promise(res => setTimeout(res, ms))
@@ -30,6 +25,13 @@ async function startTrivia() {
 
 if (!trivia.running && args[0] == "start") {
 
+if(args[1] && typeof num === "number") {
+if (args[1] > 100 || args[0] < 1) return client.say(channel, `${username} número muito grande/baixo :/`)
+else {
+  num = args[1]
+}
+}
+  
 trivia.running = true
 trivia.stopped = false
   
