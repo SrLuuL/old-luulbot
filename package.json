@@ -26,6 +26,6 @@
     "pretty-ms": "^7.0.0",
     "pg": "^8.3.0",
     "morse": "^0.1.0",
-    "string-comparison": "^1.0.7"
+    "compare-strings": "^1.1.0"
   }
 }
