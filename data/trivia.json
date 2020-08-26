@@ -3098,6 +3098,95 @@
   "category": "História",
    "question": "Na Jordânia, os membros do Senado são indicados por essa pessoa, mas não podem ser seus parentes",
   "answer": ["O rei"]
+   },
+    {
+  "category": "Comidas/Bebidas",
+   "question": "Que tal uma colher de ouro desta iguaria cara?",
+  "answer": ["Caviar"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+   "question": "uma residência oficial de um imperador, rei, papa ou outro governante",
+  "answer": ["Palácio"]
+   },
+    {
+  "category": "Biologia",
+   "question": "Qual é o nome do céu da boca?",
+  "answer": ["Palato"]
+   },
+   {
+  "category": "Animais",
+   "question": "Um grupo dessas aves pernaltas rosa também pode ser chamado de extravagância?",
+  "answer": ["Flamingos"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+   "question": "Uma gama ou seleção de cores",
+  "answer": ["Paleta"]
+   },
+  {
+  "category": "Comidas/Bebidas",
+   "question": "Para sua próxima fiesta, você pode preparar guacamole e essas delícias fritas",
+  "answer": ["Taquitos"]
+   },
+    {
+  "category": "História",
+   "question": "Representa a primeira das três principais divisões da Idade da Pedra",
+  "answer": ["Paleolítico"]
+   },
+  {
+  "category": "Comidas/Bebidas",
+   "question": "Algumas pessoas moem as sementes desta fruta tropical e usam-nas como pimenta ou em molhos de salada",
+  "answer": ["Mamão"]
+   },
+    {
+  "category": "Animais",
+   "question": "Espécie animal ou vegetal encontrada em certas áreas ou habitat isolados",
+  "answer": ["Relicto"]
+   },
+   {
+  "category": "História",
+   "question": "20 anos antes de Robert Fulton e seu Clermont, John Fitch construiu um operável destes",
+  "answer": ["Barco a vapor"]
+   },
+   {
+  "category": "História",
+   "question": "Harriet Lane atuou como primeira-dama deste presidente, seu tio",
+  "answer": ["James Buchanan"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+   "question": "Uma habilidade natural, talvez para matemática",
+  "answer": ["Aptidão"]
+   },
+     {
+  "category": "Geografia",
+   "question": "Os dois membros da América do Sul que fazem parte da OPEP",
+  "answer": ["Venezuela e Equador"]
+   },
+   {
+  "category": "Ciência",
+   "question": "É uma medida do brilho de uma estrela ou do tamanho de um terremoto",
+  "answer": ["Magnitude"]
+   },
+    {
+  "category": "História",
+   "question": "Este republicano serviu como secretário de defesa de JFK",
+  "answer": ["Robert McNamara"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Com 140 milhões de habitantes, a ilha de Java faz parte deste país",
+  "answer": ["Indonésia"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+   "question": "É um comentário chato ou banal, ou um clichê sem sentido",
+  "answer": ["Platitude"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Esta cidade no Oceano Índico é  o principal porto marítimo da África do Sul",
+  "answer": ["Durban"]
    }
-  
 ]
