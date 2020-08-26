@@ -2838,7 +2838,266 @@
    "category": "Geografia",
    "question": "Holandeses nomearam esse maior rio da África do Sul não pela sua cor mas sim pela sua família Real",
   "answer": ["Rio Orange"]
+   },
+   {
+   "category": "Conhecimentos Gerais",
+   "question": "A deficiência de riboflavina pode causar fotofobia, sensibilidade anormal de?",
+  "answer": ["Luz"]
+   },
+   {
+   "category": "História",
+   "question": "Em 1854, esta capital da Nova Inglaterra abriu a primeira grande biblioteca pública gratuita dos Estados Unidos",
+  "answer": ["Boston"]
+   },
+    {
+   "category": "História",
+   "question": "Em 1854, esta capital da Nova Inglaterra abriu a primeira grande biblioteca pública gratuita dos Estados Unidos",
+  "answer": ["Boston"]
+   },
+  {
+   "category": "História",
+   "question": "Os antigos egípcios produziam este líquido embebendo o pão em água e fermentando a mistura",
+  "answer": ["Cerveja"]
+   },
+   {
+   "category": "Ciência",
+   "question": "A biblioteca da universidade desta maior cidade escocesa possui cerca de 500 impressos do século 15",
+  "answer": ["Glasgow"]
+   },
+   {
+   "category": "História",
+   "question": "Esta famosa rainha foi substituída por sua filha como a esposa principal de Akhenaton",
+  "answer": ["Nefertiti"]
+   },
+    {
+   "category": "Outros",
+   "question": "Se eu tivesse um real cada vez que eu falo \"eu\", eu teria quantos reais?",
+  "answer": ["4"]
+   },
+   {
+   "category": "Música",
+   "question": "Este dispositivo é usado para suavizar o tom de um instrumento, como uma trombeta?",
+  "answer": ["Mute"]
+   },
+   {
+   "category": "História",
+   "question": "A Biblioteca Woodruff da Emory University de Atlanta abriga os papéis deste criador do Tio Remus",
+  "answer": ["Joel Chandler Harris"]
+   },
+  {
+  "category": "História",
+   "question": "Os hieróglifos eram gregos para os estudiosos até que esta descoberta de 1799 forneceu equivalentes dos gregos",
+  "answer": ["Pedra de Roseta"]
+   },
+  {
+  "category": "História",
+   "question": "Abatendo 22 aviões em 1918, Eddie Rickenbacker foi o ás da aviação nº 1 dos EUA nesta guerra",
+  "answer": ["Primeira Guerra Mundial"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+   "question": "O Pai Nosso diz: \"E não nos deixes cair em tentação, mas livra-nos do\"?",
+  "answer": ["Mal"]
+   },
+   {
+  "category": "História",
+   "question": "Esta \"Mulher Bonita\" nasceu em Smyrna, Geórgia, em 28 de outubro de 1967",
+  "answer": ["Julia Roberts"]
+   },
+   {
+  "category": "História",
+   "question": "Esses raios eletromagnéticos usados para tirar fotos de suas entranhas eram originalmente conhecidos como raios Roentgen",
+  "answer": ["Raios X"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+   "question": "Ele apresentou um show de variedades do horário nobre de sucesso fenomenal por 24 anos",
+  "answer": ["Ed Sullivan"]
+   },
+   {
+  "category": "História",
+   "question": "Este físico americano nascido na Alemanha ganhou o Prêmio Nobel de Física de 1921",
+  "answer": ["Albert Einstein"]
+   },
+    {
+  "category": "Geografia",
+   "question": "A Junta de Comércio desta cidade de Illinois lida com futuros, portanto, menos de 5% do que é negociado lá é entregue",
+  "answer": ["Chicago"]
+   },
+   {
+  "category": "Filmes",
+   "question": "Ele foi indicado ao Oscar por seu papel coadjuvante em \"As Horas\"",
+  "answer": ["Ed Harris"]
+   },
+  {
+  "category": "História",
+   "question": "Para se casar com uma mulher americana divorciada duas vezes, o rei Eduardo VIII deste país abdicou do trono em 1936",
+  "answer": ["Inglaterra"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+   "question": "Nome dos primeiros dentes formados",
+  "answer": ["Dente de leite"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+   "question": "Você deve tomar chá antes de barganhar por um tapete no \"Grand\" de Istambul em um desses espaços comerciais",
+  "answer": ["Baazar"]
+   },
+    {
+  "category": "História",
+   "question": "Cientistas acreditam que este mar se formou quando a Península Arábica foi arrancada da África há 20 milhões de anos",
+  "answer": ["Mar Vermelho"]
+   },
+  {
+  "category": "Ciência",
+   "question": "A quantidade disso por litro determina se o champanhe é brut, seco ou doce",
+  "answer": ["Açúcar"]
+   },
+    {
+  "category": "Ciência",
+   "question": "A quantidade disso por litro determina se o champanhe é brut, seco ou doce",
+  "answer": ["Açúcar"]
+   },
+  {
+  "category": "Ciência",
+   "question": "A melhor escolha para adoçar alimentos ou remédios é?",
+  "answer": ["Mel"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+   "question": "Como um sinal de respeito, os marinheiros irão \"atacar as cores\" diminuindo o quê?",
+  "answer": ["A bandeira"]
+   },
+  {
+  "category": "Comidas/Bebidas",
+   "question": "Gelo com sabor de frutas em um ou 2 palitos",
+  "answer": ["Picolé"]
+   },
+  {
+  "category": "Gólfo Pérsico",
+   "question": "As ilhas neste golfo incluem Bahrein, Kharg e Bubiyan",
+  "answer": ["Picolé"]
+   },
+   {
+  "category": "Astronomia",
+   "question": "Um mês sinódico ou um mês sideral é baseado no movimento disso",
+  "answer": ["A lua"]
+   },
+    {
+  "category": "História",
+   "question": "Os gladiadores romanos só trabalhavam em funerais até que esse líder instituiu alguns jogos para eles em 46 AC",
+  "answer": ["Júlio César"]
+   },
+  {
+  "category": "História",
+   "question": "Esta condecoração militar dos EUA é concedida a todos os militares das forças armadas feridos ou mortos em combate",
+  "answer": ["Coração Púrpuro"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Uma pequena parte da Rússia está separada da pátria mãe, ficando entre a Polônia e Lituânia neste mar",
+  "answer": ["Oceano Báltico"]
+   },
+  {
+  "category": "Ciência",
+   "question": "Esta epidemia  varreu a Europa medieval matando milhões, incluindo Laura, a amada de Francisco Petrarca",
+  "answer": ["Peste Negra"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Em meados da década de 1970, um oleoduto foi construído entre esta baía do Alasca e a cidade de Valdez em Prince William Sound",
+  "answer": ["Prudhoe Bay"]
+   },
+   {
+  "category": "Natureza",
+   "question": "Uma semente dessa árvore que nos dá um substituto do chocolate é o \"quilate\" original",
+  "answer": ["Alfarrobeira"]
+   },
+  {
+  "category": "Religião",
+   "question": "A seita budista Gelukpa, que este homem lidera, também é conhecida como a seita do chapéu amarelo",
+  "answer": ["Dalai Lama"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Em 1957, um canal profundo foi concluído, permitindo que os navios oceânicos chegassem ao maior lago venezuelano",
+  "answer": ["Lago de Maracaibo"]
+   },
+    {
+  "category": "Contos",
+   "question": "Ela empurrou a velha bruxa malvada da casa de pão de gengibre no forno e trancou a porta",
+  "answer": ["Maria"]
+   },
+   {
+  "category": "Ciência",
+   "question": "Este procedimento médico \"pré-frontal\" envolve a destruição de seções do córtex cerebral",
+  "answer": ["Lobotomia"]
+   },
+   {
+  "category": "História",
+   "question": "Por um ato do Congresso, em 1954 o Dia do Armistício foi renomeado como",
+  "answer": ["Dia dos Veteranos"]
+   },
+  {
+  "category": "Contos",
+   "question": "Uma personagem deste conto cortou o dedão do pé para que um sapato de ouro coubesse em seu pé",
+  "answer": ["Cinderella"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Em dezembro de 2001, este país abriu sua primeira ponte sobre o Mekong",
+  "answer": ["Cambodja"]
+   },
+   {
+  "category": "Ciência",
+   "question": "Este processo torna a borracha mais dura e mais elástica por meio do aquecimento com enxofre",
+  "answer": ["Vulcanização"]
+   },
+  {
+  "category": "Geografia",
+   "question": "A ponte Oresund liga a Suécia a este país ao qual esteve desconectada por terra fazem 7000 anos",
+  "answer": ["Dinamarca"]
+   },
+    {
+  "category": "História",
+   "question": "Seu livro de 1543 \"Concerning the Revolutions of the Celestial Spheres\" iniciou uma revolução astronômica",
+  "answer": ["Nicolau Copérnico"]
+   },
+  {
+  "category": "Contos",
+   "question": "Seus pais a deram a uma bruxa como uma recém-nascida, então a bruxa a trancou em uma torre aos 12 anos",
+  "answer": ["Rapunzel"]
+   },
+    {
+  "category": "Ciência",
+   "question": "O processo pelo qual os átomos neutros se tornam eletricamente carregados é chamado de?",
+  "answer": ["Ionização"]
+   },
+  {
+  "category": "História",
+   "question": "Em 1998, o Reino Unido perdeu o recorde mundial de maior ponte suspensa para este país asiático",
+  "answer": ["Japão"]
+   },
+    {
+  "category": "Religião",
+   "question": "Quando Jesus disse: \"Todo aquele que é da verdade ouve a minha voz\", Pilatos lhe perguntou isso",
+  "answer": ["O que é a verdade?"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+   "question": "A Villa Park Orchards Association é o último empacotador remanescente desses frutos em Orange, Califórnia",
+  "answer": ["Laranjas"]
+   },
+  {
+  "category": "Animas",
+   "question": "Desde 1990, novas práticas reduziram em 90% o número de golfinhos capturados em redes destinadas a estes peixes",
+  "answer": ["Atum"]
+   },
+  {
+  "category": "História",
+   "question": "Na Jordânia, os membros do Senado são indicados por essa pessoa, mas não podem ser seus parentes",
+  "answer": ["O rei"]
    }
-  
   
 ]
