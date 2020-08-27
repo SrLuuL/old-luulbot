@@ -3146,7 +3146,7 @@
    },
    {
   "category": "História",
-   "question": "20 anos antes de Robert Fulton e seu Clermont, John Fitch construiu um operável destes",
+   "question": "20 anos antes de Robert Fulton e seu Clermont, John Fitch construiu qual operável?",
   "answer": ["Barco a vapor"]
    },
    {
@@ -3156,17 +3156,17 @@
    },
     {
   "category": "Conhecimentos Gerais",
-   "question": "Uma habilidade natural, talvez para matemática",
+   "question": "O que é uma habilidade natural, talvez para matemática?",
   "answer": ["Aptidão"]
    },
      {
   "category": "Geografia",
-   "question": "Os dois membros da América do Sul que fazem parte da OPEP",
+   "question": "Quais os dois membros da América do Sul que fazem parte da OPEP?",
   "answer": ["Venezuela e Equador"]
    },
    {
   "category": "Ciência",
-   "question": "É uma medida do brilho de uma estrela ou do tamanho de um terremoto",
+   "question": "Que medida mede o brilho de uma estrela ou do tamanho de um terremoto?",
   "answer": ["Magnitude"]
    },
     {
@@ -3176,17 +3176,148 @@
    },
    {
   "category": "Geografia",
-   "question": "Com 140 milhões de habitantes, a ilha de Java faz parte deste país",
+   "question": "Com 140 milhões de habitantes, a ilha de Java faz parte de qual país?",
   "answer": ["Indonésia"]
    },
    {
   "category": "Conhecimentos Gerais",
-   "question": "É um comentário chato ou banal, ou um clichê sem sentido",
+   "question": "O que é um comentário chato ou banal, ou um clichê sem sentido?",
   "answer": ["Platitude"]
    },
    {
   "category": "Geografia",
-   "question": "Esta cidade no Oceano Índico é  o principal porto marítimo da África do Sul",
+   "question": "Qual cidade no Oceano Índico é  o principal porto marítimo da África do Sul?",
   "answer": ["Durban"]
+   },
+   {
+  "category": "História",
+   "question": "Em 1961, qual rede de lojas de departamento de luxo lançou as primeiras sacolas de compras de grife?",
+  "answer": ["Bloomingdales"]
+   },
+  {
+  "category": "História",
+   "question": "Chamizal National Memorial comemora o acordo de uma disputa de fronteira entre  Juarez, México e qual cidade do Texas?",
+  "answer": ["El Paso"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+   "question": "Como se chama os canais de água que podem ser colocados em arcos altos acima do solo ou passar por túneis abaixo?",
+  "answer": ["Aquedutos"]
+   },
+    {
+  "category": "História",
+   "question": "Quem foi o \"Conquistador de Peru\"?",
+  "answer": ["Francisco Pizzaro"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+   "question": "Uma chave de qual organização fundada em 1776  acredita que \"O Amor do Aprendizado é o Guia da Vida\"?",
+  "answer": ["Phi Beta Kappa"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+   "question": "Por lei federal desde 2000, todos os voos comerciais dentro dos EUA não permitem..?",
+  "answer": ["Fumar"]
+   },
+  {
+  "category": "História",
+   "question": "Quem ficou conhecido como o \"Herói de dois mundos\"?",
+  "answer": ["Garibaldi"]
+   },
+   {
+  "category": "Astronomia",
+   "question": "Qual é o maior planeta gasoso em nosso sistema solar?",
+  "answer": ["Júpiter"]
+   },
+    {
+  "category": "Astronomia",
+   "question": "Que planeta possui Nereida, a terceira maior de suas 13 luas?",
+  "answer": ["Netuno"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+   "question": "Que tipo de custódia garante que a máfia não pegue a testemunha?",
+  "answer": ["Protetora"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Um acordo de 1959 dividiu as águas do Nilo entre o Egito e qual país?",
+  "answer": ["Protetora"]
+   },
+    {
+  "category": "Astronomia",
+   "question": "Que planeta tem o mesmo nome do deus romano da agricultura?",
+  "answer": ["Saturno"]
+   },
+  {
+  "category": "História",
+   "question": "Qual é o Sobrenome de Louis-Eugene, que vendeu sua fonte termal francesa com água naturalmente gaseificada em 1903?",
+  "answer": ["Perrier"]
+   },
+   {
+  "category": "Religião",
+   "question": "Êxodo diz que a mãe de Moisés o colocou em uma cesta feita de qual  plantas semelhantes a grama?",
+  "answer": ["Juncos"]
+   },
+    {
+  "category": "Astronomia",
+   "question": "Que planeta teve seu sistema de anéis descoberto em 1977, quase 200 anos depois do seu descobrimento?",
+  "answer": ["Urano"]
+   },
+   {
+  "category": "Astronomia",
+   "question": "Que planeta possui seu eixo de rotação quase paralelo ao seu plano orbital, girando mais ou menos de lado?",
+  "answer": ["Urano"]
+   },
+  {
+  "category": "Comidas/Bebidas",
+   "question": "O festival de Fallbrook dedicado a qual fruta fruta inclui um concurso para o melhor guacamole?",
+  "answer": ["Abacate"]
+   },
+   {
+  "category": "História",
+   "question": "Em 1889, que irmãos começaram a publicar um jornal semanal de Dayton, Ohio, chamado West Side News?",
+  "answer": ["Irmãos Wright"]
+   },
+   {
+  "category": "História",
+   "question": "Na década de 1920, quem escreveu uma coluna de aviação para a revista Cosmopolitan?",
+  "answer": ["Amelia Earhart"]
+   },
+    {
+  "category": "História",
+   "question": "Em 1933, que magnata conseguiu um emprego na American Airways como co-piloto usando o pseudônimo de Charles W. Howard?",
+  "answer": ["Howard Hughes"]
+   },
+    {
+  "category": "Ciência",
+   "question": "Como é enferrujado, do ponto de vista químico?",
+  "answer": ["Oxidado"]
+   },
+    {
+  "category": "Ciência",
+   "question": "Em junho de 1978, os eleitores da Califórnia aprovaram qual emenda para reduzir os impostos sobre a propriedade?",
+  "answer": ["Preposição 13"]
+   },
+   {
+  "category": "Tecnologia",
+   "question": "Que rede social foi lançada em 21 de março de 2006?",
+  "answer": ["Twitter"]
+   },
+    {
+  "category": "História",
+   "question": "Após a queda do dirigível Roma em 1922, a Marinha dos EUA mudou para qual gás mais seguro e mas mais caro?",
+  "answer": ["Hélio"]
+   },
+   {
+  "category": "Biologia",
+   "question": "Que palavra de oito letras descreve a ciência dos animais?",
+  "answer": ["Zoologia"]
+   },
+  {
+  "category": "História",
+   "question": "Em 1863, quem patenteou seu popular beliche dobrável?",
+  "answer": ["George Pullman"]
    }
+  
 ]
