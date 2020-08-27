@@ -25,7 +25,7 @@ async function startTrivia() {
 if (!trivia.running && args[0] == "start") {
 
 if(args[1]) {
-if (args[1].isNaN) return;   
+if (typeof args[1] === "string") return;   
 if (args[1] > 100 || args[1] < 1) return client.say(channel, `${username} número muito grande/baixo :/`)
 else {
   num = args[1]
