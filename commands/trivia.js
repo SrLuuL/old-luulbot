@@ -58,7 +58,7 @@ client.say(channel, `Ninguém acertou :/ a resposta era: ${answer[0]}`)
 res()
 }, 35000)
 
-function triviaOn(channel, user, message, self) {
+async function triviaOn(channel, user, message, self) {
   
 if (self) return;
 if (channel !== triviaChannel) return;
