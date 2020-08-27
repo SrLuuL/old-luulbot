@@ -3036,7 +3036,7 @@
    },
    {
   "category": "História",
-   "question": "Por um ato do Congresso, em 1954 o Dia do Armistício foi renomeado como",
+   "question": "Por um ato do Congresso, em 1954 o Dia do Armistício foi renomeado como?",
   "answer": ["Dia dos Veteranos"]
    },
   {
@@ -3408,6 +3408,276 @@
   "category": "Geografia",
    "question": "O clube principal da Virgin Atlantic fica em que aeroporto?",
   "answer": ["Mar Mediterrâneo"]
+   },
+   {
+  "category": "História",
+   "question": "Em que ano a Segunda Guerra Mundial aconteceu?",
+  "answer": ["1939"]
+   },
+    {
+  "category": "Música",
+   "question": "Qual músico de black metal esfaqueou seu colega de banda 23 vezes em \"legítima defesa\"?",
+  "answer": ["1939"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Qual é a capital do Chade?",
+  "answer": ["Djamena"]
+   },
+  {
+  "category": "Animes",
+   "question": "No anime \"Kyoukai no Kanata\", qual é a habilidade de Mirai Kuriyama?",
+  "answer": ["Manipulação de sangue"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Nome do maior estado alemão?",
+  "answer": ["Bavaria"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Que jogo de plataforma em primeira pessoa com cores vivas se tornou um clássico cult?",
+  "answer": ["Mirror Edge"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Quantas capitais a África do Sul tem?",
+  "answer": ["3"]
+   },
+   {
+  "category": "Animes",
+   "question": "Em Monogatari o que é Shinobu?",
+  "answer": ["Vampira"]
+   },
+     {
+  "category": "Animes",
+   "question": "Qual é o nome completo de Gabriel do \"Gabriel DropOut\"?",
+  "answer": ["Gabriel Tenma White"]
+   },
+  {
+  "category": "Biologia",
+   "question": "Qual espécie de veado é a única em que machos e fêmeas têm chifres?",
+  "answer": ["Rena"]
+   },
+    {
+  "category": "Tecnologia",
+   "question": "Qual é o código de resposta HTTP para indicar que um recurso não foi encontrado?",
+  "answer": ["404"]
+   },
+   {
+  "category": "Video Games",
+   "question": "Qual é o demônio vermelho bulboso que atira bolas de fogo em DOOM?",
+  "answer": ["Cacodemon"]
+   },
+    {
+  "category": "Matemática",
+   "question": "Rápido! Quanto é 79 + 98?",
+  "answer": ["177"]
+   },
+   {
+  "category": "Matemática",
+   "question": "Quantos zeros um setilhão tem?",
+  "answer": ["24"]
+   },
+   {
+  "category": "Animes",
+   "question": "Que ferramenta as pessoas usam para invocar monstros no anime \"Devil Survivor 2 The Animation\"?",
+  "answer": ["Celulares"]
+   },
+   {
+  "category": "Música",
+   "question": "Em que cidade europeia foi formado o grupo pop sueco ABBA em 1972?",
+  "answer": ["Estocolmo"]
+   },
+    {
+  "category": "História",
+   "question": "Que cientista reverenciado pensava que o mundo acabaria em 2060?",
+  "answer": ["Isaac Newton"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Croácia e Eslovênia costumavam ser parte de qual país?",
+  "answer": ["Iugoslávia"]
+   },
+   {
+  "category": "História",
+   "question": "Que rio Júlio César cruzou para começar sua guerra civil?",
+  "answer": ["Rio Rubicão"]
+   },
+   {
+  "category": "Ciência",
+   "question": "Se você ferver água, o que você ganha?",
+  "answer": ["Vapor"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Qual é a capital da Letônia?",
+  "answer": ["Riga"]
+   },
+    {
+  "category": "Matemática",
+   "question": "Qual é o maior número primo de dois dígitos?",
+  "answer": ["97"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Qual é o nome do maior parque da cidade de Nova York?",
+  "answer": ["Central Park"]
+   },
+   {
+  "category": "História",
+   "question": "Quanto tempo durou a guerra do Vietnã?",
+  "answer": ["19 anos"]
+   },
+   {
+  "category": "Ciência",
+   "question": "Qual é o nome completo do ATP?",
+  "answer": ["Trifosfato de adenosina"]
+   },
+    {
+  "category": "Animes",
+   "question": "Descubra o anime: algum demônio veio, deixou cair o caderno, escrevendo um nome completo nesta nota a pessoa morreria",
+  "answer": ["Death Note"]
+   },
+  {
+  "category": "Ciência",
+   "question": "Que fronteira altamente seletiva impede que os patógenos e a maioria das drogas cheguem ao cérebro?",
+  "answer": ["Barreira hematoencefálica"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Em que cidade você encontraria o La Brea Tar Pits?",
+  "answer": ["Los Angeles"]
+   },
+   {
+  "category": "Charadas",
+   "question": "Se você está participando de uma corrida e ultrapassa a segunda pessoa, em que lugar você está?",
+  "answer": ["Segundo"]
+   },
+   {
+  "category": "Minecraft",
+   "question": "Qual é o nome original do Minecraft?",
+  "answer": ["Cave Game"]
+   },
+     {
+  "category": "História",
+   "question": "Em que ano morreu Fidel Castro?",
+  "answer": ["2016"]
+   },
+   {
+  "category": "Geografia",
+   "question": "De que cor são as estrelas da bandeira dos Estados Unidos da América?",
+  "answer": ["Branco"]
+   },
+    {
+  "category": "Tecnologia",
+   "question": "Qual é o código de erro por motivos legais?",
+  "answer": ["451"]
+   },
+   {
+  "category": "Tecnologia",
+   "question": "Em telefones celulares, o que significa WAP?",
+  "answer": ["Protocolo de aplicação sem fio"]
+   },
+    {
+  "category": "Minecraft",
+   "question": "Quantos lingotes de ferro você precisa para fazer uma bigorna?",
+  "answer": ["30"]
+   },
+    {
+  "category": "História",
+   "question": "Quem inventou a tesoura?",
+  "answer": ["Leonardo da Vinci"]
+   },
+    {
+  "category": "História",
+   "question": "Osama bin Laden era o líder de que grupo terrorista?",
+  "answer": ["Al Qaeda"]
+   },
+    {
+  "category": "Animes",
+   "question": "Descubra o anime: Neste anime, dois alunos praticam atos de terrorismo sem matar ninguém",
+  "answer": ["Zankyou no Terror"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Qual é a capital da Eritreia?",
+  "answer": ["Asmara"]
+   },
+    {
+  "category": "Video Games",
+   "question": "O protoganista de que jogo monocármático é um menino que morre de forma brutal se o jogador falhar?",
+  "answer": ["Limbo"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Qual é o rio mais curto do mundo?",
+  "answer": ["Rio Roe"]
+   },
+     {
+  "category": "Animes",
+   "question": "Descubra o anime: uma menina desce o abismo para encontrar sua mãe",
+  "answer": ["Made in abyss"]
+   },
+    {
+  "category": "Animes",
+   "question": "No anime \"Blood Lad\", o que é o protagonista?",
+  "answer": ["Um vampiro"]
+   },
+   {
+  "category": "História",
+   "question": "Que país era conhecido como \"Paquistão Oriental\" e fazia parte do Paquistão?",
+  "answer": ["Bangladesh"]
+   },
+     {
+  "category": "Matemática",
+   "question": "Qual é a raiz quadrada de 121?",
+  "answer": ["11"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Qual é a capital do Gabão?",
+  "answer": ["Libreville"]
+   },
+    {
+  "category": "Video Games",
+   "question": "Qual console teve o primeiro controlador com feedback de vibração?",
+  "answer": ["Nintendo 64"]
+   },
+   {
+  "category": "Video Games",
+   "question": "Como você chama alguém que administra empregados domésticos?",
+  "answer": ["Mordomo"]
+   },
+    {
+  "category": "Geografia",
+   "question": "Como é conhecida a área entre os rios Tigre e Eufrates?",
+  "answer": ["Mesopotâmia"]
+   },
+   {
+  "category": "Geografia",
+   "question": "Entre quais dois países / estados está localizado o Estreito de Bering?",
+  "answer": ["Alaska e Rússia"]
+   },
+    {
+  "category": "Ciência",
+   "question": "Qual é o nome completo do DNA?",
+  "answer": ["Ácido desoxirribonucleico"]
+   },
+   {
+  "category": "Minecraft",
+   "question": "Qual animal foi o primeiro artrópode voador do jogo?",
+  "answer": ["Abelha"]
+   },
+    {
+  "category": "Video Games",
+   "question": "Que jogo se chama Daburu Doragon no Japão?",
+  "answer": ["Double Dragon"]
+   },
+     {
+  "category": "Minecraft",
+  "question": "Qual é a chance de obter 4 pintos em um ovo?",
+  "answer": ["1/256"]
    }
   
 ]
