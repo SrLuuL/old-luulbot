@@ -18,6 +18,30 @@ function delay(ms) {
 return new Promise(res => setTimeout(res, ms))
 }
 
+ async function userInfo() {
+   switch(args[0]) {
+     case "points":
+       if (!args[1]) {
+         const userScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${username}'`)
+         if (userScore.rows[0] === undefined) {
+           await client.say(channel, `${username}, você não acertou nenhuma trivia`)
+         } else {
+           await client.say(channel, `${username}, você acertou ${userScore.rows[0].score} trivias!`)
+         }
+       } else {
+         const argsScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${args[1]}'`)
+         if (argsScore.rows[0] === undefined) {
+           await client.say(channel, `${username}, este usuário ainda não acertou uma trivia`)
+         } else {
+           await client.say(channel, `${username}, este usuário já acertou ${argsScore.rows[0].score} trivias`)
+         }
+       }
+       break;
+   }
+ }
+
+    
+userInfo()  
 startTrivia()
 
 async function startTrivia() {
