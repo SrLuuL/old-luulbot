@@ -40,7 +40,7 @@ return new Promise(res => setTimeout(res, ms))
      case "top":
        const leaderboard = await db.query(`SELECT * FROM luulbot_trivia ORDER BY score DESC LIMIT 5`);
        const leader = leaderboard.rows.map((i, n) => {
-         return ` ${[n+1]}° ${i.userchannel}: ${i.score} `
+         return ` ${[n+1]}u\u00B0 ${i.userchannel}: ${i.score} `
        })
        await client.say(channel, `${leader.join("/")}`)
        break;
