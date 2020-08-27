@@ -37,6 +37,13 @@ return new Promise(res => setTimeout(res, ms))
          }
        }
        break;
+     case "top":
+       const leaderboard = await db.query(`SELECT * FROM luulbot_trivia ORDER BY score DESC LIMIT 5`);
+       const leader = leaderboard.rows.map((i) => {
+         return ` (${[i+1]}) ${i.userchannel}: ${i.score} `
+       })
+       await client.say(channel, `${leader}`)
+       break;
    }
  }
 
