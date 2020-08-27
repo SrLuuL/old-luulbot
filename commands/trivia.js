@@ -7,7 +7,7 @@ stopped: true
 module.exports.run = async (client, message, args, username, channel) => {
 
 const compare = require("compare-strings");
-
+const db = require("../clients/database.js").db;
   
   
 let num = 1
@@ -69,7 +69,14 @@ if (similarity < 0.9) return
 
 clearTimeout(timer)
 
-client.removeListener("chat", triviaOn)   
+client.removeListener("chat", triviaOn)
+ 
+const userScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${user.username}'`)  
+if (userScore.rows[0] === undefined) {
+  await db.query(`INSERT INTO luulbot_trivia(userchannel, score) VALUES('${user.username}', 1)`)
+} else {
+  await db.query(`UPDATE luulbot_trivia SET score = score+1 WHERE userchannel = '${user.username}'`)
+}
 client.say(channel, `${user.username} acertou a pergunta! A resposta era: ${answer[0]}`)
 res()
 }  
