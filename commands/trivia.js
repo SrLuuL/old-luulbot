@@ -42,7 +42,7 @@ return new Promise(res => setTimeout(res, ms))
        const leader = leaderboard.rows.map((i, n) => {
          return ` (${[n+1]}) ${i.userchannel}: ${i.score} `
        })
-       await client.say(channel, `${leader}`)
+       await client.say(channel, `${leader.join("/")}`)
        break;
    }
  }
