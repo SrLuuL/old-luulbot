@@ -3678,6 +3678,419 @@
   "category": "Minecraft",
   "question": "Qual é a chance de obter 4 pintos em um ovo?",
   "answer": ["1/256"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Qual país tem mais falantes de zulu no mundo?",
+  "answer": ["África do Sul"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Qual é a diagonal de um quadrado com área de 32?",
+  "answer": ["8"]
+   },
+  {
+  "category": "Geografia",
+  "question": "A Madeira, um arquipélago situado no Oceano Atlântico, é uma região autónoma de que país?",
+  "answer": ["Portugal"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é o segundo menor país do mundo?",
+  "answer": ["Mônaco"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Qual é a diagonal de um quadrado com área 2?",
+  "answer": ["2"]
+   },
+     {
+  "category": "Matemática",
+  "question": "Qual número é representado pelas letras CDXX em algarismos romanos?",
+  "answer": ["420"]
+   },
+   {
+  "category": "Animes",
+  "question": "No Anime Full Metal Alchemist, como os Himunculus se chamam?",
+  "answer": ["7 Pecados Capitais"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Que clássico do PS2 desafia o jogador a matar 16 criaturas gigantes?",
+  "answer": ["Shadow of the Colossus"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Papafobia é o medo de quê?",
+  "answer": ["O papa"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Qual a plataforma Nintendo mais vendida?",
+  "answer": ["Nintendo DS"]
+   },
+  {
+  "category": "Futebol",
+  "question": "Qual nacionalidade ganhou mais prêmios Golden Boy?",
+  "answer": ["França"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Como você chama um número real que é menor que zero?",
+  "answer": ["Número negativo"]
+   },
+   {
+  "category": "Abelhas",
+  "question": "qual é o consumo de mel por capital na Alemanha?",
+  "answer": ["43 kg"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a capital da Guiné-Bissau?",
+  "answer": ["Bissau"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Se você mora no Taiti, de que país você é cidadão?",
+  "answer": ["França"]
+   },
+    {
+  "category": "Filmes",
+  "question": "Quem ganhou seu segundo Oscar em anos sucessivos por Forrest Gump?",
+  "answer": ["Tom Hanks"]
+   },
+   {
+  "category": "Esportes",
+  "question": "Qual esporte usa a bola mais leve?",
+  "answer": ["Ping pong"]
+   },
+   {
+  "category": "Econômia",
+  "question": "Qual foi a primeira empresa a atingir uma capitalização de mercado de 1 trilhão de dólares?",
+  "answer": ["Apple"]
+   },
+   {
+  "category": "História",
+  "question": "Quem foi o primeiro carteiro na Filadélfia?",
+  "answer": ["Benjamin Franklin"]
+   },
+   {
+  "category": "Video Game",
+  "question": "Qual é o nome da piloto feminina que aparece na maioria das séries Ace Combat?",
+  "answer": ["Nagase"]
+   },
+   {
+  "category": "Minecraft",
+  "question": "Em qual bioma podem ser encontradas acácias?",
+  "answer": ["Savana"]
+   },
+    {
+  "category": "Video Games",
+  "question": "De qual jogo é \"Siga o maldito trem, CJ!\"?",
+  "answer": ["GTA San Andreas"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Que fruta, mesmo em pequenas quantidades, é fatalmente tóxica para cães e gatos?",
+  "answer": ["Uva"]
+   },
+   {
+  "category": "História",
+  "question": "Onde Muhammad nasceu?",
+  "answer": ["Meca"]
+   },
+   {
+  "category": "Filmes",
+  "question": "Qual é o nome do cowboy de brinquedo em Toy Story?",
+  "answer": ["Woody"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Qual é a soma de todos os números de 1 a 69?",
+  "answer": ["2415"]
+   },
+   {
+  "category": "História",
+  "question": "A Lei Walker aprovada em 1920 em Nova York era uma lei que regulamentava qual esporte?",
+  "answer": ["Boxe"]
+   },
+   {
+  "category": "Minecraft",
+  "question": "Qual é o nome original de Netherrack?",
+  "answer": ["Bloodstone"]
+   },
+   {
+  "category": "História",
+  "question": "Qual navio de Cristóvão Colombo encalhou em sua primeira viagem?",
+  "answer": ["La Santa Maria"]
+   },
+    {
+  "category": "Abelhas",
+  "question": "Que tipo de esqueleto as abelhas têm?",
+  "answer": ["Um exoesqueleto"]
+   },
+     {
+  "category": "Geografia",
+  "question": "Qual é a capital da Bélgica?",
+  "answer": ["Bruxelas"]
+   },
+   {
+  "category": "Música",
+  "question": "Dave Grohl era baterista de qual banda?",
+  "answer": ["Nirvana"]
+   },
+   {
+  "category": "Geografia",
+  "question": "O Oceano Antártico circunda que continente?",
+  "answer": ["Antártida"]
+   },
+   {
+  "category": "História",
+  "question": "Quem foi o responsável pelo maior assassinato em massa da história do mundo?",
+  "answer": ["Mao Zedong"]
+   },
+   {
+  "category": "Abelhas",
+  "question": "O mel contém um antioxidante que ajuda a melhorar o funcionamento do cérebro. como isso é chamado?",
+  "answer": ["Pinocembrina"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Jumpman era o nome de qual personagem famoso da Nintendo?",
+  "answer": ["Mario"]
+   },
+   {
+  "category": "Animes",
+  "question": "Em JJBA Stone Ocean, qual é o stand totalmente evoluído de Enrico Puccis?",
+  "answer": ["Made in Heaven"]
+   },
+   {
+  "category": "História",
+  "question": "Fundada em 1889, a Nintendo começou vendendo que produto?",
+  "answer": ["Cartas"]
+   },
+     {
+  "category": "Geografia",
+  "question": "Qual é o país mais jovem internacionalmente reconhecido no mundo?",
+  "answer": ["Sudão do Sul"]
+   },
+   {
+  "category": "Econômia",
+  "question": "Um monopólio puro é quando há um único o quê?",
+  "answer": ["Vendedor"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a capital da Guatemala?",
+  "answer": ["Cidade de Guatemala"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a capital da Guatemala?",
+  "answer": ["Cidade de Guatemala"]
+   },
+   {
+  "category": "Música",
+  "question": "Gerard Way foi o vocalista principal de qual banda?",
+  "answer": ["My Chemical Romance"]
+   },
+   {
+  "category": "Astronomia",
+  "question": "Ursa Majoris é mais comumente conhecida como?",
+  "answer": ["A Ursa Maior"]
+   },
+  {
+  "category": "Música",
+  "question": "De qual cidade os Beatles vieram?",
+  "answer": ["Liverpool"]
+   },
+  {
+  "category": "Programação",
+  "question": "Qual era o nome da linguagem de computador em homenagem a um filósofo e matemático francês?",
+  "answer": ["Pascal"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual país está mais próximo das Ilhas Canárias?",
+  "answer": ["Marrocos"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual círculo geográfico está a 0 graus de latitude?",
+  "answer": ["Equador"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual círculo geográfico está a 0 graus de latitude?",
+  "answer": ["Equador"]
+   },
+   {
+  "category": "Biologia",
+  "question": "Qual é o maior animal terrestre que existe tanto em espécies africanas quanto asiáticas?",
+  "answer": ["Elefante"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a capital do Laos?",
+  "answer": ["Vienciana"]
+   },
+     {
+  "category": "Econômia",
+  "question": "Que moeda é usada na Argentina?",
+  "answer": ["Peso argentino"]
+   },
+  {
+  "category": "Futebol",
+  "question": "Quem ganhou a Copa do Mundo 2018?",
+  "answer": ["França"]
+   },
+   {
+  "category": "Piratas",
+  "question": "O que ajudou os piratas a manter a doença do escorbuto sob controle?",
+  "answer": ["Laranjas"]
+   },
+    {
+  "category": "Piratas",
+  "question": "Qual é a capital do Benin?",
+  "answer": ["Porto Novo"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a capital da Dominica?",
+  "answer": ["Roseau"]
+   },
+   {
+  "category": "História",
+  "question": "A corrida do ouro na Caliayfórnia começou em que ano?",
+  "answer": ["1948"]
+   },
+   {
+  "category": "História",
+  "question": "Qual é a capital da Malásia?",
+  "answer": ["Kuala Lumpur"]
+   },
+    {
+  "category": "Ciência",
+  "question": "Qual é o aceptor final de elétrons na respiração?",
+  "answer": ["Oxigênio"]
+   },
+   {
+  "category": "Esportes",
+  "question": "Qual time ganhou o Super Bowl 2016?",
+  "answer": ["Denver Broncos"]
+   },
+     {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o número de cada conjunto de lados opostos de um dado padrão?",
+  "answer": ["7"]
+   },
+   {
+  "category": "Tecnologia",
+  "question": "Qual país tem a maior porcentagem de sua população online?",
+  "answer": ["Islândia"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a capital do Azerbaijão?",
+  "answer": ["Baku"]
+   },
+    {
+  "category": "História",
+  "question": "Qual foi a última cidade do Império Romano a cair?",
+  "answer": ["Trebizonda"]
+   },
+   {
+  "category": "História",
+  "question": "Quem era o prefeito da cidade de Nova York durante os ataques de 11 de setembro de 2001?",
+  "answer": ["Rudy Giuliani"]
+   },
+    {
+  "category": "História",
+  "question": "De acordo com a mitologia grega, que Górgona tinha cobras como cabelo e podia transformar os espectadores em pedra?",
+  "answer": ["Medusa"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Em que país as pessoas costumam ter um ano de idade ao nascer?",
+  "answer": ["China"]
+   },
+   {
+  "category": "História",
+  "question": "Quem foi a primeira rainha da Inglaterra?",
+  "answer": ["Mary I"]
+   },
+   {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 11 × 52?",
+  "answer": ["572"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a capital da Grécia?",
+  "answer": ["Atenas"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a capital do Quirguistão?",
+  "answer": ["Bishkek"]
+   },
+    {
+  "category": "Biologia",
+  "question": "Que criatura vive em um formigueiro?",
+  "answer": ["Formiga"]
+   },
+     {
+  "category": "Abelhas",
+  "question": "Que doce alimento é feito pelas abelhas com o néctar das flores?",
+  "answer": ["Mel"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital da Coreia do Norte?",
+  "answer": ["Pyongyang"]
+   },
+   {
+  "category": "História",
+  "question": "Gaddafi era o líder de que país?",
+  "answer": ["Líbia"]
+   },
+    {
+  "category": "Música",
+  "question": "Qual álbum de Tyler, The Creator foi lançado em maio de 2019?",
+  "answer": ["IGOR"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Que classe de personagem Diablo II é famosa por invocar os mortos?",
+  "answer": ["Necromancer"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Em que estado dos EUA você encontraria o Stone Mountain Park?",
+  "answer": ["Georgia"]
+   },
+   {
+  "category": "Video Games",
+  "question": "O chefe final em Diablo II: Lord of Destruction é?",
+  "answer": ["Baal"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "De que idioma veio a palavra “Ketchup”?",
+  "answer": ["Chinês"]
+   },
+   {
+  "category": "Tecnologia",
+  "question": "Qual foi o primeiro navegador da Web disponível no sistema operacional Microsoft Windows?",
+  "answer": ["Cello"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Qual é a área de um quadrado com diagonal medindo 12?",
+  "answer": ["72"]
    }
+  
+  
+  
   
 ]
