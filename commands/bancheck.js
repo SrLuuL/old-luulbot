@@ -1,10 +1,9 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-const ms = require("pretty-ms")
-const fetch = require("node-fetch")
+const ms = require("pretty-ms");
+const fetch = require("node-fetch");
 
-let user = args[0];
-let user2 = args[1];
+let [user, user2] = args;
 
 if (!user) return client.say(channel, `${username}, insira usuários :/`)
 
@@ -13,30 +12,28 @@ user = username
 user2 = args[0]
 }
 
-let res = await fetch(`https://api.ivr.fi/twitch/banlookup/${user}/${user2}`);
-let data = await res.json();  
+const res = await (await fetch(`https://api.ivr.fi/twitch/banlookup/${user}/${user2}`)).json(); 
   
-if (data.error) return client.say(channel, `${username}, conta inexistente ou suspensa`);  
-const {status, banned, isPermanent, createdAt, expiresAt} = data
+if (res.error) return client.say(channel, `${username}, conta inexistente ou suspensa`);  
+const {status, banned, isPermanent, createdAt, expiresAt} = res;
 
-user = (user.toLowerCase() === username) ? "Você" : user;
+user = (user.toLowerCase() === username) ? "você" : user;
 user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
 if (banned === false) return client.say(channel, `${username}, a conta ${user} não está banida em ${user2}`)
+
+const dateBan = ms(Date.now() - new Date(createdAt), {secondsDecimalDigits: 0})
+.replace(/y/g, "a");
+const dateExpire = ms(new Date(expiresAt) - Date.now(), {secondsDicimalDigits: 0})
+.replace(/y/g, "a");
   
-let DateBan = new Date(createdAt)
-let DateExpire = new Date(expiresAt)
-DateBan = Date.now() - DateBan
-DateBan = ms(DateBan, {secondsDecimalDigits: 0}).replace(/y/g, "a");
-DateExpire = DateExpire - Date.now()
-DateExpire = ms(DateExpire, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 
   
 if (isPermanent === true) {
-return client.say(channel, `${username}, ${user} está com um ban permanente em ${user2} há ${DateBan} atrás`)
+client.say(channel, `${username}, ${user} está com um ban permanente em ${user2} há ${dateBan} atrás`)
 } else {
-return client.say(channel, `${username}, ${user} está com timeout em ${user2} há ${DateBan} atrás e vai acabar em ${DateExpire}`)
+client.say(channel, `${username}, ${user} está com timeout em ${user2} há ${dateBan} atrás e vai acabar em ${dateExpire}`)
 }
 
 
