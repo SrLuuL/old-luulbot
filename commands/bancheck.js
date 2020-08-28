@@ -34,9 +34,9 @@ DateExpire = ms(DateExpire, {secondsDecimalDigits: 0}).replace(/y/g, "a");
 
   
 if (isPermanent === true) {
-return client.say(channel, `${username}, a conta ${user} está banida permanentemente em ${user2} há ${DateBan} atrás`)
+return client.say(channel, `${username}, ${user} está com um ban permanente em ${user2} há ${DateBan} atrás`)
 } else {
-return client.say(channel, `${username}, a conta ${user} está com timeout em ${user2} há ${DateBan} atrás e vai acabar em ${DateExpire}`)
+return client.say(channel, `${username}, ${user} está com timeout em ${user2} há ${DateBan} atrás e vai acabar em ${DateExpire}`)
 }
 
 
