@@ -4088,7 +4088,18 @@
   "category": "Matemática",
   "question": "Qual é a área de um quadrado com diagonal medindo 12?",
   "answer": ["72"]
+   },
+    {
+  "category": "Ciência",
+  "question": "Qual elemento não pode ser fundido dentro dos núcleos das estrelas?",
+  "answer": ["Ferro"]
+   },
+  {
+  "category": "História",
+  "question": "Quando Polônia se tornou um país?",
+  "answer": ["966"]
    }
+  
   
   
   
