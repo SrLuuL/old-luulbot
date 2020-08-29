@@ -13,9 +13,9 @@ if (!res.chatter_count) return client.say(channel, `${username}, usuário não p
 const {chatter_count} = res;
 
 const getRoles = ({vips, moderators, staff}) => {
-  const v = (vips.length >= 0) ? `${vips.length} vips` : 0
-  const m = (moderators.length >= 0) ? `${moderators.length} mods` : 0
-  const s = (staff.length >= 0) ? `${staff.length} staffs` : 0
+  const v = (vips.length > 0) ? `${vips.length} vips` : 0
+  const m = (moderators.length > 0) ? `${moderators.length} mods` : 0
+  const s = (staff.length > 0) ? `${staff.length} staffs` : 0
   
   if (![v,m,s].find(i => i)) return ''
   
