@@ -26,8 +26,8 @@ partner, affiliate, bot, banned, createdAt} = res;
 let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
 
-const mods = Object.key(res2.mods).length;
-const vips = Object.key(res.vips).length;
+const mods = Object.keys(res2.mods).length;
+const vips = Object.keys(res.vips).length;
   
   
 const verifyBio = (bio) => {
