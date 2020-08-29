@@ -5,11 +5,10 @@ const db = require('../clients/database.js').db
 if (username !== "srluul") return;
 
 db.query(`${args.join(' ')}`, (err,result) => {
-   if(err){
-      return client.say(channel, `@${username}, (${err.message}) ocorreu algum erro :/`)
-    }
+   if(err) return client.say(channel, `${username}, (${err.message}) ocorreu algum erro :/`);
+  
     
-   console.log(result.rows || result)
+    console.log(result.rows || result)
     client.say(channel, `${username}, olhe os logs para os resultados :) `)
   })
   
