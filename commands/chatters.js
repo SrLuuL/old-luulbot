@@ -3,7 +3,7 @@ module.exports.run = async (client, message, args ,username, channel) => {
 const fetch = require("node-fetch")
 
 let user;
-user = (!args[0]) ? user = channel.slice(1) : user = args[0];
+user = (!args[0]) ? user = channel.slice(1) : user = args[0].toLowerCase();
 
 const res = await (await fetch(`https://tmi.twitch.tv/group/user/${user}/chatters`)).json();  
   
