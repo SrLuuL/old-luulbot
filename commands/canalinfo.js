@@ -75,7 +75,8 @@ let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2})
 return `${fullDate}(${dateAge} atrás)`  
 }
 
-const getMv = async({mods, vips}) => {
+const getMv = async() => {
+const {mods,vips} = res2;  
 const totalMods = await Object.keys(mods).length;
 const totalVips = await Object.keys(vips).length;
   
@@ -102,7 +103,7 @@ return `${totalMods} mods e ${totalVips} vips`
     case "--age":
       return client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
     case "--mv":
-      return client.say(channel, `${username}, A conta ${displayName} possui ${getMv(res2)} em seu canal`)
+      return client.say(channel, `${username}, A conta ${displayName} possui ${getMv()} em seu canal`)
 }
 
 
