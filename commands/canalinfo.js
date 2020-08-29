@@ -60,7 +60,7 @@ const verifyRoles = (affiliate, partner, staff) => {
 const robot = (bot) => {
   if (bot) return `${displayName} é um bot verificado MrDestructoid`
   
-  return await `${displayName} não é um bot verificado`
+  return `${displayName} não é um bot verificado`
 }
 
 const getDate = () => {
@@ -80,7 +80,7 @@ const {mods,vips} = res2;
 const totalMods = await Object.keys(mods).length;
 const totalVips = await Object.keys(vips).length;
   
-return `${totalMods} mods e ${totalVips} vips`   
+return await `${totalMods} mods e ${totalVips} vips`   
 }
 
 
