@@ -80,7 +80,7 @@ const {mods,vips} = res2;
 const totalMods = await Object.keys(mods).length;
 const totalVips = await Object.keys(vips).length;
   
-return await `${totalMods} mods e ${totalVips} vips`   
+return (await `${totalMods} mods e ${totalVips} vips`)   
 }
 
 
