@@ -26,33 +26,67 @@ partner, affiliate, bot, banned, createdAt} = res;
 let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
 
+const verifyBio = (bio) => {
+  if (!bio) return '(Sem Bio)'
+  if (bio.length > 70) return `${bio.slice(0,70)}...`;
+  
+  return bio;
+}
 
-bio = (!bio) ? "(Sem Bio)" : bio;
-bio = (bio.length > 70) ? bio.slice(0, 70) + "..." : bio;
-chatColor = (chatColor === null) ? "(Sem Cor)" : chatColor;
-banned = (banned === true) ? `A conta ${displayName} está banida` : `A conta ${displayName} não está banida`;
-partner = (partner === true) ? "parceria" : false;
-affiliate = (affiliate === true) ? "afiliado" : false;
-staff = (staff === true) ? "staff" : false;
-let roles = [affiliate, partner, staff];
-roles = (!roles.find(i => i === true)) ? `nenhum cargo` : roles.filter(Boolean).join("/");
-bot = (bot === true) ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`;
+const verifyColor = (chatColor) => {
+  if (!chatColor) return '(Sem Cor)'
+  
+  return chatColor;
+}
+  
+const verifyBan = (banned) => {
+  if (banned) return `A conta ${displayName} está banida`
+  
+  return `A conta ${displayName} não está banida`;
+}
+
+const verifyRoles = (affiliate, partner, staff) => {
+  const aff = (!affiliate) ? false : 'afiliado';
+  const part = (!partner) ? false : 'parceria';
+  const staf = (!staff) ? false : 'staff';
+  
+  
+  const roles = [aff, part, staf];
+  if (!roles.find(i => i)) return `não possui cargos`
+  
+  return `possui ${roles.filter(Boolean).join("/")}`;
+}
+
+const robot = (bot) => {
+  if (bot) return `${displayName} é um bot verificado MrDestructoid`
+  
+  return `${displayName} não é um bot verificado`
+}
+
+const getDate = () => {
 let date = new Date(createdAt);
 let dateDay = (date.getDate() >= 10) ? date.getDate() : "0" + date.getDate();
 let dateMonth = (date.getMonth() >= 10) ? date.getMonth() + 1 : "0" + (date.getMonth() + 1);
-let dateYear = date.getFullYear() ;
+let dateYear = date.getFullYear();
 let fullDate = `${dateDay}/${dateMonth}/${dateYear}`;
-let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2}).replace(/y/g, "a");
-const {mods, vips} = res2;
-let totalMods = await Object.keys(mods).length;
-let totalVips = await Object.keys(vips).length;
+let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2})
+.replace(/y/g, "a");
+  
+return `${fullDate}(${dateAge} atrás)`  
+}
 
+const getMv = ({mods, vips}) => {
+const totalMods = await Object.keys(mods).length;
+const totalVips = await Object.keys(vips).length;
+  
+return `${totalMods} mods e ${totalVips} vips`   
+}
 
 
   
   switch (args[0]) {
     case "--age":
-      return client.say(channel, `${username}, Sua conta foi criada em ${fullDate}(${dateAge} atrás)`)
+      client.say(channel, `${username}, Sua conta foi criada em ${getDate()}`)
 }
   
   
@@ -60,19 +94,19 @@ let totalVips = await Object.keys(vips).length;
     case "--lang":
       return client.say(channel, `${username}, A linguagem deste canal é: ${userLang}`);
     case "--ban":
-     return client.say(channel, `${username}, ${banned}`);
+     return client.say(channel, `${username}, ${verifyBan(banned)}`);
     case "--cargos":
-     return client.say(channel, `${username}, A conta ${displayName} possui ${roles}`);
+     return client.say(channel, `${username}, A conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
     case "--bot":
-      return client.say(channel, `${username}, ${bot}`);
+      return client.say(channel, `${username}, ${robot(bot)}`);
     case "--age":
-      return client.say(channel, `${username}, A conta ${displayName} foi criada em ${fullDate}(${dateAge} atrás)`)
+      return client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
     case "--mv":
-      return client.say(channel, `${username}, A conta ${displayName} possui ${totalMods} mods e ${totalVips} vips em seu canal`)
+      return client.say(channel, `${username}, A conta ${displayName} possui ${getMv(res2)} em seu canal`)
 }
 
 
-client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}`)
+client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${verifyBio(bio)} | Cor: ${verifyColor(chatColor)}`)
 
 
 }
