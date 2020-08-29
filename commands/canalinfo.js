@@ -26,6 +26,10 @@ partner, affiliate, bot, banned, createdAt} = res;
 let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
 
+const mods = Object.key(res2.mods).length;
+const vips = Object.key(res.vips).length;
+  
+  
 const verifyBio = (bio) => {
   if (!bio) return '(Sem Bio)'
   if (bio.length > 70) return `${bio.slice(0,70)}...`;
@@ -75,13 +79,6 @@ let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2})
 return `${fullDate}(${dateAge} atrás)`  
 }
 
-const getMv = async() => {
-const {mods,vips} = res2;  
-const totalMods = await Object.keys(mods).length;
-const totalVips = await Object.keys(vips).length;
-  
-return (await `${totalMods} mods e ${totalVips} vips`)   
-}
 
 
   
@@ -103,7 +100,7 @@ return (await `${totalMods} mods e ${totalVips} vips`)
     case "--age":
       return client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
     case "--mv":
-      return client.say(channel, `${username}, A conta ${displayName} possui ${getMv()} em seu canal`)
+      return client.say(channel, `${username}, A conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
 }
 
 
