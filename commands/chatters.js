@@ -5,24 +5,27 @@ const fetch = require("node-fetch")
 let user;
 user = (!args[0]) ? user = channel.slice(1) : user = args[0];
 
-let res = await fetch(`https://tmi.twitch.tv/group/user/${user}/chatters`)
-let data = await res.json();
+const res = await (await fetch(`https://tmi.twitch.tv/group/user/${user}/chatters`)).json();  
+  
 
-if (data === "") return client.say(channel, `${username}, usuário não foi encontrado :/`)
+if (!res.chatter_count) return client.say(channel, `${username}, usuário não possui chatters :/`)
 
-const {chatter_count} = data;
-let vips = Object.keys(data.chatters.vips).length;
-vips = (vips > 0) ? vips + " vips" : null
-let mods = Object.keys(data.chatters.moderators).length;
-mods = (mods > 0) ? mods + " mods" : null  
-let staffs = Object.keys(data.chatters.staff).length;
-staffs = (staffs > 0) ? staffs + " staffs" : null  
+const {chatter_count} = res;
+
+const getRoles = ({vips, mods, staffs}) => {
+  const v = (vips.length >= 0) ? `${vips.length} vips` : 0
+  const m = (mods.length >= 0) ? `${mods.length} mods` : 0
+  const s = (staffs.length >= 0) ? `${staffs.length} staffs` : 0
+  
+  if (![v,m,s].find(i => i)) return ''
+  
+  return `${[v,m,s].filter(Boolean).join('/')}`
+} 
   
 user = (user === username) ? "Você" : user;  
 
-let roles = "(" + [vips, mods, staffs].filter(Boolean).join("/") + ")"; roles = (roles === "()") ? "" : roles
   
-client.say(channel, `${username}, ${user} possui ${chatter_count} chatters ${roles} presentes neste momento`)
+client.say(channel, `${username}, ${user} possui ${chatter_count} chatters ${getRoles(res.chatters)} presentes neste momento`)
 
 }
 
