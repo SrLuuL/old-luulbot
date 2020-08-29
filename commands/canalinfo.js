@@ -75,7 +75,7 @@ let dateAge = ms(Date.now() - date, {secondsDecimalDigits: 0, unitCount: 2})
 return `${fullDate}(${dateAge} atrás)`  
 }
 
-const getMv = ({mods, vips}) => {
+const getMv = async({mods, vips}) => {
 const totalMods = await Object.keys(mods).length;
 const totalVips = await Object.keys(vips).length;
   
