@@ -19,7 +19,7 @@ const getRoles = ({vips, moderators, staff}) => {
   
   if (![v,m,s].find(i => i)) return ''
   
-  return `${[v,m,s].filter(Boolean).join('/')}`
+  return `(${[v,m,s].filter(Boolean).join('/')})`
 } 
   
 user = (user === username) ? "Você" : user;  
