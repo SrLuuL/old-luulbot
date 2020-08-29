@@ -27,7 +27,7 @@ let staff = res.roles.isStaff;
 const userLang = res.settings.preferredLanguageTag;
 
 const mods = Object.keys(res2.mods).length;
-const vips = Object.keys(res.vips).length;
+const vips = Object.keys(res2.vips).length;
   
   
 const verifyBio = (bio) => {
