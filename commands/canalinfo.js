@@ -54,13 +54,13 @@ const verifyRoles = (affiliate, partner, staff) => {
   const roles = [aff, part, staf];
   if (!roles.find(i => i)) return `não possui cargos`
   
-  return `possui ${roles.filter(Boolean).join("/")}`;
+  return  `possui ${roles.filter(Boolean).join("/")}`;
 }
 
 const robot = (bot) => {
   if (bot) return `${displayName} é um bot verificado MrDestructoid`
   
-  return `${displayName} não é um bot verificado`
+  return await `${displayName} não é um bot verificado`
 }
 
 const getDate = () => {
