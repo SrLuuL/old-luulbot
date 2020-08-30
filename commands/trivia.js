@@ -56,7 +56,7 @@ async function startTrivia() {
 if (!trivia.running && args[0] == "start") {
 
 if(args[1]) {
-if (/^-?\d+$/.test(args[1]) === false) { num = 1 };   
+if (isNaN(parseInt(args[1]))) { num = 1 };   
 if (args[1] > 100 || args[1] < 1) { num = 100 }
 else { num = parseInt(args[1], 0) }
 }
