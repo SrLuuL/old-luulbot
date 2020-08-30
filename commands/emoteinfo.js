@@ -8,7 +8,7 @@ const {channel:channelEmote, emoteid, emotecode, tier} = res;
 
 let url = `https://twitchemotes.com/emotes/${emoteid}`  
   
-if (data.status === 404 || data.status === 500) return client.say(channel, `${username}, não encontrei esse emote :/`);
+if (res.status === 404 || res.status === 500) return client.say(channel, `${username}, não encontrei esse emote :/`);
 
 
 if (!args[0]) {
