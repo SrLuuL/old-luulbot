@@ -21,7 +21,7 @@ user = (user.toLowerCase() === username) ? "você" : user;
 user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
 
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
-if (banned === false) return client.say(channel, `${username}, a conta ${user} não está banida em ${user2}`)
+if (banned === false) return client.say(channel, `${username}, ${user} não está com um ban em ${user2}`)
 
 const dateBan = ms(Date.now() - new Date(createdAt), {secondsDecimalDigits: 0})
 .replace(/y/g, "a");
