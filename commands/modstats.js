@@ -18,7 +18,7 @@ const {user, views, follows, total, partners} = res2;
 
 const sender = (user === username) ? 'você' : user;   
 
-return client.say(channel, `${username}, ${user} é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${haste}`)
+return client.say(channel, `${username}, ${sender} é mod em ${total} canais, ${partners} sendo parceiros | Views totais: ${views} | Follows totais: ${follows} | Canais: ${haste}`)
    
 
  } catch (err) {
