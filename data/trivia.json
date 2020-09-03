@@ -3392,7 +3392,7 @@
     {
   "category": "Geografia",
    "question": "O clube principal da Virgin Atlantic fica em que aeroporto?",
-  "answer": ["Mar Mediterrâneo"]
+  "answer": ["Heathrow"]
    },
    {
   "category": "História",
@@ -4158,6 +4158,46 @@
   "category": "Biologia",
   "question": "Qual criatura tem os maiores olhos do reino animal?",
   "answer": ["Lula gigante"]
+   },
+   {
+  "category": "Música",
+  "question": "Os amantes da ópera sabem que a Ópera Real Dinamarquesa está localizada em que cidade?",
+  "answer": ["Copenhagen"]
+   },
+   {
+  "category": "Filmes",
+  "question": "George Reeves foi conhecido por quem?",
+  "answer": ["Super Homem"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Com mais de 700.000 visitantes por ano, que americano possui o túmulo mais visitado do mundo?",
+  "answer": ["Elvis Presley"]
+   },
+    {
+  "category": "Ciência",
+  "question": "No início de 1900, que inventor americano desenvolveu a bateria alcalina?",
+  "answer": ["Thomas Edison"]
+   },
+   {
+  "category": "Biologia",
+  "question": "O som mais alto de uma fonte viva é produzido por qual criaturas marinhas?",
+  "answer": ["Baleias"]
+   },
+    {
+  "category": "História",
+  "question": "Quantos anos aproximadamente os israelitas estiveram em cativeiro no Egito?",
+  "answer": ["400"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Alguns pesquisadores acreditam que meia cabeça de qual leguminosa  por dia pode prevenir certas formas de câncer?",
+  "answer": ["Alface"]
+   },
+   {
+  "category": "História",
+  "question": "De 1977 a 1996, 128 reclusos nos EUA foram executados por este que método?",
+  "answer": ["Eletrocussão"]
    }
   
   
