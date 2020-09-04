@@ -452,7 +452,7 @@
   {
    "category": "Minecraft",
    "question": "O que você precisa para impulsionar a Elytra?",
-  "answer": ["Foguetes de artifício"]
+  "answer": ["Fogos de artifício"]
    },
   {
    "category": "Geografia",
@@ -2351,7 +2351,7 @@
    },
    {
    "category": "Minecraft",
-   "question": "Qual arma pode atirar foguetes de artifício?",
+   "question": "Qual arma pode atirar fogos de artifício?",
   "answer": ["Besta"]
    },
    {
@@ -4196,9 +4196,153 @@
    },
    {
   "category": "História",
-  "question": "De 1977 a 1996, 128 reclusos nos EUA foram executados por este que método?",
+  "question": "De 1977 a 1996, 128 reclusos nos EUA foram executados por qual método?",
   "answer": ["Eletrocussão"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 252 ÷ 3?",
+  "answer": ["84"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Em que país você pode visitar o templo Angkor Wat?",
+  "answer": ["Camboja"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Nome da guilda especializada em artes mágicas em Skyrim",
+  "answer": ["College of Winterhold"]
+   },
+     {
+  "category": "História",
+  "question": "Em que ano o Reino Unido votou para deixar a UE?",
+  "answer": ["2016"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Qual era o código de trapaça para todas as armas e munições no DOOM II?",
+  "answer": ["2016"]
+   },
+  {
+  "category": "Geografia",
+  "question": "O Bundesautobahn 1 na Alemanha passa por quantos estados alemães?",
+  "answer": ["7"]
+   },
+    {
+  "category": "Ciência",
+  "question": "Qual é o nome de um método para determinar a idade de um objeto que contém matéria orgânica?",
+  "answer": ["Datação por radiocarbono"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a capital de Antígua e Barbuda?",
+  "answer": ["Saint John"]
+   },
+    {
+  "category": "Abelhas",
+  "question": "Quantos olhos uma abelha tem?",
+  "answer": ["5"]
+   },
+   {
+  "category": "Animes",
+  "question": "No anime \"Akaneiro ni Somaru Saka\", o protagonista do anime é?",
+  "answer": ["Junichi Nagase"]
+   },
+    {
+  "category": "Tecnologia",
+  "question": "Qual foi o primeiro vírus de computador?",
+  "answer": ["Creeper"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Em que cidade inglesa está localizado o palácio de Buckingham?",
+  "answer": ["London"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o signo do zodíaco para uma pessoa nascida em 2 de outubro?",
+  "answer": ["Libra"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Quem é o principal antagonista da série Twisted Metal?",
+  "answer": ["Calypso"]
+   },
+  {
+  "category": "Carros",
+  "question": "Qual fabricante de automóveis produziu o modelo Elise?",
+  "answer": ["Lotus"]
+   },
+    {
+  "category": "Futebol",
+  "question": "Quem ganhou a Bola de Ouro em 2007?",
+  "answer": ["Kaka"]
+   },
+   {
+  "category": "Política",
+  "question": "Que celebridade ajudou Ronald Reagan a se tornar presidente nos anos 80?",
+  "answer": ["Frank Sinatra"]
+   },
+  {
+  "category": "Biologia",
+  "question": "Qual é o maior animal que já viveu na Terra?",
+  "answer": ["Baleia Azul"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual país europeu consome comida mexicana mais picante do que qualquer outro?",
+  "answer": ["Noruega"]
+   },
+    {
+  "category": "Programação",
+  "question": "Quem fez o Obote?",
+  "answer": ["Namaca"]
+   },
+    {
+  "category": "Minecraft",
+  "question": "Em que nível os diamantes podem ser encontrados?",
+  "answer": ["16"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual país europeu tem mais usinas nucleares?",
+  "answer": ["França"]
+   },
+  {
+  "category": "Ciência",
+  "question": "As partículas com spins de meio inteiro são chamadas de?",
+  "answer": ["Férmions"]
+   },
+    {
+  "category": "Música",
+  "question": "Qual é o verdadeiro nome de Freddie Mercury?",
+  "answer": ["Farrokh Bulsara"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Trinidad e Tobago é um país / ilha rodeado por qual mar?",
+  "answer": ["Mar do Caribe"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Que país asiático era conhecido como Mesopotâmia há muito tempo?",
+  "answer": ["Iraque"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Qual é o nome do primeiro mapa PUBG?",
+  "answer": ["Erangel"]
+   },
+    {
+  "category": "Música",
+  "question": "O vocalista do Gorillaz e Blur",
+  "answer": ["Damon Albarn"]
+   },
+    {
+  "category": "Animes",
+  "question": "Adivinhe o personagem: ela viajou no tempo, morreu e voltou como um programa de computador",
+  "answer": ["Kurisu Makise"]
    }
-  
   
 ]
