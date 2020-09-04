@@ -84,7 +84,7 @@ return `${fullDate}(${dateAge} atrás)`
   
   switch (args[0]) {
     case "--age":
-      return client.say(channel, `${username}, Sua conta foi criada em ${getDate()}`
+      return client.say(channel, `${username}, Sua conta foi criada em ${getDate()}`)
 }
   
   
