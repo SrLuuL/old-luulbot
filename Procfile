@@ -1,1 +1,1 @@
-worker: node handler.js
+worker: node index.js
