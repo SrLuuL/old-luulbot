@@ -22,18 +22,22 @@ return new Promise(res => setTimeout(res, ms))
    switch(args[0]) {
      case "points":
        if (!args[1]) {
-         const userScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${username}'`)
+         const userScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${username}'`);
+         const triviaTop = await db.query('SELECT * FROM luulbot_trivia ORDER BY score DESC');
+         let userIndex = triviaTop.rows.findIndex((index) => index.userchannel === username) + 1;
          if (userScore.rows[0] === undefined) {
            await client.say(channel, `${username}, você não acertou nenhuma trivia`)
          } else {
-           await client.say(channel, `${username}, você acertou ${userScore.rows[0].score} trivias!`)
+           await client.say(channel, `${username}, você acertou ${userScore.rows[0].score} trivias! / Top ${userIndex}`)
          }
        } else {
          const argsScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${args[1]}'`)
+         const triviaTop = await db.query('SELECT * FROM luulbot_trivia ORDER BY score DESC');
+         let argsIndex = triviaTop.rows.findIndex((index) => index.userchannel === args[1]) + 1;
          if (argsScore.rows[0] === undefined) {
            await client.say(channel, `${username}, este usuário ainda não acertou uma trivia`)
          } else {
-           await client.say(channel, `${username}, este usuário já acertou ${argsScore.rows[0].score} trivias`)
+           await client.say(channel, `${username}, este usuário já acertou ${argsScore.rows[0].score} trivias / Top ${argsIndex}`)
          }
        }
        break;
