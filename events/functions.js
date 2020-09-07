@@ -1,7 +1,7 @@
 const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 
-await client.getEmotes = async (channel) => {
+client.getEmotes = async (channel) => {
 const emotes = [];  
 const resFFZ = await (await fetch(`https://decapi.me/ffz/emotes/${channel}`)).text();
 const resBTTV = await (await fetch(`https://decapi.me/bttv/emotes/${channel}`)).text();
