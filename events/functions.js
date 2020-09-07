@@ -7,6 +7,6 @@ const resFFZ = await (await fetch(`https://decapi.me/ffz/emotes/${channel}`)).te
 const resBTTV = await (await fetch(`https://decapi.me/bttv/emotes/${channel}`)).text();
 const resTwitch = await (await fetch(`https://decapi.me/twitch/subscriber_emotes/${channel}`)).text();  
 
-await emotes.push({ffz: resFFZ, bttv: resBTTV, twitch: resTwitch})  
+emotes.push({ffz: await resFFZ, bttv: await resBTTV, twitch: await resTwitch})  
 return emotes  
 }
