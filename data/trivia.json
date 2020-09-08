@@ -317,7 +317,7 @@
   {
    "category": "Esportes",
    "question": "Qual é o máximo de pontos possíveis em uma partida de boliche?",
-  "answer": ["Boliche"]
+  "answer": ["300"]
    },
   {
    "category": "Geografia",
@@ -3227,7 +3227,7 @@
     {
   "category": "Geografia",
    "question": "Um acordo de 1959 dividiu as águas do Nilo entre o Egito e qual país?",
-  "answer": ["Protetora"]
+  "answer": ["Sudão"]
    },
     {
   "category": "Astronomia",
@@ -4343,6 +4343,31 @@
   "category": "Animes",
   "question": "Adivinhe o personagem: ela viajou no tempo, morreu e voltou como um programa de computador",
   "answer": ["Kurisu Makise"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Bionicle é uma das linhas de que marca de blocos de construção?",
+  "answer": ["Lego"]
+   },
+     {
+  "category": "História",
+  "question": "8 de junho de 68: Servius Sulpicius Galba se torna o imperador de que império?",
+  "answer": ["Romano"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Serra Leoa faz parte de qual continente?",
+  "answer": ["África"]
+   },
+     {
+  "category": "Animais",
+  "question": "Azul Russo é uma raça de que animal?",
+  "answer": ["Gato"]
+   },
+    {
+  "category": "Geografia",
+  "question": "14 de setembro de 1847: General Winfield Scott captura que capital do hemisfério ocidental?",
+  "answer": ["Cidade do México"]
    }
   
 ]
