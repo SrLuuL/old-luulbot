@@ -4368,6 +4368,46 @@
   "category": "Geografia",
   "question": "14 de setembro de 1847: General Winfield Scott captura que capital do hemisfério ocidental?",
   "answer": ["Cidade do México"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 7 x 7 x 2?",
+  "answer": ["98"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Que ilha no Pacífico Sul recebeu seu nome em homenagem ao dia de sua descoberta, um feriado religioso?",
+  "answer": ["Ilha da Páscoa"]
+   },
+     {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 3 x 4 x 5 x 6?",
+  "answer": ["360"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Partes dos desertos da Arábia e da Líbia são encontradas em qual país africano?",
+  "answer": ["Egito"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 5 x 10 x 15?",
+  "answer": ["750"]
+   },
+    {
+  "category": "Música",
+  "question": "Que tipo de bounce house, ou uma dança que ficou famosa por Michael Jackson?",
+  "answer": ["Moonwalk"]
+   },
+     {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 2 x 1,035?",
+  "answer": ["2,070"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Como se chama o chefe executivo de um estado?",
+  "answer": ["Governador"]
    }
   
 ]
