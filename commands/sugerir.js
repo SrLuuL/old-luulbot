@@ -4,9 +4,9 @@ module.exports.run = async (client, message, args, username, channel) => {
   
   let total = await db.query(`SELECT userchannel FROM luulbot_suggests`)
   
-   if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
+  if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
   
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, suggestid) VALUES('${username}','${args.join(" ")}', '${total.rows.pop().suggestid + 1}')`)
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, suggestid) VALUES('${username}','${args.join(" ")}', '${total.rows.length + 1}')`)
   client.say(channel, `${username}, sugestão anotada :D 📝 (ID:${total.rows.length + 1})`)
 
 }
