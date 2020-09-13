@@ -4,9 +4,9 @@ module.exports.run = async (client, message, args, username, channel) => {
   
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
   
-  let suggestTotal;
+  let suggestTotal = total.rows.pop().suggestid;
   
-  if (total.rows.pop() === undefined) {
+  if (suggestTotal === undefined) {
     await (suggestTotal = 1)
   } else {
     await (suggestTotal =+ 1)
