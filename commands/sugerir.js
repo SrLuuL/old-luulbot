@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   if (suggestTotal === undefined) {
     await (suggestTotal = 1)
   } else {
-    await (suggestTotal = suggestTotal.suggestid)
+    await (suggestTotal = suggestTotal.suggestid + 1)
   }
   
   if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
