@@ -3,7 +3,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   const db = require("../clients/database.js").db
   
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
-  let suggestTotal = (typeof total.rows.pop() === undefined) ? await 1 : await total.rows.pop().suggestid + 1;
+  let suggestTotal = (typeof total.rows.pop() === undefined) ? await 1 : await total.rows.pop().suggestid =+ 1;
   
   if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
   
