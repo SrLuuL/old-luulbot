@@ -19,7 +19,7 @@ client.say(channel, `Pong! Ping: ${ping} ms | Memória: ${realtotal} MB | Uptime
 
 module.exports.config = {
 	name: "ping",
-	aliases: ["pong"],
+	aliases: ["pong", "uptime"],
 	description: "Verificar se o bot está acordado",
 	usage: "ping"
 }
