@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args, username, channel) => {
   
   if (!args[0]) return client.say(channel, `${username}, insira uma sugestão :/`)
   
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, suggestid) VALUES('${username}','${args.join(" ")}', '${suggestTotal}')`)
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, suggestid, priority) VALUES('${username}','${args.join(" ")}', '${suggestTotal}', 10)`)
   client.say(channel, `${username}, sugestão anotada :D 📝 (ID: ${suggestTotal})`)
 
 }
