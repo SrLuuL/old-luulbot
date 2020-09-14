@@ -9,7 +9,7 @@ module.exports.run =  async (client, message, args, username, channel) => {
 	let realtotal = Math.round(total * 100) / 100;
 	const ping = await client.ping() * 1000;
 	const date = await db.query(`SELECT * FROM luulbot_info WHERE setting = 'uptime'`)
-	const uptime = await ms(Date.now() - uptime.rows[0].value);
+	const uptime = await ms(Date.now() - date.rows[0].value);
 
 	
 	
