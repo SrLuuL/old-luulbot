@@ -1,16 +1,18 @@
 const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
-
+const db = require('./clients/database.js').db;
 
 let prefix = "=";
 let globalCD = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
+client.on('connected', async () => {
+	await db.query(`UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime'`)
+})
 
-
-client.on("message", async (channel, user, message, self) => {
+client.on('message', async (channel, user, message, self) => {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
@@ -19,10 +21,8 @@ client.on("message", async (channel, user, message, self) => {
 	
 	
 
-	if (self) return;
-	
+	if (self) return;	
 	if (globalCD.has(username)) return;
-
 	if (!message.startsWith(prefix)) return;
 
 
