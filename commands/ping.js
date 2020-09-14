@@ -1,17 +1,19 @@
-const si = require("systeminformation");
-
-module.exports.run = (client, message, args, username, channel) => {
 
 
+module.exports.run =  async (client, message, args, username, channel) => {
 
-    let total = process.memoryUsage().heapTotal / 1024 / 1024;
-    let realtotal = Math.round(total * 100) / 100;
+	const db = require('../clients/database.js').db;
+        const si = require("systeminformation");
+	const ms = require('pretty-ms');
+        let total = process.memoryUsage().heapTotal / 1024 / 1024;
+	let realtotal = Math.round(total * 100) / 100;
+	const ping = await client.ping() * 1000;
+	const date = await db.query(`SELECT * FROM luulbot_info WHERE setting = 'uptime'`)
+	const uptime = await ms(Date.now() - uptime.rows[0].value);
 
-    client.ping().then(data => {
-      let ping = Math.floor(Math.round(data * 1000));
-
-      client.say(channel, `Ping: ${ping} ms | Utilizando ${realtotal}MB`);
-    });
+	
+	
+client.say(channel, `Pong! Ms: ${ping} | Memória: ${realtotal} | Uptime: ${uptime}`)
 	
 }
 
