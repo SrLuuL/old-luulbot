@@ -31,9 +31,9 @@ client.on('message', async (channel, user, message, self) => {
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
 if (cmdfile) {
+	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_value' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
 	globalCD.add(username);
-	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_value' `)
 }
 
 
