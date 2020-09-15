@@ -4,7 +4,7 @@ module.exports.run = (client, message, args, username, channel, cmd, alias) => {
  
 if (!args[0]) {
  let commands = cmd.map(c => `${c.config.name}`).join(", ");
- const commandsFixed = commands.split(' ').filter(index => index.includes(!donoCmds));
+ const commandsFixed = commands.split(' ').filter(index => !index.includes(donoCmds));
 
   
 client.say(channel, `${username}, Prefixo: = | Comandos: ${commandsFixed.join('/')} | `)
