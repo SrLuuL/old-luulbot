@@ -1,12 +1,13 @@
 module.exports.run = (client, message, args, username, channel, cmd, alias) => {
 
- let donoCmds = ["db", "eval"]
+ let donoCmds = ['db', 'eval', 'join', 'part']
  
 if (!args[0]) {
  let commands = cmd.map(c => `${c.config.name}`).join(", ");
+ const commandsFixed = commands.split(' ').filter(index => index.includes(donoCmds));
 
   
-client.say(channel, `${username}, Prefixo: = | Comandos: ${commands} | `)
+client.say(channel, `${username}, Prefixo: = | Comandos: ${commandsFixed} | `)
 } else {
 let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
 if (!command) return client.say(channel, `${username}, comando inexistente  :/ `)
