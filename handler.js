@@ -9,7 +9,8 @@ let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
 client.on('connected', async () => {
-	await db.query(`UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime'`)
+	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
+	await db.query(` UPDATE luulbot_info SET value = 0 WHERE setting = 'command_value' `)
 })
 
 client.on('message', async (channel, user, message, self) => {
@@ -32,6 +33,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) {
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
 	globalCD.add(username);
+	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_value' `)
 }
 
 
