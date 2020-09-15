@@ -15,12 +15,12 @@ module.exports.run =  async (client, message, args, username, channel) => {
 	const date = await db.query(` SELECT * FROM luulbot_info WHERE setting = 'uptime' `)
 	const uptime = await ms(Date.now() - date.rows[0].value, {secondsDecimalDigits: 0, unitCount: 3});
 	
-	const commandTotal = await db.query(` SELECT * FROM luulbot_info WHERE setting = 'command_value' `);
-	const commandValue = commandTotal.rows[0].value;
+	const commandTotal = await db.query(` SELECT * FROM luulbot_info WHERE setting = 'command_count' `);
+	const commandCount = commandTotal.rows[0].value;
 
 	
 	
-client.say(channel, ` Pong! Ping: ${ping} ms | Memória: ${realtotal} MB | Uptime: ${uptime} | Comandos usados: ${commandValue} `)
+client.say(channel, ` Pong! Ping: ${ping} ms | Memória: ${realtotal} MB | Uptime: ${uptime} | Comandos usados: ${commandCount} `)
 	
 }
 
