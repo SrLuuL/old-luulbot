@@ -7,7 +7,7 @@ if (!args[0]) {
  const commandsFixed = commands.split(' ').filter(index => index.includes(!donoCmds));
 
   
-client.say(channel, `${username}, Prefixo: = | Comandos: ${commandsFixed} | `)
+client.say(channel, `${username}, Prefixo: = | Comandos: ${commandsFixed.join('/')} | `)
 } else {
 let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
 if (!command) return client.say(channel, `${username}, comando inexistente  :/ `)
