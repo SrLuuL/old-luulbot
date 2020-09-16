@@ -17,7 +17,7 @@ client.on('connected', async () => {
 client.on('notice', async (channel, msgid, message) => {
 	let channelFixed = channel.replace('#', '');
 	
-	if (msgid === 'msg_banned') {
+	if (msgid === 'msg_banned' && channels.includes(channelFixed)) {
 		await db.query(` DELETE FROM luulbot_channels WHERE userchannel = '${channelFixed}' `)
 		let index =  channels.indexOf(channelFixed)
 		channels.splice(index, 1)
