@@ -19,6 +19,7 @@ const tmi = require("tmi.js")
 const client = new tmi.client(login)
 
 client.connect()
+.catch(err => console.err(err))
 
 client.on("connected", async () => {
   console.log(`Conectado nos canais: ${channels.join(" ")}`)
