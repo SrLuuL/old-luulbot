@@ -21,8 +21,7 @@ await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${channel}'`)
 let index = channels.indexOf(channel)
 channels.splice(index, 1)  
 client.part(channel);
-}
-	
+}	
 })
 
 client.on('message', async (channel, user, message, self) => {
