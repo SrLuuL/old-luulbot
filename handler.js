@@ -15,13 +15,6 @@ client.on('connected', async () => {
 })
 
 client.on('notice', async (channel, msgid, message) => {
-if (msgid === 'msg_banned') {
-const channels = require('./credentials/login.js').channelOptions;	
-await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${channel}'`)
-let index = channels.indexOf(channel)
-channels.splice(index, 1)  
-client.part(channel);
-}
 	console.log(msgid, message)
 })
 
