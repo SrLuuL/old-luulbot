@@ -3,6 +3,7 @@ const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
 const db = require('./clients/database.js').db;
 
+
 let prefix = "=";
 let globalCD = new Set();
 let cmd = luulbot.commands;
@@ -11,6 +12,17 @@ let alias = luulbot.aliases;
 client.on('connected', async () => {
 	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
 	await db.query(` UPDATE luulbot_info SET value = 0 WHERE setting = 'command_count' `)
+})
+
+client.on('notice', async (channel, msgid, message) => {
+if (msgid === 'msg_banned') {
+const channels = require('./credentials/login.js').channelOptions;	
+await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${channel}'`)
+let index = channels.indexOf(channel)
+channels.splice(index, 1)  
+client.part(channel);
+}
+	
 })
 
 client.on('message', async (channel, user, message, self) => {
