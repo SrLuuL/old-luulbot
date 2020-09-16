@@ -11,7 +11,6 @@ await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${args[0]}'`)
 let index = channels.indexOf(args[0])
 channels.splice(index, 1)  
 client.part(args[0]);
-channels.delete(`${args[0]}`)
 client.say(channel, `${username}, saí do canal ${args[0]} com sucesso!`);
 
 
