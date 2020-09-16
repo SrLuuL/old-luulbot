@@ -25,7 +25,6 @@ client.on('notice', async (channel, msgid, message) => {
 		console.log(`LuuLBot está banido em ${channelFixed}, desconectando...`)
 	}
 	
-	console.log(msgid, message)
 })
 
 client.on('message', async (channel, user, message, self) => {
