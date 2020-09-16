@@ -2,7 +2,7 @@ const client = require ("./clients/twitch.js").client
 const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
 const db = require('./clients/database.js').db;
-
+const channels = require("./credentials/login.js").channelOptions;
 
 let prefix = "=";
 let globalCD = new Set();
@@ -15,8 +15,12 @@ client.on('connected', async () => {
 })
 
 client.on('notice', async (channel, msgid, message) => {
-	console.log(msgid, message)
-	console.log('cu')
+	if (msgid === 'msg_banned') {
+		await db.query(` DELETE FROM luulbot_channels WHERE userchannel = '${channel}' `)
+		let index =  channels.indexOf(channel)
+		channels.splice(index, 1)
+		client.part(channel)
+	}
 })
 
 client.on('message', async (channel, user, message, self) => {
