@@ -16,6 +16,7 @@ client.on('connected', async () => {
 
 client.on('notice', async (channel, msgid, message) => {
 	console.log(msgid, message)
+	console.log('cu')
 })
 
 client.on('message', async (channel, user, message, self) => {
