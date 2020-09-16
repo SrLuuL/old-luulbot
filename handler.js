@@ -22,6 +22,7 @@ client.on('notice', async (channel, msgid, message) => {
 		let index =  channels.indexOf(channelFixed)
 		channels.splice(index, 1)
 		client.part(channelFixed)
+		console.log(`LuuLBot está banido em ${channelFixed}, desconectando...`)
 	}
 })
 
