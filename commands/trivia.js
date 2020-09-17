@@ -34,6 +34,9 @@ return new Promise(res => setTimeout(res, ms))
          const argsScore = await db.query(`SELECT score FROM luulbot_trivia WHERE userchannel = '${args[1]}'`)
          const triviaTop = await db.query('SELECT * FROM luulbot_trivia ORDER BY score DESC');
          let argsIndex = triviaTop.rows.findIndex((index) => index.userchannel === args[1]) + 1;
+         if (args[1] === 'luulbot') {
+           return client.say(channel, `${username}, não preciso de trivias B)`)
+         }
          if (argsScore.rows[0] === undefined) {
            await client.say(channel, `${username}, este usuário ainda não acertou uma trivia`)
          } else {
