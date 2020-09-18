@@ -101,7 +101,7 @@ return `${fullDate}(${dateAge} atrás)`
       return client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
     case "--mv":
       return client.say(channel, `${username}, A conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
-    case default:
+    default:
       return client.say(channel, `${username}, opção inválida tente --lang / --ban / --cargos / --bot / --age / --mv`)
 }
 
