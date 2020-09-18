@@ -84,27 +84,36 @@ return `${fullDate}(${dateAge} atrás)`
   
   switch (args[0]) {
     case "--age":
-      return client.say(channel, `${username}, Sua conta foi criada em ${getDate()}`)
+      client.say(channel, `${username}, Sua conta foi criada em ${getDate()}`)
+      break;
 }
   
   
   switch (args[1]) {
     case "--lang":
-      return client.say(channel, `${username}, A linguagem deste canal é: ${userLang}`);
+      client.say(channel, `${username}, A linguagem deste canal é: ${userLang}`);
+      break;
     case "--ban":
-     return client.say(channel, `${username}, ${verifyBan(banned)}`);
+     client.say(channel, `${username}, ${verifyBan(banned)}`);
+      break;
     case "--cargos":
-     return client.say(channel, `${username}, A conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
+     client.say(channel, `${username}, A conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
+      break;
     case "--bot":
-      return client.say(channel, `${username}, ${robot(bot)}`);
+      client.say(channel, `${username}, ${robot(bot)}`);
+      break;
     case "--age":
-      return client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
+      client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
+      break;
     case "--mv":
-      return client.say(channel, `${username}, A conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
+      client.say(channel, `${username}, A conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
+      break;
     case undefined:
-      return client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${verifyBio(bio)} | Cor: ${verifyColor(chatColor)}`)
+      client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${verifyBio(bio)} | Cor: ${verifyColor(chatColor)}`)
+      break;
     default:
-      return client.say(channel, `${username}, opção inválida tente --lang / --ban / --cargos / --bot / --age / --mv`)
+      client.say(channel, `${username}, opção inválida tente --lang / --ban / --cargos / --bot / --age / --mv`)
+      break;
 }
 
 
