@@ -8,7 +8,7 @@ for(let i = 0; i < 6; i++) {
 hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 }
 
-  return hex.join()
+  return hex.join('')
   
 }
   
