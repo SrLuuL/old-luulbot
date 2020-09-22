@@ -8,10 +8,10 @@ const res = await (await fetch("http://www.boredapi.com/api/activity/")).json();
 const {activity} = res;
 const res2 = await translate(activity, { src_lang: 'auto', tar_lang:'pt'});
 
-const randomEmoji = await (await fetch("https://ranmoji.herokuapp.com/emojis/api/v.1.0/")).json();
-const emoji = randomEmoji.emoji.slice(3);
+const emojiList = ['🤔', '😀', '⭐️', '🕒', '🔮', '⌛️', '💡', '🔍', '💭', '✨'];
+const randomEmoji = emojiList[Math.round(Math.random() * emojiList.length)];
   
-client.say(channel, `${username}, \u{emoji} ${res2}`)
+client.say(channel, `${username}, ${randomEmoji} ${res2}`)
 
 }
 
