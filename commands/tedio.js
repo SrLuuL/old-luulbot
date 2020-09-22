@@ -8,7 +8,9 @@ const res = await (await fetch("http://www.boredapi.com/api/activity/")).json();
 const {activity} = res;
 const res2 = await translate(activity, { src_lang: 'auto', tar_lang:'pt'});
 
-client.say(channel, `${username}, 🤔 ${res2}`)
+const randomEmoji = await (await fetch("https://ranmoji.herokuapp.com/emojis/api/v.1.0/")).json(); 
+  
+client.say(channel, `${username}, \u{randomEmoji.emoji.slice(3)} ${res2}`)
 
 }
 
