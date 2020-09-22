@@ -23,9 +23,9 @@ user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
 if (status === 500) return client.say(channel, `${username}, usuários inválidos :/`)
 if (banned === false) return client.say(channel, `${username}, ${user} não está com um ban em ${user2}`)
 
-const dateBan = ms(Date.now() - new Date(createdAt), {secondsDecimalDigits: 0})
+const dateBan = ms(Date.now() - new Date(createdAt), {secondsDecimalDigits: 0, unitCount: 3})
 .replace(/y/g, "a");
-const dateExpire = ms(new Date(expiresAt) - Date.now(), {secondsDicimalDigits: 0})
+const dateExpire = ms(new Date(expiresAt) - Date.now(), {secondsDicimalDigits: 0, unitCount: 3})
 .replace(/y/g, "a");
   
 
