@@ -9,7 +9,7 @@ const {activity} = res;
 const res2 = await translate(activity, { src_lang: 'auto', tar_lang:'pt'});
 
 const emojiList = ['🤔', '😀', '⭐️', '🕒', '🔮', '⌛️', '💡', '🔍', '💭', '✨'];
-const randomEmoji = emojiList[Math.round(Math.random() * emojiList.length)];
+const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
   
 client.say(channel, `${username}, ${randomEmoji} ${res2}`)
 
