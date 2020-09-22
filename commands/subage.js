@@ -33,7 +33,8 @@ user2 = sender;
   let endCumulative = data.cumulative.end
   let user = data.username
   
-  const subTotal = ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3});
+  const subTotal = ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})
+  .replace(/y/g, 'a');
   
   user = (user.toLowerCase() === username) ? "Você" : user; 
   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
