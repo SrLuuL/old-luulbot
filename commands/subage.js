@@ -46,8 +46,8 @@ user2 = sender;
   let dateCumulative = new Date(endCumulative);
   dateStreak = dateStreak - Date.now();
   dateCumulative = dateCumulative - Date.now();
-  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0});
-  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0});
+  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
+  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
   let typeF = type.charAt(0).toUpperCase() + type.slice(1)
   typeF = (typeF == "Paid") ? "Pago" : typeF
     
