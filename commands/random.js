@@ -5,7 +5,7 @@ const translateapi = require('@kaysilvn/google-translate-api')
 const translate = new translateapi().translate;
   
   
-async function getRandomHex() {
+function getRandomHex() {
   
   
 const hex = [];
@@ -17,7 +17,7 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 
   const colorName = cherangi(hex.join(''));
   const translatedColor = translate(colorName, { src_lang: 'auto', tar_lang: 'pt' })
-  .then(text => return `${hex.join('')} (${text})`);
+  .then(text => { return `${hex.join('')} (${text})` });
   
 }
   
