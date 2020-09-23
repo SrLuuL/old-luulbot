@@ -17,8 +17,9 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 
   const colorName = cherangi(hex.join(''));
   const translatedColor = translate(colorName.name, { src_lang: 'auto', tar_lang: 'pt' })
-  .then(text => { return `${hex.join('')} (${text})` });
+  .then(text => { `${hex.join('')} (${text})` });
   
+  return translatedColor
 }
   
 switch(args[0]) {
