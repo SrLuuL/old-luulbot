@@ -1,6 +1,13 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-function getRandomHex() {
+const cherangi = require('@distributed/cherangi');
+const translateapi = require('@kaysilvn/google-translate-api')
+const translate = new translateapi().translate;
+  
+  
+async function getRandomHex() {
+  
+  
 const hex = [];
 const characterList = 'ABCDEFabcdef1234567890'.split('')
 
@@ -8,7 +15,9 @@ for(let i = 0; i < 6; i++) {
 hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 }
 
-  return hex.join('')
+  const colorName = cherangi(hex.join(''));
+  const translatedColor = translate(colorName, { src_lang: 'auto', tar_lang: 'pt' })
+  .then(text => return `${hex.join('')} (${text})`)
   
 }
   
