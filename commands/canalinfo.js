@@ -3,6 +3,8 @@ module.exports.run = async (client, message, args, username, channel) => {
 const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
+try {
+
 let sender = (!args[0]) ? username : args[0]
 switch(args[0]) {
   case "--age":
@@ -116,7 +118,9 @@ return `${fullDate}(${dateAge} atrás)`
       break;
 }
 
-
+} catch (err) {
+  client.say(channel, `${username}, informação do usuário indisponível :/`)
+}
 
 
 
