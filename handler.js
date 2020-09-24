@@ -39,6 +39,7 @@ client.on('message', async (channel, user, message, self) => {
 	if (self) return;	
 	if (globalCD.has(username)) return;
 	if (!message.startsWith(prefix)) return;
+	if (message.slice(prefix.length).startsWith(' ')) return;
 
 
 
