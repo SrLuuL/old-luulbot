@@ -14,7 +14,7 @@ const {chatters: {vips, moderators, staff}} = res;
 const verifier = [(vips.length > 0 ? vips.length + ' vips' : 0), (moderators.length > 0 ? moderators.length + ' mods' : 0), (staff.length > 0 ? staff.length + ' staffs' : 0)];
 let fullFormat = verifier.filter(Boolean)
   
-if (!x.find(index => index)) {
+if (!fullFormat.find(index => index)) {
   fullFormat = ''
 } else {
   fullFormat = `(${fullFormat.join('/')})`
