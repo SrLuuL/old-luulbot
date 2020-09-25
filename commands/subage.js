@@ -28,10 +28,9 @@ user2 = sender;
  }
 
 
-  let canal = data.channel
-  let subCumulative = data.cumulative.months
-  let endCumulative = data.cumulative.end
-  let user = data.username
+  let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden} = data;
+  
+
   
   const subTotal = ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})
   .replace(/y/g, 'a');
@@ -39,7 +38,10 @@ user2 = sender;
   user = (user.toLowerCase() === username) ? "Você" : user; 
   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
   
-   if (data.subscribed === false) {
+  
+  if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
+  
+   if (!data.subscribed) {
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais(Acabou há ${subTotal} atrás)`)
 }  
   
