@@ -11,10 +11,15 @@ if (!chatter_count) return client.say(channel, `${username}, usuário não possu
 
 const {chatters: {vips, moderators, staff}} = res;
   
-const verifier = [(vips ? vips.length + ' vips' : 0), (moderators ? moderators.length + ' mods' : 0), (staff ? staff.length + ' staffs' : 0)];
-const fullFormat = verifier.filter(Boolean).join('/');
+const verifier = [(vips.length > 0 ? vips.length + ' vips' : 0), (moderators.length > 0 ? moderators.length + ' mods' : 0), (staff.length > 0 ? staff.length + ' staffs' : 0)];
+let fullFormat = verifier.filter(Boolean)
   
-
+if (!x.find(index => index)) {
+  fullFormat = ''
+} else {
+  fullFormat = `(${fullFormat.join('/')})`
+}
+  
   
 user = (user === username) ? "Você" : user;  
 
