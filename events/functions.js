@@ -1,7 +1,9 @@
 const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 
-client.getEmotes = async (channel) => {
+(async () => {
+
+await client.getEmotes = async (channel) => {
   
 const emotes = [];
 const urls = {
@@ -18,10 +20,9 @@ const urls = {
     emotes.push({ [index]: res })
     
   }
-
   
   return emotes;
-
-
   
 }
+
+});
