@@ -18,7 +18,7 @@ const urls = {
   }
  
   
-  return emotes
+  return Array.from(emotes)
   
 }
 
