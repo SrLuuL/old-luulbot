@@ -18,7 +18,7 @@ const urls = {
   }
  
   
-  return Array.from(emotes)
+  return Array.from(emotes)[0]
   
 }
 
