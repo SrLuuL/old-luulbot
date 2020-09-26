@@ -17,8 +17,9 @@ const urls = {
     emotes.push({ [index]: res })
   }
  
+  const fullEmotes = Array.from(emotes)
   
-  return Array.from(emotes)[0]
+  return fullEmotes[0];
   
 }
 
