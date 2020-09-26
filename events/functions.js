@@ -8,7 +8,7 @@ const urls = {
   ffzEmotes: `https://decapi.me/ffz/emotes/${channel}`,
   bttvEmotes: `https://decapi.me/bttv/emotes/${channel}`,
   twitchEmotes: `https://decapi.me/twitch/subscriber_emotes/${channel}`
-}
+};
   
 (async () => {
   
