@@ -14,7 +14,7 @@ const urls = {
   
   for(const index in urls) {
     const res = await (await fetch(urls[index])).text()
-    emotes.push([ [index]: res ])
+    emotes.push([index]: res)
   }
   
   return emotes.join('');
