@@ -17,7 +17,7 @@ const urls = {
     emotes.push({ [index]: res })
   }
   
-  return emotes.map((i, v) => i[v]);
+  return emotes.map(i => i);
   
 }
 
