@@ -14,12 +14,11 @@ const urls = {
   
   for(const index in urls) {
     const res = await (await fetch(urls[index])).text()
-    emotes.push({ [index]: res })
+    emotes.push(...{ [index]: res })
   }
+ 
   
-  const fullEmotes = (...emotes);
-  
-  return fullEmotes
+  return emotes
   
 }
 
