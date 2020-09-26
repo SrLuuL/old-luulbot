@@ -6,18 +6,18 @@ const fetch = require('node-fetch');
   
 const emotes = [];
    
-const urls = [{
+const urls = {
   ffz: `https://decapi.me/ffz/emotes/${channel}`,
   bttv: `https://decapi.me/bttv/emotes/${channel}`,
   twitch: `https://decapi.me/twitch/subscriber_emotes/${channel}`
-}];
+};
   
   for(const index in urls) {
-    const res = await (await fetch(urls[index].index)).text()
+    const res = await (await fetch(urls[index])).text()
     emotes.push({ [index]: res })
   }
   
-  return emotes;
+  return emotes.join(' ');
   
 }
 
