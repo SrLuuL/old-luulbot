@@ -18,7 +18,7 @@ const urls = {
     emotes.push({ index: res })
 }
   return emotes
-})
+})()
 
   
 }
