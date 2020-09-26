@@ -17,8 +17,9 @@ const urls = {
     const res = await (await fetch(urls[index])).text()
     emotes.push({ [index]: res })
 }
-  return emotes
-})()
+  
+  return emotes;
+});()
 
   
 }
