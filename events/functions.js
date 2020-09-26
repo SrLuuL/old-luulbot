@@ -13,7 +13,7 @@ const urls = [{
 }];
   
   for(const index in urls) {
-    const res = await (await fetch(urls[index].[index])).text()
+    const res = await (await fetch(urls[index].index)).text()
     emotes.push({ [index]: res })
   }
   
