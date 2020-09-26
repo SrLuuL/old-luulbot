@@ -1,12 +1,24 @@
 const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 
-client.getEmotes = async (channel) => {
-const emotes = [];  
-const resFFZ = await (await fetch(`https://decapi.me/ffz/emotes/${channel}`)).text();
-const resBTTV = await (await fetch(`https://decapi.me/bttv/emotes/${channel}`)).text();
-const resTwitch = await (await fetch(`https://decapi.me/twitch/subscriber_emotes/${channel}`)).text();  
+client.getEmotes =  (channel) => {
   
-emotes.push({ffz: resFFZ, bttv: resBTTV, twitch: resTwitch})  
-return emotes[0]
+const emotes = [];
+const urls = {
+  ffzEmotes: `https://decapi.me/ffz/emotes/${channel}`,
+  bttvEmotes: `https://decapi.me/bttv/emotes/${channel}`,
+  twitchEmotes: `https://decapi.me/twitch/subscriber_emotes/${channel}`
+}
+  
+(async () => {
+  
+  for(const index in urls) {
+    
+    const res = await (await fetch(urls[index])).text()
+    emotes.push({ index: res })
+}
+  return emotes
+})
+
+  
 }
