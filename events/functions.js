@@ -17,7 +17,9 @@ const urls = {
     emotes.push({ [index]: res })
   }
   
-  return (...emotes);
+  const fullEmotes = ...emotes;
+  
+  return fullEmotes
   
 }
 
