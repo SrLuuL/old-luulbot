@@ -7,9 +7,9 @@ const fetch = require('node-fetch');
 const emotes = [];
    
 const urls = {
-  ffzEmotes: `https://decapi.me/ffz/emotes/${channel}`,
-  bttvEmotes: `https://decapi.me/bttv/emotes/${channel}`,
-  twitchEmotes: `https://decapi.me/twitch/subscriber_emotes/${channel}`
+  ffz: `https://decapi.me/ffz/emotes/${channel}`,
+  bttv: `https://decapi.me/bttv/emotes/${channel}`,
+  twitch: `https://decapi.me/twitch/subscriber_emotes/${channel}`
 };
   
   for(const index in urls) {
