@@ -19,7 +19,7 @@ const urls = {
 }
   
   return emotes;
-});()
+})()
 
   
-}
+};
