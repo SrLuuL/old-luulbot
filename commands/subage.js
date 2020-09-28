@@ -32,7 +32,7 @@ user2 = sender;
   
 
   
-  let subTotal = `(${ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})})`
+  let subTotal = `(Acabou há ${ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})} atrás)`
   .replace(/y/g, 'a');
   
   user = (user.toLowerCase() === username) ? "Você" : user; 
@@ -44,7 +44,7 @@ user2 = sender;
   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
   
    if (!data.subscribed) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais(Acabou há ${subTotal} atrás)`)
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais${subTotal}`)
 }  
   
   const {type, tier} = data.meta;
