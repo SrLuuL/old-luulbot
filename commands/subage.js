@@ -32,11 +32,13 @@ user2 = sender;
   
 
   
-  const subTotal = ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})
+  let subTotal = `(${ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})})`
   .replace(/y/g, 'a');
   
   user = (user.toLowerCase() === username) ? "Você" : user; 
   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
+  
+  subTotal = (endCumulative) ? subTotal : ''
   
   
   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
@@ -69,7 +71,7 @@ user2 = sender;
 
 module.exports.config = {
   name: "subage",
-  aliases: ["sub"],
+  aliases: ["sub", "subcheck"],
   description: "Mostra as informações de inscrito de uma pessoa em um certo canal",
   usage: "subage"
 }
