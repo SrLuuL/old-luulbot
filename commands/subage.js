@@ -35,7 +35,7 @@ user2 = sender;
   let subTotal = `(Acabou há ${ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})} atrás)`
   .replace(/y/g, 'a');
   
-  user = (user.toLowerCase() === username) ? "Você" : user; 
+  user = (user.toLowerCase() === username) ? "você" : user; 
   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
   
   subTotal = (endCumulative) ? subTotal : ''
