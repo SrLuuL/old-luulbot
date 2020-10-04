@@ -33,19 +33,16 @@ const vips = Object.keys(res2.vips).length;
   
   
 const verifyBio = (bio) => {
-  if (bio.length > 70) return `${bio.slice(0,70)}...`;
-  
   return bio || '(sem bio)';
+  if (bio.length > 70) return `${bio.slice(0,70)}...`;  
 }
 
 const verifyColor = (chatColor) => {
-  
   return chatColor || '(sem cor)'
 }
   
 const verifyBan = (banned) => {
   if (banned) return `A conta ${displayName} está banida`
-  
   return `A conta ${displayName} não está banida`;
 }
 
