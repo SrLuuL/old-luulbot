@@ -40,15 +40,9 @@ user2 = sender;
   
   subTotal = (endCumulative) ? subTotal : ''
   
-  let subMonths
+  let subMonths = subCumulative ? subCumulative > 1 ? `${subCumulative} meses` : `${subCumulative} mês` : 'nenhum mês';
   
-  if (subCumulative > 1) {
-    subMonths = `${subCumulative} meses`
-  } else if (subCumulative === 1) {
-    subMonths = `${subCumulative} mês`
-  } else {
-    subMonths = 'nenhum mês'
-  }
+
   
   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
   
