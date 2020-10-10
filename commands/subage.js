@@ -60,7 +60,7 @@ user2 = sender;
   
 
   
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier} `) 
 
   
 
