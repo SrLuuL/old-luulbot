@@ -32,7 +32,8 @@ const mods = Object.keys(res2.mods).length;
 const vips = Object.keys(res2.vips).length;
   
   
-const verifyBio = (bio = '(sem bio)') => {
+const verifyBio = (bio) => {
+  if (!bio) return '(sem bio)'
   if (bio.length > 70) return `${bio.slice(0,70)}...`;
   return bio
 }
