@@ -33,8 +33,12 @@ const vips = Object.keys(res2.vips).length;
   
   
 const verifyBio = (bio) => {
-  return bio || '(sem bio)';
-  if (bio.length > 70) return `${bio.slice(0,70)}...`;  
+  if (bio) {
+    if (bio.length > 70) return `${bio.slice(0,70)}...`;
+    return bio
+  }
+  
+  return '(sem bio)'
 }
 
 const verifyColor = (chatColor) => {
