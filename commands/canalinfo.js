@@ -85,16 +85,16 @@ return `${fullDate}(${dateAge} atrás)`
      client.say(channel, `${username}, ${verifyBan(banned)}`);
       break;
     case "--cargos":
-     client.say(channel, `${username}, A conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
+     client.say(channel, `${username}, a conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
       break;
     case "--bot":
       client.say(channel, `${username}, ${robot(bot)}`);
       break;
     case "--age":
-      client.say(channel, `${username}, A conta ${displayName} foi criada em ${getDate()}`)
+      client.say(channel, `${username}, a conta ${displayName} foi criada em ${getDate()}`)
       break;
     case "--mv":
-      client.say(channel, `${username}, A conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
+      client.say(channel, `${username}, a conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
       break;
     case undefined:
       client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${verifyBio(bio)} | Cor: ${verifyColor(chatColor)}`)
