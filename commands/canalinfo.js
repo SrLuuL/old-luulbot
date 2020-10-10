@@ -5,7 +5,8 @@ const ms = require("pretty-ms")
 
 
 
-let sender = (!args[0]) ? username : args[0]
+let sender = args[0] ? args[0] : username
+
 switch(args[0]) {
   case "--age":
     sender = username
@@ -28,14 +29,12 @@ partner, affiliate, bot, banned, createdAt} = res;
 let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
 
-const mods = Object.keys(res2.mods).length;
-const vips = Object.keys(res2.vips).length;
+const mods = res2.mods.length
+const vips = res2.vips.length
   
   
 const verifyBio = (bio) => {
-  if (!bio) return '(sem bio)'
-  if (bio.length > 70) return `${bio.slice(0,70)}...`;
-  return bio
+  return bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)'
 }
 
 const verifyColor = (chatColor ) => {
@@ -43,26 +42,17 @@ const verifyColor = (chatColor ) => {
 }
   
 const verifyBan = (banned) => {
-  if (banned) return `A conta ${displayName} está banida`
-  return `A conta ${displayName} não está banida`;
+  return banned ? `a conta ${displayName} está banida` : `a conta ${displayName} não está banida`
 }
 
 const verifyRoles = (affiliate, partner, staff) => {
-  const aff = (!affiliate) ? false : 'afiliado';
-  const part = (!partner) ? false : 'parceria';
-  const staf = (!staff) ? false : 'staff';
+  const roles = [!!affiliate && 'afiliado', !!partner && 'parceria', !!staff && 'staff']
   
-  
-  const roles = [aff, part, staf];
-  if (!roles.find(i => i)) return `não possui cargos`
-  
-  return  `possui ${roles.filter(Boolean).join("/")}`;
+  return roles.find(i => i) ? roles.filter(Boolean).join(',') : 'nenhum cargo';
 }
 
 const robot = (bot) => {
-  if (bot) return `${displayName} é um bot verificado MrDestructoid`
-  
-  return `${displayName} não é um bot verificado`
+  return bot ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
 }
 
 const getDate = () => {
