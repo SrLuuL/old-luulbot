@@ -42,10 +42,18 @@ user2 = sender;
   
   let subMonths
   
+  if (subCumulative > 1) {
+    subMonths = 'meses'
+  } else if (subCumulative === 1) {
+    subMonths = 'mês'
+  } else {
+    subMonths = 'nenhum'
+  }
+  
   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
   
    if (!data.subscribed) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} no total ${subTotal}`)
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} ${subMonths} no total ${subTotal}`)
 }  
   
   let {type, tier} = data.meta;
@@ -60,7 +68,7 @@ user2 = sender;
   
 
   
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier} `) 
 
   
 
