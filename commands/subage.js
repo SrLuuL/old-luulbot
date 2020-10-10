@@ -48,7 +48,7 @@ user2 = sender;
     return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} no total ${subTotal}`)
 }  
   
-  const {type, tier} = data.meta;
+  let {type, tier} = data.meta;
   const {end} = data.streak;
   let dateStreak = new Date(end);
   let dateCumulative = new Date(endCumulative);
