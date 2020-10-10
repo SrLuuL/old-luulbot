@@ -40,11 +40,12 @@ user2 = sender;
   
   subTotal = (endCumulative) ? subTotal : ''
   
+  let subMonths
   
   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
   
    if (!data.subscribed) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} meses totais${subTotal}`)
+    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} totais ${subTotal}`)
 }  
   
   const {type, tier} = data.meta;
@@ -55,12 +56,11 @@ user2 = sender;
   dateCumulative = dateCumulative - Date.now();
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
-  let typeF = type.charAt(0).toUpperCase() + type.slice(1)
-  typeF = (typeF == "Paid") ? "Pago" : typeF
-    
+  type = (type == "paid") ? "Pago" : type.charAt(0).toUpperCase() + type.slice(1)
+  
 
   
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} meses | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
+   client.say(channel, `${username}, ${user} é inscrito em ${canal} há ${subCumulative} ${subMonths = (subCumulative > 1) ? 'meses' : 'mês'} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${typeF} | Tier: ${tier} `) 
 
   
 
