@@ -32,17 +32,13 @@ const mods = Object.keys(res2.mods).length;
 const vips = Object.keys(res2.vips).length;
   
   
-const verifyBio = (bio) => {
-  if (bio) {
-    if (bio.length > 70) return `${bio.slice(0,70)}...`;
-    return bio
-  }
-  
-  return '(sem bio)'
+const verifyBio = (bio = '(sem bio)') => {
+  if (bio.length > 70) return `${bio.slice(0,70)}...`;
+  return bio
 }
 
-const verifyColor = (chatColor) => {
-  return chatColor || '(sem cor)'
+const verifyColor = (chatColor = '(sem cor)') => {
+  return chatColor 
 }
   
 const verifyBan = (banned) => {
