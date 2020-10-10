@@ -38,8 +38,8 @@ const verifyBio = (bio) => {
   return bio
 }
 
-const verifyColor = (chatColor = '(sem cor)') => {
-  return chatColor 
+const verifyColor = (chatColor ) => {
+  return chatColor || '(sem cor)'
 }
   
 const verifyBan = (banned) => {
