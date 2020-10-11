@@ -34,14 +34,15 @@ const vips = res2.vips.length;
   
 
 bio =  bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)';
+  
 chatColor = chatColor || '(sem cor)';
+  
 banned = banned ? `a conta ${displayName} está banida` : `a conta ${displayName} não está banida`;
-const roles = [!!affiliate && 'afiliado', !!partner && 'parceria', !!staff && 'staff']  
-roles = roles.find(i => i) ? roles.filter(Boolean).join(',') : 'nenhum cargo';  
+  
+let roles = [!!affiliate && 'afiliado', !!partner && 'parceria', !!staff && 'staff']  
+roles = roles.find(i => i) ? roles.filter(Boolean).join(', ') : 'nenhum cargo'; 
+  
 bot = bot ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
-
-
-
 
 const getDate = () => {
 let date = new Date(createdAt);
