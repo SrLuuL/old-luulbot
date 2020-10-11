@@ -74,7 +74,7 @@ return `${fullDate}(${dateAge} atrás)`
      client.say(channel, `${username}, ${banned}`);
       break;
     case "--cargos":
-     client.say(channel, `${username}, a conta ${displayName} ${roles}`);
+     client.say(channel, `${username}, a conta ${displayName} possui ${roles}`);
       break;
     case "--bot":
       client.say(channel, `${username}, ${bot}`);
