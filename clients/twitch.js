@@ -7,6 +7,8 @@ const login = {
   connection: {
     secure: true,
     reconnect: true,
+    server: 'irc-ws.chat.twitch.tv',
+    port: 80
   },
   identity: {
     username: "LuuLBot",
