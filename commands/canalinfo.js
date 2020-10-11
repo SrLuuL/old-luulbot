@@ -29,30 +29,19 @@ partner, affiliate, bot, banned, createdAt} = res;
 let staff = res.roles.isStaff;   
 const userLang = res.settings.preferredLanguageTag;
 
-const mods = res2.mods.length
-const vips = res2.vips.length
+const mods = res2.mods.length;
+const vips = res2.vips.length;
   
 
-bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)'
+bio =  bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)';
+chatColor = chatColor || '(sem cor)';
+banned = banned ? `a conta ${displayName} está banida` : `a conta ${displayName} não está banida`;
+const roles = [!!affiliate && 'afiliado', !!partner && 'parceria', !!staff && 'staff']  
+roles = roles.find(i => i) ? roles.filter(Boolean).join(',') : 'nenhum cargo';  
+bot = bot ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
 
 
-const verifyColor = (chatColor ) => {
-  return chatColor || '(sem cor)'
-}
-  
-const verifyBan = (banned) => {
-  return banned ? `a conta ${displayName} está banida` : `a conta ${displayName} não está banida`
-}
 
-const verifyRoles = (affiliate, partner, staff) => {
-  const roles = [!!affiliate && 'afiliado', !!partner && 'parceria', !!staff && 'staff']
-  
-  return roles.find(i => i) ? roles.filter(Boolean).join(',') : 'nenhum cargo';
-}
-
-const robot = (bot) => {
-  return bot ? `${displayName} é um bot verificado MrDestructoid` : `${displayName} não é um bot verificado`
-}
 
 const getDate = () => {
 let date = new Date(createdAt);
@@ -81,13 +70,13 @@ return `${fullDate}(${dateAge} atrás)`
       client.say(channel, `${username}, A linguagem deste canal é: ${userLang}`);
       break;
     case "--ban":
-     client.say(channel, `${username}, ${verifyBan(banned)}`);
+     client.say(channel, `${username}, ${banned}`);
       break;
     case "--cargos":
-     client.say(channel, `${username}, a conta ${displayName} ${verifyRoles(affiliate, partner, staff)}`);
+     client.say(channel, `${username}, a conta ${displayName} ${roles}`);
       break;
     case "--bot":
-      client.say(channel, `${username}, ${robot(bot)}`);
+      client.say(channel, `${username}, ${bot}`);
       break;
     case "--age":
       client.say(channel, `${username}, a conta ${displayName} foi criada em ${getDate()}`)
@@ -96,7 +85,7 @@ return `${fullDate}(${dateAge} atrás)`
       client.say(channel, `${username}, a conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
       break;
     case undefined:
-      client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${verifyColor(chatColor)}`)
+      client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}`)
       break;
     default:
       client.say(channel, `${username}, opção inválida tente --lang / --ban / --cargos / --bot / --age / --mv`)
