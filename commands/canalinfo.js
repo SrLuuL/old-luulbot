@@ -32,10 +32,9 @@ const userLang = res.settings.preferredLanguageTag;
 const mods = res2.mods.length
 const vips = res2.vips.length
   
-  
-const verifyBio = (bio) => {
-  return bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)'
-}
+
+bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)'
+
 
 const verifyColor = (chatColor ) => {
   return chatColor || '(sem cor)'
@@ -97,7 +96,7 @@ return `${fullDate}(${dateAge} atrás)`
       client.say(channel, `${username}, a conta ${displayName} possui ${mods} mods e ${vips} vips em seu canal`)
       break;
     case undefined:
-      client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${verifyBio(bio)} | Cor: ${verifyColor(chatColor)}`)
+      client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${verifyColor(chatColor)}`)
       break;
     default:
       client.say(channel, `${username}, opção inválida tente --lang / --ban / --cargos / --bot / --age / --mv`)
