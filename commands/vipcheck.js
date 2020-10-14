@@ -29,7 +29,8 @@ user = (user === username) ? 'você' : user;
 
 if (vipCheck) {
 
-let vipTime = ms(Date.now() - new Date(vipCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3});
+let vipTime = ms(Date.now() - new Date(vipCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3})
+.replace(/y/, 'a');
   
 return client.say(channel , `${username}, ${user} é vip em ${sender} há ${vipTime} atrás`)
 
