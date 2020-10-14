@@ -29,7 +29,7 @@ if (modCheck) {
 
 let modTime = ms(Date.now() - new Date(modCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3});
 
-sender = (sender === username) ? 'seu canal' : user;
+sender = (sender === username) ? 'seu canal' : sender;
 user = (user === username) ? 'você' : user;
   
 return client.say(channel , `${username}, ${user} é mod em ${sender} há ${modTime} atrás`)
