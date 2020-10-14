@@ -24,6 +24,9 @@ if (res.mods.find(i => i.login === args[0].toLowerCase())) {
 
 let modTime = ms(Date.now() - new Date(res.mods.find(i => i.login === args[0].toLowerCase()).grantedAt), {secondsDecimalDigits: 0, unitCount: 3});
 
+let senderUser =  (args[0].toLowerCase() === username) ? 'você' : args[0];
+let senderChannel =  (args[1].toLowerCase() === username) ? 'seu canal' : args[1];  
+  
 return client.say(channel , `${username}, ${args[0]} é mod em ${args[1]} há ${modTime} atrás`)
 
 } else {
