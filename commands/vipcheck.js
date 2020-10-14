@@ -13,7 +13,7 @@ user = args[0].toLowerCase();
 sender = args[0].toLowerCase();
 user = username; 
 } else {
-sender = channe.replace('#', '');
+sender = channel.replace('#', '');
 user = username;
 }
 
@@ -27,7 +27,7 @@ sender = (sender === username) ? 'seu canal' : sender;
 user = (user === username) ? 'você' : user;  
 
 
-if (modCheck) {
+if (vipCheck) {
 
 let vipTime = ms(Date.now() - new Date(vipCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3});
   
