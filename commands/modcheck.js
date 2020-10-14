@@ -22,15 +22,16 @@ const res = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`)).
 
 const modCheck = res.mods.find(i => i.login === user)
   
-  
+sender = (sender === username) ? 'seu canal' : sender;
+user = (user === username) ? 'você' : user;  
+
+
 if (args[0] && args[1]) {
 
 if (modCheck) {
 
 let modTime = ms(Date.now() - new Date(modCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3});
 
-sender = (sender === username) ? 'seu canal' : sender;
-user = (user === username) ? 'você' : user;
   
 return client.say(channel , `${username}, ${user} é mod em ${sender} há ${modTime} atrás`)
 
