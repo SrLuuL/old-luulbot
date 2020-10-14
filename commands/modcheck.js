@@ -13,7 +13,7 @@ user = args[0].toLowerCase();
 sender = args[0].toLowerCase();
 user = username; 
 } else {
-sender = channe.replace('#', '');
+sender = channel.replace('#', '');
 user = username;
 }
 
