@@ -29,8 +29,11 @@ return client.say(channel , `${username}, ${args[0]} é mod em ${args[1]} há ${
 } else {
 
 return client.say(channel, `${username}, ${args[0]} não é mod em ${args[1]}`)
+  
 }
 
+  
+}  
 
 }
 
