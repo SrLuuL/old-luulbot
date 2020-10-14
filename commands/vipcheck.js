@@ -20,7 +20,7 @@ user = username;
 
 const res = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`)).json();
 
-const vipCheck = res.vips.find(i => i.login === user)
+const vipCheck = res.vips.find(i => i.login === user) ?? false;
 
 
 sender = (sender === username) ? 'seu canal' : sender;
