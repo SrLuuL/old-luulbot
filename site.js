@@ -80,8 +80,7 @@ res.send(`
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title> LuuLBot - Home </title>
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
-<meta name='google-site-verification' content='ALeeVc5SxR5A9ZOiL4A1i0BwP6fBpDlrJDD7P00GTE4'>
-
+<meta name="google-site-verification" content="5lSY1P8vB8Tx2Iwm82A1WjUkEmYBc6GkRfSKgXMzvoU" />
 </head>
 
 <body>
@@ -104,9 +103,6 @@ color: #ffffff
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link" href="/">Home</a>
-</li>
-<li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
 </ul>
@@ -118,6 +114,8 @@ color: #ffffff
 <br>
 
 <img src='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
+
+<br>
 
 <p> LuuLBot é um simples bot capaz de realizar diversas funções, progamado por SrLuuL com Node.js </p>
 
