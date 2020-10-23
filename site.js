@@ -32,7 +32,7 @@ res.send(`
 
 <body>
 
-<table class='table'>
+<table class='table table-dark'>
 <tr>
 <td>NOME</td>
 <td>ALIASES</td>
