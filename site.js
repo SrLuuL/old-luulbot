@@ -31,7 +31,8 @@ res.send(`
 
 </head>
 
-<body>
+<body class='justify-content-center'>
+
 
 <table class='table table-dark thead-light table-hover'>
 
