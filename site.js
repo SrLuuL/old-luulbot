@@ -41,6 +41,7 @@ background-color: #222b36;
 
 </style>
 
+<div class='row justify-content-center'>
 <table class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
 
 <thead>
@@ -57,7 +58,7 @@ background-color: #222b36;
 ${commandList.join(' \n')}
 </tbody>
 </table>
-
+</div>
 
 </body>
 
