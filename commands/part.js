@@ -20,5 +20,6 @@ module.exports.config = {
 name: "part",
 aliases: ["part"],
 description: "Desconecta o bot em um canal(uso privado)",
-usage: "join [user]"
+usage: "join [user]",
+level: 'Dono'  
 }
