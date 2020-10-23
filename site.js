@@ -8,14 +8,6 @@ const luulbot = require('./clients/discord.js').luulbot;
 app.get('/comandos', (req, res) => {
   
   let commandList = luulbot.commands.map(i => `
-<table>
-<tr>
-<td>NOME</td>
-<td>ALIASES</td>
-<td>DESCRIÇÃO</td>
-<td>USO</td>
-<td>PERMISSÃO</td>
-</tr>
 <tr>
 <td><a>${i.config.name}</a></td>
 <td><a>${i.config.aliases || '(nenhum)'}</a></td>
@@ -23,7 +15,6 @@ app.get('/comandos', (req, res) => {
 <td><a>${i.config.usage}</a></td>
 <td><a>${i.config.level}</a></td>
 </tr>
-</table>
 `);
   
   
@@ -41,7 +32,19 @@ res.send(`
 
 <body>
 
+<table>
+<tr>
+<td>NOME</td>
+<td>ALIASES</td>
+<td>DESCRIÇÃO</td>
+<td>USO</td>
+<td>PERMISSÃO</td>
+</tr>
+
 ${commandList}
+
+</table>
+
 
 </body>
 
