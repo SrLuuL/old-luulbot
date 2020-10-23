@@ -33,8 +33,15 @@ res.send(`
 
 <body class='justify-content-center'>
 
+<style>
 
-<table class='table table-dark thead-light table-striped table-responsive-sm flex-fill'>
+body {
+background-color: #383736;
+}
+
+</style>
+
+<table class='table table-dark thead-light table-striped'>
 
 <thead>
 <tr>
