@@ -44,6 +44,7 @@ module.exports.config = {
 name: "bancheck",
 aliases: ["banchk"],
 description: "Verifica se um usuário está banido em algum canal",
-usage: "bancheck [user] [user2]"
+usage: "bancheck [user] [user2]",
+level: 'Todos'
 }
 
