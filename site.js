@@ -7,3 +7,7 @@ const app = express()
 app.get('/', (req, res) => {
 res.send({worked: true})
 })
+
+app.listen(PORT, () => {
+console.log('Servidor rolando!')
+})
