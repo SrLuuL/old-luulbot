@@ -33,7 +33,7 @@ switch(args[0]) {
     client.say(channel, `${username}, ${randName}`)
     break;
   default:
-    client.say(channel, `${username}, categorias disponíveis: hex`)
+    client.say(channel, `${username}, categorias disponíveis: hex / name`)
 }
 
 })()  
