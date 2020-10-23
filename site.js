@@ -100,7 +100,7 @@ color: #ffffff
 <nav class='navbar navbar-expand navbar-dark bg-dark'>
 <a class='navbar-brand'>LuuLBot</a>
 <div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav justify-content-center">
+<ul class="navbar-nav row justify-content-center">
 <li class="nav-item">
 <a class="nav-link" href="/">Home</a>
 </li>
@@ -111,7 +111,7 @@ color: #ffffff
 </div>
 </nav>
 
-<div class='justify-content-center mainText' >
+<div class='row justify-content-center mainText' >
 
 <img src='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 
