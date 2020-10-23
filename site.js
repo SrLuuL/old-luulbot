@@ -33,7 +33,9 @@ res.send(`
 
 <body>
 
-<table class='table table-dark table-responsive thead-light table-hover'>
+<table class='table table-dark thead-light table-hover'>
+
+<thead>
 <tr>
 <td>NOME</td>
 <td>ALIASES</td>
@@ -41,9 +43,11 @@ res.send(`
 <td>USO</td>
 <td>PERMISSÃO</td>
 </tr>
+</thead>
 
+<tbody>
 ${commandList.join(' \n')}
-
+</tbody>
 </table>
 
 
