@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 3000;
 const express = require('express');
 const app = express();
 const luulbot = require('./clients/discord.js').luulbot;
-
+const client = require('./clients/twitch.js').client;
 
 app.get('/comandos', (req, res) => {
   
@@ -93,10 +93,13 @@ background-color: #222b36;
 </style>
 
 
-<nav class='navbar navbar-expand navbar-dark bg-dark justify-content-center'>
+<nav class='navbar navbar-expand navbar-dark bg-dark'>
 <a class='navbar-brand'>LuuLBot</a>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
@@ -104,8 +107,17 @@ background-color: #222b36;
 </div>
 </nav>
 
+<div class='justify-content-center'>
 
+<img src='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 
+<p> LuuLBot é um simples bot capaz de realizar diversas funções, progamado por SrLuuL com Node.js </p>
+
+<p> Conectado neste momento em ${client.getChannels().length}! </p>
+
+<h4> Como faço para colocar/remover o bot no meu canal? </h4>
+
+<h5> Fale com @SrLuuL ou mande uma sugestão solicitando o bot </h5>
 
 </body>
 
