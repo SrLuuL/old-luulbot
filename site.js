@@ -42,6 +42,22 @@ background-color: #222b36;
 </style>
 
 <div class='row justify-content-center'>
+
+
+<nav class='navbar navbar-expand navbar-dark bg-dark row justify-content-center'>
+<a class='navbar-brand'>LuuLBot</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</ul>
+</div>
+</nav>
+
 <table class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
 
 <thead>
@@ -111,7 +127,7 @@ color: #ffffff
 </div>
 </nav>
 
-<div class='text-center mainText' >
+<div class='text-center mainText mx-auto' >
 
 <img src='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 
