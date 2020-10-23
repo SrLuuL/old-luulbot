@@ -18,5 +18,6 @@ db.query(`${args.join(' ')}`, (err,result) => {
   name: "db",
   aliases: ["database"],
   description: "Database do bot(uso privado)",
-  usage: "db"
+  usage: "db",
+  level: 'Dono'   
   }
