@@ -41,7 +41,7 @@ background-color: #383736;
 
 </style>
 
-<table class='table table-dark thead-light table-striped'>
+<table class='table table-dark thead-light table-striped' style='width: auto;'>
 
 <thead>
 <tr>
