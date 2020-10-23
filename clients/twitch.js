@@ -12,7 +12,7 @@ const login = {
   },
   identity: {
     username: "LuuLBot",
-    password: process.env.BOTAUTH,
+    password: process.env.BOTOAUTH,
   },
   channels: channels
 }
