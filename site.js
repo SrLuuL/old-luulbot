@@ -31,17 +31,17 @@ res.send(`
 
 </head>
 
-<body class='justify-content-center'>
+<body>
 
 <style>
 
 body {
-background-color: #383736;
+background-color: #222b36;
 }
 
 </style>
 
-<table class='table table-dark thead-light table-striped' style='width: auto;'>
+<table class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
 
 <thead>
 <tr>
