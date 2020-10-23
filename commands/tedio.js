@@ -19,5 +19,6 @@ module.exports.config = {
 name: "tedio",
 aliases: ["bored"],
 description: "Manda uma atividade aleatória para te livrar do tédio",
-usage: "tedio"
+usage: "tedio",
+level: 'Todos'  
 }
