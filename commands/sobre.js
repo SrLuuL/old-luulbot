@@ -7,7 +7,7 @@ client.say(channel, `${username}, Bot feito com Node.js, sendo hosteado atualmen
 module.exports.config = {
 name: 'sobre',
 aliases: ['bot','about'],
-usage: 'sobre'
+usage: 'sobre',
 description: 'Conta detalhes sobre o bot',
 level: 'Todos'
 }
