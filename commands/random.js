@@ -4,6 +4,7 @@ const cherangi = require('@distributed/cherangi');
 const translateapi = require('@kaysilvn/google-translate-api')
 const translate = new translateapi().translate;
   
+const randName = await (await fetch('http://gerador-nomes.herokuapp.com/nomes/1')).json();  
   
 async function getRandomHex() {
   
@@ -26,6 +27,9 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 switch(args[0]) {
   case 'hex':
     client.say(channel, `${username}, #${await getRandomHex()}`)
+    break;
+  case 'name':
+    client.say(channel, `${username}, ${randName}`)
     break;
   default:
     client.say(channel, `${username}, categorias disponíveis: hex`)
