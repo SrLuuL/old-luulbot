@@ -1,8 +1,9 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
 const cherangi = require('@distributed/cherangi');
-const translateapi = require('@kaysilvn/google-translate-api')
+const translateapi = require('@kaysilvn/google-translate-api');
 const translate = new translateapi().translate;
+const fetch = require('node-fetch');
   
 const randName = await (await fetch('http://gerador-nomes.herokuapp.com/nomes/1')).json();  
   
