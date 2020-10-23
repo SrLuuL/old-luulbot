@@ -32,7 +32,7 @@ res.send(`
 
 <body>
 
-<table>
+<table class='table'>
 <tr>
 <td>NOME</td>
 <td>ALIASES</td>
@@ -41,7 +41,7 @@ res.send(`
 <td>PERMISSÃO</td>
 </tr>
 
-${commandList}
+${commandList.join(' \n')}
 
 </table>
 
