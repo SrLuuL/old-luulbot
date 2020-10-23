@@ -109,7 +109,7 @@ color: #ffffff
 </div>
 </nav>
 
-<div class='text-center mainText mx-auto' style='padding: 0px;' >
+<div class='text-center mainText mx-auto col-lg-1' >
 
 <br>
 
