@@ -115,8 +115,6 @@ color: #ffffff
 
 <img src='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 
-<br>
-
 <p> LuuLBot é um simples bot capaz de realizar diversas funções, progamado por SrLuuL com Node.js </p>
 
 <p> Conectado neste momento em ${client.getChannels().length} canais! </p>
