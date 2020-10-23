@@ -28,6 +28,7 @@ module.exports.config = {
 	name: "ping",
 	aliases: ["pong", "uptime"],
 	description: "Verificar se o bot está acordado",
-	usage: "ping"
+	usage: "ping",
+	level: 'Todos'
 }
 	
