@@ -5,7 +5,14 @@ const app = express()
 
 
 app.get('/', (req, res) => {
-res.send({worked: true})
+res.send(`<html lang='pt'>
+
+
+
+
+
+</html>
+`)
 })
 
 app.listen(PORT, () => {
