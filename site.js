@@ -9,7 +9,7 @@ app.get('/comandos', (req, res) => {
   
   let commandList = luulbot.commands.map(i => `
 <tr>
-<td><a>${i.config.name}</a></td>
+<td><a>=${i.config.name}</a></td>
 <td><a>${i.config.aliases || '(nenhum)'}</a></td>
 <td><a>${i.config.description}</a></td>
 <td><a>${i.config.usage}</a></td>
