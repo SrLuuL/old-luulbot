@@ -11,15 +11,25 @@ app.get('/comandos', (req, res) => {
 <tr>
 <td><a>${i.config.name}</a></td>
 </tr>
-`
+`);
   
   
 res.send(`
 <html lang='pt'>
 
+<head>
 
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> LuuLBot - Comandos </title>
 
+</head>
 
+<body>
+
+${commandList}
+
+</body>
 
 </html>
 `)
