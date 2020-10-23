@@ -46,5 +46,6 @@ module.exports.config = {
 name: 'random',
 aliases: ['rand'],
 description: 'Gera um termo aleatório de determinada categoria',
-usage: 'random [termo]'
+usage: 'random [termo]',
+level: 'Todos'  
 }
