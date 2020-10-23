@@ -20,7 +20,7 @@ module.exports.run =  async (client, message, args, username, channel) => {
 
 	
 	
-client.say(channel, `Ping: ${ping} ms | Memória: ${realtotal}MB/500MB | Uptime: ${uptime} | Comandos usados: ${commandCount} | Conectado em ${client.getChannels().length} canais `)
+client.say(channel, `Ping: ${ping} ms | Memória: ${realtotal}MB/500MB | Uptime: ${uptime} | Comandos usados: ${commandCount} `)
 	
 }
 
