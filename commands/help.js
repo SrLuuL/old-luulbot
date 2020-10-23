@@ -20,5 +20,6 @@ module.exports.config = {
 name: "help",
 aliases: ["ajuda", "comandos"],
 description: "Mostra as informações sobre os comandos",
-usage: "help [comando]"
+usage: "help [comando]",
+level: 'Todos'
 }
