@@ -47,5 +47,6 @@ module.exports.config = {
 name: 'modcheck',
 aliases: ['modchk'],
 description: 'Checa se um usuário é mod em um determinado canal',
-usage: 'modcheck [user1] [user2]'
+usage: 'modcheck [user1] [user2]',
+level: 'Todos'  
 }
