@@ -32,7 +32,7 @@ res.send(`
 
 <body>
 
-<table class='table table-dark table-responsive'>
+<table class='table table-dark table-responsive thead-light table-hover'>
 <tr>
 <td>NOME</td>
 <td>ALIASES</td>
