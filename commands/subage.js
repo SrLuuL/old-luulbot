@@ -75,5 +75,6 @@ module.exports.config = {
   name: "subage",
   aliases: ["sub", "subcheck"],
   description: "Mostra as informações de inscrito de uma pessoa em um certo canal",
-  usage: "subage"
+  usage: "subage",
+  level: 'Todos'
 }
