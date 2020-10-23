@@ -6,7 +6,7 @@ const connectionURI = "postgres://waanqlbezgjabs:f4e8c028930a2b89dd87a73d2090c0c
 const db = new Client({connectionString: connectionURI})
 
 db.connect()
-
+.catch(err => {console.log(err)};
 
 db.on("error", (err) => {console.log(err)});
 
