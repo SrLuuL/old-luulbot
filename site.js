@@ -92,8 +92,8 @@ background-color: #222b36;
 
 </style>
 
-<div class='justify-content-center'>
-<nav class='navbar navbar-expand navbar-dark bg-dark'>
+
+<nav class='navbar navbar-expand navbar-dark bg-dark justify-content-center'>
 <a class='navbar-brand'>LuuLBot</a>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
@@ -103,7 +103,7 @@ background-color: #222b36;
 </ul>
 </div>
 </nav>
-</div>
+
 
 
 
