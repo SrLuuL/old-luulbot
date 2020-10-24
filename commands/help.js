@@ -6,7 +6,7 @@ if (!args[0]) {
 
 
   
-client.say(channel, `${username}, comandos em: http://luulbot.herokuapp.com/comandos`)
+client.say(channel, `${username}, comandos em: https://luulbot.herokuapp.com/comandos`)
 } else {
 let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
 if (!command) return client.say(channel, `${username}, comando inexistente  :/ `)
