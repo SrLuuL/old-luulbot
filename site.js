@@ -109,7 +109,7 @@ color: #ffffff
 </div>
 </nav>
 
-<div class='text-center mainText mx-auto py-5' >
+<div class='text-center mainText mx-auto col-xs-1' >
 
 <br>
 
