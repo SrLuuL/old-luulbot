@@ -19,7 +19,9 @@ app.get('/comandos', (req, res) => {
   
   
 res.send(`
-<html lang='pt'>
+<!DOCTYPE html>
+
+<html lang='pt' class='no-js'>
 
 <head>
 
@@ -86,7 +88,9 @@ ${commandList.join(' \n')}
 app.get('/', (req, res) => {
 res.send(`
 
-<html lang='pt'>
+<!DOCTYPE html>
+
+<html lang='pt' class='no-js'>
 
 <head>
 
