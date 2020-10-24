@@ -16,8 +16,8 @@ db.query(`${args.join(' ')}`, (err,result) => {
   
   module.exports.config = {
   name: "db",
-  aliases: ["database"],
-  description: "Database do bot(uso privado)",
+  aliases: [],
+  description: "Database do bot",
   usage: "db",
   level: 'Dono'   
   }
