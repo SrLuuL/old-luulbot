@@ -41,6 +41,18 @@ background-color: #222b36;
 
 </style>
 
+<nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
+<a class='navbar-brand'>LuuLBot</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</ul>
+</div>
+</nav>
+
+
 <div class='row justify-content-center'>
 
 
@@ -109,7 +121,7 @@ color: #ffffff
 </div>
 </nav>
 
-<div class='text-center mainText mx-auto col-xs-1' >
+<div class='text-center mainText mx-auto col-xs-1 py-5' >
 
 <br>
 
