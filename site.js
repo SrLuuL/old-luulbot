@@ -46,6 +46,9 @@ background-color: #222b36;
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
 <li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
 </ul>
@@ -114,6 +117,9 @@ color: #ffffff
 <a class='navbar-brand'>LuuLBot</a>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
