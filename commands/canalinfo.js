@@ -103,6 +103,6 @@ module.exports.config = {
   name: "canalinfo",
   aliases: ["cli"],
   description: "Mostra informações sobre um canal de um usuário",
-  usage: "canalinfo",
+  usage: "canalinfo [user]",
   level: 'Todos'
 }
