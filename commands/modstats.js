@@ -34,7 +34,7 @@ module.exports.config = {
 name: "modstats",
 aliases: ["modinfo","faxineiro"],
 description: "Mostra informações de mod de um usuário",
-usage: "modstats",
+usage: "modstats [user]",
 level: 'Todos'  
 }
 
