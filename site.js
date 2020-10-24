@@ -98,7 +98,7 @@ color: #ffffff
 </style>
 
 
-<nav class='navbar navbar-expand navbar-dark bg-dark row justify-content-center'>
+<nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
 <a class='navbar-brand'>LuuLBot</a>
 <div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav">
