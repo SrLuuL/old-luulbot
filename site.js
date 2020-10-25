@@ -31,6 +31,7 @@ res.send(`
 <link rel'stylesheet' href='//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css'>
 <title> LuuLBot - Comandos </title>
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
+<script src='//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js'></script>
 
 </head>
 
@@ -88,7 +89,6 @@ $(document).ready(function () {
 
 </script>
 
-<script src='//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js'></script>
 
 </body>
 
