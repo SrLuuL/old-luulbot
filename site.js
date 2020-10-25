@@ -45,6 +45,10 @@ body {
 background-color: #222b36;
 }
 
+#commandsTable {
+color: white;
+}
+
 </style>
 
 <nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
