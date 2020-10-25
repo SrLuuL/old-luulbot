@@ -65,7 +65,7 @@ background-color: #222b36;
 <div class='row justify-content-center'>
 
 
-<table id='commandsTable' class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
+<table id='commandsTable' class='table table-dark table-striped table-bordered dataTable'>
 
 <thead>
 <tr>
