@@ -61,7 +61,7 @@ background-color: #222b36;
 <div class='row justify-content-center'>
 
 
-<table class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
+<table id='commandsTable' class='table table-dark thead-light table-striped justify-content-center' style='width: auto;'>
 
 <thead>
 <tr>
@@ -78,6 +78,15 @@ ${commandList.join(' \n')}
 </tbody>
 </table>
 </div>
+
+<script>
+
+$(document).ready(function () {
+  $('#commandsTable').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+</script>
 
 </body>
 
@@ -141,9 +150,25 @@ color: #ffffff
 
 <p> Conectado neste momento em ${client.getChannels().length} canais! </p>
 
-<h4> Como faço para colocar/remover o bot no meu canal? </h4>
+<ul>
 
-<h5> Fale com @SrLuuL ou mande uma sugestão solicitando o bot </h5>
+<li>
+
+<p><strong> Como faço para colocar o bot no meu canal? </strong></p>
+
+<p> Basta falar com @SrLuuL, ou mande uma sugestão solicitando o bot </p>
+
+</li>
+
+<li>
+
+<p><strong> Como faço para remover o bot do meu canal? </strong></p>
+
+<p> Basta falar com @SrLuuL, mande uma sugestão ou simplesmente bana ele do seu canal </p>
+
+</li>
+
+</ul>
 
 </div>
 
