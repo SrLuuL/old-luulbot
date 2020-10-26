@@ -129,7 +129,6 @@ res.send(`
 <title> LuuLBot - Home </title>
 <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
-<meta name="google-site-verification" content="5lSY1P8vB8Tx2Iwm82A1WjUkEmYBc6GkRfSKgXMzvoU" />
 </head>
 
 <body>
