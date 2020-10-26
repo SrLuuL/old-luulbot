@@ -45,7 +45,7 @@ body {
 background-color: #222b36;
 }
 
-table, .dataTables_length, .dataTables_info {
+table, .dataTables_length, .dataTables_info, dataTables_filter {
 color: white !important;
 }
 
@@ -92,13 +92,8 @@ ${commandList.join(' \n')}
 $(document).ready(function () {
   $('#commandsTable').DataTable({
         "language": {
-            "lengthMenu": "Mostrando _MENU_ itens por página",
-            "zeroRecords": "Não foi encontrado nenhum item",
-            "info": "Mostrando página _PAGE_ de _PAGES_",
-            "infoEmpty": "Não foi encontrado nenhum item",
-            "infoFiltered": "(filtrado de _MAX_ itens totais)"
-        },
-       "pagingType": "simple"
+"url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese-Brasil.json"
+}
     });
 });
 
