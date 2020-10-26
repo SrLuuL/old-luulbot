@@ -45,7 +45,7 @@ body {
 background-color: #222b36;
 }
 
-table, .dataTables_length, .dataTables_info, dataTables_filter {
+table, .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
 color: white !important;
 }
 
