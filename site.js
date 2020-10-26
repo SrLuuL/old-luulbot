@@ -45,9 +45,10 @@ body {
 background-color: #222b36;
 }
 
-table.dataTable {
-        background-color: white;
-        }
+.dataTables_wrapper, .dataTables_paginate, .paginate_button.current, .dataTables_wrapper, .dataTables_paginate, .paginate_button.current:hover {
+background-color: none !important;
+color: white !important;
+}
 
 </style>
 
