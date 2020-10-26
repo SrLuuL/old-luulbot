@@ -50,10 +50,17 @@ background-color: none !important;
 color: white !important;
 }
 
-.dataTables_wrapper, .dataTables_paginate, .paginate_button.current:hover, .dataTables_wrapper, .dataTables_paginate, .paginate_button:hover {
+.paginate_button.current:hover {
+
 background: none !important;
-background-color: #000 !important;
-color: #fff !important;
+background-color: #222b36;
+color:#fff !important
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+
+background: none !important;
+color: white !important;
 }
 
 </style>
@@ -136,11 +143,10 @@ res.send(`
 
 body {
 background-color: #222b36;
-}
-
-.mainText {
 color: #ffffff
 }
+
+
 
 </style>
 
