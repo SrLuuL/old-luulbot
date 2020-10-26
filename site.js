@@ -45,7 +45,7 @@ body {
 background-color: #222b36;
 }
 
-table {
+table, .dataTables_length, .dataTables_info {
 color: white !important;
 }
 
@@ -97,7 +97,8 @@ $(document).ready(function () {
             "info": "Mostrando página _PAGE_ de _PAGES_",
             "infoEmpty": "Não foi encontrado nenhum item",
             "infoFiltered": "(filtrado de _MAX_ itens totais)"
-        }
+        },
+       "pagingType": "simple"
     });
 });
 
