@@ -208,7 +208,7 @@ color: #ffffff
 
 app.get('/suggests', async (req, res) => {
   
- const suggestsList = await db.query('SELECT * FROM luulbot_suggests ORDER BY `suggestid`+0 DESC');
+ const suggestsList = await db.query('SELECT userchannel, usersuggest, status, suggestdate, suggestid FROM luulbot_suggests ORDER BY suggestid DESC');
   
  const suggestTable = suggestsList.rows.map(i => `
 
