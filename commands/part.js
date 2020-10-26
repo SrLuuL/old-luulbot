@@ -19,7 +19,7 @@ client.say(channel, `${username}, saí do canal ${args[0]} com sucesso!`);
 module.exports.config = {
 name: "part",
 aliases: [],
-description: "Desconecta o bot em um canal(uso privado)",
+description: "Desconecta o bot em um canal",
 usage: "join [user]",
 level: 'Dono'  
 }
