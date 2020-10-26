@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
+const db = require('./clients/database.js').db;
 
 app.get('/comandos', (req, res) => {
   
@@ -121,6 +122,7 @@ res.send(`
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title> LuuLBot - Home </title>
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 <meta name="google-site-verification" content="5lSY1P8vB8Tx2Iwm82A1WjUkEmYBc6GkRfSKgXMzvoU" />
 </head>
