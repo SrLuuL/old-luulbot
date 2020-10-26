@@ -50,6 +50,12 @@ background-color: none !important;
 color: white !important;
 }
 
+.dataTables_wrapper, .dataTables_paginate, .paginate_button.current:hover, .dataTables_wrapper, .dataTables_paginate, .paginate_button:hover {
+background: none !important;
+background-color: #000 !important;
+color: #fff !important;
+}
+
 </style>
 
 <nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
@@ -163,6 +169,8 @@ color: #ffffff
 
 <p> Conectado neste momento em ${client.getChannels().length} canais! </p>
 
+</div>
+
 <ul>
 
 <li>
@@ -183,7 +191,7 @@ color: #ffffff
 
 </ul>
 
-</div>
+
 
 </body>
 
