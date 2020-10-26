@@ -34,7 +34,7 @@ res.send(`
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -90,7 +90,15 @@ ${commandList.join(' \n')}
 <script>
 
 $(document).ready(function () {
-  $('#commandsTable').DataTable();
+  $('#commandsTable').DataTable({
+        "language": {
+            "lengthMenu": "Mostrando _MENU_ itens por página",
+            "zeroRecords": "Não foi encontrado nenhum item",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "Não foi encontrado nenhum item",
+            "infoFiltered": "(filtrado de _MAX_ itens totais)"
+        }
+    });
 });
 
 </script>
