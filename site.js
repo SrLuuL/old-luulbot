@@ -202,7 +202,7 @@ app.get('/suggests', async (req, res) => {
   
  const suggestsList = await db.query('SELECT * FROM luulbot_suggests ORDER BY suggestid DESC');
   
- const suggestTable = suggestsList.map(i => `
+ const suggestTable = suggestsList.rows.map(i => `
 
 <tr>
 <td><a>${i.userchannel}</a></td>
