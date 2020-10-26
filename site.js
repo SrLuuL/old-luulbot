@@ -65,6 +65,10 @@ background-color: #222b36;
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
+</li>
 </ul>
 </div>
 </nav>
@@ -151,6 +155,10 @@ color: #ffffff
 </li>
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
 </li>
 </ul>
 </div>
@@ -259,6 +267,10 @@ background-color: #222b36;
 </li>
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
 </li>
 </ul>
 </div>
