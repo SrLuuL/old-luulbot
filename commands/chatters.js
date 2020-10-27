@@ -25,7 +25,7 @@ if (!fullFormat.find(index => index)) {
 }
   
   
-user = (user === username) ? "Você" : user;  
+user = (user === username) ? "você" : user;  
 
   
 client.say(channel, `${username}, ${user} possui ${chatter_count} chatters ${fullFormat} presentes neste momento`)
