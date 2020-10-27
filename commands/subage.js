@@ -31,15 +31,17 @@ user2 = sender;
   let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden} = data;
   
   
-   if (hidden) return client.say(channel, `${username}, usuário escondeu suas informações de inscrito`)
+   user = (user.toLowerCase() === username) ? "você" : user; 
+   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
+  
+   if (hidden) return client.say(channel, `${username}, ${user} escondeu suas informações de inscrito`)
   
 
   
   let subTotal = `(Acabou há ${ms(Date.now() - new Date(endCumulative), {secondsDecimalDigits: 0, unitCount: 3})} atrás)`
   .replace(/y/g, 'a');
   
-  user = (user.toLowerCase() === username) ? "você" : user; 
-  canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
+ 
   
   subTotal = (endCumulative) ? subTotal : ''
   
