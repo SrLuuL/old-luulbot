@@ -16,8 +16,7 @@ const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).j
     return client.say(channel, `${username}, não encontrei esse usuário :/`)
   }
  
-let {displayName, login, id, bio, chatColor,
-partner, affiliate, bot, banned, createdAt} = res;
+let {displayName, login, id, bio, chatColor} = res;
 
 
   
