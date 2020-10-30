@@ -6,6 +6,7 @@ const channels = require("./credentials/login.js").channelOptions;
 
 let prefix = "=";
 let globalCD = new Set();
+let globalDelay = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 
@@ -38,6 +39,7 @@ client.on('message', async (channel, user, message, self) => {
 
 	if (self) return;	
 	if (globalCD.has(username)) return;
+	if (globalDelay.has(channel)) return;
 	if (!message.startsWith(prefix)) return;
 	if (message.slice(prefix.length).startsWith(' ')) return;
 
@@ -49,6 +51,7 @@ if (cmdfile) {
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
 	globalCD.add(username);
+	globalDelay.add(channel);
 }
 
 
@@ -57,6 +60,10 @@ setTimeout(() => {
 	globalCD.delete(username)
 }, 5000);
 
+setTimeout(() => {
+	globalDelay.delete(channel)
+}, 250);	
+	
 	
 	
 });
