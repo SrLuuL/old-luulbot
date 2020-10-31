@@ -208,14 +208,14 @@ color: #ffffff
 app.get('/suggests', async (req, res) => {
   
  const suggestsList = await db.query('SELECT userchannel, usersuggest, status, suggestdate, suggestid FROM luulbot_suggests ORDER BY suggestid DESC');
-  
+ const currentTime  = new Date(new Date().toLocaleString('pt-br', {timeZone: 'America/Bahia'}));
  const suggestTable = suggestsList.rows.map(i => `
 
 <tr>
 <td><a>${i.userchannel}</a></td>
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
-<td><a>${ms(new Date().toLocaleString('pt-br', {timeZone: 'America/Bahia'}) - new Date(i.suggestdate), {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
+<td><a>${ms(currentTime - new Date(i.suggestdate), {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
 <td><a>${i.suggestid}</a></td>
 </tr>
 
