@@ -215,7 +215,7 @@ app.get('/suggests', async (req, res) => {
 <td><a>${i.userchannel}</a></td>
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
-<td><a>${ms(Date.now() - new Date(i.suggestdate), {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
+<td><a>${ms(Date.now().toLocaleString('pt-br', {timeZone: 'America/Bahia'}) - new Date(i.suggestdate), {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
 <td><a>${i.suggestid}</a></td>
 </tr>
 
