@@ -181,7 +181,7 @@ color: #ffffff
 
 <p><strong> Como faço para colocar o bot no meu canal? </strong></p>
 
-<p> Basta falar com @SrLuuL, ou mande uma sugestão solicitando o bot </p>
+<p> Basta falar com @SrLuuL, ou mande uma sugestão solicitando o bot(precisa ser no mínimo vip/mod no canal e estar sem followmode)</p>
 
 </li>
 
@@ -189,7 +189,7 @@ color: #ffffff
 
 <p><strong> Como faço para remover o bot do meu canal? </strong></p>
 
-<p> Basta falar com @SrLuuL, mande uma sugestão ou simplesmente bana ele do seu canal </p>
+<p> Fale com @SrLuuL ou simplesmente bana ele do seu canal </p>
 
 </li>
 
