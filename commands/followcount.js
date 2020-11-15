@@ -8,10 +8,10 @@ let user = args[0] ? args[0] : username;
 const res = await (await fetch(`https://decapi.me/twitch/followcount/${user}`)).text()
 
 if (res === `No user with the name "${user}" found.`) {
-    client.say(channel, `${username}, usuário não existe :/`)
+   return client.say(channel, `${username}, usuário não existe :/`)
   }
   
-let followers = (res !== 0) ? (parseInt(res, 0) > 1) ? `${res} seguidores` : `{res} seguidor` : 'nenhum seguidor';
+let followers = (res !== 0) ? (parseInt(res, 0) > 1) ? `${res} seguidores` : `${res} seguidor` : 'nenhum seguidor';
     
 user = (user === username) ? 'você' : user;
     
