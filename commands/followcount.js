@@ -9,7 +9,7 @@ let user = args[0] ? args[0] : username;
 
 const res = await (await fetch(`https://decapi.me/twitch/followcount/${user}`)).text()
 
-if (res === `No user with the name "${user}" found.`) {
+if (!parseInt(res, 0)) {
    return client.say(channel, `${username}, usuário não existe :/`)
   }
   
