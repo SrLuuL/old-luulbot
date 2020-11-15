@@ -12,7 +12,9 @@ if (res === `No user with the name "${user}" found.`) {
   }
   
 let followers = (res !== 0) ? (parseInt(res, 0) > 1) ? `${res} seguidores` : `{res} seguidor` : 'nenhum seguidor';
-
+    
+user = (user === username) ? 'você' : user;
+    
 client.say(channel, `${username}, ${user} possui ${followers}`)
 
 }
