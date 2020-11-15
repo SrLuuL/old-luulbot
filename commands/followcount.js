@@ -2,6 +2,8 @@ module.exports.run = async (client, message, args, username, channel) => {
 
 const fetch = require('node-fetch');
 
+if (username !== 'srluul') return;   
+   
 let user = args[0] ? args[0] : username;
 
 
