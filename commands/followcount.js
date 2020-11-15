@@ -11,7 +11,7 @@ if (res === `No user with the name "${user}" found.`) {
    return client.say(channel, `${username}, usuário não existe :/`)
   }
   
-let followers = (res !== 0) ? (parseInt(res, 0) > 1) ? `${res} seguidores` : `${res} seguidor` : 'nenhum seguidor';
+let followers = (parseInt(res, 0) === 0) ? 'nenhum seguidor' : (parseInt(res, 0) > 1) ? `${res} seguidores` : `${res} seguidor`;
     
 user = (user === username) ? 'você' : user;
     
