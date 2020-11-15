@@ -20,7 +20,7 @@ client.say(channel, `${username}, ${user} possui ${followers}`)
 module.exports.config = {
 name: 'followcount',
 aliases: ['fc'],
-usage:'followcount [user]'
-description: 'Mostra quantos seguidores um canal possui'
+usage:'followcount [user]',
+description: 'Mostra quantos seguidores um canal possui',
 level: 'Todos'
 }
