@@ -12,34 +12,25 @@ client.on('PRIVMSG', async (msg) => {
 	const imgValidation = imgRegex.exec(message);
 	const ytValidation = ytRegex.exec(message);
 	
+	const linkDatabase = await db.query('SELECT * FROM luulbot_twitchlt');
 	
 	if (imgValidation) {
 		
-		try {
-			
+		if (linkDatabase.rows.find(i => i.url === imgValidation[0])) return;
 		
 		const currentDate = new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
 		
 		await db.query('INSERT INTO luulbot_twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, imgValidation[0], new Date(currentDate)]);
-		
-		
-		} catch (err) {
-			console.warn(err)
-		}
+	
 	}
 	
 	if (ytValidation) {
 		
-		try {
-			
-		
+		if (linkDatabase.rows.find(i => i.url === ytValidation[0])) return;
+	
 		const currentDate = new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
 		
 		await db.query('INSERT INTO luulbot_twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, ytValidation[0], new Date(currentDate)]);
-		
-		
-		} catch (err) {
-			console.warn(err)
-		}
+	
 	}
 })
