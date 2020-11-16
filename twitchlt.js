@@ -20,7 +20,7 @@ client.on('PRIVMSG', async (msg) => {
 		
 		const currentDate = new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
 		
-		await db.query('INSERT INTO twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, imgValidation[0], new Date(currentDate)]);
+		await db.query('INSERT INTO luulbot_twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, imgValidation[0], new Date(currentDate)]);
 		
 		
 		} catch (err) {
@@ -35,7 +35,7 @@ client.on('PRIVMSG', async (msg) => {
 		
 		const currentDate = new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
 		
-		await db.query('INSERT INTO twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, ytValidation[0], new Date(currentDate)]);
+		await db.query('INSERT INTO luulbot_twitchlt (channel, channel_id, username, username_id, url, date) VALUES ($1,$2,$3,$4,$5,$6)', [channelName, channelID, username, senderUserID, ytValidation[0], new Date(currentDate)]);
 		
 		
 		} catch (err) {
