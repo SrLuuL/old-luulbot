@@ -5,7 +5,7 @@ const ms = require('pretty-ms');
 
 const twitchltDB = await db.query('SELECT * FROM luulbot_twitchlt');
 
-if (!twitchltDB.rows) {
+if (!twitchltDB.countRows) {
 return client.say(channel, `${username}, não há imagens no momento :/`)
 }
 
@@ -18,7 +18,7 @@ let randomUrlDate = twitchltDB.rows.find(i => i.url === randomUrl)
 randomUrlDate = ms(Date.now() - randomUrlDate.date, {secondsDecimalDigits: 0, unitCount: 2})
 .replace(/y/, 'a');
 
-if(args[1] === 'stats') {
+if(args[0] === 'stats') {
   return client.say(channel, `${username}, ${fetchUrls.length} imagens armazenadas neste momento`) 
 }
   
