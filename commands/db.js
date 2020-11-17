@@ -2,7 +2,7 @@ module.exports.run = (client, message, args, username, channel) => {
 
 const db = require('../clients/database.js').db
 
-if (username !== "srluul") return;
+
 
 db.query(`${args.join(' ')}`, (err,result) => {
    if(err) return client.say(channel, `${username}, (${err.message}) ocorreu algum erro :/`);
