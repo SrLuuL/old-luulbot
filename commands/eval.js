@@ -2,8 +2,6 @@ module.exports.run = async (client, message, args, username, channel) => {
 
   const db = require('../clients/database.js').db
 
-  
-  if (username !== "srluul") return;
 
   try {
   
