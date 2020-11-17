@@ -48,20 +48,22 @@ client.on('message', async (channel, user, message, self) => {
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 let cmdPerm = cmdfile.config.level
 
-switch(cmdPerm) {
-	case 'Dono':
-		if (username !== 'srluul') return;
-		return;
-		
-	case 'Privado':
-		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdfile.config.name}' OR command_alias = '${cmdfile.config.aliases}'`)
-		if (!cmdPermDB.rows) return; 
-		return;
-}
+
 	
 	
 
 if (cmdfile) {
+	
+	switch(cmdPerm) {
+	case 'Dono':
+		if (username !== 'srluul') return;
+	case 'Privado':
+		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdfile.config.name}' OR command_alias = '${cmdfile.config.aliases}'`)
+		if (!cmdPermDB.rows) return; 
+}
+	
+	
+	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
 	globalCD.add(username);
