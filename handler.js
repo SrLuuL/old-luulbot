@@ -48,9 +48,13 @@ client.on('message', async (channel, user, message, self) => {
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 let cmdPerm = cmdfile.config.level
 
+let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdfile.config.name} OR command_alias = '${cmdfile.config.aliases.join(' ')}'`)
+
 switch(cmdPerm) {
 	case 'Dono':
 		if (username !== 'srluul') return;
+	case 'Privado':
+		if (!cmdPermDB.rows) return;    
 }
 	
 	
