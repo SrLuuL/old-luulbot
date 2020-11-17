@@ -18,6 +18,10 @@ let randomUrlDate = twitchltDB.rows.find(i => i.url === randomUrl)
 randomUrlDate = ms(Date.now() - randomUrlDate.date, {secondsDecimalDigits: 0, unitCount: 2})
 .replace(/y/, 'a');
 
+if(args[1] === 'stats') {
+  return client.say(channel, `${username}, ${fetchUrls.length} imagens armazenadas neste momento`) 
+}
+  
 client.say(channel, `${username}, ${randomUrl} (Postada há ${randomUrlDate} atrás)`) 
 
 
