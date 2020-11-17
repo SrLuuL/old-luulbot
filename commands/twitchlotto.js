@@ -5,7 +5,7 @@ const ms = require('pretty-ms');
 
 const twitchltDB = await db.query('SELECT * FROM luulbot_twitchlt');
 
-if (!twitchltDB.countRows) {
+if (!twitchltDB.rowCount) {
 return client.say(channel, `${username}, não há imagens no momento :/`)
 }
 
