@@ -58,7 +58,7 @@ if (cmdfile) {
 	case 'Dono':
 		if (username !== 'srluul') return;
 	case 'Privado':
-		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdfile.config.name}' OR command_alias = '${cmdfile.config.aliases}'`)
+		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdfile.config.name}'`)
 		if (!cmdPermDB.rows) return; 
 }
 	
