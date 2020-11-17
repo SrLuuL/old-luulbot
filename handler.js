@@ -46,13 +46,15 @@ client.on('message', async (channel, user, message, self) => {
 
 
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
-let cmdPerm = cmdfile.config.level
+
 
 
 	
 	
 
 if (cmdfile) {
+	
+	let cmdPerm = cmdfile.config.level
 	
 	switch(cmdPerm) {
 	case 'Dono':
