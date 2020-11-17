@@ -5,7 +5,7 @@ const client = new ChatClient({
 	password: process.env.TWITCHLT_AUTH
 })
 
-const channels = ['srluul', 'ghiletofar', 'cellbit', 'alanzoka', 'smurfdomuca', 'gabi', 'ljoga', 'mount', 'patopapao', 'felps', 'omeiaum'] 
+const channels = ['srluul', 'ghiletofar', 'cellbit', 'alanzoka', 'gabi', 'ljoga', 'mount', 'patopapao', 'felps', 'omeiaum'] 
 
 
 client.connect()
