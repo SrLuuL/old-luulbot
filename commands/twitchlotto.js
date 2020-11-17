@@ -27,6 +27,6 @@ module.exports.config = {
 name: 'twitchlotto',
 aliases: ['twitchlt', 'lt'],
 usage: 'twitchlotto',
-description: 'Pega uma imagem aleatória de chats brasileiros',
+description: 'Pega uma imagem aleatória de chats brasileiros(fale com SrLuuL caso queira o comando no seu canal)',
 level: 'Privado'
 }
