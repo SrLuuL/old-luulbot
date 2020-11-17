@@ -29,7 +29,7 @@ client.say(channel, `${username}, ${randomUrl} (Postada há ${randomUrlDate} atr
 
 module.exports.config = {
 name: 'twitchlotto',
-aliases: ['twitchlt', 'lt'],
+aliases: ['twitchlt', 'tl'],
 usage: 'twitchlotto',
 description: 'Pega uma imagem aleatória de chats brasileiros(fale com SrLuuL caso queira o comando no seu canal)',
 level: 'Privado'
