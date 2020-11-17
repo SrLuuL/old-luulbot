@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args, username, channel) => {
 
-const db = require('./clients/database.js').db;
+const db = require('../clients/database.js').db;
 const ms = require('pretty-ms');
 
 const twitchltDB = await db.query('SELECT * FROM luulbot_twitchlt');
