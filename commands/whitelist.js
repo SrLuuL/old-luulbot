@@ -11,7 +11,7 @@ return client.say(channel, `${username}, bot não está presente neste canal :/`
 
 const {userchannel, userid} = channelList.rows[0]
 
-const cmd = luulbot.command.get(args[1].toLowerCase()) || luulbot.command.get(luulbot.aliases.get(args[1].toLowerCase()))
+const cmd = luulbot.commands.get(args[1].toLowerCase()) || luulbot.commands.get(luulbot.aliases.get(args[1].toLowerCase()))
 
 if (!cmd) {
 return client.say(channel, `${username}, o bot não possui esse comando :/`)
