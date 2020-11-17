@@ -26,7 +26,7 @@ client.say(channel, `${username}, ${userchannel} agora possui ${cmd.config.name}
 module.exports.config = {
 name: 'whitelist',
 aliases: [],
-usage: 'whitelist [user] [cmd]'
-description: 'Autoriza canais a usarem certos comandos'
+usage: 'whitelist [user] [cmd]',
+description: 'Autoriza canais a usarem certos comandos',
 level: 'Dono'
 }
