@@ -25,7 +25,7 @@ if (!banned) return client.say(channel, `${username}, ${user} não está com um 
 
 const dateBan = ms(Date.now() - new Date(createdAt), {secondsDecimalDigits: 0, unitCount: 3})
 .replace(/y/g, "a");
-const dateExpire = ms(new Date(expiresAt) - Date.now(), {secondsDicimalDigits: 0, unitCount: 3})
+const dateExpire = ms(new Date(expiresAt) - Date.now(), {secondsDecimalDigits: 0, unitCount: 3})
 .replace(/y/g, "a");
   
 
