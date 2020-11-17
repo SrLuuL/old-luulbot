@@ -17,7 +17,7 @@ if (!cmd) {
 return client.say(channel, `${username}, o bot não possui esse comando :/`)
 }
 
-await db.query(`INSERT INTO luulbot_perms(channel, channel_id, command) VALUES($1,$2,$3), [userchannel, userid, cmd.config.name] `)
+await db.query(`INSERT INTO luulbot_perms(channel, channel_id, command) VALUES($1,$2,$3)`, [userchannel, userid, cmd.config.name])
 
 client.say(channel, `${username}, ${userchannel} agora possui ${cmd.config.name}!`)
 
