@@ -2,7 +2,7 @@ module.exports.run = async (client, message, args, username, channel) => {
 const channelsOptions = require("../credentials/login.js").channelOptions
 const db = require("../clients/database.js").db
 
-if (username !== "srluul") return;
+
 if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`)
 const getId = await db.query('SELECT userid FROM luulbot_channels ORDER BY userid ASC')  
 
