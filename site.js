@@ -9,7 +9,7 @@ const ms = require('pretty-ms');
 
 app.get('/comandos', (req, res) => {
   
-let commandList = luulbot.commands.filter(i => i.level !== 'Dono');
+let commandList = luulbot.commands.filter(i => i.config.level !== 'Dono');
   
 commandList = commandList.map(i => `
 <tr>
