@@ -31,5 +31,6 @@ name: 'unwhitelist',
 aliases: [],
 usage: 'unwhitelist [user] [cmd]',
 description: 'Remove a autorização dos canais a usarem certos comandos',
-level: 'Dono'
+level: 'Dono',
+cooldown: 500   
 }
