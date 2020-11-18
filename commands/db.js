@@ -19,5 +19,6 @@ db.query(`${args.join(' ')}`, (err,result) => {
   aliases: [],
   description: "Database do bot",
   usage: "db",
-  level: 'Dono'   
+  level: 'Dono',
+  cooldown: 500
   }
