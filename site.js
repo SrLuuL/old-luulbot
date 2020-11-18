@@ -77,7 +77,7 @@ background-color: #222b36;
 </nav>
 
 
-<div class='row justify-content-center'>
+<div>
 
 
 <table id='commandsTable' class='table table-dark table-striped table-bordered dataTable'>
