@@ -47,5 +47,6 @@ name: 'random',
 aliases: ['rand'],
 description: 'Gera um termo aleatório de determinada categoria',
 usage: 'random [categoria]',
-level: 'Todos'  
+level: 'Todos',
+cooldown: 5000    
 }
