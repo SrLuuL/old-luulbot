@@ -32,5 +32,6 @@ name: 'twitchlotto',
 aliases: ['twitchlt', 'tl'],
 usage: 'twitchlotto',
 description: 'Pega uma imagem aleatória de chats brasileiros(fale com SrLuuL caso queira o comando no seu canal)',
-level: 'Privado'
+level: 'Privado',
+cooldown: 6000    
 }
