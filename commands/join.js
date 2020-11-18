@@ -17,5 +17,6 @@ name: "join",
 aliases: [],
 description: "Conecta o bot em um canal",
 usage: "join [user]",
-level: 'Dono'  
+level: 'Dono',
+cooldown: 500
 }
