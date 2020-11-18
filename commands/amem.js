@@ -19,5 +19,6 @@ module.exports.config = {
 	aliases: ["biblia","verso"],
 	description: "Manda um verso aleatório da blíbia",
 	usage: "amem",
-	level: 'Todos'
+	level: 'Todos',
+	cooldown: 6000
 }
