@@ -48,5 +48,6 @@ name: 'vipcheck',
 aliases: ['vipchk'],
 description: 'Checa se um usuário é vip em um determinado canal',
 usage: 'vipcheck [user1] [user2]',
-level: 'Todos'  
+level: 'Todos',
+cooldown: 5000    
 }
