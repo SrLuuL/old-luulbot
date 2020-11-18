@@ -30,6 +30,6 @@ module.exports.config = {
 	description: "Verificar se o bot está acordado",
 	usage: "ping",
 	level: 'Todos',
-	cooldown: 4000
+	cooldown: 3000
 }
 	
