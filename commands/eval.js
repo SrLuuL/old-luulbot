@@ -28,5 +28,6 @@ name: "eval",
 aliases: [],
 description: "Executa um código do bot",
 usage: "eval [conteúdo]",
-level: 'Dono'  
+level: 'Dono',
+cooldown: 500
 }
