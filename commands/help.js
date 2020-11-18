@@ -21,5 +21,6 @@ name: "help",
 aliases: ["ajuda", "comandos"],
 description: "Mostra as informações sobre os comandos",
 usage: "help [comando]",
-level: 'Todos'
+level: 'Todos',
+cooldown: 4000
 }
