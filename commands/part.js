@@ -27,5 +27,6 @@ name: "part",
 aliases: [],
 description: "Desconecta o bot em um canal",
 usage: "join [user]",
-level: 'Dono'  
+level: 'Dono',
+cooldown: 500
 }
