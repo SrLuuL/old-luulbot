@@ -5,7 +5,7 @@ const db = require('./clients/database.js').db;
 const channels = require("./credentials/login.js").channelOptions;
 
 let prefix = "=";
-let globalCD = new Set();
+let commandCD = new Set();
 let globalDelay = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
@@ -70,11 +70,11 @@ if (cmdfile) {
 	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
-	globalCD.add(username);
+	commandCD.add(username);
 	globalDelay.add(channel);
 	
 	setTimeout(() => {
-	globalCD.delete(username)
+	commandCD.delete(username)
 }, cmdCD);
 
 setTimeout(() => {
