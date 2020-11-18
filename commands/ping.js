@@ -29,6 +29,7 @@ module.exports.config = {
 	aliases: ["uptime"],
 	description: "Verificar se o bot está acordado",
 	usage: "ping",
-	level: 'Todos'
+	level: 'Todos',
+	cooldown: 4000
 }
 	
