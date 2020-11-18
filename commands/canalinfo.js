@@ -38,5 +38,6 @@ module.exports.config = {
   aliases: ["cli"],
   description: "Mostra informações sobre um canal de um usuário",
   usage: "canalinfo [user]",
-  level: 'Todos'
+  level: 'Todos',
+  cooldown: 5000
 }
