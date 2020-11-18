@@ -9,5 +9,6 @@ name: 'sobre',
 aliases: ['bot','about'],
 usage: 'sobre',
 description: 'Conta detalhes sobre o bot',
-level: 'Todos'
+level: 'Todos',
+cooldown: 3000    
 }
