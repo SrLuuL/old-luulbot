@@ -31,5 +31,6 @@ name: 'whitelist',
 aliases: [],
 usage: 'whitelist [user] [cmd]',
 description: 'Autoriza canais a usarem certos comandos',
-level: 'Dono'
+level: 'Dono',
+cooldown: 500    
 }
