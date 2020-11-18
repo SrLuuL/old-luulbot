@@ -25,5 +25,6 @@ name: 'followcount',
 aliases: ['fc'],
 usage:'followcount [user]',
 description: 'Mostra quantos seguidores um canal possui',
-level: 'Todos'
+level: 'Todos',
+cooldown: 5000
 }
