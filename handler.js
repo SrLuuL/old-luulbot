@@ -55,6 +55,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) {
 	
 	let cmdPerm = cmdfile.config.level
+	let cmdCD = cmdfile.config.cooldown
 	
 	switch(cmdPerm) {
 	case 'Dono':
@@ -71,17 +72,18 @@ if (cmdfile) {
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
 	globalCD.add(username);
 	globalDelay.add(channel);
-}
-
-
 	
-setTimeout(() => {
+	setTimeout(() => {
 	globalCD.delete(username)
-}, 5000);
+}, cmdCD);
 
 setTimeout(() => {
 	globalDelay.delete(channel)
 }, 250);	
+	
+}
+
+
 	
 	
 	
