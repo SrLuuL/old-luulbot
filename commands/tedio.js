@@ -20,5 +20,6 @@ name: "tedio",
 aliases: ["bored"],
 description: "Manda uma atividade aleatória para te livrar do tédio",
 usage: "tedio",
-level: 'Todos'  
+level: 'Todos',
+cooldown: 4000    
 }
