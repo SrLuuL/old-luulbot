@@ -37,5 +37,6 @@ name: "chatters",
 aliases: ["chatinfo"],
 description: "Pega as informações de um determinado chat",
 usage: "chatters [user]",
-level: 'Todos'
+level: 'Todos',
+cooldown: 5000
 }
