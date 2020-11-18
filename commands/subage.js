@@ -80,5 +80,6 @@ module.exports.config = {
   aliases: ["sub", "subcheck"],
   description: "Mostra as informações de inscrito de uma pessoa em um certo canal",
   usage: "subage [user1] [user2]",
-  level: 'Todos'
+  level: 'Todos',
+  cooldown: 5000  
 }
