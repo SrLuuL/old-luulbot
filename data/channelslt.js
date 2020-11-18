@@ -12,5 +12,6 @@ module.exports = [
   'patopapao',
   'omeiaum',
   'smurfdomuca',
-  'namaca'
+  'namaca',
+  'joh_p'
 ]
