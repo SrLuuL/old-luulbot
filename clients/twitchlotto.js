@@ -5,7 +5,7 @@ const client = new ChatClient({
 	password: process.env.TWITCHLT_AUTH
 })
 
-const channels = ['ghiletofar', 'cellbit', 'alanzoka', 'gabi', 'ljoga', 'mount', 'patopapao', 'felps', 'omeiaum'] 
+const channels = require('../data/channelslt.js');
 
 
 client.connect()
