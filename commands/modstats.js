@@ -29,7 +29,8 @@ name: "modstats",
 aliases: ["modinfo","faxineiro"],
 description: "Mostra informações de mod de um usuário",
 usage: "modstats [user]",
-level: 'Todos'  
+level: 'Todos',
+cooldown: 5000  
 }
 
 
