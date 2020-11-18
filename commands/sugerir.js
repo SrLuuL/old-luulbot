@@ -26,5 +26,6 @@ name: "sugerir",
 aliases: ["suggest"],
 description: "Sugere uma nova função para o bot",
 usage: "sugerir [sugestão]",
-level: 'Todos'  
+level: 'Todos',
+cooldown: 4000    
 }
