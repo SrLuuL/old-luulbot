@@ -58,6 +58,10 @@ table th {
     width: auto !important;
 }
 
+#table_wrapper {
+	padding: 10px 40px 0 40px !important;
+}
+
 </style>
 
 <nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
@@ -266,6 +270,10 @@ background-color: #222b36;
 
 table th {
     width: auto !important;
+}
+
+#table_wrapper {
+	padding: 10px 40px 0 40px !important;
 }
 
 </style>
