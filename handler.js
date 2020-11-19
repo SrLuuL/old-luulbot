@@ -37,9 +37,7 @@ client.on('message', async (channel, user, message, self) => {
 	
 	
 
-	if (self) return;	
-	if (commandCD.has(username)) return;
-	if (globalDelay.has(channel)) return;
+	if (self) return;
 	if (!message.startsWith(prefix)) return;
 	if (message.slice(prefix.length).startsWith(' ')) return;
 
@@ -54,8 +52,11 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 
 if (cmdfile) {
 	
-	let cmdPerm = cmdfile.config.level
-	let cmdCD = cmdfile.config.cooldown
+	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
+	
+	if (commandCD.has(username[cmdName])) return;
+	if (globalDelay.has(channel)) return;
+	
 	
 	switch(cmdPerm) {
 	case 'Dono':
@@ -70,16 +71,16 @@ if (cmdfile) {
 	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
-	commandCD.add(username);
+	commandCD.add(username[cmdName]);
 	globalDelay.add(channel);
 	
 	setTimeout(() => {
-	commandCD.delete(username)
+	commandCD.delete(username[cmdName])
 }, cmdCD);
 
 setTimeout(() => {
 	globalDelay.delete(channel)
-}, 250);	
+}, 350);	
 	
 }
 
