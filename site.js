@@ -79,7 +79,7 @@ table th {
 </nav>
 
 
-<div class='row justify-content-center container-fluid'>
+<div class='row justify-content-center'>
 
 
 <table id='commandsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
@@ -190,7 +190,7 @@ color: #ffffff
 
 <p><strong> Como faço para colocar o bot no meu canal? </strong></p>
 
-<p> Basta falar com @SrLuuL, ou mande uma sugestão solicitando o bot(precisa ser no mínimo vip/mod no canal e estar sem followmode)</p>
+<p> Basta falar com @SrLuuL, ou mande uma sugestão solicitando o bot(precisa estar sem followmode)</p>
 
 </li>
 
@@ -289,7 +289,7 @@ table th {
 </nav>
 
 
-<div class='row col-sm-12 col-md-6'>
+<div class='row justify-content-center'>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
