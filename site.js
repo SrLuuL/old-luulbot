@@ -182,9 +182,9 @@ color: #ffffff
 
 </div>
 
-<div class='d-flex mx-auto'>
+<div class='d-flex'>
 
-<ul>
+<ul class='list-inline mx-auto justify-content-center'>
 
 <li>
 
@@ -203,6 +203,8 @@ color: #ffffff
 </li>
 
 </ul>
+
+</div>
 
 </div>
 
@@ -287,7 +289,7 @@ table th {
 </nav>
 
 
-<div class='row justify-content-center container-fluid'>
+<div class='row col-sm-12 col-md-6'>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
