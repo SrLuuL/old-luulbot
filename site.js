@@ -54,7 +54,9 @@ body {
 background-color: #222b36;
 }
 
-
+table th {
+    width: auto !important;
+}
 
 </style>
 
@@ -180,7 +182,7 @@ color: #ffffff
 
 </div>
 
-<div class='row justify-content-center'>
+<div class='d-flex mx-auto'>
 
 <ul>
 
@@ -260,7 +262,9 @@ body {
 background-color: #222b36;
 }
 
-
+table th {
+    width: auto !important;
+}
 
 </style>
 
