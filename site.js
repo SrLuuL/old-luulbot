@@ -82,7 +82,7 @@ table th {
 <div class='row justify-content-center'>
 
 
-<table id='commandsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
+<table id='commandsTable' class='table table-dark table-striped table-bordered table-sm dataTable' role="grid">
 
 <thead>
 <tr>
