@@ -54,10 +54,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 if (cmdfile) {
 	
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
-	
-	if (username[cmdName] === cmdName) return;
-	
-	username[cmdName] = cmdName
+
 	
 
 	switch(cmdPerm) {
@@ -73,10 +70,11 @@ if (cmdfile) {
 	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	cmdfile.run(client, message, args, username, channel, cmd, alias);
+	commandCD.add(username)
 	globalDelay.add(channel);
 	
 	setTimeout(() => {
-	username[cmdName] = {}
+	commandCD.delete(username)
 }, cmdCD);
 
 setTimeout(() => {
