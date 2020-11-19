@@ -45,7 +45,8 @@ client.on('message', async (channel, user, message, self) => {
 
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
-
+if (commandCD.has(username[cmdfile.config.name])) return;
+if (globalDelay.has(channel)) return;
 
 	
 	
@@ -54,8 +55,7 @@ if (cmdfile) {
 	
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
 	
-	if (commandCD.has(username[cmdName])) return;
-	if (globalDelay.has(channel)) return;
+
 	
 	
 	switch(cmdPerm) {
