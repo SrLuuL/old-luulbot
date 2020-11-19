@@ -188,7 +188,7 @@ color: #ffffff
 
 <div class='d-flex'>
 
-<ul class='list-inline mx-auto justify-content-center'>
+<ul class='mx-auto justify-content-center'>
 
 <li>
 
