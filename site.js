@@ -179,6 +179,8 @@ color: #ffffff
 
 </div>
 
+<div class='row justify-content-center'>
+
 <ul>
 
 <li>
@@ -199,7 +201,7 @@ color: #ffffff
 
 </ul>
 
-
+</div>
 
 </body>
 
