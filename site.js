@@ -79,7 +79,7 @@ table th {
 </nav>
 
 
-<div class='row justify-content-center'>
+<div class='row'>
 
 
 <table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
