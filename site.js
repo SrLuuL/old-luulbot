@@ -82,7 +82,7 @@ table th {
 <div class='row justify-content-center'>
 
 
-<table id='commandsTable' class='table table-dark table-striped table-bordered table-sm dataTable' role="grid">
+<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
 
 <thead>
 <tr>
@@ -292,7 +292,7 @@ table th {
 <div class='row justify-content-center'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
 
 <thead>
 <tr>
