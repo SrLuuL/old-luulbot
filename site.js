@@ -58,7 +58,7 @@ table th {
     width: auto !important;
 }
 
-#table_wrapper {
+#commandsTable_wrapper {
 	padding: 10px 30px 0 30px !important;
 }
 
@@ -272,7 +272,7 @@ table th {
     width: auto !important;
 }
 
-#table_wrapper {
+#suggestsTable_wrapper {
 	padding: 10px 30px 0 30px !important;
 }
 
