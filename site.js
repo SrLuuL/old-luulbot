@@ -58,7 +58,7 @@ table th {
     width: auto !important;
 }
 
-#table_wrapper {
+#commandsTable_wrapper {
 	padding: 10px 40px 0 40px !important;
 }
 
