@@ -58,8 +58,8 @@ table th {
     width: auto !important;
 }
 
-#commandsTable_wrapper {
-	padding: 10px 40px 0 40px !important;
+#table_wrapper {
+	padding: 10px 30px 0 30px !important;
 }
 
 </style>
@@ -273,7 +273,7 @@ table th {
 }
 
 #table_wrapper {
-	padding: 10px 40px 0 40px !important;
+	padding: 10px 30px 0 30px !important;
 }
 
 </style>
