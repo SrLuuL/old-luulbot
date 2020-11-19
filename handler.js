@@ -55,7 +55,7 @@ if (cmdfile) {
 	
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
 
-	if (commandCD.has(`${username}-${cmdName})`) return;
+	if (commandCD.has(`${username}-${cmdName}`)) return;
 
 	switch(cmdPerm) {
 	case 'Dono':
