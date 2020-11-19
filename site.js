@@ -105,7 +105,8 @@ $(document).ready(function () {
   $('#commandsTable').DataTable({
         "language": {
 "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese-Brasil.json"
-}
+},
+        "pageLength": 100
     });
 });
 
@@ -285,7 +286,7 @@ background-color: #222b36;
 <div class='row justify-content-center container-fluid'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered dataTable'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered table-sm dataTable'>
 
 <thead>
 <tr>
@@ -310,7 +311,8 @@ $(document).ready(function () {
         "language": {
 "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese-Brasil.json"
 },
-       "order": [[ 4, "desc" ]]
+       "order": [[ 4, "desc" ]],
+       "pageLength": 50
     });
 });
 
