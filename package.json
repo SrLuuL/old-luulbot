@@ -18,7 +18,7 @@
     "node-fetch": "latest",
     "easy-hastebin": "latest",
     "pretty-ms": "latest",
-    "pg": "latest",
+    "pg": "8.5.1",
     "compare-strings": "latest",
     "@distributed/cherangi": "latest",
     "express": "latest",
