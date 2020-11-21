@@ -9,19 +9,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tmi.js": "^latest",
-    "discord.js": "^latest",
-    "systeminformation": "^latest",
-    "unirest": "^latest",
-    "@kaysilvn/google-translate-api": "^latest",
-    "fs": "^latest",
-    "node-fetch": "^latest",
-    "easy-hastebin": "^latest",
-    "pretty-ms": "^latest",
+    "tmi.js": "latest",
+    "discord.js": "latest",
+    "systeminformation": "latest",
+    "unirest": "latest",
+    "@kaysilvn/google-translate-api": "latest",
+    "fs": "latest",
+    "node-fetch": "latest",
+    "easy-hastebin": "latest",
+    "pretty-ms": "latest",
     "pg": "^8.5.1",
-    "compare-strings": "^latest",
-    "@distributed/cherangi": "^latest",
-    "express": "^latest",
-    "dank-twitch-irc": "^latest"
+    "compare-strings": "latest",
+    "@distributed/cherangi": "latest",
+    "express": "latest",
+    "dank-twitch-irc": "latest"
   }
 }
