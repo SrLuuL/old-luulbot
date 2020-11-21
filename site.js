@@ -95,7 +95,7 @@ table th {
 <td>DESCRIÇÃO</td>
 <td>USO</td>
 <td>COOLDOWN</td>
-<td>PERMISSÃO</td>
+<td>NÍVEL</td>
 </tr>
 </thead>
 
