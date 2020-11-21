@@ -22,6 +22,5 @@
     "@distributed/cherangi": "^1.1.11",
     "express": "^4.17.1",
     "dank-twitch-irc": "^4.1.0",
-    "pm2": "^4.5.0"
   }
 }
