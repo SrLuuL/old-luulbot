@@ -5,8 +5,6 @@ const {args, user: username} = context
 const userid = (!args[0]) ? username : args[0];
   
 const res = await (await fetch(`https://modlookup.3v.fi/api/user-totals/${userid}`)).json();  
- 
- try { 
    
 const {user, views, follows, total, partners} = res;
 
