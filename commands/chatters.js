@@ -2,6 +2,10 @@ module.exports.run = async (context) => {
 
 const fetch = require("node-fetch")
 
+if(!context.channel && !context.args[0]) {
+  return { reply: 'insira  um usuário :/' }
+}
+
 let user = (!context.args[0]) ?  context.channel.slice(1) :  context.args[0].toLowerCase();
 
 const res = await (await fetch(`https://tmi.twitch.tv/group/user/${user}/chatters`)).json();  
