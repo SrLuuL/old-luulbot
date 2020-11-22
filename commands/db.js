@@ -1,15 +1,14 @@
-module.exports.run = (client, message, args, username, channel) => {
+module.exports.run = (args) => {
 
 const db = require('../clients/database.js').db
 
 
 
 db.query(`${args.join(' ')}`, (err,result) => {
-   if(err) return client.say(channel, `${username}, (${err.message}) ocorreu algum erro :/`);
-  
+   if(err) return { reply: `(${err.message}) ocorreu algum erro :/` }
     
     console.log(result.rows || result)
-    client.say(channel, `${username}, olhe os logs para os resultados :) `)
+    return { reply: 'olhe os logs :)' }
   })
   
   }
