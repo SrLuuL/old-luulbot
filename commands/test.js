@@ -1,4 +1,4 @@
-module.exports.run = (client, message, args, username, channel) => {
+module.exports.run = () => {
 
 return {
 reply: 'sim!!!'
