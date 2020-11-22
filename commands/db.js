@@ -1,10 +1,10 @@
-module.exports.run = (args) => {
+module.exports.run = (context) => {
 
 const db = require('../clients/database.js').db
 
 
 
-db.query(`${args.join(' ')}`, (err,result) => {
+db.query(`${context.args.join(' ')}`, (err,result) => {
    if(err) return { reply: `(${err.message}) ocorreu algum erro :/` }
     
     console.log(result.rows || result)
