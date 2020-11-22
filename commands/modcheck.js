@@ -6,17 +6,17 @@ const ms = require('pretty-ms');
 let sender;
 let user;
 
-const {args, user, channel} = context  
+const {args, user: username, channel} = context  
   
 if (args[0] && args[1]) {
 sender = args[1].toLowerCase();
 user = args[0].toLowerCase();  
 } else if (args[0] && !args[1]) {
 sender = args[0].toLowerCase();
-user = user; 
+user = username; 
 } else {
 sender = channel.replace('#', '');
-user = user;
+user = username;
 }
 
 
@@ -26,7 +26,7 @@ const modCheck = res.mods.find(i => i.login === user) || false;
 
 
 sender = (sender === user) ? 'seu canal' : sender;
-user = (user === user) ? 'você' : user;  
+user = (user === username) ? 'você' : user;  
 
 
 if (modCheck) {
