@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async (context) => {
 
 const cherangi = require('@distributed/cherangi');
 const translateapi = require('@kaysilvn/google-translate-api');
@@ -25,15 +25,13 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
   
 (async () => {  
   
-switch(args[0]) {
+switch(context.args[0]) {
   case 'hex':
-    client.say(channel, `${username}, #${await getRandomHex()}`)
-    break;
+    return { reply: `#${await getRandomHex()}` }
   case 'name':
-    client.say(channel, `${username}, ${randName}`)
-    break;
+    return { reply: `${randName}` }
   default:
-    client.say(channel, `${username}, categorias disponíveis: hex / name`)
+    return { reply: 'categorias disponíveis: hex/name' }
 }
 
 })()  
