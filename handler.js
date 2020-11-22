@@ -35,7 +35,7 @@ client.on('message', async (channel, user, message, self) => {
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
-	
+	if(channel !== 'srluul') return;
 	
 
 	if (self) return;
@@ -71,7 +71,8 @@ if (cmdfile) {
 	
 	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
-	cmdfile.run(client, message, args, username, channel, cmd, alias);
+	const cmdRun = cmdfile.run(client, message, args, username, channel, cmd, alias);
+	client.say(channel, `${username}, ${cmdRun}`)
 	commandCD.add(`${username}-${cmdName}`)
 	globalDelay.add(channel);
 	globalCD.add(username);
