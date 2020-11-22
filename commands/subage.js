@@ -1,6 +1,6 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async (context) => {
 
-  
+  const {args, user: username, channel} = context
   
   const ms = require("pretty-ms")
   
@@ -24,7 +24,7 @@ user2 = sender;
  let data = await res.json();
  
  if (data.status === 404 || data.status === 500) {
-   return client.say(channel, `${username}, usuário não foi encontrado :/`)
+   return { reply: 'usuário não foi encontrado :/' }
  }
 
 
@@ -34,7 +34,7 @@ user2 = sender;
    user = (user.toLowerCase() === username) ? "você" : user; 
    canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
   
-   if (hidden) return client.say(channel, `${username}, ${user} escondeu suas informações de inscrito`)
+   if (hidden) return { reply: `${user} escondeu suas informações de inscrito` }
   
 
   
@@ -51,7 +51,7 @@ user2 = sender;
 
   
    if (!data.subscribed) {
-    return client.say(channel, `${username}, ${user} não é inscrito em ${canal}, possuindo ${subMonths} no total ${subTotal}`)
+    return { reply: `${user} não é inscrito em ${canal}, possuindo ${subMonths} no total ${subTotal}` }
 }  
   
   let {type, tier} = data.meta;
@@ -66,8 +66,9 @@ user2 = sender;
   
 
   
-   client.say(channel, `${username}, ${user} é inscrito em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier} `) 
-
+return {
+ reply: `${user} é inscrito em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier}` 
+}
   
 
   
