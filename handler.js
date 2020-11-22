@@ -35,7 +35,7 @@ client.on('message', async (channel, user, message, self) => {
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
-	if(channel !== 'srluul') return;
+	if(canal !== 'srluul') return;
 	
 
 	if (self) return;
