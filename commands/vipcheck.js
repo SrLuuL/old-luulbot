@@ -1,8 +1,9 @@
-module.exports.run = async (client, message, args , username, channel) => {
+module.exports.run = async (context) => {
 
 const fetch = require('node-fetch');
 const ms = require('pretty-ms');
-
+const {args, user:username, channel} = context
+  
 let sender;
 let user;
 
@@ -32,11 +33,11 @@ if (vipCheck) {
 let vipTime = ms(Date.now() - new Date(vipCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3})
 .replace(/y/, 'a');
   
-return client.say(channel , `${username}, ${user} é vip em ${sender} há ${vipTime} atrás`)
+return { reply: `${user} é vip em ${sender} há ${vipTime} atrás` }
 
 } else {
 
-return client.say(channel, `${username}, ${user} não é vip em ${sender}`)
+return { reply: `${user} não é vip em ${sender}` }
   
 }
   
