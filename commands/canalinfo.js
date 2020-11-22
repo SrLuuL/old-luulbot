@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async (args, username) => {
 
 const fetch = require("node-fetch")
 const ms = require("pretty-ms")
@@ -13,21 +13,20 @@ const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).j
 
 
   if (res.status === 404 || res.status === 500) {
-    return client.say(channel, `${username}, não encontrei esse usuário :/`)
+    return { reply: 'não encontrei esse usuário :/' }
   }
  
 let {displayName, login, id, bio, chatColor} = res;
-
-
-  
 
 bio =  bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)';
   
 chatColor = chatColor || '(sem cor)';
   
 
- 
-client.say(channel, `${username}, Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}`)
+return {
+ reply: `Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}` 
+}
+  
 
 
 
