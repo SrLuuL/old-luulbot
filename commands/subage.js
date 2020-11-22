@@ -1,10 +1,16 @@
 module.exports.run = async (context) => {
 
-  const {args, user: username, channel} = context
+ const {args, user: username, channel} = context
   
-  const ms = require("pretty-ms")
+ const ms = require("pretty-ms")
   
  const fetch = require("node-fetch")
+ 
+ if(!channel && !args[0]) {
+  return { reply: 'insira pelo menos um usuário :/' }
+}
+ 
+ 
  let sender = channel.slice(1)
  let user1;
  let user2;
