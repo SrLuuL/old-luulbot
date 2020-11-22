@@ -29,15 +29,13 @@ client.on('notice', async (channel, msgid, message) => {
 	
 })
 
-client.on('message', async (channel, user, message, self) => {
-	
-	console.log(user)
+async function handleMSG(channel, user, message, self, tags) {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
-	if(canal !== 'srluul') return;
+	
 	
 
 	if (self) return;
@@ -50,10 +48,6 @@ client.on('message', async (channel, user, message, self) => {
 
 let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command))
 
-
-
-	
-	
 
 if (cmdfile) {
 	
@@ -93,11 +87,11 @@ setTimeout(() => {
 	
 }
 
+	
+	
+}
 
-	
-	
-	
-});
+client.on('message', handleMSG(channel, user, message, self, tags));
 
 
 
