@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args , username, channel) => {
+module.exports.run = async (args, username, channel) => {
 
 const fetch = require('node-fetch');
 const ms = require('pretty-ms');
@@ -32,11 +32,11 @@ if (modCheck) {
 let modTime = ms(Date.now() - new Date(modCheck.grantedAt), {secondsDecimalDigits: 0, unitCount: 3})
 .replace(/y/, 'a');
   
-return client.say(channel , `${username}, ${user} é mod em ${sender} há ${modTime} atrás`)
+return { reply: `${user} é mod em ${sender} há ${modTime} atrás` }
 
 } else {
 
-return client.say(channel, `${username}, ${user} não é mod em ${sender}`)
+return { reply: `${user} não é mod em ${sender}` }
   
 }
   
