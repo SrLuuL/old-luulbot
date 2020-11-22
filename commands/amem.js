@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async () => {
 
 	
 const fetch = require("node-fetch");
@@ -9,7 +9,9 @@ const res = await (await fetch("https://labs.bible.org/api/?passage=random&type=
 const {bookname, chapter, verse, text} = res[0];
 const translated = await translate(text, { src_lang:'auto', tar_lang: 'pt' });
 
-client.say(channel, `${username}, (${bookname} ${chapter}:${verse}) ${translated}`);
+return {
+	reply: `(${bookname} ${chapter}:${verse}) ${translated}`
+}
 	
 }
 
