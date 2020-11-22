@@ -1,23 +1,25 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async (context) => {
 const channels = require("../credentials/login.js").channelOptions;
 const db = require("../clients/database.js").db
 
 
-if (!args[0]) return client.say(channel, `${username}, nenhum canal no input :Z`)
-if (!channels.includes(args[0])) return client.say(channel, `${username}, não estou nesse canal :/`)
+if (!context.args[0]) return { reply: 'insira um canal :/' }
+if (!channels.includes(context.args[0])) return { reply: 'não estou nesse canal :/' }
 
 
-await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${args[0]}'`)
+await db.query(`DELETE FROM luulbot_channels WHERE userchannel='${context.args[0]}'`)
   
-let index = channels.indexOf(args[0])
+let index = channels.indexOf(context.args[0])
 channels.splice(index, 1)
 
-if (client.channels.includes(`#${args[0]}`)) {
-    client.part(args[0]);
+if (context.client.channels.includes(`#${context.args[0]}`)) {
+    context.client.part(context.args[0]);
 }
   
 
-client.say(channel, `${username}, saí do canal ${args[0]} com sucesso!`);
+return {
+ reply: `saí do canal ${context.args[0]} com sucesso!` 
+}
 
 
 }
