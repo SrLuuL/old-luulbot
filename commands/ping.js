@@ -1,4 +1,4 @@
-module.exports.run =  async () => {
+module.exports.run =  async (context) => {
 
 	const db = require('../clients/database.js').db;
         const si = require("systeminformation");
