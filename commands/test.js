@@ -11,6 +11,6 @@ name: 'test',
 aliases: [],
 description: 'teste',
 usage: null,
-cooldown: 500
+cooldown: 500,
 level: 'Todos'
 }
