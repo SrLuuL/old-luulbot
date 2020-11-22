@@ -86,7 +86,7 @@ if (cmdfile) {
 		client: client
 	}
 
-	const cmdRun = cmdfile.run(context);
+	const cmdRun = await cmdfile.run(context);
 	const cmdReply = cmdRun.reply
 	
 	
