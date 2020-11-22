@@ -89,12 +89,12 @@ if (cmdfile) {
 	const cmdRun = await cmdfile.run(context);
 	const cmdReply = cmdRun.reply
 	
-	const cmdExec = await cmdExec(username, cmdReply);
+	const cmdExecution = await cmdExec(username, cmdReply);
 	
 	if(msgType === 'chat') {
-		await client.say(channel, `${cmdExec}`)
+		await client.say(channel, `${cmdExecution}`)
 	} else if(msgType === 'whisper') {
-		await client.whisper(username, `${cmdExec}`)
+		await client.whisper(username, `${cmdExecution}`)
 	}
 	
 	
