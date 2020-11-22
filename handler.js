@@ -87,22 +87,29 @@ if (cmdfile) {
 	}
 
 	const cmdRun = cmdfile.run(context);
+	const cmdReply = cmdRun.reply
 	
-	if (msgType === 'chat') {
-		if(!cmdRun.reply) {
-			await client.say(channel, `${username}, erro desconhecido`)
-		}
-		else {
-		        await client.say(channel, `${username}, ${cmdRun.reply}`)
-		}
-	} else {
-		if(!cmdRun.reply) {
-			await client.whisper(username, `${username}, erro desconhecido`)
-		}
-		else {
-		        await client.whisper(username, `${username}, ${cmdRun.reply}`)
-		}
+	
+	switch(msgType) {
+		case 'chat':
+			if(!cmdReply) {
+				client.say(channel, `${username}, erro desconhecido`)
+			} else if(cmdRun.mode === 'say') {
+				client.say(channel, `${cmdReply}`)
+			} else {
+				client.say(channel, `${username}, ${cmdReply}`)
+			}	
+			break;
+		case 'whisper':
+			if(!cmdReply) {
+				client.whisper(username, `${username}, erro desconhecido`)
+			} else if(cmdRun.mode === 'say') {
+				client.whisper(username, `${cmdReply}`)
+			} else {
+				client.whisper(username, `${username}, ${cmdReply}`)
+			}	
 	}
+	
 		
 	
 	// Cooldown handler
