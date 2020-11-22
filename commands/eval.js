@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async (args) => {
 
   const db = require('../clients/database.js').db
 
@@ -12,13 +12,13 @@ const evaluated = await eval('(async () => {' +args.join(" ") + '})()')
 const ev = String(evaluated)
 
 
-if (!args[0]) return client.say(channel, `${username}, insira um código :/`)
-else client.say(channel, `${ev}`)
+if (!args[0]) return { reply: 'insira um código :/' }
+else return { reply: `${ev}` }
 
     
 
   } catch (err) {
-    return client.say(channel, `${username}, ocorreu algum erro (${err}) :/`)
+    return { reply: `ocorreu algum erro (${err}) :/` }
   }
     
 }
