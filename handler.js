@@ -76,8 +76,17 @@ if (cmdfile) {
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
 	
 	// Command execution
+	
+	const context = {
+		args: args,
+		user: username,
+		channel: channel,
+		cmd: cmd,
+		alias: alias,
+		client: client
+	}
 
-	const cmdRun = cmdfile.run(args, username, channel, cmd, alias);
+	const cmdRun = cmdfile.run(context);
 	
 	if (msgType === 'chat') {
 		if(!cmdRun.reply) {
