@@ -7,6 +7,10 @@ const {args, user:username, channel} = context
 let sender;
 let user;
 
+ if(!channel && !args[0]) {
+  return { reply: 'insira pelo menos um usuário :/' }
+} 
+  
 if (args[0] && args[1]) {
 sender = args[1].toLowerCase();
 user = args[0].toLowerCase();  
