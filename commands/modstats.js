@@ -1,7 +1,7 @@
-module.exports.run = async (args, username) => {
+module.exports.run = async (context) => {
 
 const fetch = require("node-fetch");
-
+const {args, user: username} = context
 const userid = (!args[0]) ? username : args[0];
   
 const res = await (await fetch(`https://modlookup.3v.fi/api/user-totals/${userid}`)).json();  
@@ -10,7 +10,7 @@ const res = await (await fetch(`https://modlookup.3v.fi/api/user-totals/${userid
    
 const {user, views, follows, total, partners} = res;
 
-const sender = (user === username) ? 'você' : user; 
+const sender = (user === user) ? 'você' : user; 
    
 let channelTotal = total ? total > 1 ? `${total} canais` : `1 canal` : 'nenhum canal';
 let partnerTotal = partners ? partners > 1 ? `(${partners}  parceiros)` : '(1 parceiro)' : '';     
