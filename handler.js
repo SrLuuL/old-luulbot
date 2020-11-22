@@ -89,28 +89,14 @@ if (cmdfile) {
 	const cmdRun = await cmdfile.run(context);
 	const cmdReply = cmdRun.reply
 	
+	const cmdExec = await cmdExec(username, cmdReply);
 	
-	switch(msgType) {
-		case 'chat':
-			if(!cmdReply) {
-				client.say(channel, `${username}, erro desconhecido`)
-			} else if(cmdRun.mode === 'say') {
-				client.say(channel, `${cmdReply}`)
-			} else {
-				client.say(channel, `${username}, ${cmdReply}`)
-			}	
-			break;
-		case 'whisper':
-			if(!cmdReply) {
-				client.whisper(username, `${username}, erro desconhecido`)
-			} else if(cmdRun.mode === 'say') {
-				client.whisper(username, `${cmdReply}`)
-			} else {
-				client.whisper(username, `${username}, ${cmdReply}`)
-			}	
+	if(msgType === 'chat') {
+		await client.say(channel, `${cmdExec}`)
+	} else if(msgType === 'whisper') {
+		await client.whisper(username, `${cmdExec}`)
 	}
 	
-		
 	
 	// Cooldown handler
 	commandCD.add(`${username}-${cmdName}`)
@@ -133,4 +119,19 @@ setTimeout(() => {
 
 	
 }
+
+
+async function cmdExec(username, cmdReply) {
+	
+	try {
+	
+	if(cmdReply.mode === 'say') return `${cmdReply}`
+			
+	return `${username}, ${cmdReply}`
+		
+	} catch(err) {
+		return 'Erro desconhecido'
+	}
+}
+
 
