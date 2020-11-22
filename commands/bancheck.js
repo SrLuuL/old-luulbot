@@ -1,17 +1,17 @@
-module.exports.run = async (args, username, channel) => {
+module.exports.run = async (context) => {
 
 const ms = require("pretty-ms");
 const fetch = require("node-fetch");
 
-let [user, user2] = args;
+let [user, user2] = context.args;
 
 if (!user) {
  return { reply: 'insira usuários :/' } 
 }
 
 if (!user2) {
-user = username
-user2 = args[0]
+user = context.user
+user2 = context.args[0]
 }
 
 const res = await (await fetch(`https://api.ivr.fi/twitch/banlookup/${user}/${user2}`)).json(); 
@@ -22,8 +22,8 @@ if (res.error) {
   
 const {status, banned, isPermanent, createdAt, expiresAt} = res;
 
-user = (user.toLowerCase() === username) ? "você" : user;
-user2 = (user2.toLowerCase() === username) ? "seu canal" : user2;
+user = (user.toLowerCase() === context.username) ? "você" : user;
+user2 = (user2.toLowerCase() === context.username) ? "seu canal" : user2;
 
 if (status === 500) {
   return { reply: 'usuários inválidos :/' }
