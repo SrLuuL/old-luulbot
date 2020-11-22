@@ -5,7 +5,7 @@ const ms = require("pretty-ms")
 
 
 
-let sender = context.args[0] ? context.args[0] : context.username
+let sender = context.args[0] ? context.args[0] : context.user
 
 
 const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).json()
