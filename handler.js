@@ -29,14 +29,19 @@ client.on('notice', async (channel, msgid, message) => {
 	
 })
 
-async function handleMSG(channel, user, message, self, tags) {
+
+client.on('message', (channel, user, message, self) => handleMSG(channel, user, message, self));
+
+client.on('whisper', (channel, user, message) => handleMSG(channel, user, message));
+
+async function handleMSG(channel, user, message, self) {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
-	
-	
+	let msgType = user['message-type']
+	if (canal !== 'srluul') return;
 
 	if (self) return;
 	if (!message.startsWith(prefix)) return;
@@ -54,7 +59,9 @@ if (cmdfile) {
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
-
+	
+	
+        // Permission handler
 	switch(cmdPerm) {
 	case 'Dono':
 		if (username !== 'srluul') return;
@@ -67,8 +74,29 @@ if (cmdfile) {
 	
 	
 	await db.query(` UPDATE luulbot_info SET value = value + 1 WHERE setting = 'command_count' `)
-	const cmdRun = cmdfile.run(client, message, args, username, channel, cmd, alias);
-	client.say(channel, `${username}, ${cmdRun.reply}`)
+	
+	// Command execution
+
+	const cmdRun = cmdfile.run(args, username, channel, cmd, alias);
+	
+	if (msgType === 'chat') {
+		if(!cmdRun.reply) {
+			await client.say(channel, `${username}, erro desconhecido`)
+		}
+		else {
+		        await client.say(channel, `${username}, ${cmdRun.reply}`)
+		}
+	} else {
+		if(!cmdRun.reply) {
+			await client.whisper(username, `${username}, erro desconhecido`)
+		}
+		else {
+		        await client.whisper(username, `${username}, ${cmdRun.reply}`)
+		}
+	}
+		
+	
+	// Cooldown handler
 	commandCD.add(`${username}-${cmdName}`)
 	globalDelay.add(channel);
 	globalCD.add(username);
@@ -88,10 +116,5 @@ setTimeout(() => {
 }
 
 	
-	
 }
-
-client.on('message', handleMSG(channel, user, message, self, tags));
-
-
 
