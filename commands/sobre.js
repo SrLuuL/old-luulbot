@@ -1,6 +1,10 @@
-module.exports.run = (client, message, args, username, channel) => {
+module.exports.run = (context) => {
 
-client.say(channel, `${username}, Bot feito com Node.js, sendo hosteado atualmente na Heroku e conectado em ${client.getChannels().length} canais`)
+  let channelList = context.getChannels().length
+  
+return {
+ reply: `Bot feito com Node.js, sendo hosteado atualmente na Heroku e conectado em ${channelList} canais` 
+}
 
 }
 
