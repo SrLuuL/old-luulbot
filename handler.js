@@ -89,7 +89,7 @@ if (cmdfile) {
 	const cmdRun = await cmdfile.run(context);
 	const cmdReply = cmdRun.reply
 	
-	const cmdExecution = await cmdExec(username, cmdReply);
+	const cmdExecution = await cmdExec(username, cmdRun, cmdReply);
 	
 	if(msgType === 'chat') {
 		await client.say(channel, `${cmdExecution}`)
@@ -121,11 +121,11 @@ setTimeout(() => {
 }
 
 
-async function cmdExec(username, cmdReply) {
+async function cmdExec(username, cmdRun, cmdReply) {
 	
 	try {
 	
-	if(cmdReply.mode === 'say') return `${cmdReply}`
+	if(cmdRun.mode === 'say') return `${cmdReply}`
 			
 	return `${username}, ${cmdReply}`
 		
