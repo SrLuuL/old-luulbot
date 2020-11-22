@@ -1,4 +1,4 @@
-module.exports.run = async (client, message, args, username, channel) => {
+module.exports.run = async () => {
 
 const fetch = require("node-fetch");
 const translateapi = require("@kaysilvn/google-translate-api");
@@ -11,7 +11,9 @@ const res2 = await translate(activity, { src_lang: 'auto', tar_lang:'pt'});
 const emojiList = ['🤔', '😀', '⭐️', '🕒', '🔮', '⌛️', '💡', '🔍', '💭', '✨'];
 const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
   
-client.say(channel, `${username}, ${randomEmoji} ${res2}`)
+return {
+ reply: `${randomEmoji} ${res2}` 
+}
 
 }
 
