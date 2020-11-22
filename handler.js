@@ -41,7 +41,7 @@ async function handleMSG(channel, user, message, self) {
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
 	let msgType = user['message-type']
-	if (canal !== 'srluul') return;
+	
 
 	if (self) return;
 	if (!message.startsWith(prefix)) return;
