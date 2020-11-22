@@ -47,7 +47,6 @@ async function handleMSG(channel, user, message, self) {
 	if (!message.startsWith(prefix)) return;
 	if (message.slice(prefix.length).startsWith(' ')) return;
         if (globalDelay.has(channel)) return;
-	if (globalCD.has(username)) return;
 
 
 
@@ -101,7 +100,6 @@ if (cmdfile) {
 	// Cooldown handler
 	commandCD.add(`${username}-${cmdName}`)
 	globalDelay.add(channel);
-	globalCD.add(username);
 	
 	setTimeout(() => {
 	commandCD.delete(`${username}-${cmdName}`)
@@ -109,11 +107,8 @@ if (cmdfile) {
 
 setTimeout(() => {
 	globalDelay.delete(channel)
-}, 350);	
+}, 1350);	
 	
-setTimeout(() => {
-	globalCD.delete(username)
-}, 2000);	
 	
 }
 
