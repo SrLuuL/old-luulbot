@@ -1,11 +1,11 @@
-module.exports.run = async (args, username) => {
+module.exports.run = async (context) => {
 
 const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
 
 
-let sender = args[0] ? args[0] : username
+let sender = context.args[0] ? context.args[0] : context.username
 
 
 const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).json()
