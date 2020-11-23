@@ -17,7 +17,7 @@ commandList = commandList.map(i => `
 <td><a>[${i.config.aliases || '(nenhum)'}]</a></td>
 <td><a>${i.config.description}</a></td>
 <td><a>${i.config.usage}</a></td>
-<td><a>${(i.config.cooldown/1000)}s</a></td>
+<td><a>${(i.config.cooldown/1000)} segundos</a></td>
 <td><a>${i.config.level}</a></td>
 </tr>
 `);
