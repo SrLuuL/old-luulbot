@@ -11,7 +11,7 @@ if (!command) return { reply: 'comando não existe :/' }
 command = command.config
 
 return {
- reply: `=${command.name}[${command.aliases}]: ${command.description}(${(command.cooldown/1000)} s cooldown)`
+ reply: `=${command.name}[${command.aliases}]: ${command.description} | ${(command.cooldown/1000)}s cooldown`
 }
 
 }
