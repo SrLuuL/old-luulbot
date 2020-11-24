@@ -30,11 +30,11 @@ client.on('notice', async (channel, msgid, message) => {
 })
 
 
-client.on('message', (channel, user, message, self) => handleMSG(channel, user, message, self));
+client.on('message', (user, message, channel, self) => handleMSG(user, message, channel, self));
 
-client.on('whisper', (channel, user, message) => handleMSG(channel, user, message));
+client.on('whisper', (user, message) => handleMSG(user, message));
 
-async function handleMSG(channel, user, message, self) {
+async function handleMSG(user, message, channel, self) {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
