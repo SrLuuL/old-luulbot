@@ -34,7 +34,7 @@ client.on('message', (channel, user, message, self) => handleMSG(channel, user, 
 
 client.on('whisper', (channel, user, message, self) => handleMSG(channel, user, message, self));
 
-async function handleMSG(channel, message, user, self) {
+async function handleMSG(channel, user, message, self) {
 	
 	console.log(channel, message, user, self)
 	
