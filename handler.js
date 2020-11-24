@@ -36,6 +36,8 @@ client.on('whisper', (channel, user, message, self) => handleMSG(channel, user, 
 
 async function handleMSG(channel, message, user, self) {
 	
+	console.log(channel, message, user, self)
+	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
 	let command = args.shift().toLowerCase();
