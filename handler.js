@@ -30,9 +30,9 @@ client.on('notice', async (channel, msgid, message) => {
 })
 
 
-client.on('message', (channel, message, user, self) => handleMSG(channel, message, user, self));
+client.on('message', (channel, user, message, self) => handleMSG(channel, user, message, self));
 
-client.on('whisper', (channel, message, user, self) => handleMSG(channel, message, user, self));
+client.on('whisper', (channel, user, message, self) => handleMSG(channel, user, message, self));
 
 async function handleMSG(channel, message, user, self) {
 	
