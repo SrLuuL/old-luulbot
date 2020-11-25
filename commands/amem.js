@@ -22,5 +22,5 @@ module.exports.config = {
 	description: "Manda um verso aleatório da blíbia",
 	usage: "amem",
 	level: 'Todos',
-	cooldown: 6000
+	cooldown: 10000
 }
