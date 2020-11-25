@@ -23,11 +23,11 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
   return `${hex.join('')} (${translatedColor})`
 }
   
-(async () => {  
+let randomHex  = await getRandomHex()
   
 switch(context.args[0]) {
   case 'hex':
-    return { reply: `#${await getRandomHex()}` }
+    return { reply: `#${randomHex}` }
     break;
   case 'name':
     return { reply: `${randName}` }
@@ -36,7 +36,7 @@ switch(context.args[0]) {
     return { reply: 'categorias disponíveis: hex/name' }
 }
 
-})()  
+
   
   
 }
