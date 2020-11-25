@@ -14,7 +14,9 @@ client.joinAll(channels)
 
 
 client.on('error', (error) => {
-	console.warn(error)
+	if(error instanceof ChatClient.JoinError && error.failedChannelName) {
+		console.log(`${this.failedJoinChannels} não foram carregados`)
+	}
 })
 
 client.on('ready', () => {
