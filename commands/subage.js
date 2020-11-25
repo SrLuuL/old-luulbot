@@ -88,5 +88,5 @@ module.exports.config = {
   description: "Mostra as informações de inscrito de uma pessoa em um certo canal",
   usage: "subage [user1] [user2]",
   level: 'Todos',
-  cooldown: 5000  
+  cooldown: 6000  
 }
