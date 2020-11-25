@@ -33,6 +33,7 @@ client.on('notice', async (channel, msgid, message) => {
 			break;
 		case 'msg_rejected_mandatory':
 			console.log(`Mensagem ${message} não enviada em ${channel}`)
+			client.say(channel, 'não posso mandar essa mensagem')
 			break;
 	}
 	
