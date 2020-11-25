@@ -1,6 +1,6 @@
-const { ChatClient } = require('dank-twitch-irc');
+const DankTwitch = require('dank-twitch-irc');
 
-const client = new ChatClient({
+const client = new DankTwitch({
 	username: 'SrLuuL',
 	password: process.env.TWITCHLT_AUTH
 })
@@ -14,7 +14,7 @@ client.joinAll(channels)
 
 
 client.on('error', (error) => {
-	if(error instanceof ChatClient.JoinError && error.failedChannelName) {
+	if(error instanceof DankTwitch.JoinError && error.failedChannelName) {
 		console.log(`${this.failedJoinChannels} não foram carregados`)
 	}
 })
