@@ -27,6 +27,15 @@ client.on('notice', async (channel, msgid, message) => {
 		console.log(`LuuLBot está banido em ${channelFixed}, desconectando...`)
 	}
 	
+	switch(msgid) {
+		case 'no_permission':
+			client.say(channel, 'não tenho permissão para isso')
+			break;
+		case 'msg_rejected_mandatory':
+			console.log(`Mensagem ${message} não enviada em ${channel}`)
+			break;
+	}
+	
 })
 
 
