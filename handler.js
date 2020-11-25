@@ -104,7 +104,7 @@ if (cmdfile) {
 	if(msgType === 'chat') {
 		await client.say(channel, `${cmdExecution}`)
 	} else if(msgType === 'whisper') {
-		return
+		await client.whisper(username, `${cmdExecution}`)
 	}
 	
 	
