@@ -15,7 +15,7 @@ client.joinAll(channels)
 
 client.on('error', (error) => {
 	if(error.failedChannelName) {
-		console.log(`Não consegui conectar em  ${this.failedJoinChannels}`)
+		console.log(`Não consegui conectar em  ${error.failedJoinChannels}`)
 	}
 })
 
