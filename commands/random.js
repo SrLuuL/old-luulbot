@@ -28,8 +28,10 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
 switch(context.args[0]) {
   case 'hex':
     return { reply: `#${await getRandomHex()}` }
+    break;
   case 'name':
     return { reply: `${randName}` }
+    break;
   default:
     return { reply: 'categorias disponíveis: hex/name' }
 }
