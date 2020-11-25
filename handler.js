@@ -122,7 +122,8 @@ async function cmdExec(username, cmdRun, cmdReply) {
 	try {
 	
 	if(cmdRun.mode === 'say') return `${cmdReply}`
-			
+	if(!cmdReply) return  'comando inválido, avise SrLuuL sobre isso'
+		
 	return `${username}, ${cmdReply}`
 		
 	} catch(err) {
