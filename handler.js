@@ -96,10 +96,8 @@ if (cmdfile) {
 		client: client
 	}
 
-	const cmdRun = await cmdfile.run(context);
-	const cmdReply = cmdRun.reply?;
 	
-	const cmdExecution = await cmdExec(username, cmdRun, cmdReply);
+	const cmdExecution = await cmdExec(cmdfile, context);
 	
 	if(msgType === 'chat') {
 		await client.say(channel, `${cmdExecution}`)
@@ -127,17 +125,20 @@ setTimeout(() => {
 }
 
 
-async function cmdExec(username, cmdRun, cmdReply) {
+async function cmdExec(cmdfile, context) {
 	
 	try {
+
+        let cmdRun = await cmdfile.run(context);
+        let cmdReply  = cmdRun.reply
 	
 	if(cmdRun.mode === 'say') return `${cmdReply}`
-	if(!cmdReply) return  'comando inválido, avise SrLuuL sobre isso'
+
 		
-	return `${username}, ${cmdReply}`
+	return `${context.user}, ${cmdReply}`
 		
 	} catch(err) {
-		return 'Erro desconhecido'
+		return 'comando inválido, avise SrLuuL sobre isso'
 	}
 }
 
