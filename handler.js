@@ -97,7 +97,7 @@ if (cmdfile) {
 	}
 
 	const cmdRun = await cmdfile.run(context);
-	const cmdReply = cmdRun.reply?
+	const cmdReply = cmdRun.reply?;
 	
 	const cmdExecution = await cmdExec(username, cmdRun, cmdReply);
 	
