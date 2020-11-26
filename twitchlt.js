@@ -12,14 +12,14 @@ client.on('PRIVMSG', async (msg) => {
 	
 	const linkDatabase = await db.query('SELECT * FROM luulbot_twitchlt');
 	
-	let botsID = [100135110, 68136884, 65034466, 19264788, 1564983] // ['streamelements', 'supibot', 'priestbot', 'nightbot', 'moobot']
+	let botsUser = ['StreamElements', 'Supibot', 'Priestbot', 'Nightbot', 'Moobot'] 
 	
 	
 	
 	if (imgValidation) {
 		
 		if (linkDatabase.rows.find(i => i.url === imgValidation[0])) return;
-		if (senderUserID.includes(botsID)) return;
+		if (botsUser.includes(username)) return;
 		
 		const currentDate = new Date().toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
 		
