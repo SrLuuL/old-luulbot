@@ -6,9 +6,6 @@ module.exports.run = async (context) => {
   
  const fetch = require("node-fetch")
  
- if(!channel && !args[0]) {
-  return { reply: 'insira pelo menos um usuário :/' }
-}
  
  
  let sender = channel.slice(1)
