@@ -22,8 +22,8 @@ if (res.error) {
   
 const {status, banned, isPermanent, createdAt, expiresAt} = res;
 
-user = (user.toLowerCase() === context.username) ? "você" : user;
-user2 = (user2.toLowerCase() === context.username) ? "seu canal" : user2;
+user = (user.toLowerCase() === context.user) ? "você" : user;
+user2 = (user2.toLowerCase() === context.user) ? "seu canal" : user2;
 
 if (status === 500) {
   return { reply: 'usuários inválidos :/' }
