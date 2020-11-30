@@ -6,7 +6,7 @@ const channels = require("./credentials/login.js").channelOptions;
 
 let prefix = "=";
 let commandCD = new Set();
-let globalCD = new Set();
+let lastMessage;
 let globalDelay = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
@@ -100,7 +100,7 @@ if (cmdfile) {
 	const cmdExecution = await cmdExec(cmdfile, context);
 	
 	if(msgType === 'chat') {
-		await client.say(channel, `${cmdExecution}`)
+		await sendMsg(cmdExecution, channel)
 	} else if(msgType === 'whisper') {
 		await client.whisper(username, `${cmdExecution}`)
 	}
@@ -142,4 +142,27 @@ async function cmdExec(cmdfile, context) {
 	}
 }
 
+async function sendMsg(message, channel) {
+	
+	let inviChar = /\uFFF0/
+	
+	if(message === lastMessage[channel]) {
+		
+		if(inviChar.exec(message)) {
+			
+			message = message.replace(inviChar, '');
+			
+		} else {
+			
+			message = inviChar + message	
+			
+		}
+		
+	}
+	
+	lastMessage[channel] = message
+	
+	await client.say(channel, `${message}`)
+
+}
 
