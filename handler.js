@@ -9,7 +9,7 @@ let commandCD = new Set();
 let globalDelay = new Set();
 let cmd = luulbot.commands;
 let alias = luulbot.aliases;
-
+let lastMessage = {};
 
 client.on('connected', async () => {
 	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
@@ -52,7 +52,7 @@ async function handleMSG(channel, user, message, self) {
 	let command = args.shift().toLowerCase();
 	let canal = channel.replace("#", "");
 	let msgType = user['message-type']
-	let lastMessage
+	
 
 	if (self) return;
 	if (!message.startsWith(prefix)) return;
@@ -100,7 +100,7 @@ if (cmdfile) {
 	const cmdExecution = await cmdExec(cmdfile, context);
 	
 	if(msgType === 'chat') {
-		await sendMsg(cmdExecution, channel, lastMessage)
+		await sendMsg(cmdExecution, channel)
 	} else if(msgType === 'whisper') {
 		await client.whisper(username, `${cmdExecution}`)
 	}
@@ -142,7 +142,7 @@ async function cmdExec(cmdfile, context) {
 	}
 }
 
-async function sendMsg(message, channel, lastMessage) {
+async function sendMsg(message, channel) {
 	
 	let inviChar = /\uFFF0/
 	
