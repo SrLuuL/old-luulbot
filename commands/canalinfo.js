@@ -3,7 +3,7 @@ module.exports.run = async (context) => {
 const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
-
+try {
 
 let sender = context.args[0] ? context.args[0] : context.user
 
@@ -27,6 +27,10 @@ return {
  reply: `Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}` 
 }
   
+} catch(err) {
+  
+  return { reply: 'Erro desconhecido' }
+}
 
 
 
