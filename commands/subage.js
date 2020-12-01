@@ -6,7 +6,7 @@ module.exports.run = async (context) => {
   
  const fetch = require("node-fetch")
  
- 
+ try {
  
  let sender = channel.slice(1)
  let user1;
@@ -73,7 +73,9 @@ return {
  reply: `${user} é inscrito em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier}` 
 }
   
-
+ } catch(err) {
+  return { reply: 'Erro desconhecido' }
+ }
   
 }
 
