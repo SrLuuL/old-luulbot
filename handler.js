@@ -138,7 +138,7 @@ async function cmdExec(cmdfile, context) {
 	return `${context.user}, ${cmdReply}`
 		
 	} catch(err) {
-		return 'comando inválido, avise SrLuuL sobre isso'
+		return '${context.user}, comando inválido, avise SrLuuL sobre isso'
 	}
 }
 
