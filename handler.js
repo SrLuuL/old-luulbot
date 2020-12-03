@@ -17,10 +17,11 @@ client.on('connected', async () => {
 })
 
 client.on('notice', async (channel, msgid, message) => {
+	
 	let channelFixed = channel.replace('#', '');
 	
 	if (msgid === 'msg_banned' && channels.includes(channelFixed)) {
-		await db.query(` DELETE FROM luulbot_channels WHERE userchannel = '${channelFixed}' `)
+		await db.query(`DELETE FROM luulbot_channels WHERE userchannel = '${channelFixed}'`)
 		let index =  channels.indexOf(channelFixed)
 		channels.splice(index, 1)
 		client.part(channelFixed)
@@ -29,14 +30,15 @@ client.on('notice', async (channel, msgid, message) => {
 	
 	switch(msgid) {
 		case 'no_permission':
-			client.say(channel, 'não tenho permissão para isso')
+			await sendMsg('não tenho permissão para isso', channel);
 			break;
 		case 'msg_rejected_mandatory':
-			console.log(`Mensagem ${message} não enviada em ${channel}`)
-			client.say(channel, 'não posso mandar essa mensagem')
+			let reply = 'não posso enviar esta mensagem'
+			if (reply === message) return;
+		        console.log(`Mensagem ${message} não enviada em ${channel}`)
+			await sendMsg(reply, channel)
 			break;
 	}
-	
 })
 
 
