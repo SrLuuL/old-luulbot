@@ -79,5 +79,5 @@ setInterval(() => {
     ps.send(JSON.stringify({
         type: 'PING',
     }));
-}, 250 * 1000);
+}, 300000);
 
