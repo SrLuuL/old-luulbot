@@ -2,6 +2,8 @@ const db = require('../clients/database.js').db;
 const WS = require('ws');
 const RWS = require('reconnecting-websocket');
 const channels = require('../credentials/login.js').channelOptions;
+const randombytes = require('randombytes');
+
 
 function sleep(milliseconds) {
     const start = new Date().getTime();
@@ -17,7 +19,10 @@ sleep(2500)
 const ps = new RWS('wss://pubsub-edge.twitch.tv', [], {WebSocket: WS}); 
 
 ps.addEventListener('open', () => {
-    console.log(`Conectado na TwitchPubSub`);	
+    console.log(`Conectado na TwitchPubSub`);
+    for(channel in Object.values(channels)){
+        await listenStreamStatus(channels[channel])
+    }
 });
 
 ps.addEventListener('message', async ({data}) => {
@@ -78,6 +83,26 @@ async function handleWSMsg(msg = {}) {
     
   }
   
+}
+
+async function listenStreamStatus(channel) {
+	
+	let tokenDB = await db.query('SELECT access_token FROM luulbot_info ');
+	let token = tokenDB.rows[0].access_token;
+	
+	let nonce = randombytes(20).toString('hex').slice(-8);
+	
+	 let message = {
+        'type': 'LISTEN',
+        'nonce': nonce,
+        'data': {
+            'topics': [`video-playback.${channel}`],
+            'auth_token': token,
+        },
+    };
+	
+ ps.send(JSON.stringify(message)); 
+	
 }
 
 
