@@ -20,7 +20,7 @@ ps.addEventListener('open', () => {
     console.log(`Conectado na TwitchPubSub`);	
 });
 
-ps.addEventListener('message', ({data}) => {
+ps.addEventListener('message', async ({data}) => {
   let msg = JSON.parse(data)
   
   switch(msg.type) {
