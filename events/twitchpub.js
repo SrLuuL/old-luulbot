@@ -1,7 +1,7 @@
 const db = require('../clients/database.js').db;
 const WS = require('ws');
 const RWS = require('reconnecting-websocket');
-const channels = require('../credentials/loginjs').channelOptions;
+const channels = require('../credentials/login.js').channelOptions;
 
 function sleep(milliseconds) {
     const start = new Date().getTime();
