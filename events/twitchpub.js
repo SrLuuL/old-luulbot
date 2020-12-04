@@ -57,7 +57,7 @@ ps.addEventListener('message', async ({data}) => {
 });
 
 
-async funtion handleWSMsg(msg = {}) {
+async function handleWSMsg(msg = {}) {
   
   if (msg) {
    switch(msg.type) {
