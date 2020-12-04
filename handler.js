@@ -137,10 +137,10 @@ async function cmdExec(cmdfile, context) {
 	if(cmdRun.mode === 'say') return `${cmdReply}`
 
 		
-	return `${context.user}, ${cmdReply}`
+	return `${context.user.username}, ${cmdReply}`
 		
 	} catch(err) {
-		return `${context.user}, comando inválido avise SrLuuL sobre isso`
+		return `${context.user.username}, comando inválido avise SrLuuL sobre isso`
 	}
 }
 
