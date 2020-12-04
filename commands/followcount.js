@@ -3,7 +3,7 @@ module.exports.run = async (context) => {
 const fetch = require('node-fetch');
 
    
-let user = context.args[0] ? context.args[0] : context.user;
+let user = context.args[0] ? context.args[0] : context.user.username;
 
 
 const res = await (await fetch(`https://decapi.me/twitch/followcount/${user}`)).text()
@@ -14,7 +14,7 @@ if (!parseInt(res, 0)) {
   
 let followers = (parseInt(res, 0) === 0) ? 'nenhum seguidor' : (parseInt(res, 0) > 1) ? `${res} seguidores` : `${res} seguidor`;
     
-user = (user === context.user) ? 'você' : user;
+user = (user === context.user.username) ? 'você' : user;
     
 return {
  reply: `${user} possui ${followers}`  
