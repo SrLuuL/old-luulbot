@@ -91,7 +91,7 @@ if (cmdfile) {
 	
 	const context = {
 		args: args,
-		user: username,
+		user: user,
 		channel: channel,
 		cmd: cmd,
 		alias: alias,
