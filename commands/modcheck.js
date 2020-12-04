@@ -29,8 +29,8 @@ const res = await (await fetch(`https://api.ivr.fi/twitch/modsvips/${sender}`)).
 const modCheck = res.mods.find(i => i.login === user) || false;
 
 
-sender = (sender === username) ? 'seu canal' : sender;
-user = (user === username) ? 'você' : user;  
+sender = (sender === username.username) ? 'seu canal' : sender;
+user = (user === username.username) ? 'você' : user;  
 
 
 if (modCheck) {
