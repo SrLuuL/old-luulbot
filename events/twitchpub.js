@@ -33,7 +33,12 @@ ps.addEventListener('message', async ({data}) => {
         console.error(msg.error);
       }
       break;
-      
+		  
+    case 'RECONNECT':
+      console.log('Reconectado ao TwitchPubSub');
+      ps.reconnect();
+      break;
+		  
     case 'MESSAGE':
       if (msg.data) {
        
