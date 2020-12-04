@@ -48,7 +48,9 @@ ps.addEventListener('message', async ({data}) => {
         }
         
       }
-      
+     
+	  default:
+		  console.log(`Mensagem PubSub desconhecida: ${msg.type}`)
   }
   
 
