@@ -43,12 +43,13 @@ ps.addEventListener('message', async ({data}) => {
       if (msg.data) {
        
         let msgData = JSON.parse(msg.data.message);
-        
+        let msgTopic = msg.data.topic
+	      
         switch(msgData.type) {
             
           case 'stream-up':
           case 'stream-down':
-            await handleWSMsg({channel: msg.channel, type: msgData.type});
+            await handleWSMsg({channel: msgTopic.replace('video-playback.', ''), type: msgData.type});
             break;
         }
         
