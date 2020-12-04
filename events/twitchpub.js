@@ -48,7 +48,7 @@ ps.addEventListener('message', async ({data}) => {
             
           case 'stream-up':
           case 'stream-down':
-            await handleWSMsg({channel: msgData.channel, type: msgData.type});
+            await handleWSMsg({channel: msg.channel, type: msgData.type});
             break;
         }
         
