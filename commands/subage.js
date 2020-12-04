@@ -13,10 +13,10 @@ module.exports.run = async (context) => {
  let user2;
  
  if (!args[0] && !args[1]) {
-user1 = username;
+user1 = username.username;
 user2 = sender;
  } else if (!args[1]) {
- user1 = username;
+ user1 = username.username;
  user2 = args[0];
  } else {
    user1 = args[0];
@@ -34,8 +34,8 @@ user2 = sender;
   let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden} = data;
   
   
-   user = (user.toLowerCase() === username) ? "você" : user; 
-   canal = (canal.toLowerCase() === username) ? "seu canal" : canal;
+   user = (user.toLowerCase() === username.username) ? "você" : user; 
+   canal = (canal.toLowerCase() === username.username) ? "seu canal" : canal;
   
    if (hidden) return { reply: `${user} escondeu suas informações de inscrito` }
   
