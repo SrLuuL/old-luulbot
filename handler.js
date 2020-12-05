@@ -56,7 +56,19 @@ async function handleMSG(channel, user, message, self) {
 	let msgType = user['message-type']
 	
 
-	if (self) return;
+	if (self){
+		
+		if (user.badges.moderator || user.badges.broadcaster) {
+			await db.query(`UPDATE luulbot_channels SET mode='Moderador' WHERE userchannel = '${canal}'`)
+		} else if (user.badges.vip) {
+			await db.query(`UPDATE luulbot_channels SET mode='Vip' WHERE userchannel = '${canal}'`)		
+		} else {
+			await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
+		}
+		
+		return;
+	}
+	
 	if (!message.startsWith(prefix)) return;
 	if (message.slice(prefix.length).startsWith(' ')) return;
         if (globalDelay.has(channel)) return;
