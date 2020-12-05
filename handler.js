@@ -122,15 +122,26 @@ if (cmdfile) {
 	
 	// Cooldown handler
 	commandCD.add(`${username}-${cmdName}`)
-	globalDelay.add(channel);
+	
+	let channelModeDB = await db.query(`SELECT mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
+	let channelMode = channelModeDB.rows[0].mode;
+	
+	switch(channelMode) {
+		case 'Moderador':
+		case 'Vip':
+			globalDelay.add(channel);
+			setTimeout(() => { globalDelay.delete(channel) }, 800);
+			break;
+		default:
+			globalDelay.add(channel);
+			setTimeout(() => { globalDelay.delete(channel) }, 1500);
+	}
 	
 	setTimeout(() => {
 	commandCD.delete(`${username}-${cmdName}`)
 }, cmdCD);
 
-setTimeout(() => {
-	globalDelay.delete(channel)
-}, 1350);	
+	
 	
 	
 }
