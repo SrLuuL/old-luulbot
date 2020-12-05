@@ -127,7 +127,7 @@ if (cmdfile) {
 	// Cooldown handler
 	commandCD.add(`${username}-${cmdName}`)
 	
-	let channelModeDB = await db.query(`SELECT mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
+	let channelModeDB = await db.query(`SELECT * FROM luulbot_channels WHERE userchannel = '${canal}'`);
 	let channelMode = channelModeDB.rows[0].mode;
 	
 	switch(channelMode) {
