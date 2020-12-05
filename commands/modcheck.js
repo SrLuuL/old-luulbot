@@ -17,10 +17,10 @@ sender = args[1].toLowerCase();
 user = args[0].toLowerCase();  
 } else if (args[0] && !args[1]) {
 sender = args[0].toLowerCase();
-user = username; 
+user = username.username; 
 } else {
 sender = channel.replace('#', '');
-user = username;
+user = username.username;
 }
 
 
