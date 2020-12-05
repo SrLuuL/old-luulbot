@@ -90,6 +90,9 @@ if (cmdfile) {
 	case 'Dono':
 		if (username !== 'srluul') return;
 		break;
+	case 'Moderador':
+		if (!user.badges.moderator || !user.badges.broadcaster) return;
+		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
 		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdName}'`)
