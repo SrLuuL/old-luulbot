@@ -51,7 +51,7 @@ async function handleMSG(channel, user, message, self) {
 	
 	let username = user.username
 	let args = message.slice(prefix.length).trim().split(/ +/g);
-	let command = args.shift().toLowerCase();
+	let command = args.shift();
 	let canal = channel.replace("#", "");
 	let msgType = user['message-type']
 	
