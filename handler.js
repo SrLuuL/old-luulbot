@@ -95,7 +95,7 @@ if (cmdfile) {
 		if (username !== 'srluul') return;
 		break;
 	case 'Moderador':
-		if (!user.badges.moderator || !user.badges.broadcaster) return;
+		if (!user.badges.moderator || !user.badges.broadcaster || username !== 'srluul') return;
 		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
