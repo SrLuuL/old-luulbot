@@ -11,6 +11,8 @@ let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 let lastMessage = {};
 
+
+
 client.on('connected', async () => {
 	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
 	await db.query(` UPDATE luulbot_info SET value = 0 WHERE setting = 'command_count' `)
@@ -55,6 +57,11 @@ async function handleMSG(channel, user, message, self) {
 	let canal = channel.replace("#", "");
 	let msgType = user['message-type']
 	
+	let streamModeDB = await db.query(`SELECT stream_mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
+        let streamMode = streamModeDB.rows[0]['stream_mode'];
+	
+	let streamStatusDB = await db.query(`SELECT status FROM luulbot_channels WHERE userchannel = '${canal}'`);
+	let streamStatus = streamStatusDB.rows[0]['status'];
 
 	if (self){
 		
@@ -87,6 +94,9 @@ if (cmdfile) {
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
+	if (streamStatus === 'live' && streamMode) {	
+		if(cmdName !== 'modostream') return;	
+	}
 	
 	
         // Permission handler
