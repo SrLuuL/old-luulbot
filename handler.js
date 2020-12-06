@@ -58,15 +58,19 @@ async function handleMSG(channel, user, message, self) {
 
 	if (self){
 		
-		if (user.badges.moderator || user.badges.broadcaster) {
-			await db.query(`UPDATE luulbot_channels SET mode='Moderador' WHERE userchannel = '${canal}'`)
-		} else if (user.badges.vip) {
-			await db.query(`UPDATE luulbot_channels SET mode='Vip' WHERE userchannel = '${canal}'`)		
-		} else {
-			await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
+		if (user.badges) {
+			
+		   if (user.badges.moderator || user.badges.broadcaster) {
+			  await db.query(`UPDATE luulbot_channels SET mode='Moderador' WHERE userchannel = '${canal}'`)
+		   } else if (user.badges.vip) {
+			   await db.query(`UPDATE luulbot_channels SET mode='Vip' WHERE userchannel = '${canal}'`)		
+		   } else {
+			  await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
+		   }
+			
 		}
 		
-		return;
+	   return;
 	}
 	
 	if (!message.startsWith(prefix)) return;
