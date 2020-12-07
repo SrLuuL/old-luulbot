@@ -89,10 +89,10 @@ td {
 </nav>
 
 
-<div class='row'>
+<div class='row table-responsive'>
 
 
-<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
+<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
 
 <thead>
 <tr>
@@ -312,7 +312,7 @@ table th {
 </nav>
 
 
-<div class='row justify-content-center'>
+<div class='row justify-content-center table-responsive'>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
