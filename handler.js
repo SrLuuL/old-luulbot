@@ -11,7 +11,7 @@ let cmd = luulbot.commands;
 let alias = luulbot.aliases;
 let lastMessage = {};
 
-
+client.Channels = new Map();
 
 client.on('connected', async () => {
 	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
