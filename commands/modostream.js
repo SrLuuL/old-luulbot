@@ -6,10 +6,11 @@ const db = require('../clients/database.js').db;
 if(context.user['message-type'] === 'whisper') {
   return { reply: 'Comando não disponível em whispers :P' }
 }  
+
   
+let canal = context.channel.replace('#', '');    
 let streamModeDB = await db.query(`SELECT stream_mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
 let streamMode = streamModeDB.rows[0]['stream_mode'];
-let canal = context.channel.replace('#', '');  
   
 switch(context.args[0]) {
     
