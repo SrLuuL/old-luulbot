@@ -63,7 +63,7 @@ table th {
 }
 
 td {
-  padding: 0.60rem !important;
+  padding: 0.55rem !important;
 }
 
 </style>
@@ -288,6 +288,10 @@ table th {
 	padding: 10px 30px 0 30px !important;
 }
 
+td {
+  padding: 0.55rem !important;
+}
+
 </style>
 
 <nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
@@ -408,12 +412,9 @@ table th {
 	padding: 10px 30px 0 30px !important;
 }
 
-td a {
-	display: block;
-}
 
 td {
-	word-break: break-word;
+  padding: 0.55rem !important;
 }
 
 </style>
