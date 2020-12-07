@@ -6,7 +6,7 @@ const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
-const channels =  require('./credentials/login.js').channelOptions;
+const channels =  await db.query(`SELECT * FROM luulbot_channels`)
 
 app.get('/comandos', (req, res) => {
   
@@ -188,7 +188,7 @@ color: #ffffff
 
 <p> LuuLBot é um simples bot capaz de realizar diversas funções, progamado por SrLuuL com Node.js </p>
 
-<p> Conectado neste momento em ${channels.length} canais! </p>
+<p> Conectado neste momento em ${channels.rows.length} canais! </p>
 
 </div>
 
@@ -398,8 +398,16 @@ table th {
     width: auto !important;
 }
 
-#suggestsTable_wrapper {
+#channelsTable_wrapper {
 	padding: 10px 30px 0 30px !important;
+}
+
+td a {
+	display: block;
+}
+
+td {
+	word-break: break-word;
 }
 
 </style>
