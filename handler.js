@@ -16,6 +16,15 @@ let lastMessage = {};
 client.on('connected', async () => {
 	await db.query(` UPDATE luulbot_info SET value = ${Date.now()} WHERE setting = 'uptime' `)
 	await db.query(` UPDATE luulbot_info SET value = 0 WHERE setting = 'command_count' `)
+	
+   channels.forEach(async (channel) => {
+    
+   let channelDB = await db.query(`SELECT * FROM luulbot_channels WHERE userchannel = '${channel}'`);
+   let { userchannel, userid, useruid, status, mode, stream_mode } = channelDB.rows[0]
+   
+   client.Channels.set(channel, { channel: userchannel, id: userid, uid: useruid, status: status, mode: mode, stream_mode: stream_mode } );
+    
+    })
 })
 
 client.on('notice', async (channel, msgid, message) => {
