@@ -4,9 +4,9 @@ const client = require('../clients/twitch.js').client;
 
 client.Channels = new Map();
 
-setInterval(async () => {
+setInterval(() => {
   
-  channels.forEach(channel => {
+  channels.forEach(async (channel) => {
     
    let channelDB = await db.query(`SELECT * FROM luulbot_channels WHERE userchannel = '${channel}'`);
    let { userchannel, userid, useruid, status, mode, stream_mode } = channelDB.rows[0]
