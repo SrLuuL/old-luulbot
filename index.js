@@ -1,5 +1,6 @@
 require('./handler.js')
 require('./events/functions.js')
+require('./events/interval_functions.js')
 require('./site.js')
 require('./twitchlt.js')
 require('./events/twitchpub.js')
