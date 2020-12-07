@@ -8,10 +8,9 @@ const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
 
 
-app.get('/comandos', async (req, res) => {
+app.get('/comandos', (req, res) => {
   
 let commandList = luulbot.commands.filter(i => i.config.level !== 'Dono');
-let channels =  await db.query(`SELECT * FROM luulbot_channels`)  
 commandList = commandList.map(i => `
 <tr>
 <td><a>=${i.config.name}</a></td>
@@ -132,7 +131,10 @@ $(document).ready(function () {
 `)
 })
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+	
+let channels =  await db.query(`SELECT * FROM luulbot_channels`)  	
+	
 res.send(`
 
 <!DOCTYPE html>
