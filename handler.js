@@ -69,13 +69,14 @@ async function handleMSG(channel, user, message, self) {
 			
 		   if (user.badges.moderator || user.badges.broadcaster) {
 			  await db.query(`UPDATE luulbot_channels SET mode='Moderador' WHERE userchannel = '${canal}'`)
-		   } else if (user.badges.vip) {
+		   } else (user.badges.vip) {
 			   await db.query(`UPDATE luulbot_channels SET mode='Vip' WHERE userchannel = '${canal}'`)		
-		   } else {
-			  await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
 		   }
 			
-		}
+			
+		}  else {
+			  await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
+		   }
 		
 	   return;
 	}
@@ -105,7 +106,9 @@ if (cmdfile) {
 		if (username !== 'srluul') return;
 		break;
 	case 'Moderador':
-		if (!user.badges.moderator || !user.badges.broadcaster || username !== 'srluul') return;
+		if (user.badges) {	
+		 if (!user.badges.moderator || !user.badges.broadcaster || username !== 'srluul') return;	
+		} else return;
 		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
