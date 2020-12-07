@@ -106,7 +106,7 @@ if (cmdfile) {
 		break;
 	case 'Moderador':
 		if (user.badges) {	
-		 if (!user.badges.moderator || !user.badges.broadcaster || username !== 'srluul') return;	
+		 if ((!user.badges.moderator) || (!user.badges.broadcaster) || (username !== 'srluul')) return;	
 		} else return;
 		break;	
 	case 'Privado':
