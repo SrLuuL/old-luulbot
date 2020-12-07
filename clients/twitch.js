@@ -24,7 +24,7 @@ client.connect()
 .catch(err => console.err(err))
 
 client.on("connected", async () => {
-  console.log(`Conectado nos canais: ${channels.join(" ")}`)
+  console.log(`Conectado nos canais: ${channels.length}`)
 });
 
 module.exports = { client }
