@@ -104,9 +104,10 @@ if (cmdfile) {
 	case 'Dono':
 		if (username !== 'srluul') return;
 		break;
-	case 'Moderador':
+	case 'Moderador':	
+		let { moderator, broadcaster } = user.badges	
 		if (user.badges) {	
-		 if ((!user.badges.moderator) || (!user.badges.broadcaster) || (username !== 'srluul')) return;	
+		 if ((!moderator || !broadcaster) || username !== 'srluul') return;	
 		} else return;
 		break;	
 	case 'Privado':
