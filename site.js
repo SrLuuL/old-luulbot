@@ -6,6 +6,7 @@ const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
+const channels =  require('../credentials/login.js').channelOptions;
 
 app.get('/comandos', (req, res) => {
   
@@ -74,9 +75,11 @@ table th {
 <li class="nav-item">
 <a class="nav-link" href="/comandos">Comandos</a>
 </li>
-</li>
 <li class="nav-item">
 <a class="nav-link" href="/suggests">Sugestões</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
 </li>
 </ul>
 </div>
@@ -170,6 +173,9 @@ color: #ffffff
 <li class="nav-item">
 <a class="nav-link" href="/suggests">Sugestões</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
+</li>
 </ul>
 </div>
 </nav>
@@ -182,7 +188,7 @@ color: #ffffff
 
 <p> LuuLBot é um simples bot capaz de realizar diversas funções, progamado por SrLuuL com Node.js </p>
 
-<p> Conectado neste momento em ${client.getChannels().length} canais! </p>
+<p> Conectado neste momento em ${channels.length} canais! </p>
 
 </div>
 
@@ -292,6 +298,9 @@ table th {
 <li class="nav-item">
 <a class="nav-link" href="/suggests">Sugestões</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
+</li>
 </ul>
 </div>
 </nav>
@@ -339,6 +348,122 @@ $(document).ready(function () {
 `)
 })
 
+app.get('/canais', async (req, res) => {
+  
+ const channelsDB = await db.query(`SELECT * FROM luulbot_channels`)
+
+ const channelsTable = channelsDB.rows.map(i => `
+
+<tr>
+<td><a>${i.userchannel}</a></td>
+<td><a>${i.mode}</a></td>
+<td><a>${i.userid}</a></td>
+</tr>
+
+`);
+ 
+  
+res.send(`
+<!DOCTYPE html>
+
+<html lang='pt' class='no-js'>
+
+<head>
+
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap5.min.css">
+<title> LuuLBot - Canais </title>
+<link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<style>
+
+body {
+background-color: #222b36;
+}
+
+table th {
+    width: auto !important;
+}
+
+#suggestsTable_wrapper {
+	padding: 10px 30px 0 30px !important;
+}
+
+</style>
+
+<nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
+<a class='navbar-brand'>LuuLBot</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/comandos">Comandos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
+</li>
+</ul>
+</div>
+</nav>
+
+
+<div class='row justify-content-center'>
+
+
+<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
+
+<thead>
+<tr>
+<td>CANAL</td>
+<td>MODO</td>
+<td>ID</td>
+</tr>
+</thead>
+
+<tbody>
+${channelsTable.join(' \n')}
+</tbody>
+</table>
+</div>
+
+<script>
+
+$(document).ready(function () {
+  $('#channelsTable').DataTable({
+        "language": {
+"url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese-Brasil.json"
+},
+       "order": [[ 2, "desc" ]],
+       "pageLength": 50
+    });
+});
+
+</script>
+
+
+</body>
+
+</html>
+`)
+})
 
 
 app.listen(PORT, () => {
