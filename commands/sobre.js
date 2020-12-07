@@ -1,9 +1,9 @@
 module.exports.run = (context) => {
 
-  let channelList = context.getChannels().length
+  let channelList = require('../credentials/login.js').channelOptions;
   
 return {
- reply: `Bot feito com Node.js, sendo hosteado atualmente na Heroku e conectado em ${channelList} canais` 
+ reply: `Bot feito com Node.js, sendo hosteado atualmente na Heroku e conectado em ${channelList.length} canais` 
 }
 
 }
