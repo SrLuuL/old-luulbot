@@ -92,7 +92,7 @@ td {
 <div class='row'>
 
 
-<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
+<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
 
 <thead>
 <tr>
@@ -315,7 +315,7 @@ table th {
 <div class='row justify-content-center'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
 
 <thead>
 <tr>
@@ -442,7 +442,7 @@ td {
 <div class='row justify-content-center'>
 
 
-<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
+<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
 
 <thead>
 <tr>
