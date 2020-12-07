@@ -104,11 +104,11 @@ if (cmdfile) {
 	case 'Dono':
 		if (username !== 'srluul') return;
 		break;
-	case 'Moderador':	
-		let { moderator, broadcaster } = user.badges	
-		if (user.badges) {	
-		 if ((!moderator || !broadcaster) || username !== 'srluul') return;	
-		} else return;
+	case 'Moderador':
+		if (user.badges) {
+		 let modStatus = user.badges.moderator || user.badges.broadcaster;	
+		 if (!modStatus) return;	
+		} else if(username !== 'srluul') return;
 		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
