@@ -63,7 +63,7 @@ table th {
 }
 
 td {
-  padding: 0.40rem !important;
+  padding: 0.60rem !important;
 }
 
 </style>
@@ -315,7 +315,7 @@ table th {
 <div class='row justify-content-center'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
 
 <thead>
 <tr>
@@ -442,7 +442,7 @@ td {
 <div class='row justify-content-center'>
 
 
-<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
+<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
 
 <thead>
 <tr>
