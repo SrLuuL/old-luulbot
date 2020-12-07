@@ -84,7 +84,9 @@ async function handleMSG(channel, user, message, self) {
 			   await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
 		   }
 			
-		}
+		}  else {
+			   await db.query(`UPDATE luulbot_channels SET mode='Viewer' WHERE userchannel = '${canal}'`)		
+		   }
 		
 	   return;
 	}
