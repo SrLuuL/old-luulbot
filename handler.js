@@ -117,7 +117,7 @@ if (cmdfile) {
 		if (user.badges) {
 		 let modStatus = user.badges.moderator || user.badges.broadcaster;	
 		 if (!modStatus) return;	
-		} else if(username !== 'srluul') return;
+		} else return;
 		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
