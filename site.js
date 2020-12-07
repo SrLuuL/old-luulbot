@@ -6,12 +6,12 @@ const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
-const channels =  await db.query(`SELECT * FROM luulbot_channels`)
 
-app.get('/comandos', (req, res) => {
+
+app.get('/comandos', async (req, res) => {
   
 let commandList = luulbot.commands.filter(i => i.config.level !== 'Dono');
-  
+let channels =  await db.query(`SELECT * FROM luulbot_channels`)  
 commandList = commandList.map(i => `
 <tr>
 <td><a>=${i.config.name}</a></td>
