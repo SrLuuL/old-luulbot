@@ -74,6 +74,8 @@ async function handleMSG(channel, user, message, self) {
 
 	if (self){
 		
+	   if(msgType === 'whisper') return;
+		
 		if (user.badges) {
 			
 		   if (user.badges.moderator || user.badges.broadcaster) {
