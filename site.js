@@ -63,6 +63,10 @@ table th {
 	padding: 10px 30px 0 30px !important;
 }
 
+td {
+  padding: 0.40rem !important;
+}
+
 </style>
 
 <nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
@@ -89,7 +93,7 @@ table th {
 <div class='row'>
 
 
-<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
+<table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable table-responsive' role='grid'>
 
 <thead>
 <tr>
