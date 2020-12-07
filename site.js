@@ -439,10 +439,10 @@ td {
 </nav>
 
 
-<div class='row justify-content-center container-fluid'>
+<div class='row justify-content-center table-responsive'>
 
 
-<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
+<table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
 
 <thead>
 <tr>
