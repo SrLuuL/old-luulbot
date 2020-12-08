@@ -198,7 +198,7 @@ async function cmdExec(cmdfile, context) {
 		
 	} catch(err) {
 		console.log(err)
-		return `${context.user.username}, comando inválido avise SrLuuL sobre isso`
+		return `${context.user.username}, comando inválido mande um suggest alertando o problema`
 	}
 }
 
