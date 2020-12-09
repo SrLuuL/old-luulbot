@@ -497,7 +497,7 @@ td {
 </nav>
 
 
-<div class='table-responsive'>
+<div>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered' role='grid'>
