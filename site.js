@@ -497,11 +497,11 @@ td {
 </nav>
 
 
-
+<div class='table-responsive'>
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered dataTable' role='grid'>
 
-<div class='table-responsive'>
+
 
 <tr>
 <td>USUÁRIO</td>
@@ -523,7 +523,7 @@ td {
 <td>ID</td>
 <td>${suggestTable.suggestid}</td>
 </tr>
-</div>
+
 
 <script>
 
@@ -535,7 +535,7 @@ $(document).ready(function () {
 
 
 </table>
-
+</div>
 
 
 </body>
