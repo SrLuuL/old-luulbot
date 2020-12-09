@@ -305,7 +305,7 @@ app.get('/suggests/', async (req, res) => {
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
 <td><a>${ms(currentTime - new Date(i.suggestdate), {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
-<td><a href='/suggests/${i.suggestid}'></a>${i.suggestid}</td>
+<td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
 </tr>
 
 `);
