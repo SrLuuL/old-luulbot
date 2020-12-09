@@ -14,7 +14,14 @@ module.exports.run = async (context) => {
   
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
-  const currentDate = new Date().toLocaleString('pt-br', {timeZone: 'America/Bahia'}) 
+const currentDate = new Date().toLocaleString('en-US', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute:'2-digit',
+    second:'2-digit'
+})
   
   await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, currentDate])
 
