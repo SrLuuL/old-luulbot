@@ -150,7 +150,7 @@ td {
 </nav>
 
 
-<div class='row table-responsive'>
+<div class='table-responsive'>
 
 
 <table id='commandsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
@@ -375,7 +375,7 @@ td {
 </nav>
 
 
-<div class='row justify-content-center table-responsive'>
+<div class='table-responsive'>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
@@ -497,7 +497,7 @@ td {
 </nav>
 
 
-<div class='row justify-content-center table-responsive'>
+<div class='table-responsive'>
 
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered' role='grid'>
@@ -517,7 +517,7 @@ td {
 </tr>
 <tr>
 <td>DETALHES</td>
-<td>${suggestTable.details}</td>
+<td>${suggestTable.details || ''}</td>
 </tr>
 <tr>
 <td>ID</td>
@@ -626,7 +626,7 @@ td {
 </nav>
 
 
-<div class='row justify-content-center table-responsive'>
+<div class='table-responsive'>
 
 
 <table id='channelsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
