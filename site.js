@@ -419,10 +419,9 @@ $(document).ready(function () {
 
 app.get('/suggests/:id', async (req, res) => {
 	
- let queryId = req.params.id,
- id = parseInt(queryId, 0);	
+ let queryId = req.params.id;
 	
- const suggestsList = await db.query(`SELECT * FROM luulbot_suggests WHERE suggestid = '${id}'`);
+ const suggestsList = await db.query(`SELECT * FROM luulbot_suggests WHERE suggestid = '${queryId}'`);
 
  if (!suggestsList.rowCount) {
 	 res.send(wrongPage)
@@ -528,7 +527,7 @@ td {
 <script>
 
 $(document).ready(function () {
-  $('#suggestsTable').DataTable()
+  $('#suggestsTable').DataTable({})
 });
 
 </script>
