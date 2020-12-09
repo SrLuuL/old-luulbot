@@ -426,7 +426,7 @@ app.get('/suggests/:id', async (req, res) => {
 
  if (!suggestsList.rowCount) {
 	 res.send(wrongPage)
- }
+ } else {
 	
 	
  const suggestTable = suggestsList.rows.map(i => `
@@ -436,7 +436,7 @@ app.get('/suggests/:id', async (req, res) => {
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
 <td><a>${i.suggestdate}</a></td>
-<td><a>${i.details}</a></td>
+<td><a>${(i.details || '')}</a></td>
 <td><a>${i.suggestid}</a></td>
 </tr>
 
@@ -534,7 +534,8 @@ ${suggestTable.join(' \n')}
 </body>
 
 </html>
-`)
+`)	 
+ }	
 })
 
 app.get('/canais', async (req, res) => {
