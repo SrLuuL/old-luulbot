@@ -429,20 +429,7 @@ app.get('/suggests/:id', async (req, res) => {
  } else {
 	
 	
- const suggestTable = suggestsList.rows.map(i => `
-
-<tr>
-<td><a>${i.userchannel}</a></td>
-<td><a>${i.usersuggest}</a></td>
-<td><a>${i.status}</a></td>
-<td><a>${i.suggestdate}</a></td>
-<td><a>${(i.details || '')}</a></td>
-<td><a>${i.suggestid}</a></td>
-</tr>
-
-`);
-	
-	
+ const suggestTable = suggestsList.rows[0];
  
   
 res.send(`
@@ -513,20 +500,31 @@ td {
 
 <table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
 
-<thead>
+
 <tr>
 <td>USUÁRIO</td>
-<td>SUGESTÃO</td>
-<td>STATUS</td>
-<td>DATA</td>
-<td>DETALHES</td>
-<td>ID</td>
+<td>${suggestTable.userchannel}</td>
 </tr>
-</thead>
+<tr>
+<td>SUGESTÃO</td>
+<td>${suggestTable.usersuggest}</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>${suggestTable.status}</td>
+</tr>
+<tr>
+<td>DETALHES</td>
+<td>${suggestTable.details}</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>${suggestTable.suggestid}</td>
+</tr>
 
-<tbody>
-${suggestTable.join(' \n')}
-</tbody>
+
+
+
 </table>
 </div>
 
