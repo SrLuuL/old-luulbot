@@ -520,9 +520,14 @@ td {
 <td>${suggestTable.details || ''}</td>
 </tr>
 <tr>
+<td>DATA</td>
+<td>${suggestTable.suggestdate}</td>
+</tr>
+<tr>
 <td>ID</td>
 <td>${suggestTable.suggestid}</td>
 </tr>
+
 
 
 <script>
