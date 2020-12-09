@@ -447,7 +447,8 @@ res.send(`
 <title> LuuLBot - Sugestões </title>
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 
 
 </head>
@@ -523,7 +524,13 @@ td {
 <td>${suggestTable.suggestid}</td>
 </tr>
 
+<script>
 
+$(document).ready(function () {
+  $('#suggestsTable').DataTable()
+});
+
+</script>
 
 
 </table>
