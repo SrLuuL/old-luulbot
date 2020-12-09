@@ -465,7 +465,7 @@ table th {
     width: auto !important;
 }
 
-#suggestsTable_wrapper {
+.table-responsive {
 	padding: 10px 30px 0 30px !important;
 }
 
