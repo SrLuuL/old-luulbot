@@ -378,7 +378,7 @@ td {
 <div class='row justify-content-center table-responsive'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable' role='grid'>
 
 <thead>
 <tr>
@@ -443,6 +443,7 @@ res.send(`
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap5.min.css">
 <title> LuuLBot - Sugestões </title>
 <link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -498,7 +499,7 @@ td {
 <div class='row justify-content-center table-responsive'>
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered' role='grid'>
 
 
 <tr>
