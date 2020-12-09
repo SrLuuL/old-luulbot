@@ -7,6 +7,67 @@ const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
 
+const wrongPage = `
+<!DOCTYPE html>
+
+<html lang='pt' class='no-js'>
+
+<head>
+
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+<title> LuuLBot - Sugestões </title>
+<link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
+
+
+
+</head>
+
+<body>
+
+<style>
+
+body {
+background-color: #222b36;
+}
+
+</style>
+
+<nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
+<a class='navbar-brand'>LuuLBot</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
+</li>
+</ul>
+</div>
+</nav>
+
+
+<div class='row justify-content-center'>
+
+<h4> Erro 404 - Página Inválida </h4>
+
+</div>
+
+</body>
+
+</html>
+`
+
 
 app.get('/comandos', (req, res) => {
   
@@ -232,9 +293,10 @@ color: #ffffff
 `)
 })
 
-app.get('/suggests', async (req, res) => {
+app.get('/suggests/', async (req, res) => {
+	
   
- const suggestsList = await db.query('SELECT userchannel, usersuggest, status, suggestdate, suggestid FROM luulbot_suggests ORDER BY suggestid DESC');
+ const suggestsList = await db.query('SELECT * FROM luulbot_suggests ORDER BY suggestid DESC');
  const currentTime  = new Date(new Date().toLocaleString('pt-br', {timeZone: 'America/Bahia'}));
  const suggestTable = suggestsList.rows.map(i => `
 
@@ -280,9 +342,6 @@ body {
 background-color: #222b36;
 }
 
-table th {
-    width: auto !important;
-}
 
 #suggestsTable_wrapper {
 	padding: 10px 30px 0 30px !important;
@@ -350,6 +409,126 @@ $(document).ready(function () {
 });
 
 </script>
+
+
+</body>
+
+</html>
+`)
+})
+
+app.get('/suggests/:id', async (req, res) => {
+	
+ let queryId = req.params.id,
+ id = parseInt(queryId, 0);	
+	
+ const suggestsList = await db.query(`SELECT * FROM luulbot_suggests WHERE suggestid = '${id}'`);
+
+ if (!suggestsList.rowCount) {
+	 res.send(wrongPage)
+ }
+	
+	
+ const suggestTable = suggestsList.rows.map(i => `
+
+<tr>
+<td><a>${i.userchannel}</a></td>
+<td><a>${i.usersuggest}</a></td>
+<td><a>${i.status}</a></td>
+<td><a>${i.suggestdate}</a></td>
+<td><a>${i.details}</a></td>
+<td><a>${i.suggestid}</a></td>
+</tr>
+
+`);
+	
+	
+ 
+  
+res.send(`
+<!DOCTYPE html>
+
+<html lang='pt' class='no-js'>
+
+<head>
+
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+<title> LuuLBot - Sugestões </title>
+<link rel='icon' href='https://cdn.frankerfacez.com/010a6a6829cfe953dbe1958557424bc4.png'>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<style>
+
+body {
+background-color: #222b36;
+}
+
+table th {
+    width: auto !important;
+}
+
+#suggestsTable_wrapper {
+	padding: 10px 30px 0 30px !important;
+}
+
+td {
+  padding: 0.55rem !important;
+}
+
+</style>
+
+<nav class='navbar navbar-expand navbar-dark bg-dark  navbar-fixed-top'>
+<a class='navbar-brand'>LuuLBot</a>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/comandos">Comandos</a>
+</li>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/suggests">Sugestões</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/canais">Canais</a>
+</li>
+</ul>
+</div>
+</nav>
+
+
+<div class='row justify-content-center table-responsive'>
+
+
+<table id='suggestsTable' class='table table-dark table-striped table-bordered  dataTable no-footer' role='grid'>
+
+<thead>
+<tr>
+<td>USUÁRIO</td>
+<td>SUGESTÃO</td>
+<td>STATUS</td>
+<td>DATA</td>
+<td>DETALHES</td>
+<td>ID</td>
+</tr>
+</thead>
+
+<tbody>
+${suggestTable.join(' \n')}
+</tbody>
+</table>
+</div>
 
 
 </body>
