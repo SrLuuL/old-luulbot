@@ -499,7 +499,7 @@ td {
 
 
 
-<table id='suggestsTable' class='table table-dark table-striped table-bordered' role='grid'>
+<table id='suggestsTable' class='table table-dark table-striped table-bordered dataTable' role='grid'>
 
 <div class='table-responsive'>
 
