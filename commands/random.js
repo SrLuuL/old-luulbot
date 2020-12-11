@@ -5,7 +5,7 @@ const translateapi = require('@kaysilvn/google-translate-api');
 const translate = new translateapi().translate;
 const fetch = require('node-fetch');
   
-const randName = await (await fetch('http://gerador-nomes.herokuapp.com/nomes/1')).json();  
+const randName = await (await fetch('http://www.wjr.eti.br/nameGenerator/index.php?q=1&o=json')).json();  
   
 async function getRandomHex() {
   
@@ -30,7 +30,7 @@ switch(context.args[0]) {
     return { reply: `#${randomHex}` }
     break;
   case 'name':
-    return { reply: `${randName}` }
+    return { reply: `${randName[0]}` }
     break;
   default:
     return { reply: 'categorias disponíveis: hex/name' }
