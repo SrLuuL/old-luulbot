@@ -673,6 +673,10 @@ $(document).ready(function () {
 })
 
 
+app.use((res,req) => {
+	res.redirect(wrongPage)
+});
+
 app.listen(PORT, () => {
 console.log('Servidor rolando!')
 })
