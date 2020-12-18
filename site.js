@@ -673,7 +673,7 @@ $(document).ready(function () {
 })
 
 
-app.use((req,res) => {
+app.get((req,res) => {
   res.redirect(wrongPage)
 });
 
