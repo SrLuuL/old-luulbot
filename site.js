@@ -673,8 +673,8 @@ $(document).ready(function () {
 })
 
 
-app.get((req,res) => {
-  res.redirect(wrongPage)
+app.get('/*', (req,res) => {
+  res.send(wrongPage)
 });
 
 app.listen(PORT, () => {
