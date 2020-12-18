@@ -673,8 +673,8 @@ $(document).ready(function () {
 })
 
 
-app.use((res,req) => {
-	res.redirect(wrongPage)
+app.use((req,res) => {
+  res.redirect(wrongPage)
 });
 
 app.listen(PORT, () => {
