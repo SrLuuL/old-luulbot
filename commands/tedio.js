@@ -1,5 +1,6 @@
 module.exports.run = async () => {
 
+   try {
 const fetch = require("node-fetch");
 const translateapi = require("@kaysilvn/google-translate-api");
 const translate = new translateapi().translate;
@@ -15,6 +16,10 @@ return {
  reply: `${randomEmoji} ${res2}` 
 }
 
+   } catch() {
+    return { reply: `sem atividades no momento O_o `} 
+   }
+     
 }
 
 module.exports.config = {
