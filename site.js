@@ -521,7 +521,7 @@ td {
 </tr>
 <tr>
 <td>DATA</td>
-<td>${new Date(suggestTable.suggestdate)}</td>
+<td>${suggestTable.suggestdate}</td>
 </tr>
 <tr>
 <td>ID</td>
