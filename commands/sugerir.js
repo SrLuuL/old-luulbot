@@ -14,7 +14,7 @@ module.exports.run = async (context) => {
   
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
-const currentDate = new Date().toLocaleString('en-US', {
+const currentDate = new Date().toLocaleString('pt-BR', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
