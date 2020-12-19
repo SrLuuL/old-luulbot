@@ -16,7 +16,7 @@ return {
  reply: `${randomEmoji} ${res2}` 
 }
 
-   } catch() {
+   } catch(e) {
     return { reply: `sem atividades no momento O_o `} 
    }
      
