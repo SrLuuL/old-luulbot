@@ -23,7 +23,7 @@ const currentDate = new Date().toLocaleString('en-US', {
     second:'2-digit'
 })
   
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, currentDate])
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
    reply: `sugestão anotada :D 📝 (ID: ${suggestTotal})` 
