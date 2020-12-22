@@ -55,7 +55,7 @@ name: "bancheck",
 aliases: ["banchk"],
 description: "Verifica se um usuário está banido em algum canal",
 usage: "bancheck [user] [user2]",
-level: 'Todos',
+level: 'Dono',
 cooldown: 5000
 }
 
