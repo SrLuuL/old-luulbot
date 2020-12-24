@@ -1,6 +1,7 @@
 module.exports.run = async (context) => {
 
   const db = require("../clients/database.js").db
+  const moment = require('moment');
   
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
   
@@ -14,14 +15,7 @@ module.exports.run = async (context) => {
   
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
-const currentDate = new Date().toLocaleString('pt-BR', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute:'2-digit',
-    second:'2-digit'
-})
+ const currentDate = moment().locale('pt');
   
   await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
