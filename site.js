@@ -522,7 +522,7 @@ td {
 </tr>
 <tr>
 <td>DATA</td>
-<td>${moment(suggestTable.suggestdate).locale('pt').format('LLL')}</td>
+<td>${moment(suggestTable.suggestdate).locale('pt').format('LLLL')}</td>
 </tr>
 <tr>
 <td>ID</td>
