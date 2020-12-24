@@ -6,6 +6,7 @@ const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
+const moment = require('moment');
 
 const wrongPage = `
 <!DOCTYPE html>
