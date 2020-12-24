@@ -304,7 +304,7 @@ app.get('/suggests/', async (req, res) => {
 <td><a>${i.userchannel}</a></td>
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
-<td><a>${ms(currentTime - i.suggestdate, {unitCount: 2, secondsDecimalDigits: 0})} atrás</a></td>
+<td><a>${moment(i.suggestdate).locale('pt').fromNow()} atrás</a></td>
 <td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
 </tr>
 
@@ -521,7 +521,7 @@ td {
 </tr>
 <tr>
 <td>DATA</td>
-<td>${suggestTable.suggestdate}</td>
+<td>${moment(suggestTable.suggestdate).locale('pt').format('LLL')}</td>
 </tr>
 <tr>
 <td>ID</td>
