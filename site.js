@@ -6,7 +6,7 @@ const luulbot = require('./clients/discord.js').luulbot;
 const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
-const moment = require('moment');
+const moment = require('moment-timezone');
 
 
 const wrongPage = `
@@ -306,7 +306,7 @@ app.get('/suggests/', async (req, res) => {
 <td><a>${i.userchannel}</a></td>
 <td><a>${i.usersuggest}</a></td>
 <td><a>${i.status}</a></td>
-<td><a>${moment(i.suggestdate).utcOffset(-180).locale('pt').fromNow()} atrás</a></td>
+<td><a>${moment.tz(i.suggestdate, 'America/Bahia').locale('pt').fromNow()} atrás</a></td>
 <td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
 </tr>
 
@@ -524,7 +524,7 @@ td {
 </tr>
 <tr>
 <td>DATA</td>
-<td>${moment(suggestTable.suggestdate).locale('pt').format('LLLL')}</td>
+<td>${moment.tz(suggestTable.suggestdate, 'America/Bahia').locale('pt').format('LLLL')}</td>
 </tr>
 <tr>
 <td>ID</td>
