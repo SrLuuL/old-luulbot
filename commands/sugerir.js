@@ -2,7 +2,7 @@ module.exports.run = async (context) => {
 
   const db = require("../clients/database.js").db
   const moment = require('moment');
-  const xss  = require('xss')
+
 
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
   
@@ -17,9 +17,12 @@ module.exports.run = async (context) => {
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
  const currentDate = moment().locale('pt');
- const filterSuggest  = await xss(context.args.join(' '));
+ const fillteredSuggest = context.args.join(' ')
+ .replace(/</g, '&lt;')
+ .replace(/>/g, '&gt;');
+ 
 
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, filterSuggest, context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
    reply: `sugestão anotada :D 📝 (ID: ${suggestTotal})` 
