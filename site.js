@@ -7,6 +7,7 @@ const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
 const moment = require('moment');
+const xss = require('xss');
 
 const wrongPage = `
 <!DOCTYPE html>
@@ -303,7 +304,7 @@ app.get('/suggests/', async (req, res) => {
 
 <tr>
 <td><a>${i.userchannel}</a></td>
-<td><a>${i.usersuggest}</a></td>
+<td><a>${xss(i.usersuggest)}</a></td>
 <td><a>${i.status}</a></td>
 <td><a>${moment(i.suggestdate).locale('pt').fromNow()} atrás</a></td>
 <td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
@@ -510,7 +511,7 @@ td {
 </tr>
 <tr>
 <td>SUGESTÃO</td>
-<td>${suggestTable.usersuggest}</td>
+<td>${xss(suggestTable.usersuggest)}</td>
 </tr>
 <tr>
 <td>STATUS</td>
