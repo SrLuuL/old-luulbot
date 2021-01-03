@@ -7,7 +7,7 @@ const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
 const moment = require('moment');
-const xss = require('xss');
+const sani  = require('sanitizer')
 
 const wrongPage = `
 <!DOCTYPE html>
@@ -301,10 +301,10 @@ app.get('/suggests/', async (req, res) => {
  const suggestsList = await db.query('SELECT * FROM luulbot_suggests ORDER BY suggestid DESC');
  const currentTime  = new Date(new Date().toLocaleString('pt-br', {timeZone: 'America/Bahia'}));
  const suggestTable = suggestsList.rows.map(i => `
- const suggestK  = xss(i.usersuggest);
+ 
 <tr>
 <td><a>${i.userchannel}</a></td>
-<td><a>${suggestK}</a></td>
+<td><a>${sani.sanitize(i.suggest)}</a></td>
 <td><a>${i.status}</a></td>
 <td><a>${moment(i.suggestdate).locale('pt').fromNow()} atrás</a></td>
 <td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
@@ -431,7 +431,7 @@ app.get('/suggests/:id', async (req, res) => {
 	
 	
  const suggestTable = suggestsList.rows[0];
- const suggestK = xss(suggestTable.usersuggest);
+ 
  
   
 res.send(`
@@ -512,7 +512,7 @@ td {
 </tr>
 <tr>
 <td>SUGESTÃO</td>
-<td>${suggestK}</td>
+<td>${sani.sanitize(suggestTable.suggest)}</td>
 </tr>
 <tr>
 <td>STATUS</td>
