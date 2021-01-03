@@ -304,7 +304,7 @@ app.get('/suggests/', async (req, res) => {
  
 <tr>
 <td><a>${i.userchannel}</a></td>
-<td><a>${sani.sanitize(i.suggest)}</a></td>
+<td><a>${sani.escape(i.suggest)}</a></td>
 <td><a>${i.status}</a></td>
 <td><a>${moment(i.suggestdate).locale('pt').fromNow()} atrás</a></td>
 <td><a href='/suggests/${i.suggestid}'>${i.suggestid}</a></td>
@@ -512,7 +512,7 @@ td {
 </tr>
 <tr>
 <td>SUGESTÃO</td>
-<td>${sani.sanitize(suggestTable.suggest)}</td>
+<td>${sani.escape(suggestTable.suggest)}</td>
 </tr>
 <tr>
 <td>STATUS</td>
