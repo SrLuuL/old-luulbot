@@ -17,8 +17,9 @@ module.exports.run = async (context) => {
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
  const currentDate = moment().locale('pt');
-  
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, sani.escape(context.args.join(' ')), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
+ const filterSuggest  = await sani.escape(context.args.join(' '));
+
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, filterSuggest, context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
    reply: `sugestão anotada :D 📝 (ID: ${suggestTotal})` 
