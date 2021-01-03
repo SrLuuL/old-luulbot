@@ -1,7 +1,7 @@
 module.exports.run = async (context) => {
 
   const db = require("../clients/database.js").db
-  const moment = require('moment');
+  const moment = require('moment-timezone');
 
 
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
@@ -16,7 +16,7 @@ module.exports.run = async (context) => {
   
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
- const currentDate = moment().utcOffset(-180).locale('pt');
+ const currentDate = moment.tz(new Date(), 'America/Bahia').locale('pt').format('YYYY-MM-DDTHH:mm:ss');
  const fillteredSuggest = context.args.join(' ')
  .replace(/</g, '&lt;')
  .replace(/>/g, '&gt;');
