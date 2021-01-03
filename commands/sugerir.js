@@ -2,7 +2,8 @@ module.exports.run = async (context) => {
 
   const db = require("../clients/database.js").db
   const moment = require('moment');
-  
+  const sani  = require('sanitizer')
+
   const total = await db.query(`SELECT suggestid FROM luulbot_suggests ORDER BY suggestid ASC `);
   
   let suggestTotal = total.rows.pop();
@@ -17,7 +18,7 @@ module.exports.run = async (context) => {
   
  const currentDate = moment().locale('pt');
   
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, context.args.join(' '), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, sani.escape(context.args.join(' ')), context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
    reply: `sugestão anotada :D 📝 (ID: ${suggestTotal})` 
