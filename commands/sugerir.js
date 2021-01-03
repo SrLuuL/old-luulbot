@@ -16,7 +16,7 @@ module.exports.run = async (context) => {
   
   if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
   
- const currentDate = moment().locale('pt');
+ const currentDate = moment().utcOffset(-180).locale('pt');
  const fillteredSuggest = context.args.join(' ')
  .replace(/</g, '&lt;')
  .replace(/>/g, '&gt;');
