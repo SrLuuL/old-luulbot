@@ -61,6 +61,8 @@ background-color: #222b36;
 
 <div class='row justify-content-center'>
 
+<hr>
+
 <h4> Erro 404 - Página Inválida </h4>
 
 </div>
