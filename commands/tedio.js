@@ -13,7 +13,7 @@ const emojiList = ['🤔', '😀', '⭐️', '🕒', '🔮', '⌛️', '💡', '
 const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
 
 if(res2 === 'Cor') {
- return { reply: `${randomEmoji} Colorir` }  
+ return { reply: `${randomEmoji} Colorir desenhos/figuras` }  
 }
       
       
