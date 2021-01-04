@@ -65,7 +65,6 @@ padding: 100px;
 
 <div class='row justify-content-center'>
 
-<hr>
 
 <h4> Erro 404 - Página Inválida </h4>
 
