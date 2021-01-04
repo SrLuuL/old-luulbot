@@ -8,7 +8,7 @@ let user;
 
 const {args, user: username, channel} = context  
  
-if(!channel && !args[0]) {
+if(!channel || !args[0]) {
   return { reply: 'insira pelo menos um usuário :/' }
 }
 
