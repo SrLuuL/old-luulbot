@@ -74,7 +74,9 @@ padding: 100px;
 
 </html>
 `
-
+app.get('/status', (req, res) => {
+    res.send({status: 200, online: true})
+});
 
 app.get('/comandos', (req, res) => {
   
