@@ -6,7 +6,7 @@ const trivia = {
 module.exports.run = async (context) => {
 
   const {user, args, client, channel} = context;
-  const triviaLength = args[1];
+  let triviaLength = args[1] || 1;
   const questions = require('../data/trivia.json');
   const db = require('../clients/database.js').db;
   const compare = require('compare-strings');
@@ -15,7 +15,20 @@ const sleep = (ms) => {
   return new Promise(res => setTimeout(res, ms));
 }
   
-async function triviaStart(questions) {
+if(!args[0]) {
+  return { reply: 'Comece ou termine uma trivia com: trivia [start/off]' }
+}
+  
+if (isNaN(triviaLength)) {
+  return { reply: 'Número de trivias inválido :/' }
+} else {
+  if(triviaLength < 1 || triviaLength > 100) {
+    return { reply: 'Máximo: 100 | Mínimo: 1' }
+  }
+}
+  
+
+async function triviaStart() {
   
   if (args[0] === 'start' && !trivia.running) {
     
