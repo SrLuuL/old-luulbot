@@ -47,7 +47,7 @@ async function triviaStart() {
         const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
         const {category, question, answer} = randomQuestion;
         
-        await client.say(channel, `[${i+1}/${triviaLength}] | Pergunta: ${question} | Categoria: ${category}`)
+        await client.say(channel, `[${i+1}/${triviaLength}] | ${question} | Categoria: ${category}`)
         
         const done = new Promise(res => {
           
@@ -99,7 +99,8 @@ async function triviaStart() {
 }
 
   return { 
-    reply: triviaStart() 
+    mode: 'event',
+    reply: await triviaStart() 
   }
   
 }
