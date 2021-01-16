@@ -68,12 +68,12 @@ async function triviaStart() {
             client.removeListener('message', triviaVerifier);
             client.say(channel, `${user.username} acertou! | Resposta: ${answer}`);
             
-            const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user = '${user.username}'`);
+            const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${user.username}'`);
             
             if (!triviaDB.rowCount) {
-            await db.query(`INSERT INTO luulbot_trivia(user, user_id, user_points) VALUES($1, $2, $3) WHERE user = '${user.username}'`, [user.username, user['user-id'], 1])
+            await db.query(`INSERT INTO luulbot_trivia(user, user_id, user_points) VALUES($1, $2, $3) WHERE user_name = '${user.username}'`, [user.username, user['user-id'], 1])
             } else {
-            await db.query(`INSERT INTO luulbot_trivia(user_points) VALUES(user_points+1) WHERE user = '${user.username}'`)
+            await db.query(`INSERT INTO luulbot_trivia(user_points) VALUES(user_points+1) WHERE user_name = '${user.username}'`)
             }
             res() 
             
