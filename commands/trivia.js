@@ -1,6 +1,6 @@
 const trivia = {
   running: false,
-  stopped: true
+  stopped: true,
 }
 
 module.exports.run = async (context) => {
@@ -34,6 +34,7 @@ async function triviaStart() {
     
     trivia.running = true;
     trivia.stopped = false;
+    trivia.channel = channel;
     
     try {
       
@@ -58,8 +59,8 @@ async function triviaStart() {
           
           const triviaVerifier = async (channel, user, message) => {
             
-            const similar = compare(message, answer);
-            
+            if(trivia.channel !== channel) return;
+            const similar = compare(message, answer[0]);
             if (similar < 0.9) return;
             
             clearTimeout(timer)
