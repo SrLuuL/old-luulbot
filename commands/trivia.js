@@ -95,6 +95,8 @@ async function triviaStart() {
       
       } else if(args[0] === 'off') {
         trivia.stopped = true
+      } else {
+        client.say(channel, 'Comece ou termine uma trivia com: trivia [start/off]')
       }
 }
 
