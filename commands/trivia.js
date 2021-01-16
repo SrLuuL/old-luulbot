@@ -83,14 +83,16 @@ async function triviaStart() {
         await done;
         await sleep(7000)
         
+      }
+        
       } finally {
         client.say(channel, 'Trivia acabou :Z');
         trivia.running = false
+      }
+      
       } else if(args[0] === 'off') {
         trivia.stopped = true
       }
-  }
-  
 }
 
   return { 
