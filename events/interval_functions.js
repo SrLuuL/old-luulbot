@@ -1,6 +1,9 @@
 const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
 const client = require('../clients/twitch.js').client;
+const fetch = require('node-fetch');
+
+// Insert data in all conected channels
 
 client.Channels = new Map();
 
@@ -15,6 +18,19 @@ setInterval(() => {
     
   })
   
-  
-  
 }, 1800000)
+
+
+// Keep the bot alive
+
+setInterval(async () => {
+  let server;
+  
+  try {
+  server = await (await fetch('https://luulbot.herokuapp.com/status')).json();
+  } catch(e) {
+    console.warn(`Um erro aconteceu ao pingar o server: ${e.message}`); 
+  }
+  
+}, 20*60*1000)
+
