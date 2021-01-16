@@ -3,17 +3,20 @@ module.exports.run = async (context) => {
 const db = require('../clients/database.js').db;
 const {args, user} = context;
  
-const sender = (args[0]) ? args[0] : user.username;
+let sender = (args[0]) ? args[0].toLowerCase() : user.username.toLowerCase();
 const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${sender}'`);
-
+const triviaTopDB =  await db.query(`SELECT * FROM luulbot_trivia ORDER BY user_points DESC`);
+ 
 if(sender === 'top') {
  return { reply: 'Leaderboard em construção 🔧 ' }
 }
+
+sender = (sender === user.username) ? 'você' : sender; 
  
 if (!triviaDB.rowCount) {
- return { reply: 'Você não acertou nenhuma trivia :/' }
+ return { reply: `${sender} não acertou nenhuma trivia`}
 } else {
- return { reply: `você já acertou ${triviaDB.rows[0].user_points} trivia(s)! [${triviaDB.rows.findIndex(i => i['user_name'] === sender) + 1}° Lugar]` }
+ return { reply: `${sender} já acertou ${triviaDB.rows[0].user_points} trivia(s)! [${(triviaTopDB.rows.findIndex(i => i['user_name'] === sender) + 1)}° Lugar]` }
  }
 
 }
