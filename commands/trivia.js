@@ -43,7 +43,7 @@ async function triviaStart() {
           break
         }
         
-        const randomQuestion = questions[(Math.random() * questions.length)];
+        const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
         const {category, question, answer} = randomQuestion;
         
         await client.say(channel, `[${i}/${triviaLength}] | Pergunta: ${question} | Categoria: ${category}`)
