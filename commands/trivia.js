@@ -46,7 +46,7 @@ async function triviaStart() {
         const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
         const {category, question, answer} = randomQuestion;
         
-        await client.say(channel, `[${i}/${triviaLength}] | Pergunta: ${question} | Categoria: ${category}`)
+        await client.say(channel, `[${i+1}/${triviaLength}] | Pergunta: ${question} | Categoria: ${category}`)
         
         const done = new Promise(res => {
           
@@ -56,15 +56,15 @@ async function triviaStart() {
           }, 15000)
           
           
-          client.addEventListener('message', async function triviaVerifier(channel, user, message){
-                                 
+          const triviaVerifier = async (channel, user, message) => {
+            
             const similar = compare(message, answer);
             
             if (similar < 0.9) return;
             
             clearTimeout(timer)
             
-            client.removeEventListener('message', triviaVerifier(channel, user, message));
+            client.removeEventListener('message', triviaVerifier);
             client.say(channel, `${user.username} acertou! | Resposta: ${answer}`);
             
             const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user = '${user.username}'`);
@@ -74,9 +74,11 @@ async function triviaStart() {
             } else {
             await db.query(`INSERT INTO luulbot_trivia(user_points) VALUES(user_points+1) WHERE user = '${user.username}'`)
             }
-            res()            
-                                 
-            })
+            res() 
+            
+          }
+          
+            client.addEventListener('message', triviaVerifier)
           
         })
         
