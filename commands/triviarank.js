@@ -11,12 +11,14 @@ if(sender === 'top') {
  return { reply: 'Leaderboard em construção 🔧 ' }
 }
 
+let triviaPlace =  triviaTopDB.rows.findIndex(i => i.user_name === sender);
+ 
 sender = (sender === user.username) ? 'você' : sender; 
  
 if (!triviaDB.rowCount) {
  return { reply: `${sender} não acertou nenhuma trivia`}
 } else {
- return { reply: `${sender} já acertou ${triviaDB.rows[0].user_points} trivia(s)! [${(triviaTopDB.rows.findIndex(i => i['user_name'] === sender) + 1)}° Lugar]` }
+ return { reply: `${sender} já acertou ${triviaDB.rows[0].user_points} trivia(s)! [${triviaPlace + 1}° Lugar]` }
  }
 
 }
