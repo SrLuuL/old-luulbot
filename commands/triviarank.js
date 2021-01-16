@@ -5,10 +5,14 @@ const {args, user} = context;
  
 let sender = (args[0]) ? args[0].toLowerCase() : user.username.toLowerCase();
 const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${sender}'`);
-const triviaPlaceDB = await db.query(`SELECT ROW_NUMBER() OVER(ORDER BY user_points DESC) AS Rank, user_points FROM luulbot_trivia`) 
+const triviaPlaceDB = await db.query(`SELECT ROW_NUMBER() OVER(ORDER BY user_points DESC) AS Rank, user_points FROM luulbot_trivia`);
+const triviaTopDB =  await db.query(`SELECT * FROM luulbot_trivia ORDER BY user_points DESC LIMIT 5`);
+ 
+const emojis = ['🏆', '🥈', '🥉', '🎖️', '🎖️'] 
  
 if(sender === 'top') {
- return { reply: 'Leaderboard em construção 🔧 ' }
+ const leaderboard = triviaTopDB.rows.map((i,f) => `${f+1}#${emojis[f]} ${i['user_name']}`);
+ return { reply: `Top 5: ${leaderboard.join(', ')`}
 }
 
  
