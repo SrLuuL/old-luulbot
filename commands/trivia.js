@@ -30,6 +30,8 @@ if (isNaN(triviaLength)) {
 
 async function triviaStart() {
   
+ 
+  
   if (args[0] === 'start' && !trivia.running) {
     
     trivia.running = true;
