@@ -71,9 +71,9 @@ async function triviaStart() {
             const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${user.username}'`);
             
             if (!triviaDB.rowCount) {
-            await db.query(`INSERT INTO luulbot_trivia(user_name, user_id, user_points) VALUES($1, $2, $3) WHERE user_name = '${user.username}'`, [user.username, user['user-id'], 1])
+            await db.query(`INSERT INTO luulbot_trivia(user_name, user_id, user_points) VALUES($1, $2, $3)`, [user.username, user['user-id'], 1])
             } else {
-            await db.query(`INSERT INTO luulbot_trivia(user_points) VALUES(user_points+1) WHERE user_name = '${user.username}'`)
+            await db.query(`UPDATE luulbot_trivia SET user_points = user_points+1 WHERE user_name = '${user.username}'`)
             }
             res() 
             
