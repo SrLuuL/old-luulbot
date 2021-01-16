@@ -64,7 +64,7 @@ async function triviaStart() {
             
             clearTimeout(timer)
             
-            client.removeEventListener('message', triviaVerifier);
+            client.removeListener('message', triviaVerifier);
             client.say(channel, `${user.username} acertou! | Resposta: ${answer}`);
             
             const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user = '${user.username}'`);
@@ -78,7 +78,7 @@ async function triviaStart() {
             
           }
           
-            client.addEventListener('message', triviaVerifier)
+            client.addListener('message', triviaVerifier)
           
         })
         
