@@ -97,6 +97,7 @@ async function triviaStart() {
       
       } else if(args[0] === 'off') {
         trivia.stopped = true
+      }
 }
 
   return { 
