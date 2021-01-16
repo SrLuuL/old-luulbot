@@ -99,7 +99,7 @@ async function triviaStart() {
 }
 
   return { 
-    reply: await triviaStart() 
+    reply: triviaStart() 
   }
   
 }
