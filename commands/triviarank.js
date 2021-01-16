@@ -8,10 +8,10 @@ const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = 
 const triviaPlaceDB = await db.query(`SELECT ROW_NUMBER() OVER(ORDER BY user_points DESC) AS Rank, user_points FROM luulbot_trivia`);
 const triviaTopDB =  await db.query(`SELECT * FROM luulbot_trivia ORDER BY user_points DESC LIMIT 5`);
  
-const emojis = ['🏆', '🥈', '🥉', '🎖️', '🎖️'] 
+const emojis = ['🥇', '🥈', '🥉', '🎖️', '🎖️'] 
  
 if(sender === 'top') {
- const leaderboard = triviaTopDB.rows.map((i,f) => `${f+1}#${emojis[f]} ${i['user_name']}`);
+ const leaderboard = triviaTopDB.rows.map((i,f) => `${emojis[f]} ${i['user_name']}`);
  return { reply: `Top 5: ${leaderboard.join(', ')}`}
 }
 
