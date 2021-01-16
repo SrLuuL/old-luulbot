@@ -11,7 +11,7 @@ if(sender === 'top') {
  return { reply: 'Leaderboard em construção 🔧 ' }
 }
 
-let triviaPlace =  triviaTopDB.rows.findIndex(i => i.user_name === sender);
+let triviaPlace =  triviaTopDB.rows.indexOf(sender);
  
 sender = (sender === user.username) ? 'você' : sender; 
  
