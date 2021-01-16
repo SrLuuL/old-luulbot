@@ -11,8 +11,8 @@ const triviaTopDB =  await db.query(`SELECT * FROM luulbot_trivia ORDER BY user_
 const emojis = ['👑', '🥈', '🥉', '🎖️', '🎖️'] 
  
 if(sender === 'top') {
- const leaderboard = triviaTopDB.rows.map((i,f) => `${emojis[f]} ${i['user_name']}`);
- return { reply: `Top 5: ${leaderboard.join(' ')}`}
+ const leaderboard = triviaTopDB.rows.map((i,f) => `${emojis[f]} ${i['user_name']}(${i['user_points']})`);
+ return { reply: `Top 5 trivia : ${leaderboard.join(' ')}`}
 }
 
  
