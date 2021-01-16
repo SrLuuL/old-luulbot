@@ -18,7 +18,7 @@ if (!triviaDB.rowCount) {
  return { reply: `${sender} não acertou nenhuma trivia`}
 } else {
  let triviaPoints = triviaDB.rows[0].user_points;
- let triviaPlace =  triviaPlaceDB.find(i => i['user_points'] === triviaPoints).rank;
+ let triviaPlace =  triviaPlaceDB.rows.find(i => i['user_points'] === triviaPoints).rank;
  return { reply: `${sender} já acertou ${triviaPoints} trivia(s)! [${triviaPlace + 1}° Lugar]` }
  }
 
