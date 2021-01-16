@@ -191,7 +191,8 @@ async function cmdExec(cmdfile, context) {
         let cmdRun = await cmdfile.run(context);
         let cmdReply  = cmdRun.reply
 	
-	if(cmdRun.mode === 'say') return `${cmdReply}`
+	if(cmdRun.mode === 'say') return `${cmdReply}`;
+	if(cmdRun.mode === 'event') return;
 
 		
 	return `${context.user.username}, ${cmdReply}`
