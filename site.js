@@ -7,7 +7,7 @@ const client = require('./clients/twitch.js').client;
 const db = require('./clients/database.js').db;
 const ms = require('pretty-ms');
 const moment = require('moment-timezone');
-
+const fetch = require('node-fetch');
 
 const wrongPage = `
 <!DOCTYPE html>
@@ -76,6 +76,38 @@ padding: 100px;
 `
 app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
+});
+
+app.get('/api/stream/:channel', async (req, res) => {
+    let channelSender = req.params.channel;
+    
+   if(!channelSender) {
+	   return res.send({status:404, error: 'Provide a channel that is streaming'});
+   }
+	
+    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}`
+  })
+  })).json();
+  
+ if(!gqlFetch.data.user) {
+	return  res.send({status:404, error: 'This channel does not exist'});
+ }
+ 
+ if(!gqlFetch.data.user.stream) {
+	return  res.send({status:404, error: 'This channel is not streaming'});
+ }
+
+res.send({status:200, stream: gqlFetch.data.user.stream})	
+	
 });
 
 app.get('/comandos', (req, res) => {
