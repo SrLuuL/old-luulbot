@@ -2914,11 +2914,6 @@
    "question": "Que físico americano nascido na Alemanha ganhou o Prêmio Nobel de Física de 1921?",
   "answer": ["Albert Einstein"]
    },
-    {
-  "category": "Geografia",
-   "question": "A Junta de Comércio de que cidade de Illinois lida com futuros, portanto, menos de 5% do que é negociado lá é entregue?",
-  "answer": ["Chicago"]
-   },
    {
   "category": "Filmes",
    "question": "Quem foi indicado ao Oscar por seu papel coadjuvante em \"As Horas\"?",
@@ -3371,7 +3366,7 @@
    },
    {
   "category": "História",
-   "question": "Ao chegar aos EUA da Rússia em 1926, Alisa Rosenbaum adotou este nome?",
+   "question": "Ao chegar aos EUA da Rússia em 1926, Alisa Rosenbaum adotou que nome?",
   "answer": ["Ayn Rand"]
    },
    {
