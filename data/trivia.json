@@ -2091,7 +2091,7 @@
    },
   {
    "category": "História",
-   "question": "Iraque invandiu qual nação em 1980?",
+   "question": "Iraque invadiu qual nação em 1980?",
   "answer": ["Irã"]
    },
   {
@@ -3410,7 +3410,7 @@
   "answer": ["Bavaria"]
    },
    {
-  "category": "Geografia",
+  "category": "Video Games",
    "question": "Que jogo de plataforma em primeira pessoa com cores vivas se tornou um clássico cult?",
   "answer": ["Mirror Edge"]
    },
@@ -3765,7 +3765,7 @@
   "answer": ["GTA San Andreas"]
    },
    {
-  "category": "Video Games",
+  "category": "Conhecimentos Gerais",
   "question": "Que fruta, mesmo em pequenas quantidades, é fatalmente tóxica para cães e gatos?",
   "answer": ["Uva"]
    },
