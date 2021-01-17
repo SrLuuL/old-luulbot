@@ -10,7 +10,8 @@ module.exports.run = async (context) => {
   const questions = require('../data/trivia.json');
   const db = require('../clients/database.js').db;
   const compare = require('compare-strings');
- 
+  const channelDB = await db.query(`SELECT  * FROM luulbot_channels WHERE userchannel = '${channel.replace(/#/, '')}'`); 
+  
 const sleep = (ms) => {
   return new Promise(res => setTimeout(res, ms));
 }
@@ -45,6 +46,10 @@ async function triviaStart() {
       for(let i = 0; i < triviaLength; i++) {
         
         if(!trivia.running || trivia.stopped) {
+          break
+        }
+        
+        if(channelDB.rows[0].status === 'online' && channelDB.rows[0].stream_mode) {
           break
         }
         
