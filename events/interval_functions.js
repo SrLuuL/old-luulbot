@@ -3,7 +3,7 @@ const channels = require('../credentials/login.js').channelOptions;
 const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 
-// Insert data in all conected channels
+// Insert data of all conected channels
 
 client.Channels = new Map();
 
@@ -27,7 +27,7 @@ setInterval(async () => {
   let server;
   
   try {
-  server = await (await fetch('https://luulbot.herokuapp.com/status')).json();
+  server = await (await fetch('https://luulbot.herokuapp.com/api/status')).json();
   } catch(e) {
     console.warn(`Um erro aconteceu ao pingar o server: ${e.message}`); 
   }
