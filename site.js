@@ -98,13 +98,7 @@ app.get('/api/stream/:channel', async (req, res) => {
   })
   })).json();
   
- if(!gqlFetch.data.user) {
-	return  res.send({status:404, error: 'This channel does not exist'});
- }
- 
- if(!gqlFetch.data.user.stream) {
-	return  res.send({status:404, error: 'This channel is not streaming'});
- }
+console.log(gqlFetch)
 
 res.send({status:200, stream: gqlFetch.data.user.stream})	
 	
@@ -715,11 +709,6 @@ $(document).ready(function () {
 </html>
 `)
 })
-
-
-app.use((req,res) => {
-  res.send(wrongPage)
-});
 
 app.listen(PORT, () => {
 console.log('Servidor rolando!')
