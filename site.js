@@ -78,8 +78,8 @@ app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
 });
 
-app.get('/api/stream/:channel', async (req, res) => {
-    let channelSender = req.params.channel;
+app.get('/api/stream', async (req, res) => {
+    let channelSender = req.query.channel;
     
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
@@ -98,9 +98,15 @@ app.get('/api/stream/:channel', async (req, res) => {
   })
   })).json();
   
-console.log(gqlFetch)
+if(!gqlFetch.data.user) {
+	return res.send({status: 404, error:'This channel does not exist'})
+}
+	
+if(!gqlFetch.data.user.stream) {
+	return res.send({status: 404, error:'This channel is not streaming'})
+}	
 
-res.send({status:200, stream: gqlFetch.data.user.stream})	
+res.send({status: 200, stream: gqlFetch.data.user.stream})	
 	
 });
 
