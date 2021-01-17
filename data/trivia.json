@@ -4403,6 +4403,65 @@
   "category": "Conhecimentos Gerais",
   "question": "Como se chama o chefe executivo de um estado?",
   "answer": ["Governador"]
+   },
+  {
+  "category": "Video Games",
+  "question": "Qual foi o GOTY de 2020?",
+  "answer": ["The Last of Us 2"]
+   },
+   {
+  "category": "Xadrez",
+  "question": "Qual é o nome da defesa com os lances: 1.e4 e6?",
+  "answer": ["Defesa francesa"]
+   },
+   {
+  "category": "Ciência",
+  "question": "Que criatura um mirmecologista estuda?",
+  "answer": ["Formigas"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Hans Asperger foi o primeiro a ser descrito com qual síndrome?",
+  "answer": ["Asperger"]
+   },
+   {
+  "category": "Ciência",
+  "question": "É possível que a água tenha um calor superior a 100 graus Celcius?",
+  "answer": ["Não"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a cidade mais antiga do mundo?",
+  "answer": ["Damasco"]
+   },
+   {
+  "category": "Ciência",
+  "question": "Qual é o nome do elemento químico Ga?",
+  "answer": ["Gálio"]
+   },
+   {
+  "category": "Matemática",
+  "question": "2Head + 2Head = ?",
+  "answer": ["4Head"]
+   },
+   {
+  "category": "Geografia",
+  "question": "Qual é a maior planície de sal do mundo?",
+  "answer": ["Salar de Uyuni"]
+   },
+  {
+  "category": "Abelhas",
+  "question": "Quantos dias leva para uma abelha se tornar adulta?",
+  "answer": ["21 dias"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital de Burundi?",
+  "answer": ["Giteca"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Aulofobia é o medo de quê?",
+  "answer": ["Flautas"]
    }
-  
 ]
