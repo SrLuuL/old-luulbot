@@ -54,12 +54,13 @@ async function triviaStart() {
         const done = new Promise(res => {
           
           const timer = setTimeout(() => {
+           client.removeListener('message', triviaVerifier); 
            client.say(channel, `Ninguém acertou :/ | Resposta: ${answer}`);
            res()
           }, 20000)
           
           
-          const triviaVerifier = async (channel, user, message) => {
+          async function triviaVerifier(channel, user, message){
             
             if(trivia.channel !== channel) return;
             const similar = compare(message, answer[0]);
