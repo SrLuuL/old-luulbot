@@ -31,7 +31,7 @@ if (isNaN(triviaLength)) {
 
 async function triviaStart() {
   
-  if(args[0] === 'start' && trivia.running) {
+  if(args[0] === 'start' && trivia.running && trivia.channel !== channel) {
   return client.say(channel, `Uma trivia já está rolando em: ${trivia.channel}!`)
   }
   
