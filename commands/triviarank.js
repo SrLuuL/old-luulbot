@@ -12,7 +12,7 @@ const emojis = ['👑', '🥈', '🥉', '🎖️', '🎖️']
  
 if(sender === 'top') {
  const leaderboard = triviaTopDB.rows.map((i,f) => `${emojis[f]} ${i['user_name']}(${i['user_points']})`);
- return { reply: `Top 5 trivia : ${leaderboard.join(' ')}`}
+ return { reply: `Top 5 trivia: ${leaderboard.join(' ')}`}
 }
 
  
