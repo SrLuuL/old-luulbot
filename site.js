@@ -79,7 +79,7 @@ app.get('/api/status', (req, res) => {
 });
 
 app.get('/api/stream/:channel', async (req, res) => {
-    let channelSender = req.param.channel;
+    let channelSender = req.params.channel;
     
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
