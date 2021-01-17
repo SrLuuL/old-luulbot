@@ -74,7 +74,7 @@ padding: 100px;
 
 </html>
 `
-app.get('/status', (req, res) => {
+app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
 });
 
@@ -230,7 +230,9 @@ background-color: #222b36;
 color: #ffffff
 }
 
-
+img {
+padding: 15px;
+}
 
 </style>
 
