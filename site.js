@@ -95,7 +95,7 @@ app.get('/api/stream/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}") { stream {archiveVideo {download {url}} bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName} width height}}}`
+    query: `{user(login:"${channelSender}") { stream {archiveVideo {download {url}} bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName} width height broadcaster{login id} broadcastLanguage}}}`
   })
   })).json();
 	
