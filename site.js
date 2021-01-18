@@ -82,9 +82,7 @@ app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
    const channelSender =  req.params.channel;
 
-   if(!channelSender) {
-	   return res.send({status:404, error: 'Provide a channel that is streaming'});
-   }
+   try {
 		
     const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
      headers: {
@@ -101,15 +99,18 @@ app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
   
 if(!gqlFetch.data.user) {
-	return res.send({status: 404, error:'This channel does not exist', channel: null})
+	return res.send({status: 404, channel: channelSender, error: 'Esse canal não existe'})
 }
 	
 if(!gqlFetch.data.user.stream) {
-	return res.send({status: 404, error:'This channel is not streaming', stream: null})
+	return res.send({status: 404, channel: channelSender, error: 'Esse canal não está streamando'})
 }	
 
 res.send({status: 200, stream: gqlFetch.data.user.stream})
-	
+
+   } catch(e) {
+	   res.send({status: 404, error: 'Não encontrado'})
+   }
 	
 });
 
