@@ -78,7 +78,7 @@ app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
 });
 
-app.get('/api/stream/:channel', async (req, res) => {
+app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
    const channelSender =  req.params.channel;
 
