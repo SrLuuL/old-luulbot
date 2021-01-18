@@ -86,7 +86,6 @@ app.get('/api/stream/:channel', async (req, res) => {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
    }
 		
-	
     const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
@@ -96,7 +95,7 @@ app.get('/api/stream/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}}`
+    query: `{user(login:"${channelSender}") { stream {archiveVideo {download {url}} bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName} width height}}}`
   })
   })).json();
 	
