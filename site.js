@@ -78,9 +78,11 @@ app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
 });
 
-app.get('/api/stream', async (req, res) => {
-    let channelSender = req.query.channel;
+app.get('/api/stream/:channel', async (req, res) => {
+    let channelSender = req.params.channel;
     
+   console.log(channelSender)
+	
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
    }
