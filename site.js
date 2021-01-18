@@ -719,6 +719,10 @@ $(document).ready(function () {
 `)
 })
 
+app.all('*', function(req, res) {
+  res.send(wrongPage);
+});
+
 app.listen(PORT, () => {
 console.log('Servidor rolando!')
 })
