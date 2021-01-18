@@ -79,9 +79,7 @@ app.get('/api/status', (req, res) => {
 });
 
 app.get('/api/stream/:channel', async (req, res) => {
-    let channelSender = req.params.channel;
-    
-   console.log(channelSender)
+    const channelSender = req.params.channel;
 	
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
@@ -99,6 +97,8 @@ app.get('/api/stream/:channel', async (req, res) => {
     query: `{user(login:"${channelSender}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}`
   })
   })).json();
+	
+console.log(gqlFetch)	
   
 if(!gqlFetch.data.user) {
 	return res.send({status: 404, error:'This channel does not exist'})
