@@ -79,11 +79,13 @@ app.get('/api/status', (req, res) => {
 });
 
 app.get('/api/stream/:channel', async (req, res) => {
-    const channelSender = await req.params.channel;
-    const channelSen = 'cellbit';	
+	
+   const channelSender =  req.params.channel;
+
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
    }
+		
 	
     const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
      headers: {
@@ -94,7 +96,7 @@ app.get('/api/stream/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSen}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}`
+    query: `{user(login:"${channelSender}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}}`
   })
   })).json();
 	
@@ -108,7 +110,8 @@ if(!gqlFetch.data.user.stream) {
 	return res.send({status: 404, error:'This channel is not streaming'})
 }	
 
-res.send({status: 200, stream: gqlFetch.data.user.stream})	
+res.send({status: 200, stream: gqlFetch.data.user.stream})
+	
 	
 });
 
