@@ -114,6 +114,39 @@ res.send({status: 200, stream: gqlFetch.data.user.stream})
 	
 });
 
+app.get('/api/twitch/user/:channel', async (req, res) => {
+	
+   const channelSender =  req.params.channel;
+
+   try {
+		
+    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}") {login id displayName banned chatColor bio createdAt hasStreamed profileImageURL profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag}}}`
+  })
+  })).json();
+	
+  
+if(!gqlFetch.data.user) {
+	return res.send({status: 404, channel: channelSender, error: 'Esse canal não existe'})
+}
+		
+
+res.send({status: 200, stream: gqlFetch.data.user})
+
+   } catch(e) {
+	   res.send({status: 404, error: 'Não encontrado'})
+   }
+	
+});
+
 app.get('/comandos', (req, res) => {
   
 let commandList = luulbot.commands.filter(i => i.config.level !== 'Dono');
