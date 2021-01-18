@@ -100,7 +100,6 @@ app.get('/api/stream/:channel', async (req, res) => {
   })
   })).json();
 	
-console.log(gqlFetch)	
   
 if(!gqlFetch.data.user) {
 	return res.send({status: 404, error:'This channel does not exist'})
