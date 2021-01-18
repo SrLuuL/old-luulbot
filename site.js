@@ -101,11 +101,11 @@ app.get('/api/stream/:channel', async (req, res) => {
 	
   
 if(!gqlFetch.data.user) {
-	return res.send({status: 404, error:'This channel does not exist'})
+	return res.send({status: 404, error:'This channel does not exist', channel: null})
 }
 	
 if(!gqlFetch.data.user.stream) {
-	return res.send({status: 404, error:'This channel is not streaming'})
+	return res.send({status: 404, error:'This channel is not streaming', stream: null})
 }	
 
 res.send({status: 200, stream: gqlFetch.data.user.stream})
