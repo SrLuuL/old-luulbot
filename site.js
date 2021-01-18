@@ -80,7 +80,7 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/stream/:channel', async (req, res) => {
     const channelSender = await req.params.channel;
-	
+    const channelSen = 'cellbit';	
    if(!channelSender) {
 	   return res.send({status:404, error: 'Provide a channel that is streaming'});
    }
@@ -94,7 +94,7 @@ app.get('/api/stream/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}`
+    query: `{user(login:"${channelSen}") { stream {bitrate averageFPS broadcasterSoftware clipCount codec createdAt id type viewersCount previewImageURL game {displayName description}}}`
   })
   })).json();
 	
