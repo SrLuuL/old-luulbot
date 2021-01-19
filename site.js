@@ -183,11 +183,11 @@ app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
 	
 
 	   
-if (!gqlFetchChannel.data.user.id) {
+if (!gqlFetchChannel.data.user.channelID) {
 	return res.send({status: 404, channel: channelSender, error: 'esse canal não existe'})
 }
 	
-let channelID = gqlFetchChannel.data.user.id;	   
+let channelID = gqlFetchChannel.data.user.channelID;	   
 
     const gqlFetchSub = await (await fetch('https://api.twitch.tv/gql', {
      headers: {
