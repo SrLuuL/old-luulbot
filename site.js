@@ -198,7 +198,7 @@ let channelID = gqlFetchChannel.data.user.channelID;
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier type} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
+    query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier type: purchasedWithPrime} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
   })
   })).json();	   
 	   
@@ -207,7 +207,19 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
-subStatus.subscription.tier = subStatus.subscription.tier/1000	   
+subStatus.subscription.tier = subStatus.subscription.tier/1000
+	   
+if(subStatus.subscription.type) {
+	subStatus.subscription.type = 'Prime'	
+} else {
+	if(subStatus.gift) {
+		subStatus.subscription.type = 'Gift'
+	} else {
+		subStatus.subscription.type = 'Paid'
+	}
+}
+	   
+	   
 let subCheck = (subStatus.subscription) ? true : false;
 let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false; 	   	   
 	   	
