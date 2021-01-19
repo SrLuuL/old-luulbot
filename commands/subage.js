@@ -23,11 +23,11 @@ user2 = sender;
    user2 = args[1];
  }
    
- let res = await fetch(`https://api.ivr.fi/twitch/subage/${user1}/${user2}`)
+ let res = await fetch(`https://luulbot.herokuapp.com/api/twitch/sub/${user1}/${user2}`)
  let data = await res.json();
  
    if(data.status === 404) {
-   return { reply: 'usuário(s) inválido(s)' }
+   return { reply: `${data.error} :/` }
   }
   
 
@@ -57,7 +57,7 @@ user2 = sender;
     return { reply: `${user} não é inscrito em ${canal}, possuindo ${subMonths} no total ${subTotal}` }
 }  
   
-  let {type, tier} = data.meta;
+  let {type, tier} = data.subscription;
   const {end} = data.streak;
   let dateStreak = new Date(end);
   let dateCumulative = new Date(endCumulative);
