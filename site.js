@@ -182,10 +182,6 @@ app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
   })).json();
 	
 
-	   
-if (!gqlFetchChannel.data.user.channelID) {
-	return res.send({status: 404, channel: channelSender, error: 'esse canal não existe'})
-}
 	
 let channelID = gqlFetchChannel.data.user.channelID;	   
 
@@ -201,6 +197,10 @@ let channelID = gqlFetchChannel.data.user.channelID;
     query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier type: purchasedWithPrime} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
   })
   })).json();	   
+	   
+if (!channelID) {
+	return res.send({status: 404, channel: channelSender, error: 'esse canal não existe'})
+}	   
 	   
 if (!gqlFetchSub.data.user) {
 	return res.send({status: 404, username: userSender, error: 'esse usuário não existe'})
