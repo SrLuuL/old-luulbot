@@ -8,27 +8,24 @@ try {
 let sender = context.args[0] ? context.args[0] : context.user.username
 
 
-const res = await (await fetch(`https://api.ivr.fi/twitch/resolve/${sender}`)).json()
+const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${sender}`)).json()
 
 
+let {displayName, login, id, description, chatColor} = res;
 
-  if (res.status === 404 || res.status === 500) {
-    return { reply: 'não encontrei esse usuário :/' }
-  }
- 
-let {displayName, login, id, bio, chatColor} = res;
-
-bio =  bio ? bio.length > 70 ? `${bio.slice(0,70)}...` : bio : '(sem bio)';
+description =  description ? description.length > 70 ? `${description.slice(0,70)}...` : description : '(sem bio)';
   
 chatColor = chatColor || '(sem cor)';
   
 
 return {
- reply: `Canal: ${displayName} | ID: ${id} | Bio: ${bio} | Cor: ${chatColor}` 
+ reply: `Canal: ${displayName} | ID: ${id} | Bio: ${description} | Cor: ${chatColor}` 
 }
   
 } catch(err) {
-  
+  if(err.response.statusCode === 404) {
+    return { reply: err.response.body.error }
+  }
   return { reply: 'Erro desconhecido' }
 }
 
