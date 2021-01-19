@@ -27,7 +27,7 @@ user2 = sender;
  let data = await res.json();
  
    if(data.status === 404) {
-   return { reply: 'Usuário(s) inválido(s)' }
+   return { reply: 'usuário(s) inválido(s)' }
   }
   
 
