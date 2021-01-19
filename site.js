@@ -198,7 +198,7 @@ let channelID = gqlFetchChannel.data.user.channelID;
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
+    query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier type} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
   })
   })).json();	   
 	   
