@@ -10,6 +10,9 @@ let sender = context.args[0] ? context.args[0] : context.user.username
 
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${sender}`)).json()
 
+if(res.status === 404) {
+  return { reply: res.error }
+}
 
 let {displayName, login, id, description, chatColor} = res;
 
@@ -23,9 +26,6 @@ return {
 }
   
 } catch(err) {
-  if(err.response.statusCode === 404) {
-    return { reply: err.response.body.error }
-  }
   return { reply: 'Erro desconhecido' }
 }
 
