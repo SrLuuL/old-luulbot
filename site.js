@@ -116,7 +116,13 @@ res.send({status: 200, ...gqlFetch.data.user.stream})
 
 app.get('/api/twitch/user/:channel', async (req, res) => {
 	
-   const channelSender =  req.params.channel;
+   let channelSender =  req.params.channel;
+   let queryMode = 'login';
+   
+   if(req.query.id) {
+	   channelSender = req.query.id;
+	   queryMode = 'id';
+   }
 
    try {
 		
@@ -129,7 +135,7 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt  profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} selectedBadge{title description setID}}}`
+    query: `{user(${queryMode}:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt  profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} selectedBadge{title description setID}}}`
   })
   })).json();
 	
