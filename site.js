@@ -104,11 +104,11 @@ app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
   
 if(!gqlFetch.data.user) {
-	return res.send({status: 404, channel: channelSender, error: 'Esse canal não existe'})
+	return res.send({status: 404, channel: channelSender, error: 'esse canal não existe'})
 }
 	
 if(!gqlFetch.data.user.stream) {
-	return res.send({status: 404, channel: channelSender, error: 'Esse canal não está streamando'})
+	return res.send({status: 404, channel: channelSender, error: 'esse canal não está streamando'})
 }	
 
 res.send({status: 200, ...gqlFetch.data.user.stream})
@@ -139,13 +139,13 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(${queryMode}:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt  profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} selectedBadge{title description setID}}}`
+    query: `{user(${queryMode}:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt  profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} badges: selectedBadge{title description setID}}}`
   })
   })).json();
 	
   
 if(!gqlFetch.data.user) {
-	return res.send({status: 404, channel: channelSender, error: 'Esse canal não existe'})
+	return res.send({status: 404, channel: channelSender, error: 'esse usuário não existe'})
 }
 
   
@@ -154,6 +154,72 @@ if(!gqlFetch.data.user.settings.preferredLanguageTag) {
 }	   
 
 res.send({status: 200, banned: false, ...gqlFetch.data.user})
+
+   } catch(e) {
+	   res.send({error: 'Não encontrado'})
+   }
+	
+});
+
+app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
+	
+   let userSender = req.params.user;	
+   let channelSender =  req.params.channel;	
+
+   try {
+		
+    const gqlFetchChannel = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}", lookupType:ALL) {channelID: id channel: login}}`
+  })
+  })).json();
+	
+
+	   
+if (!gqlFetchChannel.data.user.id) {
+	return res.send({status: 404, channel: channelSender, error: 'esse canal não existe'})
+}
+	
+let channelID = gqlFetchChannel.data.user.id;	   
+
+    const gqlFetchSub = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${userSender}", lookupType:ALL) {username: login userID: id relationship(targetUserID:${channelID}) {subscription: subscriptionBenefit {gift{giftDate gifter {login id}} endsAt isDNRd renewsAt tier} streak: subscriptionTenure(tenureMethod: STREAK){months remaining: daysRemaining elapsed: elapsedDays end start} cumulative: subscriptionTenure(tenureMethod: CUMULATIVE){months remaining: daysRemaining elapsed: elapsedDays end start}}}}`
+  })
+  })).json();	   
+	   
+if (!gqlFetchSub.data.user) {
+	return res.send({status: 404, username: userSender, error: 'esse usuário não existe'})
+}
+	   
+let subStatus = gqlFetchSub.data.user.relationship;
+let subCheck = false;
+	   
+if(subStatus.subscription) {	
+	subCheck = true
+}
+	   
+	   	
+if(!subStatus.streak && !subStatus.cumulative) {
+ return res.send({status: 200, hidden: true, subscribed: subCheck, ...gqlFetchChannel, ...gqlFetchSub});
+} else {
+ return res.send({status: 200, hidden: false, subscribed: subCheck, ...gqlFetchChannel, ...gqlFetchSub});
+}
+	   
 
    } catch(e) {
 	   res.send({error: 'Não encontrado'})
