@@ -26,6 +26,10 @@ user2 = sender;
  let res = await fetch(`https://api.ivr.fi/twitch/subage/${user1}/${user2}`)
  let data = await res.json();
  
+   if(data.status === 404) {
+   return { reply: 'Usuário(s) inválido(s)' }
+  }
+  
 
   let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden} = data;
   
@@ -70,9 +74,6 @@ return {
 }
   
  } catch(err) {
-  if(err.response.statusCode === 404) {
-   return { reply: 'Usuário(s) inválido(s)' }
-  }
   return 'Erro desconhecido'
  }
   
