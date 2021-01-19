@@ -225,7 +225,6 @@ let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false;
 res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...gqlFetchSub.data.user.relationship});	   
 
    } catch(e) {
-	   console.log(e.message)
 	   res.send({error: 'Não encontrado'})
    }
 	
