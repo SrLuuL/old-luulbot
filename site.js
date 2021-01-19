@@ -106,7 +106,7 @@ if(!gqlFetch.data.user.stream) {
 	return res.send({status: 404, channel: channelSender, error: 'Esse canal não está streamando'})
 }	
 
-res.send({status: 200, stream: gqlFetch.data.user.stream})
+res.send({status: 200, ...gqlFetch.data.user.stream})
 
    } catch(e) {
 	   res.send({status: 404, error: 'Não encontrado'})
@@ -129,7 +129,7 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}") {login id displayName banned chatColor bio createdAt hasStreamed profileImageURL profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag}}}`
+    query: `{user(login:"${channelSender}", lookupType:ALL) {login id displayName chatColor description bio createdAt hasStreamed profileImageURL profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} broadcastBadges{title description setID}}}`
   })
   })).json();
 	
@@ -137,9 +137,13 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
 if(!gqlFetch.data.user) {
 	return res.send({status: 404, channel: channelSender, error: 'Esse canal não existe'})
 }
-		
 
-res.send({status: 200, stream: gqlFetch.data.user})
+  
+if(!gqlFetch.data.user.settings.preferredLanguageTag) {
+	return res.send({status: 200, banned: true, ...gqlFetch.data.user})
+}	   
+
+res.send({status: 200, banned: false, ...gqlFetch.data.user})
 
    } catch(e) {
 	   res.send({status: 404, error: 'Não encontrado'})
