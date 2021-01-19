@@ -65,7 +65,7 @@ user2 = sender;
   dateCumulative = dateCumulative - Date.now();
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
-  type = (type == "paid") ? "Pago" : type.charAt(0).toUpperCase() + type.slice(1)
+  type = (type == "Paid") ? "Pago" : type
   
 
   
