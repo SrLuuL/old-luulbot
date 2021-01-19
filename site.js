@@ -207,19 +207,10 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
-let subCheck = false;
-	   
-if(subStatus.subscription) {	
-	subCheck = true
-}
-	   
+let subCheck = (subStatus.subscription) ? true : false;
+let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false; 	   	   
 	   	
-if(!subStatus.streak && !subStatus.cumulative) {
- return res.send({status: 200, hidden: true, subscribed: subCheck, ...gqlFetchChannel, ...gqlFetchSub});
-} else {
- return res.send({status: 200, hidden: false, subscribed: subCheck, ...gqlFetchChannel, ...gqlFetchSub});
-}
-	   
+res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...gqlFetchSub.data.user.relationship});	   
 
    } catch(e) {
 	   res.send({error: 'Não encontrado'})
