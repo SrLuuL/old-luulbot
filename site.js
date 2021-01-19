@@ -80,7 +80,12 @@ app.get('/api/status', (req, res) => {
 
 app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
-   const channelSender =  req.params.channel;
+   let channelSender =  req.params.channel;
+   let queryMode = 'login';
+   
+   if(req.query.id) {
+	   queryMode = 'id';
+   }
 
    try {
 		
@@ -93,7 +98,7 @@ app.get('/api/twitch/stream/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}") { stream {archiveVideo {download {url}} bitrate averageFPS broadcasterSoftware clipCount codec createdAt lastUpdatedAt id type viewersCount previewImageURL width height broadcaster{login id broadcastSettings {game {displayName} title language isMature}} broadcastLanguage isStreamDropsEnabled}}}`
+    query: `{user(${queryMode}:"${channelSender}") { stream {archiveVideo {download {url}} bitrate averageFPS broadcasterSoftware clipCount codec createdAt lastUpdatedAt id type viewersCount previewImageURL width height broadcaster{login id broadcastSettings {game {displayName} title language isMature}} broadcastLanguage isStreamDropsEnabled}}}`
   })
   })).json();
 	
@@ -120,7 +125,6 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
    let queryMode = 'login';
    
    if(req.query.id) {
-	   channelSender = req.query.id;
 	   queryMode = 'id';
    }
 
