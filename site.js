@@ -177,7 +177,7 @@ app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}", lookupType:ALL) {channelID: id channel: login}}`
+    query: `{user(login:"${channelSender}", lookupType:ALL) {channel: login channelID: id}}`
   })
   })).json();
 	
@@ -207,6 +207,7 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
+subStatus.subscription.tier = subStatus.subscription.tier/1000	   
 let subCheck = (subStatus.subscription) ? true : false;
 let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false; 	   	   
 	   	
