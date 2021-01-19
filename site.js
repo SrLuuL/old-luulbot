@@ -109,7 +109,7 @@ if(!gqlFetch.data.user.stream) {
 res.send({status: 200, ...gqlFetch.data.user.stream})
 
    } catch(e) {
-	   res.send({status: 404, error: 'Não encontrado'})
+	   res.send({error: 'Não encontrado'})
    }
 	
 });
@@ -146,7 +146,7 @@ if(!gqlFetch.data.user.settings.preferredLanguageTag) {
 res.send({status: 200, banned: false, ...gqlFetch.data.user})
 
    } catch(e) {
-	   res.send({status: 404, error: 'Não encontrado'})
+	   res.send({error: 'Não encontrado'})
    }
 	
 });
