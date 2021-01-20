@@ -229,6 +229,7 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
     }
 
     if(modPage) {
+	    
       gqlFetchMod = await (await fetch('https://api.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
@@ -242,7 +243,8 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
   })
   })).json();
       
-      
+      console.log(gqlFetchMod)
+	    
       modPage = gqlFetchMod.data.user.mods.pageInfo.hasNextPage;
       
       modList.push(...gqlFetchMod.data.user.mods.edges.filter(i => i.node).map(i => Object.assign(i.node, {grantedAt: i.grantedAt})))
