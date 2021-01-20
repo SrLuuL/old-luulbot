@@ -191,17 +191,16 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
 
  let modPage = gqlFetch.data.user.mods.pageInfo.hasNextPage;
  let vipPage = gqlFetch.data.user.vips.pageInfo.hasNextPage;
- let pageCheck = modPage || vipPage;
  let gqlFetchVip, gqlFetchMod;
  let vipCursor, modCursor;
   
   
   if(vipPage) {
-      vipCursor = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => i.cursor);
+      vipCursor = gqlFetch.data.user.vips.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
   }
   
    if(modPage) {
-      modCursor = gqlFetch.data.user.mods.edges.filter(i => i.node).map(i => i.cursor);
+      modCursor = gqlFetch.data.user.mods.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
   }
   
   
@@ -243,7 +242,6 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
   })
   })).json();
       
-      console.log(gqlFetchMod)
 	    
       modPage = gqlFetchMod.data.user.mods.pageInfo.hasNextPage;
       
