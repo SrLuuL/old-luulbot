@@ -4528,5 +4528,140 @@
   "category": "Conhecimentos Gerais",
   "question": "O que você ganha ao congelar água?",
   "answer": ["Gelo"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Que empresa desenvolveu o jogo Borderlands?",
+  "answer": ["Gearbox Software"]
+   },
+   {
+  "category": "Livros",
+  "question": "Quantos livros a franquia As Crônicas de Nárnia possui?",
+  "answer": ["7"]
+   },
+    {
+  "category": "Ciência",
+  "question": "A doença Alzheimer afeta principalmente qual parte do corpo?",
+  "answer": ["Cérebro"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a linguagem oficial de Costa Rica?",
+  "answer": ["Espanhol"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Na série Breaking Bad, as iniciais W.W representam o quê?",
+  "answer": ["Walter White"]
+   },
+    {
+  "category": "Astronomia",
+  "question": "Qual é a única lua em nosso sistema solar com uma atmosfera densa?",
+  "answer": ["Titan"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Em que ano McDonald's foi fundado?",
+  "answer": ["1955"]
+   },
+    {
+  "category": "Ciência",
+  "question": "O sol é feito principalmente de quais dois elementos?",
+  "answer": ["Hidrogênio e hélio"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Em que ano GTA 4 foi lançado?",
+  "answer": ["2008"]
+   },
+    {
+  "category": "Esportes",
+  "question": "Que país hospedou a Olímpiadas de Inverno em 2014?",
+  "answer": ["Rússia"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Le Corbusier era uma figura famosa em que tipo de arquitetura?",
+  "answer": ["Moderna"]
+   },
+    {
+  "category": "Geografia",
+  "question": "A Área 51 fica em que estado do Estados Unidos?",
+  "answer": ["Nevada"]
+   },
+  {
+  "category": "Video Games",
+  "question": "No jogo Undertale, quem foi responsável por criar Metatton?",
+  "answer": ["Alphys"]
+   },
+  {
+  "category": "História",
+  "question": "Quem desenvolveu a primeira vacina efetiva contra pólio em 1950?",
+  "answer": ["Jonas Salk"]
+   },
+  {
+  "category": "Animes",
+  "question": "No anime Assassination Classroom, qual é a classe em que Korosensei é responsável?",
+  "answer": ["3-E"]
+   },
+  {
+  "category": "Música",
+  "question": "Aubrey Graham  é mais conhecido como..?",
+  "answer": ["Drake"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Na trilogia de Mass Effect, qual é o protagonista principal?",
+  "answer": ["Shepard"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome da falácia lógica que busca atacar o autor ao invés de seu argumento?",
+  "answer": ["Ad hominem"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Na série Metal Gear, qual é o nome do irmão de Solid Snake?",
+  "answer": ["Liquid Snake"]
+   },
+    {
+  "category": "Tecnologia",
+  "question": "Quem é o fundador de Palantir?",
+  "answer": ["Peter Thiel"]
+   },
+   {
+  "category": "Biologia",
+  "question": "Qual é o osso mais difícil de se quebrar?",
+  "answer": ["Fêmur"]
+   },
+   {
+  "category": "Ciência",
+  "question": "Que mineral possui o menor número na escala Mohs?",
+  "answer": ["Talco"]
+   },
+   {
+  "category": "Ciência",
+  "question": "Qual é a fórmula molecular da glicose?",
+  "answer": ["C6H12O6"]
+   },
+   {
+  "category": "História",
+  "question": "Qual foi a causa da morte de Freddie Mercury?",
+  "answer": ["Pneumonia"]
+   },
+   {
+  "category": "Video Games",
+  "question": "Quem é o protagonista em Dead Rising(2006)?",
+  "answer": ["Frank West"]
+   },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Que restaurante possui um palhaço como mascote?",
+  "answer": ["McDonalds"]
+   },
+   {
+  "category": "Comidas/Bebidas",
+  "question": "A cerveja mexicana Corona se trata de que tipo de cerveja?",
+  "answer": ["Lager pálida"]
    }
 ]
