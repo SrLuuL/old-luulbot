@@ -5,7 +5,7 @@
 "answer": ["Verdade"]
 },
   {
-   "category": "Ciências e Natureza",
+   "category": "Ciência",
    "question": "Rinoplastia é uma cirurgia que é efetuada em que parte do corpo?",
   "answer": ["Nariz"]
   },
@@ -14,13 +14,8 @@
    "question": "Qual é a maior península?",
   "answer": ["Arábica"]
   },
-   {
-   "category": "Eventos",
-   "question": "Qual cidade irá hospedar as Olímpiadas de Verão em 2028?",
-  "answer": ["Los Angeles"]
-  },
   {
-   "category": "Natureza",
+   "category": "Biologia",
    "question": "Qual animal terrestre é o mais rápido?",
   "answer": ["Guepardo"]
   },
@@ -180,11 +175,6 @@
   "answer": ["7"]
    },
   {
-   "category": "Gachi",
-   "question": "País origem de Van Darkholme",
-  "answer": ["Vietnã"]
-   },
-  {
    "category": "Video Games",
    "question": "Protagonista de Dishonored",
   "answer": ["Corvo"]
@@ -285,7 +275,7 @@
   "answer": ["Lápis Lazuli"]
    },
   {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Que moeda é usada na Hungria?",
   "answer": ["Florim Húngaro"]
    },
@@ -325,7 +315,7 @@
   "answer": ["Xangai"]
    },
   {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Que moeda usam no Japão?",
   "answer": ["Iene"]
    },
@@ -348,11 +338,6 @@
    "category": "Filmes",
    "question": "Que estúdio de cinema produziu o filme: Who Killed Captain Alex?",
   "answer": ["Wakaliwood"]
-   },
-  {
-   "category": "NaM",
-   "question": "NaM",
-  "answer": ["NaM"]
    },
   {
    "category": "Matemática",
@@ -425,7 +410,7 @@
   "answer": ["89"]
    },
   {
-   "category": "Sexo",
+   "category": "Ciência",
    "question": "Se masturbar 5 vezes ao dia pode causar o quê?",
   "answer": ["Fibromialgia"]
    },
@@ -780,7 +765,7 @@
   "answer": ["Mohammed Ali"]
    },
    {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Qual é a moeda utilizada na Russia?",
   "answer": ["Rublo Russo"]
    },
@@ -1070,7 +1055,7 @@
   "answer": ["Água"]
    },
   {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Um declínio geral de atividades econômicas é chamado de?",
   "answer": ["Recessão"]
    },
@@ -1235,7 +1220,7 @@
   "answer": ["Ostra"]
    },
    {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Que moeda é utilizada no México?",
   "answer": ["Peso Mexicano"]
    },
@@ -1515,7 +1500,7 @@
   "answer": ["Metamórfica"]
    },
   {
-   "category": "Livros",
+   "category": "Conhecimentos Gerais",
    "question": "Em Harry Potter, quem Draco Malfoy acabou casando?",
   "answer": ["Astoria Greengrass"]
    },
@@ -1600,7 +1585,7 @@
   "answer": ["Hidrogênio"]
    },
   {
-   "category": "Celebridades",
+   "category": "História",
    "question": "O pintor Bob Ross faleceu em que ano?",
   "answer": ["1995"]
    },
@@ -2055,9 +2040,9 @@
   "answer": ["Sam Fisher"]
    },
   {
-   "category": "Ciências",
+   "category": "Ciência",
    "question": "Por que bananas são curvadas?",
-  "answer": ["Sol"]
+  "answer": ["Por causa do sol"]
    },
   {
    "category": "Tecnologia",
@@ -2200,7 +2185,7 @@
   "answer": ["Islândia"]
    },
    {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Normalmente quando o preço da mercadoria diminuir a quantidade de demanda vai...?",
   "answer": ["Aumentar"]
    },
@@ -2235,7 +2220,7 @@
   "answer": ["CCl4"]
    },
    {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Que moeda é usada no Equador?",
   "answer": ["Dólar Americano"]
    },
@@ -2455,7 +2440,7 @@
   "answer": ["Peão"]
    },
   {
-   "category": "Econômia",
+   "category": "Economia",
    "question": "Geralmente, qual é a maior fonte de renda do governo?",
   "answer": ["Impostos"]
    },
@@ -2680,7 +2665,7 @@
   "answer": ["Timbu"]
    },
     {
-   "category": "Abelha",
+   "category": "Abelhas",
    "question": "O registro mais antigo de apicultura?",
   "answer": ["6000 AC"]
    },
@@ -2733,11 +2718,6 @@
    "category": "História",
    "question": "Qual era o nome romano da deusa Hécate?",
   "answer": ["Trivia"]
-   },
-  {
-   "category": "Linguagens",
-   "question": "Como se diz tchau em espanhol?",
-  "answer": ["Adiós"]
    },
   {
    "category": "Ciência",
@@ -2860,7 +2840,7 @@
   "answer": ["Nefertiti"]
    },
     {
-   "category": "Outros",
+   "category": "Matemática",
    "question": "Se eu tivesse um real cada vez que eu falo \"eu\", eu teria quantos reais?",
   "answer": ["4"]
    },
@@ -2990,12 +2970,12 @@
   "answer": ["Prudhoe Bay"]
    },
    {
-  "category": "Natureza",
+  "category": "Biologia",
    "question": "Uma semente de qual árvore que nos dá um substituto do chocolate é o \"quilate\" original?",
   "answer": ["Alfarrobeira"]
    },
   {
-  "category": "Religião",
+  "category": "História",
    "question": "A seita budista Gelukpa, também conhecida como a seita do chapéu amarelo, é liderada por quem?",
   "answer": ["Dalai Lama"]
    },
@@ -3005,7 +2985,7 @@
   "answer": ["Lago de Maracaibo"]
    },
     {
-  "category": "Contos",
+  "category": "História",
    "question": "Quem empurrou a velha bruxa malvada da casa de pão de gengibre no forno e trancou a porta?",
   "answer": ["Maria"]
    },
@@ -3060,7 +3040,7 @@
   "answer": ["Japão"]
    },
     {
-  "category": "Religião",
+  "category": "História",
    "question": "Quando Jesus disse: \"Todo aquele que é da verdade ouve a minha voz\", o que Pilatos lhe perguntou?",
   "answer": ["O que é a verdade?"]
    },
@@ -3070,7 +3050,7 @@
   "answer": ["Laranjas"]
    },
   {
-  "category": "Animas",
+  "category": "Animais",
    "question": "Desde 1990, novas práticas reduziram em 90% o número de golfinhos capturados em redes destinadas a que peixes?",
   "answer": ["Atuns"]
    },
@@ -3225,7 +3205,7 @@
   "answer": ["Perrier"]
    },
    {
-  "category": "Religião",
+  "category": "Conhecimentos Gerais",
    "question": "Êxodo diz que a mãe de Moisés o colocou em uma cesta feita de qual  plantas semelhantes a grama?",
   "answer": ["Juncos"]
    },
@@ -3520,7 +3500,7 @@
   "answer": ["Los Angeles"]
    },
    {
-  "category": "Charadas",
+  "category": "Conhecimentos Gerais",
    "question": "Se você está participando de uma corrida e ultrapassa a segunda pessoa, em que lugar você está?",
   "answer": ["Segundo"]
    },
@@ -3735,7 +3715,7 @@
   "answer": ["Ping pong"]
    },
    {
-  "category": "Econômia",
+  "category": "Economia",
   "question": "Qual foi a primeira empresa a atingir uma capitalização de mercado de 1 trilhão de dólares?",
   "answer": ["Apple"]
    },
@@ -3845,7 +3825,7 @@
   "answer": ["Sudão do Sul"]
    },
    {
-  "category": "Econômia",
+  "category": "Economia",
   "question": "Um monopólio puro é quando há um único o quê?",
   "answer": ["Vendedor"]
    },
@@ -3905,7 +3885,7 @@
   "answer": ["Vienciana"]
    },
      {
-  "category": "Econômia",
+  "category": "Economia",
   "question": "Que moeda é usada na Argentina?",
   "answer": ["Peso argentino"]
    },
@@ -3915,12 +3895,12 @@
   "answer": ["França"]
    },
    {
-  "category": "Piratas",
+  "category": "História",
   "question": "O que ajudou os piratas a manter a doença do escorbuto sob controle?",
   "answer": ["Laranjas"]
    },
     {
-  "category": "Piratas",
+  "category": "História",
   "question": "Qual é a capital do Benin?",
   "answer": ["Porto Novo"]
    },
@@ -4528,5 +4508,15 @@
   "category": "Geografia",
   "question": "Qual é o maior rio que não nenhuma pontes",
   "answer": ["Rio Amazonas"]
+   },
+    {
+  "category": "Economia",
+  "question": "Qual é a moeda utilizada em Andorra?",
+  "answer": ["Euro"]
+   },
+    {
+  "category": "Biologia",
+  "question": "Quantas formas de bactérias existem?",
+  "answer": ["3"]
    }
 ]
