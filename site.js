@@ -241,7 +241,9 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
-subStatus.subscription.tier = subStatus.subscription.tier/1000
+if(subStatus.subscription) {
+ subStatus.subscription.tier = subStatus.subscription.tier/1000	
+}
 	   
 if(subStatus.subscription.type) {
 	subStatus.subscription.type = 'Prime'	
