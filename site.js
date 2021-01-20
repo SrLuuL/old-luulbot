@@ -227,6 +227,7 @@ while(pageCheck) {
 res.send({status: 200, mods: modList, vips: vipList})
 
    } catch(e) {
+	   console.log(e.message)
 	   res.send({error: 'Não encontrado'})
    }
 	
