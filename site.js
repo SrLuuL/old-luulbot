@@ -177,7 +177,7 @@ app.get('/api/twitch/modsvips/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100) {pageInfo{hasNextPage} edges {node{login displayName id} grantedAt}} vips(first:100){ pageInfo{hasNextPage} edges {node{login displayName id} grantedAt}}}}`
+    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100) {pageInfo{hasNextPage} edges {node{login displayName id} grantedAt cursor}} vips(first:100){pageInfo{hasNextPage}edges {node{login displayName id} grantedAt cursor}}}}`
   })
   })).json();
 	
@@ -196,11 +196,11 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
   
   
   if(vipPage) {
-      vipCursor = gqlFetch.data.user.vips.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
+      vipCursor = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => i.cursor);
   }
   
    if(modPage) {
-      modCursor = gqlFetch.data.user.mods.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
+      modCursor = gqlFetch.data.user.mods.edges.filter(i => i.node).map(i => i.cursor);
   }
   
   
