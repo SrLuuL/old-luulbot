@@ -186,9 +186,11 @@ if(!gqlFetch.data.user) {
 	return res.send({status: 404, channel: channelSender, error: 'esse usuário não existe'})
 }
 
+let modList = gqlFetch.data.user.mods.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));
+let vipList = gqlFetch.data.user.vips.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));	   	   
 	   
 
-res.send({status: 200, banned: false, ...gqlFetch.data.user})
+res.send({status: 200, mods: modList, vips: vipList})
 
    } catch(e) {
 	   res.send({error: 'Não encontrado'})
@@ -253,7 +255,7 @@ if(subCheck) {
 	if(subStatus.subscription.type) {
 	subStatus.subscription.type = 'Prime'	
 } else {
-	if(subStatus.subscription.gift) {
+	if(subStatus.subscription.gift.gifter) {
 		subStatus.subscription.type = 'Gift'
 	} else {
 		subStatus.subscription.type = 'Paid'
@@ -265,7 +267,6 @@ if(subCheck) {
 res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...subStatus});	   
 
    } catch(e) {
-	   console.log(e.message)
 	   res.send({error: 'Não encontrado'})
    }
 	
