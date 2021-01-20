@@ -241,7 +241,7 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
-if(subStatus.subscription) {
+if(subStatus.subscription.tier) {
  subStatus.subscription.tier = subStatus.subscription.tier/1000	
 }
 	   
