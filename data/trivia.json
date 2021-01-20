@@ -3081,7 +3081,7 @@
    },
   {
   "category": "História",
-   "question": "Na Jordânia, os membros do Senado são indicados por que pessoa?",
+   "question": "Na Jordânia, os membros do Senado são indicados por qual pessoa?",
   "answer": ["O rei"]
    },
   {
@@ -4181,7 +4181,7 @@
    },
     {
   "category": "Conhecimentos Gerais",
-  "question": "Alguns pesquisadores acreditam que meia cabeça de qual leguminosa  por dia pode prevenir certas formas de câncer?",
+  "question": "Alguns pesquisadores acreditam que qual  legume  por dia pode prevenir certas formas de câncer?",
   "answer": ["Alface"]
    },
    {
@@ -4458,5 +4458,80 @@
   "category": "Conhecimentos Gerais",
   "question": "Aulofobia é o medo de quê?",
   "answer": ["Flautas"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Quantos lados em um heptadecágono?",
+  "answer": ["17"]
+   },
+   {
+  "category": "Matemática",
+  "question": "Um googol é um número 1 seguido de quantos zeros?",
+  "answer": ["100"]
+   },
+   {
+  "category": "Programação",
+  "question": "Quem é o criadorde JavaScript?",
+  "answer": ["Brendan Eich"]
+   },
+   {
+  "category": "História",
+  "question": "Que país recebeu 10 milhões de refugiados em 2017?",
+  "answer": ["Alemanha"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Como eram chamados psiquiatras antigamente?",
+  "answer": ["Alienistas"]
+   },
+    {
+  "category": "Animes",
+  "question": "O anime Sankarea fala sobre o quê?",
+  "answer": ["Uma zumbi"]
+   },
+    {
+  "category": "Comidas/Bebidas",
+  "question": "Que país afirma ter inventado o cachorro quente?",
+  "answer": ["Alemanha"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é a capital da Jordânia?",
+  "answer": ["Amã"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Que país você irá encontrar o monte Kilimanjaro?",
+  "answer": ["Tanzânia"]
+   },
+    {
+  "category": "Animes",
+  "question": "Qual é o nome da primeira abertura de JOJO?",
+  "answer": ["Sono Chi no Sadame"]
+   },
+    {
+  "category": "Matemática",
+  "question": "Pense rápido! Quanto é 62 + 67?",
+  "answer": ["129"]
+   },
+    {
+  "category": "Matemática",
+  "question": "(sin(x))^2 + (cos(x))^2 é igual a..?",
+  "answer": ["1"]
+   },
+    {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é a primeira letra em uma máquina de escrever?",
+  "answer": ["Q"]
+   },
+    {
+  "category": "Ciência",
+  "question": "Que tipo sanguìneo é um doador universal?",
+  "answer": ["O"]
+   },
+    {
+  "category": "Geografia",
+  "question": "Qual é o maior rio que não nenhuma pontes",
+  "answer": ["Rio Amazonas"]
    }
 ]
