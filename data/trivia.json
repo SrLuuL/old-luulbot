@@ -895,7 +895,7 @@
   "answer": ["Haikyuu!!"]
    },
    {
-   "category": "Video Game",
+   "category": "Video Games",
    "question": "Quem é o último chefão na rota genocída de Undertale?",
   "answer": ["Sans"]
    },
@@ -1420,7 +1420,7 @@
   "answer": ["Lima"]
    },
    {
-   "category": "Video Game",
+   "category": "Video Games",
    "question": "Junto com Gabe Newell, quem mais fundou a Valve?",
   "answer": ["Mike Harrington"]
    },
@@ -1590,7 +1590,7 @@
   "answer": ["1995"]
    },
   {
-   "category": "Comida/Bebidas",
+   "category": "Comidas/Bebidas",
    "question": "Chá de Earl Gray é um chá preto aromatizado com?",
   "answer": ["Óleo de bergamota"]
    },
@@ -3000,7 +3000,7 @@
   "answer": ["Dia dos Veteranos"]
    },
   {
-  "category": "Contos",
+  "category": "Conhecimentos Gerais",
    "question": "Uma personagem de que conto cortou o dedão do pé para que um sapato de vidro coubesse em seu pé?",
   "answer": ["Cinderella"]
    },
@@ -3025,7 +3025,7 @@
   "answer": ["Nicolau Copérnico"]
    },
   {
-  "category": "Contos",
+  "category": "Conhecimentos Gerais",
    "question": "Descubra o conto: Seus pais a deram a uma bruxa como uma recém-nascida, então a bruxa a trancou em uma torre aos 12 anos",
   "answer": ["Rapunzel"]
    },
@@ -3725,7 +3725,7 @@
   "answer": ["Benjamin Franklin"]
    },
    {
-  "category": "Video Game",
+  "category": "Video Games",
   "question": "Qual é o nome da piloto feminina que aparece na maioria das séries Ace Combat?",
   "answer": ["Nagase"]
    },
