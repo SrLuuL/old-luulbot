@@ -189,12 +189,72 @@ if(!gqlFetch.data.user) {
 let modList = gqlFetch.data.user.mods.edges.filter(i => i.node).map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));
 let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));	   	   
 
-	   
+ let modPage = gqlFetch.data.user.mods.pageInfo.hasNextPage;
+ let vipPage = gqlFetch.data.user.vips.pageInfo.hasNextPage;
+ let pageCheck = modPage || vipPage;
+ let gqlFetchVip, gqlFetchMod;
+ let vipCursor, modCursor;
+  
+  
+  if(vipPage) {
+      vipCursor = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => i.cursor);
+  }
+  
+   if(modPage) {
+      modCursor = gqlFetch.data.user.mods.edges.filter(i => i.node).map(i => i.cursor);
+  }
+  
+  
+  do {
+    if(vipPage) {
+      gqlFetchVip = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}", lookupType:ALL) {vips(first:100, after:"${vipCursor[vipCursor.length - 1]}"){pageInfo{hasNextPage}edges {node{login displayName id} grantedAt cursor}}}}`
+  })
+  })).json();
+      
+      vipPage = gqlFetchVip.data.user.vips.pageInfo.hasNextPage;
+      
+      vipList.push(...gqlFetchVip.data.user.vips.edges.filter(i => i.node).map(i => Object.assign(i.node, {grantedAt: i.grantedAt})))
+      
+      vipCursor = gqlFetchVip.data.user.vips.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
+      
+    }
+
+    if(modPage) {
+      gqlFetchMod = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100, after:"${modCursor[modCursor.length - 1]}"){pageInfo{hasNextPage}edges {node{login displayName id} grantedAt cursor}}}}`
+  })
+  })).json();
+      
+      
+      modPage = gqlFetchMod.data.user.mods.pageInfo.hasNextPage;
+      
+      modList.push(...gqlFetchMod.data.user.mods.edges.filter(i => i.node).map(i => Object.assign(i.node, {grantedAt: i.grantedAt})))
+      
+      modCursor = gqlFetchMod.data.user.mods.edges.filter(i => i.node).filter(i => i.cursor).map(i => i.cursor);
+      
+    }
+  } while(modPage || vipPage)	   
 
 res.send({status: 200, mods: modList, vips: vipList})
 
    } catch(e) {
-	   console.log(e)
 	   res.send({error: 'Não encontrado'})
    }
 	
