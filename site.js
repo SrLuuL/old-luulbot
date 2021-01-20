@@ -161,6 +161,41 @@ res.send({status: 200, banned: false, ...gqlFetch.data.user})
 	
 });
 
+app.get('/api/twitch/modsvips/:channel', async (req, res) => {
+	
+   let channelSender =  req.params.channel;
+   
+
+   try {
+		
+    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"srluul", lookupType:ALL) {mods {edges {node{login displayName id} grantedAt}} vips{edges {node{login displayName id} grantedAt}}}}`
+  })
+  })).json();
+	
+  
+if(!gqlFetch.data.user) {
+	return res.send({status: 404, channel: channelSender, error: 'esse usuário não existe'})
+}
+
+	   
+
+res.send({status: 200, banned: false, ...gqlFetch.data.user})
+
+   } catch(e) {
+	   res.send({error: 'Não encontrado'})
+   }
+	
+});
+
 app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
 	
    let userSender = req.params.user;	
@@ -225,6 +260,7 @@ let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false;
 res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...gqlFetchSub.data.user.relationship});	   
 
    } catch(e) {
+	   console.log(e.message)
 	   res.send({error: 'Não encontrado'})
    }
 	
