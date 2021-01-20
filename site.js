@@ -211,7 +211,7 @@ subStatus.subscription.tier = subStatus.subscription.tier/1000
 if(subStatus.subscription.type) {
 	subStatus.subscription.type = 'Prime'	
 } else {
-	if(subStatus.gift) {
+	if(subStatus.subscription.gift) {
 		subStatus.subscription.type = 'Gift'
 	} else {
 		subStatus.subscription.type = 'Paid'
