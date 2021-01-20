@@ -74,7 +74,7 @@ return {
 }
   
  } catch(err) {
-  return 'Erro desconhecido'
+  return { reply: 'Erro desconhecido' }
  }
   
 }
