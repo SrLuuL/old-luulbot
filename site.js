@@ -177,7 +177,7 @@ app.get('/api/twitch/modsvips/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"srluul", lookupType:ALL) {mods {edges {node{login displayName id} grantedAt}} vips{edges {node{login displayName id} grantedAt}}}}`
+    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100) {pageInfo{hasNextPage} edges {node{login displayName id} grantedAt cursor}} vips(first:100){pageInfo{hasNextPage}edges {node{login displayName id} grantedAt cursor}}}}`
   })
   })).json();
 	
@@ -188,7 +188,41 @@ if(!gqlFetch.data.user) {
 
 let modList = gqlFetch.data.user.mods.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));
 let vipList = gqlFetch.data.user.vips.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt}));	   	   
+let modPageCheck = gqlFetch.mods.pageInfo.hasNextPage;
+let vipPageCheck = gqlFetch.vips.pageInfo.hasNextPage;	   
+let modPageCursor = gqlFetch.mods.edges.cursor;
+let vipPageCursor = gqlFetch.vips.edges.cursor;
+let pageCheck = modPageCheck || vipPageCheck;	   
+let nextGQLFetch;
 	   
+	   
+while(pageCheck) {
+	nextGQLFetch = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100, after:"${modPageCursor}") {pageInfo{hasNextPage} edges {node{login displayName id} grantedAt cursor}} vips(first:100, after:"${vipPageCursor}"){pageInfo{hasNextPage}edges {node{login displayName id} grantedAt cursor}}}}`
+  })
+  })).json();
+	
+        modPageCheck = nextGQLFetch.data.mods.pageInfo.hasNextPage;
+	vipPageCheck = nextGQLFetch.data.vips.pageInfo.hasNextPage;
+	
+	if(modPageCheck) {
+		modList.push(...nextGQLFetch.data.user.mods.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt})))
+		modPageCursor = nextGQLFetch.mods.edges.cursor
+	}
+	
+	if(vipPageCheck) {
+		vipList.push(...nextGQLFetch.data.user.vips.edges.map(i => Object.assign(i.node, {grantedAt: i.grantedAt})))
+		vipPageCursor = nextGQLFetch.vips.edges.cursor
+	}
+}
 
 res.send({status: 200, mods: modList, vips: vipList})
 
