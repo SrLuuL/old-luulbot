@@ -23,7 +23,8 @@ sender = channel.replace('#', '');
 user = username.username;
 }
 
-
+try {
+ 
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/modsvips/${sender}`)).json();
 
 const modCheck = res.mods.find(i => i.login === user) || false;
@@ -46,6 +47,9 @@ return { reply: `${user} não é mod em ${sender}` }
   
 }
   
+} catch(e) {
+return { reply: 'Erro desconhecido' }
+}
 
 }
 
