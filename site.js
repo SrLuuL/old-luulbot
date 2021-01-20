@@ -177,7 +177,7 @@ app.get('/api/twitch/modsvips/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100) {edges {node{login displayName id} grantedAt}} vips(first:100){edges {node{login displayName id} grantedAt}}}}`
+    query: `{user(login:"${channelSender}", lookupType:ALL) {mods(first:100) {pageInfo{hasNextPage} edges {node{login displayName id} grantedAt}} vips(first:100){ pageInfo{hasNextPage} edges {node{login displayName id} grantedAt}}}}`
   })
   })).json();
 	
