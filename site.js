@@ -255,7 +255,6 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
 res.send({status: 200, mods: modList, vips: vipList})
 
    } catch(e) {
-	   console.log(e)
 	   res.send({error: 'Não encontrado'})
    }
 	
