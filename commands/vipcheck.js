@@ -22,7 +22,8 @@ sender = channel.replace('#', '');
 user = username.username;
 }
 
-
+ try {
+  
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/modsvips/${sender}`)).json();
 
 const vipCheck = res.vips.find(i => i.login === user) || false;
@@ -45,6 +46,9 @@ return { reply: `${user} não é vip em ${sender}` }
   
 }
   
+ } catch(e) {
+  return { reply: 'Erro desconhecido' } 
+ }
 
 }
 
