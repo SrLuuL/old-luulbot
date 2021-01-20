@@ -241,11 +241,16 @@ if (!gqlFetchSub.data.user) {
 }
 	   
 let subStatus = gqlFetchSub.data.user.relationship;
-if(subStatus.subscription.tier) {
- subStatus.subscription.tier = subStatus.subscription.tier/1000	
-}
 	   
-if(subStatus.subscription.type) {
+	   	   
+	   
+let subCheck = (subStatus.subscription) ? true : false;   
+let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false; 	   	
+	   
+if(subCheck) {
+	subStatus.subscription.tier = subStatus.subscription.tier/1000;
+	
+	if(subStatus.subscription.type) {
 	subStatus.subscription.type = 'Prime'	
 } else {
 	if(subStatus.subscription.gift) {
@@ -254,12 +259,10 @@ if(subStatus.subscription.type) {
 		subStatus.subscription.type = 'Paid'
 	}
 }
-	   
-	   
-let subCheck = (subStatus.subscription) ? true : false;
-let hiddenCheck = (!subStatus.streak && !subStatus.cumulative) ? true : false; 	   	   
+
+}
 	   	
-res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...gqlFetchSub.data.user.relationship});	   
+res.send({status: 200, username: gqlFetchSub.data.user.username, userid: gqlFetchSub.data.user.userID, ...gqlFetchChannel.data.user, hidden: hiddenCheck, subscribed: subCheck, ...subStatus});	   
 
    } catch(e) {
 	   console.log(e.message)
