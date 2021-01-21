@@ -92,7 +92,7 @@ app.get('/api/twitch/badges', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{badges {title description id badgeImage: imageURL(size:QUADRUPLE) clickURL setID version user{login id}}}`
+    query: `{badges {title description  badgeImage: imageURL(size:QUADRUPLE) clickURL setID version user{login id}}}`
   })
   })).json();
 	
