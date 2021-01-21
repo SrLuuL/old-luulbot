@@ -11,8 +11,9 @@ const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${
 if (res.status === 404) {
    return { reply: res.error + ' :/' }
   }
-  
-let followers = (!res.followers.totalCount) ? 'nenhum seguidor' : (res.followers.totalCount > 1) ? `${res} seguidores` : `${res} seguidor`;
+
+let followCount = res.followers.totalCount;   
+let followers = (!followCount) ? 'nenhum seguidor' : (followCount > 1) ? `${followCount} seguidores` : `${followCount} seguidor`;
     
 user = (user === context.user.username) ? 'você' : user;
     
