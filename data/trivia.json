@@ -4853,5 +4853,60 @@
   "category": "Video Games",
   "question": "Uma peça de Tetris é chamada de..?",
   "answer": ["Tetraminó"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Quantos estados federais existem na Alemanha?",
+  "answer": ["16"]
+   },
+   {
+  "category": "Desenhos",
+  "question": "Em Avatar: The Last Airbender, qual elemento Aang começa a aprender depois de ser descongelado?",
+  "answer": ["Água"]
+   },
+    {
+  "category": "Animes",
+  "question": "Que estúdio de animação animou Mob Psycho 100(2016)?",
+  "answer": ["Bones"]
+   },
+  {
+  "category": "Video Games",
+  "question": "Em The Last Guardian, qual é o nome da criatura em que o protagonista se torna amigo?",
+  "answer": ["Trico"]
+   },
+  {
+  "category": "Geografia",
+  "question": "Quantos rios existem na Arábia Saudita?",
+  "answer": ["0"]
+   },
+  {
+  "category": "Biologia",
+  "question": "Um organismo heliotrópico tende a se mover em direção a..?",
+  "answer": ["Luz"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome do fundador do 4Chan americano?",
+  "answer": ["Christopher Poole"]
+   },
+  {
+  "category": "História",
+  "question": "Qual foi o conflito mais mortal da história?",
+  "answer": ["Segunda Guerra Mundial"]
+   },
+  {
+  "category": "Animes",
+  "question": "Quantos protagonistas existem em JOJO's Bizarre Adventure?",
+  "answer": ["8"]
+   },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que chefe de TV escreveu uma autobiografia chamada Humble Pie?",
+  "answer": ["Gordon Ramsay"]
+   },
+    {
+  "category": "Video Games",
+  "question": "Em que ano Sega Genesis foi lançado no Japão?",
+  "answer": ["1988"]
    }
 ]
