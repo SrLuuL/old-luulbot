@@ -78,6 +78,34 @@ app.get('/api/status', (req, res) => {
     res.send({status: 200, online: true})
 });
 
+app.get('/api/twitch/badges', async (req, res) => {
+	
+
+   try {
+		
+    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+     headers: {
+      "Client-ID": process.env.GQL_CLIENT,
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      "Authorization": process.env.GQL_AUTH
+    },
+    method: 'POST',
+    body: JSON.stringify({
+    query: `{badges {title description id badgeImage: imageURL(size:QUADRUPLE) clickURL setID version user{login id}}}`
+  })
+  })).json();
+	
+     
+
+res.send({status: 200, ...gqlFetch.data.badges})
+
+   } catch(e) {
+	   res.send({error: 'Não encontrado'})
+   }
+	
+});
+
 app.get('/api/twitch/stream/:channel', async (req, res) => {
 	
    let channelSender =  req.params.channel;
