@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 let user = context.args[0] ? context.args[0] : context.user.username;
 
 
-const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${user}`)).text()
+const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${user}`)).json();
 
 if (res.status === 404) {
    return { reply: res.error + ' :/' }
