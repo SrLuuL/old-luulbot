@@ -98,7 +98,7 @@ app.get('/api/twitch/badges', async (req, res) => {
 	
      
 
-res.send({status: 200, ...gqlFetch.data.badges})
+res.send({status: 200, badges: gqlFetch.data.badges})
 
    } catch(e) {
 	   res.send({error: 'Não encontrado'})
