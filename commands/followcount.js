@@ -6,13 +6,13 @@ const fetch = require('node-fetch');
 let user = context.args[0] ? context.args[0] : context.user.username;
 
 
-const res = await (await fetch(`https://decapi.me/twitch/followcount/${user}`)).text()
+const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${user}`)).text()
 
-if (!parseInt(res, 0)) {
-   return { reply: 'usuário não existe :/' }
+if (res.status === 404) {
+   return { reply: res.error + ' :/' }
   }
   
-let followers = (parseInt(res, 0) === 0) ? 'nenhum seguidor' : (parseInt(res, 0) > 1) ? `${res} seguidores` : `${res} seguidor`;
+let followers = (!res.followers.totalCount) ? 'nenhum seguidor' : (res.followers.totalCount > 1) ? `${res} seguidores` : `${res} seguidor`;
     
 user = (user === context.user.username) ? 'você' : user;
     
