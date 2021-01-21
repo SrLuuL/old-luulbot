@@ -167,7 +167,7 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
     },
     method: 'POST',
     body: JSON.stringify({
-    query: `{user(${queryMode}:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt  profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} badges: selectedBadge{title description setID}}}`
+    query: `{user(${queryMode}:"${channelSender}", lookupType:ALL) {login id displayName chatColor description  createdAt followers {totalCount}  follows {totalCount} profileImageURL(width:300) profileViewCount roles {isAffiliate isGlobalMod isPartner isSiteAdmin isStaff} settings {preferredLanguageTag} chatSettings{chatDelayMs followersOnlyDurationMinutes} badges: selectedBadge{title description setID}}}`
   })
   })).json();
 	
