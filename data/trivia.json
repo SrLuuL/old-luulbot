@@ -4908,5 +4908,20 @@
   "category": "Video Games",
   "question": "Em que ano Sega Genesis foi lançado no Japão?",
   "answer": ["1988"]
-   }
+   },
+    {
+  "category": "Video Games",
+  "question": "Qual é o nome do protagonista de Metal Gear Solid 2?",
+  "answer": ["Raiden"]
+    },
+  {
+  "category": "História",
+  "question": "Quem foi o 40° presidente dos Estados Unidos?",
+  "answer": ["Ronald Reagan"]
+    },
+    {
+  "category": "Biologia",
+  "question": "Qual é o maior organismo que se sabe atualmente?",
+  "answer": ["Armilaria"]
+    }
 ]
