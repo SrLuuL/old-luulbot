@@ -17,7 +17,7 @@ const sleep = (ms) => {
 }
   
 if(!args[0]) {
-  return { reply: 'Comece ou termine uma trivia com: trivia [start/off]' }
+  return { reply: 'Comece ou termine uma trivia com: trivia [start/stop]' }
 }
   
   
@@ -25,7 +25,7 @@ if(!args[0]) {
 async function triviaStart() {
   
   if(args[0] === 'start' && trivia.running && trivia.channel !== channel) {
-  return {reply: `Uma trivia já está rolando em: ${trivia.channel}!`}
+  return `Uma trivia já está rolando em: ${trivia.channel}!`
   }
   
   if (args[0] === 'start' && !trivia.running) {
@@ -35,10 +35,10 @@ async function triviaStart() {
     trivia.channel = channel;
     
     if (isNaN(triviaLength)) {
-  return { reply: 'Número de trivias inválido :/' }
+  return 'Número de trivias inválido :/'
 } else {
   if(triviaLength < 1 || triviaLength > 100) {
-    return { reply: 'Máximo: 100 | Mínimo: 1' }
+    return 'Máximo: 100 | Mínimo: 1'
   }
 }
     
@@ -108,7 +108,7 @@ async function triviaStart() {
       } else if(args[0] === 'stop') {
         trivia.stopped = true
       } else {
-        return { reply: 'Comece ou termine uma trivia com: trivia [start/off]' }
+        return 'Comece ou termine uma trivia com: trivia [start/stop]' 
       }
 }
 
@@ -122,7 +122,7 @@ async function triviaStart() {
 module.exports.config = {
 name: 'trivia',
 aliases: [],
-usage: 'trivia [start/off]',
+usage: 'trivia [start/stop]',
 description: 'Começa/termina uma trivia com perguntas de diferentes categorias(solicite permissão caso queira o comando).',
 level: 'Privado',
 cooldown: 6000    
