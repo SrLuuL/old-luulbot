@@ -20,19 +20,12 @@ if(!args[0]) {
   return { reply: 'Comece ou termine uma trivia com: trivia [start/off]' }
 }
   
-if (isNaN(triviaLength)) {
-  return { reply: 'Número de trivias inválido :/' }
-} else {
-  if(triviaLength < 1 || triviaLength > 100) {
-    return { reply: 'Máximo: 100 | Mínimo: 1' }
-  }
-}
   
 
 async function triviaStart() {
   
   if(args[0] === 'start' && trivia.running && trivia.channel !== channel) {
-  return client.say(channel, `Uma trivia já está rolando em: ${trivia.channel}!`)
+  return {reply: `Uma trivia já está rolando em: ${trivia.channel}!`}
   }
   
   if (args[0] === 'start' && !trivia.running) {
@@ -40,6 +33,15 @@ async function triviaStart() {
     trivia.running = true;
     trivia.stopped = false;
     trivia.channel = channel;
+    
+    if (isNaN(triviaLength)) {
+  return { reply: 'Número de trivias inválido :/' }
+} else {
+  if(triviaLength < 1 || triviaLength > 100) {
+    return { reply: 'Máximo: 100 | Mínimo: 1' }
+  }
+}
+    
     
     try {
       
@@ -103,8 +105,10 @@ async function triviaStart() {
         trivia.running = false
       }
       
-      } else if(args[0] === 'off') {
+      } else if(args[0] === 'stop') {
         trivia.stopped = true
+      } else {
+        return { reply: 'Comece ou termine uma trivia com: trivia [start/off]' }
       }
 }
 
