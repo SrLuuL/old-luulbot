@@ -107,7 +107,7 @@ async function triviaStart() {
       
       } else if(args[0] === 'stop') {
         trivia.stopped = true
-      } else {
+      } else if(args[0] !== 'start' || args[0] !== 'stop') {
         return 'Comece ou termine uma trivia com: trivia [start/stop]' 
       }
 }
