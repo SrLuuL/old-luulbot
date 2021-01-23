@@ -28,9 +28,10 @@ if (!fullFormat.find(index => index)) {
   
   
 user = (user === context.user.username) ? "você" : user;  
+let chatter  = (chatter_count === 1)  ? 'chatter' : 'chatters'
 
 return {
- reply: `${user} possui ${chatter_count} chatters ${fullFormat} presentes neste momento` 
+ reply: `${user} possui ${chatter_count} ${chatter} ${fullFormat} presentes neste momento` 
 }
   
 
