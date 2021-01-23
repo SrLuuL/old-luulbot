@@ -23,7 +23,7 @@ let fullFormat = verifier.filter(Boolean)
 if (!fullFormat.find(index => index)) {
   fullFormat = ''
 } else {
-  fullFormat = `(${fullFormat.join('/')})`
+  fullFormat = `| (${fullFormat.join('/')})`
 }
   
   
@@ -31,7 +31,7 @@ user = (user === context.user.username) ? "você" : user;
 let chatter  = (chatter_count === 1)  ? 'chatter presente' : 'chatters presentes'
 
 return {
- reply: `${user} possui ${chatter_count} ${chatter} neste momento  | ${fullFormat}` 
+ reply: `${user} possui ${chatter_count} ${chatter} neste momento ${fullFormat}` 
 }
   
 
