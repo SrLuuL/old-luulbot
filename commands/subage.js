@@ -54,7 +54,7 @@ user2 = sender;
 
   
    if (!data.subscribed) {
-    return { reply: `${user} não é inscrito em ${canal}, possuindo ${subMonths} no total ${subTotal}` }
+    return { reply: `${user} não possui uma inscrição  em ${canal}, possuindo ${subMonths} no total ${subTotal}` }
 }  
   
   let {type, tier} = data.subscription;
@@ -70,7 +70,7 @@ user2 = sender;
 
   
 return {
- reply: `${user} é inscrito em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier}` 
+ reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier}` 
 }
   
  } catch(err) {
