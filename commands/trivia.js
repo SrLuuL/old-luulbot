@@ -3,6 +3,8 @@ const trivia = {
   stopped: true,
 }
 
+module.exports = { trivia }
+
 module.exports.run = async (context) => {
 
   const {user, args, client, channel} = context;
@@ -107,6 +109,7 @@ async function triviaStart() {
       
       } else if(args[0] === 'stop') {
         trivia.stopped = true
+        trivia.channel = false
       } 
 }
 
