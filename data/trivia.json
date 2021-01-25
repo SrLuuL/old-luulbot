@@ -5073,5 +5073,30 @@
   "category": "Ciência",
   "question": "O que a escala Holmes e Rahe mede?",
   "answer": ["Estresse"]
+    },
+  {
+  "category": "Música",
+  "question": "Quem foi o vocalista principal da banda Sugarcubes?",
+  "answer": ["Bjork"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Mageirocofobia é o medo de quê?",
+  "answer": ["Cozinhar"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome do papai noel na frança?",
+  "answer": ["Pere Noel"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que ator famoso foi presentado com uma estátua em Leicester Square?",
+  "answer": ["Charlie Chaplin"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Em O Mágico de Oz, o que o leão estava procurando?",
+  "answer": ["Coragem"]
     }
 ]
