@@ -5098,5 +5098,35 @@
   "category": "Conhecimentos Gerais",
   "question": "Em O Mágico de Oz, o que o leão estava procurando?",
   "answer": ["Coragem"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Em O Mágico de Oz, o que o leão estava procurando?",
+  "answer": ["Coragem"]
+    },
+  {
+  "category": "Comidas/Bebidas",
+  "question": "Qual é o ingrediente principal de Tapenade?",
+  "answer": ["Azeitona"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual foi o nome do primeiro satélite artifical da Terra?",
+  "answer": ["Sputnik"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é a comida favorita das Tartarugas Ninjas?",
+  "answer": ["Pizza"]
+    },
+  {
+  "category": "Abelhas",
+  "question": "Quantas asas uma abelha possui?",
+  "answer": ["4"]
+    },
+  {
+  "category": "História",
+  "question": "Em que ano foi descoberto os destroços de Titanic?",
+  "answer": ["1985"]
     }
 ]
