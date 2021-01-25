@@ -3,8 +3,6 @@ const trivia = {
   stopped: true,
 }
 
-module.exports = { trivia }
-
 module.exports.run = async (context) => {
 
   const {user, args, client, channel} = context;
