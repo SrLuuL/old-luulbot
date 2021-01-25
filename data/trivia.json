@@ -4923,5 +4923,155 @@
   "category": "Biologia",
   "question": "Qual é o maior organismo que se sabe atualmente?",
   "answer": ["Armilaria"]
+    },
+  {
+  "category": "Matemática",
+  "question": "Em número binário, quanto é 1+1?",
+  "answer": ["10"]
+    },
+  {
+  "category": "História",
+  "question": "Joseph Smith foi um fundador de qual religião?",
+  "answer": ["Mormonismo"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quem é conhecido mundialmente como Eminem?",
+  "answer": ["Marshall Mathers"]
+    },
+  {
+  "category": "Astronomia",
+  "question": "Que planeta foi nomeado a partir da deusa da beleza?",
+  "answer": ["Vênus"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Que tipo de camelo possui duas corcóvas?",
+  "answer": ["Bactriano"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Quem foi o inventor da primeira bateria?",
+  "answer": ["Alessandro Volta"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é a cidade mais populosa da África?",
+  "answer": ["Nigéria"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que país possui a Ilha da Páscoa?",
+  "answer": ["Chile"]
+    },
+  {
+  "category": "Ciência",
+  "question": "O químico Alfred Nobel possuia qual nacionalidade?",
+  "answer": ["Sueca"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é o país com a maior quantidade de vulcões?",
+  "answer": ["Indonésia"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é o quinto maior país do mundo?",
+  "answer": ["Brasil"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome da arte japonesa de rearranjar flores?",
+  "answer": ["Ikebana"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Aproximadamente, qual é a porcentagem de água em uma água viva?",
+  "answer": ["95%"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Em estrelas-do-mar, qual é o orgão sensorial que está em cada ponta do braço?",
+  "answer": ["Olho"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que país compartilha uma borda com China, US, Finlândia e Ucrânia?",
+  "answer": ["Rússia"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que região da Itália fala ladin(ladino-dolomítica)?",
+  "answer": ["Norte da Itália"]
+    },
+  {
+  "category": "Ciência"
+  "question": "Que metal precioso químicos chamam de luna?",
+  "answer": ["Prata"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Que planta o besouro-da-batata ataca?",
+  "answer": ["Batata"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Jamaica faz parte de qual continente?",
+  "answer": ["América do Norte"]
+    },
+  {
+  "category": "Economia",
+  "question": "Qual é a moeda mais antiga ainda usada?",
+  "answer": ["Libra esterlina"]
+    },
+   {
+  "category": "Geografia",
+  "question": "Basundi é um produto diário popular em que país?",
+  "answer": ["Índia"]
+    },
+  {
+  "category": "Biologia",
+  "question": "O que insetos fazem com seus estigmas?",
+  "answer": ["Respiram"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que fígura bíblica fundou o Judaísmo?",
+  "answer": ["Abraão"]
+    },
+  {
+  "category": "História",
+  "question": "Em 1612, qual foi a primeira pessoa a observar Netuno?",
+  "answer": ["Galileu Galilei"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Qual é o nome de um vírus que infecta uma bactéria?",
+  "answer": ["Bacteriófago"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Qual é o maior músculo do corpo humano?",
+  "answer": ["Sartório"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Que parte do olho muda de forma em uma cirurgia LASIK?",
+  "answer": ["Córnea"]
+    },
+  {
+  "category": "Geografia",
+  "question": "O que causou fiordes?",
+  "answer": ["Geleiras"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o nome do elemento químico Pb?",
+  "answer": ["Chumbo"]
+    },
+  {
+  "category": "Ciência",
+  "question": "O que a escala Holmes e Rahe mede?",
+  "answer": ["Estresse"]
     }
 ]
