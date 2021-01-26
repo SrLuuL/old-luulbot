@@ -1,8 +1,4 @@
-const trivia = {
-  running: false,
-  stopped: true,
-  channel: false
-}
+const trivia = []
 
 module.exports.run = async (context) => {
 
@@ -21,19 +17,25 @@ if(!args[0]) {
   return { reply: 'Comece ou termine uma trivia com: trivia [start/stop]' }
 }
   
-  
+  function fetchQuestions(num) {
+    let questionList
+    for(let i = 0; i < num; i++) {
+      let randomQuestion = questions[Math.floor(Math.random() * questions.length)]
+      let {answer, category, question}  = randomQuestion;
+      questionList.push({category: category, question: question, answer: answer})
+    }
+    return questionList
+  }
 
-async function triviaStart() {
+async function triviaStart(questionList) {
   
-  if(args[0] === 'start' && trivia.running && trivia.channel !== channel) {
-  return `Uma trivia já está rolando em: ${trivia.channel}!`
+  if(args[0] === 'start' && trivia.find(i => i.channel === channel).running) {
+  return `Uma trivia já está rolando neste canal!`
   }
   
-  if (args[0] === 'start' && !trivia.running) {
-    
-    trivia.running = true;
-    trivia.stopped = false;
-    trivia.channel = channel;
+  if (args[0] === 'start' && !trivia.find(i => i.channel === channel).running) {
+
+    trivia.push({channel: channel, running: true, stopped: false}) 
     
     if (isNaN(triviaLength)) {
   return 'Número de trivias inválido :/'
@@ -46,9 +48,11 @@ async function triviaStart() {
     
     try {
       
-      for(let i = 0; i < triviaLength; i++) {
+      for(const ind in questionList) {
+        let item = questionList[ind]
+        let questionNum = parseInt(ind);
         
-        if(!trivia.running || trivia.stopped) {
+        if(!trivia.find(i => i.channel === channel).running) {
           break
         }
         
@@ -56,30 +60,28 @@ async function triviaStart() {
           break
         }
         
-        const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
-        const {category, question, answer} = randomQuestion;
         
-        await client.say(channel, `[${i+1}/${triviaLength}] | ${question} | Categoria: ${category}`)
+        await client.say(channel, `[${questionNum+1}/${triviaLength}] | ${item.question} | Categoria: ${item.category}`)
         
         const done = new Promise(res => {
           
           const timer = setTimeout(() => {
            client.removeListener('message', triviaVerifier); 
-           client.say(channel, `Ninguém acertou :/ | Resposta: ${answer}`);
+           client.say(channel, `Ninguém acertou :/ | Resposta: ${item.answer}`);
            res()
           }, 20000)
           
           
           async function triviaVerifier(channel, user, message){
             
-            if(trivia.channel !== channel) return;
+            if(channel !== trivia.find(i => i.channel === channel).channel) return;
             const similar = compare(message, answer[0]);
             if (similar < 0.9) return;
             
             clearTimeout(timer)
             
             client.removeListener('message', triviaVerifier);
-            client.say(channel, `${user.username} acertou! | Resposta: ${answer}`);
+            client.say(channel, `${user.username} acertou! | Resposta: ${item.answer}`);
             
             const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${user.username}'`);
             
@@ -103,20 +105,21 @@ async function triviaStart() {
         
       } finally {
         client.say(channel, 'Trivia acabou :Z');
-        trivia.running = false
-        trivia.channel = false
+        let channelIndex = trivia.findIndex(i => i.channel);
+        trivia.splice(channelIndex, 1)
       }
       
       } else if(args[0] === 'stop') {
-        trivia.stopped = true
-        trivia.running = false
-        trivia.channel = false
+        let channelIndex = trivia.findIndex(i => i.channel);
+        trivia.splice(channelIndex, 1)
       } 
 }
 
+  let fullQuestions = fetchQuestions(triviaLength)
+  
   return { 
     mode: 'event',
-    reply: await triviaStart() 
+    reply: await triviaStart(fullQuestions) 
   }
   
 }
