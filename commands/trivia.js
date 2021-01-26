@@ -31,7 +31,6 @@ if(!args[0]) {
   
 async function triviaStart(questionList) {
   
-  console.log(questionList)
   
   if(args[0] === 'start' && trivia.find(i => i.channel === channel)) {
   return `Uma trivia já está rolando neste canal!`
@@ -57,7 +56,7 @@ async function triviaStart(questionList) {
         let questionNum = parseInt(ind);
         
         if(trivia.find(i => i.channel === channel)) {
-          break
+          
         }
         
         if(channelDB.rows[0].status === 'online' && channelDB.rows[0].stream_mode) {
@@ -85,7 +84,7 @@ async function triviaStart(questionList) {
             clearTimeout(timer)
             
             client.removeListener('message', triviaVerifier);
-            client.say(channel, `${user.username} acertou! | Resposta: ${item.answer}`);
+            client.say(channel, `${user.username} acertou! | Resposta: ${item.answer[0]}`);
             
             const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${user.username}'`);
             
