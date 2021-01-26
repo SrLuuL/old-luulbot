@@ -3040,7 +3040,7 @@
   "answer": ["Japão"]
    },
     {
-  "category": "História",
+  "category": "Conhecimentos Gerais",
    "question": "Quando Jesus disse: \"Todo aquele que é da verdade ouve a minha voz\", o que Pilatos lhe perguntou?",
   "answer": ["O que é a verdade?"]
    },
@@ -4446,7 +4446,7 @@
    },
    {
   "category": "Programação",
-  "question": "Quem é o criadorde JavaScript?",
+  "question": "Quem é o criador de JavaScript?",
   "answer": ["Brendan Eich"]
    },
    {
@@ -5128,5 +5128,285 @@
   "category": "História",
   "question": "Em que ano foi descoberto os destroços de Titanic?",
   "answer": ["1985"]
+    },
+  {
+  "category": "Astronomia",
+  "question": "Que planeta é considerado uma joia do nosso sistema solar?",
+  "answer": ["Saturno"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que palavra em latim representa a expressão palavra por palavra?",
+  "answer": ["Verbatim"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o primeiro nome do escritor H. G. Wells?",
+  "answer": ["Herbert"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que mar está localizado diretamente ao norte da Polônia?",
+  "answer": ["Mar Báltico"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Um apiário cuida de quê?",
+  "answer": ["Abelhas"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que animal Indiana Jones tem mais medo?",
+  "answer": ["Cobra"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que país faz fronteira com ambos Coréia do Norte e Finlândia?",
+  "answer": ["Rússia"]
+    },
+   {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome do deus romano do sono?",
+  "answer": ["Somnus"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quem foi responsável pelo romance: Guerra e Paz?",
+  "answer": ["Leo Tolstoy"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Em que ano morreu o ator Humphrey Bogart?",
+  "answer": ["1957"]
+    },
+  {
+  "category": "Ciência",
+  "question": "N2O é mais conhecido como o quê?",
+  "answer": ["Gás hilariante"]
+    },
+  {
+  "category": "História",
+  "question": "Em que guerra aconteceu a Batalha de Ganso Verde?",
+  "answer": ["Guerra das Malvinas"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Joseph Priestley ficou conhecido por ter descoberto o quê?",
+  "answer": ["Oxigênio"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Como é chamado um grupo de bruxas?",
+  "answer": ["Coventículo"]
+    },
+  {
+  "category": "Esportes",
+  "question": "Que esporte usa palhaços para proteger os competidores?",
+  "answer": ["Rodeio"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quem escreveu o livro: Falcão Negro em Perigo?",
+  "answer": ["Mark Bowden"]
+    },
+  {
+  "category": "História",
+  "question": "Em 1947, quem foi o primeiro piloto a quebrar a barreira do som?",
+  "answer": ["Chuck Yaeager"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quem a atriz Emma Watson atua em Harry Potter?",
+  "answer": ["Hermione"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quem escreveu o romance: A Volta do Parafuso?",
+  "answer": ["Henry James"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Quantas costelas um ser humano geralmente possui?",
+  "answer": ["24"]
+    },
+  {
+  "category": "Comidas/Bebidas",
+  "question": "Ao fazer cerveja, a cevada é geralmente transformada em quê?",
+  "answer": ["Malte"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Tacofobia é o medo de quê?",
+  "answer": ["Velocidade"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Quantos  elevadores existem na Empire State Building?",
+  "answer": ["73"]
+    },
+  {
+  "category": "História",
+  "question": "Qual era a nacionalidade do conquistador Ponce de León?",
+  "answer": ["Espanhol"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que trópico passa por Austrália?",
+  "answer": ["Capricórnio"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital dos Estado Federados da Micronésia?",
+  "answer": ["Palikiro"]
+    },
+  {
+  "category": "Astronomia",
+  "question": "Que planeta possui Prometheus como seu satélite?",
+  "answer": ["Saturno"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que país asiático comemora o feriado: A Semana Dourada?",
+  "answer": ["Japão"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Pó de grafite é obtido ao cortar o quê?",
+  "answer": ["Diamante"]
+    },
+  {
+  "category": "Matemática",
+  "question": "Uma tonelada é equivalente a quantos kilogramas?",
+  "answer": ["1000"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que rede Ray Kroc construiu?",
+  "answer": ["McDonalds"]
+    },
+  {
+  "category": "Ciência",
+  "question": "O que um esfigmomanômetro mede?",
+  "answer": ["Pressão do sangue"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Na mitologia romana quem matou Remus?",
+  "answer": ["Romulos"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Quantos pontos existem em uma dado de 6 lados?",
+  "answer": ["21"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome da fobia de névoas?",
+  "answer": ["Homiclofobia"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "A droga morfina teve seu nome inspirado em um deus grego chamado...?",
+  "answer": ["Morfeu"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Que tipo de cientista era Luther Burbank?",
+  "answer": ["Botânico"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o número atômico de Tungstênio?",
+  "answer": ["74"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é o nome do maior rio em Filipinas?",
+  "answer": ["Rio Cagayan"]
+    },
+  {
+  "category": "História",
+  "question": "Mustafa Kemal foi o primeiro presidente de que país?",
+  "answer": ["Turquia"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o número atômico de Hidrogênio?",
+  "answer": ["1"]
+    },
+  {
+  "category": "Música",
+  "question": "Quantos instrumentos Richard Nixon podia tocar?",
+  "answer": ["5"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital de Guam?",
+  "answer": ["Hagatna"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "O que um fiólogo estuda?",
+  "answer": ["Linguagens"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Avarua é a capital de que país?",
+  "answer": ["Ilhas Cook"]
+    },
+  {
+  "category": "História",
+  "question": "Qual foi o primeiro presidente e último emperador da França?",
+  "answer": ["Napoleão III"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o número atômico do ouro?",
+  "answer": ["79"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Qual é o nome dado aos animais que só comem plantas?",
+  "answer": ["Herbívoros"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Que tipo de fruta é afetado por um fungo cinza chamado Podridão Nobre?",
+  "answer": ["Uva"]
+    },
+  {
+  "category": "História",
+  "question": "Que guerra durou do dia 5 de junho até 10 de junho em 1967?",
+  "answer": ["Guerra dos Seis Dias"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Que tipo de animal é um Samoieda?",
+  "answer": ["Cachorro"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Que país é famoso por seus teatros aquáticos?",
+  "answer": ["Vietnã"]
+    },
+  {
+  "category": "Comidas/Bebidas",
+  "question": "A feijoada, prato principal do Brasil, surgiu de que país europeu?",
+  "answer": ["Portugal"]
+    },
+  {
+  "category": "História",
+  "question": "Que música natalina foi a primeira a ser tocada no espaço?",
+  "answer": ["Jingle Bells"]
+    },
+  {
+  "category": "Animes",
+  "question": "Em JOJO, qual é o nome do stand de Joseph Joestar?",
+  "answer": ["Hermit Purple"]
+    },
+  {
+  "category": "Xadrez",
+  "question": "Que peça consegue capturar outras diagonalmente mas não em linha reta?",
+  "answer": ["Peão"]
     }
 ]
