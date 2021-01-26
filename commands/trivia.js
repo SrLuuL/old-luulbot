@@ -55,8 +55,8 @@ async function triviaStart(questionList) {
         let item = questionList[ind]
         let questionNum = parseInt(ind);
         
-        if(trivia.find(i => i.channel === channel)) {
-          
+        if(!trivia.find(i => i.channel === channel)) {
+          break
         }
         
         if(channelDB.rows[0].status === 'online' && channelDB.rows[0].stream_mode) {
@@ -77,7 +77,7 @@ async function triviaStart(questionList) {
           
           async function triviaVerifier(channel, user, message){
             
-            if(channel !== trivia.find(i => i.channel === channel).channel) return;
+            if(!trivia.map(i => i.channel).includes(channel)) return;
             const similar = compare(message, item.answer[0]);
             if (similar < 0.9) return;
             
