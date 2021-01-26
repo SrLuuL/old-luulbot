@@ -54,8 +54,9 @@ async function triviaStart(questionList) {
       for(const ind in questionList) {
         let item = questionList[ind]
         let questionNum = parseInt(ind);
+        let triviaChannel = questionList.find(i => i.channel).channel
         
-        if(!trivia.find(i => i.channel === questionList.find(i => i.channel).channel)) {
+        if(!trivia.find(i => i.channel === triviaChannel)) {
           break
         }
         
@@ -107,9 +108,9 @@ async function triviaStart(questionList) {
       }
         
       } finally {
-        client.say(channel, 'Trivia acabou :Z');
         let channelIndex = trivia.findIndex(i => i.channel === questionList.find(i => i.channel).channel);
         trivia.splice(channelIndex, 1)
+        client.say(channel, 'Trivia acabou :Z');
       }
       
       } else if(args[0] === 'stop') {
@@ -118,11 +119,11 @@ async function triviaStart(questionList) {
       } 
 }
 
-  let fullQuestions = fetchQuestions(triviaLength)
+
   
   return { 
     mode: 'event',
-    reply: await triviaStart(fullQuestions) 
+    reply: await triviaStart(fetchQuestions(triviaLength)) 
   }
   
 }
