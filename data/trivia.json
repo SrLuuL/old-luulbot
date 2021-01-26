@@ -5408,5 +5408,95 @@
   "category": "Xadrez",
   "question": "Que peça consegue capturar outras diagonalmente mas não em linha reta?",
   "answer": ["Peão"]
+    },
+  {
+  "category": "Filmes",
+  "question": "Quantos filmes de Senhor dos Anéis existem?",
+  "answer": ["3"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o nome do processo que uma usina nuclear usa para gerar energia?",
+  "answer": ["Fissão"]
+    },
+  {
+  "category": "Video Games",
+  "question": "Que console foi desenvolvido pela Sega mas não durou muito tempo?",
+  "answer": ["Dreamcast"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é o ph da água pura?",
+  "answer": ["7"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Kiwano é um tipo de quê?",
+  "answer": ["Fruta"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital de Krosovo?",
+  "answer": ["Pristina"]
+    },
+  {
+  "category": "Matemática",
+  "question": "O número romano L representa qual número?",
+  "answer": ["50"]
+    },
+  {
+  "category": "Video Games",
+  "question": "Quem é o protagonista nas séries Half-Life?",
+  "answer": ["Gordon Freeman"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Que tipo de rocha vulcânica é usada para esfoliar a pele?",
+  "answer": ["Pumice"]
+    },
+  {
+  "category": "Ciência",
+  "question": "Qual é a cor das chamas de um magnésio queimando?",
+  "answer": ["Branco"]
+    },
+  {
+  "category": "Matemática",
+  "question": "Qual é a raiz quadrada de 225?",
+  "answer": ["15"]
+    },
+  {
+  "category": "Matemática",
+  "question": "Rápido! Quanto é 13 + 28 + 9?",
+  "answer": ["50"]
+    },
+  {
+  "category": "Animes",
+  "question": "Em Naruto, Nagato possui qual poder ocular?",
+  "answer": ["Rinnegan"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Na mitologia grega, quem transformou todos em que ele tocou em ouro?",
+  "answer": ["Midas"]
+    },
+  {
+  "category": "Geografia",
+  "question": "Qual é a capital de Quiribati?",
+  "answer": ["Tarawa"]
+    },
+  {
+  "category": "Conhecimentos Gerais",
+  "question": "Qual é o nome da expressão dada a uma obra mais popular ou renomada de um artista?",
+  "answer": ["Magnum Opus"]
+    },
+  {
+  "category": "Biologia",
+  "question": "Qual é o nome da espécie que foi criada a partir da junção de um burro e uma égua?",
+  "answer": ["Mula"]
+    },
+  {
+  "category": "Matemática",
+  "question": "Qual é a raiz quadrada de -1?",
+  "answer": ["I"]
     }
 ]
