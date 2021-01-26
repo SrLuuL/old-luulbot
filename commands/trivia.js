@@ -27,9 +27,11 @@ if(!args[0]) {
     return questionList
   }
 
-console.log(fetchQuestions(5))
+  
   
 async function triviaStart(questionList) {
+  
+  console.log(questionList)
   
   if(args[0] === 'start' && trivia.find(i => i.channel === channel)) {
   return `Uma trivia já está rolando neste canal!`
