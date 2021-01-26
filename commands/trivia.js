@@ -55,7 +55,7 @@ async function triviaStart(questionList) {
         let item = questionList[ind]
         let questionNum = parseInt(ind);
         
-        if(!trivia.find(i => i.channel === channel)) {
+        if(!trivia.find(i => i.channel === questionList.find(i => i.channel).channel)) {
           break
         }
         
