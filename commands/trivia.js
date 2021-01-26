@@ -29,11 +29,11 @@ if(!args[0]) {
 
 async function triviaStart(questionList) {
   
-  if(args[0] === 'start' && trivia.find(i => i.channel === channel).running) {
+  if(args[0] === 'start' && trivia.find(i => i.channel === channel)) {
   return `Uma trivia já está rolando neste canal!`
   }
   
-  if (args[0] === 'start' && !trivia.find(i => i.channel === channel).running) {
+  if (args[0] === 'start' && !trivia.find(i => i.channel === channel)) {
 
     trivia.push({channel: channel, running: true, stopped: false}) 
     
@@ -52,7 +52,7 @@ async function triviaStart(questionList) {
         let item = questionList[ind]
         let questionNum = parseInt(ind);
         
-        if(!trivia.find(i => i.channel === channel).running) {
+        if(trivia.find(i => i.channel === channel)) {
           break
         }
         
@@ -67,7 +67,7 @@ async function triviaStart(questionList) {
           
           const timer = setTimeout(() => {
            client.removeListener('message', triviaVerifier); 
-           client.say(channel, `Ninguém acertou :/ | Resposta: ${item.answer}`);
+           client.say(channel, `Ninguém acertou :/ | Resposta: ${item.answer[0]}`);
            res()
           }, 20000)
           
@@ -75,7 +75,7 @@ async function triviaStart(questionList) {
           async function triviaVerifier(channel, user, message){
             
             if(channel !== trivia.find(i => i.channel === channel).channel) return;
-            const similar = compare(message, answer[0]);
+            const similar = compare(message, item.answer[0]);
             if (similar < 0.9) return;
             
             clearTimeout(timer)
