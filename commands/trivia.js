@@ -79,7 +79,6 @@ async function triviaStart(questionList) {
           async function triviaVerifier(channel, user, message){
             
             if(channel !== questionList.find(i => i.channel).channel) return;
-            if(!trivia.map(i => i.channel).includes(channel)) return;
             const similar = compare(message, item.answer[0]);
             if (similar < 0.9) return;
             
