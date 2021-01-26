@@ -5498,5 +5498,65 @@
   "category": "Matemática",
   "question": "Qual é a raiz quadrada de -1?",
   "answer": ["I"]
+    },
+  {
+      "category": "História",
+      "question": "Qual era o principal lema dos três mosqueteiros?",
+      "answer": "Um por todos e todos por um"
+    },
+    {
+      "category": "História",
+      "question": "Qual era a nacionalidade do escultor Brancusi",
+      "answer": "Romana"
+    },
+    {
+      "category": "Biologia",
+      "question": "No corpo, o hormônio luteinizante é produzido por qual glândula?",
+      "answer": "Pituitária"
+    },
+    {
+      "category": "Comidas/Bebidas",
+      "question": "Que cor tem Chablis?",
+      "answer": "Branco"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "O que é raku?",
+      "answer": "Cerâmica japonesa"
+    },
+    {
+      "category": "Ciência",
+      "question": "Qual é a cor das chamas de potássio queimando?",
+      "answer": "Roxo"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "Hipopotomonstrosesquippedaliofobia é o medo de quê?",
+      "answer": "Palavras longas"
+    },
+    {
+      "category": "Xadrez",
+      "question": "Em um jogo de xadrez qual peça possui mais liberdade de movimento?",
+      "answer": "Rainha"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "Isolofobia é o medo de quê?",
+      "answer": "Solidão"
+    },
+    {
+      "category": "Ciência",
+      "question": "Qual é o mineral mais importante para ossos e dentes?",
+      "answer": "Cálcio"
+    },
+    {
+      "category": "Ciência",
+      "question": "Que elemento químico possui o número atômico 4?",
+      "answer": "Berílio"
+    },
+    {
+      "category": "Geografia",
+      "question": "Que país cobre um continente inteiro?",
+      "answer": "Austrália"
     }
 ]
