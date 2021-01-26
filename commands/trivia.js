@@ -22,9 +22,8 @@ if(!args[0]) {
     for(let i = 0; i < num; i++) {
       let randomQuestion = questions[Math.floor(Math.random() * questions.length)]
       let {answer, category, question}  = randomQuestion;
-      questionList.push({category: category, question: question, answer: answer})
+      questionList.push({category: category, question: question, answer: answer, channel: channel})
     }
-    questionList.push({channel: channel})
     return questionList
   }
 
@@ -119,10 +118,11 @@ async function triviaStart(questionList) {
       } 
 }
 
+  let fullQuestions = fetchQuestions(triviaLength)
   
   return { 
     mode: 'event',
-    reply: await triviaStart(fetchQuestions(triviaLength)) 
+    reply: await triviaStart(fullQuestions) 
   }
   
 }
