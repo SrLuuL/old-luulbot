@@ -18,7 +18,7 @@ if(!args[0]) {
 }
   
   function fetchQuestions(num) {
-    let questionList
+    let questionList = [];
     for(let i = 0; i < num; i++) {
       let randomQuestion = questions[Math.floor(Math.random() * questions.length)]
       let {answer, category, question}  = randomQuestion;
