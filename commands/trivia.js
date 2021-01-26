@@ -27,6 +27,8 @@ if(!args[0]) {
     return questionList
   }
 
+console.log(fetchQuestions(5))
+  
 async function triviaStart(questionList) {
   
   if(args[0] === 'start' && trivia.find(i => i.channel === channel)) {
@@ -115,11 +117,10 @@ async function triviaStart(questionList) {
       } 
 }
 
-  let fullQuestions = fetchQuestions(triviaLength)
   
   return { 
     mode: 'event',
-    reply: await triviaStart(fullQuestions) 
+    reply: await triviaStart(fetchQuestions(triviaLength)) 
   }
   
 }
