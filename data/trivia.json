@@ -5558,5 +5558,55 @@
       "category": "Geografia",
       "question": "Que país cobre um continente inteiro?",
       "answer": "Austrália"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem foi o primeiro país a usar cachorros policiais?",
+      "answer": "Bélgica"
+    },
+    {
+      "category": "Ciência",
+      "question": "A grande parte das pessoas consegue ouvir melhor com qual ouvido?",
+      "answer": "Direito"
+    },
+    {
+      "category": "Futebol",
+      "question": "Quantas pessoas existem em um time tradicional de futebol?",
+      "answer": "11"
+    },
+    {
+      "category": "Geografia",
+      "question": "Pearl Harbor está localizado em que ilha?",
+      "answer": "Oahu"
+    },
+    {
+      "category": "Matemática",
+      "question": "Que sistema numérico usa apenas os símbolos 1 e 0?",
+      "answer": "Binário"
+    },
+    {
+      "category": "Biologia",
+      "question": "Que material é produzido pela planta Gossypium?",
+      "answer": "Algodão"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "Se você sofre de fobofobia, você tem medo de quê?",
+      "answer": "Fobias"
+    },
+    {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual personagem da mitologia grega tinha várias cabeças?",
+      "answer": "Hidra"
+    },
+    {
+      "category": "Ciência",
+      "question": "A palavra laser significa o quê?",
+      "answer": "Amplificação da Luz por Emissão Estimulada de Radiação"
+    },
+    {
+      "category": "Comidas/Bebidas",
+      "question": "O que dá a cerveja o seu gosto amargo?",
+      "answer": "Lúpulo"
     }
 ]
