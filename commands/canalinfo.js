@@ -14,15 +14,15 @@ if(res.status === 404) {
   return { reply: res.error }
 }
 
-let {displayName, login, id, description, chatColor} = res;
-
-description =  description ? description.length > 70 ? `${description.slice(0,70)}...` : description : '(sem bio)';
+let {displayName, login, id, description, chatColor, banned} = res;
   
-chatColor = chatColor || '(sem cor)';
+banned = (banned) ? '(🛑 Banido)' : '';  
+description =  (description) ? description.length > 70 ? `${description.slice(0,70)}...` : description : '(sem bio)';  
+chatColor = (chatColor) || '(sem cor)';
   
 
 return {
- reply: `Canal: ${displayName} | ID: ${id} | Bio: ${description} | Cor: ${chatColor}` 
+ reply: `Canal: ${displayName} ${banned} | ID: ${id} | Bio: ${description} | Cor: ${chatColor}` 
 }
   
 } catch(err) {
