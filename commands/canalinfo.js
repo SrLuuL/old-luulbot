@@ -16,13 +16,13 @@ if(res.status === 404) {
 
 let {displayName, login, id, description, chatColor, banned} = res;
   
-banned = (banned) ? '(🛑 Banido)' : '';  
+banned = (banned) ? '| 🛑 BANIDO' : '';  
 description =  (description) ? description.length > 70 ? `${description.slice(0,70)}...` : description : '(sem bio)';  
 chatColor = (chatColor) || '(sem cor)';
   
 
 return {
- reply: `Canal: ${displayName} ${banned} | ID: ${id} | Bio: ${description} | Cor: ${chatColor}` 
+ reply: `Canal: ${displayName} | ID: ${id} | Bio: ${description} | Cor: ${chatColor} ${banned}` 
 }
   
 } catch(err) {
