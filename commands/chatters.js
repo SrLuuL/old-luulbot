@@ -13,9 +13,9 @@ if (!chatter_count) {
 
 const {chatters: {vips, moderators, staff}} = res;
   
-let modsTotal = (moderators.length > 1) ? `${moderators.length} mods` : `1 mod`;
-let vipsTotal = (vips.length > 1) ? `${vips.length} vips` : `1 vip`;
-let staffsTotal = (staff.length > 1) ? `${staff.length} staffs` : `1 staff`;  
+let modsTotal = (moderators.length > 1) ? `${moderators.length} Mods` : `1 Mod`;
+let vipsTotal = (vips.length > 1) ? `${vips.length} Vips` : `1 Vip`;
+let staffsTotal = (staff.length > 1) ? `${staff.length} Staffs` : `1 Staff`;  
   
 const verifier = [(vips.length > 0 ? vipsTotal : 0), (moderators.length > 0 ? modsTotal : 0), (staff.length > 0 ? staffsTotal : 0)];
 let fullFormat = verifier.filter(Boolean)
@@ -23,7 +23,7 @@ let fullFormat = verifier.filter(Boolean)
 if (!fullFormat.find(index => index)) {
   fullFormat = ''
 } else {
-  fullFormat = `| (${fullFormat.join('/')})`
+  fullFormat = `| ${fullFormat.join('/')}`
 }
   
   
