@@ -104,7 +104,7 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 
 if (cmdfile) {
 	
-	let {name: cmdName, level: cmdPerm, cooldown: cmdCD} = cmdfile.config
+	let {name: cmdName, level: cmdPerm, cooldown: cmdCD, family: cmdFamily} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
 	if (streamStatus === 'live' && streamMode) {	
@@ -125,7 +125,7 @@ if (cmdfile) {
 		break;	
 	case 'Privado':
 		if (msgType === 'whisper') return;
-		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdName}'`)
+		let cmdPermDB = await db.query(`SELECT * FROM luulbot_perms WHERE channel = '${canal}' AND command = '${cmdFamily ||cmdName}'`)
 		if (!cmdPermDB.rowCount) return; 
 }
 	
