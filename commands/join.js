@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 
 let channelSender = context.args[0];  
 
-if (channelSender) return { reply: 'nenhum canal citado :/' }
+if (!channelSender) return { reply: 'nenhum canal citado :/' }
  
 const getId = await db.query('SELECT userid FROM luulbot_channels ORDER BY userid ASC')
 const userID = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${channelSender}`)).json()
