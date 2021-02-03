@@ -15,9 +15,9 @@ if(userID.error) {
  return { reply: `${userID.error} :/` } 
 }
 
-await db.query(`INSERT INTO luulbot_channels(userchannel, userid, useruid) VALUES($1,$2,$3)`, [context.args[0], getId.rows.pop().userid + 1, userID.id]);
-context.client.join(context.args[0]);
-channelsOptions.push(`${context.args[0]}`)
+await db.query(`INSERT INTO luulbot_channels(userchannel, userid, useruid) VALUES($1,$2,$3)`, [channelSender, getId.rows.pop().userid + 1, userID.id]);
+context.client.join(channelSender);
+channelsOptions.push(`${channelSender}`)
 
 return {
  reply: `conectado com sucesso em ${channelSender}` 
