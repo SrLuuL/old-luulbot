@@ -20,7 +20,7 @@ context.client.join(context.args[0]);
 channelsOptions.push(`${context.args[0]}`)
 
 return {
- reply: `conectado com sucesso em ${context.args[0]}` 
+ reply: `conectado com sucesso em ${channelSender}` 
 }
   
 }
