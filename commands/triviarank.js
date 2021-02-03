@@ -34,6 +34,6 @@ aliases: ['tr'],
 description: 'Mostra os pontos de trivia do top ou de uma pessoa',
 usage: 'triviarank [user/top]',
 cooldown: 4000,
-level: 'Todos',
+level: 'Privado',
 family: 'trivia'
 }
