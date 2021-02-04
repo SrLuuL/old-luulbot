@@ -5608,5 +5608,65 @@
       "category": "Comidas/Bebidas",
       "question": "O que dá a cerveja o seu gosto amargo?",
       "answer": ["Lúpulo"]
+    },
+    {
+      "category": "História",
+      "question": "Como George II morreu?",
+      "answer": ["Caindo da privada"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Qual é o nome da parte decimal de um logaritimo?",
+      "answer": ["Mantissa"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Como se chama uma pessoa sem pigmento de pele?",
+      "answer": ["Albina"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que pintor francês impressionista morreu em 1926?",
+      "answer": ["Claude Monet"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem inventou o círculo cromático?",
+      "answer": ["Isaac Newton"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Que animal possui a maior pressão de sangue?",
+      "answer": ["Girafa"]
+    },
+  {
+      "category": "Matemática",
+      "question": "O número romano L representa qual número?",
+      "answer": ["50"]
+    },
+  {
+      "category": "História",
+      "question": "Que doença Ken Mattingly pegou em Apollo 13?",
+      "answer": ["Sarampo"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é a maior tecla em um teclado tradicional?",
+      "answer": ["Espaço"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Que bebida também é chamada de A Fada Verde?",
+      "answer": ["Absinto"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "O que a primeira máquina de venda distribuia?",
+      "answer": ["Água benta"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Ossos carpais são encontrados em que parte do corpo?",
+      "answer": ["Pulso"]
     }
 ]
