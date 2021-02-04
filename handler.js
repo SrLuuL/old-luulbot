@@ -3,6 +3,7 @@ const luulbot = require ("./clients/discord.js").luulbot
 const fetch = require("node-fetch");
 const db = require('./clients/database.js').db;
 const channels = require("./credentials/login.js").channelOptions;
+const moment = require('moment-timezone');
 
 let prefix = "=";
 let commandCD = new Set();
@@ -104,12 +105,17 @@ let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.alia
 
 if (cmdfile) {
 	
+	
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD, family: cmdFamily} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
 	if (streamStatus === 'live' && streamMode) {	
 		if(cmdName !== 'modostream') return;	
 	}
+	
+	let currentDate = moment.tz(Date.now(), 'America/Bahia').locale('pt').format('LLLL');
+	
+	await db.query(`UPDATE luulbot_channels SET last_used = '${currentDate}' WHERE userchannel = '${canal}'`)
 	
 	
         // Permission handler
