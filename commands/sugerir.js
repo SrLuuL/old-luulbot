@@ -25,7 +25,7 @@ module.exports.run = async (context) => {
   await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, fillteredSuggest, context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
-   reply: `sugestão anotada :D 📝 (ID: ${suggestTotal})` 
+   reply: `sugestão anotada :D 📝 (ID: ${suggestTotal}) https://luulbot.herokuapp.com/suggests/${suggestTotal}` 
   }
 
 }
