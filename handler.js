@@ -119,7 +119,8 @@ if (cmdfile) {
 	const userFetch = await db.query(`SELECT * FROM luulbot_users WHERE userchannel = '${username}'`);
 	
 	if(!userFetch.rowCount) {
-	 let userUID = userFetch.rows.length + 1;
+	 let usersLength = await db.query(`SELECT * FROM luulbot_users`);	
+	 let userUID = usersLength.rows.length + 1;
 	 await db.query(`INSERT INTO luulbot_users(userchannel, userid, useruid, lastchannel, lastcommand, lastseen, commandsused) VALUES($1,$2,$3,$4,$5,$6,$7)`, [username, user['user-id'], userUID, channel, command, currentDate, 1]);	
 	} else {
 	 await db.query(`UPDATE luulbot_users SET lastchannel = '${channel}', lastcommand = '${command}', lastseen = '${currentDate}', commandsused = commandsused + 1 WHERE userchannel = '${username}'`);	
