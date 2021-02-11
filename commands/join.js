@@ -11,7 +11,7 @@ if (!channelSender) return { reply: 'nenhum canal citado :/' }
 const getUID = await db.query('SELECT useruid FROM luulbot_channels ORDER BY useruid ASC')
 const channelsDB = await db.query('SELECT * FROM luulbot_channels')
 const userID = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${channelSender}`)).json()
-let channelUID = getUID.rows.pop().userid + 1;
+let channelUID = getUID.rows.pop().useruid + 1;
 
 if(userID.error) {
  return { reply: `${userID.error} :/` } 
@@ -20,6 +20,7 @@ if(userID.error) {
 let channelInfo =  channelsDB.rows.find(i => i.userid === userID.id);
  
 if(channelInfo) {
+ console.log('cu')
  await db.query(`UPDATE luulbot_channels SET userchannel = '${channelSender}' WHERE userid = '${channelInfo.userid}'`);
  const channelPlace = channelsOptions.findIndex(i => i === channelSender);
  channelsOptions.splice(`${channelInfo.userchannel}`, 1);
