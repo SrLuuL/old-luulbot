@@ -17,7 +17,7 @@ if(userID.error) {
  return { reply: `${userID.error} :/` } 
 }
  
-let channelInfo =  channelsDB.rows.find(i => i.userid === userID.id);
+let channelInfo =  channelsDB.rows.find(i => i.userid == userID.id);
 console.log(channelInfo) 
  
 if(channelInfo) {
