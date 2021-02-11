@@ -855,7 +855,7 @@ app.get('/canais', async (req, res) => {
 <tr>
 <td><a>${i.userchannel}</a></td>
 <td><a>${i.mode}</a></td>
-<td><a>${i.userid}</a></td>
+<td><a>${i.useruid}</a></td>
 </tr>
 
 `);
