@@ -18,7 +18,7 @@ if(userID.error) {
 }
  
 let channelInfo =  channelsDB.rows.find(i => i.userid == userID.id);
-console.log(channelInfo) 
+
  
 if(channelInfo) {
  await db.query(`UPDATE luulbot_channels SET userchannel = '${channelSender}' WHERE userid = '${channelInfo.userid}'`);
