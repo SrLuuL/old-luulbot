@@ -1,8 +1,8 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, channel, user}) => {
 
 const fetch = require("node-fetch")
 
-let user = (!context.args[0]) ?  context.channel.slice(1) :  context.args[0].toLowerCase();
+let user = (!args[0]) ?  channel.slice(1) :  args[0].toLowerCase();
 
 const res = await (await fetch(`https://tmi.twitch.tv/group/user/${user}/chatters`)).json();  
 const {chatter_count} = res;  
@@ -27,7 +27,7 @@ if (!fullFormat.find(index => index)) {
 }
   
   
-user = (user === context.user.username) ? "você" : user;  
+user = (user === user.username) ? "você" : user;  
 let chatter  = (chatter_count === 1)  ? 'chatter presente' : 'chatters presentes'
 
 return {
