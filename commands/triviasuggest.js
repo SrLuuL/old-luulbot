@@ -1,8 +1,7 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user}) => {
 
 const db = require('../clients/database.js').db;
-const {args, user} = context;
- 
+
 if(!args[0]) {
  return { reply: 'insira uma questão :/' }
  }
