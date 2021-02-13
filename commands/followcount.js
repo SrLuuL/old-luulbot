@@ -1,9 +1,9 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, username}) => {
 
 const fetch = require('node-fetch');
 
    
-let user = context.args[0] ? context.args[0] : context.user.username;
+let user = args[0] ? args[0] : user.username;
 
 
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${user}`)).json();
@@ -15,7 +15,7 @@ if (res.status === 404) {
 let followCount = res.followers.totalCount;   
 let followers = (!followCount) ? 'nenhum seguidor' : (followCount > 1) ? `${followCount} seguidores` : `${followCount} seguidor`;
     
-user = (user === context.user.username) ? 'você' : user;
+user = (user === user.username) ? 'você' : user;
     
 return {
  reply: `${user} possui ${followers}`  
