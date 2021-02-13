@@ -1,4 +1,4 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user: username, channel}) => {
 
 const fetch = require('node-fetch');
 const ms = require('pretty-ms');
@@ -6,8 +6,7 @@ const ms = require('pretty-ms');
 let sender;
 let user;
 
-const {args, user: username, channel} = context  
- 
+
 if (args[0] && args[1]) {
 sender = args[1].toLowerCase();
 user = args[0].toLowerCase();  
