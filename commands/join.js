@@ -1,10 +1,10 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, client}) => {
 
 const channelsOptions = require("../credentials/login.js").channelOptions;
 const db = require("../clients/database.js").db;
 const fetch = require('node-fetch');  
 
-let channelSender = context.args[0];  
+let channelSender = args[0];  
 
 if (!channelSender) return { reply: 'nenhum canal citado :/' }
  
@@ -27,7 +27,7 @@ if(channelInfo) {
  channelsOptions.push(`${channelSender}`)
 } else {
 await db.query(`INSERT INTO luulbot_channels(userchannel, userid, useruid) VALUES($1,$2,$3)`, [channelSender, userID.id , channelUID]);
-context.client.join(channelSender);
+client.join(channelSender);
 channelsOptions.push(`${channelSender}`)
 }
 
