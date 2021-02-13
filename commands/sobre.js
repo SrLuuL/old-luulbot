@@ -1,4 +1,4 @@
-module.exports.run = (context) => {
+module.exports.run = () => {
 
   let channelList = require('../credentials/login.js').channelOptions;
   
