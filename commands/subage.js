@@ -1,6 +1,4 @@
-module.exports.run = async (context) => {
-
- const {args, user: username, channel} = context
+module.exports.run = async ({args, user: username, channel}) => {
   
  const ms = require("pretty-ms")
   
