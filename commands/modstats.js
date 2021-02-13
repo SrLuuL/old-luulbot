@@ -1,7 +1,6 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user: username}) => {
 
 const fetch = require("node-fetch");
-const {args, user: username} = context
 const userid = (!args[0]) ? username.username : args[0];
   
 const res = await (await fetch(`https://modlookup.3v.fi/api/user-totals/${userid}`)).json();  
