@@ -126,7 +126,7 @@ if (cmdfile) {
 	 await db.query(`UPDATE luulbot_users SET lastchannel = '${channel}', lastcommand = '${command}', lastseen = '${currentDate}', commandsused = commandsused + 1 WHERE userchannel = '${username}'`);	
 	}
 	
-	await db.query(`UPDATE luulbot_channels SET last_used = '${currentDate}' WHERE userchannel = '${canal}'`)
+	await db.query(`UPDATE luulbot_channels SET last_used = '${currentDate}', commands_used = commands_used+1 WHERE userchannel = '${canal}'`)
 	
 	
         // Permission handler
