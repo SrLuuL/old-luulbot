@@ -1,8 +1,8 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user: username, channel}) => {
 
 const fetch = require('node-fetch');
 const ms = require('pretty-ms');
-const {args, user:username, channel} = context
+
   
 let sender;
 let user;
