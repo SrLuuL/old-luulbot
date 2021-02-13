@@ -1,8 +1,8 @@
 const trivia = []
 
-module.exports.run = async (context) => {
+module.exports.run = async ({user, args, client, channel}) => {
 
-  const {user, args, client, channel} = context;
+
   let triviaLength = args[1] || 1;
   const questions = require('../data/trivia.json');
   const db = require('../clients/database.js').db;
