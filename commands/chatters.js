@@ -1,4 +1,4 @@
-module.exports.run = async ({args, channel, user}) => {
+module.exports.run = async ({args, channel, user: username}) => {
 
 const fetch = require("node-fetch")
 
@@ -27,7 +27,7 @@ if (!fullFormat.find(index => index)) {
 }
   
   
-user = (user === user.username) ? "você" : user;  
+user = (user === username.username) ? "você" : user;  
 let chatter  = (chatter_count === 1)  ? 'chatter presente' : 'chatters presentes'
 
 return {
