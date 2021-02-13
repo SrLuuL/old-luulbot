@@ -1,4 +1,4 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args}) => {
 
 const cherangi = require('@distributed/cherangi');
 const translateapi = require('@kaysilvn/google-translate-api');
@@ -25,7 +25,7 @@ hex.push(characterList[Math.floor(Math.random() * characterList.length)])
   
 let randomHex  = await getRandomHex()
   
-switch(context.args[0]) {
+switch(args[0]) {
   case 'hex':
     return { reply: `#${randomHex}` }
     break;
