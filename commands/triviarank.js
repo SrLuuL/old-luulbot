@@ -1,7 +1,7 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user}) => {
 
 const db = require('../clients/database.js').db;
-const {args, user} = context;
+
  
 let sender = (args[0]) ? args[0].toLowerCase() : user.username.toLowerCase();
 const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${sender}'`);
