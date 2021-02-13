@@ -1,4 +1,4 @@
-module.exports.run =  async (context) => {
+module.exports.run =  async ({client}) => {
 
 	const db = require('../clients/database.js').db;
         const si = require("systeminformation");
@@ -8,7 +8,7 @@ module.exports.run =  async (context) => {
         let total = process.memoryUsage().heapTotal / 1024 / 1024;
 	let realtotal = Math.round(total * 100) / 100;
 	
-	const ping = await context.client.ping() * 1000;
+	const ping = await client.ping() * 1000;
 	
 	const date = await db.query(` SELECT * FROM luulbot_info WHERE setting = 'uptime' `)
 	const uptime = await ms(Date.now() - date.rows[0].value, {secondsDecimalDigits: 0, unitCount: 3});
