@@ -1,18 +1,18 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user, channel}) => {
 
 const db = require('../clients/database.js').db;
 
   
-if(context.user['message-type'] === 'whisper') {
+if(user['message-type'] === 'whisper') {
   return { reply: 'Comando não disponível em whispers :P' }
 }  
 
   
-let canal = context.channel.replace('#', '');    
+let canal = channel.replace('#', '');    
 let streamModeDB = await db.query(`SELECT stream_mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
 let streamMode = streamModeDB.rows[0]['stream_mode'];
   
-switch(context.args[0]) {
+switch(args[0]) {
     
   case 'on':
     
