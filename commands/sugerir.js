@@ -1,4 +1,4 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user}) => {
 
   const db = require("../clients/database.js").db
   const moment = require('moment-timezone');
@@ -14,15 +14,15 @@ module.exports.run = async (context) => {
     await (suggestTotal = suggestTotal.suggestid + 1)
   }
   
-  if (!context.args[0]) return { reply: 'mande uma sugestão :/' }
+  if (!args[0]) return { reply: 'mande uma sugestão :/' }
   
  const currentDate = moment.tz(new Date(), 'America/Bahia').locale('pt').format('YYYY-MM-DDTHH:mm:ss');
- const fillteredSuggest = context.args.join(' ')
+ const fillteredSuggest = args.join(' ')
  .replace(/</g, '&lt;')
  .replace(/>/g, '&gt;');
  
 
-  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [context.user.username, fillteredSuggest, context.user['user-id'], suggestTotal, 10, new Date(currentDate)])
+  await db.query(`INSERT INTO luulbot_suggests(userchannel, usersuggest, userid, suggestid, priority, suggestdate) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, fillteredSuggest, user['user-id'], suggestTotal, 10, new Date(currentDate)])
 
   return {
    reply: `sugestão anotada :D 📝 (ID: ${suggestTotal}) https://luulbot.herokuapp.com/suggests/${suggestTotal}` 
