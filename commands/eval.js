@@ -1,15 +1,15 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user, client, cmd, alias, channel}) => {
 
   const db = require('../clients/database.js').db
 
 
   try {
   
-const evaluated = await eval('(async () => {' +context.args.join(" ") + '})()')
+const evaluated = await eval('(async () => {' +args.join(" ") + '})()')
 const ev = String(evaluated)
 
 
-if (!context.args[0]) return { reply: 'insira um código :/' }
+if (!args[0]) return { reply: 'insira um código :/' }
 else return { reply: `${ev}`, mode: 'say' }
 
     
