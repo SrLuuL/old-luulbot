@@ -1,11 +1,11 @@
-module.exports.run = (context) => {
+module.exports.run = ({args, cmd, alias}) => {
 
  
-if (!context.args[0]) {
+if (!args[0]) {
 return { reply: 'https://luulbot.herokuapp.com/comandos' }
 } 
  else {
-let command = context.cmd.get(context.alias.get(context.args[0].toLowerCase()) || context.args[0].toLowerCase());
+let command = cmd.get(alias.get(args[0].toLowerCase()) || args[0].toLowerCase());
 if (!command) return { reply: 'comando não existe :/' }
   
 command = command.config
