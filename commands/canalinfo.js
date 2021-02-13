@@ -1,11 +1,11 @@
-module.exports.run = async (context) => {
+module.exports.run = async ({args, user}) => {
 
 const fetch = require("node-fetch")
 const ms = require("pretty-ms")
 
 try {
 
-let sender = context.args[0] ? context.args[0] : context.user.username
+let sender = args[0] ? args[0] : user.username
 
 
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${sender}`)).json()
