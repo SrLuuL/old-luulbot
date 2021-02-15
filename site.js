@@ -717,13 +717,13 @@ app.get('/suggests/:id', async (req, res) => {
  let queryId = req.params.id;
 	
  if(isNaN(queryId)) {
-  res.send(wrongPage)	 
+  return res.send(wrongPage)	 
  }
 	
  const suggestsList = await db.query(`SELECT * FROM luulbot_suggests WHERE suggestid = '${queryId}'`);
 
  if (!suggestsList.rowCount) {
-	 res.send(wrongPage)
+	  res.send(wrongPage)
  } else {
 	
 	
