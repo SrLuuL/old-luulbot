@@ -22,7 +22,7 @@ module.exports.run = async ({args, channel}) => {
  await db.query(`UPDATE luulbot_channels SET prefix = '${prefixSender}' WHERE userchannel = '${canal}'`)
   
  return {
-  reply: `Prefixo atualizado! Prefixo atual: ${currentPrefix}` 
+  reply: `Prefixo atualizado! Prefixo atual: ${prefixSender}` 
  }
   
 }
