@@ -8,7 +8,7 @@ module.exports.run = async ({args, channel}) => {
  currentPrefix = currentPrefix.rows[0].prefix;
   
  if(!prefixSender) {
-   return { reply: `Insira um prefixo, prefixo atual: ${currentPrefix}` }
+   return { reply: `Insira um prefixo | Prefixo atual: ${currentPrefix}` }
  }
   
  if(prefixSender.match(invisChar)) {
@@ -22,7 +22,7 @@ module.exports.run = async ({args, channel}) => {
  await db.query(`UPDATE luulbot_channels SET prefix = '${prefixSender}' WHERE userchannel = '${canal}'`)
   
  return {
-  reply: `Prefixo atualizado! Prefixo atual: ${prefixSender}` 
+  reply: `Prefixo atualizado! | Prefixo atual: ${prefixSender}` 
  }
   
 }
