@@ -5,7 +5,6 @@ const db = require('./clients/database.js').db;
 const channels = require("./credentials/login.js").channelOptions;
 const moment = require('moment-timezone');
 
-let prefix = "=";
 let commandCD = new Set();
 let globalDelay = new Set();
 let cmd = luulbot.commands;
@@ -61,11 +60,16 @@ client.on('message', (channel, user, message, self) => handleMSG(channel, user, 
 async function handleMSG(channel, user, message, self) {
 	
 	
+	        
+	
 	let username = user.username
-	let args = message.slice(prefix.length).trim().split(/ +/g);
-	let command = args.shift();
 	let canal = channel.replace("#", "");
 	let msgType = user['message-type']
+	
+	let prefixDB = await db.query(`SELECT prefix from luulbot_channels WHERE userchannel='${canal}'`);
+	let prefix = prefixDB.rows[0].prefix
+	let args = message.slice(prefix.length).trim().split(/ +/g);
+	let command = args.shift();
 	
 	let streamModeDB = await db.query(`SELECT stream_mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
         let streamMode = streamModeDB.rows[0]['stream_mode'];
