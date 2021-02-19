@@ -99,7 +99,6 @@ async function handleMSG(channel, user, message, self) {
 	}
 	
 	if (!message.startsWith(prefix)) return;
-	if (message.slice(prefix.length).startsWith(' ')) return;
         if (globalDelay.has(channel)) return;
 
 
