@@ -24,7 +24,7 @@ user2 = sender;
  let res = await fetch(`https://luulbot.herokuapp.com/api/twitch/sub/${user1}/${user2}`)
  let data = await res.json();
  
-   if(data.status === 404) {
+   if(data.error) {
    return { reply: `${data.error} :/` }
   }
   
