@@ -22,6 +22,10 @@ try {
  
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/modsvips/${sender}`)).json();
 
+if(res.error) {
+ return { reply: `${res.error} :/` }
+}
+ 
 const modCheck = res.mods.find(i => i.login === user) || false;
 
 
