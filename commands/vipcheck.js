@@ -22,7 +22,10 @@ user = username.username;
  try {
   
 const res = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/modsvips/${sender}`)).json();
-
+if(res.error) {
+ return { reply: `${res.error} :/` }
+}
+   
 const vipCheck = res.vips.find(i => i.login === user) || false;
 
 
