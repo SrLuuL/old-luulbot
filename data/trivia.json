@@ -5668,5 +5668,60 @@
       "category": "Biologia",
       "question": "Ossos carpais são encontrados em que parte do corpo?",
       "answer": ["Pulso"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que tipo de radiação deu poderes ao Hulk?",
+      "answer": ["Gamma"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Que órgão não está presente em um cervo?",
+      "answer": ["Vesícula biliar"]
+    },
+  {
+      "category": "História",
+      "question": "Que música no filme Titanic ganhou um Oscar em 1997?",
+      "answer": ["My Heart Will Go On"]
+    },
+  {
+      "category": "História",
+      "question": "Em que ano Winston Churchill ganhou o prêmio Nobel em literatura?",
+      "answer": ["1953"]
+    },
+  {
+      "category": "Música",
+      "question": "Que grupo pop cantou a música Staying Alive?",
+      "answer": ["Bee Gees"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quantos quadrados coloridos tem em um cubo de Rubik?",
+      "answer": ["54"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Aproximadamente, quantos cm é um pé(unidade)?",
+      "answer": ["30"]
+    },
+  {
+      "category": "Esportes",
+      "question": "Que país hospedou os primeiros Jogos Olímpicos em 1896?",
+      "answer": ["Grécia"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Micologia é o estudo sobre o quê?",
+      "answer": ["Fungos"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Como se chama a transição do estado sólido para o estado gasoso sem passar pelo estado líquido?",
+      "answer": ["Sublimação"]
+    },
+  {
+      "category": "História",
+      "question": "Louis Pasteur inventou a vacina contra que doença famosa?",
+      "answer": ["Raiva"]
     }
 ]
