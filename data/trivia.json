@@ -1865,11 +1865,6 @@
   "answer": ["Brasil"]
    },
   {
-   "category": "Animes",
-   "question": "AYAYA any cuties?",
-  "answer": ["FCreep"]
-   },
-  {
    "category": "Abelhas",
    "question": "Qual é a única função de um zangão?",
   "answer": ["Procriar"]
@@ -1897,7 +1892,7 @@
   {
    "category": "Minecraft",
    "question": "O que espanta creepers?",
-  "answer": ["Ocelotes"]
+  "answer": ["Gatos"]
    },
   {
    "category": "Geografia",
@@ -4258,11 +4253,6 @@
   "category": "Conhecimentos Gerais",
   "question": "Qual país europeu consome comida mexicana mais picante do que qualquer outro?",
   "answer": ["Noruega"]
-   },
-    {
-  "category": "Programação",
-  "question": "Quem fez o Obote?",
-  "answer": ["Namaca"]
    },
     {
   "category": "Minecraft",
