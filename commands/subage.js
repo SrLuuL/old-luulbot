@@ -29,7 +29,7 @@ user2 = sender;
   }
   
 
-  let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden} = data;
+  let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden, subscription} = data;
   
   
    user = (user.toLowerCase() === username.username) ? "você" : user; 
@@ -59,16 +59,19 @@ user2 = sender;
   const {end} = data.streak;
   let dateStreak = new Date(end);
   let dateCumulative = new Date(endCumulative);
+  let gifter = '';
   dateStreak = dateStreak - Date.now();
   dateCumulative = dateCumulative - Date.now();
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
   type = (type == "Paid") ? "Pago" : type
   
-
-  
+  if(subscription?.gift) {
+      gifter = `| Gifter: {subscription.gift.gifter.login}`
+     }
+   
 return {
- reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} | Tier: ${tier}` 
+ reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} ${gifter} | Tier: ${tier}` 
 }
   
  } catch(err) {
