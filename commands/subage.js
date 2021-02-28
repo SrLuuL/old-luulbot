@@ -66,9 +66,11 @@ user2 = sender;
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
   type = (type == "Paid") ? "Pago" : type
   
-  if(subscription?.gift) {
-      gifter = `| Gifter: {subscription.gift.gifter.login}`
-     }
+  if(subscription) {
+    if (subscription.gift) {
+      gifter = `| Gifter: ${subscription.gift.gifter.login}`
+    }
+   }
    
 return {
  reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} ${gifter} | Tier: ${tier}` 
