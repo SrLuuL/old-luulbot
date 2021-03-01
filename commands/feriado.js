@@ -4,14 +4,14 @@ module.exports.run = async ({args}) => {
   const moment = require('moment-timezone');
   const ms = require('pretty-ms');
   
-  const currentDate = moment().tz('America/Bahia').valueOf();
-  
+  const currentDate = moment().tz('America/Bahia').format();
+  const currentDateMs = new Date(currentDate).getTime();
   
   
   if(!args[0]) {
     
-    let todayMonth = new Date().getMonth() + 1;
-    let todayDay = new Date().getDate();
+    let todayMonth = new Date(currentDate).getMonth() + 1;
+    let todayDay = new Date(currentDate).getDate();
    
     
     let todayDate = `${todayDay.toString().padStart(2, "0")}/${todayMonth.toString().padStart(2, "0")}`
@@ -46,10 +46,10 @@ module.exports.run = async ({args}) => {
     let randomDateWeek = randomDate.week;
     
     if(currentDate > randomDateTime) {
-     let pastDate = ms(currentDate - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
+     let pastDate = ms(currentDateMs - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa data foi marcada como ${randomDateTitle}(${randomDateWeek}), há ${pastDate}` } 
     } else {
-      let afterDate = ms(randomDateTime - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
+      let afterDate = ms(randomDateTime - currentDateMs, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa data irá ser marcada como ${randomDateTitle}(${randomDateWeek}), daqui ${afterDate}` } 
     }
     
@@ -62,10 +62,10 @@ module.exports.run = async ({args}) => {
     let titleSearchDate = new Date(`${titleSearch[0].date}/2021`).getTime();
     
     if(currentDate > titleSearchDate) {
-     let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
+     let pastDate = ms(currentDateMs - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa comemoração ocorreu em ${titleSearchDay}(${titleSearchWeek}), há ${pastDate}` } 
     } else {
-      let afterDate = ms(titleSearchDate - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
+      let afterDate = ms(titleSearchDate - currentDateMs, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa comemoração irá ocorrer em ${titleSearchDay}(${titleSearchWeek}), daqui ${afterDate}` } 
     }
     
