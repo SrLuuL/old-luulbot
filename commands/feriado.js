@@ -4,7 +4,7 @@ module.exports.run = async ({args}) => {
   const moment = require('moment-timezone');
   const ms = require('pretty-ms');
   
-  const currentDate = moment().tz('America/Bahia').format();
+  const currentDate = moment().tz('America/Bahia').format().slice(0, 19);
   const currentDateMs = new Date(currentDate).getTime();
   
   
