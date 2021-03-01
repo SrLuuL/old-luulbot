@@ -61,10 +61,10 @@ module.exports.run = async ({args}) => {
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração ocorreu em ${titleSearch.date}, há ${pastDate}` } 
+     return { reply: `essa comemoração ocorreu em ${titleSearchDay}, há ${pastDate}` } 
     } else {
       let afterDate = ms(titleSearchDate - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração irá ocorrer em ${titleSearch.date}, daqui ${afterDate}` } 
+     return { reply: `essa comemoração irá ocorrer em ${titleSearchDay}, daqui ${afterDate}` } 
     }
     
   }
