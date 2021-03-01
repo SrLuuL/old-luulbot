@@ -46,10 +46,10 @@ module.exports.run = async ({args}) => {
     
     if(currentDate > randomDateTime) {
      let pastDate = ms(currentDate - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa data foi marcada pelo ${randomDateTitle}, há ${pastDate}` } 
+     return { reply: `essa data foi marcada como ${randomDateTitle}, há ${pastDate}` } 
     } else {
       let afterDate = ms(randomDateTime - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa data irá ser marcada pelo ${randomDateTitle}, daqui ${afterDate}` } 
+     return { reply: `essa data irá ser marcada como ${randomDateTitle}, daqui ${afterDate}` } 
     }
     
   }
