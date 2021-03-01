@@ -67,7 +67,7 @@ user2 = sender;
   type = (type == "Paid") ? "Pago" : type
   
   if(subscription) {
-    if (subscription.gift) {
+    if (subscription.gift.gifter) {
       gifter = `| Gifter: ${subscription.gift.gifter.login}`
     }
    }
