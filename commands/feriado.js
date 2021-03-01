@@ -27,7 +27,7 @@ module.exports.run = async ({args}) => {
     return { reply: `hoje é ${todayDate}, ${todayHoliday}!` }
   }
   
-  let sender = args[0].toLowerCase();
+  let sender = args.join(' ').toLowerCase();
   
   let dateSearch = feriados.filter(i => i.dateS === sender);
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
@@ -56,8 +56,8 @@ module.exports.run = async ({args}) => {
   
   if(titleSearch.length) {
    
-    let titleSearchDay = titleSearch[0].date
-    let titleSearchDate = new Date(`${titleSearchDay}/2021`).getTime();
+    let titleSearchDay = titleSearch[0].dateS
+    let titleSearchDate = new Date(`${titleSearch.date}/2021`).getTime();
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
