@@ -23,7 +23,7 @@ module.exports.run = async ({args}) => {
      return { reply: `hoje é ${todayDate}, sem nenhum feriado :( ` } 
     }
     
-    let todayHoliday = feriados.filter(i => i.dateS === todayDate)[Math.floor(Math.random() * todayHolidayLength.length)].title
+    let todayHoliday = todayHolidayLength[Math.floor(Math.random() * todayHolidayLength.length)].title
     
     return { reply: `hoje é ${todayDate}, ${todayHoliday}!` }
   }
