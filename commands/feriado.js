@@ -22,9 +22,9 @@ module.exports.run = async ({args}) => {
      return { reply: `hoje é ${todayDate}, sem nenhum feriado :( ` } 
     }
     
-    let todayHoliday = todayHolidayLength[Math.floor(Math.random() * todayHolidayLength.length)].title
+    let todayHoliday = todayHolidayLength[Math.floor(Math.random() * todayHolidayLength.length)]
     
-    return { reply: `hoje é ${todayDate}, ${todayHoliday}!` }
+    return { reply: `hoje é ${todayDate}(${todayHoliday.week}), ${todayHoliday.title}!` }
   }
   
   let sender = args.join(' ').toLowerCase();
@@ -43,13 +43,14 @@ module.exports.run = async ({args}) => {
     let randomDate = dateSearch[Math.floor(Math.random() * dateSearch.length)];
     let randomDateTitle = randomDate.title;
     let randomDateTime = new Date(`${randomDate.date}/2021`).getTime()
+    let randomDateWeek = randomDate.week;
     
     if(currentDate > randomDateTime) {
      let pastDate = ms(currentDate - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa data foi marcada como ${randomDateTitle}, há ${pastDate}` } 
+     return { reply: `essa data foi marcada como ${randomDateTitle}(${randomDateWeek}), há ${pastDate}` } 
     } else {
       let afterDate = ms(randomDateTime - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa data irá ser marcada como ${randomDateTitle}, daqui ${afterDate}` } 
+     return { reply: `essa data irá ser marcada como ${randomDateTitle}(${randomDateWeek}), daqui ${afterDate}` } 
     }
     
   }
@@ -57,14 +58,15 @@ module.exports.run = async ({args}) => {
   if(titleSearch.length) {
    
     let titleSearchDay = titleSearch[0].dateS
+    let titleSearchWeek = titleSearch[0].week
     let titleSearchDate = new Date(`${titleSearch[0].date}/2021`).getTime();
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração ocorreu em ${titleSearchDay}, há ${pastDate}` } 
+     return { reply: `essa comemoração ocorreu em ${titleSearchDay}(${titleSearchWeek}), há ${pastDate}` } 
     } else {
       let afterDate = ms(titleSearchDate - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração irá ocorrer em ${titleSearchDay}, daqui ${afterDate}` } 
+     return { reply: `essa comemoração irá ocorrer em ${titleSearchDay}(${titleSearchWeek}), daqui ${afterDate}` } 
     }
     
   }
