@@ -5,7 +5,7 @@ module.exports.run = async ({args}) => {
   const ms = require('pretty-ms');
   
   const currentDate = moment().tz('America/Bahia').format().slice(0, 19);
-  const currentDateMs = new Date(currentDate).getTime() + 10800000;
+  const currentDateMs = new Date(currentDate).getTime();
   
   function convertTZ(date, tzString) {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
