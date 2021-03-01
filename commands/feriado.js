@@ -57,15 +57,14 @@ module.exports.run = async ({args}) => {
   if(titleSearch.length) {
    
     let titleSearchTitle = titleSearch.title;
-    let titleSearchDateS = titleSearch.date;
-    let titleSearchDate = new Date(`${titleSearchDateS}/2021`).getTime();
+    let titleSearchDate = new Date(`${titleSearch.date}/2021`).getTime();
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração ocorreu em ${titleSearchDateS}, há ${pastDate}` } 
+     return { reply: `essa comemoração ocorreu em ${titleSearch.date}, há ${pastDate}` } 
     } else {
       let afterDate = ms(titleSearchDate - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração irá ocorrer em ${titleSearchDateS}, daqui ${afterDate}` } 
+     return { reply: `essa comemoração irá ocorrer em ${titleSearch.date}, daqui ${afterDate}` } 
     }
     
   }
