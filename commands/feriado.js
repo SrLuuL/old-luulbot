@@ -32,7 +32,7 @@ module.exports.run = async ({args}) => {
   let dateSearch = feriados.filter(i => i.dateS === sender);
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
   
-  let allSearch = dateSearch || titleSearch
+  let allSearch = dateSearch.length || titleSearch.length
   
   if(!allSearch) {
    return { reply: `Não encontrei essa comemoração/data :/` } 
@@ -62,10 +62,10 @@ module.exports.run = async ({args}) => {
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração ocorreu em ${titleSearchDate}, há ${pastDate}` } 
+     return { reply: `essa comemoração ocorreu em ${titleSearchDateS}, há ${pastDate}` } 
     } else {
       let afterDate = ms(titleSearchDate - currentDate, {secondsDecimalDigits: 0, unitCount: 2}); 
-     return { reply: `essa comemoração irá ocorrer em ${titleSearchDate}, daqui ${afterDate}` } 
+     return { reply: `essa comemoração irá ocorrer em ${titleSearchDateS}, daqui ${afterDate}` } 
     }
     
   }
