@@ -46,9 +46,9 @@ module.exports.run = async ({args}) => {
     
     let randomDate = dateSearch[Math.floor(Math.random() * dateSearch.length)];
     let randomDateTitle = randomDate.title;
-    let randomDateTime = new Date(`${randomDate.date}/2021`);
+    let randomDateTime = moment.tz(new Date(`${randomDate.date}/2021`), 'America/Bahia').format.slice(0, 19);
     let randomDateWeek = randomDate.week;
-    randomDateTime = convertTZ(randomDateTime, 'America/Bahia').getTime();
+    randomDateTime = new Date(randomDateTime).getTime();
     
     if(currentDateMs > randomDateTime) {
      let pastDate = ms(currentDateMs - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
@@ -64,8 +64,9 @@ module.exports.run = async ({args}) => {
    
     let titleSearchDay = titleSearch[0].dateS
     let titleSearchWeek = titleSearch[0].week
-    let titleSearchDate = new Date(`${titleSearch[0].date}/2021`).getTime();
-    titleSearchDate = convertTZ(titleSearchDate, 'America/Bahia').getTime();
+    let titleSearchDate = moment.tz(new Date(`${titleSearchDate.date}/2021`), 'America/Bahia').format.slice(0, 19);
+    titleSearchDate = new Date(titleSearchDate).getTime();
+    
     
     if(currentDateMs > titleSearchDate) {
      let pastDate = ms(currentDateMs - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
