@@ -1,6176 +1,7411 @@
 [
     {
         "title": "Ano-Novo",
+        "week": "sex",
         "date": "01/01",
         "dateS": "01/01"
     },
     {
         "title": "Dia da Confraternização Universal",
+        "week": "sex",
         "date": "01/01",
         "dateS": "01/01"
     },
     {
         "title": "Dia Mundial da Paz",
+        "week": "sex",
         "date": "01/01",
         "dateS": "01/01"
     },
     {
         "title": "São Basílio Magno",
+        "week": "sáb",
         "date": "01/02",
         "dateS": "02/01"
     },
     {
         "title": "Dia do Sanitarista",
+        "week": "sáb",
         "date": "01/02",
         "dateS": "02/01"
     },
     {
         "title": "Dia do Juiz de Menores",
+        "week": "dom",
         "date": "01/03",
         "dateS": "03/01"
     },
     {
         "title": "Dia Nacional da Abreugrafia",
+        "week": "seg",
         "date": "01/04",
         "dateS": "04/01"
     },
     {
         "title": "Dia Mundial do Braille",
+        "week": "seg",
         "date": "01/04",
         "dateS": "04/01"
     },
     {
         "title": "Dia do Hemofílico",
+        "week": "seg",
         "date": "01/04",
         "dateS": "04/01"
     },
     {
         "title": "Dia de São Nepomuceno Neumann",
+        "week": "ter",
         "date": "01/05",
         "dateS": "05/01"
     },
     {
         "title": "Dia de Reis",
+        "week": "qua",
         "date": "01/06",
         "dateS": "06/01"
     },
     {
         "title": "Dia da Gratidão",
+        "week": "qua",
         "date": "01/06",
         "dateS": "06/01"
     },
     {
         "title": "Dia do Leitor",
+        "week": "qui",
         "date": "01/07",
         "dateS": "07/01"
     },
     {
         "title": "Dia da Liberdade de Cultos",
+        "week": "qui",
         "date": "01/07",
         "dateS": "07/01"
     },
     {
         "title": "Dia do Fotógrafo",
+        "week": "sex",
         "date": "01/08",
         "dateS": "08/01"
     },
     {
         "title": "Dia do Astronauta",
+        "week": "sáb",
         "date": "01/09",
         "dateS": "09/01"
     },
     {
         "title": "Dia do Fico",
+        "week": "sáb",
         "date": "01/09",
         "dateS": "09/01"
     },
     {
         "title": "Dia de São Gonçalo de Amarante",
+        "week": "dom",
         "date": "01/10",
         "dateS": "10/01"
     },
     {
         "title": "Dia do Controle da Poluição por Agrotóxicos",
+        "week": "seg",
         "date": "01/11",
         "dateS": "11/01"
     },
     {
         "title": "Aniversário de Belém",
+        "week": "ter",
         "date": "01/12",
         "dateS": "12/01"
     },
     {
         "title": "Dia Nacional do Empresário Contábil",
+        "week": "ter",
         "date": "01/12",
         "dateS": "12/01"
     },
     {
         "title": "Dia de Santo Hilário de Poitiers",
+        "week": "qua",
         "date": "01/13",
         "dateS": "13/01"
     },
     {
         "title": "Dia do Enfermo",
+        "week": "qui",
         "date": "01/14",
         "dateS": "14/01"
     },
     {
         "title": "Dia do Treinador de Futebol",
+        "week": "qui",
         "date": "01/14",
         "dateS": "14/01"
     },
     {
         "title": "Dia do Compositor",
+        "week": "sex",
         "date": "01/15",
         "dateS": "15/01"
     },
     {
         "title": "Dia do Adulto",
+        "week": "sex",
         "date": "01/15",
         "dateS": "15/01"
     },
     {
         "title": "Dia Nacional do Jogo Limpo e de Combate ao Doping nos Esportes",
+        "week": "sex",
         "date": "01/15",
         "dateS": "15/01"
     },
     {
         "title": "Dia de São Marcelo, Papa",
+        "week": "sáb",
         "date": "01/16",
         "dateS": "16/01"
     },
     {
         "title": "Dia do Cortador de Cana-de-Açúcar",
+        "week": "sáb",
         "date": "01/16",
         "dateS": "16/01"
     },
     {
         "title": "Dia dos Tribunais de Contas do Brasil",
+        "week": "dom",
         "date": "01/17",
         "dateS": "17/01"
     },
     {
         "title": "Aniversário da Emancipação do Ceará",
+        "week": "dom",
         "date": "01/17",
         "dateS": "17/01"
     },
     {
         "title": "Dia do Esteticista",
+        "week": "seg",
         "date": "01/18",
         "dateS": "18/01"
     },
     {
         "title": "Dia da Manicure",
+        "week": "seg",
         "date": "01/18",
         "dateS": "18/01"
     },
     {
         "title": "Dia da Universidade",
+        "week": "seg",
         "date": "01/18",
         "dateS": "18/01"
     },
     {
         "title": "Dia Internacional do Riso",
+        "week": "seg",
         "date": "01/18",
         "dateS": "18/01"
     },
     {
         "title": "Dia Nacional do Krav Maga",
+        "week": "seg",
         "date": "01/18",
         "dateS": "18/01"
     },
     {
         "title": "Dia do Cabeleireiro",
+        "week": "ter",
         "date": "01/19",
         "dateS": "19/01"
     },
     {
         "title": "Dia de São Canuto",
+        "week": "ter",
         "date": "01/19",
         "dateS": "19/01"
     },
     {
         "title": "Dia do Passista",
+        "week": "ter",
         "date": "01/19",
         "dateS": "19/01"
     },
     {
         "title": "Dia Mundial do Terapeuta Ocupacional",
+        "week": "ter",
         "date": "01/19",
         "dateS": "19/01"
     },
     {
         "title": "Dia do Farmacêutico",
+        "week": "qua",
         "date": "01/20",
         "dateS": "20/01"
     },
     {
         "title": "Dia de São Sebastião",
+        "week": "qua",
         "date": "01/20",
         "dateS": "20/01"
     },
     {
         "title": "Dia Nacional do Fusca",
+        "week": "qua",
         "date": "01/20",
         "dateS": "20/01"
     },
     {
         "title": "Dia Nacional da Parteira Tradicional",
+        "week": "qua",
         "date": "01/20",
         "dateS": "20/01"
     },
     {
         "title": "Dia Mundial da Religião",
+        "week": "qui",
         "date": "01/21",
         "dateS": "21/01"
     },
     {
         "title": "Dia Nacional de Combate à Intolerância Religiosa",
+        "week": "qui",
         "date": "01/21",
         "dateS": "21/01"
     },
     {
         "title": "Dia de Santo Ildefonso",
+        "week": "sáb",
         "date": "01/23",
         "dateS": "23/01"
     },
     {
         "title": "Dia dos Aposentados",
+        "week": "dom",
         "date": "01/24",
         "dateS": "24/01"
     },
     {
         "title": "Dia da Previdência Social",
+        "week": "dom",
         "date": "01/24",
         "dateS": "24/01"
     },
     {
         "title": "Dia do Carteiro",
+        "week": "seg",
         "date": "01/25",
         "dateS": "25/01"
     },
     {
         "title": "Aniversário de São Paulo",
+        "week": "seg",
         "date": "01/25",
         "dateS": "25/01"
     },
     {
         "title": "Dia Nacional da Bossa Nova",
+        "week": "seg",
         "date": "01/25",
         "dateS": "25/01"
     },
     {
         "title": "Dia dos Correios e Telégrafos",
+        "week": "seg",
         "date": "01/25",
         "dateS": "25/01"
     },
     {
         "title": "Dia da Gula",
+        "week": "ter",
         "date": "01/26",
         "dateS": "26/01"
     },
     {
         "title": "Dia de São Timóteo",
+        "week": "ter",
         "date": "01/26",
         "dateS": "26/01"
     },
     {
         "title": "Dia Internacional em Memória das Vítimas do Holocausto",
+        "week": "qua",
         "date": "01/27",
         "dateS": "27/01"
     },
     {
         "title": "Dia do Orador",
+        "week": "qua",
         "date": "01/27",
         "dateS": "27/01"
     },
     {
         "title": "Dia do Portuário",
+        "week": "qui",
         "date": "01/28",
         "dateS": "28/01"
     },
     {
         "title": "Dia de São Tomás de Aquino",
+        "week": "qui",
         "date": "01/28",
         "dateS": "28/01"
     },
     {
         "title": "Dia Nacional do Auditor-Fiscal do Trabalho",
+        "week": "qui",
         "date": "01/28",
         "dateS": "28/01"
     },
     {
         "title": "Dia Nacional de Combate ao Trabalho Escravo",
+        "week": "qui",
         "date": "01/28",
         "dateS": "28/01"
     },
     {
         "title": "Dia do Comércio Exterior",
+        "week": "qui",
         "date": "01/28",
         "dateS": "28/01"
     },
     {
         "title": "Dia Nacional da Visibilidade Trans",
+        "week": "sex",
         "date": "01/29",
         "dateS": "29/01"
     },
     {
         "title": "Dia da Saudade",
+        "week": "sáb",
         "date": "01/30",
         "dateS": "30/01"
     },
     {
         "title": "Dia Nacional das Histórias em Quadrinhos",
+        "week": "sáb",
         "date": "01/30",
         "dateS": "30/01"
     },
     {
         "title": "Dia do Padrinho",
+        "week": "sáb",
         "date": "01/30",
         "dateS": "30/01"
     },
     {
         "title": "Dia Mundial da Não-Violência e Cultura de Paz",
+        "week": "sáb",
         "date": "01/30",
         "dateS": "30/01"
     },
     {
         "title": "Dia do Mágico",
+        "week": "dom",
         "date": "01/31",
         "dateS": "31/01"
     },
     {
         "title": "Dia de São João Bosco",
+        "week": "dom",
         "date": "01/31",
         "dateS": "31/01"
     },
     {
         "title": "Dia Nacional de Combate e Prevenção da Hanseníase",
+        "week": "dom",
         "date": "01/31",
         "dateS": "31/01"
     },
     {
         "title": "Dia Nacional das Reservas Particulares do Patrimônio Natural",
+        "week": "dom",
         "date": "01/31",
         "dateS": "31/01"
     },
     {
         "title": "Dia do Engenheiro Ambiental",
+        "week": "dom",
         "date": "01/31",
         "dateS": "31/01"
     },
     {
         "title": "Dia do Publicitário",
+        "week": "seg",
         "date": "02/01",
         "dateS": "01/02"
     },
     {
         "title": "Dia de Iemanjá",
+        "week": "ter",
         "date": "02/02",
         "dateS": "02/02"
     },
     {
         "title": "Dia de Nossa Senhora dos Navegantes",
+        "week": "ter",
         "date": "02/02",
         "dateS": "02/02"
     },
     {
         "title": "Dia do Agente Fiscal",
+        "week": "ter",
         "date": "02/02",
         "dateS": "02/02"
     },
     {
         "title": "Dia Mundial das Zonas Úmidas",
+        "week": "ter",
         "date": "02/02",
         "dateS": "02/02"
     },
     {
         "title": "Dia de São Brás",
+        "week": "qua",
         "date": "02/03",
         "dateS": "03/02"
     },
     {
         "title": "Dia do Amigo do Facebook",
+        "week": "qui",
         "date": "02/04",
         "dateS": "04/02"
     },
     {
         "title": "Dia Mundial do Câncer",
+        "week": "qui",
         "date": "02/04",
         "dateS": "04/02"
     },
     {
         "title": "Aniversário de Macapá",
+        "week": "qui",
         "date": "02/04",
         "dateS": "04/02"
     },
     {
         "title": "Dia do Datiloscopista",
+        "week": "sex",
         "date": "02/05",
         "dateS": "05/02"
     },
     {
         "title": "Dia Nacional da Mamografia",
+        "week": "sex",
         "date": "02/05",
         "dateS": "05/02"
     },
     {
         "title": "Dia do Dermatologista",
+        "week": "sex",
         "date": "02/05",
         "dateS": "05/02"
     },
     {
         "title": "Dia do Agente de Defesa Ambiental",
+        "week": "sáb",
         "date": "02/06",
         "dateS": "06/02"
     },
     {
         "title": "Dia Internacional da Tolerância Zero à Mutilação Genital Feminina",
+        "week": "sáb",
         "date": "02/06",
         "dateS": "06/02"
     },
     {
         "title": "Dia do Gráfico",
+        "week": "dom",
         "date": "02/07",
         "dateS": "07/02"
     },
     {
         "title": "Dia do Magistério Militar",
+        "week": "seg",
         "date": "02/08",
         "dateS": "08/02"
     },
     {
         "title": "Dia da Internet segura",
+        "week": "ter",
         "date": "02/09",
         "dateS": "09/02"
     },
     {
         "title": "Dia do Atleta Profissional",
+        "week": "qua",
         "date": "02/10",
         "dateS": "10/02"
     },
     {
         "title": "Dia Mundial das Leguminosas",
+        "week": "qua",
         "date": "02/10",
         "dateS": "10/02"
     },
     {
         "title": "Dia do Zelador",
+        "week": "qui",
         "date": "02/11",
         "dateS": "11/02"
     },
     {
         "title": "Dia Mundial do Enfermo",
+        "week": "qui",
         "date": "02/11",
         "dateS": "11/02"
     },
     {
         "title": "Dia de Nossa Senhora de Lourdes",
+        "week": "qui",
         "date": "02/11",
         "dateS": "11/02"
     },
     {
         "title": "Dia Internacional das Mulheres e Meninas na Ciência",
+        "week": "qui",
         "date": "02/11",
         "dateS": "11/02"
     },
     {
         "title": "Ano-Novo Chinês",
+        "week": "sex",
         "date": "02/12",
         "dateS": "12/02"
     },
     {
         "title": "Dia de Darwin",
+        "week": "sex",
         "date": "02/12",
         "dateS": "12/02"
     },
     {
         "title": "Dia Mundial do Rádio",
+        "week": "sáb",
         "date": "02/13",
         "dateS": "13/02"
     },
     {
         "title": "Dia do Serviço de Assistência Religiosa do Exército",
+        "week": "sáb",
         "date": "02/13",
         "dateS": "13/02"
     },
     {
         "title": "Dia de São Valentim",
+        "week": "dom",
         "date": "02/14",
         "dateS": "14/02"
     },
     {
         "title": "Dia Mundial do Amor",
+        "week": "dom",
         "date": "02/14",
         "dateS": "14/02"
     },
     {
         "title": "Dia do Botonista",
+        "week": "dom",
         "date": "02/14",
         "dateS": "14/02"
     },
     {
         "title": "Dia Internacional de Luta contra o Câncer Infantil",
+        "week": "seg",
         "date": "02/15",
         "dateS": "15/02"
     },
     {
         "title": "Carnaval",
+        "week": "ter",
         "date": "02/16",
         "dateS": "16/02"
     },
     {
         "title": "Dia do Repórter",
+        "week": "ter",
         "date": "02/16",
         "dateS": "16/02"
     },
     {
         "title": "Quarta-feira de cinzas",
+        "week": "qua",
         "date": "02/17",
         "dateS": "17/02"
     },
     {
         "title": "Início da Quaresma",
+        "week": "qua",
         "date": "02/17",
         "dateS": "17/02"
     },
     {
         "title": "Dia Mundial do Gato",
+        "week": "qua",
         "date": "02/17",
         "dateS": "17/02"
     },
     {
         "title": "Dia Nacional de Combate ao Alcoolismo",
+        "week": "qui",
         "date": "02/18",
         "dateS": "18/02"
     },
     {
         "title": "Dia Internacional da Síndrome de Asperger",
+        "week": "qui",
         "date": "02/18",
         "dateS": "18/02"
     },
     {
         "title": "Dia do Esportista",
+        "week": "sex",
         "date": "02/19",
         "dateS": "19/02"
     },
     {
         "title": "Dia de São Conrado",
+        "week": "sex",
         "date": "02/19",
         "dateS": "19/02"
     },
     {
         "title": "Dia Mundial da Justiça Social",
+        "week": "sáb",
         "date": "02/20",
         "dateS": "20/02"
     },
     {
         "title": "Dia Nacional de Combate às Drogas e Alcoolismo",
+        "week": "sáb",
         "date": "02/20",
         "dateS": "20/02"
     },
     {
         "title": "Dia Nacional do Imigrante Italiano",
+        "week": "dom",
         "date": "02/21",
         "dateS": "21/02"
     },
     {
         "title": "Dia Internacional da Língua Materna",
+        "week": "dom",
         "date": "02/21",
         "dateS": "21/02"
     },
     {
         "title": "Dia Internacional do Maçom",
+        "week": "seg",
         "date": "02/22",
         "dateS": "22/02"
     },
     {
         "title": "Dia Nacional do Movimento Municipalista Brasileiro",
+        "week": "ter",
         "date": "02/23",
         "dateS": "23/02"
     },
     {
         "title": "Dia Nacional do Rotary",
+        "week": "ter",
         "date": "02/23",
         "dateS": "23/02"
     },
     {
         "title": "Promulgação da Primeira Constituição Republicana",
+        "week": "qua",
         "date": "02/24",
         "dateS": "24/02"
     },
     {
         "title": "Dia da Conquista do Voto Feminino no Brasil",
+        "week": "qua",
         "date": "02/24",
         "dateS": "24/02"
     },
     {
         "title": "Dia da Criação do Ministério das Comunicações",
+        "week": "qui",
         "date": "02/25",
         "dateS": "25/02"
     },
     {
         "title": "Dia de Santo Alexandre",
+        "week": "sex",
         "date": "02/26",
         "dateS": "26/02"
     },
     {
         "title": "Dia do Agente Fiscal da Receita Federal",
+        "week": "sáb",
         "date": "02/27",
         "dateS": "27/02"
     },
     {
         "title": "Dia do Livro Didático",
+        "week": "sáb",
         "date": "02/27",
         "dateS": "27/02"
     },
     {
         "title": "Dia de São Leandro",
+        "week": "sáb",
         "date": "02/27",
         "dateS": "27/02"
     },
     {
         "title": "Dia da Ressaca",
+        "week": "dom",
         "date": "02/28",
         "dateS": "28/02"
     },
     {
         "title": "Dia Mundial da Doença Rara",
+        "week": "dom",
         "date": "02/28",
         "dateS": "28/02"
     },
     {
         "title": "Dia de São Romão e Lupicino",
+        "week": "dom",
         "date": "02/28",
         "dateS": "28/02"
     },
     {
         "title": "Dia Mundial de combate a LER/DORT",
+        "week": "dom",
         "date": "02/28",
         "dateS": "28/02"
     },
     {
         "title": "Aniversário do Rio de Janeiro",
+        "week": "seg",
         "date": "03/01",
         "dateS": "01/03"
     },
     {
         "title": "Dia Mundial de Zero Discriminação",
+        "week": "seg",
         "date": "03/01",
         "dateS": "01/03"
     },
     {
         "title": "Dia das Crianças Doentes",
+        "week": "seg",
         "date": "03/01",
         "dateS": "01/03"
     },
     {
         "title": "Dia Pan-Americano de Turismo",
+        "week": "seg",
         "date": "03/01",
         "dateS": "01/03"
     },
     {
         "title": "Dia do Turismo Ecológico",
+        "week": "seg",
         "date": "03/01",
         "dateS": "01/03"
     },
     {
         "title": "Dia Mundial da Vida Selvagem",
+        "week": "qua",
         "date": "03/03",
         "dateS": "03/03"
     },
     {
         "title": "Dia do Corpo de Intendentes da Marinha",
+        "week": "qua",
         "date": "03/03",
         "dateS": "03/03"
     },
     {
         "title": "Dia do Filatelista Brasileiro",
+        "week": "sex",
         "date": "03/05",
         "dateS": "05/03"
     },
     {
         "title": "Dia Mundial da Oração",
+        "week": "sex",
         "date": "03/05",
         "dateS": "05/03"
     },
     {
         "title": "Dia Nacional da Música Clássica",
+        "week": "sex",
         "date": "03/05",
         "dateS": "05/03"
     },
     {
         "title": "Dia da Integração Cooperativista",
+        "week": "sex",
         "date": "03/05",
         "dateS": "05/03"
     },
     {
         "title": "Dia do Paleontólogo",
+        "week": "dom",
         "date": "03/07",
         "dateS": "07/03"
     },
     {
         "title": "Dia do Fuzileiro Naval",
+        "week": "dom",
         "date": "03/07",
         "dateS": "07/03"
     },
     {
         "title": "Dia Nacional da Advocacia Pública",
+        "week": "dom",
         "date": "03/07",
         "dateS": "07/03"
     },
     {
         "title": "Dia Internacional da Mulher - 8 de Março",
+        "week": "seg",
         "date": "03/08",
         "dateS": "08/03"
     },
     {
         "title": "Dia Mundial do DJ",
+        "week": "ter",
         "date": "03/09",
         "dateS": "09/03"
     },
     {
         "title": "Dia do Sogro",
+        "week": "qua",
         "date": "03/10",
         "dateS": "10/03"
     },
     {
         "title": "Dia do Telefone",
+        "week": "qua",
         "date": "03/10",
         "dateS": "10/03"
     },
     {
         "title": "Dia do Conservador",
+        "week": "qua",
         "date": "03/10",
         "dateS": "10/03"
     },
     {
         "title": "Dia da Sociedade dos Amigos do Bairro",
+        "week": "qua",
         "date": "03/10",
         "dateS": "10/03"
     },
     {
         "title": "Dia Mundial do Rim",
+        "week": "qui",
         "date": "03/11",
         "dateS": "11/03"
     },
     {
         "title": "Dia do Bibliotecário",
+        "week": "sex",
         "date": "03/12",
         "dateS": "12/03"
     },
     {
         "title": "Dia Mundial Contra a Cibercensura",
+        "week": "sex",
         "date": "03/12",
         "dateS": "12/03"
     },
     {
         "title": "Aniversário de Recife",
+        "week": "sex",
         "date": "03/12",
         "dateS": "12/03"
     },
     {
         "title": "Dia do Pi",
+        "week": "dom",
         "date": "03/14",
         "dateS": "14/03"
     },
     {
         "title": "Dia do Vendedor de Livros",
+        "week": "dom",
         "date": "03/14",
         "dateS": "14/03"
     },
     {
         "title": "Dia da Incontinência Urinária",
+        "week": "dom",
         "date": "03/14",
         "dateS": "14/03"
     },
     {
         "title": "Dia Nacional dos Animais",
+        "week": "dom",
         "date": "03/14",
         "dateS": "14/03"
     },
     {
         "title": "Dia da Escola",
+        "week": "seg",
         "date": "03/15",
         "dateS": "15/03"
     },
     {
         "title": "Dia Mundial do Consumidor",
+        "week": "seg",
         "date": "03/15",
         "dateS": "15/03"
     },
     {
         "title": "Dia de São Longuinho",
+        "week": "seg",
         "date": "03/15",
         "dateS": "15/03"
     },
     {
         "title": "Dia Nacional de Conscientização sobre as Mudanças Climáticas",
+        "week": "ter",
         "date": "03/16",
         "dateS": "16/03"
     },
     {
         "title": "Dia Nacional do Ouvidor",
+        "week": "ter",
         "date": "03/16",
         "dateS": "16/03"
     },
     {
         "title": "Dia do Agente Penitenciário Federal",
+        "week": "ter",
         "date": "03/16",
         "dateS": "16/03"
     },
     {
         "title": "Dia de São Patrício",
+        "week": "qua",
         "date": "03/17",
         "dateS": "17/03"
     },
     {
         "title": "Aniversário de Aracaju",
+        "week": "qua",
         "date": "03/17",
         "dateS": "17/03"
     },
     {
         "title": "Dia do DeMolay",
+        "week": "qui",
         "date": "03/18",
         "dateS": "18/03"
     },
     {
         "title": "Dia Nacional da Imigração Judaica",
+        "week": "qui",
         "date": "03/18",
         "dateS": "18/03"
     },
     {
         "title": "Dia de São José",
+        "week": "sex",
         "date": "03/19",
         "dateS": "19/03"
     },
     {
         "title": "Dia do Carpinteiro e do Marceneiro",
+        "week": "sex",
         "date": "03/19",
         "dateS": "19/03"
     },
     {
         "title": "Dia Nacional do Artesão",
+        "week": "sex",
         "date": "03/19",
         "dateS": "19/03"
     },
     {
         "title": "Dia do Consertador",
+        "week": "sex",
         "date": "03/19",
         "dateS": "19/03"
     },
     {
         "title": "Início do Outono (Equinócio de Outono)",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Equinócio de Outono",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Internacional da Felicidade",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Mundial da Saúde Bucal",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Nacional do Teatro para a Infância e Juventude",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Nacional da Aquicultura",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Mundial sem Carne",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Nacional de Atenção à Disfagia",
+        "week": "sáb",
         "date": "03/20",
         "dateS": "20/03"
     },
     {
         "title": "Dia Universal do Teatro",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Internacional Contra a Discriminação Racial",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Internacional da Síndrome de Down",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Internacional das Florestas e da Árvore",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Mundial da Infância",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Mundial da Poesia",
+        "week": "dom",
         "date": "03/21",
         "dateS": "21/03"
     },
     {
         "title": "Dia Mundial da Água",
+        "week": "seg",
         "date": "03/22",
         "dateS": "22/03"
     },
     {
         "title": "Dia do Optometrista",
+        "week": "ter",
         "date": "03/23",
         "dateS": "23/03"
     },
     {
         "title": "Dia Mundial da Meteorologia",
+        "week": "ter",
         "date": "03/23",
         "dateS": "23/03"
     },
     {
         "title": "Aniversário de Florianópolis",
+        "week": "ter",
         "date": "03/23",
         "dateS": "23/03"
     },
     {
         "title": "Dia Nacional do Piso Salarial dos Professores",
+        "week": "ter",
         "date": "03/23",
         "dateS": "23/03"
     },
     {
         "title": "Dia Internacional para o Direito à Verdade para as Vítimas de Graves Violações dos Direitos Humanos",
+        "week": "qua",
         "date": "03/24",
         "dateS": "24/03"
     },
     {
         "title": "Dia Mundial de Combate à Tuberculose",
+        "week": "qua",
         "date": "03/24",
         "dateS": "24/03"
     },
     {
         "title": "Dia da Constituição",
+        "week": "qui",
         "date": "03/25",
         "dateS": "25/03"
     },
     {
         "title": "Dia de São Dimas",
+        "week": "qui",
         "date": "03/25",
         "dateS": "25/03"
     },
     {
         "title": "Dia do Especialista de Aeronáutica",
+        "week": "qui",
         "date": "03/25",
         "dateS": "25/03"
     },
     {
         "title": "Dia Internacional em Memória das Vítimas da Escravidão e do Comércio Transatlântico de Escravos",
+        "week": "qui",
         "date": "03/25",
         "dateS": "25/03"
     },
     {
         "title": "Dia Nacional da Comunidade Árabe",
+        "week": "qui",
         "date": "03/25",
         "dateS": "25/03"
     },
     {
         "title": "Dia do Cacau",
+        "week": "sex",
         "date": "03/26",
         "dateS": "26/03"
     },
     {
         "title": "Aniversário de Porto Alegre",
+        "week": "sex",
         "date": "03/26",
         "dateS": "26/03"
     },
     {
         "title": "Dia Mundial de Conscientização da Epilepsia",
+        "week": "sex",
         "date": "03/26",
         "dateS": "26/03"
     },
     {
         "title": "Dia do Mercosul",
+        "week": "sex",
         "date": "03/26",
         "dateS": "26/03"
     },
     {
         "title": "Dia do Circo",
+        "week": "sáb",
         "date": "03/27",
         "dateS": "27/03"
     },
     {
         "title": "Hora do Planeta",
+        "week": "sáb",
         "date": "03/27",
         "dateS": "27/03"
     },
     {
         "title": "Dia Mundial do Teatro",
+        "week": "sáb",
         "date": "03/27",
         "dateS": "27/03"
     },
     {
         "title": "Domingo de Ramos",
+        "week": "dom",
         "date": "03/28",
         "dateS": "28/03"
     },
     {
         "title": "Dia do Diagramador",
+        "week": "dom",
         "date": "03/28",
         "dateS": "28/03"
     },
     {
         "title": "Dia do Revisor",
+        "week": "dom",
         "date": "03/28",
         "dateS": "28/03"
     },
     {
         "title": "Aniversário de Salvador",
+        "week": "seg",
         "date": "03/29",
         "dateS": "29/03"
     },
     {
         "title": "Aniversário de Curitiba",
+        "week": "seg",
         "date": "03/29",
         "dateS": "29/03"
     },
     {
         "title": "Dia Mundial do Transtorno Bipolar",
+        "week": "ter",
         "date": "03/30",
         "dateS": "30/03"
     },
     {
         "title": "Dia da Saúde e Nutrição",
+        "week": "qua",
         "date": "03/31",
         "dateS": "31/03"
     },
     {
         "title": "Dia da Integração Nacional",
+        "week": "qua",
         "date": "03/31",
         "dateS": "31/03"
     },
     {
         "title": "Quinta-feira santa",
+        "week": "qui",
         "date": "04/01",
         "dateS": "01/04"
     },
     {
         "title": "Dia da Mentira - 1º de Abril",
+        "week": "qui",
         "date": "04/01",
         "dateS": "01/04"
     },
     {
         "title": "Dia da Abolição da Escravidão dos Índios",
+        "week": "qui",
         "date": "04/01",
         "dateS": "01/04"
     },
     {
         "title": "Sexta-feira Santa",
+        "week": "sex",
         "date": "04/02",
         "dateS": "02/04"
     },
     {
         "title": "Dia do Propagandista",
+        "week": "sex",
         "date": "04/02",
         "dateS": "02/04"
     },
     {
         "title": "Dia Mundial da Conscientização do Autismo",
+        "week": "sex",
         "date": "04/02",
         "dateS": "02/04"
     },
     {
         "title": "Dia Internacional do Livro Infantil",
+        "week": "sex",
         "date": "04/02",
         "dateS": "02/04"
     },
     {
         "title": "Sábado de Aleluia",
+        "week": "sáb",
         "date": "04/03",
         "dateS": "03/04"
     },
     {
         "title": "Páscoa",
+        "week": "dom",
         "date": "04/04",
         "dateS": "04/04"
     },
     {
         "title": "Dia Nacional do Parkinsoniano",
+        "week": "dom",
         "date": "04/04",
         "dateS": "04/04"
     },
     {
         "title": "Dia Internacional do Esporte para o Desenvolvimento e pela Paz",
+        "week": "ter",
         "date": "04/06",
         "dateS": "06/04"
     },
     {
         "title": "Dia Nacional de Mobilização pela Promoção da Saúde e Qualidade de Vida",
+        "week": "ter",
         "date": "04/06",
         "dateS": "06/04"
     },
     {
         "title": "Dia do Corretor",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia do Jornalista",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia Mundial da Saúde",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia do Médico Legista",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia Internacional para Reflexão do Genocídio de 1994 contra os Tutsi em Ruanda",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia Nacional de Combate ao Bullying e à Violência na Escola",
+        "week": "qua",
         "date": "04/07",
         "dateS": "07/04"
     },
     {
         "title": "Dia da Natação",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Dia Mundial do Combate ao Câncer",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Dia Mundial da Astronomia",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Dia Nacional do Sistema Braille",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Aniversário de Cuiabá",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Dia do Desbravador",
+        "week": "qui",
         "date": "04/08",
         "dateS": "08/04"
     },
     {
         "title": "Dia Nacional do Aço",
+        "week": "sex",
         "date": "04/09",
         "dateS": "09/04"
     },
     {
         "title": "Dia Nacional da Biblioteca",
+        "week": "sex",
         "date": "04/09",
         "dateS": "09/04"
     },
     {
         "title": "Dia da Engenharia",
+        "week": "sáb",
         "date": "04/10",
         "dateS": "10/04"
     },
     {
         "title": "Dia do Engenheiro Metalurgista",
+        "week": "sáb",
         "date": "04/10",
         "dateS": "10/04"
     },
     {
         "title": "Dia do Infectologista",
+        "week": "dom",
         "date": "04/11",
         "dateS": "11/04"
     },
     {
         "title": "Dia da Escola de Samba",
+        "week": "dom",
         "date": "04/11",
         "dateS": "11/04"
     },
     {
         "title": "Dia Mundial de Conscientização da Doença de Parkinson",
+        "week": "dom",
         "date": "04/11",
         "dateS": "11/04"
     },
     {
         "title": "Dia do Obstetra",
+        "week": "seg",
         "date": "04/12",
         "dateS": "12/04"
     },
     {
         "title": "Dia Internacional do Voo Espacial Tripulado",
+        "week": "seg",
         "date": "04/12",
         "dateS": "12/04"
     },
     {
         "title": "Dia Nacional do Humorista",
+        "week": "seg",
         "date": "04/12",
         "dateS": "12/04"
     },
     {
         "title": "Dia do Office-Boy",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Dia do Beijo",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Dia do Hino Nacional Brasileiro",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Dia do Jovem",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Dia da Carta Régia",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Aniversário de Fortaleza",
+        "week": "ter",
         "date": "04/13",
         "dateS": "13/04"
     },
     {
         "title": "Dia Mundial do Café",
+        "week": "qua",
         "date": "04/14",
         "dateS": "14/04"
     },
     {
         "title": "Dia Pan-Americano",
+        "week": "qua",
         "date": "04/14",
         "dateS": "14/04"
     },
     {
         "title": "Dia do Técnico em Serviço de Saúde",
+        "week": "qua",
         "date": "04/14",
         "dateS": "14/04"
     },
     {
         "title": "Dia Nacional do Neurocirurgião",
+        "week": "qua",
         "date": "04/14",
         "dateS": "14/04"
     },
     {
         "title": "Dia Mundial do Desenhista",
+        "week": "qui",
         "date": "04/15",
         "dateS": "15/04"
     },
     {
         "title": "Dia Nacional da Conservação do Solo",
+        "week": "qui",
         "date": "04/15",
         "dateS": "15/04"
     },
     {
         "title": "Dia do Desarmamento Infantil",
+        "week": "qui",
         "date": "04/15",
         "dateS": "15/04"
     },
     {
         "title": "Dia Mundial da Arte",
+        "week": "qui",
         "date": "04/15",
         "dateS": "15/04"
     },
     {
         "title": "Dia Mundial da Voz",
+        "week": "sex",
         "date": "04/16",
         "dateS": "16/04"
     },
     {
         "title": "Dia do Sacerdócio",
+        "week": "sex",
         "date": "04/16",
         "dateS": "16/04"
     },
     {
         "title": "Dia Mundial do Hemofílico",
+        "week": "sáb",
         "date": "04/17",
         "dateS": "17/04"
     },
     {
         "title": "Dia Mundial da Hemofilia",
+        "week": "sáb",
         "date": "04/17",
         "dateS": "17/04"
     },
     {
         "title": "Dia Nacional de Luta pela Reforma Agrária",
+        "week": "sáb",
         "date": "04/17",
         "dateS": "17/04"
     },
     {
         "title": "Dia Nacional da Botânica",
+        "week": "sáb",
         "date": "04/17",
         "dateS": "17/04"
     },
     {
         "title": "Dia de Monteiro Lobato",
+        "week": "dom",
         "date": "04/18",
         "dateS": "18/04"
     },
     {
         "title": "Dia do Amigo",
+        "week": "dom",
         "date": "04/18",
         "dateS": "18/04"
     },
     {
         "title": "Dia Nacional do Livro Infantil",
+        "week": "dom",
         "date": "04/18",
         "dateS": "18/04"
     },
     {
         "title": "Dia Mundial do Radioamador",
+        "week": "dom",
         "date": "04/18",
         "dateS": "18/04"
     },
     {
         "title": "Dia do Índio",
+        "week": "seg",
         "date": "04/19",
         "dateS": "19/04"
     },
     {
         "title": "Dia do Exército Brasileiro",
+        "week": "seg",
         "date": "04/19",
         "dateS": "19/04"
     },
     {
         "title": "Dia de Santo Expedito",
+        "week": "seg",
         "date": "04/19",
         "dateS": "19/04"
     },
     {
         "title": "Dia do Diplomata",
+        "week": "ter",
         "date": "04/20",
         "dateS": "20/04"
     },
     {
         "title": "Dia do Disco",
+        "week": "ter",
         "date": "04/20",
         "dateS": "20/04"
     },
     {
         "title": "Tiradentes",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia do Metalúrgico",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia da Latinidade",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia da Polícia Civil",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia do Têxtil",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Aniversário de Brasília",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia Mundial da Criatividade e Inovação",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Dia do Funcionário Policial Civil",
+        "week": "qua",
         "date": "04/21",
         "dateS": "21/04"
     },
     {
         "title": "Descobrimento do Brasil",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia da Terra",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia do Agente de Viagem",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia da Comunidade Luso-Brasileira",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia da Aviação de Caça",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Data Festiva da Força Aérea Brasileira ",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia Nacional da Tontura",
+        "week": "qui",
         "date": "04/22",
         "dateS": "22/04"
     },
     {
         "title": "Dia de São Jorge",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia Mundial do Escoteiro",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia do Serralheiro",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia Mundial do Livro",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia do Torcedor Corinthiano",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia Nacional da Educação de Surdos",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia Nacional do Choro",
+        "week": "sex",
         "date": "04/23",
         "dateS": "23/04"
     },
     {
         "title": "Dia do Penitenciário",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia do Boi",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia do Chimarrão",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Internacional do Jovem Trabalhador",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Internacional do Milho",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia do Samurai",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Mundial de Combate à Meningite",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Nacional da Família na Escola",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Nacional da Língua Brasileira de Sinais",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia Mundial da Medicina Veterinária",
+        "week": "sáb",
         "date": "04/24",
         "dateS": "24/04"
     },
     {
         "title": "Dia da Contabilidade",
+        "week": "dom",
         "date": "04/25",
         "dateS": "25/04"
     },
     {
         "title": "Dia Mundial da Luta contra a Malária",
+        "week": "dom",
         "date": "04/25",
         "dateS": "25/04"
     },
     {
         "title": "Dia do Despachante Aduaneiro",
+        "week": "dom",
         "date": "04/25",
         "dateS": "25/04"
     },
     {
         "title": "Dia do DNA",
+        "week": "dom",
         "date": "04/25",
         "dateS": "25/04"
     },
     {
         "title": "Dia do Goleiro",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia de Prevenção e Combate à Hipertensão",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia Internacional de Lembrança do Desastre de Chernobyl",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia do Engraxate",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia do Juiz Trabalhista",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia Mundial da Propriedade Intelectual",
+        "week": "seg",
         "date": "04/26",
         "dateS": "26/04"
     },
     {
         "title": "Dia da Empregada Doméstica",
+        "week": "ter",
         "date": "04/27",
         "dateS": "27/04"
     },
     {
         "title": "Dia Mundial do Design Gráfico",
+        "week": "ter",
         "date": "04/27",
         "dateS": "27/04"
     },
     {
         "title": "Dia da Educação",
+        "week": "qua",
         "date": "04/28",
         "dateS": "28/04"
     },
     {
         "title": "Dia da Sogra",
+        "week": "qua",
         "date": "04/28",
         "dateS": "28/04"
     },
     {
         "title": "Dia Nacional da Caatinga",
+        "week": "qua",
         "date": "04/28",
         "dateS": "28/04"
     },
     {
         "title": "Dia Nacional em Memória das Vítimas de Acidentes e Doenças do Trabalho",
+        "week": "qua",
         "date": "04/28",
         "dateS": "28/04"
     },
     {
         "title": "Dia Mundial da Segurança e da Saúde no Trabalho",
+        "week": "qua",
         "date": "04/28",
         "dateS": "28/04"
     },
     {
         "title": "Dia Internacional da Dança",
+        "week": "qui",
         "date": "04/29",
         "dateS": "29/04"
     },
     {
         "title": "Dia de Santa Catarina de Sena",
+        "week": "qui",
         "date": "04/29",
         "dateS": "29/04"
     },
     {
         "title": "Dia em Memória de todas as Vítimas de Armas Químicas",
+        "week": "qui",
         "date": "04/29",
         "dateS": "29/04"
     },
     {
         "title": "Dia Nacional da Mulher",
+        "week": "sex",
         "date": "04/30",
         "dateS": "30/04"
     },
     {
         "title": "Dia do Ferroviário",
+        "week": "sex",
         "date": "04/30",
         "dateS": "30/04"
     },
     {
         "title": "Dia Internacional do Jazz",
+        "week": "sex",
         "date": "04/30",
         "dateS": "30/04"
     },
     {
         "title": "Dia do Trabalho",
+        "week": "sáb",
         "date": "05/01",
         "dateS": "01/05"
     },
     {
         "title": "Dia da Literatura Brasileira",
+        "week": "sáb",
         "date": "05/01",
         "dateS": "01/05"
     },
     {
         "title": "Dia Nacional do ex-Combatente",
+        "week": "dom",
         "date": "05/02",
         "dateS": "02/05"
     },
     {
         "title": "Dia Internacional da Liberdade de Imprensa",
+        "week": "seg",
         "date": "05/03",
         "dateS": "03/05"
     },
     {
         "title": "Dia do Parlamento",
+        "week": "seg",
         "date": "05/03",
         "dateS": "03/05"
     },
     {
         "title": "Dia Nacional do Taquígrafo",
+        "week": "seg",
         "date": "05/03",
         "dateS": "03/05"
     },
     {
         "title": "Dia do Sertanejo",
+        "week": "seg",
         "date": "05/03",
         "dateS": "03/05"
     },
     {
         "title": "Dia do Pau-Brasil",
+        "week": "seg",
         "date": "05/03",
         "dateS": "03/05"
     },
     {
         "title": "Dia de Star Wars",
+        "week": "ter",
         "date": "05/04",
         "dateS": "04/05"
     },
     {
         "title": "Dia Mundial de Combate à Asma",
+        "week": "ter",
         "date": "05/04",
         "dateS": "04/05"
     },
     {
         "title": "Dia da Língua Portuguesa",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Nacional do Líder Comunitário",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Nacional das Comunicações",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Nacional do Expedicionário",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia do Marechal Rondon",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Nacional sobre o Uso Racional de Medicamentos",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Mundial de Higienização das Mãos",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia Internacional da Parteira",
+        "week": "qua",
         "date": "05/05",
         "dateS": "05/05"
     },
     {
         "title": "Dia da Matemática",
+        "week": "qui",
         "date": "05/06",
         "dateS": "06/05"
     },
     {
         "title": "Dia do Cartógrafo",
+        "week": "qui",
         "date": "05/06",
         "dateS": "06/05"
     },
     {
         "title": "Dia da Coragem",
+        "week": "qui",
         "date": "05/06",
         "dateS": "06/05"
     },
     {
         "title": "Dia do Oftalmologista",
+        "week": "sex",
         "date": "05/07",
         "dateS": "07/05"
     },
     {
         "title": "Dia do Silêncio",
+        "week": "sex",
         "date": "05/07",
         "dateS": "07/05"
     },
     {
         "title": "Dia Nacional de Prevenção da Alergia",
+        "week": "sex",
         "date": "05/07",
         "dateS": "07/05"
     },
     {
         "title": "Dia Mundial da Espondilite Anquilosante",
+        "week": "sex",
         "date": "05/07",
         "dateS": "07/05"
     },
     {
         "title": "Dia Internacional da Luta contra a Endometriose",
+        "week": "sex",
         "date": "05/07",
         "dateS": "07/05"
     },
     {
         "title": "Dia Nacional do Turismo",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia do Profissional de Marketing",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia do Artista Plástico",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia da Vitória",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia Internacional da Cruz Vermelha",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia da Talassemia",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia Nacional das Hemoglobinopatias",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia Mundial do Câncer de Ovário",
+        "week": "sáb",
         "date": "05/08",
         "dateS": "08/05"
     },
     {
         "title": "Dia das Mães",
+        "week": "dom",
         "date": "05/09",
         "dateS": "09/05"
     },
     {
         "title": "Dia da Europa",
+        "week": "dom",
         "date": "05/09",
         "dateS": "09/05"
     },
     {
         "title": "Dia do Aniversário do Buda Shakyamuni",
+        "week": "dom",
         "date": "05/09",
         "dateS": "09/05"
     },
     {
         "title": "Aniversário da Fundação de Mato Grosso",
+        "week": "dom",
         "date": "05/09",
         "dateS": "09/05"
     },
     {
         "title": "Dia do Guia de Turismo",
+        "week": "seg",
         "date": "05/10",
         "dateS": "10/05"
     },
     {
         "title": "Dia da Cozinheira",
+        "week": "seg",
         "date": "05/10",
         "dateS": "10/05"
     },
     {
         "title": "Dia da Cavalaria",
+        "week": "seg",
         "date": "05/10",
         "dateS": "10/05"
     },
     {
         "title": "Dia do Campo",
+        "week": "seg",
         "date": "05/10",
         "dateS": "10/05"
     },
     {
         "title": "Dia Internacional de Atenção à Pessoa com Lúpus",
+        "week": "seg",
         "date": "05/10",
         "dateS": "10/05"
     },
     {
         "title": "Dia Nacional do Reggae",
+        "week": "ter",
         "date": "05/11",
         "dateS": "11/05"
     },
     {
         "title": "Dia Internacional da Enfermagem e do Enfermeiro",
+        "week": "qua",
         "date": "05/12",
         "dateS": "12/05"
     },
     {
         "title": "Dia do Engenheiro Militar",
+        "week": "qua",
         "date": "05/12",
         "dateS": "12/05"
     },
     {
         "title": "Dia do Automóvel",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Abolição da Escravatura",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Dia do Zootecnista",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Dia da Fraternidade",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Dia Nacional do Chefe de Cozinha",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Dia de Nossa Senhora de Fátima",
+        "week": "qui",
         "date": "05/13",
         "dateS": "13/05"
     },
     {
         "title": "Dia Continental do Seguro",
+        "week": "sex",
         "date": "05/14",
         "dateS": "14/05"
     },
     {
         "title": "Dia do Gerente Bancário",
+        "week": "sáb",
         "date": "05/15",
         "dateS": "15/05"
     },
     {
         "title": "Dia do Assistente Social",
+        "week": "sáb",
         "date": "05/15",
         "dateS": "15/05"
     },
     {
         "title": "Dia Internacional da Família",
+        "week": "sáb",
         "date": "05/15",
         "dateS": "15/05"
     },
     {
         "title": "Dia Nacional do Controle das Infecções Hospitalares",
+        "week": "sáb",
         "date": "05/15",
         "dateS": "15/05"
     },
     {
         "title": "Dia Internacional do Serviço de Informação Aeronáutica",
+        "week": "sáb",
         "date": "05/15",
         "dateS": "15/05"
     },
     {
         "title": "Dia do Gari",
+        "week": "dom",
         "date": "05/16",
         "dateS": "16/05"
     },
     {
         "title": "Dia Mundial das Telecomunicações e da Sociedade da Informação",
+        "week": "seg",
         "date": "05/17",
         "dateS": "17/05"
     },
     {
         "title": "Dia Internacional Contra a Homofobia",
+        "week": "seg",
         "date": "05/17",
         "dateS": "17/05"
     },
     {
         "title": "Dia Mundial da Hipertensão",
+        "week": "seg",
         "date": "05/17",
         "dateS": "17/05"
     },
     {
         "title": "Dia dos Vidraceiros",
+        "week": "ter",
         "date": "05/18",
         "dateS": "18/05"
     },
     {
         "title": "Dia Internacional dos Museus",
+        "week": "ter",
         "date": "05/18",
         "dateS": "18/05"
     },
     {
         "title": "Dia Nacional do Cocktail",
+        "week": "ter",
         "date": "05/18",
         "dateS": "18/05"
     },
     {
         "title": "Dia Nacional de Combate ao Abuso e à Exploração Sexual Infantil",
+        "week": "ter",
         "date": "05/18",
         "dateS": "18/05"
     },
     {
         "title": "Dia Nacional da Luta Antimanicomial",
+        "week": "ter",
         "date": "05/18",
         "dateS": "18/05"
     },
     {
         "title": "Dia do Físico",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia dos Acadêmicos de Direito",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia do Defensor Público",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia do Estudante de Direito",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia de São Crispim de Viterbo",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia Nacional de Doação de Leite Humano",
+        "week": "qua",
         "date": "05/19",
         "dateS": "19/05"
     },
     {
         "title": "Dia do Pedagogo",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Dia Nacional do Técnico e Auxiliar de Enfermagem",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Dia Mundial das Abelhas",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Dia Nacional do Medicamento Genérico",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Aniversário de Palmas",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Dia do Comissário de Menores",
+        "week": "qui",
         "date": "05/20",
         "dateS": "20/05"
     },
     {
         "title": "Dia da Língua Nacional",
+        "week": "sex",
         "date": "05/21",
         "dateS": "21/05"
     },
     {
         "title": "Dia do Afilhado",
+        "week": "sex",
         "date": "05/21",
         "dateS": "21/05"
     },
     {
         "title": "Dia Mundial da Diversidade Cultural para o Diálogo e o Desenvolvimento",
+        "week": "sex",
         "date": "05/21",
         "dateS": "21/05"
     },
     {
         "title": "Dia do Apicultor",
+        "week": "sáb",
         "date": "05/22",
         "dateS": "22/05"
     },
     {
         "title": "Dia Internacional da Biodiversidade",
+        "week": "sáb",
         "date": "05/22",
         "dateS": "22/05"
     },
     {
         "title": "Dia do Abraço",
+        "week": "sáb",
         "date": "05/22",
         "dateS": "22/05"
     },
     {
         "title": "Dia de Santa Rita",
+        "week": "sáb",
         "date": "05/22",
         "dateS": "22/05"
     },
     {
         "title": "Dia de Pentecostes",
+        "week": "dom",
         "date": "05/23",
         "dateS": "23/05"
     },
     {
         "title": "Dia da Tartaruga",
+        "week": "dom",
         "date": "05/23",
         "dateS": "23/05"
     },
     {
         "title": "Dia da Juventude Constitucionalista",
+        "week": "dom",
         "date": "05/23",
         "dateS": "23/05"
     },
     {
         "title": "Dia da Infantaria",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia do Datilógrafo",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia do Telegrafista",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia do Vestibulando",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia do Detento",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia Nacional do Café",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia Nacional do Calcário Agrícola",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia Nacional do Cigano",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia Nacional do Milho",
+        "week": "seg",
         "date": "05/24",
         "dateS": "24/05"
     },
     {
         "title": "Dia da Indústria",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia do Massagista",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia da Toalha",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia Nacional da Adoção",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia do Trabalhador Rural",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia Internacional do Sapateado",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia Internacional das Crianças Desaparecidas",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia do Orgulho Geek",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia da Costureira",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia Nacional do Respeito ao Contribuinte",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Dia Internacional da Tireoide",
+        "week": "ter",
         "date": "05/25",
         "dateS": "25/05"
     },
     {
         "title": "Eclipse Lunar Total 2021",
+        "week": "qua",
         "date": "05/26",
         "dateS": "26/05"
     },
     {
         "title": "Dia do Desafio",
+        "week": "qua",
         "date": "05/26",
         "dateS": "26/05"
     },
     {
         "title": "Dia Nacional de Combate ao Glaucoma",
+        "week": "qua",
         "date": "05/26",
         "dateS": "26/05"
     },
     {
         "title": "Dia do Revendedor Lotérico",
+        "week": "qua",
         "date": "05/26",
         "dateS": "26/05"
     },
     {
         "title": "Dia Nacional da Mata Atlântica",
+        "week": "qui",
         "date": "05/27",
         "dateS": "27/05"
     },
     {
         "title": "Dia do Profissional Liberal",
+        "week": "qui",
         "date": "05/27",
         "dateS": "27/05"
     },
     {
         "title": "Dia do Serviço de Saúde",
+        "week": "qui",
         "date": "05/27",
         "dateS": "27/05"
     },
     {
         "title": "Dia do Serviço de Saúde do Exército",
+        "week": "qui",
         "date": "05/27",
         "dateS": "27/05"
     },
     {
         "title": "Dia do Ceramista",
+        "week": "sex",
         "date": "05/28",
         "dateS": "28/05"
     },
     {
         "title": "Dia Nacional de Luta pela Redução da Mortalidade Materna",
+        "week": "sex",
         "date": "05/28",
         "dateS": "28/05"
     },
     {
         "title": "Dia de São Germano de Paris",
+        "week": "sex",
         "date": "05/28",
         "dateS": "28/05"
     },
     {
         "title": "Dia do Hambúrguer",
+        "week": "sex",
         "date": "05/28",
         "dateS": "28/05"
     },
     {
         "title": "Dia Internacional de Luta pela Saúde da Mulher",
+        "week": "sex",
         "date": "05/28",
         "dateS": "28/05"
     },
     {
         "title": "Dia do Estatístico",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia do Geógrafo",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia Mundial da Energia",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia Internacional dos Soldados da Paz das Nações Unidas",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia de São Maximino",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia Mundial da Saúde Digestiva",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia do Ibgeano",
+        "week": "sáb",
         "date": "05/29",
         "dateS": "29/05"
     },
     {
         "title": "Dia do Geólogo",
+        "week": "dom",
         "date": "05/30",
         "dateS": "30/05"
     },
     {
         "title": "Dia do Decorador",
+        "week": "dom",
         "date": "05/30",
         "dateS": "30/05"
     },
     {
         "title": "Dia da Santa Joana d'Arc",
+        "week": "dom",
         "date": "05/30",
         "dateS": "30/05"
     },
     {
         "title": "São Fernando",
+        "week": "dom",
         "date": "05/30",
         "dateS": "30/05"
     },
     {
         "title": "Dia Mundial da Esclerose Múltipla",
+        "week": "dom",
         "date": "05/30",
         "dateS": "30/05"
     },
     {
         "title": "Dia do Comissário de Bordo",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Dia do Espírito Santo",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Dia Mundial sem Tabaco",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Dia da Aeromoça",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Dia Mundial de Combate ao Fumo",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Dia do Aeroporto",
+        "week": "seg",
         "date": "05/31",
         "dateS": "31/05"
     },
     {
         "title": "Semana do Meio Ambiente",
+        "week": "ter",
         "date": "06/01",
         "dateS": "01/06"
     },
     {
         "title": "Dia da Imprensa",
+        "week": "ter",
         "date": "06/01",
         "dateS": "01/06"
     },
     {
         "title": "Dia de São Justino",
+        "week": "ter",
         "date": "06/01",
         "dateS": "01/06"
     },
     {
         "title": "Corpus Christi",
+        "week": "qui",
         "date": "06/03",
         "dateS": "03/06"
     },
     {
         "title": "Dia Internacional do Administrador de Pessoal e da Comunidade Social",
+        "week": "qui",
         "date": "06/03",
         "dateS": "03/06"
     },
     {
         "title": "Dia da Conscientização Contra a Obesidade Mórbida Infantil",
+        "week": "qui",
         "date": "06/03",
         "dateS": "03/06"
     },
     {
         "title": "Dia Mundial da Bicicleta",
+        "week": "qui",
         "date": "06/03",
         "dateS": "03/06"
     },
     {
         "title": "Dia Nacional da Educação Ambiental",
+        "week": "qui",
         "date": "06/03",
         "dateS": "03/06"
     },
     {
         "title": "Dia de Santa Clotilde",
+        "week": "sex",
         "date": "06/04",
         "dateS": "04/06"
     },
     {
         "title": "Dia Internacional das Crianças Inocentes Vítimas de Agressão",
+        "week": "sex",
         "date": "06/04",
         "dateS": "04/06"
     },
     {
         "title": "Dia do Engenheiro Agrimensor",
+        "week": "sex",
         "date": "06/04",
         "dateS": "04/06"
     },
     {
         "title": "Dia da Ecologia",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia Mundial do Meio Ambiente",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia Nacional da Reciclagem",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia de São Bonifácio",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia Internacional de Luta contra a Pesca Ilegal, Não Declarada e Não Regulamentada",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia do Engenheiro Mecânico",
+        "week": "sáb",
         "date": "06/05",
         "dateS": "05/06"
     },
     {
         "title": "Dia de São Norberto",
+        "week": "dom",
         "date": "06/06",
         "dateS": "06/06"
     },
     {
         "title": "Dia Nacional de Luta contra Queimaduras",
+        "week": "dom",
         "date": "06/06",
         "dateS": "06/06"
     },
     {
         "title": "Dia Nacional do Teste do Pezinho",
+        "week": "dom",
         "date": "06/06",
         "dateS": "06/06"
     },
     {
         "title": "Dia da Liberdade de Imprensa",
+        "week": "seg",
         "date": "06/07",
         "dateS": "07/06"
     },
     {
         "title": "Dia do Oceanógrafo",
+        "week": "ter",
         "date": "06/08",
         "dateS": "08/06"
     },
     {
         "title": "Dia do Citricultor",
+        "week": "ter",
         "date": "06/08",
         "dateS": "08/06"
     },
     {
         "title": "Dia Mundial dos Oceanos",
+        "week": "ter",
         "date": "06/08",
         "dateS": "08/06"
     },
     {
         "title": "Dia de São Medardo",
+        "week": "ter",
         "date": "06/08",
         "dateS": "08/06"
     },
     {
         "title": "Dia do Porteiro",
+        "week": "qua",
         "date": "06/09",
         "dateS": "09/06"
     },
     {
         "title": "Dia do Tenista",
+        "week": "qua",
         "date": "06/09",
         "dateS": "09/06"
     },
     {
         "title": "Dia Nacional de Anchieta",
+        "week": "qua",
         "date": "06/09",
         "dateS": "09/06"
     },
     {
         "title": "Dia Internacional dos Arquivos",
+        "week": "qua",
         "date": "06/09",
         "dateS": "09/06"
     },
     {
         "title": "Dia da Imunização",
+        "week": "qua",
         "date": "06/09",
         "dateS": "09/06"
     },
     {
         "title": "Eclipse Solar Anular 2021",
+        "week": "qui",
         "date": "06/10",
         "dateS": "10/06"
     },
     {
         "title": "Dia da Artilharia",
+        "week": "qui",
         "date": "06/10",
         "dateS": "10/06"
     },
     {
         "title": "Dia da Marinha Brasileira",
+        "week": "sex",
         "date": "06/11",
         "dateS": "11/06"
     },
     {
         "title": "Dia do Educador Sanitário",
+        "week": "sex",
         "date": "06/11",
         "dateS": "11/06"
     },
     {
         "title": "Dia de São Barnabé",
+        "week": "sex",
         "date": "06/11",
         "dateS": "11/06"
     },
     {
         "title": "Dia dos Namorados",
+        "week": "sáb",
         "date": "06/12",
         "dateS": "12/06"
     },
     {
         "title": "Dia do Correio Aéreo Nacional",
+        "week": "sáb",
         "date": "06/12",
         "dateS": "12/06"
     },
     {
         "title": "Dia Mundial de Combate ao Trabalho Infantil",
+        "week": "sáb",
         "date": "06/12",
         "dateS": "12/06"
     },
     {
         "title": "Dia de São Gaspar de Búfalo",
+        "week": "sáb",
         "date": "06/12",
         "dateS": "12/06"
     },
     {
         "title": "Dia do Enxadrista",
+        "week": "sáb",
         "date": "06/12",
         "dateS": "12/06"
     },
     {
         "title": "Dia de Santo Antônio",
+        "week": "dom",
         "date": "06/13",
         "dateS": "13/06"
     },
     {
         "title": "Dia do Turista",
+        "week": "dom",
         "date": "06/13",
         "dateS": "13/06"
     },
     {
         "title": "Dia do Pastor Evangélico",
+        "week": "dom",
         "date": "06/13",
         "dateS": "13/06"
     },
     {
         "title": "Dia Internacional de Conscientização sobre o Albinismo",
+        "week": "dom",
         "date": "06/13",
         "dateS": "13/06"
     },
     {
         "title": "Dia Mundial do Doador de Sangue",
+        "week": "seg",
         "date": "06/14",
         "dateS": "14/06"
     },
     {
         "title": "Dia do Solista",
+        "week": "seg",
         "date": "06/14",
         "dateS": "14/06"
     },
     {
         "title": "Dia Universal de Deus",
+        "week": "seg",
         "date": "06/14",
         "dateS": "14/06"
     },
     {
         "title": "Dia Mundial da Consciencialização da Violência contra a Pessoa Idosa",
+        "week": "ter",
         "date": "06/15",
         "dateS": "15/06"
     },
     {
         "title": "Aniversário da Emancipação do Acre",
+        "week": "ter",
         "date": "06/15",
         "dateS": "15/06"
     },
     {
         "title": "Dia de São Francisco Régis",
+        "week": "qua",
         "date": "06/16",
         "dateS": "16/06"
     },
     {
         "title": "Dia Internacional da Tartaruga Marinha",
+        "week": "qua",
         "date": "06/16",
         "dateS": "16/06"
     },
     {
         "title": "Dia do Funcionário Público Aposentado",
+        "week": "qui",
         "date": "06/17",
         "dateS": "17/06"
     },
     {
         "title": "Dia Mundial de Combate à Desertificação",
+        "week": "qui",
         "date": "06/17",
         "dateS": "17/06"
     },
     {
         "title": "Dia da Medicina Veterinária Militar",
+        "week": "qui",
         "date": "06/17",
         "dateS": "17/06"
     },
     {
         "title": "Dia do Químico",
+        "week": "sex",
         "date": "06/18",
         "dateS": "18/06"
     },
     {
         "title": "Dia da Imigração Japonesa",
+        "week": "sex",
         "date": "06/18",
         "dateS": "18/06"
     },
     {
         "title": "Dia da Gastronomia Sustentável",
+        "week": "sex",
         "date": "06/18",
         "dateS": "18/06"
     },
     {
         "title": "Dia do Cinema Brasileiro",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia do Migrante",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia de São Romualdo",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia Internacional para Eliminação da Violência Sexual em Conflito",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia Mundial de Conscientização sobre a Doença Falciforme",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia Nacional do Luto",
+        "week": "sáb",
         "date": "06/19",
         "dateS": "19/06"
     },
     {
         "title": "Dia do Revendedor",
+        "week": "dom",
         "date": "06/20",
         "dateS": "20/06"
     },
     {
         "title": "Dia do Vigilante",
+        "week": "dom",
         "date": "06/20",
         "dateS": "20/06"
     },
     {
         "title": "Dia do Refugiado",
+        "week": "dom",
         "date": "06/20",
         "dateS": "20/06"
     },
     {
         "title": "Início do Inverno (Solstício de Inverno)",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia do Mídia",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia do Profissional de Mídia",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia do Aperto de Mão",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia Mundial do Skate",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia do Intelectual",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia de São Luís Gonzaga",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia Internacional do Yoga",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia Nacional de Controle da Asma",
+        "week": "seg",
         "date": "06/21",
         "dateS": "21/06"
     },
     {
         "title": "Dia do Orquidófilo",
+        "week": "ter",
         "date": "06/22",
         "dateS": "22/06"
     },
     {
         "title": "Dia do Aeroviário",
+        "week": "ter",
         "date": "06/22",
         "dateS": "22/06"
     },
     {
         "title": "Dia do Economiário",
+        "week": "ter",
         "date": "06/22",
         "dateS": "22/06"
     },
     {
         "title": "Dia Mundial do Desporto Olímpico",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia do Atleta Olímpico",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia do Lavrador",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia de São José Cafasso",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia das Nações Unidas para o Serviço Público",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia Internacional das Viúvas",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia Nacional do Agente Marítimo",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia Internacional das Mulheres na Engenharia",
+        "week": "qua",
         "date": "06/23",
         "dateS": "23/06"
     },
     {
         "title": "Dia de São João",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia da Polícia Militar",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia do Disco Voador",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia do Observador Aéreo",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia do Caboclo",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia Nacional da Araucária",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia da Indústria Gráfica",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia Internacional do Leite",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia da Comunidade Britânica",
+        "week": "qui",
         "date": "06/24",
         "dateS": "24/06"
     },
     {
         "title": "Dia do Cotonete",
+        "week": "sex",
         "date": "06/25",
         "dateS": "25/06"
     },
     {
         "title": "Dia do Imigrante",
+        "week": "sex",
         "date": "06/25",
         "dateS": "25/06"
     },
     {
         "title": "Dia Mundial do Vitiligo",
+        "week": "sex",
         "date": "06/25",
         "dateS": "25/06"
     },
     {
         "title": "Dia Internacional contra o Abuso e Tráfico Ilícito de Drogas",
+        "week": "sáb",
         "date": "06/26",
         "dateS": "26/06"
     },
     {
         "title": "Dia Internacional de Apoio às Vítimas de Tortura",
+        "week": "sáb",
         "date": "06/26",
         "dateS": "26/06"
     },
     {
         "title": "Dia Nacional do Vôlei",
+        "week": "dom",
         "date": "06/27",
         "dateS": "27/06"
     },
     {
         "title": "Dia Nacional do Progresso",
+        "week": "dom",
         "date": "06/27",
         "dateS": "27/06"
     },
     {
         "title": "Dia de Nossa Senhora do Perpétuo Socorro",
+        "week": "dom",
         "date": "06/27",
         "dateS": "27/06"
     },
     {
         "title": "Dia Nacional do Técnico em Nutrição e Dietética ",
+        "week": "dom",
         "date": "06/27",
         "dateS": "27/06"
     },
     {
         "title": "Dia Nacional do Quadrilheiro Junino",
+        "week": "dom",
         "date": "06/27",
         "dateS": "27/06"
     },
     {
         "title": "Dia Internacional do Orgulho Gay",
+        "week": "seg",
         "date": "06/28",
         "dateS": "28/06"
     },
     {
         "title": "Dia de Santo Irineu",
+        "week": "seg",
         "date": "06/28",
         "dateS": "28/06"
     },
     {
         "title": "Dia da Renovação Espiritual",
+        "week": "seg",
         "date": "06/28",
         "dateS": "28/06"
     },
     {
         "title": "Dia de São Pedro e São Paulo",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Papa",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Pescador",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Dublador",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Telefonista",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Pescador Amador",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia Nacional da Aviação de Segurança Pública do Brasil",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia do Engenheiro de Petróleo",
+        "week": "ter",
         "date": "06/29",
         "dateS": "29/06"
     },
     {
         "title": "Dia da Mídia Social",
+        "week": "qua",
         "date": "06/30",
         "dateS": "30/06"
     },
     {
         "title": "Dia Nacional do Bumba Meu Boi",
+        "week": "qua",
         "date": "06/30",
         "dateS": "30/06"
     },
     {
         "title": "Dia Nacional do Fiscal Federal Agropecuário",
+        "week": "qua",
         "date": "06/30",
         "dateS": "30/06"
     },
     {
         "title": "Dia de Santo Aarão",
+        "week": "qui",
         "date": "07/01",
         "dateS": "01/07"
     },
     {
         "title": "Dia Mundial da Arquitetura",
+        "week": "qui",
         "date": "07/01",
         "dateS": "01/07"
     },
     {
         "title": "Dia da Vacina BCG",
+        "week": "qui",
         "date": "07/01",
         "dateS": "01/07"
     },
     {
         "title": "Dia do Hospital",
+        "week": "sex",
         "date": "07/02",
         "dateS": "02/07"
     },
     {
         "title": "Dia do Bombeiro Brasileiro",
+        "week": "sex",
         "date": "07/02",
         "dateS": "02/07"
     },
     {
         "title": "Independência da Bahia",
+        "week": "sex",
         "date": "07/02",
         "dateS": "02/07"
     },
     {
         "title": "Dia de São Tomé",
+        "week": "sáb",
         "date": "07/03",
         "dateS": "03/07"
     },
     {
         "title": "Dia Internacional do Cooperativismo",
+        "week": "sáb",
         "date": "07/03",
         "dateS": "03/07"
     },
     {
         "title": "Dia Nacional de Combate à Discriminação Racial",
+        "week": "sáb",
         "date": "07/03",
         "dateS": "03/07"
     },
     {
         "title": "Dia de Santa Isabel",
+        "week": "dom",
         "date": "07/04",
         "dateS": "04/07"
     },
     {
         "title": "Dia da Independência dos Estados Unidos",
+        "week": "dom",
         "date": "07/04",
         "dateS": "04/07"
     },
     {
         "title": "Dia da criação do IBGE",
+        "week": "ter",
         "date": "07/06",
         "dateS": "06/07"
     },
     {
         "title": "Dia de Santa Maria Goretti",
+        "week": "ter",
         "date": "07/06",
         "dateS": "06/07"
     },
     {
         "title": "Dia Mundial do Chocolate",
+        "week": "qua",
         "date": "07/07",
         "dateS": "07/07"
     },
     {
         "title": "Dia do Panificador",
+        "week": "qui",
         "date": "07/08",
         "dateS": "08/07"
     },
     {
         "title": "Dia Nacional da Ciência e do Pesquisador",
+        "week": "qui",
         "date": "07/08",
         "dateS": "08/07"
     },
     {
         "title": "Aniversário de Ouro Preto",
+        "week": "qui",
         "date": "07/08",
         "dateS": "08/07"
     },
     {
         "title": "Dia Mundial da Alergia",
+        "week": "qui",
         "date": "07/08",
         "dateS": "08/07"
     },
     {
         "title": "Dia da Revolução Constitucionalista",
+        "week": "sex",
         "date": "07/09",
         "dateS": "09/07"
     },
     {
         "title": "Aniversário de Boa Vista",
+        "week": "sex",
         "date": "07/09",
         "dateS": "09/07"
     },
     {
         "title": "Dia da Pizza",
+        "week": "sáb",
         "date": "07/10",
         "dateS": "10/07"
     },
     {
         "title": "Dia do Engenheiro de Minas",
+        "week": "sáb",
         "date": "07/10",
         "dateS": "10/07"
     },
     {
         "title": "Dia Mundial da Lei",
+        "week": "sáb",
         "date": "07/10",
         "dateS": "10/07"
     },
     {
         "title": "Dia da Saúde Ocular",
+        "week": "sáb",
         "date": "07/10",
         "dateS": "10/07"
     },
     {
         "title": "Dia Mundial da População",
+        "week": "dom",
         "date": "07/11",
         "dateS": "11/07"
     },
     {
         "title": "Dia do Engenheiro Florestal",
+        "week": "seg",
         "date": "07/12",
         "dateS": "12/07"
     },
     {
         "title": "Dia do Cantor",
+        "week": "ter",
         "date": "07/13",
         "dateS": "13/07"
     },
     {
         "title": "Dia Mundial do Rock",
+        "week": "ter",
         "date": "07/13",
         "dateS": "13/07"
     },
     {
         "title": "Dia do Engenheiro de Saneamento",
+        "week": "ter",
         "date": "07/13",
         "dateS": "13/07"
     },
     {
         "title": "Dia dos Compositores e Cantores Sertanejos",
+        "week": "ter",
         "date": "07/13",
         "dateS": "13/07"
     },
     {
         "title": "Dia do Propagandista de Laboratório",
+        "week": "qua",
         "date": "07/14",
         "dateS": "14/07"
     },
     {
         "title": "Dia da Liberdade de Pensamento",
+        "week": "qua",
         "date": "07/14",
         "dateS": "14/07"
     },
     {
         "title": "Dia de São Camilo",
+        "week": "qua",
         "date": "07/14",
         "dateS": "14/07"
     },
     {
         "title": "Dia do Engenheiro de Aquicultura",
+        "week": "qua",
         "date": "07/14",
         "dateS": "14/07"
     },
     {
         "title": "Dia Nacional dos Clubes",
+        "week": "qui",
         "date": "07/15",
         "dateS": "15/07"
     },
     {
         "title": "Dia do Homem",
+        "week": "qui",
         "date": "07/15",
         "dateS": "15/07"
     },
     {
         "title": "Dia Nacional do Pecuarista",
+        "week": "qui",
         "date": "07/15",
         "dateS": "15/07"
     },
     {
         "title": "Dia Mundial das Habilidades dos Jovens",
+        "week": "qui",
         "date": "07/15",
         "dateS": "15/07"
     },
     {
         "title": "Dia do Comerciante",
+        "week": "sex",
         "date": "07/16",
         "dateS": "16/07"
     },
     {
         "title": "Dia de Nossa Senhora do Carmo",
+        "week": "sex",
         "date": "07/16",
         "dateS": "16/07"
     },
     {
         "title": "Dia de Proteção às Florestas",
+        "week": "sáb",
         "date": "07/17",
         "dateS": "17/07"
     },
     {
         "title": "Dia Mundial do Emoji",
+        "week": "sáb",
         "date": "07/17",
         "dateS": "17/07"
     },
     {
         "title": "Dia do Curupira",
+        "week": "sáb",
         "date": "07/17",
         "dateS": "17/07"
     },
     {
         "title": "Dia Internacional de Nelson Mandela",
+        "week": "dom",
         "date": "07/18",
         "dateS": "18/07"
     },
     {
         "title": "Dia de São Francisco Solano",
+        "week": "dom",
         "date": "07/18",
         "dateS": "18/07"
     },
     {
         "title": "Dia do Trovador",
+        "week": "dom",
         "date": "07/18",
         "dateS": "18/07"
     },
     {
         "title": "Dia da Caridade",
+        "week": "seg",
         "date": "07/19",
         "dateS": "19/07"
     },
     {
         "title": "Dia Nacional do Futebol",
+        "week": "seg",
         "date": "07/19",
         "dateS": "19/07"
     },
     {
         "title": "Dia de São Símaco",
+        "week": "seg",
         "date": "07/19",
         "dateS": "19/07"
     },
     {
         "title": "Dia do Amigo e Internacional da Amizade",
+        "week": "ter",
         "date": "07/20",
         "dateS": "20/07"
     },
     {
         "title": "Chegada do Homem à Lua",
+        "week": "ter",
         "date": "07/20",
         "dateS": "20/07"
     },
     {
         "title": "Dia Nacional do Biscoito",
+        "week": "ter",
         "date": "07/20",
         "dateS": "20/07"
     },
     {
         "title": "Dia Pan-americano do Engenheiro",
+        "week": "ter",
         "date": "07/20",
         "dateS": "20/07"
     },
     {
         "title": "Dia Nacional do Garimpeiro",
+        "week": "qua",
         "date": "07/21",
         "dateS": "21/07"
     },
     {
         "title": "Dia de Santa Maria Madalena",
+        "week": "qui",
         "date": "07/22",
         "dateS": "22/07"
     },
     {
         "title": "Dia Mundial do Cérebro",
+        "week": "qui",
         "date": "07/22",
         "dateS": "22/07"
     },
     {
         "title": "Dia do Cantor Lírico",
+        "week": "qui",
         "date": "07/22",
         "dateS": "22/07"
     },
     {
         "title": "Abertura dos Jogos Olímpicos de Verão de 2020",
+        "week": "sex",
         "date": "07/23",
         "dateS": "23/07"
     },
     {
         "title": "Dia do Guarda Rodoviário",
+        "week": "sex",
         "date": "07/23",
         "dateS": "23/07"
     },
     {
         "title": "Dia de Santa Brígida",
+        "week": "sex",
         "date": "07/23",
         "dateS": "23/07"
     },
     {
         "title": "Dia de São Charbel Makhlouf ",
+        "week": "sáb",
         "date": "07/24",
         "dateS": "24/07"
     },
     {
         "title": "Dia Nacional do Suinocultor",
+        "week": "sáb",
         "date": "07/24",
         "dateS": "24/07"
     },
     {
         "title": "Dia de São Cristóvão",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia do Escritor",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia do Colono",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia do Motorista",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia de São Tiago Maior",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia da Mulher Negra Latina e Caribenha",
+        "week": "dom",
         "date": "07/25",
         "dateS": "25/07"
     },
     {
         "title": "Dia da Vovó",
+        "week": "seg",
         "date": "07/26",
         "dateS": "26/07"
     },
     {
         "title": "Dia dos Avós",
+        "week": "seg",
         "date": "07/26",
         "dateS": "26/07"
     },
     {
         "title": "Dia Nacional do Arqueólogo",
+        "week": "seg",
         "date": "07/26",
         "dateS": "26/07"
     },
     {
         "title": "Dia do Motociclista",
+        "week": "ter",
         "date": "07/27",
         "dateS": "27/07"
     },
     {
         "title": "Dia de São Pantaleão de Nicomédia",
+        "week": "ter",
         "date": "07/27",
         "dateS": "27/07"
     },
     {
         "title": "Dia do Pediatra",
+        "week": "ter",
         "date": "07/27",
         "dateS": "27/07"
     },
     {
         "title": "Dia Nacional da Prevenção de Acidentes do Trabalho",
+        "week": "ter",
         "date": "07/27",
         "dateS": "27/07"
     },
     {
         "title": "Dia Mundial de Conscientização e Combate ao Câncer de Cabeça e Pescoço",
+        "week": "ter",
         "date": "07/27",
         "dateS": "27/07"
     },
     {
         "title": "Dia do Agricultor",
+        "week": "qua",
         "date": "07/28",
         "dateS": "28/07"
     },
     {
         "title": "Dia Mundial de Luta Contra as Hepatites Virais",
+        "week": "qua",
         "date": "07/28",
         "dateS": "28/07"
     },
     {
         "title": "Dia de Santa Marta",
+        "week": "qui",
         "date": "07/29",
         "dateS": "29/07"
     },
     {
         "title": "Dia Internacional da Amizade",
+        "week": "sex",
         "date": "07/30",
         "dateS": "30/07"
     },
     {
         "title": "São Pedro Crisólogo",
+        "week": "sex",
         "date": "07/30",
         "dateS": "30/07"
     },
     {
         "title": "Dia Mundial contra o Tráfico de Pessoas",
+        "week": "sex",
         "date": "07/30",
         "dateS": "30/07"
     },
     {
         "title": "Dia do Orgasmo",
+        "week": "sáb",
         "date": "07/31",
         "dateS": "31/07"
     },
     {
         "title": "Dia de Santo Inácio de Loyola",
+        "week": "sáb",
         "date": "07/31",
         "dateS": "31/07"
     },
     {
         "title": "Dia Mundial do Guarda-Florestal",
+        "week": "sáb",
         "date": "07/31",
         "dateS": "31/07"
     },
     {
         "title": "Dia Nacional do Selo",
+        "week": "dom",
         "date": "08/01",
         "dateS": "01/08"
     },
     {
         "title": "Dia Nacional dos Portadores de Vitiligo",
+        "week": "dom",
         "date": "08/01",
         "dateS": "01/08"
     },
     {
         "title": "Dia do Cerealista",
+        "week": "dom",
         "date": "08/01",
         "dateS": "01/08"
     },
     {
         "title": "Dia Mundial da Amamentação",
+        "week": "dom",
         "date": "08/01",
         "dateS": "01/08"
     },
     {
         "title": "Dia de Santo Eusébio de Vercelli ",
+        "week": "seg",
         "date": "08/02",
         "dateS": "02/08"
     },
     {
         "title": "Dia do Capoeirista",
+        "week": "ter",
         "date": "08/03",
         "dateS": "03/08"
     },
     {
         "title": "Dia do Tintureiro",
+        "week": "ter",
         "date": "08/03",
         "dateS": "03/08"
     },
     {
         "title": "Dia de Santa Lídia",
+        "week": "ter",
         "date": "08/03",
         "dateS": "03/08"
     },
     {
         "title": "Dia do Padre",
+        "week": "qua",
         "date": "08/04",
         "dateS": "04/08"
     },
     {
         "title": "Dia do Sacerdote",
+        "week": "qua",
         "date": "08/04",
         "dateS": "04/08"
     },
     {
         "title": "Dia de São João Maria Vianney",
+        "week": "qua",
         "date": "08/04",
         "dateS": "04/08"
     },
     {
         "title": "Dia Nacional da Saúde",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Dia de Nossa Senhora das Neves",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Dia de Santo Osvaldo de Nortúmbria",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Aniversário de João Pessoa",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Aniversário da Fundação da Paraíba",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Dia Nacional da Farmácia",
+        "week": "qui",
         "date": "08/05",
         "dateS": "05/08"
     },
     {
         "title": "Dia de São Salvador do Mundo",
+        "week": "sex",
         "date": "08/06",
         "dateS": "06/08"
     },
     {
         "title": "Dia Nacional dos Profissionais da Educação",
+        "week": "sex",
         "date": "08/06",
         "dateS": "06/08"
     },
     {
         "title": "Dia Interamericano do Escotista",
+        "week": "sex",
         "date": "08/06",
         "dateS": "06/08"
     },
     {
         "title": "Dia de São Caetano",
+        "week": "sáb",
         "date": "08/07",
         "dateS": "07/08"
     },
     {
         "title": "Purple Heart Day",
+        "week": "sáb",
         "date": "08/07",
         "dateS": "07/08"
     },
     {
         "title": "Dia Nacional do Documentário Brasileiro",
+        "week": "sáb",
         "date": "08/07",
         "dateS": "07/08"
     },
     {
         "title": "Aniversário do Rio Grande do Norte",
+        "week": "sáb",
         "date": "08/07",
         "dateS": "07/08"
     },
     {
         "title": "Dia dos Pais",
+        "week": "dom",
         "date": "08/08",
         "dateS": "08/08"
     },
     {
         "title": "Encerramento dos Jogos Olímpicos de Verão de 2020",
+        "week": "dom",
         "date": "08/08",
         "dateS": "08/08"
     },
     {
         "title": "Dia de São Domingos de Gusmão ",
+        "week": "dom",
         "date": "08/08",
         "dateS": "08/08"
     },
     {
         "title": "Dia Nacional de Combate ao Colesterol",
+        "week": "dom",
         "date": "08/08",
         "dateS": "08/08"
     },
     {
         "title": "Dia Internacional dos Povos Indígenas",
+        "week": "seg",
         "date": "08/09",
         "dateS": "09/08"
     },
     {
         "title": "Dia Nacional da Equoterapia",
+        "week": "seg",
         "date": "08/09",
         "dateS": "09/08"
     },
     {
         "title": "Dia de São Lourenço",
+        "week": "ter",
         "date": "08/10",
         "dateS": "10/08"
     },
     {
         "title": "Dia Internacional do Biodiesel",
+        "week": "ter",
         "date": "08/10",
         "dateS": "10/08"
     },
     {
         "title": "Dia da Televisão",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia do Advogado",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia Internacional da Logosofia",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia do Estudante",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia do Garçom",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia de Santa Clara de Assis",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia do Magistrado",
+        "week": "qua",
         "date": "08/11",
         "dateS": "11/08"
     },
     {
         "title": "Dia Internacional da Juventude",
+        "week": "qui",
         "date": "08/12",
         "dateS": "12/08"
     },
     {
         "title": "Dia Nacional das Artes",
+        "week": "qui",
         "date": "08/12",
         "dateS": "12/08"
     },
     {
         "title": "Dia Nacional dos Direitos Humanos",
+        "week": "qui",
         "date": "08/12",
         "dateS": "12/08"
     },
     {
         "title": "Dia do Economista",
+        "week": "sex",
         "date": "08/13",
         "dateS": "13/08"
     },
     {
         "title": "Dia do Canhoto",
+        "week": "sex",
         "date": "08/13",
         "dateS": "13/08"
     },
     {
         "title": "Dia de São Ponciano e Santo Hipólito",
+        "week": "sex",
         "date": "08/13",
         "dateS": "13/08"
     },
     {
         "title": "Dia do Cardiologista",
+        "week": "sáb",
         "date": "08/14",
         "dateS": "14/08"
     },
     {
         "title": "Dia de São Maximiliano",
+        "week": "sáb",
         "date": "08/14",
         "dateS": "14/08"
     },
     {
         "title": "Dia da Unidade Humana",
+        "week": "sáb",
         "date": "08/14",
         "dateS": "14/08"
     },
     {
         "title": "Dia da Informática",
+        "week": "dom",
         "date": "08/15",
         "dateS": "15/08"
     },
     {
         "title": "Dia dos Solteiros",
+        "week": "dom",
         "date": "08/15",
         "dateS": "15/08"
     },
     {
         "title": "Dia da Assunção de Nossa Senhora",
+        "week": "dom",
         "date": "08/15",
         "dateS": "15/08"
     },
     {
         "title": "Dia de São Tarcísio",
+        "week": "dom",
         "date": "08/15",
         "dateS": "15/08"
     },
     {
         "title": "Dia Nacional das Santas Casas de Misericórdia",
+        "week": "dom",
         "date": "08/15",
         "dateS": "15/08"
     },
     {
         "title": "Dia do Filósofo",
+        "week": "seg",
         "date": "08/16",
         "dateS": "16/08"
     },
     {
         "title": "Dia de São Roque",
+        "week": "seg",
         "date": "08/16",
         "dateS": "16/08"
     },
     {
         "title": "Aniversário de Teresina",
+        "week": "seg",
         "date": "08/16",
         "dateS": "16/08"
     },
     {
         "title": "Dia de São Jacinto",
+        "week": "ter",
         "date": "08/17",
         "dateS": "17/08"
     },
     {
         "title": "Dia do Patrimônio Histórico",
+        "week": "ter",
         "date": "08/17",
         "dateS": "17/08"
     },
     {
         "title": "Dia Nacional da Construção Social",
+        "week": "ter",
         "date": "08/17",
         "dateS": "17/08"
     },
     {
         "title": "Dia de Santa Helena",
+        "week": "qua",
         "date": "08/18",
         "dateS": "18/08"
     },
     {
         "title": "Dia Nacional do Campo Limpo",
+        "week": "qua",
         "date": "08/18",
         "dateS": "18/08"
     },
     {
         "title": "Dia do Estagiário",
+        "week": "qua",
         "date": "08/18",
         "dateS": "18/08"
     },
     {
         "title": "Dia Mundial da Fotografia",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia do Artista de Teatro",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia do Historiador",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia de São João Eudes",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia Mundial Humanitário",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia da Integração Jurídica Latino-Americana",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia Nacional da Aviação Agrícola",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia Nacional do Ciclista",
+        "week": "qui",
         "date": "08/19",
         "dateS": "19/08"
     },
     {
         "title": "Dia do Maçom",
+        "week": "sex",
         "date": "08/20",
         "dateS": "20/08"
     },
     {
         "title": "Dia de São Bernardo",
+        "week": "sex",
         "date": "08/20",
         "dateS": "20/08"
     },
     {
         "title": "Dia de São Pio X",
+        "week": "sáb",
         "date": "08/21",
         "dateS": "21/08"
     },
     {
         "title": "Dia Internacional de Recordação e Homenagem às Vítimas do Terrorismo",
+        "week": "sáb",
         "date": "08/21",
         "dateS": "21/08"
     },
     {
         "title": "Início da Semana Nacional da Pessoa com Deficiência Intelectual e Múltipla",
+        "week": "sáb",
         "date": "08/21",
         "dateS": "21/08"
     },
     {
         "title": "Dia do Folclore",
+        "week": "dom",
         "date": "08/22",
         "dateS": "22/08"
     },
     {
         "title": "Dia de Nossa Senhora Rainha",
+        "week": "dom",
         "date": "08/22",
         "dateS": "22/08"
     },
     {
         "title": "Dia do Supervisor Escolar",
+        "week": "dom",
         "date": "08/22",
         "dateS": "22/08"
     },
     {
         "title": "Dia de Santa Rosa de Lima",
+        "week": "seg",
         "date": "08/23",
         "dateS": "23/08"
     },
     {
         "title": "Dia Internacional para Relembrar o Tráfico de Escravos e sua Abolição",
+        "week": "seg",
         "date": "08/23",
         "dateS": "23/08"
     },
     {
         "title": "Dia do Aviador Naval",
+        "week": "seg",
         "date": "08/23",
         "dateS": "23/08"
     },
     {
         "title": "Dia da Intendência",
+        "week": "seg",
         "date": "08/23",
         "dateS": "23/08"
     },
     {
         "title": "Dia de São Bartolomeu",
+        "week": "ter",
         "date": "08/24",
         "dateS": "24/08"
     },
     {
         "title": "Dia Nacional da Comunidade Ucraniana",
+        "week": "ter",
         "date": "08/24",
         "dateS": "24/08"
     },
     {
         "title": "Dia da Infância",
+        "week": "ter",
         "date": "08/24",
         "dateS": "24/08"
     },
     {
         "title": "Dia do Soldado",
+        "week": "qua",
         "date": "08/25",
         "dateS": "25/08"
     },
     {
         "title": "Dia do Feirante",
+        "week": "qua",
         "date": "08/25",
         "dateS": "25/08"
     },
     {
         "title": "Dia Nacional da Educação Infantil",
+        "week": "qua",
         "date": "08/25",
         "dateS": "25/08"
     },
     {
         "title": "Dia da Legalidade",
+        "week": "qua",
         "date": "08/25",
         "dateS": "25/08"
     },
     {
         "title": "Dia de São Zeferino",
+        "week": "qui",
         "date": "08/26",
         "dateS": "26/08"
     },
     {
         "title": "Aniversário de Campo Grande",
+        "week": "qui",
         "date": "08/26",
         "dateS": "26/08"
     },
     {
         "title": "Dia Internacional da Igualdade da Mulher",
+        "week": "qui",
         "date": "08/26",
         "dateS": "26/08"
     },
     {
         "title": "Dia do Catequista",
+        "week": "qui",
         "date": "08/26",
         "dateS": "26/08"
     },
     {
         "title": "Dia do Psicólogo",
+        "week": "sex",
         "date": "08/27",
         "dateS": "27/08"
     },
     {
         "title": "Dia do Corretor de Imóveis",
+        "week": "sex",
         "date": "08/27",
         "dateS": "27/08"
     },
     {
         "title": "Dia de São Celestino I",
+        "week": "sex",
         "date": "08/27",
         "dateS": "27/08"
     },
     {
         "title": "Dia de Santa Mônica",
+        "week": "sex",
         "date": "08/27",
         "dateS": "27/08"
     },
     {
         "title": "Dia dos Bancários",
+        "week": "sáb",
         "date": "08/28",
         "dateS": "28/08"
     },
     {
         "title": "Dia da Avicultura",
+        "week": "sáb",
         "date": "08/28",
         "dateS": "28/08"
     },
     {
         "title": "Dia de Santo Agostinho de Hipona",
+        "week": "sáb",
         "date": "08/28",
         "dateS": "28/08"
     },
     {
         "title": "Dia Nacional de Combate e Prevenção ao Escalpelamento",
+        "week": "sáb",
         "date": "08/28",
         "dateS": "28/08"
     },
     {
         "title": "Dia Nacional do Voluntariado",
+        "week": "sáb",
         "date": "08/28",
         "dateS": "28/08"
     },
     {
         "title": "Dia Nacional da Visibilidade Lésbica",
+        "week": "dom",
         "date": "08/29",
         "dateS": "29/08"
     },
     {
         "title": "Dia Nacional de Combate ao Fumo",
+        "week": "dom",
         "date": "08/29",
         "dateS": "29/08"
     },
     {
         "title": "Dia de Santa Joana Maria da Cruz",
+        "week": "dom",
         "date": "08/29",
         "dateS": "29/08"
     },
     {
         "title": "Dia Internacional contra Testes Nucleares",
+        "week": "dom",
         "date": "08/29",
         "dateS": "29/08"
     },
     {
         "title": "Dia Internacional do Gamer",
+        "week": "dom",
         "date": "08/29",
         "dateS": "29/08"
     },
     {
         "title": "Dia de São Cesário de Arles",
+        "week": "seg",
         "date": "08/30",
         "dateS": "30/08"
     },
     {
         "title": "Dia Nacional de Conscientização sobre a Esclerose Múltipla",
+        "week": "seg",
         "date": "08/30",
         "dateS": "30/08"
     },
     {
         "title": "Dia Internacional das Vítimas de Desaparecimentos Forçados",
+        "week": "seg",
         "date": "08/30",
         "dateS": "30/08"
     },
     {
         "title": "Dia do Nutricionista",
+        "week": "ter",
         "date": "08/31",
         "dateS": "31/08"
     },
     {
         "title": "Dia de São Raimundo Nonato",
+        "week": "ter",
         "date": "08/31",
         "dateS": "31/08"
     },
     {
         "title": "Dia Internacional do Blog",
+        "week": "ter",
         "date": "08/31",
         "dateS": "31/08"
     },
     {
         "title": "Dia do Profissional de Educação Física",
+        "week": "qua",
         "date": "09/01",
         "dateS": "01/09"
     },
     {
         "title": "Dia do Corinthians",
+        "week": "qua",
         "date": "09/01",
         "dateS": "01/09"
     },
     {
         "title": "Dia da Bailarina",
+        "week": "qua",
         "date": "09/01",
         "dateS": "01/09"
     },
     {
         "title": "Dia de Santa Beatriz da Silva",
+        "week": "qua",
         "date": "09/01",
         "dateS": "01/09"
     },
     {
         "title": "Dia Mundial de Oração pelo Cuidado da Criação",
+        "week": "qua",
         "date": "09/01",
         "dateS": "01/09"
     },
     {
         "title": "Dia de Santa Dorotéia",
+        "week": "qui",
         "date": "09/02",
         "dateS": "02/09"
     },
     {
         "title": "Dia do florista",
+        "week": "qui",
         "date": "09/02",
         "dateS": "02/09"
     },
     {
         "title": "Dia do Repórter Fotográfico",
+        "week": "qui",
         "date": "09/02",
         "dateS": "02/09"
     },
     {
         "title": "Dia do Biólogo",
+        "week": "sex",
         "date": "09/03",
         "dateS": "03/09"
     },
     {
         "title": "Dia de São Gregório Magno",
+        "week": "sex",
         "date": "09/03",
         "dateS": "03/09"
     },
     {
         "title": "Dia do Guarda Civil",
+        "week": "sex",
         "date": "09/03",
         "dateS": "03/09"
     },
     {
         "title": "Dia das Organizações Populares",
+        "week": "sex",
         "date": "09/03",
         "dateS": "03/09"
     },
     {
         "title": "Dia de Santa Rosália",
+        "week": "sáb",
         "date": "09/04",
         "dateS": "04/09"
     },
     {
         "title": "Dia Mundial do Taekwondo",
+        "week": "sáb",
         "date": "09/04",
         "dateS": "04/09"
     },
     {
         "title": "Dia da Amazônia",
+        "week": "dom",
         "date": "09/05",
         "dateS": "05/09"
     },
     {
         "title": "Dia do Irmão",
+        "week": "dom",
         "date": "09/05",
         "dateS": "05/09"
     },
     {
         "title": "Dia Nacional de Conscientização e Divulgação da Fibrose Cística",
+        "week": "dom",
         "date": "09/05",
         "dateS": "05/09"
     },
     {
         "title": "Dia do Oficial de Farmácia do Brasil",
+        "week": "dom",
         "date": "09/05",
         "dateS": "05/09"
     },
     {
         "title": "Aniversário da Emancipação do Amazonas",
+        "week": "dom",
         "date": "09/05",
         "dateS": "05/09"
     },
     {
         "title": "Dia do Alfaiate",
+        "week": "seg",
         "date": "09/06",
         "dateS": "06/09"
     },
     {
         "title": "Dia do Sexo",
+        "week": "seg",
         "date": "09/06",
         "dateS": "06/09"
     },
     {
         "title": "Dia da Independência do Brasil - 7 de Setembro",
+        "week": "ter",
         "date": "09/07",
         "dateS": "07/09"
     },
     {
         "title": "Dia de Santa Regina",
+        "week": "ter",
         "date": "09/07",
         "dateS": "07/09"
     },
     {
         "title": "Dia de São Clodoaldo",
+        "week": "ter",
         "date": "09/07",
         "dateS": "07/09"
     },
     {
         "title": "Dia Mundial da Alfabetização",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia de Santo Adriano",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia de Nossa Senhora da Natividade",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Aniversário de Vitória",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Aniversário de São Luís",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia Nacional de Luta por Medicamento",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia Mundial da Fisioterapia",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia Mundial da Fibrose Cística",
+        "week": "qua",
         "date": "09/08",
         "dateS": "08/09"
     },
     {
         "title": "Dia do Administrador",
+        "week": "qui",
         "date": "09/09",
         "dateS": "09/09"
     },
     {
         "title": "Dia do Médico Veterinário",
+        "week": "qui",
         "date": "09/09",
         "dateS": "09/09"
     },
     {
         "title": "Dia do Cachorro-Quente",
+        "week": "qui",
         "date": "09/09",
         "dateS": "09/09"
     },
     {
         "title": "Dia da Velocidade",
+        "week": "qui",
         "date": "09/09",
         "dateS": "09/09"
     },
     {
         "title": "Dia do Gordo",
+        "week": "sex",
         "date": "09/10",
         "dateS": "10/09"
     },
     {
         "title": "Dia Mundial de Prevenção ao Suicídio",
+        "week": "sex",
         "date": "09/10",
         "dateS": "10/09"
     },
     {
         "title": "Dia Nacional  do Cerrado",
+        "week": "sáb",
         "date": "09/11",
         "dateS": "11/09"
     },
     {
         "title": "Dia do Árbitro Esportivo",
+        "week": "sáb",
         "date": "09/11",
         "dateS": "11/09"
     },
     {
         "title": "Dia Nacional da Recreação",
+        "week": "dom",
         "date": "09/12",
         "dateS": "12/09"
     },
     {
         "title": "Dia Nacional da Cachaça",
+        "week": "seg",
         "date": "09/13",
         "dateS": "13/09"
     },
     {
         "title": "Dia do Agrônomo",
+        "week": "seg",
         "date": "09/13",
         "dateS": "13/09"
     },
     {
         "title": "Dia Mundial da Sepse",
+        "week": "seg",
         "date": "09/13",
         "dateS": "13/09"
     },
     {
         "title": "Dia Nacional de Luta dos Acidentados por Fontes Radioativas",
+        "week": "seg",
         "date": "09/13",
         "dateS": "13/09"
     },
     {
         "title": "Dia de São João Crisóstomo",
+        "week": "seg",
         "date": "09/13",
         "dateS": "13/09"
     },
     {
         "title": "Dia da Cruz",
+        "week": "ter",
         "date": "09/14",
         "dateS": "14/09"
     },
     {
         "title": "Dia do Frevo",
+        "week": "ter",
         "date": "09/14",
         "dateS": "14/09"
     },
     {
         "title": "Dia do Cliente",
+        "week": "qua",
         "date": "09/15",
         "dateS": "15/09"
     },
     {
         "title": "Dia de Nossa Senhora das Dores",
+        "week": "qua",
         "date": "09/15",
         "dateS": "15/09"
     },
     {
         "title": "Dia Mundial de Conscientização sobre Linfomas",
+        "week": "qua",
         "date": "09/15",
         "dateS": "15/09"
     },
     {
         "title": "Dia Internacional da Democracia",
+        "week": "qua",
         "date": "09/15",
         "dateS": "15/09"
     },
     {
         "title": "Dia do Musicoterapeuta",
+        "week": "qua",
         "date": "09/15",
         "dateS": "15/09"
     },
     {
         "title": "Dia do Caminhoneiro",
+        "week": "qui",
         "date": "09/16",
         "dateS": "16/09"
     },
     {
         "title": "Dia Internacional para a Preservação da Camada de Ozônio",
+        "week": "qui",
         "date": "09/16",
         "dateS": "16/09"
     },
     {
         "title": "Dia de São Cipriano",
+        "week": "qui",
         "date": "09/16",
         "dateS": "16/09"
     },
     {
         "title": "Dia Nacional de Combate e Prevenção à Trombose",
+        "week": "qui",
         "date": "09/16",
         "dateS": "16/09"
     },
     {
         "title": "Aniversário da Emancipação de Alagoas",
+        "week": "qui",
         "date": "09/16",
         "dateS": "16/09"
     },
     {
         "title": "Dia da Compreensão Mundial",
+        "week": "sex",
         "date": "09/17",
         "dateS": "17/09"
     },
     {
         "title": "Dia Nacional do Transportador Rodoviário de Carga",
+        "week": "sex",
         "date": "09/17",
         "dateS": "17/09"
     },
     {
         "title": "Dia dos Símbolos Nacionais",
+        "week": "sáb",
         "date": "09/18",
         "dateS": "18/09"
     },
     {
         "title": "Dia Nacional de Conscientização e Incentivo ao Diagnóstico Precoce do Retinoblastoma",
+        "week": "sáb",
         "date": "09/18",
         "dateS": "18/09"
     },
     {
         "title": "Dia Oficial da Televisão",
+        "week": "sáb",
         "date": "09/18",
         "dateS": "18/09"
     },
     {
         "title": "Dia Mundial do Doador de Medula Óssea",
+        "week": "sáb",
         "date": "09/18",
         "dateS": "18/09"
     },
     {
         "title": "Dia Nacional do Teatro",
+        "week": "dom",
         "date": "09/19",
         "dateS": "19/09"
     },
     {
         "title": "Dia do Ortopedista",
+        "week": "dom",
         "date": "09/19",
         "dateS": "19/09"
     },
     {
         "title": "Dia do Comprador",
+        "week": "dom",
         "date": "09/19",
         "dateS": "19/09"
     },
     {
         "title": "Dia Nacional do Educador Social",
+        "week": "dom",
         "date": "09/19",
         "dateS": "19/09"
     },
     {
         "title": "Dia de São Januário",
+        "week": "dom",
         "date": "09/19",
         "dateS": "19/09"
     },
     {
         "title": "Revolução Farroupilha (Dia do Gaúcho)",
+        "week": "seg",
         "date": "09/20",
         "dateS": "20/09"
     },
     {
         "title": "Dia do Engenheiro Químico",
+        "week": "seg",
         "date": "09/20",
         "dateS": "20/09"
     },
     {
         "title": "Dia do Funcionário Municipal",
+        "week": "seg",
         "date": "09/20",
         "dateS": "20/09"
     },
     {
         "title": "Dia da Árvore",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia Nacional de Luta da Pessoa com Deficiência",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia do Adolescente",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia do Fazendeiro",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia da Tia",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia Mundial de Conscientização da Doença de Alzheimer",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia Internacional da Paz",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Dia de São Mateus",
+        "week": "ter",
         "date": "09/21",
         "dateS": "21/09"
     },
     {
         "title": "Início da Primavera",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia do Contador",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia da Juventude do Brasil",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia Mundial Sem Carro",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia Nacional do Atleta Paralímpico",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia da Banana",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia Nacional de Defesa da Fauna",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia de São Maurício",
+        "week": "qua",
         "date": "09/22",
         "dateS": "22/09"
     },
     {
         "title": "Dia dos Filhos",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia do Sorvete",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia do Soldador",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia Nacional dos Profissionais de Nível Técnico",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia Internacional das Línguas de Sinais",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia Internacional Contra a Exploração Sexual e o Tráfico de Mulheres e Crianças",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia de Combate ao Estresse",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia do Técnico Industrial",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia do Técnico em Edificações",
+        "week": "qui",
         "date": "09/23",
         "dateS": "23/09"
     },
     {
         "title": "Dia Nacional do Trânsito",
+        "week": "sáb",
         "date": "09/25",
         "dateS": "25/09"
     },
     {
         "title": "Dia Internacional do Farmacêutico",
+        "week": "sáb",
         "date": "09/25",
         "dateS": "25/09"
     },
     {
         "title": "Dia do Rádio",
+        "week": "sáb",
         "date": "09/25",
         "dateS": "25/09"
     },
     {
         "title": "Dia da Radiodifusão",
+        "week": "sáb",
         "date": "09/25",
         "dateS": "25/09"
     },
     {
         "title": "Dia Interamericano das Relações Públicas",
+        "week": "dom",
         "date": "09/26",
         "dateS": "26/09"
     },
     {
         "title": "Dia dos Primos",
+        "week": "dom",
         "date": "09/26",
         "dateS": "26/09"
     },
     {
         "title": "Dia Nacional dos Surdos",
+        "week": "dom",
         "date": "09/26",
         "dateS": "26/09"
     },
     {
         "title": "Dia Internacional para a Eliminação Total das Armas Nucleares",
+        "week": "dom",
         "date": "09/26",
         "dateS": "26/09"
     },
     {
         "title": "Dia de São Cosme e Damião",
+        "week": "seg",
         "date": "09/27",
         "dateS": "27/09"
     },
     {
         "title": "Dia Nacional de Doação de Órgãos",
+        "week": "seg",
         "date": "09/27",
         "dateS": "27/09"
     },
     {
         "title": "Dia Nacional dos Vicentinos",
+        "week": "seg",
         "date": "09/27",
         "dateS": "27/09"
     },
     {
         "title": "Dia Mundial do Turismo",
+        "week": "seg",
         "date": "09/27",
         "dateS": "27/09"
     },
     {
         "title": "Dia Nacional do Turismólogo e dos Profissionais do Turismo",
+        "week": "seg",
         "date": "09/27",
         "dateS": "27/09"
     },
     {
         "title": "Dia do Hidrógrafo",
+        "week": "ter",
         "date": "09/28",
         "dateS": "28/09"
     },
     {
         "title": "Dia Mundial de Luta contra a Raiva",
+        "week": "ter",
         "date": "09/28",
         "dateS": "28/09"
     },
     {
         "title": "Dia de São Venceslau",
+        "week": "ter",
         "date": "09/28",
         "dateS": "28/09"
     },
     {
         "title": "Dia Mundial do Petróleo",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia de São Gabriel Arcanjo",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia de São Rafael Arcanjo",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia de São Miguel Arcanjo",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia do Anunciante",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia Mundial do Coração",
+        "week": "qua",
         "date": "09/29",
         "dateS": "29/09"
     },
     {
         "title": "Dia da Secretária",
+        "week": "qui",
         "date": "09/30",
         "dateS": "30/09"
     },
     {
         "title": "Dia da Bíblia Católica",
+        "week": "qui",
         "date": "09/30",
         "dateS": "30/09"
     },
     {
         "title": "Dia Marítimo Mundial",
+        "week": "qui",
         "date": "09/30",
         "dateS": "30/09"
     },
     {
         "title": "Dia Nacional do Jornaleiro",
+        "week": "qui",
         "date": "09/30",
         "dateS": "30/09"
     },
     {
         "title": "Dia Mundial do Tradutor",
+        "week": "qui",
         "date": "09/30",
         "dateS": "30/09"
     },
     {
         "title": "Dia Internacional da Música",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia do Vendedor",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia do Vereador",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia Internacional das Pessoas Idosas",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia de Santa Teresinha",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia Mundial do Sorriso",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia Nacional do Idoso",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia do Representante Comercial",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia Mundial do Vegetarianismo",
+        "week": "sex",
         "date": "10/01",
         "dateS": "01/10"
     },
     {
         "title": "Dia Internacional da Não-Violência",
+        "week": "sáb",
         "date": "10/02",
         "dateS": "02/10"
     },
     {
         "title": "Dia do Anjo da Guarda",
+        "week": "sáb",
         "date": "10/02",
         "dateS": "02/10"
     },
     {
         "title": "Aniversário de Porto Velho",
+        "week": "sáb",
         "date": "10/02",
         "dateS": "02/10"
     },
     {
         "title": "Dia do Quadro Complementar de Oficiais",
+        "week": "sáb",
         "date": "10/02",
         "dateS": "02/10"
     },
     {
         "title": "Dia Mundial do Dentista",
+        "week": "dom",
         "date": "10/03",
         "dateS": "03/10"
     },
     {
         "title": "Dia das Abelhas",
+        "week": "dom",
         "date": "10/03",
         "dateS": "03/10"
     },
     {
         "title": "Dia dos Animais",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia de São Francisco de Assis",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia da Natureza",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia do Cachorro",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia do Agente Comunitário de Saúde",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia Mundial do Habitat",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia do Barman",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia do Médico do Trabalho",
+        "week": "seg",
         "date": "10/04",
         "dateS": "04/10"
     },
     {
         "title": "Dia de São Benedito",
+        "week": "ter",
         "date": "10/05",
         "dateS": "05/10"
     },
     {
         "title": "Dia Nacional da Micro e Pequena Empresa",
+        "week": "ter",
         "date": "10/05",
         "dateS": "05/10"
     },
     {
         "title": "Dia Mundial dos Professores",
+        "week": "ter",
         "date": "10/05",
         "dateS": "05/10"
     },
     {
         "title": "Dia de São Bruno",
+        "week": "qua",
         "date": "10/06",
         "dateS": "06/10"
     },
     {
         "title": "Dia do Compositor Brasileiro",
+        "week": "qui",
         "date": "10/07",
         "dateS": "07/10"
     },
     {
         "title": "Dia do Trabalho Decente",
+        "week": "qui",
         "date": "10/07",
         "dateS": "07/10"
     },
     {
         "title": "Dia de Nossa Senhora do Rosário",
+        "week": "qui",
         "date": "10/07",
         "dateS": "07/10"
     },
     {
         "title": "Dia do Nordestino",
+        "week": "sex",
         "date": "10/08",
         "dateS": "08/10"
     },
     {
         "title": "Dia do Atletismo",
+        "week": "sáb",
         "date": "10/09",
         "dateS": "09/10"
     },
     {
         "title": "Dia Mundial dos Correios",
+        "week": "sáb",
         "date": "10/09",
         "dateS": "09/10"
     },
     {
         "title": "Dia de São Daniel Comboni",
+        "week": "dom",
         "date": "10/10",
         "dateS": "10/10"
     },
     {
         "title": "Dia Mundial da Saúde Mental",
+        "week": "dom",
         "date": "10/10",
         "dateS": "10/10"
     },
     {
         "title": "Dia dos Veteranos da Marinha",
+        "week": "dom",
         "date": "10/10",
         "dateS": "10/10"
     },
     {
         "title": "Dia Nacional de Prevenção da Obesidade",
+        "week": "seg",
         "date": "10/11",
         "dateS": "11/10"
     },
     {
         "title": "Dia Internacional das Meninas",
+        "week": "seg",
         "date": "10/11",
         "dateS": "11/10"
     },
     {
         "title": "Aniversário da Criação do Mato Grosso do Sul",
+        "week": "seg",
         "date": "10/11",
         "dateS": "11/10"
     },
     {
         "title": "Dia do Deficiente Físico",
+        "week": "seg",
         "date": "10/11",
         "dateS": "11/10"
     },
     {
         "title": "Dia das Crianças",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Nossa Senhora Aparecida",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Dia do Engenheiro Agrônomo",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Dia do Corretor de Seguros",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Dia Nacional da Leitura",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Descobrimento da América",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Dia do Rio Tietê",
+        "week": "ter",
         "date": "10/12",
         "dateS": "12/10"
     },
     {
         "title": "Dia Nacional do Fisioterapeuta e do Terapeuta Ocupacional",
+        "week": "qua",
         "date": "10/13",
         "dateS": "13/10"
     },
     {
         "title": "Dia Internacional para a Redução de Desastre",
+        "week": "qua",
         "date": "10/13",
         "dateS": "13/10"
     },
     {
         "title": "Dia do Meteorologista",
+        "week": "qui",
         "date": "10/14",
         "dateS": "14/10"
     },
     {
         "title": "Dia Mundial da Normalização",
+        "week": "qui",
         "date": "10/14",
         "dateS": "14/10"
     },
     {
         "title": "Dia do Professor",
+        "week": "sex",
         "date": "10/15",
         "dateS": "15/10"
     },
     {
         "title": "Dia Mundial da Lavagem das Mãos",
+        "week": "sex",
         "date": "10/15",
         "dateS": "15/10"
     },
     {
         "title": "Dia Internacional das Mulheres Rurais",
+        "week": "sex",
         "date": "10/15",
         "dateS": "15/10"
     },
     {
         "title": "Dia do Educador Ambiental",
+        "week": "sex",
         "date": "10/15",
         "dateS": "15/10"
     },
     {
         "title": "Dia de São Geraldo",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia do Chefe",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia do Anestesiologista",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia Mundial da Alimentação",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia Mundial do Pão",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia Nacional de Combate à Sífilis e à Sífilis Congênita",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia do Engenheiro de Alimentos",
+        "week": "sáb",
         "date": "10/16",
         "dateS": "16/10"
     },
     {
         "title": "Dia da Agricultura",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia do Eletricista",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia da Indústria Aeronáutica Brasileira",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia do Profissional da Propaganda",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia Internacional da Erradicação da Pobreza",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia da Música Popular Brasileira",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia Nacional da Vacinação",
+        "week": "dom",
         "date": "10/17",
         "dateS": "17/10"
     },
     {
         "title": "Dia do Médico",
+        "week": "seg",
         "date": "10/18",
         "dateS": "18/10"
     },
     {
         "title": "Dia do Pintor",
+        "week": "seg",
         "date": "10/18",
         "dateS": "18/10"
     },
     {
         "title": "Dia do Estivador",
+        "week": "seg",
         "date": "10/18",
         "dateS": "18/10"
     },
     {
         "title": "Dia de São Lucas",
+        "week": "seg",
         "date": "10/18",
         "dateS": "18/10"
     },
     {
         "title": "Dia do Securitário",
+        "week": "seg",
         "date": "10/18",
         "dateS": "18/10"
     },
     {
         "title": "Dia do Profissional de Informática",
+        "week": "ter",
         "date": "10/19",
         "dateS": "19/10"
     },
     {
         "title": "Dia do Guarda Noturno",
+        "week": "ter",
         "date": "10/19",
         "dateS": "19/10"
     },
     {
         "title": "Dia Nacional da Inovação",
+        "week": "ter",
         "date": "10/19",
         "dateS": "19/10"
     },
     {
         "title": "Dia do Profissional de Tecnologia da Informação",
+        "week": "ter",
         "date": "10/19",
         "dateS": "19/10"
     },
     {
         "title": "Dia do Piauí",
+        "week": "ter",
         "date": "10/19",
         "dateS": "19/10"
     },
     {
         "title": "Dia do Maquinista",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia do Poeta",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia do Arquivista",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia Mundial do Controlador de Tráfego Aéreo",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia Mundial da Osteoporose",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia Mundial da Estatística",
+        "week": "qua",
         "date": "10/20",
         "dateS": "20/10"
     },
     {
         "title": "Dia Nacional da Alimentação na Escola",
+        "week": "qui",
         "date": "10/21",
         "dateS": "21/10"
     },
     {
         "title": "Dia do Ecumenismo",
+        "week": "qui",
         "date": "10/21",
         "dateS": "21/10"
     },
     {
         "title": "Dia do Podcast",
+        "week": "qui",
         "date": "10/21",
         "dateS": "21/10"
     },
     {
         "title": "Dia do Paraquedista",
+        "week": "sex",
         "date": "10/22",
         "dateS": "22/10"
     },
     {
         "title": "Dia do Enólogo",
+        "week": "sex",
         "date": "10/22",
         "dateS": "22/10"
     },
     {
         "title": "Dia Internacional de Atenção à Gagueira",
+        "week": "sex",
         "date": "10/22",
         "dateS": "22/10"
     },
     {
         "title": "Dia de São João Paulo II",
+        "week": "sex",
         "date": "10/22",
         "dateS": "22/10"
     },
     {
         "title": "Dia da Força Aérea Brasileira",
+        "week": "sáb",
         "date": "10/23",
         "dateS": "23/10"
     },
     {
         "title": "Dia do Aviador",
+        "week": "sáb",
         "date": "10/23",
         "dateS": "23/10"
     },
     {
         "title": "Dia do Aposentado do Banco Central",
+        "week": "sáb",
         "date": "10/23",
         "dateS": "23/10"
     },
     {
         "title": "Aniversário de Manaus",
+        "week": "dom",
         "date": "10/24",
         "dateS": "24/10"
     },
     {
         "title": "Aniversário de Goiânia",
+        "week": "dom",
         "date": "10/24",
         "dateS": "24/10"
     },
     {
         "title": "Dia das Nações Unidas",
+        "week": "dom",
         "date": "10/24",
         "dateS": "24/10"
     },
     {
         "title": "Dia Mundial do Desenvolvimento da Informação",
+        "week": "dom",
         "date": "10/24",
         "dateS": "24/10"
     },
     {
         "title": "Dia Mundial de Combate à Poliomelite",
+        "week": "dom",
         "date": "10/24",
         "dateS": "24/10"
     },
     {
         "title": "Dia do Dentista",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia de São Crispim e São Crispiniano",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia de São Frei Galvão",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia do Sapateiro",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia Nacional da Saúde Bucal",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia do Engenheiro Civil",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia Nacional de Combate ao Preconceito contra as Pessoas com Nanismo",
+        "week": "seg",
         "date": "10/25",
         "dateS": "25/10"
     },
     {
         "title": "Dia do Trabalhador da Construção Civil",
+        "week": "ter",
         "date": "10/26",
         "dateS": "26/10"
     },
     {
         "title": "Dia Nacional de Mobilização Pró-Saúde da População Negra",
+        "week": "qua",
         "date": "10/27",
         "dateS": "27/10"
     },
     {
         "title": "Dia Nacional de Luta pelos Direitos das Pessoas com Doenças Falciformes",
+        "week": "qua",
         "date": "10/27",
         "dateS": "27/10"
     },
     {
         "title": "Dia Mundial do Patrimônio Audiovisual",
+        "week": "qua",
         "date": "10/27",
         "dateS": "27/10"
     },
     {
         "title": "Dia do Engenheiro Agrícola",
+        "week": "qua",
         "date": "10/27",
         "dateS": "27/10"
     },
     {
         "title": "Dia do Servidor Público",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia do Flamenguista",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia de São Judas Tadeu",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia Mundial do Judô",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia da Engenharia da Aeronáutica",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia Internacional da Animação",
+        "week": "qui",
         "date": "10/28",
         "dateS": "28/10"
     },
     {
         "title": "Dia Mundial da Psoríase",
+        "week": "sex",
         "date": "10/29",
         "dateS": "29/10"
     },
     {
         "title": "Dia Nacional do Livro",
+        "week": "sex",
         "date": "10/29",
         "dateS": "29/10"
     },
     {
         "title": "Dia Mundial do AVC",
+        "week": "sex",
         "date": "10/29",
         "dateS": "29/10"
     },
     {
         "title": "Dia Nacional da Prevenção da Lavagem de Dinheiro",
+        "week": "sex",
         "date": "10/29",
         "dateS": "29/10"
     },
     {
         "title": "Dia do Comerciário",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia do Ginecologista",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia do Fisiculturista",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia do Balconista",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia da Decoração",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia da Merendeira Escolar",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia Nacional de Luta contra o Reumatismo",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia do Material Bélico",
+        "week": "sáb",
         "date": "10/30",
         "dateS": "30/10"
     },
     {
         "title": "Dia das Bruxas - Halloween",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia do Saci",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia Nacional da Poesia",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia Mundial da Poupança",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia da Reforma Protestante",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia da Dona de Casa",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia Nacional da Proclamação do Evangelho",
+        "week": "dom",
         "date": "10/31",
         "dateS": "31/10"
     },
     {
         "title": "Dia de Todos os Santos",
+        "week": "seg",
         "date": "11/01",
         "dateS": "01/11"
     },
     {
         "title": "Dia Mundial do Veganismo",
+        "week": "seg",
         "date": "11/01",
         "dateS": "01/11"
     },
     {
         "title": "Finados",
+        "week": "ter",
         "date": "11/02",
         "dateS": "02/11"
     },
     {
         "title": "Dia dos Mortos",
+        "week": "ter",
         "date": "11/02",
         "dateS": "02/11"
     },
     {
         "title": "Dia Internacional pelo Fim da Impunidade dos Crimes contra Jornalistas",
+        "week": "ter",
         "date": "11/02",
         "dateS": "02/11"
     },
     {
         "title": "Dia Nacional do Quilo",
+        "week": "qua",
         "date": "11/03",
         "dateS": "03/11"
     },
     {
         "title": "Dia da Instituição do Direito de Voto da Mulher",
+        "week": "qua",
         "date": "11/03",
         "dateS": "03/11"
     },
     {
         "title": "Dia do Oficial da Reserva (R/2)",
+        "week": "qui",
         "date": "11/04",
         "dateS": "04/11"
     },
     {
         "title": "Dia do Designer Gráfico",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia do Radioamador",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia do Protético",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia Nacional da Língua Portuguesa",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia do Técnico em Eletrônica",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia de Atenção Mundial para Tsunamis",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia da Cultura e da Ciência",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia do Técnico Agrícola",
+        "week": "sex",
         "date": "11/05",
         "dateS": "05/11"
     },
     {
         "title": "Dia Internacional para a Prevenção da Exploração do Meio Ambiente em Tempos de Guerra e Conflito Armado",
+        "week": "sáb",
         "date": "11/06",
         "dateS": "06/11"
     },
     {
         "title": "Dia Nacional do Amigo da Marinha do Brasil",
+        "week": "sáb",
         "date": "11/06",
         "dateS": "06/11"
     },
     {
         "title": "Dia do Radialista",
+        "week": "dom",
         "date": "11/07",
         "dateS": "07/11"
     },
     {
         "title": "Dia do Radiologista",
+        "week": "seg",
         "date": "11/08",
         "dateS": "08/11"
     },
     {
         "title": "Dia Mundial do Urbanismo",
+        "week": "seg",
         "date": "11/08",
         "dateS": "08/11"
     },
     {
         "title": "Dia do Hoteleiro",
+        "week": "ter",
         "date": "11/09",
         "dateS": "09/11"
     },
     {
         "title": "Dia Nacional dos Clubes Esportivos Sociais",
+        "week": "ter",
         "date": "11/09",
         "dateS": "09/11"
     },
     {
         "title": "Dia Internacional contra o Fascismo e o Antissemitismo",
+        "week": "ter",
         "date": "11/09",
         "dateS": "09/11"
     },
     {
         "title": "Dia Mundial da Ciência pela Paz e pelo Desenvolvimento",
+        "week": "qua",
         "date": "11/10",
         "dateS": "10/11"
     },
     {
         "title": "Dia Nacional do Trigo",
+        "week": "qua",
         "date": "11/10",
         "dateS": "10/11"
     },
     {
         "title": "Dia Nacional de Prevenção e Combate à Surdez",
+        "week": "qua",
         "date": "11/10",
         "dateS": "10/11"
     },
     {
         "title": "Dia Mundial da Qualidade",
+        "week": "qui",
         "date": "11/11",
         "dateS": "11/11"
     },
     {
         "title": "Fim da Primeira Guerra Mundial (1918)",
+        "week": "qui",
         "date": "11/11",
         "dateS": "11/11"
     },
     {
         "title": "Dia dos Supermercados",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia do Diretor de Escola",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia Mundial da Pneumonia",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia Mundial do Hip Hop",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia Nacional do Inventor",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia da Indústria Automobilística",
+        "week": "sex",
         "date": "11/12",
         "dateS": "12/11"
     },
     {
         "title": "Dia do Bandeirante",
+        "week": "dom",
         "date": "11/14",
         "dateS": "14/11"
     },
     {
         "title": "Dia Nacional da Alfabetização",
+        "week": "dom",
         "date": "11/14",
         "dateS": "14/11"
     },
     {
         "title": "Dia Mundial do Diabetes",
+        "week": "dom",
         "date": "11/14",
         "dateS": "14/11"
     },
     {
         "title": "Proclamação da República",
+        "week": "seg",
         "date": "11/15",
         "dateS": "15/11"
     },
     {
         "title": "Dia do Esporte Amador",
+        "week": "seg",
         "date": "11/15",
         "dateS": "15/11"
     },
     {
         "title": "Dia do Joalheiro",
+        "week": "seg",
         "date": "11/15",
         "dateS": "15/11"
     },
     {
         "title": "Dia Nacional da Umbanda",
+        "week": "seg",
         "date": "11/15",
         "dateS": "15/11"
     },
     {
         "title": "Dia Internacional da Tolerância",
+        "week": "ter",
         "date": "11/16",
         "dateS": "16/11"
     },
     {
         "title": "Dia Nacional dos Ostomizados",
+        "week": "ter",
         "date": "11/16",
         "dateS": "16/11"
     },
     {
         "title": "Dia do Não Fumar",
+        "week": "ter",
         "date": "11/16",
         "dateS": "16/11"
     },
     {
         "title": "Dia Nacional de Atenção à Dislexia",
+        "week": "ter",
         "date": "11/16",
         "dateS": "16/11"
     },
     {
         "title": "Dia Nacional da Amazônia Azul",
+        "week": "ter",
         "date": "11/16",
         "dateS": "16/11"
     },
     {
         "title": "Dia da Criatividade",
+        "week": "qua",
         "date": "11/17",
         "dateS": "17/11"
     },
     {
         "title": "Dia Internacional dos Estudantes",
+        "week": "qua",
         "date": "11/17",
         "dateS": "17/11"
     },
     {
         "title": "Dia Mundial da Prematuridade",
+        "week": "qua",
         "date": "11/17",
         "dateS": "17/11"
     },
     {
         "title": "Dia Nacional de Combate à Tuberculose",
+        "week": "qua",
         "date": "11/17",
         "dateS": "17/11"
     },
     {
         "title": "Dia Mundial da Doença Pulmonar Obstrutiva Crônica",
+        "week": "qua",
         "date": "11/17",
         "dateS": "17/11"
     },
     {
         "title": "Dia do Conselheiro Tutelar",
+        "week": "qui",
         "date": "11/18",
         "dateS": "18/11"
     },
     {
         "title": "Dia Mundial da Filosofia",
+        "week": "qui",
         "date": "11/18",
         "dateS": "18/11"
     },
     {
         "title": "Dia Nacional do Notário e do Registrador",
+        "week": "qui",
         "date": "11/18",
         "dateS": "18/11"
     },
     {
         "title": "Dia Nacional de Combate ao Racismo",
+        "week": "qui",
         "date": "11/18",
         "dateS": "18/11"
     },
     {
         "title": "Dia da Bandeira",
+        "week": "sex",
         "date": "11/19",
         "dateS": "19/11"
     },
     {
         "title": "Eclipse Lunar Parcial 2021",
+        "week": "sex",
         "date": "11/19",
         "dateS": "19/11"
     },
     {
         "title": "Dia Mundial do Vaso Sanitário",
+        "week": "sex",
         "date": "11/19",
         "dateS": "19/11"
     },
     {
         "title": "Dia Internacional do Homem",
+        "week": "sex",
         "date": "11/19",
         "dateS": "19/11"
     },
     {
         "title": "Dia do Empreendedorismo Feminino",
+        "week": "sex",
         "date": "11/19",
         "dateS": "19/11"
     },
     {
         "title": "Dia Nacional da Consciência Negra",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia do Biomédico",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia do Auditor Interno",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia da Industrialização da África",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia Universal da Criança",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia Nacional de Combate ao Dengue",
+        "week": "sáb",
         "date": "11/20",
         "dateS": "20/11"
     },
     {
         "title": "Dia Nacional da Homeopatia",
+        "week": "dom",
         "date": "11/21",
         "dateS": "21/11"
     },
     {
         "title": "Dia Mundial da Saudação",
+        "week": "dom",
         "date": "11/21",
         "dateS": "21/11"
     },
     {
         "title": "Dia em Memória das Vítimas de Acidentes de Trânsito e seus Familiares",
+        "week": "dom",
         "date": "11/21",
         "dateS": "21/11"
     },
     {
         "title": "Dia Mundial da Televisão",
+        "week": "dom",
         "date": "11/21",
         "dateS": "21/11"
     },
     {
         "title": "Dia do Músico",
+        "week": "seg",
         "date": "11/22",
         "dateS": "22/11"
     },
     {
         "title": "Aniversário de Niterói",
+        "week": "seg",
         "date": "11/22",
         "dateS": "22/11"
     },
     {
         "title": "Dia da Comunidade Libanesa no Brasil",
+        "week": "seg",
         "date": "11/22",
         "dateS": "22/11"
     },
     {
         "title": "Dia do Engenheiro Eletricista",
+        "week": "ter",
         "date": "11/23",
         "dateS": "23/11"
     },
     {
         "title": "Dia Nacional de Combate ao Câncer Infanto-Juvenil",
+        "week": "ter",
         "date": "11/23",
         "dateS": "23/11"
     },
     {
         "title": "Dia Mundial de Ação de Graças",
+        "week": "qui",
         "date": "11/25",
         "dateS": "25/11"
     },
     {
         "title": "Dia do Doador Voluntário de Sangue",
+        "week": "qui",
         "date": "11/25",
         "dateS": "25/11"
     },
     {
         "title": "Dia Internacional para a Eliminação da Violência Contra as Mulheres",
+        "week": "qui",
         "date": "11/25",
         "dateS": "25/11"
     },
     {
         "title": "Dia da Baiana de Acarajé",
+        "week": "qui",
         "date": "11/25",
         "dateS": "25/11"
     },
     {
         "title": "Dia da Madrinha",
+        "week": "qui",
         "date": "11/25",
         "dateS": "25/11"
     },
     {
         "title": "Black Friday",
+        "week": "sex",
         "date": "11/26",
         "dateS": "26/11"
     },
     {
         "title": "Dia do Técnico de Segurança no Trabalho",
+        "week": "sáb",
         "date": "11/27",
         "dateS": "27/11"
     },
     {
         "title": "Dia Nacional de Combate ao Câncer",
+        "week": "sáb",
         "date": "11/27",
         "dateS": "27/11"
     },
     {
         "title": "Dia de Nossa Senhora das Graças",
+        "week": "sáb",
         "date": "11/27",
         "dateS": "27/11"
     },
     {
         "title": "Dia Nacional de Luta contra o Câncer de Mama",
+        "week": "sáb",
         "date": "11/27",
         "dateS": "27/11"
     },
     {
         "title": "Dia do Soldado Desconhecido",
+        "week": "dom",
         "date": "11/28",
         "dateS": "28/11"
     },
     {
         "title": "Cyber Monday",
+        "week": "seg",
         "date": "11/29",
         "dateS": "29/11"
     },
     {
         "title": "Dia Internacional de Solidariedade com o Povo da Palestina",
+        "week": "seg",
         "date": "11/29",
         "dateS": "29/11"
     },
     {
         "title": "Dia do Evangélico",
+        "week": "ter",
         "date": "11/30",
         "dateS": "30/11"
     },
     {
         "title": "Dia da Amizade Argentino-Brasileira",
+        "week": "ter",
         "date": "11/30",
         "dateS": "30/11"
     },
     {
         "title": "Dia de Celebração da Amizade Brasil-Argentina",
+        "week": "ter",
         "date": "11/30",
         "dateS": "30/11"
     },
     {
         "title": "Dia Internacional da Luta contra a AIDS",
+        "week": "qua",
         "date": "12/01",
         "dateS": "01/12"
     },
     {
         "title": "Dia do Numismata",
+        "week": "qua",
         "date": "12/01",
         "dateS": "01/12"
     },
     {
         "title": "Dia Nacional das Relações Públicas",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Dia Nacional do Samba",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Dia da Astronomia",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Dia Pan-americano da Saúde",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Dia Internacional para a Abolição da Escravatura",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Aniversário de Minas Gerais",
+        "week": "qui",
         "date": "12/02",
         "dateS": "02/12"
     },
     {
         "title": "Dia Internacional da Pessoa com Deficiência",
+        "week": "sex",
         "date": "12/03",
         "dateS": "03/12"
     },
     {
         "title": "Dia Internacional do Deficiente Físico",
+        "week": "sex",
         "date": "12/03",
         "dateS": "03/12"
     },
     {
         "title": "Dia de São Francisco Xavier",
+        "week": "sex",
         "date": "12/03",
         "dateS": "03/12"
     },
     {
         "title": "Dia do Delegado de Polícia",
+        "week": "sex",
         "date": "12/03",
         "dateS": "03/12"
     },
     {
         "title": "Dia Nacional de Combate à Pirataria e à Biopirataria",
+        "week": "sex",
         "date": "12/03",
         "dateS": "03/12"
     },
     {
         "title": "Eclipse Solar Total 2021",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia Mundial da Propaganda",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia do Pedicuro",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia do Orientador Profissional",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia do Perito Criminal Oficial",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia do Trabalhador nas Minas de Carvão",
+        "week": "sáb",
         "date": "12/04",
         "dateS": "04/12"
     },
     {
         "title": "Dia Mundial do Solo",
+        "week": "dom",
         "date": "12/05",
         "dateS": "05/12"
     },
     {
         "title": "Dia Internacional do Voluntário",
+        "week": "dom",
         "date": "12/05",
         "dateS": "05/12"
     },
     {
         "title": "Aniversário de Maceió",
+        "week": "dom",
         "date": "12/05",
         "dateS": "05/12"
     },
     {
         "title": "Dia Nacional da Pastoral da Criança",
+        "week": "dom",
         "date": "12/05",
         "dateS": "05/12"
     },
     {
         "title": "Dia do Médico de Família e Comunidade",
+        "week": "dom",
         "date": "12/05",
         "dateS": "05/12"
     },
     {
         "title": "Dia Nacional de Mobilização dos Homens pelo Fim da Violência contra as Mulheres",
+        "week": "seg",
         "date": "12/06",
         "dateS": "06/12"
     },
     {
         "title": "Dia Nacional do Extensionista Rural",
+        "week": "seg",
         "date": "12/06",
         "dateS": "06/12"
     },
     {
         "title": "Dia de São Nicolau",
+        "week": "seg",
         "date": "12/06",
         "dateS": "06/12"
     },
     {
         "title": "Dia lnternacional da Aviação Civil",
+        "week": "ter",
         "date": "12/07",
         "dateS": "07/12"
     },
     {
         "title": "Dia Nacional da Assistência Social",
+        "week": "ter",
         "date": "12/07",
         "dateS": "07/12"
     },
     {
         "title": "Dia Nacional da Silvicultura",
+        "week": "ter",
         "date": "12/07",
         "dateS": "07/12"
     },
     {
         "title": "Dia da Família",
+        "week": "qua",
         "date": "12/08",
         "dateS": "08/12"
     },
     {
         "title": "Dia da Justiça",
+        "week": "qua",
         "date": "12/08",
         "dateS": "08/12"
     },
     {
         "title": "Dia da Imaculada Conceição",
+        "week": "qua",
         "date": "12/08",
         "dateS": "08/12"
     },
     {
         "title": "Dia do Colunista Social",
+        "week": "qua",
         "date": "12/08",
         "dateS": "08/12"
     },
     {
         "title": "Dia do Fonoaudiólogo",
+        "week": "qui",
         "date": "12/09",
         "dateS": "09/12"
     },
     {
         "title": "Dia do Alcoólico Recuperado",
+        "week": "qui",
         "date": "12/09",
         "dateS": "09/12"
     },
     {
         "title": "Dia Internacional contra a Corrupção",
+        "week": "qui",
         "date": "12/09",
         "dateS": "09/12"
     },
     {
         "title": "Dia Internacional de Homenagem e Dignidade das Vítimas do Crime de Genocídio",
+        "week": "qui",
         "date": "12/09",
         "dateS": "09/12"
     },
     {
         "title": "Dia da Criança Especial",
+        "week": "qui",
         "date": "12/09",
         "dateS": "09/12"
     },
     {
         "title": "Dia da Declaração Universal dos Direitos Humanos",
+        "week": "sex",
         "date": "12/10",
         "dateS": "10/12"
     },
     {
         "title": "Dia Universal do Palhaço",
+        "week": "sex",
         "date": "12/10",
         "dateS": "10/12"
     },
     {
         "title": "Dia da Inclusão Social",
+        "week": "sex",
         "date": "12/10",
         "dateS": "10/12"
     },
     {
         "title": "Dia de São Melquíades",
+        "week": "sex",
         "date": "12/10",
         "dateS": "10/12"
     },
     {
         "title": "Dia do Engenheiro",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia Internacional das Montanhas",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia Nacional da Câmara Júnior",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia Nacional das APAEs",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia do Tango",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia de São Dâmaso",
+        "week": "sáb",
         "date": "12/11",
         "dateS": "11/12"
     },
     {
         "title": "Dia de Nossa Senhora de Guadalupe",
+        "week": "dom",
         "date": "12/12",
         "dateS": "12/12"
     },
     {
         "title": "Aniversário de Belo Horizonte",
+        "week": "dom",
         "date": "12/12",
         "dateS": "12/12"
     },
     {
         "title": "Dia do Plano Nacional de Educação",
+        "week": "dom",
         "date": "12/12",
         "dateS": "12/12"
     },
     {
         "title": "Dia da Bíblia",
+        "week": "dom",
         "date": "12/12",
         "dateS": "12/12"
     },
     {
         "title": "Dia de Santa Luzia",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia Nacional do Cego",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia do Marinheiro",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia do Ótico",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia do Engenheiro Avaliador e Perito de Engenharia",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia do Pedreiro",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia Nacional do Forró",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia do Lapidador",
+        "week": "seg",
         "date": "12/13",
         "dateS": "13/12"
     },
     {
         "title": "Dia Nacional do Ministério Público",
+        "week": "ter",
         "date": "12/14",
         "dateS": "14/12"
     },
     {
         "title": "Dia Nacional de Combate à Pobreza",
+        "week": "ter",
         "date": "12/14",
         "dateS": "14/12"
     },
     {
         "title": "Dia do Engenheiro de Pesca",
+        "week": "ter",
         "date": "12/14",
         "dateS": "14/12"
     },
     {
         "title": "Dia do Arquiteto",
+        "week": "qua",
         "date": "12/15",
         "dateS": "15/12"
     },
     {
         "title": "Dia Nacional da Economia Solidária",
+        "week": "qua",
         "date": "12/15",
         "dateS": "15/12"
     },
     {
         "title": "Dia do Jardineiro",
+        "week": "qua",
         "date": "12/15",
         "dateS": "15/12"
     },
     {
         "title": "Dia do Reservista",
+        "week": "qui",
         "date": "12/16",
         "dateS": "16/12"
     },
     {
         "title": "Dia do Teatro Amador",
+        "week": "qui",
         "date": "12/16",
         "dateS": "16/12"
     },
     {
         "title": "Dia de Santa Adelaide",
+        "week": "qui",
         "date": "12/16",
         "dateS": "16/12"
     },
     {
         "title": "Dia de São Lázaro",
+        "week": "sex",
         "date": "12/17",
         "dateS": "17/12"
     },
     {
         "title": "Dia do Engenheiro de Produção",
+        "week": "sex",
         "date": "12/17",
         "dateS": "17/12"
     },
     {
         "title": "Dia do Museólogo",
+        "week": "sáb",
         "date": "12/18",
         "dateS": "18/12"
     },
     {
         "title": "Dia de São Zózimo",
+        "week": "sáb",
         "date": "12/18",
         "dateS": "18/12"
     },
     {
         "title": "Dia Internacional dos Migrantes",
+        "week": "sáb",
         "date": "12/18",
         "dateS": "18/12"
     },
     {
         "title": "Aniversário da Emancipação do Paraná",
+        "week": "dom",
         "date": "12/19",
         "dateS": "19/12"
     },
     {
         "title": "Dia do Mecânico",
+        "week": "seg",
         "date": "12/20",
         "dateS": "20/12"
     },
     {
         "title": "Dia Internacional da Solidariedade Humana",
+        "week": "seg",
         "date": "12/20",
         "dateS": "20/12"
     },
     {
         "title": "Início do Verão - Solstício de Verão",
+        "week": "ter",
         "date": "12/21",
         "dateS": "21/12"
     },
     {
         "title": "Dia do Atleta",
+        "week": "ter",
         "date": "12/21",
         "dateS": "21/12"
     },
     {
         "title": "Aniversário da Criação de Rondônia",
+        "week": "qua",
         "date": "12/22",
         "dateS": "22/12"
     },
     {
         "title": "Dia do Vizinho",
+        "week": "qui",
         "date": "12/23",
         "dateS": "23/12"
     },
     {
         "title": "Dia do Órfão",
+        "week": "sex",
         "date": "12/24",
         "dateS": "24/12"
     },
     {
         "title": "Véspera de Natal",
+        "week": "sex",
         "date": "12/24",
         "dateS": "24/12"
     },
     {
         "title": "Natal",
+        "week": "sáb",
         "date": "12/25",
         "dateS": "25/12"
     },
     {
         "title": "Aniversário da cidade de Natal",
+        "week": "sáb",
         "date": "12/25",
         "dateS": "25/12"
     },
     {
         "title": "Dia de São Estevão",
+        "week": "dom",
         "date": "12/26",
         "dateS": "26/12"
     },
     {
         "title": "Dia da Lembrança",
+        "week": "dom",
         "date": "12/26",
         "dateS": "26/12"
     },
     {
         "title": "Dia do Salva-vidas",
+        "week": "ter",
         "date": "12/28",
         "dateS": "28/12"
     },
     {
         "title": "Aniversário de Rio Branco",
+        "week": "ter",
         "date": "12/28",
         "dateS": "28/12"
     },
     {
         "title": "Dia Nacional do Cooperativismo de Crédito",
+        "week": "ter",
         "date": "12/28",
         "dateS": "28/12"
     },
     {
         "title": "Dia do Petroquímico",
+        "week": "ter",
         "date": "12/28",
         "dateS": "28/12"
     },
     {
         "title": "Dia da Marinha Mercante",
+        "week": "ter",
         "date": "12/28",
         "dateS": "28/12"
     },
     {
         "title": "Dia de São Silvestre",
+        "week": "sex",
         "date": "12/31",
         "dateS": "31/12"
     }
