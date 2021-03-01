@@ -7,7 +7,7 @@ module.exports.run = async ({args}) => {
   
   const currentDate = moment().tz('America/Bahia').valueOf();
   
-  let sender = args[0].toLowerCase();
+  
   
   if(!args[0]) {
     
@@ -23,6 +23,8 @@ module.exports.run = async ({args}) => {
     
     return { reply: `hoje é ${todayDate}, ${todayHoliday}!` }
   }
+  
+  let sender = args[0].toLowerCase();
   
   let dateSearch = feriados.filter(i => i.dateS === sender);
   let titleSearch = feriados.find(i => i.title === sender);
