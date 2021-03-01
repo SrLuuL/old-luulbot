@@ -45,7 +45,7 @@ module.exports.run = async ({args}) => {
     let randomDateTime = new Date(`${randomDate.date}/2021`).getTime()
     let randomDateWeek = randomDate.week;
     
-    if(currentDate > randomDateTime) {
+    if(currentDateMs > randomDateTime) {
      let pastDate = ms(currentDateMs - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa data foi marcada como ${randomDateTitle}(${randomDateWeek}), há ${pastDate}` } 
     } else {
@@ -61,7 +61,7 @@ module.exports.run = async ({args}) => {
     let titleSearchWeek = titleSearch[0].week
     let titleSearchDate = new Date(`${titleSearch[0].date}/2021`).getTime();
     
-    if(currentDate > titleSearchDate) {
+    if(currentDateMs > titleSearchDate) {
      let pastDate = ms(currentDateMs - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa comemoração ocorreu em ${titleSearchDay}(${titleSearchWeek}), há ${pastDate}` } 
     } else {
