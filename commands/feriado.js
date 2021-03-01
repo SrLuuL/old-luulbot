@@ -56,8 +56,8 @@ module.exports.run = async ({args}) => {
   
   if(titleSearch.length) {
    
-    let titleSearchTitle = titleSearch.title;
-    let titleSearchDate = new Date(`${titleSearch.date}/2021`).getTime();
+    let titleSearchDay = titleSearch[0].date
+    let titleSearchDate = new Date(`${titleSearchDay}/2021`).getTime();
     
     if(currentDate > titleSearchDate) {
      let pastDate = ms(currentDate - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
