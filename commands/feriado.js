@@ -15,7 +15,7 @@ module.exports.run = async ({args}) => {
     let todayDay = new Date().getDate();
    
     
-    let todayDate = `${todayDay.toString().padStart(2, "0")}/${todayDay.toString().padStart(2, "0")}`
+    let todayDate = `${todayDay.toString().padStart(2, "0")}/${todayMonth.toString().padStart(2, "0")}`
     
     let todayHolidayLength = feriados.filter(i => i.dateS === todayDate);
     
