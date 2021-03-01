@@ -7,6 +7,10 @@ module.exports.run = async ({args}) => {
   const currentDate = moment().tz('America/Bahia').format().slice(0, 19);
   const currentDateMs = new Date(currentDate).getTime();
   
+  function convertTZ(date, tzString) {
+    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
+}
+
   
   if(!args[0]) {
     
@@ -42,8 +46,9 @@ module.exports.run = async ({args}) => {
     
     let randomDate = dateSearch[Math.floor(Math.random() * dateSearch.length)];
     let randomDateTitle = randomDate.title;
-    let randomDateTime = new Date(`${randomDate.date}/2021`).getTime()
+    let randomDateTime = new Date(`${randomDate.date}/2021`);
     let randomDateWeek = randomDate.week;
+    randomDateTime = convertTZ(randomDateTime, 'America/Bahia').getTime();
     
     if(currentDateMs > randomDateTime) {
      let pastDate = ms(currentDateMs - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
@@ -60,6 +65,7 @@ module.exports.run = async ({args}) => {
     let titleSearchDay = titleSearch[0].dateS
     let titleSearchWeek = titleSearch[0].week
     let titleSearchDate = new Date(`${titleSearch[0].date}/2021`).getTime();
+    titleSearchDate = convertTZ(titleSearchDate, 'America/Bahia').getTime();
     
     if(currentDateMs > titleSearchDate) {
      let pastDate = ms(currentDateMs - titleSearchDate, {secondsDecimalDigits: 0, unitCount: 2}); 
