@@ -32,11 +32,13 @@ module.exports.run = async ({args}) => {
   let dateSearch = feriados.filter(i => i.dateS === sender);
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
   
-  let allSearch = dateSearch || titleSearch;
+  let allSearch = dateSearch || titleSearch
   
-  if(!allSearch) return { reply: `Não encontrei essa comemoração/data :/` };
+  if(!allSearch) {
+   return { reply: `Não encontrei essa comemoração/data :/` } 
+  }
   
-  if(dateSearch) {
+  if(dateSearch.length) {
     
     let randomDate = dateSearch[Math.floor(Math.random() * dateSearch.length)];
     let randomDateTitle = randomDate.title;
@@ -52,7 +54,7 @@ module.exports.run = async ({args}) => {
     
   }
   
-  if(titleSearch) {
+  if(titleSearch.length) {
    
     let titleSearchTitle = titleSearch.title;
     let titleSearchDateS = titleSearch.date;
