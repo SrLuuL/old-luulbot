@@ -1,6 +1,7 @@
 module.exports.run = async ({args}) => {
   
-  const feriados = require('../data/feriados.json');
+  let feriados = require('../data/feriados.json');
+  feriados = feriados.map(i => i.title.toLowerCase());
   const moment = require('moment-timezone');
   const ms = require('pretty-ms');
   
@@ -8,7 +9,7 @@ module.exports.run = async ({args}) => {
   
   let sender = args[0].toLowerCase();
   
-  if(!sender) {
+  if(!args[0]) {
     
     let todayMonth = new Date().getMonth() + 1;
     let todayDay = new Date().getDate();
@@ -24,7 +25,7 @@ module.exports.run = async ({args}) => {
   }
   
   let dateSearch = feriados.filter(i => i.dateS === sender);
-  let titleSearch = feriados.find(i => i.title.toLowerCase() === sender);
+  let titleSearch = feriados.find(i => i.title === sender);
   
   let allSearch = dateSearch || titleSearch;
   
