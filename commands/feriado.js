@@ -5,7 +5,7 @@ module.exports.run = async ({args}) => {
   const ms = require('pretty-ms');
   
   const currentDate = moment().tz('America/Bahia').format().slice(0, 19);
-  const currentDateMs = new Date(currentDate).getTime();
+  const currentDateMs = new Date(currentDate).getTime() + 10800000;
   
   function convertTZ(date, tzString) {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
@@ -51,10 +51,10 @@ module.exports.run = async ({args}) => {
     randomDateTime = new Date(randomDateTime).getTime();
     
     if(currentDateMs > randomDateTime) {
-     let pastDate = ms(currentDateMs - randomDateTime, {secondsDecimalDigits: 0, unitCount: 2}); 
+     let pastDate = ms(currentDateMs - randomDateTime , {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa data foi marcada como ${randomDateTitle}(${randomDateWeek}), há ${pastDate}` } 
     } else {
-      let afterDate = ms(randomDateTime - currentDateMs, {secondsDecimalDigits: 0, unitCount: 2}); 
+      let afterDate = ms(randomDateTime - currentDateMs , {secondsDecimalDigits: 0, unitCount: 2}); 
      return { reply: `essa data irá ser marcada como ${randomDateTitle}(${randomDateWeek}), daqui ${afterDate}` } 
     }
     
