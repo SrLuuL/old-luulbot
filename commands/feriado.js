@@ -22,7 +22,7 @@ module.exports.run = async ({args}) => {
     
     let todayHolidayLength = feriados.filter(i => i.dateS === todayDate);
     
-    if(!todayHolidayLength) {
+    if(!todayHolidayLength.length) {
      return { reply: `hoje é ${todayDate}, sem nenhum feriado :( ` } 
     }
     
