@@ -5713,5 +5713,65 @@
       "category": "História",
       "question": "Louis Pasteur inventou a vacina contra que doença famosa?",
       "answer": ["Raiva"]
+    },
+   {
+      "category": "Conhecimentos Gerais",
+      "question": "Alopecia se refere ao quê?",
+      "answer": ["Calvície"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é o nome da deusa da paz de Roma?",
+      "answer": ["Pax"]
+    },
+  {
+      "category": "História",
+      "question": "Que povo antigo foi o primeiro a minerar e fundir cobre?",
+      "answer": ["Egípcios"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o nome dado a superfície visível de sol?",
+      "answer": ["Fotosfera"]
+    },
+  {
+      "category": "Astronomia",
+      "question": "Que unidade astronômica equivale a 9,5 trilhões de quilômetros?",
+      "answer": ["Ano-Luz"]
+    },
+  {
+      "category": "Filmes",
+      "question": "O que você precisa ser para levantar o martelo de Thor?",
+      "answer": ["Digno"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Que órgão é afetado fisicamente após uma lobotomia?",
+      "answer": ["Cérebro"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quantos lados existem em um pentágono?",
+      "answer": ["5"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é o nome do estudo de solos em seu ambiente natural?",
+      "answer": ["Pedologia"]
+    },
+  {
+      "category": "Astronomia",
+      "question": "Qual é a cor do amanhecer de Marte?",
+      "answer": ["Azul"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Botanofobia é o medo de quê?",
+      "answer": ["Plantas"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Melissofobia é o medo de quê?",
+      "answer": ["Abelhas"]
     }
 ]
