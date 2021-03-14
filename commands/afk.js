@@ -25,6 +25,10 @@ module.exports.run = async ({args, response, user}) => {
 
 module.exports.config = {
  name: 'afk',
- aliases: ['gn', 'study', 'shower']
+ aliases: ['gn', 'study', 'shower'],
+ usage: 'afk',
+ description: 'Seta um afk',
+ cooldown: 4000,
+ level: 'Todos'
 }
 
