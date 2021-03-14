@@ -14,6 +14,7 @@ module.exports.run = async ({args, response, user, channel}) => {
     case 'study':
       afkMessage = `${user.username} foi estudar:`
       message += ' 📚';
+      break;
     case 'shower':
       afkMessage = `${user.username} foi tomar banho:`
       message += ' 🚿';
