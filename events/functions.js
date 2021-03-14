@@ -6,13 +6,13 @@ const ms = require('pretty-ms')
 
 client.on('message', async (channel, user, message) => {
   
-  console.log(channel, user, message)
-  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE channel = '${channel}' AND username = '${user.username}'`);
+
+  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   
   if(afkCheck.rows[0]) {
      
     let afkMessage = `${user.username} saiu do AFK:`
-    let {username, reason, afk, time, channel: userchannel} = afkCheck.rows[0];
+    let {username, reason, afk, time} = afkCheck.rows[0];
     let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
     
     switch(afk) {
@@ -26,8 +26,8 @@ client.on('message', async (channel, user, message) => {
         afkMessage = `${username} saiu do banho:`
     }
     
-    await db.query(`DELETE FROM luulbot_afk WHERE channel = ${channel} AND username = ${user.username}`);
-    await client.say(userchannel, `${afkMessage} ${reason} (${passedTime})`);
+    await db.query(`DELETE FROM luulbot_afk username = ${user.username}`);
+    await client.say(channel, `${afkMessage} ${reason} (${passedTime})`);
     
   }
   
