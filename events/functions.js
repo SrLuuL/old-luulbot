@@ -26,7 +26,7 @@ client.on('message', async (channel, user, message) => {
         afkMessage = `${username} saiu do banho:`
     }
     
-    await db.query(`DELETE FROM luulbot_afk username = ${user.username}`);
+    await db.query(`DELETE FROM luulbot_afk WHERE username = ${user.username}`);
     await client.say(channel, `${afkMessage} ${reason} (${passedTime})`);
     
   }
