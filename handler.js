@@ -161,7 +161,8 @@ if (cmdfile) {
 		channel: channel,
 		cmd: cmd,
 		alias: alias,
-		client: client
+		client: client,
+		response: command
 	}
 
 	
