@@ -1,4 +1,4 @@
-module.exports.run = async ({args, response, user}) => {
+module.exports.run = async ({args, response, user, channel}) => {
   
   const db = require('../clients/database.js').db;
   
@@ -19,7 +19,7 @@ module.exports.run = async ({args, response, user}) => {
       message += ' 🚿';
   }
   
-  await db.query(`INSERT INTO luulbot_afk(channel, reason, afk, time) VALUES($1, $2, $3, $4)`, [user.username, message, response, currentDate])
+  await db.query(`INSERT INTO luulbot_afk(channel, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [user.username, message, response, currentDate, channel])
   
 }
 
