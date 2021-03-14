@@ -2,6 +2,37 @@ const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
+const ms = require('pretty-ms')
+
+client.on('message', async (channel, message, user) => {
+  
+  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE channel = ${channel} AND username = ${user.username}`);
+  
+  if(afkCheck.rowCount) {
+     
+    let afkMessage = `${user.username} saiu do AFK:`
+    let {username, reason, afk, time, channel: userchannel} = afkCheck.rows[0];
+    let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
+    
+    switch(afk) {
+     case 'gn':
+        afkMessage = `${username} acordou:`
+        break;
+      case 'study':
+        afkMessage = `${username} parou de estudar:`
+        break;
+      case 'shower':
+        afkMessage = `${username} saiu do banho:`
+    }
+    
+    await db.query(`DELETE FROM luulbot_afk WHERE channel = ${channel} AND username = ${user.username}`);
+    await client.say(userchannel, `${afkMessage} ${reason} (${passedTime})`);
+    
+  }
+  
+  
+});
+
 
 client.getEmotes = async (channel) => {
   
