@@ -4,11 +4,11 @@ const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
 const ms = require('pretty-ms')
 
-client.on('message', async (channel, message, user) => {
+client.on('message', async (channel, user, message) => {
   
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE channel = '${channel}' AND username = '${user.username}'`);
   
-  if(afkCheck.rowCount) {
+  if(afkCheck.rows[0]) {
      
     let afkMessage = `${user.username} saiu do AFK:`
     let {username, reason, afk, time, channel: userchannel} = afkCheck.rows[0];
