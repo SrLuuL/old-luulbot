@@ -4,10 +4,11 @@ const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
 const ms = require('pretty-ms')
 
-client.on('message', async (channel, user, message) => {
+client.on('message', async (channel, user, message, self) => {
   
+  if(self) return;
 
-  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
+  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = ${user.username}`);
   
   if(afkCheck.rows[0]) {
      
