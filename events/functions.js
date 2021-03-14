@@ -6,6 +6,7 @@ const ms = require('pretty-ms')
 
 client.on('message', async (channel, user, message) => {
   
+  console.log(channel, user, message)
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE channel = '${channel}' AND username = '${user.username}'`);
   
   if(afkCheck.rows[0]) {
