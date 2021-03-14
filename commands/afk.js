@@ -5,6 +5,11 @@ module.exports.run = async ({args, response, user, channel}) => {
   let afkMessage = `${user.username} está AFK:`;
   let currentDate = Date.now();
   let message = (!args[0]) ? '(sem mensagem)' : args.join(' ');
+  let afkStatus = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
+  
+  if(afkStatus.rows[0]) {
+   return { reply: `você já está em AFK!` } 
+  }
   
   switch(response) {
     case 'gn':
