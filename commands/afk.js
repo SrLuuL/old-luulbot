@@ -20,7 +20,7 @@ module.exports.run = async ({args, response, user, channel}) => {
   }
   
   await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [user.username, message, response, currentDate, channel])
-  
+  return { reply: `${afkMessage} ${message}`, mode: 'say'}
 }
 
 module.exports.config = {
