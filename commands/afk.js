@@ -23,6 +23,10 @@ module.exports.run = async ({args, response, user, channel}) => {
     case 'shower':
       afkMessage = `${user.username} foi tomar banho:`
       message += ' 🚿';
+      break;
+    case 'food':
+      afkMessage = `${user.username} foi comer:`
+      message += ' 🍴';
   }
   
   await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [`${user.username}`, message, response, currentDate, channel])
