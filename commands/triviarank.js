@@ -2,6 +2,7 @@ module.exports.run = async ({args, user}) => {
 
 const db = require('../clients/database.js').db;
 
+ try {
  
 let sender = (args[0]) ? args[0].toLowerCase() : user.username.toLowerCase();
 const triviaDB = await db.query(`SELECT * FROM luulbot_trivia WHERE user_name = '${sender}'`);
@@ -26,6 +27,10 @@ if (!triviaDB.rowCount) {
  return { reply: `${sender} já acertou ${triviaPoints} trivia(s)! [${triviaPlace}° Lugar]` }
  }
 
+ } catch(e) {
+  return { reply: `pessoa inválida :/` }
+ }
+  
 }
 
 module.exports.config = {
