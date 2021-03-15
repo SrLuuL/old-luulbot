@@ -3,7 +3,7 @@ const connectionURI = process.env.DATABASE_URL += '?sslmode=require'
 
 
 
-const db = new Client({connectionString: connectionURI})
+const db = new Client({connectionString: connectionURI, sql: { rejectUnauthorized: false }})
 
 db.connect()
 .catch(err => {console.log(err)});
