@@ -20,7 +20,7 @@ module.exports.run = ({args}) => {
 
 module.exports.config = {
  name: 'tuck',
- aliases: [''],
+ aliases: [],
  description: 'Bote alguém para dormir',
  usage: 'tuck [user]',
  cooldown: 3000,
