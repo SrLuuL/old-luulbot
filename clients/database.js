@@ -1,9 +1,9 @@
 const { Client } = require("pg");
-const connectionURI = process.env.DATABASE_URL += '?sslmode=require'
+const connectionURI = process.env.DATABASE_URL;
 
 
 
-const db = new Client({connectionString: connectionURI, sql: { rejectUnauthorized: false }})
+const db = new Client({connectionString: connectionURI})
 
 db.connect()
 .catch(err => {console.log(err)});
