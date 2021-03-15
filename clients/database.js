@@ -3,7 +3,7 @@ const connectionURI = process.env.DATABASE_URL
 
 
 
-const db = new Client({connectionString: connectionURI, dialectOptions: { "ssl": {"require":true }}})
+const db = new Client({connectionString: connectionURI})
 
 db.connect()
 .catch(err => {console.log(err)});
