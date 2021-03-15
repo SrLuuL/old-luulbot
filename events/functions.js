@@ -22,7 +22,7 @@ client.on('message', async (channel, user, message, self) => {
      
     let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command));
     let afkMessage = `${user.username} saiu do AFK:`
-    let {username, reason, afk, time} = afkCheck.rows[0];
+    let {username, reason, afk, time, afktype} = afkCheck.rows[0];
     
     if(cmdfile) {
      let cmdAliases = cmdfile.config.aliases;
@@ -33,22 +33,9 @@ client.on('message', async (channel, user, message, self) => {
     let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
    
     
-    switch(afk) {
-     case 'gn':
-        afkMessage = `${username} acordou:`
-        break;
-      case 'study':
-        afkMessage = `${username} parou de estudar:`
-        break;
-      case 'shower':
-        afkMessage = `${username} saiu do banho:`
-	break;
-      case 'food':
-	afkMessage = `${username} terminou de comer:`    
-    }
     
     await db.query(`DELETE FROM luulbot_afk WHERE username = '${user.username}'`);
-    await client.say(channel, `${afkMessage} ${reason} (${passedTime})`);
+    await client.say(channel, `${afktype} ${reason} (${passedTime})`);
     
   }
   
