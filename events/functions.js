@@ -2,9 +2,13 @@ const client = require('../clients/twitch.js').client;
 const fetch = require('node-fetch');
 const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
-const ms = require('pretty-ms')
+const ms = require('pretty-ms');
+const luulbot = require ("./clients/discord.js").luulbot;
 
 client.on('message', async (channel, user, message, self) => {
+  
+  let args = message.slice(prefix.length).trim().split(/ +/g);
+	let command = args.shift();
   
   if(self) return;
 
@@ -12,9 +16,18 @@ client.on('message', async (channel, user, message, self) => {
   
   if(afkCheck.rows[0]) {
      
+    let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command));
     let afkMessage = `${user.username} saiu do AFK:`
     let {username, reason, afk, time} = afkCheck.rows[0];
+    
+    if(cmdfile) {
+     let cmdAliases = cmdfile.config.aliases;
+     if(cmdAliases.includes(afk)) return;
+    }
+    
+    
     let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
+   
     
     switch(afk) {
      case 'gn':
