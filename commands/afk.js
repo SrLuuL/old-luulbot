@@ -51,7 +51,7 @@ module.exports.run = async ({args, response, user, channel}) => {
   let randomAFK = afkMessages[response];
   let randomAFKMessage = randomAFK[Math.floor(Math.random() * randomAFK.length)] || randomAFK[0];
   
-  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [`${user.username}`, message, randomAFKMessage, currentDate, channel])
+  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [`${user.username}`, message, response, currentDate, channel, randomAFKMessage])
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
 }
 
