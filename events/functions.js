@@ -35,7 +35,7 @@ client.on('message', async (channel, user, message, self) => {
     
     
     await db.query(`DELETE FROM luulbot_afk WHERE username = '${user.username}'`);
-    await client.say(channel, `${afktype} ${reason} (${passedTime})`);
+    await client.say(channel, `${username} ${afktype} ${reason} (${passedTime})`);
     
   }
   
