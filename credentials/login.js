@@ -2,7 +2,7 @@ const db = require("../clients/database.js").db
 
 const getChannels = () => new Promise((resolve, reject) => {
 db.query('SELECT * FROM luulbot_channels ORDER BY userid ASC', (err, results) => {
-if (err) {throw err} else {resolve(results.rows)}
+if (err) {console.warn(err)} else {resolve(results.rows)}
 });
 });
 
