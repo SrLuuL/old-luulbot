@@ -7,9 +7,13 @@ const luulbot = require ("../clients/discord.js").luulbot;
 
 client.on('message', async (channel, user, message, self) => {
   
-  let args = message.slice(prefix.length).trim().split(/ +/g);
-	let command = args.shift();
+  let canal = channel.replace("#", ""); 	
+  let prefixDB = await db.query(`SELECT prefix from luulbot_channels WHERE userchannel='${canal}'`);
+  let prefix = prefixDB.rows[0].prefix
   
+	
+  let args = message.slice(prefix.length).trim().split(/ +/g);
+  let command = args.shift();
   if(self) return;
 
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
