@@ -26,7 +26,7 @@ module.exports.run = async ({args}) => {
        return { reply: `pessoa inválida :/` } 
       }
        break;
-    case default:
+    default:
       return { reply: `termos disponíveis: afk` } 
   }
   
