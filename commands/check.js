@@ -8,7 +8,7 @@ module.exports.run = async ({args}) => {
       
       try {
       
-      if(!args[1]) return { reply: `insira uma usuário para checar seu AFK :/` };
+      if(!args[1]) return { reply: `insira um usuário para checar seu AFK :/` };
       
       let afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${args[1].toLowerCase()}'`);
       
