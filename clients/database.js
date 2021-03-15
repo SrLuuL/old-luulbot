@@ -1,4 +1,4 @@
-const { Client } = require("pg")
+const { Client } = require("pg").native;
 const connectionURI = process.env.DATABASE_URL
 
 
