@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
 const ms = require('pretty-ms');
-const luulbot = require ("./clients/discord.js").luulbot;
+const luulbot = require ("../clients/discord.js").luulbot;
 
 client.on('message', async (channel, user, message, self) => {
   
