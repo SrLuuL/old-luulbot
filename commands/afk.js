@@ -11,6 +11,16 @@ module.exports.run = async ({args, response, user, channel}) => {
    return { reply: `você já está em AFK!` } 
   }
   
+  let afkMessages = {
+   afk: ['saiu do AFK:'],
+   gn: ['acordou:', 'saiu da soneca:'],
+   study: ['terminou de estudar:', 'ficou mais inteligente:', 'está cheio de sabedoria:'],
+   work: ['saiu do trabalho:', 'terminou de trabalhar:'],
+   shower: ['saiu do banho:', 'está limpinho:', 'terminou de se banhar:'],
+   food: ['acabou de comer:', 'encheu o bucho:', 'está cheio:'],
+   poop: ['acabou de cagar:', 'soltou um barro:']
+  }
+  
   switch(response) {
     case 'gn':
       afkMessage = `${user.username} foi dormir:`
@@ -27,9 +37,21 @@ module.exports.run = async ({args, response, user, channel}) => {
     case 'food':
       afkMessage = `${user.username} foi comer:`
       message += ' 🍴';
+      break;
+    case 'work':
+      afkMessage = `${user.username} foi trabalhar:`
+      message += ' 💼';
+      break;
+    case 'poop':
+      afkMessage = `${user.username} foi cagar:`
+      message += ' 🚽';
+      break;
   }
   
-  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [`${user.username}`, message, response, currentDate, channel])
+  let randomAFK = afkMessages[response];
+  let randomAFKMessage = randomAFK[Math.floor(Math.random() * randomAFK.length)] || randomAFK[0];
+  
+  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel) VALUES($1, $2, $3, $4, $5)`, [`${user.username}`, message, randomAFKMessage, currentDate, channel])
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
 }
 
