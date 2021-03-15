@@ -42,6 +42,9 @@ client.on('message', async (channel, user, message, self) => {
         break;
       case 'shower':
         afkMessage = `${username} saiu do banho:`
+	break;
+      case 'food':
+	afkMessage = `${username} terminou de comer:`    
     }
     
     await db.query(`DELETE FROM luulbot_afk WHERE username = '${user.username}'`);
