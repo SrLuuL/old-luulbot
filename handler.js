@@ -98,8 +98,12 @@ async function handleMSG(channel, user, message, self) {
 	   return;
 	}
 	
+ 
+	
 	if (!message.startsWith(prefix)) return;
         if (globalDelay.has(channel)) return;
+	
+	
 
 
 
@@ -201,6 +205,30 @@ if (cmdfile) {
 	
 }
 
+  const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${username}'`);
+  
+  if(afkCheck.rows[0]) {
+     
+    let afkMessage = `${username} saiu do AFK:`
+    let {username: userAFK, reason, afk, time} = afkCheck.rows[0];
+    let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
+    
+    switch(afk) {
+     case 'gn':
+        afkMessage = `${userAFK} acordou:`
+        break;
+      case 'study':
+        afkMessage = `${userAFK} parou de estudar:`
+        break;
+      case 'shower':
+        afkMessage = `${userAFK} saiu do banho:`
+    }
+    
+    await db.query(`DELETE FROM luulbot_afk WHERE username = '${username}'`);
+    await client.say(channel, `${afkMessage} ${reason} (${passedTime})`);
+    
+  }
+	
 	
 }
 
