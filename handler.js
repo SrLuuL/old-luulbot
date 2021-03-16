@@ -166,7 +166,8 @@ if (cmdfile) {
 		cmd: cmd,
 		alias: alias,
 		client: client,
-		response: command
+		response: command,
+		msgType: msgType
 	}
 
 	
