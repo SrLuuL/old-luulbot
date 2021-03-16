@@ -1,5 +1,5 @@
 const { Client } = require("pg");
-const connectionURI = process.env.DATABASE_URL += 'ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory';
+const connectionURI = process.env.DATABASE_URL += '?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory';
 
 
 
