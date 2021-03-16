@@ -1,8 +1,8 @@
-module.exports.run = async ({args, response, user, channel, client, msgType}) => {
+module.exports.run = async ({args, response, user, channel, client}) => {
   
   const db = require('../clients/database.js').db;
   
-  if(msgType === 'whisper') {
+  if(user['message-type'] === 'whisper') {
     return { reply: 'comando não disponível em whispers!' }
   }
   
