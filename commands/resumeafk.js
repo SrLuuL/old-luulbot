@@ -1,9 +1,9 @@
-module.exports.run = async ({client, user, msgType}) => {
+module.exports.run = async ({client, user}) => {
   
   const db = require('../clients/database.js').db;
   const afkList = client.afkList;
 
-  if(msgType === 'whisper') {
+  if(user['message-type'] === 'whisper') {
    return { reply: 'comando não está disponível em whispers!' } 
   }
   
