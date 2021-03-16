@@ -22,13 +22,18 @@ client.on('message', async (channel, user, message, self) => {
   
   if(afkCheck.rows[0]) {
      
+    let resumeAFKs = ['rafk', 'resumeafk'];
+	  
+    if(resumeAFKs.includes(command)) return;	  
+	  
     let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command));
     let afkMessage = `${user.username} saiu do AFK:`
     let {username, reason, afk, time, afktype} = afkCheck.rows[0];
     
+	  
     if(cmdfile) {
      let cmdAliases = cmdfile.config.aliases;
-     if(cmdAliases.includes(afk)) return;
+     if(cmdAliases.includes(afk)) return;    
     }
     
     
