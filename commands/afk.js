@@ -7,6 +7,10 @@ module.exports.run = async ({args, response, user, channel}) => {
   let message = (!args[0]) ? '(sem mensagem)' : args.join(' ');
   let afkStatus = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   
+  if(message.length > 300) {
+   return { reply: `mensagem muito longa :/` } 
+  }
+  
   if(afkStatus.rows[0]) {
    return { reply: `você já está em AFK!` } 
   }
