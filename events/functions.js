@@ -5,6 +5,8 @@ const channels = require('../credentials/login.js').channelOptions;
 const ms = require('pretty-ms');
 const luulbot = require ("../clients/discord.js").luulbot;
 
+client.afkList = [];
+
 client.on('message', async (channel, user, message, self) => {
   
   let canal = channel.replace("#", ""); 	
