@@ -1,7 +1,8 @@
-module.exports.run = async ({args, response, user, channel}) => {
+module.exports.run = async ({args, response, user, channel, client}) => {
   
   const db = require('../clients/database.js').db;
   
+  let afkList = client.afkList;
   let afkMessage = `${user.username} está AFK:`;
   let currentDate = Date.now();
   let message = (!args[0]) ? '(sem mensagem)' : args.join(' ');
@@ -55,7 +56,12 @@ module.exports.run = async ({args, response, user, channel}) => {
   let randomAFK = afkMessages[response];
   let randomAFKMessage = randomAFK[Math.floor(Math.random() * randomAFK.length)] || randomAFK[0];
   
-  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [`${user.username}`, message, response, currentDate, channel, randomAFKMessage])
+  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, message, response, currentDate, channel, randomAFKMessage])
+  afkList.push({username: user.username, reason: message, afk: response, time: currentDate, channel: channel, afktype: randomAFKMessage});
+  
+  let afkIndex = afkList.findIndex(i => i.username === user.username);
+  setTimeout(() => { afkList.splice(afkIndex, 1) }, 300000);
+  
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
 }
 
