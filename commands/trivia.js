@@ -9,6 +9,10 @@ module.exports.run = async ({user, args, client, channel}) => {
   const compare = require('compare-strings');
   const channelDB = await db.query(`SELECT  * FROM luulbot_channels WHERE userchannel = '${channel.replace(/#/, '')}'`); 
   
+  if(user['message-type'] === 'whisper') {
+   return { reply: 'comando não disponível em whispers!' } 
+  }
+  
 const sleep = (ms) => {
   return new Promise(res => setTimeout(res, ms));
 }
