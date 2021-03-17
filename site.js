@@ -499,7 +499,7 @@ res.send(`
 
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="https://cdn.betterttv.net/emote/6018520a82cf6865d553941a/3x">
+<meta property="og:image" content="https://cdn.betterttv.net/emote/579f9ac281108bf71a550e97/3x">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title> LuuLBot - Home </title>
 <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
