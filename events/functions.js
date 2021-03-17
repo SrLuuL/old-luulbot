@@ -37,7 +37,7 @@ client.on('message', async (channel, user, message, self) => {
     }
     
     
-    let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0});
+    let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0, unitCount: 2});
    
     
     
