@@ -112,13 +112,13 @@ async function triviaStart(questionList) {
       }
         
       } finally {
-        let channelIndex = trivia.findIndex(i => i.channel === questionList.find(i => i.channel).channel);
+        let channelIndex = trivia.findIndex(i => i.channel === channel);
         trivia.splice(channelIndex, 1)
         client.say(channel, 'Trivia acabou :Z');
       }
       
       } else if(args[0] === 'stop') {
-        let channelIndex = trivia.findIndex(i => i.channel === questionList.find(i => i.channel).channel);
+        let channelIndex = trivia.findIndex(i => i.channel === channel);
         trivia.splice(channelIndex, 1)
       } 
 }
