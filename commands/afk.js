@@ -64,11 +64,11 @@ module.exports.run = async ({args, response, user, channel, client}) => {
   await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, message, response, currentDate, channel, randomAFKMessage])
   
   if(afkIndex < 0) {
-    afkList.splice(afkIndex, 1)
+    client.afkList.splice(afkIndex, 1)
   }
   
   afkList.push({username: user.username, reason: message, afk: response, time: currentDate, channel: channel, afkType: randomAFKMessage, afkMessage: afkMessage});
-  setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
+  setTimeout(() =>  client.afkList.splice(afkIndex, 1) , 300000); 
   
   
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
