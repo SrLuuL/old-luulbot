@@ -68,7 +68,7 @@ module.exports.run = async ({args, response, user, channel, client}) => {
   }
   
   afkList.push({username: user.username, reason: message, afk: response, time: currentDate, channel: channel, afkType: randomAFKMessage, afkMessage: afkMessage});
-  setTimeout(() => { if(afkIndex < 0) { return } else { afkList.splice(afkIndex, 1)} }, 300000); 
+  setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
   
   
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
