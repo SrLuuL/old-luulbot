@@ -8,6 +8,7 @@ module.exports.run = async ({client, user}) => {
   }
   
   let afkSearch = afkList.find(i => i.username === user.username);
+  let afkIndex = afkList.findIndex(i => i.username === user.username);
   let afkStatus = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   
   if(!afkSearch) {
@@ -23,7 +24,8 @@ module.exports.run = async ({client, user}) => {
     
      let { username, reason, afk, time, channel, afkType, afkMessage } = afkSearch;
      await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, reason, afk, time, channel, afkType])
-  
+     afkList.push(afkSearch);
+     setTimeout(() => { if(afkIndex < 0) { return } else { afkList.splice(afkIndex, 1)} }, 300000); 
      return { reply: `${afkMessage} ${reason}`, mode: 'say' } 
   }
   
