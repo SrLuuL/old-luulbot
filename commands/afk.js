@@ -63,7 +63,7 @@ module.exports.run = async ({args, response, user, channel, client}) => {
   let afkIndex = afkList.findIndex(i => i.username === user.username);
   await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, message, response, currentDate, channel, randomAFKMessage])
   
-  if(afkIndex !== -1) {
+  if(afkIndex < 0) {
     afkList.splice(afkIndex, 1)
   }
   
