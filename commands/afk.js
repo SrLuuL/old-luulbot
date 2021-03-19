@@ -60,11 +60,16 @@ module.exports.run = async ({args, response, user, channel, client}) => {
   let randomAFK = afkMessages[response];
   let randomAFKMessage = randomAFK[Math.floor(Math.random() * randomAFK.length)] || randomAFK[0];
   
-  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, message, response, currentDate, channel, randomAFKMessage])
-  afkList.push({username: user.username, reason: message, afk: response, time: currentDate, channel: channel, afkType: randomAFKMessage, afkMessage: afkMessage});
-  
   let afkIndex = afkList.findIndex(i => i.username === user.username);
-  setTimeout(() => { if(afkIndex < 0) { return } else { afkList.splice(afkIndex, 1)} }, 300000);
+  await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, message, response, currentDate, channel, randomAFKMessage])
+  
+  if(afkIndex > -1) {
+    afkList.splice(afkIndex, 1)
+  }
+  
+  afkList.push({username: user.username, reason: message, afk: response, time: currentDate, channel: channel, afkType: randomAFKMessage, afkMessage: afkMessage});
+  setTimeout(() => { if(afkIndex < 0) { return } else { afkList.splice(afkIndex, 1)} }, 300000); 
+  
   
   return { reply: `${afkMessage} ${message}`, mode: 'say'}
 }
