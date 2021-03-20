@@ -20,21 +20,28 @@ client.on('message', async (channel, user, message, self) => {
 
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   
+	
   if(afkCheck.rows[0]) {
      
     let resumeAFKs = ['rafk', 'resumeafk'];
+    let afkSearch = client.afkList.findIndex(i => i.username === user.username);
+	  
 	  
     if(resumeAFKs.includes(command)) return;	  
 	  
     let cmdfile = luulbot.commands.get(command) || luulbot.commands.get(luulbot.aliases.get(command));
-    let afkMessage = `${user.username} saiu do AFK:`
-    let {username, reason, afk, time, afktype} = afkCheck.rows[0];
+    let {username, reason, afk, time, afktype, afkmessage} = afkCheck.rows[0];
     
 	  
     if(cmdfile) {
      let cmdAliases = cmdfile.config.aliases;
      if(cmdAliases.includes(afk)) return;    
     }
+	  
+    if(afkSearch < 0) {
+        client.afkList.push({username: user.username, reason: reason, afk: afk, time: time, channel: channel, afkType: afktype, afkMessage: afkmessage});
+	setTimeout(() => client.afkList.splice(afkSearch, 1), 300000);
+    }	  
     
     
     let passedTime = await ms(Date.now() - time , {secondsDecimalDigits: 0, unitCount: 2});
