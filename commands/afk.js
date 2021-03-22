@@ -27,7 +27,8 @@ module.exports.run = async ({args, response, user, channel, client}) => {
    work: ['saiu do trabalho:', 'terminou de trabalhar:'],
    shower: ['saiu do banho:', 'está limpinho:', 'terminou de se banhar:'],
    food: ['acabou de comer:', 'encheu o bucho:', 'está cheio:'],
-   poop: ['acabou de cagar:', 'soltou um barro:']
+   poop: ['acabou de cagar:', 'soltou um barro:'],
+   game: ['terminou de jogar:', 'terminou sua jogatina:']
   }
   
   switch(response) {
@@ -55,6 +56,9 @@ module.exports.run = async ({args, response, user, channel, client}) => {
       afkMessage = `${user.username} foi cagar:`
       message += ' 🚽';
       break;
+    case 'game':
+      afkMessage = `${user.username} foi jogar:`
+      message += ' 🎮';
   }
   
   let randomAFK = afkMessages[response];
