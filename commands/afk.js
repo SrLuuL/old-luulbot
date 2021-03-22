@@ -80,7 +80,7 @@ module.exports.run = async ({args, response, user, channel, client}) => {
 
 module.exports.config = {
  name: 'afk',
- aliases: ['gn', 'study', 'shower', 'food', 'work', 'poop'],
+ aliases: ['gn', 'study', 'shower', 'food', 'work', 'poop', 'game'],
  usage: 'afk',
  description: 'Seta um afk',
  cooldown: 4000,
