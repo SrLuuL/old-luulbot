@@ -32,7 +32,7 @@ channelsOptions.push(`${channelSender}`)
 }
 
 return {
- reply: `conectado com sucesso em ${channelSender}` 
+ reply: `conectado com sucesso em ${args[0]}` 
 }
   
 }
