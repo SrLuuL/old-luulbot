@@ -4,7 +4,7 @@ const channelsOptions = require("../credentials/login.js").channelOptions;
 const db = require("../clients/database.js").db;
 const fetch = require('node-fetch');  
 
-let channelSender = args[0];  
+let channelSender = args[0].toLowerCase();  
 
 if (!channelSender) return { reply: 'nenhum canal citado :/' }
  
