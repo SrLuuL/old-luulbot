@@ -38,7 +38,7 @@ client.on('message', async (channel, user, message, self) => {
      if(cmdAliases.includes(afk)) return;    
     }
 	  
-    if(afkSearch < 0) {
+    if(afkSearch === -1) {
         client.afkList.push({username: user.username, reason: reason, afk: afk, time: time, channel: channel, afkType: afktype, afkMessage: afkmessage});
 	setTimeout(() => client.afkList.splice(afkSearch, 1), 300000);
     }	  
