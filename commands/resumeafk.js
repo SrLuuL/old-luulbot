@@ -24,7 +24,9 @@ module.exports.run = async ({client, user}) => {
     
      let { username, reason, afk, time, channel, afkType, afkMessage } = afkSearch;
      await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype) VALUES($1, $2, $3, $4, $5, $6)`, [user.username, reason, afk, time, channel, afkType])
-     afkList.push(afkSearch);
+     if(afkIndex === -1) {
+       afkList.push(afkSearch);
+     }
      setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
      return { reply: `${afkMessage} ${reason}`, mode: 'say' } 
   }
