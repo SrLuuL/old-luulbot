@@ -29,7 +29,7 @@ module.exports.run = async ({client, user}) => {
        afkList.push(afkSearch);
      }
      setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
-     console.log(afkSearch)
+     console.log(`${afkMessage} ${reason} ${afk}`)
      return { reply: `${afkMessage} ${reason}`, mode: 'say' } 
   }
   
