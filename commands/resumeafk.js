@@ -15,21 +15,25 @@ module.exports.run = async ({client, user}) => {
     
    return { reply: 'nenhum AFK feito há menos de 5 minutos atrás :/' } 
     
-  } else if(afkStatus.rows[0]) {
+  } 
+  
+  if(afkStatus.rows[0]) {
    
     return { reply: 'você já estava AFK O_o ' }
     
-  } else {
+  }
+  
+  
+  if(afkSearch) {
     
-    let { username, reason, afk, time, channel, afkType, afkMessage } = await afkSearch;
-    console.log(afkSearch)
+    let { username, reason, afk, time, channel, afkType, afkMessage } =  afkSearch;
      
      await db.query(`INSERT INTO luulbot_afk(username, reason, afk, time, channel, afktype, afkmessage) VALUES($1, $2, $3, $4, $5, $6, $7)`, [user.username, reason, afk, time, channel, afkType, afkMessage])
      if(afkIndex === -1) {
        afkList.push(afkSearch);
      }
      setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
-     console.log(`${afkMessage} ${reason} ${afk}`)
+
      return { reply: `${afkMessage} ${reason}`, mode: 'say' } 
   }
   
