@@ -173,9 +173,9 @@ if (cmdfile) {
 	const cmdExecution = await cmdExec(cmdfile, context);
 	
 	if(msgType === 'chat') {
-		await sendMsg(cmdExecution.toLowerCase(), channel)
+		await sendMsg(cmdExecution.toUpperCase(), channel)
 	} else if(msgType === 'whisper') {
-		await client.whisper(username, `${cmdExecution.toLowerCase()}`)
+		await client.whisper(username, `${cmdExecution.toUpperCase()}`)
 	}
 	
 	
