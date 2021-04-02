@@ -34,7 +34,7 @@ module.exports.run = async ({client, user}) => {
      }
      setTimeout(() =>  afkList.splice(afkIndex, 1) , 300000); 
 
-     return { reply: `${afkMessage} ${reason}`, mode: 'say' } 
+     return { reply: 'você voltou com seu AFK anterior' } 
   }
   
 }
