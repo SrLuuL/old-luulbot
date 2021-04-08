@@ -83,7 +83,7 @@ app.get('/api/twitch/badges', async (req, res) => {
 
    try {
 		
-    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetch = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -117,7 +117,7 @@ app.get('/api/twitch/stream/:channel', async (req, res) => {
 
    try {
 		
-    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetch = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ app.get('/api/twitch/user/:channel', async (req, res) => {
 
    try {
 		
-    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetch = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -196,7 +196,7 @@ app.get('/api/twitch/modsvips/:channel', async (req, res) => {
 
    try {
 		
-    const gqlFetch = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetch = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -234,7 +234,7 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
   
   do {
     if(vipPage) {
-      gqlFetchVip = await (await fetch('https://api.twitch.tv/gql', {
+      gqlFetchVip = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -257,7 +257,7 @@ let vipList = gqlFetch.data.user.vips.edges.filter(i => i.node).map(i => Object.
 
     if(modPage) {
 	    
-      gqlFetchMod = await (await fetch('https://api.twitch.tv/gql', {
+      gqlFetchMod = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -295,7 +295,7 @@ app.get('/api/twitch/sub/:user/:channel', async (req, res) => {
 
    try {
 		
-    const gqlFetchChannel = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetchChannel = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
@@ -314,7 +314,7 @@ if (!gqlFetchChannel.data.user) {
 	
 let channelID = gqlFetchChannel.data.user.channelID;	   
 
-    const gqlFetchSub = await (await fetch('https://api.twitch.tv/gql', {
+    const gqlFetchSub = await (await fetch('https://gql.twitch.tv/gql', {
      headers: {
       "Client-ID": process.env.GQL_CLIENT,
       'Content-Type': 'application/json',
