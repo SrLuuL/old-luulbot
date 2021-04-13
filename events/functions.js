@@ -58,7 +58,7 @@ client.on('message', async (channel, user, message, self) => {
    let messages = remindCheck.rows.filter(({usersender}) => usersender === user.username);
    let limit;
 
-   switch(remindCheck.rows.length) {
+   switch(messages.length) {
 	   case 1:
 		   break;
 	   case 2:
