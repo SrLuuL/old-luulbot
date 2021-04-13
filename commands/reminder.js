@@ -30,7 +30,7 @@ module.exports.run = async ({args, user}) => {
   
   let reasonLimit = (targetUser === 'me') ? 2 : targetUser.length
   
-  let reason = args.join(' ').slice(reasonLimit).trim();
+  let reason = args.join(' ').trim().slice(reasonLimit);
   let currentTime = Date.now();
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
   
