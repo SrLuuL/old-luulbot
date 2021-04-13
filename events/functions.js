@@ -57,11 +57,20 @@ client.on('message', async (channel, user, message, self) => {
 
    let messages = remindCheck.rows.filter(({usersender}) => usersender === user.username);
    let limit;
+
+   switch(remindCheck.rows.length) {
+	   case 1:
+		   break;
+	   case 2:
+		   limit = 250;
+		   break;
+	   case 3:
+		   limit = 150;
+		   break;   
+   }
 	  
-	  
-   messages = messages.map(i => `${i.message} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');
-	  
-	  
+   messages = messages.map(i => `${i.userchannel === user.username ? 'você mesmo' : i.userchannel}: ${i.message.slice(0, limit)} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');  
+   await client.say(channel, `${user.username}, lembrete de ${messages}`)	  
 	  
   }
   
