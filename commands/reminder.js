@@ -12,7 +12,7 @@ module.exports.run = async ({args, user}) => {
   }
   
   
-  let targetUser = args[1].toLowerCase();
+  let targetUser = args[0].toLowerCase();
   
   if(targetUser === 'me') {
    targetUser = user.username 
