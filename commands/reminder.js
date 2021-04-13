@@ -1,6 +1,6 @@
 module.exports.run = async ({args, user}) => {
   
-  const db = require('./clients/database').db;
+  const db = require('../clients/database.js').db;
   const fetch = require('node-fetch');
   
   if(!args[0]) {
