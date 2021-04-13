@@ -28,7 +28,7 @@ module.exports.run = async ({args, user}) => {
    return { reply: 'usuário não existe :/' } 
   }
   
-  let reason = args.join(' ');
+  let reason = args.join(' ').slice(targetUser.length).trim();
   let currentTime = Date.now();
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
   
