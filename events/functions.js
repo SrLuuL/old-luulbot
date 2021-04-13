@@ -70,7 +70,8 @@ client.on('message', async (channel, user, message, self) => {
    }
 	  
    messages = messages.map(i => `${i.userchannel === user.username ? 'você mesmo' : i.userchannel}: ${i.message.slice(0, limit)} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');  
-   await client.say(channel, `${user.username}, lembrete de ${messages}`)	  
+   await db.query(`DELETE FROM luulbot_remind WHERE usersender = '${user.username}'`);
+   await client.say(channel, `${user.username}, lembrete de ${messages}`);	  
 	  
   }
   
