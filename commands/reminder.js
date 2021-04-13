@@ -28,7 +28,7 @@ module.exports.run = async ({args, user}) => {
    return { reply: 'usuário não existe :/' } 
   }
   
-  let reasonLimit = (targetUser === 'me') ? 2 : targetUser.length
+  let reasonLimit = (targetUser === 'me') ? 0 : targetUser.length
   
   let reason = args.join(' ').trim().slice(reasonLimit);
   let currentTime = Date.now();
