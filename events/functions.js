@@ -19,7 +19,7 @@ client.on('message', async (channel, user, message, self) => {
   if(self) return;
 
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
-  
+  const remindCheck = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${user.username}'`);
 	
   if(afkCheck.rows[0]) {
      
@@ -52,7 +52,18 @@ client.on('message', async (channel, user, message, self) => {
     await client.say(channel, `${username} ${afktype} ${reason} (${passedTime})`);
     
   }
-  
+	
+  if(remindCheck.rows[0]) {
+
+   let messages = remindCheck.rows.filter(({usersender}) => usersender === user.username);
+   let limit;
+	  
+	  
+   messages = messages.map(i => `${i.message} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');
+	  
+	  
+	  
+  }
   
 });
 
