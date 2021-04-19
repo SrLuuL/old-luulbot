@@ -54,7 +54,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   }
   
   if(timeCheck) {
-    if(isNaN(timeCheck))) return { reply: 'tempo inválido! Use "in" depois da mensagem' };
+    if(isNaN(timeCheck)) return { reply: 'tempo inválido! Use "in" depois da mensagem' };
     
     let duration = durationParser(timed)
     if(timeCheck && duration < 60000) return { reply: 'o mínimo para lembretes é de 1 minuto' };
