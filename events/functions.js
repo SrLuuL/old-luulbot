@@ -15,7 +15,7 @@ async function timedRemindCheck() {
 
   if(remindTimeCheck) {
     let {userchannel, usersender, channelsender, message, timeparsed, id} = remindTimeCheck;
-    let formatedTime = ms(timeparsed, {colonNotation: true});
+    let formatedTime = ms(timeparsed - 0, {colonNotation: true});
 	  
     await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);	  
 
