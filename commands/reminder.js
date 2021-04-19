@@ -50,7 +50,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   }
   
   if(userTimedRemindList.rows.filter(i => new Date(i).getDate() === new Date().getDate()) >= 5) {
-   return { reply: 'usuário já possui muitos lembretes neste dia :/' ] 
+   return { reply: 'usuário já possui muitos lembretes neste dia :/' } 
   }
   
   if(timeCheck) {
