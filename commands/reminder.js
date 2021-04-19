@@ -54,10 +54,11 @@ module.exports.run = async ({args, user, channel, response}) => {
   }
   
   if(timeCheck) {
-    let duration = durationParser(timed)
     if(!parseFloat(timed) && timeCheck) return { reply: 'tempo inválido! Use "in" depois da mensagem' };
     if(timeCheck && duration < 60000) return { reply: 'o mínimo para lembretes é de 1 minuto' };
     if(timeCheck && duration > 31536000999) return { reply: 'lembrete ultrapassa o limite de tempo' };
+    
+    let duration = durationParser(timed)
 
     const formatedDuration = ms(duration, {secondsDecimalDigits: 0});
     reason = reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '').replace('in ', '');
