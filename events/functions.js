@@ -10,10 +10,12 @@ client.afkList = [];
 async function timedRemindCheck() {
 	
   const remindTimeDB = await db.query('SELECT * FROM luulbot_remindtimed');
+  console.log('cu')
 
   let remindTimeCheck = remindTimeDB.rows.find(i => Date.now() - i.time <= 0);
 
   if(remindTimeCheck) {
+	  console.log('cu2')
     let {userchannel, usersender, channelsender, message, time} = remindTimeCheck;
     let formatedTime = ms(time, {colonNotation: true});
 
