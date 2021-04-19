@@ -79,7 +79,7 @@ module.exports.run = async ({args, user, channel, response}) => {
 
 module.exports.config = {
  name: 'reminder',
- aliases: ['remind', 'lembrar'],
+ aliases: ['remind', 'lembrar', 'remindme', 'melembrar'],
  description: 'Manda um lembrete para um usuário',
  usage: 'remind [user]',
  cooldown: 5000,
