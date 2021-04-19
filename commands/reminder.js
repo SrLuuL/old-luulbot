@@ -38,7 +38,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   let currentTime = Date.now();
 
   let timed = args.join(' ').substr(args.join(' ').toLowerCase().lastIndexOf(' in ') + 4);
-  let timeCheck = parseInt(timed, 0); 
+  let timeCheck = parseFloat(timed); 
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
@@ -50,7 +50,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   
   if(timeCheck) {
     let duration = durationParser(timed)
-    if(!parseFloat(timed) && timeCheck) return { reply: 'tempo inválido! Use "in" antes do tempo informado ' };
+    if(!parseFloat(timed) && timeCheck) return { reply: 'tempo inválido! Use "in" depois da mensagem' };
     if(timeCheck && duration < 60000) return { reply: 'o mínimo para lembretes é de 1 minuto' };
     if(timeCheck && duration > 31536000999) return { reply: 'lembrete ultrapassa o limite de tempo' };
 
