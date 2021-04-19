@@ -53,7 +53,7 @@ module.exports.run = async ({args, user, channel}) => {
     if(timeCheck && duration < 60000) return { reply: 'o mínimo para lembretes é de 1 minuto' };
     if(timeCheck && duration > 31536000999) return { reply: 'lembrete ultrapassa o limite de tempo' };
 
-    const formatedDuration = ms(duration, {colonNotation: true});
+    const formatedDuration = ms(duration, {secondsDecimalDigits: 0});
     reason.replace('in ' + timed, '').replace(' in ' + timed, '').replace(' in' + timed, '');
 
 
