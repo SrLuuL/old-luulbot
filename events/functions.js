@@ -22,8 +22,8 @@ async function timedRemindCheck() {
 
 }
 
-setInterval(() => timedRemindCheck, 1000);
-setInterval(() => console.log('cu'), 1000);
+setInterval(() => timedRemindCheck(), 1000);
+
 
 
 
