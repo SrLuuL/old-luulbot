@@ -63,7 +63,7 @@ module.exports.run = async ({args, user, channel, response}) => {
     targetUser = targetUser  === user.username ? 'você' : targetUser;
 
     return {
-      reply: `${targetUser} será lembrado disso em ${formatedDuration} :)` 
+      reply: `lembrete será enviado para ${targetUser}, em ${formatedDuration} :)` 
      }
   }
 
@@ -72,7 +72,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   targetUser = targetUser  === user.username ? 'você' : targetUser;
   
   return {
-   reply: `${targetUser} será lembrado disso :)` 
+   reply: `lembrete enviado para ${targetUser} :)` 
   }
   
 }
