@@ -2,7 +2,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   
   const db = require('../clients/database.js').db;
   const fetch = require('node-fetch');
-  const durationParser = require('parse-duration');
+  const durationParser = require('duration-parser');
   const ms = require('pretty-ms');
 
   if(!args[0]) {
@@ -38,7 +38,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   let currentTime = Date.now();
 
   let timed = args.join(' ').substr(args.join(' ').toLowerCase().lastIndexOf(' in ') + 4);
-  let timeCheck = parseFloat(timed); 
+  let timeCheck = typeof parseFloat(timed) === 'number'; 
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
