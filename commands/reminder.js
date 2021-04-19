@@ -55,7 +55,7 @@ module.exports.run = async ({args, user, channel, response}) => {
     if(timeCheck && duration > 31536000999) return { reply: 'lembrete ultrapassa o limite de tempo' };
 
     const formatedDuration = ms(duration, {secondsDecimalDigits: 0});
-    reason = reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '');
+    reason = reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '').replace('in ', '');
 
 
     await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, timedRemindList.rows.length]);
@@ -79,7 +79,7 @@ module.exports.run = async ({args, user, channel, response}) => {
 
 module.exports.config = {
  name: 'reminder',
- aliases: ['remind', 'lembrar', 'remindme', 'melembrar'],
+ aliases: ['remind', 'lembrar', 'remindme'],
  description: 'Manda um lembrete para um usuário',
  usage: 'remind [user]',
  cooldown: 5000,
