@@ -17,7 +17,7 @@ async function timedRemindCheck() {
     let {userchannel, usersender, channelsender, message, timeparsed, id} = remindTimeCheck;
     let formatedTime = ms(Date.now() - timeparsed, {colonNotation: true});
 	  
-    await db.query(`DELETE FROM luulbot_remindtime WHERE id = '${id}'`);	  
+    await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);	  
 
     client.say(channelsender, `lembrete cronometrado de ${usersender === userchannel ? 'você' : usersender}:  ${message} (${formatedTime})`);
   }
