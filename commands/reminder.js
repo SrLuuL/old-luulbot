@@ -58,7 +58,7 @@ module.exports.run = async ({args, user, channel, response}) => {
     reason = reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '').replace('in ', '');
 
 
-    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, timedRemindList.rows.length]);
+    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, timedRemindList.rows?.pop().id + 1 | 1]);
  
     targetUser = targetUser  === user.username ? 'você' : targetUser;
 
