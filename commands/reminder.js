@@ -42,7 +42,7 @@ module.exports.run = async ({args, user, channel}) => {
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
-  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtime`);
+  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
   
   if(remindList.rows.length >= 3) {
    return { reply: 'este usuário já possui muitos lembretes :/' } 
