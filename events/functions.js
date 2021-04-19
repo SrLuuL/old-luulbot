@@ -7,7 +7,7 @@ const luulbot = require ("../clients/discord.js").luulbot;
 
 client.afkList = [];
 
-function timedRemindCheck() {
+async function timedRemindCheck() {
 	
   const remindTimeDB = await db.query('SELECT * FROM luulbot_remindtimed');
 
