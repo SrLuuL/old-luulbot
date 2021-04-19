@@ -1,4 +1,4 @@
-module.exports.run = async ({args, user, channel}) => {
+module.exports.run = async ({args, user, channel, response}) => {
   
   const db = require('../clients/database.js').db;
   const fetch = require('node-fetch');
@@ -16,7 +16,7 @@ module.exports.run = async ({args, user, channel}) => {
   
   let targetUser = args[0].toLowerCase();
   
-  if(targetUser === 'me') {
+  if(targetUser === 'me' || response === 'remindme') {
    targetUser = user.username 
   }
   
@@ -34,7 +34,7 @@ module.exports.run = async ({args, user, channel}) => {
 
   let reasonLimit = (args[0] === 'me') ? 2 : targetUser.length
   
-  let reason = args.join(' ').trim().slice(reasonLimit);
+  let reason = (response === 'remindme') ? args.join(' ').trim() : args.join(' ').trim().slice(reasonLimit);
   let currentTime = Date.now();
 
   let timed = args.join(' ').substr(args.join(' ').toLowerCase().lastIndexOf(' in ') + 4);
