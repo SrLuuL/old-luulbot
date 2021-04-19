@@ -16,7 +16,7 @@ async function timedRemindCheck() {
   if(remindTimeCheck) {
     let {userchannel, usersender, channelsender, message, time} = remindTimeCheck;
 	     console.log(userchannel, usersender, channelsender, message, time);
-    let formatedTime = ms(time, {colonNotation: true});
+    let formatedTime = ms(time - Date.now(), {colonNotation: true});
 
     client.say(channelsender, `lembrete cronometrado de ${usersender === userchannel ? 'você' : usersender}:  ${message} (${formatedTime})`);
   }
