@@ -42,6 +42,7 @@ module.exports.run = async ({args, user, channel}) => {
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
+  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtime`);
   
   if(remindList.rows.length >= 3) {
    return { reply: 'este usuário já possui muitos lembretes :/' } 
@@ -57,7 +58,7 @@ module.exports.run = async ({args, user, channel}) => {
     reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '');
 
 
-    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time) VALUES($1,$2,$3,$4,$5)`, [user.username, targetUser, channel, reason, currentTime + duration]);
+    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, timedRemindList.rows.length]);
  
     targetUser = targetUser  === user.username ? 'você' : targetUser;
 
