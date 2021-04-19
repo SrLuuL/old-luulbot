@@ -19,7 +19,7 @@ async function timedRemindCheck() {
 	  
     await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);	  
 
-    client.say(channelsender, `${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : usersender}:  ${message} (${formatedTime})`);
+    client.say(channelsender, `${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : userchannel}:  ${message} (${formatedTime})`);
   }
 
 }
