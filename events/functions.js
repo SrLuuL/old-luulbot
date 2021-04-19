@@ -7,6 +7,24 @@ const luulbot = require ("../clients/discord.js").luulbot;
 
 client.afkList = [];
 
+function timedRemindCheck() {
+	
+  const remindTimeDB = await db.query('SELECT * FROM luulbot_remindtimed');
+
+  let remindTimeCheck = remindTimeDB.rows.find(i => Date.now() - i.time <= 0);
+
+  if(remindTimeCheck) {
+    let {userchannel, usersender, channelsender, message, time} = remindTimeCheck;
+    let formatedTime = ms(time, {colonNotation: true});
+
+    client.say(channelsender, `lembrete cronometrado de ${usersender === userchannel ? 'você' : usersender}:  ${message} (${formatedTime})`);
+  }
+
+}
+
+setInterval(() => timedRemindCheck, 1000);
+
+
 client.on('message', async (channel, user, message, self) => {
   
   let canal = channel.replace("#", ""); 	
