@@ -23,6 +23,8 @@ async function timedRemindCheck() {
 }
 
 setInterval(() => timedRemindCheck, 1000);
+setInterval(() => console.log('cu'), 1000);
+
 
 
 client.on('message', async (channel, user, message, self) => {
