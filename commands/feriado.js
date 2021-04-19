@@ -26,7 +26,7 @@ module.exports.run = async ({args}) => {
      return { reply: `hoje é ${todayDate}, sem nenhum feriado :( ` } 
     }
     
-    let todayHoliday = todayHolidayLength[Math.floor(Math.random() * todayHolidayLength.length)]
+    let todayHoliday = todayHolidayLength.sort(i => 0.5 - Math.random())[0]
     
     return { reply: `hoje é ${todayDate}(${todayHoliday.week}), ${todayHoliday.title}!` }
   }
@@ -44,7 +44,7 @@ module.exports.run = async ({args}) => {
   
   if(dateSearch.length) {
     
-    let randomDate = dateSearch[Math.floor(Math.random() * dateSearch.length)];
+    let randomDate = dateSearch.sort(i => 0.5 - Math.random())[0]
     let randomDateTitle = randomDate.title;
     let randomDateTime = moment.tz(new Date(`${randomDate.date}/2021`), 'America/Bahia').format().slice(0, 19);
     let randomDateWeek = randomDate.week;
