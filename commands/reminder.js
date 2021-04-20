@@ -2,7 +2,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   
   const db = require('../clients/database.js').db;
   const fetch = require('node-fetch');
-  const durationParser = require('duration-parser');
+  const durationParser = require('parse-duration');
   const ms = require('pretty-ms');
 
   if(!args[0]) {
