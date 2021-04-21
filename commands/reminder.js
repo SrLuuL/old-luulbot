@@ -53,7 +53,7 @@ module.exports.run = async ({args, user, channel, response}) => {
    return { reply: 'usuário já possui muitos lembretes neste dia :/' } 
   }
   
-  if(timeCheck) {
+  if(!isNaN(timeCheck)) {
     if(isNaN(timeCheck)) return { reply: 'tempo inválido! Use "in" depois da mensagem' };
     
     let duration = durationParser(timed)
