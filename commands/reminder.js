@@ -38,7 +38,7 @@ module.exports.run = async ({args, user, channel, response}) => {
   let currentTime = Date.now();
 
   let timed = args.join(' ').substr(args.join(' ').toLowerCase().lastIndexOf(' in ') + 4);
-  let timeCheck = typeof parseFloat(timed) === 'number'; 
+  let timeCheck = parseFloat(timed);
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
