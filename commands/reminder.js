@@ -49,7 +49,7 @@ module.exports.run = async ({args, user, channel, response}) => {
    return { reply: 'este usuário já possui muitos lembretes :/' } 
   }
   
-  if(userTimedRemindList.rows.filter(i => new Date(i).getDate() === new Date().getDate()) >= 5) {
+  if(userTimedRemindList.rows.filter(i => new Date(i).getDate() === new Date().getDate()).length >= 5) {
    return { reply: 'usuário já possui muitos lembretes neste dia :/' } 
   }
   
@@ -65,7 +65,7 @@ module.exports.run = async ({args, user, channel, response}) => {
     reason = reason.replace(' in', '').replace(' in ', '').replace(timed.trim(), '').replace('in ', '');
 
 
-    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, timedRemindList.rows?.pop()?.id + 1 | 1]);
+    await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, (timedRemindList.rows?.pop()?.id + 1) || 1]);
  
     targetUser = targetUser  === user.username ? 'você' : targetUser;
 
