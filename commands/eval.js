@@ -6,11 +6,11 @@ module.exports.run = async ({args, user, client, cmd, alias, channel}) => {
   try {
   
 const evaluated = await eval('(async () => {' +args.join(" ") + '})()')
-const ev = String(evaluated)
+const ev = String(evaluated) || ''
 
 
 if (!args[0]) return { reply: 'insira um código :/' }
-else return { reply: `${ev || ''}`, mode: 'say' }
+else return { reply: `${ev}`, mode: 'say' }
 
     
 
