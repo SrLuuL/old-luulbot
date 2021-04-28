@@ -10,7 +10,7 @@ const ev = String(evaluated)
 
 
 if (!args[0]) return { reply: 'insira um código :/' }
-else return { reply: `${ev}`, mode: 'say' }
+else return { reply: `${ev || ''}`, mode: 'say' }
 
     
 
