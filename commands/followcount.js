@@ -2,6 +2,9 @@ module.exports.run = async ({args, username}) => {
 
 const fetch = require('node-fetch');
 
+if(!args[0]) {
+ return { reply: 'insira um usuário para ver seus followers :/' }  
+}
    
 let user = args[0] ? args[0] : user.username;
 
