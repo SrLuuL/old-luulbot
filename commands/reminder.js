@@ -42,6 +42,7 @@ module.exports.run = async ({args, user, channel, response}) => {
 
 
   let remindList = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${targetUser}'`);
+  let channelRemindList = await db.query(`SELECT * FROM luulbot_remind WHERE userchannel = '${user.username}'`);
   let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
   let userTimedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed WHERE usersender = '${targetUser}'`);
   
@@ -49,8 +50,12 @@ module.exports.run = async ({args, user, channel, response}) => {
    return { reply: 'este usuário já possui muitos lembretes :/' } 
   }
   
+  if(channelRemindList.rows.length >= 5) {
+   return { reply: 'você já mandou muitos lembretes :/' } 
+  }
+  
   if(userTimedRemindList.rows.filter(i => new Date(i).getDate() === new Date().getDate()).length >= 5) {
-   return { reply: 'usuário já possui muitos lembretes neste dia :/' } 
+   return { reply: 'Já existem muitos lembretes cronometrados neste dia :/' } 
   }
   
   if(!isNaN(timeCheck)) {
