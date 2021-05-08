@@ -67,7 +67,8 @@ module.exports.run = async ({args, user, channel, response}) => {
     
 
     const formatedDuration = ms(duration, {secondsDecimalDigits: 0});
-    reason = reason.replace(" in " + timed, "").replace("in " + timed, "").replace(timed, "").replace(" in ", "")
+    reason = reason.replace(" in " + timed, "").replace("in " + timed, "").replace(timed, "").replace(" in ", "");
+    reason = (!reason.length) ? '(sem mensagem)' : reason;
 
 
     await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, [user.username, targetUser, channel, reason, currentTime + duration, duration, (timedRemindList.rows?.pop()?.id + 1) || 1]);
