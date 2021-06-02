@@ -25,6 +25,7 @@ if(channelInfo) {
  const channelPlace = channelsOptions.findIndex(i => i === channelSender);
  channelsOptions.splice(`${channelInfo.userchannel}`, 1);
  channelsOptions.push(`${channelSender}`)
+ client.join(channelSender)
 } else {
 await db.query(`INSERT INTO luulbot_channels(userchannel, userid, useruid) VALUES($1,$2,$3)`, [channelSender, userID.id , channelUID]);
 client.join(channelSender);
