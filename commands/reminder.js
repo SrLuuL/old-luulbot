@@ -50,9 +50,6 @@ module.exports.run = async ({args, user, channel, response}) => {
    return { reply: 'este usuário já possui muitos lembretes :/' } 
   }
   
-  if(channelRemindList.rows.length >= 5) {
-   return { reply: 'você já mandou muitos lembretes :/' } 
-  }
   
   if(userTimedRemindList.rows.filter(i => new Date(i).getDate() === new Date().getDate()).length >= 5) {
    return { reply: 'Já existem muitos lembretes cronometrados neste dia :/' } 
