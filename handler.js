@@ -116,7 +116,7 @@ if (cmdfile) {
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD, family: cmdFamily} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
-	if (streamStatus === 'live' && streamMode) {	
+	if (streamStatus === 'live' && streamMode && username !=='srluul') {	
 		if(cmdName !== 'modostream') return;	
 	}
 	
