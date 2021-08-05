@@ -1,4 +1,4 @@
-module.exports = [`selfdefeatingsupper4 
+module.exports = `selfdefeatingsupper4 
 irrigationalpincenez2 
 unorganizedtube9 
 cloveryreply5 
