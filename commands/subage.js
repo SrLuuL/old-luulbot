@@ -60,8 +60,8 @@ user2 = sender;
   let dateStreak = new Date(end);
   let dateCumulative = new Date(endCumulative);
   let gifter = '';
-  dateStreak = dateStreak - Date.now();
-  dateCumulative = dateCumulative - Date.now();
+  dateStreak = Math.abs(dateStreak - Date.now());
+  dateCumulative = Math.abs(dateCumulative - Date.now());
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
   type = (type == "Paid") ? "Pago" : type
