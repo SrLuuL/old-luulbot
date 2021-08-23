@@ -62,8 +62,8 @@ user2 = sender;
   let gifter = '';
   dateStreak = Math.abs(dateStreak - Date.now());
   dateCumulative = Math.abs(dateCumulative - Date.now());
-  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
-  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
+  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3});
+  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3});
   type = (type == "Paid") ? "Pago" : type
   
   if(subscription) {
@@ -73,7 +73,7 @@ user2 = sender;
    }
    
 return {
- reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak}  | Próximo aniversário em: ${dateCumulative} | Sub: ${type} ${gifter} | Tier: ${tier}` 
+ reply: `${user} possui  uma inscrição em ${canal} há  ${subMonths} | Sub acaba em: ${dateStreak.replace(/-/g, '')}  | Próximo aniversário em: ${dateCumulative.replace(/-/g, '')} | Sub: ${type} ${gifter} | Tier: ${tier}` 
 }
   
  } catch(err) {
