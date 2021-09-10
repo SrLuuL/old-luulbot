@@ -43,7 +43,7 @@ client.on('message', async (channel, user, message, self) => {
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   const remindCheck = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${user.username}'`);
 	
-  let hossBotRegex = /^(hoss)([a-z]|[0-9])/g;
+  let hossBotRegex = /^(h(o|0)ss)([a-z]|[0-9])/g;
   let fossaFollow = ', obrigado por seguir! peepoGlad'	
 	
   if(user.username === 'fossabot' && message.includes(fossaFollow) && canal === 'ghiletofar') {
