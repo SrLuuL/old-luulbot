@@ -46,7 +46,7 @@ client.on('message', async (channel, user, message, self) => {
   let hossBotRegex = /^(hoss)([a-z]|[0-9])/g;
   let fossaFollow = ', obrigado por seguir! peepoGlad'	
 	
-  if(user = 'fossabot' && message.includes(fossaFollow)) {
+  if(user === 'fossabot' && message.includes(fossaFollow)) {
 	  let filteredMessage = message.replace(fossaFollow, '')
 	  let botCheck = hossBotRegex.test(filteredMessage)
 	  
