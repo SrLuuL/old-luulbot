@@ -43,6 +43,19 @@ client.on('message', async (channel, user, message, self) => {
   const afkCheck = await db.query(`SELECT * FROM luulbot_afk WHERE username = '${user.username}'`);
   const remindCheck = await db.query(`SELECT * FROM luulbot_remind WHERE usersender = '${user.username}'`);
 	
+  let hossBotRegex = /^(hoss)([a-z]|[0-9])/g;
+  let fossaFollow = ', obrigado por seguir! peepoGlad'	
+	
+  if(user = 'fossabot' && message.includes(fossaFollow)) {
+	  let filteredMessage = message.replace(fossaFollow, '')
+	  let botCheck = hossBotRegex.test(filteredMessage)
+	  
+	  if(botCheck) {
+		  client.ban('ghiletofar', `${filteredMessage}`)
+	  }
+  }
+	
+	
   if(afkCheck.rows[0]) {
      
     let resumeAFKs = ['rafk', 'resumeafk'];
