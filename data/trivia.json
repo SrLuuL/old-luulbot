@@ -3241,7 +3241,7 @@
    },
     {
   "category": "História",
-   "question": "Após a queda do dirigível Roma em 1922, a Marinha dos EUA mudou para qual gás mais seguro e mas mais caro?",
+   "question": "Após a queda do dirigível de Roma em 1922, a Marinha dos EUA mudou para qual gás mais seguro e  mais caro?",
   "answer": ["Hélio"]
    },
    {
@@ -5793,5 +5793,20 @@
       "category": "Geografia",
       "question": "Qual é o maior país muçulmano?",
       "answer": ["Indonésia"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é a definição para alguém com poder infinito?",
+      "answer": ["Onipotente"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Morando no equador, você possui quantas horas de luz solar?",
+      "answer": ["12"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o nome do processo que elimina radiação do corpo?",
+      "answer": ["Descontaminação"]
     }
 ]
