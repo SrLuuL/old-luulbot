@@ -33,16 +33,16 @@ if(!args[0]) {
 
   
   
-async function triviaStart(questionList) {
+async function triviaStart(questionList, channelIndex) {
   
   
-  if(args[0] === 'start' && trivia.find(i => i.channel === channel)) {
+  if(args[0] === 'start' && trivia.find(i => i.channel === channelIndex)) {
   return `Uma trivia já está rolando neste canal!`
   }
   
-  if (args[0] === 'start' && !trivia.find(i => i.channel === channel)) {
+  if (args[0] === 'start' && !trivia.find(i => i.channel === channelIndex)) {
 
-    trivia.push({channel: channel, running: true, stopped: false}) 
+    trivia.push({channel: channelIndex, running: true, stopped: false}) 
     
     if (isNaN(triviaLength)) {
   return 'Número de trivias inválido :/'
@@ -58,7 +58,7 @@ async function triviaStart(questionList) {
       for(const ind in questionList) {
         let item = questionList[ind]
         let questionNum = parseInt(ind);
-        let triviaChannel = questionList.find(i => i.channel).channel
+        let triviaChannel = questionList.find(i => i.channel === channelIndex).channel
         
         if(!trivia.find(i => i.channel === triviaChannel)) {
           break
@@ -112,14 +112,14 @@ async function triviaStart(questionList) {
       }
         
       } finally {
-        let channelIndex = trivia.findIndex(i => i.channel === channel);
-        trivia.splice(channelIndex, 1)
+        let channelTriviaIndex = trivia.findIndex(i => i.channel === channelIndex);
+        trivia.splice(channelTriviaIndex, 1)
         client.say(channel, 'Trivia acabou :Z');
       }
       
       } else if(args[0] === 'stop') {
-        let channelIndex = trivia.findIndex(i => i.channel === channel);
-        trivia.splice(channelIndex, 1)
+        let channelTriviaIndex = trivia.findIndex(i => i.channel === channelIndex);
+        trivia.splice(channelTriviaIndex, 1)
       } 
 }
 
@@ -127,7 +127,7 @@ async function triviaStart(questionList) {
   
   return { 
     mode: 'event',
-    reply: await triviaStart(fetchQuestions(triviaLength)) 
+    reply: await triviaStart(fetchQuestions(triviaLength), channel) 
   }
   
 }
