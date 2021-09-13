@@ -5763,5 +5763,35 @@
       "category": "Conhecimentos Gerais",
       "question": "Melissofobia é o medo de quê?",
       "answer": ["Abelhas"]
+    },
+  {
+      "category": "Video Games",
+      "question": "Quantas esmeraldas do chaos você coleta no primeiro Sonic?",
+      "answer": ["6"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é a última letra do afalbeto grego?",
+      "answer": ["Omega"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o elemento com o maior ponto de ebulição?",
+      "answer": ["Carbono"]
+    },
+  {
+      "category": "Video Games",
+      "question": "Que empresa publicou o jogo Game Dev Tycoon?",
+      "answer": ["Greenheart Games"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Em que ano um mamífero foi clonado com sucesso?",
+      "answer": ["1996"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Qual é o maior país muçulmano?",
+      "answer": ["Indonésia"]
     }
 ]
