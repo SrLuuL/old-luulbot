@@ -119,6 +119,7 @@ async function triviaStart(questionList, channelIndex) {
       
       } else if(args[0] === 'stop') {
         let channelTriviaIndex = trivia.findIndex(i => i.channel === channelIndex);
+        if(channelTriviaIndex === -1) return
         trivia.splice(channelTriviaIndex, 1)
       } 
 }
