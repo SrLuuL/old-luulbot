@@ -55,12 +55,10 @@ user2 = sender;
     return { reply: `${user} não possui uma inscrição  em ${canal}, possuindo ${subMonths} no total ${subTotal}` }
 }  
   
-  let {type, tier} = data.subscription;
-  const {end} = data.streak;
-  let dateStreak = new Date(end);
+  let {type, tier, endsAt} = subscription;
   let dateCumulative = new Date(endCumulative);
   let gifter = '';
-  dateStreak = Math.abs(dateStreak - Date.now());
+  dateStreak = Math.abs(endsAt - Date.now());
   dateCumulative = Math.abs(dateCumulative - Date.now());
   dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
   dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
