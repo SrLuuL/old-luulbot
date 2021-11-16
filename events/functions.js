@@ -55,7 +55,7 @@ client.on('message', async (channel, user, message, self) => {
 	  }
   }
 	
-  let dungeonRegex = /\+\d+ XP/
+  let dungeonRegex = /(\+\d+|0) XP/
 	
   if(user.username === 'bobotinho' && canal === 'srluul') {
 	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
