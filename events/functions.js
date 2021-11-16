@@ -55,6 +55,14 @@ client.on('message', async (channel, user, message, self) => {
 	  }
   }
 	
+  if(user.username === 'bobotinho' && canal === 'srluul') {
+	  if(message.includes('@srluul') && message.includes('XP')) {
+		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
+		  client.say(channel, 'peepoNerd glizzyL srluul irei avisá-lo sobre a dungeon em 3 horas')
+		  await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, ['srluul', 'srluul', '#srluul', 'entre na dungeon peepoNerd glizzyL', Date.now() + 10800000, 10800000, (timedRemindList.rows?.pop()?.id + 1) || 1])
+	  }
+  }
+	
 	
   if(afkCheck.rows[0]) {
      
