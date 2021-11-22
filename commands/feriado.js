@@ -3,6 +3,7 @@ module.exports.run = async ({args}) => {
   let feriados = require('../data/feriados.json');
   const moment = require('moment-timezone');
   const ms = require('pretty-ms');
+  const chrono = require('chrono-node')
   
   const currentDate = moment().tz('America/Bahia').format().slice(0, 19);
   const currentDateMs = new Date(currentDate).getTime();
@@ -32,8 +33,9 @@ module.exports.run = async ({args}) => {
   }
   
   let sender = args.join(' ').toLowerCase();
+  const dateParsed = await chrono.parseDate(sender)
   
-  let dateSearch = feriados.filter(i => i.dateS === sender);
+  let dateSearch = feriados.filter(i => i.dateS === `${dateParsed.getDate().toString().padStart(2, "0")}/${(dateParsed.getMonth()+1).toString().padStart(2, "0")}`);
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
   
   let allSearch = dateSearch.length || titleSearch.length
