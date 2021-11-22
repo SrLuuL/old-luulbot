@@ -33,9 +33,11 @@ module.exports.run = async ({args}) => {
   }
   
   let sender = args.join(' ').toLowerCase();
-  const dateParsed = await chrono.parseDate(sender)
-  
-  let dateSearch = feriados.filter(i => i.dateS === `${dateParsed.getDate().toString().padStart(2, "0")}/${(dateParsed.getMonth()+1).toString().padStart(2, "0")}`);
+  const dateParsed = await chrono.pt.parseDate(sender)
+  let dateSearch = [];
+  if(dateParsed) {
+      dateSearch = feriados.filter(i => i.dateS === `${dateParsed.getDate().toString().padStart(2, "0")}/${(dateParsed.getMonth()+1).toString().padStart(2, "0")}`);
+  }
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
   
   let allSearch = dateSearch.length || titleSearch.length
