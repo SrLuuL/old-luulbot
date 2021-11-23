@@ -5808,5 +5808,90 @@
       "category": "Ciência",
       "question": "Qual é o nome do processo que elimina radiação do corpo?",
       "answer": ["Descontaminação"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Como se chama a empresa que compra, vende e aluga imóveis?",
+      "answer": ["Imobiliária"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quantos centavos tem em 1 real?",
+      "answer": ["100"]
+    },
+  {
+      "category": "História",
+      "question": "A Guerra Fria foi um momento de conflitos entre quais países?",
+      "answer": ["Estados Unidos e União Soviética"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Como se escreve as letras W e Y por extenso?",
+      "answer": ["Dáblio e Ípsilon"]
+    },
+  {
+      "category": "Livros",
+      "question": "Qual é o livro brasileiro mais vendido de todos os tempos?",
+      "answer": ["O Alquimista"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Qual é o principal ingrediente da pamonha?",
+      "answer": ["Milho"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem deve ser chamado de meritíssimo durante um julgamento em um tribunal?",
+      "answer": ["Juiz"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é  a idade mínima para se fazer um testamento no Brasil?",
+      "answer": ["16"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que médico realiza os partos?",
+      "answer": ["Obstetra"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Acarajé e Vatapá são pratos típicos de que estado brasileiro?",
+      "answer": ["Bahia"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual era o nome da ovelha que foi clonada em 1996?",
+      "answer": ["Dolly"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Como se chama a maçã caramelada que é servida em um palito?",
+      "answer": ["Maçã do Amor"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é a maior glândula do corpo?",
+      "answer": ["Fígado"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Quem criou a Lei da Inércia?",
+      "answer": ["Isaac Newton"]
+    },
+  {
+      "category": "Astronomia",
+      "question": "Na Astronomia, as sete cabrinhas se referem ao quê?",
+      "answer": ["As Plêiades"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o nome da cirurgia que remove gordura do corpo através da sucção?",
+      "answer": ["Lipoaspiração"]
+    },
+  {
+      "category": "Filmes",
+      "question": "No filme Tropa de Elite, por qual sigla é conhecido o batalhão de polícia?",
+      "answer": ["BOPE"]
     }
 ]
