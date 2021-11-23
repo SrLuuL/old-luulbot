@@ -5893,5 +5893,70 @@
       "category": "Filmes",
       "question": "No filme Tropa de Elite, por qual sigla é conhecido o batalhão de polícia?",
       "answer": ["BOPE"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quantas horas duram 3 dias?",
+      "answer": ["72"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é a patente mais alta do exército brasileiro?",
+      "answer": ["General"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é o plural de cachorro-quente?",
+      "answer": ["Cachorros-quentes"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que palavra define a projeção de um mundo ideal?",
+      "answer": ["Utopia"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Malagueta e Dedo-de-Moça são tipos de quê?",
+      "answer": ["Pimenta"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Um mês se divide em quanta quinzenas?",
+      "answer": ["2"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quanto é 88/4?",
+      "answer": ["22"]
+    },
+  {
+      "category": "Esportes",
+      "question": "A jogada chamada Strike é feita em qual esporte?",
+      "answer": ["Boliche"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que tipo de pedra foi utilizada para construir Cristo Redentor(RJ)?",
+      "answer": ["Pedra-sabão"]
+    },
+  {
+      "category": "Esportes",
+      "question": "O que é passado na ponta do taco de sinuca para melhorar o contato com a bola?",
+      "answer": ["Giz"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Qual é o nome dado à corcunda de um camelo?",
+      "answer": ["Corcova"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o nome do composto químico utilizado nos termômetros para medir a temperatura do corpo?",
+      "answer": ["Mercúrio"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem é Francisco Everardo Oliveira Silva?",
+      "answer": ["Tiririca"]
     }
 ]
