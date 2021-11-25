@@ -5958,5 +5958,140 @@
       "category": "Conhecimentos Gerais",
       "question": "Quem é Francisco Everardo Oliveira Silva?",
       "answer": ["Tiririca"]
+    },
+  {
+      "category": "Música",
+      "question": "Que compositor alemão perdeu sua audição aos 20?",
+      "answer": ["Beethoven"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Qual é a maior montanha do Reino Unido?",
+      "answer": ["Ben Nevis"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o nome do médico especializado em doenças na pele?",
+      "answer": ["Dermatologista"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Limburguer é um tipo de quê?",
+      "answer": ["Queijo"]
+    },
+  {
+      "category": "História",
+      "question": "Que guerra utilizou tanques para batalhar pela primeira vez?",
+      "answer": ["Primeira Guerra Mundial"]
+    },
+  {
+      "category": "Música",
+      "question": "Quem é o cantor responsável pelo Cantando na Chuva?",
+      "answer": ["Gene Kelly"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Pantofobia é o medo de quê?",
+      "answer": ["Tudo"]
+    },
+  {
+      "category": "Tecnologia",
+      "question": "Em que ano foi produzido os primeiros fones de ouvido estéreos?",
+      "answer": ["1943"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Anosmia te faz perder qual sentido?",
+      "answer": ["Paladar"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Em que ano a República do Sudão do Sul ganhou sua independência?",
+      "answer": ["2011"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Em números romanos, o que o número D representa?",
+      "answer": ["500"]
+    },
+  {
+      "category": "Esportes",
+      "question": "A bola de sinuca número 4 possui qual cor?",
+      "answer": ["Roxo"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Em que ano a insulina foi descoberta?",
+      "answer": ["1921"]
+    },
+  {
+      "category": "História",
+      "question": "Em que ano o primeiro café solúvel foi patenteado na França?",
+      "answer": ["1881"]
+    },
+  {
+      "category": "Abelhas",
+      "question": "Hidromel é feito principalmente de quê?",
+      "answer": ["Mel"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é o maior peixe de água fresca no mundo?",
+      "answer": ["Esturjão-Branco"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem pintou Três de Maio?",
+      "answer": ["Francisco de Goya"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual é a ave mais presente no mundo?",
+      "answer": ["Galinha"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Falofobia é o medo de quê?",
+      "answer": ["Pênis"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Rápido! Quanto é 149 x 28932 x 23 x 2381 x 0 x 239?",
+      "answer": ["0"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Qual foi a maior invenção de Hans Lippershy?",
+      "answer": ["Telescópio"]
+    },
+  {
+      "category": "Filmes",
+      "question": "Que tipo de doutor é Indiana Jones?",
+      "answer": ["Arqueólogo"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "O que a estatueta de Óscar está segurando?",
+      "answer": ["Espada"]
+    },
+  {
+      "category": "Video Games",
+      "question": "Em Street Fighter, quem é o melhor amigo de Ryu desde a infância?",
+      "answer": ["Ken"]
+    },
+  {
+      "category": "Minecraft",
+      "question": "Além de gatos, aldeões e morcegos qual outro mob pode dormir?",
+      "answer": ["Raposas"]
+    },
+  {
+      "category": "Memes",
+      "question": "Copie essa mensagem :)",
+      "answer": ["Copie essa mensagem :)"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Que país é conhecido como pérola da África?",
+      "answer": ["Uganda"]
     }
 ]
