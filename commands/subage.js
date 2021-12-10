@@ -34,7 +34,7 @@ user2 = sender;
   
    user = (user.toLowerCase() === username.username) ? "você" : user; 
    canal = (canal.toLowerCase() === username.username) ? "seu canal" : canal;
-  
+   if (!subscription) return { reply: `${user} não possui informações de inscrito` }
    if (hidden) return { reply: `${user} escondeu suas informações de inscrito` }
   
 
