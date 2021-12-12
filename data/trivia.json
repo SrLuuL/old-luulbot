@@ -6093,5 +6093,25 @@
       "category": "Geografia",
       "question": "Que país é conhecido como pérola da África?",
       "answer": ["Uganda"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Que país é conhecido como pérola da África?",
+      "answer": ["Uganda"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Em que cidade está o Muro de Lamentações?",
+      "answer": ["Jerusalem"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Quem inventou a alegoria da caverna?",
+      "answer": ["Platão"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "O que sinologia estuda?",
+      "answer": ["China"]
     }
 ]
