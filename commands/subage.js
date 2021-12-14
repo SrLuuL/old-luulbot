@@ -28,13 +28,14 @@ user2 = sender;
    return { reply: `${data.error} :/` }
   }
   
-
+  if (!data.subscription) return { reply: `informações de inscrito nulas :/` }
+   
   let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden, subscription} = data;
   
   
    user = (user.toLowerCase() === username.username) ? "você" : user; 
    canal = (canal.toLowerCase() === username.username) ? "seu canal" : canal;
-   if (!subscription) return { reply: `${user} não possui informações de inscrito neste canal` }
+   
    if (hidden) return { reply: `${user} escondeu suas informações de inscrito` }
   
 
