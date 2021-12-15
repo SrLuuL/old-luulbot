@@ -27,16 +27,15 @@ user2 = sender;
    if(data.error) {
    return { reply: `${data.error} :/` }
   }
-  
-  if (!data.subscription) return { reply: `informações de inscrito nulas :/` }
    
-  let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, hidden, subscription} = data;
+  if (data.hidden) return { reply: `usuário escondeu suas informações de inscrito` }
+
+  let {channel: canal, username: user, cumulative: {months: subCumulative, end: endCumulative}, subscription} = data;
   
   
    user = (user.toLowerCase() === username.username) ? "você" : user; 
    canal = (canal.toLowerCase() === username.username) ? "seu canal" : canal;
    
-   if (hidden) return { reply: `${user} escondeu suas informações de inscrito` }
   
 
   
