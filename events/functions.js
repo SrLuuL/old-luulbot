@@ -60,8 +60,9 @@ client.on('message', async (channel, user, message, self) => {
   if(user.username === 'bobotinho' && canal === 'srluul') {
 	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
 		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
+		  let suggestID = timedRemindList.rows.sort((a,b) => b.id - a.id)[0].id + 1
 		  client.say(channel, 'peepoNerd glizzyL srluul irei avisá-lo sobre a dungeon em 3 horas')
-		  await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, ['srluul', 'srluul', '#srluul', 'entre na dungeon peepoNerd glizzyL', Date.now() + 10800000, 10800000, (timedRemindList.rows?.pop()?.id + 1) || 1])
+		  await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, ['srluul', 'srluul', '#srluul', 'entre na dungeon peepoNerd glizzyL', Date.now() + 10800000, 10800000, suggestID || 1])
 	  }
   }
 	
