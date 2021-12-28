@@ -54,6 +54,7 @@ client.on('message', async (channel, user, message, self) => {
 		  client.ban('ghiletofar', `${filteredMessage}`)
 	  }
   }
+	/*
 	
   let dungeonRegex = /(\+\d+|0) XP/
 	
@@ -65,6 +66,8 @@ client.on('message', async (channel, user, message, self) => {
 		  await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, ['srluul', 'srluul', '#srluul', 'entre na dungeon peepoNerd glizzyL', Date.now() + 10800000, 10800000, suggestID || 1])
 	  }
   }
+  
+  */
 	
 	
   if(afkCheck.rows[0]) {
