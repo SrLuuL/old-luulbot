@@ -66,7 +66,7 @@ module.exports.run = async ({args}) => {
   
   if(titleSearch.length) {
    
-    let titleSearchDay = titleSearch[0].dateS
+    let titleSearchDay = titleSearch[0].date
     let titleSearchWeek = titleSearch[0].week
     let titleSearchDate = moment.tz(new Date(`${titleSearch[0].date}/${new Date().getFullYear()}`), 'America/Bahia').format().slice(0, 19);
     titleSearchDate = new Date(titleSearchDate).getTime() + 10800000;
