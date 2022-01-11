@@ -21,7 +21,7 @@ module.exports.run = async ({args}) => {
     
     let todayDate = `${todayDay.toString().padStart(2, "0")}/${todayMonth.toString().padStart(2, "0")}`
     
-    let todayHolidayLength = feriados.filter(i => i.dateS === todayDate);
+    let todayHolidayLength = feriados.filter(i => i.date === todayDate);
     
     if(!todayHolidayLength.length) {
      return { reply: `hoje é ${todayDate}, sem nenhum feriado :( ` } 
@@ -36,7 +36,7 @@ module.exports.run = async ({args}) => {
   const dateParsed = await chrono.pt.parseDate(sender)
   let dateSearch = [];
   if(dateParsed) {
-      dateSearch = feriados.filter(i => i.dateS === `${dateParsed.getDate().toString().padStart(2, "0")}/${(dateParsed.getMonth()+1).toString().padStart(2, "0")}`);
+      dateSearch = feriados.filter(i => i.date === `${dateParsed.getDate().toString().padStart(2, "0")}/${(dateParsed.getMonth()+1).toString().padStart(2, "0")}`);
   }
   let titleSearch = feriados.filter(i => i.title.toLowerCase() === sender);
   
