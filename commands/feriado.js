@@ -50,7 +50,7 @@ module.exports.run = async ({args}) => {
     
     let randomDate = dateSearch.sort(i => 0.5 - Math.random())[0]
     let randomDateTitle = randomDate.title;
-    let randomDateTime = moment.tz(new Date(`${randomDate.date}/${new Date().getFullYear()}`), 'America/Bahia').format().slice(0, 19);
+    let randomDateTime = moment.tz(new Date(`${randomDate.dateS}/${new Date().getFullYear()}`), 'America/Bahia').format().slice(0, 19);
     let randomDateWeek = randomDate.week;
     randomDateTime = new Date(randomDateTime).getTime() + 10800000;
     
@@ -68,7 +68,7 @@ module.exports.run = async ({args}) => {
    
     let titleSearchDay = titleSearch[0].date
     let titleSearchWeek = titleSearch[0].week
-    let titleSearchDate = moment.tz(new Date(`${titleSearch[0].date}/${new Date().getFullYear()}`), 'America/Bahia').format().slice(0, 19);
+    let titleSearchDate = moment.tz(new Date(`${titleSearch[0].dateS}/${new Date().getFullYear()}`), 'America/Bahia').format().slice(0, 19);
     titleSearchDate = new Date(titleSearchDate).getTime() + 10800000;
     
     
