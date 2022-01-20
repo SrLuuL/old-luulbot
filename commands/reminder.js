@@ -24,10 +24,10 @@ module.exports.run = async ({args, user, channel, response}) => {
    return { reply: 'estou sempre aqui O_o' } 
   }
   
-  const userFetch = await (await fetch(`https://luulbot.herokuapp.com/api/twitch/user/${targetUser}`)).json();
+  const userFetch = await db.query(`SELECT * FROM luulbot_users WHERE userchannel = $1`, [targetUser])
   
-  if(userFetch.error) {
-   return { reply: 'usuário não existe :/' } 
+  if(!userFetch.rowCount) {
+   return { reply: 'usuário nunca executou um comando :/' } 
   }
   
  
