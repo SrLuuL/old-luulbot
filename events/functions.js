@@ -54,7 +54,7 @@ client.on('message', async (channel, user, message, self) => {
 		  client.ban('ghiletofar', `${filteredMessage}`)
 	  }
   }
-	/*
+	
 	
   let dungeonRegex = /(\+\d+|0) XP/
 	
@@ -67,7 +67,7 @@ client.on('message', async (channel, user, message, self) => {
 	  }
   }
   
-  */
+  
 	
 	
   if(afkCheck.rows[0]) {
