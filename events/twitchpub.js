@@ -20,8 +20,8 @@ const ps = new RWS('wss://pubsub-edge.twitch.tv', [], {WebSocket: WS});
 
 ps.addEventListener('open', async () => {
     console.log(`Conectado na TwitchPubSub`);
-    for(channel of channels.rows){
-        await listenStreamStatus(channel.userchannel)
+    for(channel of channels.rows.map(i => i.userchannel)){
+        await listenStreamStatus(channel)
     }
 });
 
