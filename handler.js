@@ -74,8 +74,6 @@ async function handleMSG(channel, user, message, self) {
 	let streamModeDB = await db.query(`SELECT stream_mode FROM luulbot_channels WHERE userchannel = '${canal}'`);
         let streamMode = streamModeDB.rows[0]['stream_mode'];
 	
-	let streamStatusDB = await db.query(`SELECT status FROM luulbot_channels WHERE userchannel = '${canal}'`);
-	let streamStatus = streamStatusDB.rows[0]['status'];
 
 	if (self){
 		
@@ -116,7 +114,7 @@ if (cmdfile) {
 	let {name: cmdName, level: cmdPerm, cooldown: cmdCD, family: cmdFamily} = cmdfile.config
 
 	if (commandCD.has(`${username}-${cmdName}`)) return;
-	if (streamStatus === 'live' && streamMode && username !=='srluul') {	
+	if (streamMode && username !=='srluul') {	
 		if(cmdName !== 'modostream') return;	
 	}
 	
