@@ -1,7 +1,7 @@
 const db = require('../clients/database.js').db;
 const WS = require('ws');
 const RWS = require('reconnecting-websocket');
-const channels = require('../credentials/login.js').channelOptions;
+const channels = await db.query(`SELECT * FROM luulbot_channels WHERE stream_mode = 'true'`);
 const randombytes = require('randombytes');
 
 
@@ -20,8 +20,8 @@ const ps = new RWS('wss://pubsub-edge.twitch.tv', [], {WebSocket: WS});
 
 ps.addEventListener('open', async () => {
     console.log(`Conectado na TwitchPubSub`);
-    for(channel in Object.values(channels)){
-        await listenStreamStatus(channels[channel])
+    for(channel of channels.rows){
+        await listenStreamStatus(channel.userchannel)
     }
 });
 
