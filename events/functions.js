@@ -61,8 +61,23 @@ client.on('message', async (channel, user, message, self) => {
   if(user.username === 'bobotinho' && canal === 'srluul') {
 	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
 		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
+		  let dungeonNumberDB = await db.query(`SELECT * FROM luulbot_info WHERE setting = '${dungeon_num}'`);
+		  let dungeonNumber = dungeonNumberDB.rows[0].setting;
+		  let format = `${dungeonNumber}/4 dungeons até upar peepoNerd`;
+		  
+		  if(parseInt(message.match(dungeonRegex))) {
+		      format = `${dungeonNumber + 1}/4 dungeons até upar peepoNerd`;
+		      await db.query(`UPDATE luulbot_info SET value = value + 1 WHERE setting = '${dungeon_num}'`);
+		  }
+		  
+		  if((dungeonNumber + 1) >= 4) {
+		      format = `4/4 dungeons alcançadas peepoNerd Clap`;
+		      await db.query(`UPDATE luulbot_info SET value = 0 WHERE setting = '${dungeon_num}'`);
+		  }
+		  
+		  
 		  let suggestID = timedRemindList.rows.sort((a,b) => b.id - a.id)[0].id + 1
-		  client.say(channel, 'peepoNerd glizzyL srluul irei avisá-lo sobre a dungeon em 3 horas')
+		  client.say(channel, `peepoNerd glizzyL srluul irei avisá-lo sobre a dungeon em 3 horas | ${format}`)
 		  await db.query(`INSERT INTO luulbot_remindtimed(userchannel, usersender, channelsender, message, time, timeparsed, id) VALUES($1,$2,$3,$4,$5,$6,$7)`, ['srluul', 'srluul', '#srluul', 'entre na dungeon peepoNerd glizzyL', Date.now() + 10800000, 10800000, suggestID || 1])
 	  }
   }
