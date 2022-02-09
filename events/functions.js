@@ -61,18 +61,18 @@ client.on('message', async (channel, user, message, self) => {
   if(user.username === 'bobotinho' && canal === 'srluul') {
 	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
 		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
-		  let dungeonNumberDB = await db.query(`SELECT * FROM luulbot_info WHERE setting = '${dungeon_num}'`);
+		  let dungeonNumberDB = await db.query(`SELECT * FROM luulbot_info WHERE setting = 'dungeon_num'`);
 		  let dungeonNumber = dungeonNumberDB.rows[0].setting;
 		  let format = `${dungeonNumber}/4 dungeons até upar peepoNerd`;
 		  
 		  if(parseInt(message.match(dungeonRegex))) {
 		      format = `${dungeonNumber + 1}/4 dungeons até upar peepoNerd`;
-		      await db.query(`UPDATE luulbot_info SET value = value + 1 WHERE setting = '${dungeon_num}'`);
+		      await db.query(`UPDATE luulbot_info SET value = value + 1 WHERE setting = 'dungeon_num'`);
 		  }
 		  
 		  if((dungeonNumber + 1) >= 4) {
 		      format = `4/4 dungeons alcançadas peepoNerd Clap`;
-		      await db.query(`UPDATE luulbot_info SET value = 0 WHERE setting = '${dungeon_num}'`);
+		      await db.query(`UPDATE luulbot_info SET value = 0 WHERE setting = 'dungeon_num'`);
 		  }
 		  
 		  
