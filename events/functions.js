@@ -70,7 +70,7 @@ client.on('message', async (channel, user, message, self) => {
 		      await db.query(`UPDATE luulbot_info SET value = value + 1 WHERE setting = 'dungeon_num'`);
 		  }
 		  
-		  if(dungeonNumber >= 4) {
+		  if(dungeonNumber >= 4 || message.includes('⬆')) {
 		      format = `4/4 dungeons alcançadas peepoNerd Clap`;
 		      await db.query(`UPDATE luulbot_info SET value = 0 WHERE setting = 'dungeon_num'`);
 		  }
