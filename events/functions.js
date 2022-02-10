@@ -71,7 +71,7 @@ client.on('message', async (channel, user, message, self) => {
 		  }
 		  
 		  if(dungeonNumber >= 4 || message.includes('⬆')) {
-		      format = `4/4 dungeons alcançadas peepoNerd Clap`;
+		      format = `upado com sucesso peepoNerd Clap`;
 		      await db.query(`UPDATE luulbot_info SET value = 0 WHERE setting = 'dungeon_num'`);
 		  }
 		  
