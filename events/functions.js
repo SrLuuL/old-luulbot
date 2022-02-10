@@ -62,7 +62,7 @@ client.on('message', async (channel, user, message, self) => {
 	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
 		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
 		  let dungeonNumberDB = await db.query(`SELECT value FROM luulbot_info WHERE setting = 'dungeon_num'`);
-		  let dungeonNumber = dungeonNumberDB.rows[0].value;
+		  let dungeonNumber = Number(dungeonNumberDB.rows[0].value);
 		  let format = `${dungeonNumber}/4 dungeons até upar peepoNerd`;
 		  
 		  if(parseInt(message.match(dungeonRegex))) {
