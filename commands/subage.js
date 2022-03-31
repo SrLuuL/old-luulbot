@@ -60,8 +60,8 @@ user2 = sender;
   let gifter = '';
   dateStreak = Math.abs(new Date(endsAt) - Date.now());
   dateCumulative = Math.abs(dateCumulative - Date.now());
-  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
-  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '');
+  dateStreak = ms(dateStreak, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '').replace(/y/g, 'a');
+  dateCumulative = ms(dateCumulative, {secondsDecimalDigits: 0, unitCount: 3}).replace(/-/g, '').replace(/y/g, 'a');
   type = (type == "Paid") ? "Pago" : type
   
   if(subscription) {
