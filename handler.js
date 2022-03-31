@@ -171,7 +171,18 @@ if (cmdfile) {
 	}
 
 	
+	
 	const cmdExecution = await cmdExec(cmdfile, context);
+	
+        /*
+	
+	let aprilJoke = cmdExecution
+        .split('')
+        .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
+        .join('')
+	
+	*/
+	
 	
 	if(msgType === 'chat') {
 		await sendMsg(cmdExecution, channel)
