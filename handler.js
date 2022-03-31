@@ -4,6 +4,9 @@ const fetch = require("node-fetch");
 const db = require('./clients/database.js').db;
 const channels = require("./credentials/login.js").channelOptions;
 const moment = require('moment-timezone');
+const translateapi = require("@kaysilvn/google-translate-api");
+const translate = new translateapi().translate;
+
 
 let commandCD = new Set();
 let globalDelay = new Set();
@@ -176,7 +179,16 @@ if (cmdfile) {
 	
         /*
 	
-	let aprilJoke = cmdExecution
+	let aprilJoke;
+	
+	if(Math.random() * 50 < 1) {
+	
+	 const randomLanguage = ['en', 'de', 'es', 'el', 'zh', 'pl'].sort(() => 0.5 - Math.random())[0];
+	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 
+	}
+	
+	aprilJoke = cmdExecution
         .split('')
         .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
         .join('')
