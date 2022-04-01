@@ -187,7 +187,7 @@ if (cmdfile) {
         .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
         .join('');
 	
-	if(Math.random() * 50 < 1) {
+	if(Math.random() * 50 < 5) {
 	
 	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
 	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
