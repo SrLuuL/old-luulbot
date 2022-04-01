@@ -21,7 +21,7 @@ async function timedRemindCheck() {
 	  
     await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);
 	  
-        /*
+        
 	
 	let aprilJoke;
 	
@@ -34,13 +34,13 @@ async function timedRemindCheck() {
 	if(Math.random() * 50 < 1) {
 	
 	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
-	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 aprilJoke = await translate(`${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : userchannel}:  ${message} (${formatedTime})`, {src_lang: 'auto', tar_lang: randomLanguage}); 
 	 
 	}
 	
-	*/
+	
 
-    client.say(channelsender, `${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : userchannel}:  ${message} (${formatedTime})`);
+    client.say(channelsender, aprilJoke);
   }
 
 }
@@ -135,7 +135,7 @@ client.on('message', async (channel, user, message, self) => {
     
     await db.query(`DELETE FROM luulbot_afk WHERE username = '${user.username}'`);
 	  
-	 /*
+	 
 	
 	let aprilJoke;
 	
@@ -148,13 +148,13 @@ client.on('message', async (channel, user, message, self) => {
 	if(Math.random() * 50 < 1) {
 	
 	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
-	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 aprilJoke = await translate(`${username} ${afktype} ${reason} (${passedTime})`, {src_lang: 'auto', tar_lang: randomLanguage}); 
 	 
 	}
 	
-	*/
+	
 	  
-    await client.say(channel, `${username} ${afktype} ${reason} (${passedTime})`);
+    await client.say(channel, aprilJoke);
     
   }
 	
@@ -177,7 +177,7 @@ client.on('message', async (channel, user, message, self) => {
    messages = messages.map(i => `${(i.userchannel === user.username) ? 'você mesmo' : i.userchannel}: ${i.message.slice(0, limit)} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');  
    await db.query(`DELETE FROM luulbot_remind WHERE usersender = '${user.username}'`);
 	  
-	/*
+	
 	
 	let aprilJoke;
 	
@@ -190,13 +190,13 @@ client.on('message', async (channel, user, message, self) => {
 	if(Math.random() * 50 < 1) {
 	
 	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
-	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 aprilJoke = await translate(`${user.username}, lembrete de ${messages}`, {src_lang: 'auto', tar_lang: randomLanguage}); 
 	 
 	}
 	
-	*/
+	
 	  
-   await client.say(channel, `${user.username}, lembrete de ${messages}`);	  
+   await client.say(channel, aprilJoke);	  
 	  
   }
   
