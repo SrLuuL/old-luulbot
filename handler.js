@@ -189,7 +189,7 @@ if (cmdfile) {
 	
 	if(Math.random() * 50 < 1) {
 	
-	 const randomLanguage = ['en', 'de', 'es', 'el', 'zh', 'pl'].sort(() => 0.5 - Math.random())[0];
+	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
 	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
 	 
 	}
