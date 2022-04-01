@@ -4,6 +4,8 @@ const db = require('../clients/database.js').db;
 const channels = require('../credentials/login.js').channelOptions;
 const ms = require('pretty-ms');
 const luulbot = require ("../clients/discord.js").luulbot;
+const translateapi = require("@kaysilvn/google-translate-api");
+const translate = new translateapi().translate;
 
 client.afkList = [];
 
@@ -17,7 +19,26 @@ async function timedRemindCheck() {
     let {userchannel, usersender, channelsender, message, timeparsed, id} = remindTimeCheck;
     let formatedTime = ms(timeparsed - 0, {secondsDecimalDigits: 0});
 	  
-    await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);	  
+    await db.query(`DELETE FROM luulbot_remindtimed WHERE id = '${id}'`);
+	  
+        /*
+	
+	let aprilJoke;
+	
+	
+	aprilJoke = `${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : userchannel}:  ${message} (${formatedTime})`
+        .split('')
+        .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
+        .join('');
+	
+	if(Math.random() * 50 < 1) {
+	
+	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
+	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 
+	}
+	
+	*/
 
     client.say(channelsender, `${usersender}, lembrete cronometrado de ${usersender === userchannel ? 'você' : userchannel}:  ${message} (${formatedTime})`);
   }
@@ -113,6 +134,26 @@ client.on('message', async (channel, user, message, self) => {
     
     
     await db.query(`DELETE FROM luulbot_afk WHERE username = '${user.username}'`);
+	  
+	 /*
+	
+	let aprilJoke;
+	
+	
+	aprilJoke = `${username} ${afktype} ${reason} (${passedTime})`
+        .split('')
+        .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
+        .join('');
+	
+	if(Math.random() * 50 < 1) {
+	
+	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
+	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 
+	}
+	
+	*/
+	  
     await client.say(channel, `${username} ${afktype} ${reason} (${passedTime})`);
     
   }
@@ -135,6 +176,26 @@ client.on('message', async (channel, user, message, self) => {
 	  
    messages = messages.map(i => `${(i.userchannel === user.username) ? 'você mesmo' : i.userchannel}: ${i.message.slice(0, limit)} (${ms(Date.now() - i.time , {secondsDecimalDigits: 0, unitCount: 2})})`).join(' / ');  
    await db.query(`DELETE FROM luulbot_remind WHERE usersender = '${user.username}'`);
+	  
+	/*
+	
+	let aprilJoke;
+	
+	
+	aprilJoke = `${user.username}, lembrete de ${messages}`
+        .split('')
+        .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
+        .join('');
+	
+	if(Math.random() * 50 < 1) {
+	
+	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
+	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
+	 
+	}
+	
+	*/
+	  
    await client.say(channel, `${user.username}, lembrete de ${messages}`);	  
 	  
   }
