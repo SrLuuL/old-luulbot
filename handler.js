@@ -4,8 +4,7 @@ const fetch = require("node-fetch");
 const db = require('./clients/database.js').db;
 const channels = require("./credentials/login.js").channelOptions;
 const moment = require('moment-timezone');
-const translateapi = require("@kaysilvn/google-translate-api");
-const translate = new translateapi().translate;
+
 
 
 let commandCD = new Set();
