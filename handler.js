@@ -177,30 +177,12 @@ if (cmdfile) {
 	
 	const cmdExecution = await cmdExec(cmdfile, context);
 	
-        
-	
-	let aprilJoke;
-	
-	
-	aprilJoke = cmdExecution
-        .split('')
-        .map((i,f) => !parseInt(i, 0) && Math.floor(Math.random() * 10) >= 7 ? `${i}${i}`.toUpperCase() : i.toLowerCase())
-        .join('');
-	
-	if(Math.random() * 50 < 5) {
-	
-	 const randomLanguage = ['de', 'es', 'el', 'zh', 'pl', 'ar'].sort(() => 0.5 - Math.random())[0];
-	 aprilJoke = await translate(cmdExecution, {src_lang: 'auto', tar_lang: randomLanguage}); 
-	 
-	}
-	
-	
 	
 	
 	if(msgType === 'chat') {
-		await sendMsg(aprilJoke, channel)
+		await sendMsg(cmdExecution, channel)
 	} else if(msgType === 'whisper') {
-		await client.whisper(username, `${aprilJoke}`)
+		await client.whisper(username, `${cmdExecution}`)
 	}
 	
 	
