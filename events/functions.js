@@ -58,7 +58,7 @@ client.on('message', async (channel, user, message, self) => {
   }
 	
 	
-  let dungeonRegex = /(\+\d+|0) xp/
+  let dungeonRegex = /(\+\d+|0) XP/
 	
   if(user.username === 'bobotinho' && canal === 'srluul') {
 	  if(message.toLowerCase().includes('@srluul') && dungeonRegex.test(message)) {
