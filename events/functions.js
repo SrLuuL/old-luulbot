@@ -58,10 +58,10 @@ client.on('message', async (channel, user, message, self) => {
   }
 	
 	
-  let dungeonRegex = /(\+\d+|0) XP/
+  let dungeonRegex = /(\+\d+|0) xp/
 	
   if(user.username === 'bobotinho' && canal === 'srluul') {
-	  if(message.includes('@srluul') && dungeonRegex.test(message)) {
+	  if(message.toLowerCase().includes('@srluul') && dungeonRegex.test(message)) {
 		  let timedRemindList = await db.query(`SELECT * FROM luulbot_remindtimed`);
 		  let dungeonNumberDB = await db.query(`SELECT value FROM luulbot_info WHERE setting = 'dungeon_num'`);
 		  let dungeonNumber = Number(dungeonNumberDB.rows[0].value);
