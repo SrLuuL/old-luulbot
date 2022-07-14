@@ -6113,5 +6113,30 @@
       "category": "Conhecimentos Gerais",
       "question": "O que sinologia estuda?",
       "answer": ["China"]
+    },
+    {
+      "category": "Programação",
+      "question": "O que a sigla JVM significa em termos de computação?",
+      "answer": ["Máquina Virtual Java"]
+    },
+      {
+      "category": "Video Games",
+      "question": "Que ano Luigi's Mansion 3 foi lançado?",
+      "answer": ["2019"]
+    },
+      {
+      "category": "Séries",
+      "question": "Qual é a raça do pai do Invicible?",
+      "answer": ["Viltrumita"]
+    },
+      {
+      "category": "Música",
+      "question": "Que cantora lançou a música Rude Boy?",
+      "answer": ["Rihanna"]
+    },
+        {
+      "category": "Conhecimentos Gerais",
+      "question": "Areologia é o estudo de quê?",
+      "answer": ["Marte"]
     }
 ]
