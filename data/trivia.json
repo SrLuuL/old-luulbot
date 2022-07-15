@@ -6243,6 +6243,90 @@
       "category": "Geografia",
       "question": "Qual é a capital de Argélia?",
       "answer": ["Argiers"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Em francês, como se chama a palavra três?",
+      "answer": ["Trois"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "O que Demonologia estuda?",
+      "answer": ["Demônios"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Juba é a capital de que país?",
+      "answer": ["Sudão do Sul"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Qual é a capital de Indonésia?",
+      "answer": ["Jakarta"]
+    },
+  {
+      "category": "Biologia",
+      "question": "Que grande herbívoro dorme apenas 1 hora por noite?",
+      "answer": ["Antílope"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Que palavra define o símbolo #?",
+      "answer": ["Cerquilha"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "Otologia é o estudo de quê?",
+      "answer": ["Ouvido"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Gaspacho é um tipo de quê?",
+      "answer": ["Sopa"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Em 1962, Grã-Bretanha e França concordaram juntas em construir o quê?",
+      "answer": ["Concorde"]
+    },
+  {
+      "category": "Livros",
+      "question": "Quem era o vizinho de Ursinho Pooh?",
+      "answer": ["Leitão"]
+    },
+  {
+      "category": "Música",
+      "question": "Que banda britânica lançou a música Brown Sugar?",
+      "answer": ["Rolling Stones"]
+    },
+  {
+      "category": "História",
+      "question": "Que filósofo citou que ninguém pode entrar duas vezes no mesmo rio?",
+      "answer": ["Heráclito"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Que parte do corpo é afetado pela dermatite?",
+      "answer": ["Pele"]
+    },
+  {
+      "category": "Programação",
+      "question": "Que região do mundo usa .tv no final dos seus endereços web?",
+      "answer": ["Tuvalu"]
+    },
+  {
+      "category": "Comidas/Bebidas",
+      "question": "Que nome de macarrão significa fuzil?",
+      "answer": ["Fusilli"]
+    },
+  {
+      "category": "Programação",
+      "question": "Que região do mundo usa .ve no final dos seus endereços web?",
+      "answer": ["Venezuela"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Quem inventou a escala Celsius?",
+      "answer": ["Anders Celsius"]
     }
-  
 ]
