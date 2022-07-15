@@ -5326,7 +5326,7 @@
     },
   {
   "category": "Conhecimentos Gerais",
-  "question": "O que um fiólogo estuda?",
+  "question": "O que um filólogo estuda?",
   "answer": ["Linguagens"]
     },
   {
@@ -6138,5 +6138,111 @@
       "category": "Conhecimentos Gerais",
       "question": "Areologia é o estudo de quê?",
       "answer": ["Marte"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Que dialeto se originou em Xangai?",
+      "answer": ["Xangainês"]
+    },
+    {
+      "category": "NaM",
+      "question": "Que nome descreve o ato de caminhar durante o sono?",
+      "answer": ["So NaM bulismo"]
+    },
+    {
+      "category": "NaM",
+      "question": "O que os reis fazem?",
+      "answer": ["Rei NaM"]
+    },
+    {
+      "category": "NaM",
+      "question": "Qual país começa com Di e termina com arca?",
+      "answer": ["Di NaM arca"]
+    },
+    {
+      "category": "NaM",
+      "question": "Qual nome mais comum de um artefato explosivo à base de nitroglicerina?",
+      "answer": ["Di NaM ite"]
+    },
+    {
+      "category": "Video Games",
+      "question": "Que mapa de CS:GO se passa em Berlim?",
+      "answer": ["Overpass"]
+    },
+    {
+      "category": "Video Games",
+      "question": "Que estúdio de jogos desenvolveu Dead By Daylight?",
+      "answer": ["Behaviour Interactive"]
+    },
+    {
+      "category": "História",
+      "question": "Que cidade brasileira já foi capital de Portugal?",
+      "answer": ["Rio de Janeiro"]
+    },
+    {
+      "category": "Twitch",
+      "question": "Qual o nome da pessoa representada pelo emote: BatChest ?",
+      "answer": ["Curtis Scott"]
+    },
+    {
+      "category": "História",
+      "question": "Que país a Uganda invadiu em 1978?",
+      "answer": ["Tanzânia"]
+    },
+    {
+      "category": "Biologia",
+      "question": "Quantos tentáculos uma lula possui?",
+      "answer": ["10"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quanto é 2^16?",
+      "answer": ["65536"]
+    },
+  {
+      "category": "Matemática",
+      "question": "Quais são os fatores primos de 777?",
+      "answer": ["3 7 e 37"]
+    },
+  {
+      "category": "Anime",
+      "question": "O que é pior que anime?",
+      "answer": ["Nada"]
+    },
+  {
+      "category": "Ciência",
+      "question": "Em que ano ocorreu o primeiro transplante de órgãos sucedido?",
+      "answer": ["1954"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "A Histopalogia é o estudo de quê?",
+      "answer": ["Doenças no tecido"]
+    },
+  {
+      "category": "História",
+      "question": "Em que linguagem o Manifesto Comunista foi escrito?",
+      "answer": ["Alemão"]
+    },
+  {
+      "category": "Ciência",
+      "question": "A meningite afeta que parte do corpo?",
+      "answer": ["Cérebro"]
+    },
+  {
+      "category": "Conhecimentos Gerais",
+      "question": "A Microbiologia estuda o quê?",
+      "answer": ["Microrganismos"]
+    },
+  {
+      "category": "Esportes",
+      "question": "Qual esporte é associado ao Pelé?",
+      "answer": ["Futebol"]
+    },
+  {
+      "category": "Geografia",
+      "question": "Qual é a capital de Argélia?",
+      "answer": ["Argiers"]
     }
+  
 ]
