@@ -29,7 +29,8 @@ module.exports.run = async ({args, response, user, channel, client}) => {
    food: ['acabou de comer:', 'encheu o bucho:', 'está cheio:'],
    poop: ['acabou de cagar:', 'soltou um barro:'],
    game: ['terminou de jogar:', 'terminou sua jogatina:'],
-   read: ['terminou de ler:', 'terminou sua leitura:']
+   read: ['terminou de ler:', 'terminou sua leitura:'],
+   brb: ['voltou:']
   }
   
   switch(response) {
@@ -64,6 +65,9 @@ module.exports.run = async ({args, response, user, channel, client}) => {
     case 'read':
       afkMessage = `${user.username} foi ler:`
       message += ' 📖';
+      break;
+    case 'brb':
+      afkMessage = `${user.username} já volta:`
   }
   
   let randomAFK = afkMessages[response];
@@ -85,7 +89,7 @@ module.exports.run = async ({args, response, user, channel, client}) => {
 
 module.exports.config = {
  name: 'afk',
- aliases: ['gn', 'study', 'shower', 'food', 'work', 'poop', 'game', 'read'],
+ aliases: ['gn', 'study', 'shower', 'food', 'work', 'poop', 'game', 'read', 'brb'],
  usage: 'afk',
  description: 'Seta um afk',
  cooldown: 4000,
